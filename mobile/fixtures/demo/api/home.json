@@ -1,0 +1,193 @@
+{
+ "trending": [
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206949-c5hfhixdgvy5.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Fantasy"
+   ],
+   "id": "anime:206949",
+   "media": "anime",
+   "name": "Nia Liston: The Merciless Maiden",
+   "next": {
+    "at": "2026-11-10T12:26:00.000Z",
+    "episode": 6
+   },
+   "runtime": "24 min",
+   "score": 7.5,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "KONAMI animation",
+   "subtitle": "Kyouran Reijou Nia Liston · 凶乱令嬢ニア・リストン",
+   "total": 25,
+   "year": 2026
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21-wf37VakJmZqs.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy"
+   ],
+   "id": "anime:21",
+   "media": "anime",
+   "name": "ONE PIECE",
+   "next": {
+    "at": "2027-01-03T14:16:00.000Z",
+    "episode": 1181
+   },
+   "runtime": "24 min",
+   "score": 8.7,
+   "season": "Fall 1999",
+   "state": "Releasing",
+   "studio": "Toei Animation",
+   "year": 1999
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/209502-TATgyznMxQOe.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209502-C81oN8M4Smlo.jpg",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Romance"
+   ],
+   "id": "anime:209502",
+   "media": "anime",
+   "name": "The Cold Sato-san is Only Sweet to Me",
+   "next": {
+    "at": "2026-11-10T13:00:00.000Z",
+    "episode": 6
+   },
+   "runtime": "24 min",
+   "score": 6.9,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "Tezuka Productions",
+   "subtitle": "Shiotaiou no Satou-san ga Ore ni dake Amai · 塩対応の佐藤さんが俺にだけ甘い",
+   "total": 12,
+   "year": 2026
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/212888-ZsnNegBCKXQq.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg",
+   "format": "ONA",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+   ],
+   "id": "anime:212888",
+   "media": "anime",
+   "name": "Overgeared",
+   "next": {
+    "at": "2026-11-08T14:30:00.000Z",
+    "episode": 7
+   },
+   "runtime": "24 min",
+   "score": 7.6,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "J.C.STAFF",
+   "subtitle": "Tempal: Item no Chikara · テムパル～アイテムの力～",
+   "total": 12,
+   "year": 2026
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/97940-1URQdQ4U1a0b.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97940-fyh8o7gNbha0.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+   ],
+   "id": "anime:97940",
+   "media": "anime",
+   "name": "Black Clover",
+   "runtime": "24 min",
+   "score": 7.9,
+   "season": "Fall 2017",
+   "state": "Finished",
+   "studio": "Studio Pierrot",
+   "subtitle": "ブラッククローバー",
+   "total": 170,
+   "year": 2017
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195604-lQpCzTziSA17.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tSZcfKbVqSEG.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+   ],
+   "id": "anime:195604",
+   "media": "anime",
+   "name": "Black Clover Season 2",
+   "next": {
+    "at": "2026-11-07T14:00:00.000Z",
+    "episode": 6
+   },
+   "runtime": "24 min",
+   "score": 8.7,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "Studio Pierrot",
+   "subtitle": "Black Clover 2nd Season · ブラッククローバー 第2期",
+   "year": 2026
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195539-lO5SUdp4SOrq.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png",
+   "format": "ONA",
+   "genres": [
+    "Action",
+    "Drama",
+    "Sci-Fi"
+   ],
+   "id": "anime:195539",
+   "media": "anime",
+   "name": "Cyberpunk: Edgerunners 2",
+   "runtime": "28 min",
+   "score": 8.3,
+   "season": "Fall 2026",
+   "state": "Finished",
+   "studio": "TRIGGER",
+   "subtitle": "サイバーパンク: エッジランナーズ2",
+   "total": 10,
+   "year": 2026
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Supernatural"
+   ],
+   "id": "anime:269",
+   "media": "anime",
+   "name": "Bleach",
+   "runtime": "24 min",
+   "score": 7.9,
+   "season": "Fall 2004",
+   "state": "Finished",
+   "studio": "Studio Pierrot",
+   "subtitle": "BLEACH · BLEACH",
+   "total": 366,
+   "year": 2004
+  }
+ ],
+ "unreadNotifications": 3
+}

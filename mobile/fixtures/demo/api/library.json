@@ -1,0 +1,3142 @@
+[
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 5,
+  "repeats": 0,
+  "started": "2026-10-02",
+  "status": "current",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210482-pYAD0IbzNbgS.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+   "format": "ONA",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Mystery",
+    "Supernatural"
+   ],
+   "id": "anime:210482",
+   "media": "anime",
+   "name": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+   "next": {
+    "at": "2026-11-06T08:00:00.000Z",
+    "episode": 7
+   },
+   "runtime": "23 min",
+   "score": 8.6,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "david production",
+   "subtitle": "JoJo no Kimyou na Bouken: Steel Ball Run - 2nd & 3rd STAGE · ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE",
+   "total": 11,
+   "year": 2026
+  },
+  "updatedAt": "2026-10-30T13:41:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 3,
+  "repeats": 0,
+  "started": "2026-10-02",
+  "status": "current",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195539-lO5SUdp4SOrq.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png",
+   "format": "ONA",
+   "genres": [
+    "Action",
+    "Drama",
+    "Sci-Fi"
+   ],
+   "id": "anime:195539",
+   "media": "anime",
+   "name": "Cyberpunk: Edgerunners 2",
+   "runtime": "28 min",
+   "score": 8.3,
+   "season": "Fall 2026",
+   "state": "Finished",
+   "studio": "TRIGGER",
+   "subtitle": "サイバーパンク: エッジランナーズ2",
+   "total": 10,
+   "year": 2026
+  },
+  "updatedAt": "2026-10-30T12:41:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 7,
+  "repeats": 0,
+  "score": 80,
+  "started": "2026-10-02",
+  "status": "current",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178789-9nHWmoRLlcLu.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Ecchi",
+    "Fantasy"
+   ],
+   "id": "anime:178789",
+   "media": "anime",
+   "name": "Mushoku Tensei: Jobless Reincarnation Season 3",
+   "runtime": "24 min",
+   "score": 8.6,
+   "season": "Summer 2026",
+   "state": "Finished",
+   "studio": "Studio Bind",
+   "subtitle": "Mushoku Tensei III: Isekai Ittara Honki Dasu · 無職転生Ⅲ ～異世界行ったら本気だす～",
+   "total": 14,
+   "year": 2026
+  },
+  "updatedAt": "2026-10-30T11:41:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "started": "2026-10-02",
+  "status": "current",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/166240-YdxoEhrfwNk0.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166240-PBV7zukIHW7V.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Supernatural"
+   ],
+   "id": "anime:166240",
+   "media": "anime",
+   "name": "Demon Slayer: Kimetsu no Yaiba Hashira Training Arc",
+   "runtime": "30 min",
+   "score": 7.9,
+   "season": "Spring 2024",
+   "state": "Finished",
+   "studio": "ufotable",
+   "subtitle": "Kimetsu no Yaiba: Hashira Geiko-hen · 鬼滅の刃 柱稽古編",
+   "total": 8,
+   "year": 2024
+  },
+  "updatedAt": "2026-10-29T14:41:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 3,
+  "repeats": 0,
+  "started": "2026-10-02",
+  "status": "current",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/147105-fTjmRrILFixZ.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx147105-rwOX8qyUy8gV.jpg",
+   "format": "ONA",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Fantasy"
+   ],
+   "id": "anime:147105",
+   "media": "anime",
+   "name": "Witch Hat Atelier",
+   "runtime": "24 min",
+   "score": 8.5,
+   "season": "Spring 2026",
+   "state": "Finished",
+   "studio": "BUG FILMS",
+   "subtitle": "Tongari Boushi no Atelier · とんがり帽子のアトリエ",
+   "total": 13,
+   "year": 2026
+  },
+  "updatedAt": "2026-10-28T14:41:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 1150,
+  "repeats": 0,
+  "score": 90,
+  "started": "2026-10-02",
+  "status": "current",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21-wf37VakJmZqs.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy"
+   ],
+   "id": "anime:21",
+   "media": "anime",
+   "name": "ONE PIECE",
+   "next": {
+    "at": "2027-01-03T14:16:00.000Z",
+    "episode": 1181
+   },
+   "runtime": "24 min",
+   "score": 8.7,
+   "season": "Fall 1999",
+   "state": "Releasing",
+   "studio": "Toei Animation",
+   "year": 1999
+  },
+  "updatedAt": "2026-10-25T14:41:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 52,
+  "repeats": 0,
+  "score": 70,
+  "started": "2024-05-04",
+  "status": "current",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20-HHxhPj5JD13a.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20-dE6UHbFFg1A5.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Supernatural"
+   ],
+   "id": "anime:20",
+   "media": "anime",
+   "name": "Naruto",
+   "runtime": "23 min",
+   "score": 8.0,
+   "season": "Fall 2002",
+   "state": "Finished",
+   "studio": "Studio Pierrot",
+   "subtitle": "NARUTO · NARUTO -ナルト-",
+   "total": 220,
+   "year": 2002
+  },
+  "updatedAt": "2024-06-21T19:40:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 5,
+  "repeats": 0,
+  "score": 65,
+  "status": "hold",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/150672-ISwoA0eS722H.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx150672-WqmmwZ4nMzAy.png",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Mystery",
+    "Psychological",
+    "Supernatural"
+   ],
+   "id": "anime:150672",
+   "media": "anime",
+   "name": "OSHI NO KO",
+   "runtime": "24 min",
+   "score": 8.4,
+   "season": "Spring 2023",
+   "state": "Finished",
+   "studio": "Doga Kobo",
+   "subtitle": "[Oshi no Ko] · 【推しの子】",
+   "total": 11,
+   "year": 2023
+  },
+  "updatedAt": "2026-11-02T23:41:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 2,
+  "repeats": 0,
+  "score": 75,
+  "status": "hold",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/142853-AOOaCQdUHScH.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx142853-nxEZDE9oDRLG.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Romance",
+    "Supernatural"
+   ],
+   "id": "anime:142853",
+   "media": "anime",
+   "name": "Tokyo Revengers Season 2",
+   "runtime": "24 min",
+   "score": 7.5,
+   "season": "Winter 2023",
+   "state": "Finished",
+   "studio": "LIDENFILMS",
+   "subtitle": "Tokyo Revengers: Seiya Kessen-hen · 東京リベンジャーズ 聖夜決戦編",
+   "total": 13,
+   "year": 2023
+  },
+  "updatedAt": "2026-11-02T23:40:00.000Z"
+ },
+ {
+  "favourite": true,
+  "finished": "2026-10-14",
+  "notes": "",
+  "progress": 25,
+  "repeats": 0,
+  "score": 75,
+  "started": "2026-09-12",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1575.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1575-hsmWM2ydNm1m.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Mecha",
+    "Sci-Fi",
+    "Thriller"
+   ],
+   "id": "anime:1575",
+   "media": "anime",
+   "name": "Code Geass: Lelouch of the Rebellion",
+   "runtime": "24 min",
+   "score": 8.5,
+   "season": "Fall 2006",
+   "state": "Finished",
+   "studio": "Sunrise",
+   "subtitle": "Code Geass: Hangyaku no Lelouch · コードギアス 反逆のルルーシュ",
+   "total": 25,
+   "year": 2006
+  },
+  "updatedAt": "2026-11-02T23:39:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2026-09-21",
+  "notes": "",
+  "progress": 25,
+  "repeats": 0,
+  "score": 90,
+  "started": "2026-08-17",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/2904-X71fcvE83n3s.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2904-Fet9Q33suC7G.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Mecha",
+    "Sci-Fi",
+    "Thriller"
+   ],
+   "id": "anime:2904",
+   "media": "anime",
+   "name": "Code Geass: Lelouch of the Rebellion R2",
+   "runtime": "24 min",
+   "score": 8.7,
+   "season": "Spring 2008",
+   "state": "Finished",
+   "studio": "Sunrise",
+   "subtitle": "Code Geass: Hangyaku no Lelouch R2 · コードギアス 反逆のルルーシュ R2",
+   "total": 25,
+   "year": 2008
+  },
+  "updatedAt": "2026-11-02T23:38:00.000Z"
+ },
+ {
+  "favourite": true,
+  "finished": "2026-08-29",
+  "notes": "",
+  "progress": 24,
+  "repeats": 0,
+  "score": 85,
+  "started": "2026-07-19",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n9253-JIhmKgBKsWUN.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9253-tIUXF2gfU8Sg.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Psychological",
+    "Sci-Fi",
+    "Thriller"
+   ],
+   "id": "anime:9253",
+   "media": "anime",
+   "name": "Steins;Gate",
+   "runtime": "24 min",
+   "score": 8.9,
+   "season": "Spring 2011",
+   "state": "Finished",
+   "studio": "WHITE FOX",
+   "subtitle": "シュタインズ・ゲート",
+   "total": 24,
+   "year": 2011
+  },
+  "updatedAt": "2026-11-02T23:37:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2026-08-06",
+  "notes": "",
+  "progress": 37,
+  "repeats": 0,
+  "score": 90,
+  "started": "2026-07-26",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1535.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1535-kUgkcrfOrkUM.jpg",
+   "format": "TV",
+   "genres": [
+    "Mystery",
+    "Psychological",
+    "Supernatural",
+    "Thriller"
+   ],
+   "id": "anime:1535",
+   "media": "anime",
+   "name": "Death Note",
+   "runtime": "23 min",
+   "score": 8.4,
+   "season": "Fall 2006",
+   "state": "Finished",
+   "studio": "MADHOUSE",
+   "subtitle": "DEATH NOTE · DEATH NOTE",
+   "total": 37,
+   "year": 2006
+  },
+  "updatedAt": "2026-08-13T09:20:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2026-07-14",
+  "notes": "",
+  "progress": 148,
+  "repeats": 0,
+  "score": 85,
+  "started": "2026-06-18",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11061-8WkkTZ6duKpq.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11061-y5gsT1hoHuHw.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+   ],
+   "id": "anime:11061",
+   "media": "anime",
+   "name": "Hunter x Hunter (2011)",
+   "runtime": "24 min",
+   "score": 8.9,
+   "season": "Fall 2011",
+   "state": "Finished",
+   "studio": "MADHOUSE",
+   "subtitle": "HUNTER×HUNTER (2011) · HUNTER×HUNTER (2011)",
+   "total": 148,
+   "year": 2011
+  },
+  "updatedAt": "2026-07-25T06:03:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2026-06-21",
+  "notes": "",
+  "progress": 25,
+  "repeats": 0,
+  "score": 85,
+  "started": "2026-06-02",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/16498-8jpFCOcDmneX.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-buvcRTBx4NSm.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Fantasy",
+    "Mystery"
+   ],
+   "id": "anime:16498",
+   "media": "anime",
+   "name": "Attack on Titan",
+   "runtime": "24 min",
+   "score": 8.5,
+   "season": "Spring 2013",
+   "state": "Finished",
+   "studio": "WIT STUDIO",
+   "subtitle": "Shingeki no Kyojin · 進撃の巨人",
+   "total": 25,
+   "year": 2013
+  },
+  "updatedAt": "2026-07-02T08:11:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2026-05-29",
+  "notes": "",
+  "progress": 12,
+  "repeats": 0,
+  "score": 80,
+  "started": "2026-05-01",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20958-Y7eQdz9VENBD.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20958-HuFJyr54Mmir.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Fantasy",
+    "Mystery"
+   ],
+   "id": "anime:20958",
+   "media": "anime",
+   "name": "Attack on Titan Season 2",
+   "runtime": "25 min",
+   "score": 8.5,
+   "season": "Spring 2017",
+   "state": "Finished",
+   "studio": "WIT STUDIO",
+   "subtitle": "Shingeki no Kyojin Season 2 · 進撃の巨人 Season２",
+   "total": 12,
+   "year": 2017
+  },
+  "updatedAt": "2026-06-13T22:35:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2026-05-06",
+  "notes": "",
+  "progress": 12,
+  "repeats": 0,
+  "score": 75,
+  "started": "2026-03-22",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/99147-HACsFVrynFf5.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99147-AiPDD8cwlCfi.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Fantasy",
+    "Mystery"
+   ],
+   "id": "anime:99147",
+   "media": "anime",
+   "name": "Attack on Titan Season 3",
+   "runtime": "24 min",
+   "score": 8.6,
+   "season": "Summer 2018",
+   "state": "Finished",
+   "studio": "WIT STUDIO",
+   "subtitle": "Shingeki no Kyojin Season 3 · 進撃の巨人 Season３",
+   "total": 12,
+   "year": 2018
+  },
+  "updatedAt": "2026-05-23T05:14:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2026-04-13",
+  "notes": "",
+  "progress": 10,
+  "repeats": 0,
+  "score": 80,
+  "started": "2026-03-11",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/104578-z7SadpYEuAsy.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104578-k61nx3LPjvgd.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Fantasy",
+    "Mystery"
+   ],
+   "id": "anime:104578",
+   "media": "anime",
+   "name": "Attack on Titan Season 3 Part 2",
+   "runtime": "24 min",
+   "score": 8.9,
+   "season": "Spring 2019",
+   "state": "Finished",
+   "studio": "WIT STUDIO",
+   "subtitle": "Shingeki no Kyojin Season 3 Part 2 · 進撃の巨人 Season３ Part.2",
+   "total": 10,
+   "year": 2019
+  },
+  "updatedAt": "2026-05-02T20:58:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2026-03-21",
+  "notes": "",
+  "progress": 24,
+  "repeats": 0,
+  "score": 95,
+  "started": "2026-03-13",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/113415-jQBSkxWAAk83.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113415-LHBAeoZDIsnF.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Supernatural"
+   ],
+   "id": "anime:113415",
+   "media": "anime",
+   "name": "JUJUTSU KAISEN",
+   "runtime": "24 min",
+   "score": 8.4,
+   "season": "Fall 2020",
+   "state": "Finished",
+   "studio": "MAPPA",
+   "subtitle": "Jujutsu Kaisen · 呪術廻戦",
+   "total": 24,
+   "year": 2020
+  },
+  "updatedAt": "2026-04-17T04:47:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2026-02-26",
+  "notes": "",
+  "progress": 23,
+  "repeats": 0,
+  "score": 80,
+  "started": "2026-01-21",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/145064-esDtAY2He7sk.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-hSNRJM03pvv1.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Supernatural"
+   ],
+   "id": "anime:145064",
+   "media": "anime",
+   "name": "JUJUTSU KAISEN Season 2",
+   "runtime": "24 min",
+   "score": 8.6,
+   "season": "Summer 2023",
+   "state": "Finished",
+   "studio": "MAPPA",
+   "subtitle": "Jujutsu Kaisen 2nd Season · 呪術廻戦 第2期",
+   "total": 23,
+   "year": 2023
+  },
+  "updatedAt": "2026-03-24T15:35:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2026-02-03",
+  "notes": "",
+  "progress": 12,
+  "repeats": 0,
+  "score": 90,
+  "started": "2026-01-27",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/127230-o8IRwCGVr9KW.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127230-DdP4vAdssLoz.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Horror",
+    "Supernatural"
+   ],
+   "id": "anime:127230",
+   "media": "anime",
+   "name": "Chainsaw Man",
+   "runtime": "25 min",
+   "score": 8.3,
+   "season": "Fall 2022",
+   "state": "Finished",
+   "studio": "MAPPA",
+   "subtitle": "チェンソーマン",
+   "total": 12,
+   "year": 2022
+  },
+  "updatedAt": "2026-03-05T13:12:00.000Z"
+ },
+ {
+  "favourite": true,
+  "finished": "2026-01-11",
+  "notes": "",
+  "progress": 28,
+  "repeats": 0,
+  "score": 90,
+  "started": "2025-12-13",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/154587-ivXNJ23SM1xB.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Fantasy"
+   ],
+   "id": "anime:154587",
+   "media": "anime",
+   "name": "Frieren: Beyond Journey’s End",
+   "runtime": "24 min",
+   "score": 9.1,
+   "season": "Fall 2023",
+   "state": "Finished",
+   "studio": "MADHOUSE",
+   "subtitle": "Sousou no Frieren · 葬送のフリーレン",
+   "total": 28,
+   "year": 2023
+  },
+  "updatedAt": "2026-02-15T04:32:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2025-12-19",
+  "notes": "",
+  "progress": 12,
+  "repeats": 0,
+  "score": 85,
+  "started": "2025-11-17",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/101921-GgvvFhlNhzlF.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101921-ufrjLzhSz7L1.jpg",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Psychological",
+    "Romance",
+    "Slice of Life"
+   ],
+   "id": "anime:101921",
+   "media": "anime",
+   "name": "Kaguya-sama: Love is War",
+   "runtime": "24 min",
+   "score": 8.3,
+   "season": "Winter 2019",
+   "state": "Finished",
+   "studio": "A-1 Pictures",
+   "subtitle": "Kaguya-sama wa Kokurasetai: Tensaitachi no Renai Zunousen · かぐや様は告らせたい～天才たちの恋愛頭脳戦～",
+   "total": 12,
+   "year": 2019
+  },
+  "updatedAt": "2026-01-26T21:58:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2025-11-26",
+  "notes": "",
+  "progress": 12,
+  "repeats": 0,
+  "score": 90,
+  "started": "2025-10-30",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/112641-mKZe0zng0ndV.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112641-zoGC8d6FaPXU.jpg",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Psychological",
+    "Romance",
+    "Slice of Life"
+   ],
+   "id": "anime:112641",
+   "media": "anime",
+   "name": "Kaguya-sama: Love is War?",
+   "runtime": "25 min",
+   "score": 8.5,
+   "season": "Spring 2020",
+   "state": "Finished",
+   "studio": "A-1 Pictures",
+   "subtitle": "Kaguya-sama wa Kokurasetai?: Tensaitachi no Renai Zunousen · かぐや様は告らせたい？～天才たちの恋愛頭脳戦～",
+   "total": 12,
+   "year": 2020
+  },
+  "updatedAt": "2026-01-06T04:13:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2025-11-03",
+  "notes": "",
+  "progress": 13,
+  "repeats": 0,
+  "score": 85,
+  "started": "2025-10-26",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/125367-hGPJLSNfprO3.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125367-1yuq9NFcQuLI.png",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Psychological",
+    "Romance",
+    "Slice of Life"
+   ],
+   "id": "anime:125367",
+   "media": "anime",
+   "name": "Kaguya-sama: Love is War -Ultra Romantic-",
+   "runtime": "24 min",
+   "score": 8.9,
+   "season": "Spring 2022",
+   "state": "Finished",
+   "studio": "A-1 Pictures",
+   "subtitle": "Kaguya-sama wa Kokurasetai: Ultra Romantic · かぐや様は告らせたい-ウルトラロマンティック-",
+   "total": 13,
+   "year": 2022
+  },
+  "updatedAt": "2025-12-16T04:53:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2025-10-11",
+  "notes": "",
+  "progress": 25,
+  "repeats": 0,
+  "score": 70,
+  "started": "2025-10-04",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21355-f9SjOfEJMk5P.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21355-wRVUrGxpvIQQ.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Psychological",
+    "Romance",
+    "Thriller"
+   ],
+   "id": "anime:21355",
+   "media": "anime",
+   "name": "Re:ZERO -Starting Life in Another World-",
+   "runtime": "25 min",
+   "score": 8.1,
+   "season": "Spring 2016",
+   "state": "Finished",
+   "studio": "WHITE FOX",
+   "subtitle": "Re:Zero kara Hajimeru Isekai Seikatsu · Re:ゼロから始める異世界生活",
+   "total": 25,
+   "year": 2016
+  },
+  "updatedAt": "2025-11-26T02:14:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2025-09-18",
+  "notes": "",
+  "progress": 13,
+  "repeats": 0,
+  "score": 90,
+  "started": "2025-08-30",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/108632-yeLbrgPN4Oni.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108632-lQWnmw7XaNOK.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Psychological",
+    "Thriller"
+   ],
+   "id": "anime:108632",
+   "media": "anime",
+   "name": "Re:ZERO -Starting Life in Another World- Season 2",
+   "runtime": "26 min",
+   "score": 8.3,
+   "season": "Summer 2020",
+   "state": "Finished",
+   "studio": "WHITE FOX",
+   "subtitle": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season · Re:ゼロから始める異世界生活 2nd Season",
+   "total": 13,
+   "year": 2020
+  },
+  "updatedAt": "2025-11-05T01:24:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2025-08-26",
+  "notes": "",
+  "progress": 12,
+  "repeats": 0,
+  "score": 95,
+  "started": "2025-08-16",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/119661-9C7DvtL7yfCu.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx119661-GDbUZxrZMz01.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Psychological",
+    "Romance",
+    "Thriller"
+   ],
+   "id": "anime:119661",
+   "media": "anime",
+   "name": "Re:ZERO -Starting Life in Another World- Season 2 Part 2",
+   "runtime": "30 min",
+   "score": 8.4,
+   "season": "Winter 2021",
+   "state": "Finished",
+   "studio": "WHITE FOX",
+   "subtitle": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season Part 2 · Re:ゼロから始める異世界生活 2nd Season Part 2",
+   "total": 12,
+   "year": 2021
+  },
+  "updatedAt": "2025-10-18T21:00:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2025-08-03",
+  "notes": "",
+  "progress": 16,
+  "repeats": 0,
+  "score": 90,
+  "started": "2025-06-18",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/163134-CqaXjXVivwJ5.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163134-yieRFbvUOH9a.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Psychological",
+    "Romance",
+    "Thriller"
+   ],
+   "id": "anime:163134",
+   "media": "anime",
+   "name": "Re:ZERO -Starting Life in Another World- Season 3",
+   "runtime": "24 min",
+   "score": 8.4,
+   "season": "Fall 2024",
+   "state": "Finished",
+   "studio": "WHITE FOX",
+   "subtitle": "Re:Zero kara Hajimeru Isekai Seikatsu 3rd Season · Re:ゼロから始める異世界生活 3rd season",
+   "total": 16,
+   "year": 2024
+  },
+  "updatedAt": "2025-09-25T20:53:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2025-07-11",
+  "notes": "",
+  "progress": 24,
+  "repeats": 0,
+  "score": 90,
+  "started": "2025-05-27",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/120120-UDYgoHA69peT.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx120120-cWDmnmeEntSe.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Romance",
+    "Supernatural"
+   ],
+   "id": "anime:120120",
+   "media": "anime",
+   "name": "Tokyo Revengers",
+   "runtime": "24 min",
+   "score": 7.7,
+   "season": "Spring 2021",
+   "state": "Finished",
+   "studio": "LIDENFILMS",
+   "subtitle": "東京リベンジャーズ",
+   "total": 24,
+   "year": 2021
+  },
+  "updatedAt": "2025-09-07T21:42:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2025-06-18",
+  "notes": "",
+  "progress": 13,
+  "repeats": 0,
+  "score": 70,
+  "started": "2025-04-19",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21459-yeVkolGKdGUV.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21459-nYh85uj2Fuwr.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy"
+   ],
+   "id": "anime:21459",
+   "media": "anime",
+   "name": "My Hero Academia",
+   "runtime": "24 min",
+   "score": 7.6,
+   "season": "Spring 2016",
+   "state": "Finished",
+   "studio": "bones",
+   "subtitle": "Boku no Hero Academia · 僕のヒーローアカデミア",
+   "total": 13,
+   "year": 2016
+  },
+  "updatedAt": "2025-08-20T07:27:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2025-05-26",
+  "notes": "",
+  "progress": 25,
+  "repeats": 0,
+  "score": 75,
+  "started": "2025-05-16",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21856-wtSHgeHFmzdG.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21856-gutauxhWAwn6.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy"
+   ],
+   "id": "anime:21856",
+   "media": "anime",
+   "name": "My Hero Academia Season 2",
+   "runtime": "24 min",
+   "score": 7.9,
+   "season": "Spring 2017",
+   "state": "Finished",
+   "studio": "bones",
+   "subtitle": "Boku no Hero Academia 2 · 僕のヒーローアカデミア２",
+   "total": 25,
+   "year": 2017
+  },
+  "updatedAt": "2025-07-28T06:58:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2025-05-03",
+  "notes": "",
+  "progress": 25,
+  "repeats": 0,
+  "score": 80,
+  "started": "2025-03-13",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/100166-k7RXwN5vZg0r.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100166-jUCZYbzn2XLw.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama"
+   ],
+   "id": "anime:100166",
+   "media": "anime",
+   "name": "My Hero Academia Season 3",
+   "runtime": "24 min",
+   "score": 7.9,
+   "season": "Spring 2018",
+   "state": "Finished",
+   "studio": "bones",
+   "subtitle": "Boku no Hero Academia 3 · 僕のヒーローアカデミア３",
+   "total": 25,
+   "year": 2018
+  },
+  "updatedAt": "2025-07-10T22:10:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2025-04-10",
+  "notes": "",
+  "progress": 25,
+  "repeats": 0,
+  "score": 100,
+  "started": "2025-03-09",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/104276-PQO1pcNzzWT0.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104276-SnEowMvesWIE.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Sci-Fi"
+   ],
+   "id": "anime:104276",
+   "media": "anime",
+   "name": "My Hero Academia Season 4",
+   "runtime": "24 min",
+   "score": 7.8,
+   "season": "Fall 2019",
+   "state": "Finished",
+   "studio": "bones",
+   "subtitle": "Boku no Hero Academia 4 · 僕のヒーローアカデミア４",
+   "total": 25,
+   "year": 2019
+  },
+  "updatedAt": "2025-06-20T10:31:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2025-03-18",
+  "notes": "",
+  "progress": 74,
+  "repeats": 0,
+  "score": 80,
+  "started": "2025-03-07",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/19-kJhwsB0Z97tL.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19-gtMC64182sm4.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Psychological",
+    "Thriller"
+   ],
+   "id": "anime:19",
+   "media": "anime",
+   "name": "Monster",
+   "runtime": "24 min",
+   "score": 8.8,
+   "season": "Spring 2004",
+   "state": "Finished",
+   "studio": "MADHOUSE",
+   "subtitle": "MONSTER · MONSTER",
+   "total": 74,
+   "year": 2004
+  },
+  "updatedAt": "2025-05-29T08:12:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2025-02-23",
+  "notes": "",
+  "progress": 23,
+  "repeats": 0,
+  "score": 100,
+  "started": "2025-01-03",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21127-6jTjz7ndTHOi.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21127-7ARWZkDXKiiD.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Psychological",
+    "Sci-Fi",
+    "Thriller"
+   ],
+   "id": "anime:21127",
+   "media": "anime",
+   "name": "Steins;Gate 0",
+   "runtime": "24 min",
+   "score": 8.4,
+   "season": "Spring 2018",
+   "state": "Finished",
+   "studio": "WHITE FOX",
+   "subtitle": "シュタインズ・ゲート ゼロ",
+   "total": 23,
+   "year": 2018
+  },
+  "updatedAt": "2025-05-07T14:53:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2025-01-31",
+  "notes": "",
+  "progress": 22,
+  "repeats": 0,
+  "score": 90,
+  "started": "2025-01-15",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20755-D4ipww9U8YkC.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20755-dWrhs569YGUO.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Supernatural"
+   ],
+   "id": "anime:20755",
+   "media": "anime",
+   "name": "Assassination Classroom",
+   "runtime": "23 min",
+   "score": 7.9,
+   "season": "Winter 2015",
+   "state": "Finished",
+   "studio": "Lerche",
+   "subtitle": "Ansatsu Kyoushitsu · 暗殺教室",
+   "total": 22,
+   "year": 2015
+  },
+  "updatedAt": "2025-04-21T03:36:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2025-01-08",
+  "notes": "",
+  "progress": 1,
+  "repeats": 0,
+  "score": 70,
+  "started": "2024-12-29",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/131573-3veuVz5p0z2I.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131573-rpl82vDEDRm6.jpg",
+   "format": "Movie",
+   "genres": [
+    "Action",
+    "Supernatural"
+   ],
+   "id": "anime:131573",
+   "media": "anime",
+   "name": "JUJUTSU KAISEN 0",
+   "runtime": "105 min",
+   "score": 8.3,
+   "season": "Fall 2021",
+   "state": "Finished",
+   "studio": "MAPPA",
+   "subtitle": "Jujutsu Kaisen 0 · 呪術廻戦 0",
+   "total": 1,
+   "year": 2021
+  },
+  "updatedAt": "2025-04-02T09:46:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2024-12-16",
+  "notes": "",
+  "progress": 10,
+  "repeats": 0,
+  "score": 80,
+  "started": "2024-10-28",
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185874-IdGyh1EBG91I.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185874-aU3e6tBT6wwA.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Supernatural"
+   ],
+   "id": "anime:185874",
+   "media": "anime",
+   "name": "BLEACH: Thousand-Year Blood War - The Calamity",
+   "runtime": "24 min",
+   "score": 8.8,
+   "season": "Summer 2026",
+   "state": "Finished",
+   "studio": "PIERROT FILMS",
+   "subtitle": "BLEACH: Sennen Kessen-hen - Kashin-tan · BLEACH 千年血戦篇-禍進譚-",
+   "total": 10,
+   "year": 2026
+  },
+  "updatedAt": "2025-03-09T14:16:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 112,
+  "repeats": 0,
+  "score": 55,
+  "status": "dropped",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1735.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1735-kGfVm0YqCPcu.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Supernatural"
+   ],
+   "id": "anime:1735",
+   "media": "anime",
+   "name": "Naruto: Shippuden",
+   "runtime": "23 min",
+   "score": 8.2,
+   "season": "Winter 2007",
+   "state": "Finished",
+   "studio": "Studio Pierrot",
+   "subtitle": "NARUTO: Shippuuden · NARUTO -ナルト- 疾風伝",
+   "total": 500,
+   "year": 2007
+  },
+  "updatedAt": "2025-06-27T08:25:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 64,
+  "repeats": 0,
+  "score": 55,
+  "status": "dropped",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/97940-1URQdQ4U1a0b.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97940-fyh8o7gNbha0.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+   ],
+   "id": "anime:97940",
+   "media": "anime",
+   "name": "Black Clover",
+   "runtime": "24 min",
+   "score": 7.9,
+   "season": "Fall 2017",
+   "state": "Finished",
+   "studio": "Studio Pierrot",
+   "subtitle": "ブラッククローバー",
+   "total": 170,
+   "year": 2017
+  },
+  "updatedAt": "2025-07-06T05:03:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 41,
+  "repeats": 0,
+  "score": 55,
+  "status": "dropped",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Supernatural"
+   ],
+   "id": "anime:269",
+   "media": "anime",
+   "name": "Bleach",
+   "runtime": "24 min",
+   "score": 7.9,
+   "season": "Fall 2004",
+   "state": "Finished",
+   "studio": "Studio Pierrot",
+   "subtitle": "BLEACH · BLEACH",
+   "total": 366,
+   "year": 2004
+  },
+  "updatedAt": "2025-06-29T21:47:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21170-3sLTirZD2J4K.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21170-kbcfTTZGSaFt.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Supernatural"
+   ],
+   "id": "anime:21170",
+   "media": "anime",
+   "name": "Assassination Classroom Second Season",
+   "runtime": "23 min",
+   "score": 8.3,
+   "season": "Winter 2016",
+   "state": "Finished",
+   "studio": "Lerche",
+   "subtitle": "Ansatsu Kyoushitsu 2nd Season · 暗殺教室 第２期",
+   "total": 25,
+   "year": 2016
+  },
+  "updatedAt": "2026-10-23T19:31:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195516-B5M0cPaQbQXI.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Mystery"
+   ],
+   "id": "anime:195516",
+   "media": "anime",
+   "name": "The Apothecary Diaries Season 3",
+   "next": {
+    "at": "2026-11-06T14:00:00.000Z",
+    "episode": 6
+   },
+   "runtime": "24 min",
+   "score": 8.5,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "OLM",
+   "subtitle": "Kusuriya no Hitorigoto 3rd Season · 薬屋のひとりごと 第3期",
+   "total": 12,
+   "year": 2026
+  },
+  "updatedAt": "2026-10-20T11:37:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198966-9Ji1GwIyRiiu.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Sci-Fi",
+    "Supernatural"
+   ],
+   "id": "anime:198966",
+   "media": "anime",
+   "name": "Dandadan 3rd Season",
+   "state": "Not yet released",
+   "studio": "Science SARU",
+   "subtitle": "ダンダダン 第3期",
+   "year": 2027
+  },
+  "updatedAt": "2026-10-16T20:22:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209939-g2Njkml1rheG.jpg",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Fantasy"
+   ],
+   "id": "anime:209939",
+   "media": "anime",
+   "name": "Sousou no Frieren 3rd Season",
+   "season": "Fall 2027",
+   "state": "Not yet released",
+   "studio": "MADHOUSE",
+   "subtitle": "葬送のフリーレン 第3期",
+   "year": 2027
+  },
+  "updatedAt": "2026-10-14T04:48:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178031-XNWYP6Qf18bB.png",
+   "format": "ONA",
+   "genres": [
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+   ],
+   "id": "anime:178031",
+   "media": "anime",
+   "name": "Delicious in Dungeon Season 2",
+   "season": "Fall 2027",
+   "state": "Not yet released",
+   "studio": "TRIGGER",
+   "subtitle": "Dungeon Meshi 2nd Season · ダンジョン飯 第２期",
+   "year": 2027
+  },
+  "updatedAt": "2026-10-11T08:41:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186712-d5I2TjUQcHuI.jpg",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Music",
+    "Slice of Life"
+   ],
+   "id": "anime:186712",
+   "media": "anime",
+   "name": "Bocchi the Rock! 2nd Season",
+   "state": "Not yet released",
+   "studio": "CloverWorks",
+   "subtitle": "ぼっち・ざ・ろっく！ 2期"
+  },
+  "updatedAt": "2026-10-08T05:49:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx213702-vCWQFcAfDF8c.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Fantasy"
+   ],
+   "id": "anime:213702",
+   "media": "anime",
+   "name": "Witch Hat Atelier Season 2",
+   "state": "Not yet released",
+   "studio": "BUG FILMS",
+   "subtitle": "Tongari Boushi no Atelier 2nd Season · とんがり帽子のアトリエ 第2期"
+  },
+  "updatedAt": "2026-10-06T13:55:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195200-wJaLJ4mDDKGc.png",
+   "format": "Movie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Supernatural"
+   ],
+   "id": "anime:195200",
+   "media": "anime",
+   "name": "Demon Slayer: Kimetsu no Yaiba Infinity Castle Part 2",
+   "state": "Not yet released",
+   "studio": "ufotable",
+   "subtitle": "Kimetsu no Yaiba: Mugenjou-hen Movie 2 · 劇場版「鬼滅の刃」無限城編 第二章",
+   "total": 1
+  },
+  "updatedAt": "2026-10-02T18:16:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189323-gHXhqIOBUY8F.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Sci-Fi"
+   ],
+   "id": "anime:189323",
+   "media": "anime",
+   "name": "Shangri-La Frontier Season 3",
+   "next": {
+    "at": "2027-01-17T08:00:00.000Z",
+    "episode": 1
+   },
+   "season": "Winter 2027",
+   "state": "Not yet released",
+   "studio": "C2C",
+   "subtitle": "Shangri-La Frontier 3rd Season · シャングリラ・フロンティア 3rd season",
+   "year": 2027
+  },
+  "updatedAt": "2026-09-29T21:06:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx217434-xqZNBp5U3hgY.jpg",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Ecchi",
+    "Fantasy"
+   ],
+   "id": "anime:217434",
+   "media": "anime",
+   "name": "Mushoku Tensei III: Isekai Ittara Honki Dasu Part 2",
+   "state": "Not yet released",
+   "studio": "Studio Bind",
+   "subtitle": "無職転生Ⅲ ～異世界行ったら本気だす～ 第2クール",
+   "year": 2027
+  },
+  "updatedAt": "2026-09-27T03:24:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209827-uHqVlWylCpTT.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Mystery",
+    "Psychological",
+    "Supernatural"
+   ],
+   "id": "anime:209827",
+   "media": "anime",
+   "name": "[Oshi no Ko] Final Season",
+   "state": "Not yet released",
+   "studio": "Doga Kobo",
+   "subtitle": "【推しの子】第4期 Final Season"
+  },
+  "updatedAt": "2026-09-23T04:50:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204429-9scYA2ab3Zz3.jpg",
+   "genres": [
+    "Action",
+    "Drama",
+    "Horror",
+    "Supernatural"
+   ],
+   "id": "anime:204429",
+   "media": "anime",
+   "name": "Chainsaw Man: Shikaku-hen",
+   "state": "Not yet released",
+   "studio": "MAPPA",
+   "subtitle": "チェンソーマン 刺客篇"
+  },
+  "updatedAt": "2026-09-21T06:47:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206949-c5hfhixdgvy5.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Fantasy"
+   ],
+   "id": "anime:206949",
+   "media": "anime",
+   "name": "Nia Liston: The Merciless Maiden",
+   "next": {
+    "at": "2026-11-10T12:26:00.000Z",
+    "episode": 6
+   },
+   "runtime": "24 min",
+   "score": 7.5,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "KONAMI animation",
+   "subtitle": "Kyouran Reijou Nia Liston · 凶乱令嬢ニア・リストン",
+   "total": 25,
+   "year": 2026
+  },
+  "updatedAt": "2026-09-17T10:53:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/212888-ZsnNegBCKXQq.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg",
+   "format": "ONA",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+   ],
+   "id": "anime:212888",
+   "media": "anime",
+   "name": "Overgeared",
+   "next": {
+    "at": "2026-11-08T14:30:00.000Z",
+    "episode": 7
+   },
+   "runtime": "24 min",
+   "score": 7.6,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "J.C.STAFF",
+   "subtitle": "Tempal: Item no Chikara · テムパル～アイテムの力～",
+   "total": 12,
+   "year": 2026
+  },
+  "updatedAt": "2026-09-15T08:38:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/191656-JQILdzh3FQxN.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Ecchi",
+    "Slice of Life"
+   ],
+   "id": "anime:191656",
+   "media": "anime",
+   "name": "Even the Student Council Has Its Holes!",
+   "next": {
+    "at": "2026-11-07T15:30:00.000Z",
+    "episode": 6
+   },
+   "runtime": "24 min",
+   "score": 7.3,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "Passione",
+   "subtitle": "Seitokai ni mo Ana wa Aru! · 生徒会にも穴はある！",
+   "total": 12,
+   "year": 2026
+  },
+  "updatedAt": "2026-09-10T23:19:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 97,
+  "repeats": 0,
+  "score": 85,
+  "started": "2025-02-11",
+  "status": "current",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/105778-ppHaMwown6c9.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-euxXZEIfDY2u.png",
+   "format": "Manga",
+   "genres": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Horror",
+    "Supernatural"
+   ],
+   "id": "manga:105778",
+   "media": "manga",
+   "name": "Chainsaw Man",
+   "score": 8.4,
+   "state": "Finished",
+   "subtitle": "チェンソーマン",
+   "total": 232,
+   "volumes": 24,
+   "year": 2018
+  },
+  "updatedAt": "2026-10-25T08:41:00.000Z",
+  "volume": 11
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 97,
+  "repeats": 0,
+  "score": 95,
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30656-XYzvRlsc3iK4.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30656-9mW113O7rDnA.png",
+   "format": "Manga",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama"
+   ],
+   "id": "manga:30656",
+   "media": "manga",
+   "name": "Vagabond",
+   "score": 9.1,
+   "state": "Releasing",
+   "subtitle": "バガボンド",
+   "year": 1998
+  },
+  "updatedAt": "2025-12-24T09:29:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 290,
+  "repeats": 0,
+  "score": 95,
+  "status": "hold",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30002-3TuoSMl20fUX.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30002-Cul4OeN7bYtn.jpg",
+   "format": "Manga",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Horror",
+    "Psychological"
+   ],
+   "id": "manga:30002",
+   "media": "manga",
+   "name": "Berserk",
+   "score": 9.2,
+   "state": "Releasing",
+   "subtitle": "ベルセルク",
+   "year": 1989
+  },
+  "updatedAt": "2026-04-11T14:28:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 224,
+  "repeats": 0,
+  "score": 90,
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30642-MeizzL2WDv6C.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30642-0mjRDkf4THpo.jpg",
+   "format": "Manga",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama"
+   ],
+   "id": "manga:30642",
+   "media": "manga",
+   "name": "Vinland Saga",
+   "score": 9.0,
+   "state": "Finished",
+   "subtitle": "ヴィンランド・サガ",
+   "total": 224,
+   "volumes": 29,
+   "year": 2005
+  },
+  "updatedAt": "2026-10-01T08:57:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/132029-V1x9JAh3G8QK.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx132029-prGF4gePdSKv.jpg",
+   "format": "Manga",
+   "genres": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Romance",
+    "Sci-Fi",
+    "Supernatural"
+   ],
+   "id": "manga:132029",
+   "media": "manga",
+   "name": "Dandadan",
+   "score": 8.2,
+   "state": "Releasing",
+   "subtitle": "ダンダダン",
+   "year": 2021
+  },
+  "updatedAt": "2026-08-04T03:53:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/169355-MzURKZ3veXa7.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx169355-5pqzh1Wb4NOQ.png",
+   "format": "Manga",
+   "genres": [
+    "Action",
+    "Drama",
+    "Fantasy"
+   ],
+   "id": "manga:169355",
+   "media": "manga",
+   "name": "Kagurabachi",
+   "score": 7.9,
+   "state": "Releasing",
+   "subtitle": "カグラバチ",
+   "year": 2023
+  },
+  "updatedAt": "2025-10-02T23:14:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 140,
+  "repeats": 0,
+  "score": 90,
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/118586-R1c7mc72oPvS.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx118586-CXKgWikBFQgS.jpg",
+   "format": "Manga",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Fantasy"
+   ],
+   "id": "manga:118586",
+   "media": "manga",
+   "name": "Frieren: Beyond Journey’s End",
+   "score": 8.7,
+   "state": "Releasing",
+   "subtitle": "Sousou no Frieren · 葬送のフリーレン",
+   "year": 2020
+  },
+  "updatedAt": "2026-10-15T23:39:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/98263-inZk3YmhgbQh.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx98263-kIeaTXrAbGkj.jpg",
+   "format": "Manga",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Fantasy"
+   ],
+   "id": "manga:98263",
+   "media": "manga",
+   "name": "Witch Hat Atelier",
+   "score": 8.7,
+   "state": "Releasing",
+   "subtitle": "Tongari Boushi no Atelier · とんがり帽子のアトリエ",
+   "year": 2016
+  },
+  "updatedAt": "2026-08-01T18:04:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 201,
+  "repeats": 0,
+  "score": 70,
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/105398-4UrEhdqZukrg.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105398-b673Vt5ZSuz3.jpg",
+   "format": "Manga",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+   ],
+   "id": "manga:105398",
+   "media": "manga",
+   "name": "Solo Leveling",
+   "score": 8.4,
+   "state": "Finished",
+   "subtitle": "Na Honjaman Level Up · 나 혼자만 레벨업",
+   "total": 201,
+   "volumes": 15,
+   "year": 2018
+  },
+  "updatedAt": "2026-01-27T22:24:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 147,
+  "repeats": 0,
+  "score": 85,
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/34632-JULTgA6q6jAH.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx34632-5xMDkx3pXsEh.png",
+   "format": "Manga",
+   "genres": [
+    "Drama",
+    "Psychological",
+    "Slice of Life"
+   ],
+   "id": "manga:34632",
+   "media": "manga",
+   "name": "Goodnight Punpun",
+   "score": 8.8,
+   "state": "Finished",
+   "subtitle": "Oyasumi Punpun · おやすみプンプン",
+   "total": 147,
+   "volumes": 13,
+   "year": 2007
+  },
+  "updatedAt": "2025-10-25T20:25:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 162,
+  "repeats": 0,
+  "score": 95,
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/1-x9ksIvb9cKK2.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30001-Knby7l1jevE7.jpg",
+   "format": "Manga",
+   "genres": [
+    "Drama",
+    "Mystery",
+    "Psychological",
+    "Thriller"
+   ],
+   "id": "manga:30001",
+   "media": "manga",
+   "name": "Monster",
+   "score": 9.0,
+   "state": "Finished",
+   "subtitle": "MONSTER · MONSTER",
+   "total": 162,
+   "volumes": 18,
+   "year": 1994
+  },
+  "updatedAt": "2026-05-30T16:22:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 88,
+  "repeats": 0,
+  "score": 60,
+  "status": "dropped",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/106130-4UbnMTU80zur.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx106130-yPNeuSu75ey1.jpg",
+   "format": "Manga",
+   "genres": [
+    "Action",
+    "Drama",
+    "Sports"
+   ],
+   "id": "manga:106130",
+   "media": "manga",
+   "name": "Blue Lock",
+   "score": 8.2,
+   "state": "Releasing",
+   "subtitle": "ブルーロック",
+   "year": 2018
+  },
+  "updatedAt": "2025-10-12T22:43:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 272,
+  "repeats": 0,
+  "score": 75,
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/101517-FrJtb3Th3HtF.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx101517-H3TdM3g5ZUe9.jpg",
+   "format": "Manga",
+   "genres": [
+    "Action",
+    "Drama",
+    "Supernatural"
+   ],
+   "id": "manga:101517",
+   "media": "manga",
+   "name": "Jujutsu Kaisen",
+   "score": 8.0,
+   "state": "Finished",
+   "subtitle": "呪術廻戦",
+   "total": 272,
+   "volumes": 30,
+   "year": 2018
+  },
+  "updatedAt": "2026-08-25T00:17:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/125828-wnmpFCNg0WkK.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx125828-p78Z8SflkfmO.jpg",
+   "format": "Manga",
+   "genres": [
+    "Action",
+    "Comedy"
+   ],
+   "id": "manga:125828",
+   "media": "manga",
+   "name": "Sakamoto Days",
+   "score": 7.9,
+   "state": "Releasing",
+   "subtitle": "SAKAMOTO DAYS · SAKAMOTO DAYS",
+   "year": 2020
+  },
+  "updatedAt": "2026-09-12T10:35:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 249,
+  "repeats": 0,
+  "score": 90,
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30003-MBm3u1K1uHsi.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30003-E84fwIh22LAQ.jpg",
+   "format": "Manga",
+   "genres": [
+    "Drama",
+    "Mystery",
+    "Psychological",
+    "Sci-Fi",
+    "Thriller"
+   ],
+   "id": "manga:30003",
+   "media": "manga",
+   "name": "20th Century Boys",
+   "score": 8.8,
+   "state": "Finished",
+   "subtitle": "20 Seiki Shounen · 20世紀少年",
+   "total": 249,
+   "volumes": 22,
+   "year": 1999
+  },
+  "updatedAt": "2026-02-21T16:11:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30013-hbbRZqC5MjYh.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30013-BeslEMqiPhlk.jpg",
+   "format": "Manga",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+   ],
+   "id": "manga:30013",
+   "media": "manga",
+   "name": "One Piece",
+   "score": 9.1,
+   "state": "Releasing",
+   "subtitle": "ONE PIECE · ONE PIECE",
+   "year": 1997
+  },
+  "updatedAt": "2026-04-03T19:26:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/53390-6Uru5rrjh8zv.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx53390-1RsuABC34P9D.jpg",
+   "format": "Manga",
+   "genres": [
+    "Action",
+    "Drama",
+    "Fantasy",
+    "Mystery"
+   ],
+   "id": "manga:53390",
+   "media": "manga",
+   "name": "Attack on Titan",
+   "score": 8.4,
+   "state": "Finished",
+   "subtitle": "Shingeki no Kyojin · 進撃の巨人",
+   "total": 141,
+   "volumes": 34,
+   "year": 2009
+  },
+  "updatedAt": "2026-05-31T08:23:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "completed",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/87216-TVKEGfSxAqKs.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx87216-c9bSNVD10UuD.png",
+   "format": "Manga",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Supernatural"
+   ],
+   "id": "manga:87216",
+   "media": "manga",
+   "name": "Demon Slayer: Kimetsu no Yaiba",
+   "score": 7.9,
+   "state": "Finished",
+   "subtitle": "Kimetsu no Yaiba · 鬼滅の刃",
+   "total": 207,
+   "volumes": 23,
+   "year": 2016
+  },
+  "updatedAt": "2025-12-13T21:39:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/63327-uaFaG1HAJ0tK.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx63327-glC9cDxYBja9.png",
+   "format": "Manga",
+   "genres": [
+    "Action",
+    "Horror",
+    "Mystery",
+    "Psychological",
+    "Supernatural"
+   ],
+   "id": "manga:63327",
+   "media": "manga",
+   "name": "Tokyo Ghoul",
+   "score": 8.5,
+   "state": "Finished",
+   "subtitle": "東京喰種 トーキョーグール",
+   "total": 144,
+   "volumes": 14,
+   "year": 2011
+  },
+  "updatedAt": "2025-10-15T07:33:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 15,
+  "repeats": 0,
+  "score": 90,
+  "season": 2,
+  "started": "2025-01-20",
+  "status": "current",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/ixgFmf1X59PUZam2qbAfskx2gQr.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Mystery",
+    "Sci-Fi & Fantasy"
+   ],
+   "id": "tv:95396",
+   "media": "tv",
+   "name": "Severance",
+   "score": 8.4,
+   "year": 2022
+  },
+  "updatedAt": "2026-10-24T14:41:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 24,
+  "repeats": 0,
+  "score": 85,
+  "status": "completed",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Comedy"
+   ],
+   "id": "tv:136315",
+   "media": "tv",
+   "name": "The Bear",
+   "score": 8.2,
+   "year": 2022
+  },
+  "updatedAt": "2025-09-26T11:53:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 17,
+  "repeats": 0,
+  "score": 95,
+  "status": "completed",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/bwSmgmd90hCWwqOKQYTEraeOZhJ.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "War & Politics"
+   ],
+   "id": "tv:126308",
+   "media": "tv",
+   "name": "Shōgun",
+   "score": 8.4,
+   "year": 2024
+  },
+  "updatedAt": "2026-03-09T00:47:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 36,
+  "repeats": 0,
+  "score": 85,
+  "status": "completed",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/lY2DhbA7Hy44fAKddr06UrXWWaQ.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama"
+   ],
+   "id": "tv:100088",
+   "media": "tv",
+   "name": "The Last of Us",
+   "score": 8.4,
+   "year": 2023
+  },
+  "updatedAt": "2026-07-29T12:08:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 10,
+  "repeats": 0,
+  "score": 95,
+  "status": "completed",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/quCeAmVQHfsdcYkicbxZWVauCVb.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+   "format": "TV",
+   "genres": [
+    "Sci-Fi & Fantasy",
+    "Action & Adventure",
+    "Drama",
+    "War & Politics"
+   ],
+   "id": "tv:83867",
+   "media": "tv",
+   "name": "Andor",
+   "score": 8.3,
+   "year": 2022
+  },
+  "updatedAt": "2026-02-02T22:59:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 23,
+  "repeats": 0,
+  "score": 100,
+  "status": "completed",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/tsRy63Mu5cu8etL1X7ZLyf7UP1M.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Crime"
+   ],
+   "id": "tv:1396",
+   "media": "tv",
+   "name": "Breaking Bad",
+   "score": 9.0,
+   "year": 2008
+  },
+  "updatedAt": "2025-08-18T08:39:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 38,
+  "repeats": 0,
+  "score": 80,
+  "status": "hold",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/gPQppUnLx9vqPDLz3WwZ2HJsNbt.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+   "format": "TV",
+   "genres": [
+    "Crime",
+    "Drama",
+    "Mystery"
+   ],
+   "id": "tv:95480",
+   "media": "tv",
+   "name": "Slow Horses",
+   "score": 8.1,
+   "year": 2022
+  },
+  "updatedAt": "2026-01-25T23:38:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/ulm1ex4JFYJByyaPyqTr47MFyEQ.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Sci-Fi & Fantasy"
+   ],
+   "id": "tv:225171",
+   "media": "tv",
+   "name": "Pluribus",
+   "score": 7.9,
+   "year": 2025
+  },
+  "updatedAt": "2025-09-10T08:48:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 35,
+  "repeats": 0,
+  "score": 60,
+  "status": "dropped",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+   "format": "TV",
+   "genres": [
+    "Sci-Fi & Fantasy",
+    "Action & Adventure"
+   ],
+   "id": "tv:76479",
+   "media": "tv",
+   "name": "The Boys",
+   "score": 8.4,
+   "year": 2019
+  },
+  "updatedAt": "2025-10-05T19:12:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 14,
+  "repeats": 0,
+  "score": 95,
+  "status": "completed",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/900tHlUYUkp7Ol04XFSoAaEIXcT.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama"
+   ],
+   "id": "tv:87108",
+   "media": "tv",
+   "name": "Chernobyl",
+   "score": 8.7,
+   "year": 2019
+  },
+  "updatedAt": "2026-05-14T18:20:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+   "format": "TV",
+   "genres": [
+    "Action & Adventure",
+    "Crime"
+   ],
+   "id": "tv:108978",
+   "media": "tv",
+   "name": "Reacher",
+   "score": 8.1,
+   "year": 2022
+  },
+  "updatedAt": "2025-07-17T21:42:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 10,
+  "repeats": 0,
+  "score": 75,
+  "status": "completed",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/QZaPkNUvhdcKONuO2fXuqtcQRo.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
+   "format": "TV",
+   "genres": [
+    "Mystery",
+    "Drama",
+    "Action & Adventure"
+   ],
+   "id": "tv:110316",
+   "media": "tv",
+   "name": "Alice in Borderland",
+   "score": 8.1,
+   "year": 2020
+  },
+  "updatedAt": "2025-10-01T07:59:00.000Z"
+ },
+ {
+  "favourite": true,
+  "finished": "2026-10-22",
+  "notes": "",
+  "progress": 1,
+  "repeats": 0,
+  "score": 90,
+  "status": "completed",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+   "format": "Movie",
+   "genres": [
+    "Science Fiction",
+    "Adventure"
+   ],
+   "id": "movie:693134",
+   "media": "movie",
+   "name": "Dune: Part Two",
+   "runtime": "2h 47m",
+   "score": 8.1,
+   "year": 2024
+  },
+  "updatedAt": "2026-10-22T14:41:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2026-09-21",
+  "notes": "",
+  "progress": 1,
+  "repeats": 0,
+  "score": 85,
+  "status": "completed",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/neeNHeXjMF5fXoCJRsOmkNGC7q.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+   "format": "Movie",
+   "genres": [
+    "Drama",
+    "History",
+    "War"
+   ],
+   "id": "movie:872585",
+   "media": "movie",
+   "name": "Oppenheimer",
+   "runtime": "3h 1m",
+   "score": 8.0,
+   "year": 2023
+  },
+  "updatedAt": "2026-09-07T10:34:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2026-08-21",
+  "notes": "",
+  "progress": 1,
+  "repeats": 0,
+  "score": 90,
+  "status": "completed",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+   "format": "Movie",
+   "genres": [
+    "Horror",
+    "Action",
+    "Thriller"
+   ],
+   "id": "movie:1233413",
+   "media": "movie",
+   "name": "Sinners",
+   "runtime": "2h 18m",
+   "score": 7.5,
+   "year": 2025
+  },
+  "updatedAt": "2026-08-14T23:58:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2026-07-21",
+  "notes": "",
+  "progress": 1,
+  "repeats": 0,
+  "score": 85,
+  "status": "completed",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/7HR38hMBl23lf38MAN63y4pKsHz.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+   "format": "Movie",
+   "genres": [
+    "Drama",
+    "Romance"
+   ],
+   "id": "movie:666277",
+   "media": "movie",
+   "name": "Past Lives",
+   "runtime": "1h 46m",
+   "score": 7.7,
+   "year": 2023
+  },
+  "updatedAt": "2026-07-13T21:37:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2026-06-20",
+  "notes": "",
+  "progress": 1,
+  "repeats": 0,
+  "score": 95,
+  "status": "completed",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/fIwiFha3WPu5nHkBeMQ4GzEk0Hv.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+   "format": "Movie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Science Fiction"
+   ],
+   "id": "movie:545611",
+   "media": "movie",
+   "name": "Everything Everywhere All at Once",
+   "runtime": "2h 20m",
+   "score": 7.7,
+   "year": 2022
+  },
+  "updatedAt": "2026-06-09T10:43:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2026-05-20",
+  "notes": "",
+  "progress": 1,
+  "repeats": 0,
+  "score": 80,
+  "status": "completed",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/rvtdN5XkWAfGX6xDuPL6yYS2seK.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+   "format": "Movie",
+   "genres": [
+    "Crime",
+    "Mystery",
+    "Thriller"
+   ],
+   "id": "movie:414906",
+   "media": "movie",
+   "name": "The Batman",
+   "runtime": "2h 57m",
+   "score": 7.7,
+   "year": 2022
+  },
+  "updatedAt": "2026-05-16T10:52:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/8VyTWJrNEyV2MTWvniDVp0MpOAe.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+   "format": "Movie",
+   "genres": [
+    "Horror",
+    "Mystery"
+   ],
+   "id": "movie:1078605",
+   "media": "movie",
+   "name": "Weapons",
+   "runtime": "2h 8m",
+   "score": 7.3,
+   "year": 2025
+  },
+  "updatedAt": "2026-04-16T17:02:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/hiazLNa1UXuX35OTnMQRKOx3eTk.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+   "format": "Movie",
+   "genres": [
+    "Thriller",
+    "Crime",
+    "Comedy"
+   ],
+   "id": "movie:1054867",
+   "media": "movie",
+   "name": "One Battle After Another",
+   "runtime": "2h 42m",
+   "score": 7.3,
+   "year": 2025
+  },
+  "updatedAt": "2026-03-11T13:17:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2026-02-16",
+  "notes": "",
+  "progress": 1,
+  "repeats": 0,
+  "score": 100,
+  "status": "completed",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/8sNiAPPYU14PUepFNeSNGUTiHW.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+   "format": "Movie",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Science Fiction"
+   ],
+   "id": "movie:157336",
+   "media": "movie",
+   "name": "Interstellar",
+   "runtime": "2h 49m",
+   "score": 8.5,
+   "year": 2014
+  },
+  "updatedAt": "2026-02-10T15:38:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2026-01-16",
+  "notes": "",
+  "progress": 1,
+  "repeats": 0,
+  "score": 95,
+  "status": "completed",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+   "format": "Movie",
+   "genres": [
+    "Comedy",
+    "Thriller",
+    "Drama"
+   ],
+   "id": "movie:496243",
+   "media": "movie",
+   "name": "Parasite",
+   "runtime": "2h 13m",
+   "score": 8.5,
+   "year": 2019
+  },
+  "updatedAt": "2026-01-10T21:17:00.000Z"
+ },
+ {
+  "favourite": false,
+  "finished": "2025-12-16",
+  "notes": "",
+  "progress": 1,
+  "repeats": 0,
+  "score": 85,
+  "status": "completed",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/nlPCdZlHtRNcF6C9hzUH4ebmV1w.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+   "format": "Movie",
+   "genres": [
+    "Comedy",
+    "Drama",
+    "Romance"
+   ],
+   "id": "movie:313369",
+   "media": "movie",
+   "name": "La La Land",
+   "runtime": "2h 9m",
+   "score": 7.9,
+   "year": 2016
+  },
+  "updatedAt": "2025-12-17T06:06:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "banner": "https://image.tmdb.org/t/p/w1280/lgotja3xMoJZbynwHfcQcJAEMWH.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+   "format": "Movie",
+   "genres": [
+    "Animation",
+    "Adventure",
+    "Comedy",
+    "Mystery",
+    "Family"
+   ],
+   "id": "movie:1084242",
+   "media": "movie",
+   "name": "Zootopia 2",
+   "runtime": "1h 48m",
+   "score": 7.7,
+   "year": 2025
+  },
+  "updatedAt": "2025-11-11T09:30:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 212,
+  "repeats": 0,
+  "started": "2026-10-18",
+  "status": "current",
+  "title": {
+   "cover": "https://covers.openlibrary.org/b/id/11200092-L.jpg",
+   "format": "Book",
+   "genres": [
+    "hard science-fiction",
+    "science-fiction",
+    "sci-fi",
+    "hard sci-fi"
+   ],
+   "id": "book:OL21745884W",
+   "media": "book",
+   "name": "Project Hail Mary",
+   "score": 9.1,
+   "studio": "Andy Weir",
+   "subtitle": "Andy Weir",
+   "total": 496,
+   "year": 2021
+  },
+  "updatedAt": "2026-10-23T14:41:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 407,
+  "repeats": 0,
+  "score": 90,
+  "status": "completed",
+  "title": {
+   "cover": "https://covers.openlibrary.org/b/id/11447888-L.jpg",
+   "format": "Book",
+   "genres": [
+    "Science-Fiction",
+    "Science Fiction & Fantasy",
+    "Suspense & Thriller",
+    "Science fiction"
+   ],
+   "id": "book:OL17091839W",
+   "media": "book",
+   "name": "The Martian",
+   "score": 8.8,
+   "studio": "Andy Weir",
+   "subtitle": "Andy Weir",
+   "total": 407,
+   "year": 2011
+  },
+  "updatedAt": "2025-05-14T13:41:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 608,
+  "repeats": 0,
+  "score": 85,
+  "status": "completed",
+  "title": {
+   "cover": "https://covers.openlibrary.org/b/id/11481354-L.jpg",
+   "format": "Book",
+   "genres": [
+    "Dune (Imaginary place)",
+    "Fiction",
+    "Fiction, science fiction, general",
+    "Dune (imaginary place), fiction"
+   ],
+   "id": "book:OL893414W",
+   "media": "book",
+   "name": "Dune",
+   "score": 8.6,
+   "studio": "Frank Herbert",
+   "subtitle": "Frank Herbert",
+   "total": 608,
+   "year": 1965
+  },
+  "updatedAt": "2026-01-26T21:13:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 272,
+  "repeats": 0,
+  "score": 95,
+  "status": "completed",
+  "title": {
+   "cover": "https://covers.openlibrary.org/b/id/10226290-L.jpg",
+   "format": "Book",
+   "genres": [
+    "English literature",
+    "Labyrinths",
+    "Fiction",
+    "Curiosities and wonders"
+   ],
+   "id": "book:OL20893680W",
+   "media": "book",
+   "name": "Piranesi",
+   "score": 8.7,
+   "studio": "Susanna Clarke",
+   "subtitle": "Susanna Clarke",
+   "total": 272,
+   "year": 2020
+  },
+  "updatedAt": "2025-05-20T09:47:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "cover": "https://covers.openlibrary.org/b/id/12859975-L.jpg",
+   "format": "Book",
+   "genres": [
+    "American literature",
+    "Modern fiction",
+    "Fiction"
+   ],
+   "id": "book:OL26004554W",
+   "media": "book",
+   "name": "Tomorrow, and Tomorrow, and Tomorrow",
+   "score": 8.5,
+   "studio": "Gabrielle Zevin",
+   "subtitle": "Gabrielle Zevin",
+   "total": 460,
+   "year": 2022
+  },
+  "updatedAt": "2026-01-18T00:20:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 334,
+  "repeats": 0,
+  "score": 80,
+  "status": "completed",
+  "title": {
+   "cover": "https://covers.openlibrary.org/b/id/10648686-L.jpg",
+   "format": "Book",
+   "genres": [
+    "Fiction, science fiction, general",
+    "speculative fiction",
+    "Fiction, dystopian",
+    "British and irish fiction (fictional works by one author)"
+   ],
+   "id": "book:OL20883297W",
+   "media": "book",
+   "name": "Klara and the Sun",
+   "score": 7.6,
+   "studio": "Kazuo Ishiguro",
+   "subtitle": "Kazuo Ishiguro",
+   "total": 334,
+   "year": 2019
+  },
+  "updatedAt": "2026-09-14T20:02:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 0,
+  "repeats": 0,
+  "status": "planned",
+  "title": {
+   "cover": "https://covers.openlibrary.org/b/id/12468631-L.jpg",
+   "format": "Book",
+   "genres": [
+    "Translators",
+    "Fiction",
+    "Chinese",
+    "Imperialism"
+   ],
+   "id": "book:OL26443093W",
+   "media": "book",
+   "name": "Babel",
+   "score": 8.1,
+   "studio": "R. F. Kuang",
+   "subtitle": "R. F. Kuang",
+   "total": 577,
+   "year": 2022
+  },
+  "updatedAt": "2025-09-29T09:39:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 310,
+  "repeats": 0,
+  "score": 90,
+  "status": "completed",
+  "title": {
+   "cover": "https://covers.openlibrary.org/b/id/14627509-L.jpg",
+   "format": "Book",
+   "genres": [
+    "Fantasy",
+    "Arkenstone",
+    "Battle of Five Armies",
+    "invisibility"
+   ],
+   "id": "book:OL27482W",
+   "media": "book",
+   "name": "The Hobbit",
+   "score": 8.6,
+   "studio": "J.R.R. Tolkien",
+   "subtitle": "J.R.R. Tolkien",
+   "total": 310,
+   "year": 1937
+  },
+  "updatedAt": "2025-04-08T23:55:00.000Z"
+ },
+ {
+  "favourite": false,
+  "notes": "",
+  "progress": 319,
+  "repeats": 0,
+  "score": 85,
+  "status": "completed",
+  "title": {
+   "cover": "https://covers.openlibrary.org/b/id/1047334-L.jpg",
+   "format": "Book",
+   "genres": [
+    "Fiction",
+    "Organ donors",
+    "Cloning",
+    "Donation of organs, tissues"
+   ],
+   "id": "book:OL59038W",
+   "media": "book",
+   "name": "Never Let Me Go",
+   "score": 7.7,
+   "studio": "Kazuo Ishiguro",
+   "subtitle": "Kazuo Ishiguro",
+   "total": 319,
+   "year": 2005
+  },
+  "updatedAt": "2026-05-23T07:57:00.000Z"
+ }
+]

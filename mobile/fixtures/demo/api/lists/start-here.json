@@ -1,0 +1,105 @@
+{
+ "description": "What I show people who don't watch anime.",
+ "id": "start-here",
+ "items": [
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11061-8WkkTZ6duKpq.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11061-y5gsT1hoHuHw.png",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Fantasy"
+    ],
+    "id": "anime:11061",
+    "media": "anime",
+    "name": "Hunter x Hunter (2011)",
+    "runtime": "24 min",
+    "score": 8.9,
+    "season": "Fall 2011",
+    "state": "Finished",
+    "studio": "MADHOUSE",
+    "subtitle": "HUNTER×HUNTER (2011) · HUNTER×HUNTER (2011)",
+    "total": 148,
+    "year": 2011
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1535.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1535-kUgkcrfOrkUM.jpg",
+    "format": "TV",
+    "genres": [
+     "Mystery",
+     "Psychological",
+     "Supernatural",
+     "Thriller"
+    ],
+    "id": "anime:1535",
+    "media": "anime",
+    "name": "Death Note",
+    "runtime": "23 min",
+    "score": 8.4,
+    "season": "Fall 2006",
+    "state": "Finished",
+    "studio": "MADHOUSE",
+    "subtitle": "DEATH NOTE · DEATH NOTE",
+    "total": 37,
+    "year": 2006
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/16498-8jpFCOcDmneX.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-buvcRTBx4NSm.jpg",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Drama",
+     "Fantasy",
+     "Mystery"
+    ],
+    "id": "anime:16498",
+    "media": "anime",
+    "name": "Attack on Titan",
+    "runtime": "24 min",
+    "score": 8.5,
+    "season": "Spring 2013",
+    "state": "Finished",
+    "studio": "WIT STUDIO",
+    "subtitle": "Shingeki no Kyojin · 進撃の巨人",
+    "total": 25,
+    "year": 2013
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1575.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1575-hsmWM2ydNm1m.jpg",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Drama",
+     "Mecha",
+     "Sci-Fi",
+     "Thriller"
+    ],
+    "id": "anime:1575",
+    "media": "anime",
+    "name": "Code Geass: Lelouch of the Rebellion",
+    "runtime": "24 min",
+    "score": 8.5,
+    "season": "Fall 2006",
+    "state": "Finished",
+    "studio": "Sunrise",
+    "subtitle": "Code Geass: Hangyaku no Lelouch · コードギアス 反逆のルルーシュ",
+    "total": 25,
+    "year": 2006
+   }
+  }
+ ],
+ "name": "Start here",
+ "updatedAt": "2026-09-24T14:41:00.000Z",
+ "visibility": "public"
+}

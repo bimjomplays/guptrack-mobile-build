@@ -1,0 +1,306 @@
+{
+ "description": "For when the week was long.",
+ "id": "comfort-rewatches",
+ "items": [
+  {
+   "note": "The ending still gets me every time.",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1575.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1575-hsmWM2ydNm1m.jpg",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Drama",
+     "Mecha",
+     "Sci-Fi",
+     "Thriller"
+    ],
+    "id": "anime:1575",
+    "media": "anime",
+    "name": "Code Geass: Lelouch of the Rebellion",
+    "runtime": "24 min",
+    "score": 8.5,
+    "season": "Fall 2006",
+    "state": "Finished",
+    "studio": "Sunrise",
+    "subtitle": "Code Geass: Hangyaku no Lelouch · コードギアス 反逆のルルーシュ",
+    "total": 25,
+    "year": 2006
+   }
+  },
+  {
+   "note": "Slow first half, then it never lets go.",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n9253-JIhmKgBKsWUN.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9253-tIUXF2gfU8Sg.jpg",
+    "format": "TV",
+    "genres": [
+     "Drama",
+     "Psychological",
+     "Sci-Fi",
+     "Thriller"
+    ],
+    "id": "anime:9253",
+    "media": "anime",
+    "name": "Steins;Gate",
+    "runtime": "24 min",
+    "score": 8.9,
+    "season": "Spring 2011",
+    "state": "Finished",
+    "studio": "WHITE FOX",
+    "subtitle": "シュタインズ・ゲート",
+    "total": 24,
+    "year": 2011
+   }
+  },
+  {
+   "note": "Perfect twenty-minute episodes.",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/101921-GgvvFhlNhzlF.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101921-ufrjLzhSz7L1.jpg",
+    "format": "TV",
+    "genres": [
+     "Comedy",
+     "Psychological",
+     "Romance",
+     "Slice of Life"
+    ],
+    "id": "anime:101921",
+    "media": "anime",
+    "name": "Kaguya-sama: Love is War",
+    "runtime": "24 min",
+    "score": 8.3,
+    "season": "Winter 2019",
+    "state": "Finished",
+    "studio": "A-1 Pictures",
+    "subtitle": "Kaguya-sama wa Kokurasetai: Tensaitachi no Renai Zunousen · かぐや様は告らせたい～天才たちの恋愛頭脳戦～",
+    "total": 12,
+    "year": 2019
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210482-pYAD0IbzNbgS.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+    "format": "ONA",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Drama",
+     "Mystery",
+     "Supernatural"
+    ],
+    "id": "anime:210482",
+    "media": "anime",
+    "name": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+    "next": {
+     "at": "2026-11-06T08:00:00.000Z",
+     "episode": 7
+    },
+    "runtime": "23 min",
+    "score": 8.6,
+    "season": "Fall 2026",
+    "state": "Releasing",
+    "studio": "david production",
+    "subtitle": "JoJo no Kimyou na Bouken: Steel Ball Run - 2nd & 3rd STAGE · ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE",
+    "total": 11,
+    "year": 2026
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/154587-ivXNJ23SM1xB.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+    "format": "TV",
+    "genres": [
+     "Adventure",
+     "Drama",
+     "Fantasy"
+    ],
+    "id": "anime:154587",
+    "media": "anime",
+    "name": "Frieren: Beyond Journey’s End",
+    "runtime": "24 min",
+    "score": 9.1,
+    "season": "Fall 2023",
+    "state": "Finished",
+    "studio": "MADHOUSE",
+    "subtitle": "Sousou no Frieren · 葬送のフリーレン",
+    "total": 28,
+    "year": 2023
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11061-8WkkTZ6duKpq.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11061-y5gsT1hoHuHw.png",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Fantasy"
+    ],
+    "id": "anime:11061",
+    "media": "anime",
+    "name": "Hunter x Hunter (2011)",
+    "runtime": "24 min",
+    "score": 8.9,
+    "season": "Fall 2011",
+    "state": "Finished",
+    "studio": "MADHOUSE",
+    "subtitle": "HUNTER×HUNTER (2011) · HUNTER×HUNTER (2011)",
+    "total": 148,
+    "year": 2011
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/2904-X71fcvE83n3s.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2904-Fet9Q33suC7G.jpg",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Drama",
+     "Mecha",
+     "Sci-Fi",
+     "Thriller"
+    ],
+    "id": "anime:2904",
+    "media": "anime",
+    "name": "Code Geass: Lelouch of the Rebellion R2",
+    "runtime": "24 min",
+    "score": 8.7,
+    "season": "Spring 2008",
+    "state": "Finished",
+    "studio": "Sunrise",
+    "subtitle": "Code Geass: Hangyaku no Lelouch R2 · コードギアス 反逆のルルーシュ R2",
+    "total": 25,
+    "year": 2008
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/112641-mKZe0zng0ndV.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112641-zoGC8d6FaPXU.jpg",
+    "format": "TV",
+    "genres": [
+     "Comedy",
+     "Psychological",
+     "Romance",
+     "Slice of Life"
+    ],
+    "id": "anime:112641",
+    "media": "anime",
+    "name": "Kaguya-sama: Love is War?",
+    "runtime": "25 min",
+    "score": 8.5,
+    "season": "Spring 2020",
+    "state": "Finished",
+    "studio": "A-1 Pictures",
+    "subtitle": "Kaguya-sama wa Kokurasetai?: Tensaitachi no Renai Zunousen · かぐや様は告らせたい？～天才たちの恋愛頭脳戦～",
+    "total": 12,
+    "year": 2020
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21127-6jTjz7ndTHOi.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21127-7ARWZkDXKiiD.jpg",
+    "format": "TV",
+    "genres": [
+     "Drama",
+     "Psychological",
+     "Sci-Fi",
+     "Thriller"
+    ],
+    "id": "anime:21127",
+    "media": "anime",
+    "name": "Steins;Gate 0",
+    "runtime": "24 min",
+    "score": 8.4,
+    "season": "Spring 2018",
+    "state": "Finished",
+    "studio": "WHITE FOX",
+    "subtitle": "シュタインズ・ゲート ゼロ",
+    "total": 23,
+    "year": 2018
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/125367-hGPJLSNfprO3.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125367-1yuq9NFcQuLI.png",
+    "format": "TV",
+    "genres": [
+     "Comedy",
+     "Psychological",
+     "Romance",
+     "Slice of Life"
+    ],
+    "id": "anime:125367",
+    "media": "anime",
+    "name": "Kaguya-sama: Love is War -Ultra Romantic-",
+    "runtime": "24 min",
+    "score": 8.9,
+    "season": "Spring 2022",
+    "state": "Finished",
+    "studio": "A-1 Pictures",
+    "subtitle": "Kaguya-sama wa Kokurasetai: Ultra Romantic · かぐや様は告らせたい-ウルトラロマンティック-",
+    "total": 13,
+    "year": 2022
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/16498-8jpFCOcDmneX.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-buvcRTBx4NSm.jpg",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Drama",
+     "Fantasy",
+     "Mystery"
+    ],
+    "id": "anime:16498",
+    "media": "anime",
+    "name": "Attack on Titan",
+    "runtime": "24 min",
+    "score": 8.5,
+    "season": "Spring 2013",
+    "state": "Finished",
+    "studio": "WIT STUDIO",
+    "subtitle": "Shingeki no Kyojin · 進撃の巨人",
+    "total": 25,
+    "year": 2013
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/19-kJhwsB0Z97tL.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19-gtMC64182sm4.jpg",
+    "format": "TV",
+    "genres": [
+     "Drama",
+     "Horror",
+     "Mystery",
+     "Psychological",
+     "Thriller"
+    ],
+    "id": "anime:19",
+    "media": "anime",
+    "name": "Monster",
+    "runtime": "24 min",
+    "score": 8.8,
+    "season": "Spring 2004",
+    "state": "Finished",
+    "studio": "MADHOUSE",
+    "subtitle": "MONSTER · MONSTER",
+    "total": 74,
+    "year": 2004
+   }
+  }
+ ],
+ "name": "Comfort rewatches",
+ "updatedAt": "2026-10-31T14:41:00.000Z",
+ "visibility": "public"
+}

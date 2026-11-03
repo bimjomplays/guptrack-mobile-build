@@ -1,0 +1,176 @@
+# XcodeGen spec for the GupTrack iPhone app. The .xcodeproj and the Info.plists are generated on the macOS runner
+# (`xcodegen generate`) and never committed. This folder is published to the public build repo: nothing personal
+# or secret goes here (signing team, keys and the like come from the runner's secrets).
+name: GupTrack
+options:
+  bundleIdPrefix: app.guptrack
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+packages:
+  # Hammer: real touches (taps, drags, long presses) inside the unit-test process, for the screen tests
+  # (Tests/ScreenDriver.swift); XCTest's own event synthesizer only works from a UI-test bundle
+  Hammer:
+    url: https://github.com/lyft/Hammer
+    exactVersion: 2.1.1
+  # the offline library (LibraryStore.swift), the same version GupTrackKit tests on Linux
+  GRDB:
+    url: https://github.com/groue/GRDB.swift
+    exactVersion: 7.12.0
+targets:
+  GupTrack:
+    type: application
+    platform: iOS
+    sources:
+      - Sources
+      # the plain logic (models, API client, offline library, routes, demo): a Swift package that also builds and
+      # tests on Linux; the app compiles its files directly
+      - ../GupTrackKit/Sources/GupTrackKit
+      - Resources
+      # recorded app-API answers (invented users, public catalogue titles) for the demo and the screen tests
+      - path: ../fixtures/demo
+        type: folder
+        buildPhase: resources
+    dependencies:
+      - package: GRDB
+        product: GRDB
+      - target: GupTrackWidgets
+      - target: GupTrackShare
+    info:
+      path: Sources/Info.plist
+      properties:
+        CFBundleDisplayName: GupTrack
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LSRequiresIPhoneOS: true
+        UILaunchScreen:
+          UIColorName: LaunchBG
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UIUserInterfaceStyle: Dark
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UIRequiredDeviceCapabilities: [arm64]
+        ITSAppUsesNonExemptEncryption: false
+        # guptrack://pair?… from the website's pairing QR, guptrack://title/… from the widget and share extension
+        CFBundleURLTypes:
+          - CFBundleURLName: app.guptrack.phone.links
+            CFBundleURLSchemes: [guptrack]
+        NSCameraUsageDescription: >-
+          GupTrack uses the camera only to scan the pairing code your GupTrack website shows.
+        NSFaceIDUsageDescription: >-
+          GupTrack can use Face ID for passkey sign-in.
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.guptrack.phone
+        PRODUCT_NAME: GupTrack
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        TARGETED_DEVICE_FAMILY: "1"
+        ENABLE_PREVIEWS: "YES"
+        # unsigned by default (the ipa and test jobs); a release job turns signing on with its own settings
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGNING_ALLOWED: "NO"
+        CODE_SIGNING_REQUIRED: "NO"
+        CODE_SIGN_IDENTITY: ""
+  # Home Screen and Lock Screen widgets (65, 65b): Up Next with +1 buttons, the next episode, progress rings
+  GupTrackWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - Widgets
+      # the few plain models the widgets show
+      - ../GupTrackKit/Sources/GupTrackKit/Models.swift
+      - ../GupTrackKit/Sources/GupTrackKit/Format.swift
+      - ../GupTrackKit/Sources/GupTrackKit/Route.swift
+    info:
+      path: Widgets/Info.plist
+      properties:
+        CFBundleDisplayName: GupTrack
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.guptrack.phone.widgets
+        TARGETED_DEVICE_FAMILY: "1"
+        SKIP_INSTALL: "YES"
+        CODE_SIGNING_ALLOWED: "NO"
+        CODE_SIGNING_REQUIRED: "NO"
+        CODE_SIGN_IDENTITY: ""
+  # Share to GupTrack (66): a link from Safari, Letterboxd or AniList -> the matched title, status, progress, Add
+  GupTrackShare:
+    type: app-extension
+    platform: iOS
+    sources:
+      - Share
+      - ../GupTrackKit/Sources/GupTrackKit/Models.swift
+      - ../GupTrackKit/Sources/GupTrackKit/Format.swift
+      - ../GupTrackKit/Sources/GupTrackKit/Route.swift
+    info:
+      path: Share/Info.plist
+      properties:
+        CFBundleDisplayName: GupTrack
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.share-services
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).ShareViewController
+          NSExtensionAttributes:
+            NSExtensionActivationRule:
+              NSExtensionActivationSupportsWebURLWithMaxCount: 1
+              NSExtensionActivationSupportsText: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.guptrack.phone.share
+        TARGETED_DEVICE_FAMILY: "1"
+        SKIP_INSTALL: "YES"
+        CODE_SIGNING_ALLOWED: "NO"
+        CODE_SIGNING_REQUIRED: "NO"
+        CODE_SIGN_IDENTITY: ""
+  GupTrackTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - Tests
+      # GupTrackKit's tests run here too, against the app's copy of the same files
+      - ../GupTrackKit/Tests/GupTrackKitTests
+    dependencies:
+      - target: GupTrack
+      - package: Hammer
+        product: Hammer
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: "YES"
+        PRODUCT_BUNDLE_IDENTIFIER: app.guptrack.phone.tests
+        CODE_SIGNING_ALLOWED: "NO"
+  GupTrackUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [UITests]
+    dependencies:
+      - target: GupTrack
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: "YES"
+        PRODUCT_BUNDLE_IDENTIFIER: app.guptrack.phone.uitests
+        TEST_TARGET_NAME: GupTrack
+        CODE_SIGNING_ALLOWED: "NO"
+schemes:
+  GupTrack:
+    build:
+      targets:
+        GupTrack: all
+        GupTrackTests: [test]
+        GupTrackUITests: [test]
+    test:
+      config: Debug
+      targets:
+        - GupTrackTests
+        - GupTrackUITests
+    archive:
+      config: Release
