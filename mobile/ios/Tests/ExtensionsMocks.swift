@@ -42,7 +42,7 @@ private struct MockAppTile: View {
 /// the made-up apps round the widgets: name, symbol, colour
 private enum MockApps {
     static func rgb(_ r: Double, _ g: Double, _ b: Double) -> Color { Color(red: r / 255, green: g / 255, blue: b / 255) }
-    static let harbor = ("Harbor", "anchor", rgb(26, 42, 74))
+    static let harbor = ("Harbor", "ferry", rgb(26, 42, 74))
     static let gupworks = ("GupWorks", "sparkles", rgb(52, 36, 92))
     static let camera = ("Camera", "camera.aperture", rgb(52, 54, 60))
     static let row1 = [("Gallery", "photo.on.rectangle", rgb(178, 66, 66)), ("Music", "waveform", rgb(196, 44, 92)),

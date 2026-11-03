@@ -5,22 +5,29 @@ import SwiftUI
 struct TitleHero: View {
     let page: TitlePage
 
+    /// where the name's last line ends, in the hero: the banner stops just under it, so a long name never puts
+    /// the banner's edge through the lines below it (16, 21)
+    @State private var nameBottom: CGFloat = 0
+
     private var t: Title { page.title }
 
     var body: some View {
         ZStack(alignment: .topLeading) {
             TitleBackdrop(title: t)
-                .frame(height: 272)
+                .frame(height: max(220, nameBottom + 12))
                 .frame(maxWidth: .infinity)
                 .clipped()
             HStack(alignment: .bottom, spacing: 16) {
                 Poster(url: t.cover, width: 112)
-                TitleHeroText(page: page)
+                TitleHeroText(page: page, nameBottom: $nameBottom)
             }
             .padding(.horizontal, Theme.pad)
             .padding(.top, 158)
         }
+        .coordinateSpace(.named(TitleHero.space))
     }
+
+    static let space = "title-hero"
 }
 
 /// the banner behind the hero
@@ -41,13 +48,18 @@ private struct TitleBackdrop: View {
 
 private struct TitleHeroText: View {
     let page: TitlePage
+    @Binding var nameBottom: CGFloat
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text(page.title.name)
                 .font(.system(size: 22, weight: .bold)).foregroundStyle(Theme.ink)
-                .lineLimit(3).minimumScaleFactor(0.85)
+                // two lines at most; a long name gets smaller instead
+                .lineLimit(2).minimumScaleFactor(0.7)
                 .accessibilityAddTraits(.isHeader)
+                .onGeometryChange(for: CGFloat.self) { $0.frame(in: .named(TitleHero.space)).maxY } action: {
+                    nameBottom = $0
+                }
             if let native = page.nativeLine {
                 Text(native).font(.system(size: 13)).foregroundStyle(Theme.inkMuted).lineLimit(1).padding(.top, 3)
             }
