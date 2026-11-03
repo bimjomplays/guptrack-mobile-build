@@ -1,0 +1,101 @@
+{
+ "title": {
+  "alt": [
+   "Chitose-kun wa Ramune Bin no Naka Part 2",
+   "千歳くんはラムネ瓶のなか 2クール"
+  ],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": 11,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198727-BL0JTpg0G8tq.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "11"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Airing"
+   },
+   {
+    "label": "Next episode",
+    "value": "Ep 5, Nov 10, 2026"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 13, 2026"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2026"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "91",
+       "to": "studio"
+      },
+      "text": "feel."
+     }
+    ],
+    "value": "feel."
+   },
+   {
+    "label": "Members",
+    "value": "16,037"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Comedy",
+   "Romance"
+  ],
+  "headline": [
+   "TV",
+   "Fall 2026",
+   "11 episodes"
+  ],
+  "idMal": 62484,
+  "makers": [
+   {
+    "ref": {
+     "id": "91",
+     "to": "studio"
+    },
+    "text": "feel."
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "198727",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 78,
+  "scoreNote": "16,037 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Airing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Chitose Is in the Ramune Bottle 2nd Cour",
+  "trailer": null,
+  "volumes": null,
+  "year": 2026
+ }
+}

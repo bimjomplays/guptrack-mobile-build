@@ -191,11 +191,27 @@ final class RouteTests: XCTestCase {
 }
 
 final class AccountTests: XCTestCase {
-    let code = String(repeating: "aB3-_", count: 9)
+    let code = "7KQ4-M2XD"
 
+    /// the website builds the link with URLSearchParams (src/sync/sync.functions.ts)
     func testPairLink() {
-        let link = "guptrack://pair?v=1&url=https%3A%2F%2Fpc.example.ts.net&code=\(code)"
+        let link = "guptrack://pair?server=https%3A%2F%2Fpc.example.ts.net&code=\(code)"
         XCTAssertEqual(try PairLink.parse(link).get(), PairLink(baseURL: URL(string: "https://pc.example.ts.net")!, code: code))
+        // a typed or damaged-looking code reads the way the website reads it
+        let typed = "guptrack://pair?server=https%3A%2F%2Fpc.example.ts.net%3A8443%2F&code=7kq4+m2xd"
+        XCTAssertEqual(try PairLink.parse(typed).get().code, code)
+        XCTAssertEqual(try PairLink.parse(typed).get().baseURL.absoluteString, "https://pc.example.ts.net:8443")
+        let local = "guptrack://pair?server=http%3A%2F%2Flocalhost%3A3000&code=\(code)"
+        XCTAssertEqual(try PairLink.parse(local).get().baseURL.absoluteString, "http://localhost:3000")
+    }
+
+    func testPairingCodes() {
+        XCTAssertEqual(PairLink.pairingCode("7KQ4-M2XD"), "7KQ4-M2XD")
+        XCTAssertEqual(PairLink.pairingCode(" 7kq4 m2xd "), "7KQ4-M2XD")
+        XCTAssertEqual(PairLink.pairingCode("OIL0-0000"), "0110-0000")
+        XCTAssertNil(PairLink.pairingCode("7KQ4-M2X"))
+        XCTAssertNil(PairLink.pairingCode("7KQ4-M2XU"), "U isn't a Crockford symbol")
+        XCTAssertNil(PairLink.pairingCode("7KQ4-M2XD-1"))
     }
 
     func testPairLinkProblems() {
@@ -204,11 +220,13 @@ final class AccountTests: XCTestCase {
             return nil
         }
         XCTAssertEqual(problem("https://example.com"), .notOurs)
-        XCTAssertEqual(problem("guptrack://pair?v=2&url=https://a.b&code=\(code)"), .newerVersion)
-        XCTAssertEqual(problem("guptrack://pair?v=1&url=http://a.b&code=\(code)"), .badAddress)
-        XCTAssertEqual(problem("guptrack://pair?v=1&url=https://a.b/path&code=\(code)"), .badAddress)
-        XCTAssertEqual(problem("guptrack://pair?v=1&url=https://a.b&code=short"), .badCode)
-        XCTAssertEqual(problem("guptrack://pair?v=1&v=1&url=https://a.b&code=\(code)"), .notOurs)
+        XCTAssertEqual(problem("guptrack://title/anime:1"), .notOurs)
+        XCTAssertEqual(problem("guptrack://pair?server=http://a.b&code=\(code)"), .badAddress)
+        XCTAssertEqual(problem("guptrack://pair?server=https://a.b/path&code=\(code)"), .badAddress)
+        XCTAssertEqual(problem("guptrack://pair?code=\(code)"), .badAddress)
+        XCTAssertEqual(problem("guptrack://pair?server=https://a.b&code=short"), .badCode)
+        XCTAssertEqual(problem("guptrack://pair?server=https://a.b"), .badCode)
+        XCTAssertEqual(problem("guptrack://pair?server=https://a.b&server=https://c.d&code=\(code)"), .notOurs)
     }
 
     func testServerAddress() {
@@ -216,7 +234,9 @@ final class AccountTests: XCTestCase {
         XCTAssertEqual(PairLink.serverURL(" https://PC.example.ts.net:8443/ ")?.absoluteString, "https://pc.example.ts.net:8443")
         XCTAssertNil(PairLink.serverURL("http://pc.example.ts.net"))
         XCTAssertNil(PairLink.serverURL("https://user" + "@" + "pc.example"))
-        XCTAssertNil(PairLink.serverURL("localhost"))
+        XCTAssertNil(PairLink.serverURL("https://pc"))
+        XCTAssertEqual(PairLink.serverURL("http://127.0.0.1:3000")?.absoluteString, "http://127.0.0.1:3000")
+        XCTAssertEqual(PairLink.serverURL("localhost")?.absoluteString, "https://localhost")
     }
 
     func testPasswordStrength() {

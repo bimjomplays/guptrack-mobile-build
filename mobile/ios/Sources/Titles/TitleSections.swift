@@ -11,29 +11,25 @@ struct TitleInfoLine: View {
 
     var body: some View {
         Group {
-            if let next = t.next, t.media == .anime || t.media == .manga {
-                let parts = TitleListText.airing(next, media: t.media)
-                line("calendar", parts.0, parts.1)
+            if let next = page.nextEpisode, t.media == .anime || t.media == .manga {
+                line("calendar", "Next episode", " · " + next)
             } else if t.media == .tv, let up = upNext {
                 Button { model.open(.season(t.id, up.season)) } label: {
-                    line("play.circle", "Up next", " · S\(up.season) E\(up.episode.number) “\(up.episode.name)”"
-                         + (up.episode.runtime.map { " · " + $0 } ?? ""))
+                    line("play.circle", "Up next", " · S\(up.season) E\(up.episode)")
                 }
                 .buttonStyle(.plain)
-            } else if t.media == .movie, page.tagline != nil || page.trailer != nil {
+            } else if t.media == .movie, page.trailer != nil {
                 tagline
             }
         }
         .padding(.horizontal, Theme.pad)
     }
 
-    /// the next episode on the list's progress
-    private var upNext: (season: Int, episode: TVSeason.Episode)? {
-        guard let e = model.entry(t.id), let seasons = page.seasons,
-              let pos = TVProgress.position(e.progress, seasons), let n = pos.next,
-              let ep = seasons.first(where: { $0.number == pos.season })?.episodes?.first(where: { $0.number == n })
+    /// the next episode on the list's progress (the answer's seasons carry counts, not episodes)
+    private var upNext: (season: Int, episode: Int)? {
+        guard let e = model.entry(t.id), let pos = TVProgress.position(e.progress, page.seasons), let n = pos.next
         else { return nil }
-        return (pos.season, ep)
+        return (pos.season, n)
     }
 
     private func line(_ symbol: String, _ head: String, _ rest: String) -> some View {
@@ -48,14 +44,11 @@ struct TitleInfoLine: View {
 
     private var tagline: some View {
         HStack(spacing: 12) {
-            if let tl = page.tagline {
-                Text(tl).font(.system(size: 15).italic()).foregroundStyle(Theme.inkSoft).lineLimit(2)
-            }
-            Spacer(minLength: 0)
             if let url = page.trailer {
                 Button { openURL(url) } label: { Label("Trailer", systemImage: "play.fill") }
                     .buttonStyle(.capsule(.tone, .small))
             }
+            Spacer(minLength: 0)
         }
     }
 }
@@ -67,41 +60,47 @@ struct TitleSections: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            if let story = page.story {
+            if let story = page.story() {
                 TitleHeading(page.storyHeading).sectionGap(26)
                 MoreText(text: story, lines: 4)
             }
             if !page.tags.isEmpty {
-                TitleTags(tags: page.tags).padding(.top, page.story == nil ? 26 : 14)
+                TitleTags(tags: page.tags).padding(.top, page.story() == nil ? 26 : 14)
             }
-            if let staff = page.staff, !staff.isEmpty {
-                TitleMakers(people: staff).padding(.top, 18)
+            // a manga's or book's makers sit under the story; everyone else's staff is a list further down
+            if makersOnTop, !page.staff.isEmpty {
+                TitleMakers(people: page.staff).padding(.top, 18)
             }
-            if let seasons = page.seasons, !seasons.isEmpty {
-                TitleSeasons(page: page, seasons: seasons).sectionGap()
+            if !page.seasons.isEmpty {
+                TitleSeasons(page: page, seasons: page.seasons).sectionGap()
             }
-            if let chars = page.characters, !chars.isEmpty {
-                TitleCharacters(characters: chars).sectionGap()
+            if !page.characters.isEmpty {
+                TitleCharacters(characters: page.characters).sectionGap()
             }
-            if let cast = page.cast, !cast.isEmpty {
-                TitleCast(cast: cast).sectionGap()
+            if !page.cast.isEmpty {
+                TitleCast(cast: page.cast).sectionGap()
             }
-            if let crew = page.crew, !crew.isEmpty {
-                TitleCrew(crew: crew).sectionGap()
+            if !makersOnTop, !page.staff.isEmpty {
+                TitleCrew(crew: page.staff, heading: page.title.media == .anime ? "Staff" : "Crew").sectionGap()
             }
-            if let rel = page.relations, !rel.isEmpty {
-                TitleRelated(page: page, relations: rel).sectionGap()
+            if !page.relations.isEmpty {
+                TitleRelated(page: page, relations: page.relations).sectionGap()
             }
-            if page.hasScoreAverage {
+            if page.averageText != nil {
                 TitleScoreAverage(page: page).sectionGap()
             }
             TitleDetails(page: page).sectionGap()
             TitleReviewsRow(page: page).sectionGap(22)
-            if let recs = page.recommendations, !recs.isEmpty {
-                TitleMoreLikeThis(titles: recs).sectionGap()
+            if !page.recommendations.isEmpty {
+                TitleMoreLikeThis(title: "More like this", titles: page.recommendations).sectionGap()
+            }
+            ForEach(page.more, id: \.self) { m in
+                TitleMoreLikeThis(title: m.title, titles: m.titles.map(\.app), route: m.ref?.route).sectionGap()
             }
         }
     }
+
+    private var makersOnTop: Bool { page.title.media == .manga || page.title.media == .book }
 }
 
 /// a section's 20pt title, with an optional count
@@ -184,20 +183,21 @@ struct TitleFlow: Layout {
 
 /// a manga's or book's makers: round picture, name, role, a chevron to their page
 private struct TitleMakers: View {
-    let people: [TitlePage.Credit]
+    let people: [Credit]
 
     @Environment(AppModel.self) private var model
 
     var body: some View {
         VStack(spacing: 0) {
             Hairline()
-            ForEach(people, id: \.self) { p in
+            ForEach(people, id: \.self) { c in
+                let p = c.person
                 Button { if let r = p.route { model.open(r) } } label: {
                     HStack(spacing: 12) {
                         Artwork(url: p.image).frame(width: 44, height: 44).clipShape(Circle())
                         VStack(alignment: .leading, spacing: 2) {
                             Text(p.name).font(.rowTitle).foregroundStyle(Theme.ink)
-                            if let role = p.role { Text(role).font(.system(size: 13)).foregroundStyle(Theme.inkMuted) }
+                            if !c.role.isEmpty { Text(c.role).font(.system(size: 13)).foregroundStyle(Theme.inkMuted) }
                         }
                         Spacer()
                         if p.route != nil {

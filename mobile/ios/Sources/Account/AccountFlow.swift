@@ -114,6 +114,7 @@ struct AccountField<Input: View, Trailing: View>: View {
                     .font(.system(size: 17))
                     .foregroundStyle(Theme.inkMuted)
                     .frame(width: 22)
+                    .accessibilityHidden(true)
             }
             input()
                 .font(.system(size: 17))

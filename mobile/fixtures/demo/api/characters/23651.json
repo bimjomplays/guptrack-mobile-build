@@ -1,0 +1,45 @@
+{
+ "character": {
+  "alt": [],
+  "altSpoiler": [],
+  "appearances": [
+   {
+    "role": "Supporting",
+    "title": {
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210482-P1VNKbqdJ6Zj.jpg",
+     "format": "ONA",
+     "ref": {
+      "id": "210482",
+      "kind": "anime"
+     },
+     "score": 86,
+     "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+     "year": 2026
+    }
+   }
+  ],
+  "description": [],
+  "facts": [],
+  "favourites": 0,
+  "id": "23651",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+  "name": "Lucy Steel",
+  "native": "ルーシー・スティール",
+  "voices": [
+   {
+    "language": "Japanese",
+    "people": [
+     {
+      "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n119331-5dPuMCxu4RWf.jpg",
+      "name": "Rie Takahashi",
+      "ref": {
+       "id": "119331",
+       "source": "anilist",
+       "to": "person"
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

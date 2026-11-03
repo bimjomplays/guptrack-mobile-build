@@ -1,0 +1,64 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195322-hqBf19mBtM5K.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "195322",
+       "kind": "anime"
+      },
+      "score": 74,
+      "title": "My Hero Academia: Vigilantes Season 2",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178025-cWJKEsZynkil.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "178025",
+       "kind": "anime"
+      },
+      "score": 82,
+      "title": "Gachiakuta",
+      "year": 2025
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx182896-mvxTVHGdDB4q.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "182896",
+       "kind": "anime"
+      },
+      "score": 87,
+      "title": "My Hero Academia FINAL SEASON",
+      "year": 2025
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185736-Ci6AiGwjKKtp.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "185736",
+       "kind": "anime"
+      },
+      "score": 75,
+      "title": "My Hero Academia: Vigilantes",
+      "year": 2025
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "bones film",
+  "ref": {
+   "id": "7585",
+   "to": "studio"
+  }
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Sound Effects",
+      "title": {
+       "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210482-P1VNKbqdJ6Zj.jpg",
+       "format": "ONA",
+       "ref": {
+        "id": "210482",
+        "kind": "anime"
+       },
+       "score": 86,
+       "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+       "year": 2026
+      }
+     }
+    ],
+    "title": "Anime staff"
+   }
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n111053-JqHbuORNk3e5.png",
+  "known": "",
+  "name": "Yasumasa Koyama",
+  "native": null,
+  "ref": {
+   "id": "111053",
+   "source": "anilist",
+   "to": "person"
+  }
+ }
+}

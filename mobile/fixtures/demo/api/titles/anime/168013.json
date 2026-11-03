@@ -1,0 +1,94 @@
+{
+ "title": {
+  "alt": [
+   "Boku no Hero Academia THE MOVIE: YOU'RE NEXT",
+   "僕のヒーローアカデミア THE MOVIE: ユア ネクスト"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/168013-QWt9yFzOj4BY.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx168013-eeyN5L8tmYKI.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "1h 50m"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Released",
+    "value": "Aug 2, 2024"
+   },
+   {
+    "label": "Season",
+    "value": "Summer 2024"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "4",
+       "to": "studio"
+      },
+      "text": "bones"
+     }
+    ],
+    "value": "bones"
+   },
+   {
+    "label": "Members",
+    "value": "45,657"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Sci-Fi"
+  ],
+  "headline": [
+   "Film",
+   "Summer 2024",
+   "1h 50m"
+  ],
+  "idMal": 56196,
+  "makers": [
+   {
+    "ref": {
+     "id": "4",
+     "to": "studio"
+    },
+    "text": "bones"
+   }
+  ],
+  "media": "anime",
+  "minutes": 110,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "168013",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 76,
+  "scoreNote": "45,657 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "My Hero Academia: You’re Next",
+  "trailer": null,
+  "volumes": null,
+  "year": 2024
+ }
+}

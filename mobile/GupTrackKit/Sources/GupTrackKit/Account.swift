@@ -8,8 +8,11 @@ import Security
 struct ServerAccount: Codable, Equatable, Sendable {
     var baseURL: URL
     var token: String
-    var deviceId: String
+    /// this phone's row in Settings › Connected apps
+    var deviceId: Int
     var user: UserRef
+    /// "owner" | "member"
+    var role: String = "member"
     var signedInAt: Date
 
     /// the host for the UI ("guptrack.example.ts.net" -> "guptrack")
@@ -74,20 +77,21 @@ final class KeychainTokenStore: TokenStore {
 }
 #endif
 
-/// The pairing link the website's Settings › Connected apps shows as a QR code:
-///     guptrack://pair?v=1&url=<percent-encoded https://<pc>.<tailnet>.ts.net>&code=<one-time code>
-/// The address must be HTTPS (a Tailscale name, or any https host once GupTrack is hosted).
+/// The pairing link the website's Settings › Connected apps shows as a QR code (docs/app-api.md §4.1):
+///     guptrack://pair?server=<encoded base URL>&code=<code like 7KQ4-M2XD>
+/// The address is HTTPS (a Tailscale name, or any https host once GupTrack is hosted); plain http only for this
+/// machine (http://127.0.0.1:3000 while developing).
 struct PairLink: Equatable, Sendable {
     let baseURL: URL
+    /// the code as shown: "7KQ4-M2XD"
     let code: String
 
     enum Problem: Error, Equatable {
-        case notOurs, newerVersion, badAddress, badCode
+        case notOurs, badAddress, badCode
 
         var message: String {
             switch self {
             case .notOurs: return "That isn't a GupTrack pairing code. On the website, open Settings › Connected apps."
-            case .newerVersion: return "The website made a code this app doesn't know yet. Update the app."
             case .badAddress: return "The code's server address isn't an HTTPS address, so the app won't use it."
             case .badCode: return "The code is cut off or damaged. Make a new one on the website."
             }
@@ -101,45 +105,66 @@ struct PairLink: Equatable, Sendable {
         var q: [String: String] = [:]
         for it in items {
             guard q[it.name] == nil else { return .failure(.notOurs) }
-            q[it.name] = it.value ?? ""
+            // URLSearchParams writes a space as "+"
+            q[it.name] = (it.value ?? "").replacingOccurrences(of: "+", with: " ")
         }
-        guard let v = q["v"].flatMap(Int.init) else { return .failure(.notOurs) }
-        guard v == 1 else { return .failure(v > 1 ? .newerVersion : .notOurs) }
-        guard let raw = q["url"], let url = serverURL(raw) else { return .failure(.badAddress) }
-        guard let code = q["code"], isCode(code) else { return .failure(.badCode) }
+        guard let raw = q["server"], let url = serverURL(raw) else { return .failure(.badAddress) }
+        guard let code = q["code"].flatMap(pairingCode) else { return .failure(.badCode) }
         return .success(PairLink(baseURL: url, code: code))
     }
 
-    /// https://host[:port][/] with nothing else (no user, path, query or fragment). A bare name typed on the
-    /// connect screen ("guptrack.example.ts.net") gets https:// in front.
+    /// https://host[:port][/] with nothing else (no user, path, query or fragment); http only for this machine.
+    /// A bare name typed on the connect screen ("guptrack.example.ts.net") gets https:// in front.
     static func serverURL(_ raw: String) -> URL? {
         var s = raw.trimmingCharacters(in: .whitespacesAndNewlines)
         if !s.contains("://") { s = "https://" + s }
-        guard let c = URLComponents(string: s), c.scheme?.lowercased() == "https",
+        guard let c = URLComponents(string: s), let scheme = c.scheme?.lowercased(),
               c.user == nil, c.password == nil, c.query == nil, c.fragment == nil,
-              c.path.isEmpty || c.path == "/", let host = c.host?.lowercased(), !host.isEmpty,
-              host.contains("."), host.unicodeScalars.allSatisfy({ CharacterSet.hostChars.contains($0) })
+              c.path.isEmpty || c.path == "/", let host = c.host?.lowercased(), !host.isEmpty
         else { return nil }
+        let loopback = ["127.0.0.1", "localhost", "::1", "[::1]"].contains(host)
+        switch scheme {
+        case "https":
+            guard loopback || (host.contains(".") && host.unicodeScalars.allSatisfy(CharacterSet.hostChars.contains))
+            else { return nil }
+        case "http":
+            guard loopback else { return nil }
+        default:
+            return nil
+        }
         var out = URLComponents()
-        out.scheme = "https"
+        out.scheme = scheme
         out.host = host
         out.port = c.port
         return out.url
     }
 
-    /// base64url without padding, 32 bytes or more
-    static func isCode(_ s: String) -> Bool {
-        (43...128).contains(s.count) && s.unicodeScalars.allSatisfy(CharacterSet.codeChars.contains)
+    /// A typed or scanned code as the website compares it (src/sync/devices.server.ts normalizePairing): case,
+    /// spaces and dashes don't matter, O reads as 0 and I/L as 1. Returns "XXXX-XXXX", or nil when it isn't one.
+    static func pairingCode(_ raw: String) -> String? {
+        guard raw.count <= 40 else { return nil }
+        var s = ""
+        for ch in raw.uppercased() where !(ch.isWhitespace || ch == "-") {
+            switch ch {
+            case "O": s.append("0")
+            case "I", "L": s.append("1")
+            default: s.append(ch)
+            }
+        }
+        guard s.count == 8, s.allSatisfy(crockford.contains) else { return nil }
+        return String(s.prefix(4)) + "-" + String(s.suffix(4))
     }
+
+    /// Crockford base 32: the digits and A–Z without I, L, O and U
+    static let crockford: Set<Character> = Set((48...57).map { Character(UnicodeScalar($0)) }
+        + (65...90).map { Character(UnicodeScalar($0)) }.filter { !"ILOU".contains($0) })
 }
 
 extension CharacterSet {
     private static let lower = "abcdefghijklmnopqrstuvwxyz", digits = "0123456789"
     static let hostChars = CharacterSet(charactersIn: lower + digits + "-.")
-    static let codeChars = CharacterSet(charactersIn: lower + lower.uppercased() + digits + "-_")
 }
 
-/// How strong a new password is, for the Join screen's meter.
 enum PasswordStrength: Int, Comparable, Sendable {
     case tooShort, weak, fair, strong
 

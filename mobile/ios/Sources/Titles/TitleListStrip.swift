@@ -34,21 +34,23 @@ private struct TitleListControls: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            Button { model.sheet = .editor(id, expanded: false) } label: {
-                HStack {
-                    Text(TitleListText.label(entry, seasons: page.seasons))
-                        .font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.inkMuted)
-                    Spacer()
+            // the label stays its own text (so "Your list · Season 2" is read out); Edit is the button
+            HStack {
+                Text(TitleListText.label(entry, seasons: page.seasons))
+                    .font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.inkMuted)
+                    .onTapGesture { model.sheet = .editor(id, expanded: false) }
+                Spacer()
+                Button { model.sheet = .editor(id, expanded: false) } label: {
                     HStack(spacing: 3) {
                         Text("Edit")
                         Image(systemName: "chevron.right").font(.system(size: 11, weight: .bold))
                     }
                     .font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.brandSoft)
+                    .contentShape(Rectangle())
                 }
-                .contentShape(Rectangle())
+                .buttonStyle(.plain)
+                .accessibilityLabel("Edit your list entry")
             }
-            .buttonStyle(.plain)
-            .accessibilityLabel("Edit your list entry")
             .padding(.bottom, 10)
             HStack(spacing: 8) {
                 StatusPill(status: entry.status, media: entry.media) { s in
@@ -70,7 +72,7 @@ private struct TitleListControls: View {
     }
 
     @ViewBuilder private var stepper: some View {
-        let seasons = page.seasons ?? []
+        let seasons = page.seasons
         if entry.media == .tv, let pos = TVProgress.position(entry.progress, seasons) {
             ProgressStepper(progress: pos.watched, total: pos.count) {
                 model.change(id, TVProgress.step(entry.progress, by: -1, seasons))

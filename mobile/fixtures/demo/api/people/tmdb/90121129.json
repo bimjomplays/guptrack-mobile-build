@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Harmony Cobel",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "95396",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "Severance",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Harmony Cobel",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "95396",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "Severance",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/jeThSouMatiuRiLkjDvSBLHpmq0.jpg",
+  "known": "Acting",
+  "name": "Patricia Arquette",
+  "native": null,
+  "ref": {
+   "id": "90121129",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

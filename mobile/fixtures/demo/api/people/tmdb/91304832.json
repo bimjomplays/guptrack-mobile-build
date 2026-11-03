@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Writing"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Creator",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "95396",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "Severance",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Creator",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "95396",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "Severance",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Writing"
+   }
+  ],
+  "image": null,
+  "known": "Writing",
+  "name": "Dan Erickson",
+  "native": null,
+  "ref": {
+   "id": "91304832",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

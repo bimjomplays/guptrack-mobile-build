@@ -1,0 +1,93 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "2"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Irving Bailiff",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "95396",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "Severance",
+       "year": 2022
+      }
+     },
+     {
+      "role": "Carmine Falcone",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "414906",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "The Batman",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Irving Bailiff",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "95396",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "Severance",
+       "year": 2022
+      }
+     },
+     {
+      "role": "Carmine Falcone",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "414906",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "The Batman",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/6O9W9cJW0kCqMzYeLupV9oH0ftn.jpg",
+  "known": "Acting",
+  "name": "John Turturro",
+  "native": null,
+  "ref": {
+   "id": "92846643",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

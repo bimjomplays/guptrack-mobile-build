@@ -1,7 +1,8 @@
 import SwiftUI
 
-/// Add to a custom list (26): your lists with a 2×2 cover collage each, ticked when the title is on them, and New
-/// list on top. Ticks are kept until Done, which sends one add or remove per list that changed; ✕ sends nothing.
+/// Add to a custom list (26): your lists (GET titles/:kind/:id/lists) with a 2×2 cover collage each, ticked when the
+/// title is on them, and New list on top. Ticks are kept until Done, which sends one add or take-off per list that
+/// changed; ✕ sends nothing. The collage, count and who can see it come from the phone's copy of your lists.
 struct AddToListSheet: View {
     let titleId: String
 
@@ -9,8 +10,10 @@ struct AddToListSheet: View {
 
     var body: some View {
         NavigationStack {
-            PageLoader(id: titleId, load: { try await $0.customLists() }) { lists in
-                ListPickForm(picks: TitleSheets.ListPicks(titleId: titleId, lists: lists))
+            SheetTitleLoader(titleId: titleId) { title, _ in
+                PageLoader(id: titleId, load: { try await $0.listChoices(titleId) }) { choices in
+                    ListPickForm(title: title, picks: TitleSheets.ListPicks(titleId: titleId, choices: choices))
+                }
             }
             .navigationTitle("Add to a list")
             .navigationBarTitleDisplayMode(.inline)
@@ -27,17 +30,19 @@ struct AddToListSheet: View {
 }
 
 private struct ListPickForm: View {
+    let title: Title
     @State var picks: TitleSheets.ListPicks
 
     @Environment(AppModel.self) private var model
     @State private var sending = false
+    @State private var making = false
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
                 newListRow
-                ForEach(Array(picks.lists.enumerated()), id: \.element.id) { i, list in
-                    row(list, last: i == picks.lists.count - 1)
+                ForEach(Array(picks.choices.enumerated()), id: \.element.id) { i, choice in
+                    row(choice, last: i == picks.choices.count - 1)
                 }
                 Text("Lists can mix anime, shows, films, manga and books.")
                     .font(.system(size: 13)).foregroundStyle(Theme.inkMuted)
@@ -53,11 +58,18 @@ private struct ListPickForm: View {
                     .disabled(sending)
             }
         }
+        .navigationDestination(isPresented: $making) {
+            // POST lists with this title on it; back here, the new list is on top and ticked
+            NewListForm(item: title) { list in
+                if let id = list.serverId { picks.made(id, name: list.name) }
+                making = false
+            }
+        }
     }
 
     private var newListRow: some View {
         Button {
-            model.sheet = .newList
+            making = true
         } label: {
             HStack(spacing: 14) {
                 Image(systemName: "plus").font(.system(size: 22, weight: .semibold))
@@ -75,18 +87,21 @@ private struct ListPickForm: View {
         .buttonStyle(.plain)
     }
 
-    private func row(_ list: CustomList, last: Bool) -> some View {
-        let on = picks.isOn(list.id)
+    private func row(_ choice: ListWire.Choice, last: Bool) -> some View {
+        let on = picks.isOn(choice.id)
+        let list = model.customList(String(choice.id))
         return Button {
-            picks.toggle(list.id)
+            picks.toggle(choice.id)
         } label: {
             HStack(spacing: 14) {
-                SheetCoverCollage(urls: list.covers)
+                SheetCoverCollage(urls: list?.covers ?? [])
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(list.name).font(.system(size: 17, weight: .semibold)).foregroundStyle(Theme.ink)
+                    Text(choice.name).font(.system(size: 17, weight: .semibold)).foregroundStyle(Theme.ink)
                         .lineLimit(1)
-                    Text(picks.caption(list)).font(.system(size: 13)).foregroundStyle(Theme.inkMuted)
-                        .monospacedDigit()
+                    if let caption = picks.caption(choice, list: list) {
+                        Text(caption).font(.system(size: 13)).foregroundStyle(Theme.inkMuted)
+                            .monospacedDigit()
+                    }
                 }
                 Spacer(minLength: 8)
                 SheetTick(on: on)
@@ -102,18 +117,22 @@ private struct ListPickForm: View {
 
     private func done() {
         let changes = picks.changes
-        let titleId = picks.titleId
         guard !changes.isEmpty else { model.sheet = nil; return }
+        guard let item = ListWire.ListTitle(title) else { model.sheet = nil; return }
         sending = true
         Task {
             var failed: String?
             for c in changes {
-                let r: Load<OKReply> = await model.fetch { try await $0.sheetPickList(c.listId, titleId: titleId, on: c.add) }
+                let r: Load<OKReply> = await model.fetch { api in
+                    if c.add { return try await api.putOnList(c.listId, item) }
+                    return try await api.takeOffList(c.listId, item.ref)
+                }
                 if let why = r.error { failed = why }
             }
             sending = false
             model.sheet = nil
             if let failed { model.notice = "Couldn't change your lists: \(failed)" }
+            await model.syncLibrary()
         }
     }
 }

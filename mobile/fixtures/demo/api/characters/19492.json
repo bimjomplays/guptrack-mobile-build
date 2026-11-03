@@ -1,0 +1,45 @@
+{
+ "character": {
+  "alt": [],
+  "altSpoiler": [],
+  "appearances": [
+   {
+    "role": "Main",
+    "title": {
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210482-P1VNKbqdJ6Zj.jpg",
+     "format": "ONA",
+     "ref": {
+      "id": "210482",
+      "kind": "anime"
+     },
+     "score": 86,
+     "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+     "year": 2026
+    }
+   }
+  ],
+  "description": [],
+  "facts": [],
+  "favourites": 0,
+  "id": "19492",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+  "name": "Johnny Joestar",
+  "native": "ジョニィ・ジョースター",
+  "voices": [
+   {
+    "language": "Japanese",
+    "people": [
+     {
+      "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n158510-QDmd7dD9Rg89.jpg",
+      "name": "Shougo Sakata",
+      "ref": {
+       "id": "158510",
+       "source": "anilist",
+       "to": "person"
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

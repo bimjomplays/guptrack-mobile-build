@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Directing"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1078605",
+        "kind": "movie"
+       },
+       "score": 73,
+       "title": "Weapons",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1078605",
+        "kind": "movie"
+       },
+       "score": 73,
+       "title": "Weapons",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Directing"
+   }
+  ],
+  "image": null,
+  "known": "Directing",
+  "name": "Zach Cregger",
+  "native": null,
+  "ref": {
+   "id": "92304925",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

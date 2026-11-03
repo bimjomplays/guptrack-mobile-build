@@ -1,0 +1,95 @@
+{
+ "title": {
+  "alt": [
+   "Howl no Ugoku Shiro",
+   "ハウルの動く城"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/431-fLBlvTgdqLCz.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx431-o8Lj3XkjHm2k.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "1h 59m"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Released",
+    "value": "Nov 20, 2004"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2004"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "21",
+       "to": "studio"
+      },
+      "text": "Studio Ghibli"
+     }
+    ],
+    "value": "Studio Ghibli"
+   },
+   {
+    "label": "Members",
+    "value": "369,513"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Adventure",
+   "Drama",
+   "Fantasy",
+   "Romance"
+  ],
+  "headline": [
+   "Film",
+   "Fall 2004",
+   "1h 59m"
+  ],
+  "idMal": 431,
+  "makers": [
+   {
+    "ref": {
+     "id": "21",
+     "to": "studio"
+    },
+    "text": "Studio Ghibli"
+   }
+  ],
+  "media": "anime",
+  "minutes": 119,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "431",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 85,
+  "scoreNote": "369,513 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Howl‘s Moving Castle",
+  "trailer": null,
+  "volumes": null,
+  "year": 2004
+ }
+}

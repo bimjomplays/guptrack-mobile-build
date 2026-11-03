@@ -1,7 +1,8 @@
 import SwiftUI
 
 /// Send a title to friends (53): the title on top, friends to pick (ringed and ticked when chosen), Search for the
-/// rest, a short message; "Send 2" in the bar.
+/// rest, a short message; "Send 2" in the bar. The people are GET messages/recipients (recent conversations first,
+/// then friends); Send posts the title as a card to each (POST conversations/:username/messages).
 struct SendToSheet: View {
     let titleId: String
 
@@ -10,8 +11,8 @@ struct SendToSheet: View {
     var body: some View {
         NavigationStack {
             SheetTitleLoader(titleId: titleId) { title, _ in
-                PageLoader(id: titleId, load: { try await $0.sheetSendToFriends() }) { page in
-                    SendForm(title: title, friends: page.friends)
+                PageLoader(id: titleId, load: { try await $0.recipients() }) { page in
+                    SendForm(title: title, friends: page.recipients)
                 }
             }
             .navigationTitle("Send to")
@@ -30,7 +31,7 @@ struct SendToSheet: View {
 
 private struct SendForm: View {
     let title: Title
-    let friends: [UserRef]
+    let friends: [TitleSheets.Recipient]
 
     @Environment(AppModel.self) private var model
     @State private var picks = TitleSheets.SendPicks()
@@ -93,13 +94,13 @@ private struct SendForm: View {
         .accessibilityElement(children: .combine)
     }
 
-    private func cell(_ f: UserRef) -> some View {
+    private func cell(_ f: TitleSheets.Recipient) -> some View {
         let on = picks.isOn(f.username)
         return Button {
             picks.toggle(f.username)
         } label: {
             VStack(spacing: 7) {
-                PickedAvatar(url: f.avatar, on: on)
+                PickedAvatar(url: f.avatarURL, on: on)
                 Text(f.username).font(.system(size: 13, weight: on ? .semibold : .medium))
                     .foregroundStyle(on ? Theme.ink : Theme.inkSoft)
                     .lineLimit(1)
@@ -108,6 +109,8 @@ private struct SendForm: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
+        .disabled(!f.canSend)
+        .opacity(f.canSend ? 1 : 0.4)
         .accessibilityLabel(f.username)
         .accessibilityAddTraits(on ? .isSelected : [])
     }
@@ -164,13 +167,24 @@ private struct SendForm: View {
     }
 
     private func send() {
-        let body = picks.body(title.id, friends: friends)
+        guard let body = picks.body(title.id) else { return }
+        let to = picks.to(friends)
         sending = true
         Task {
-            let r: Load<OKReply> = await model.fetch { try await $0.sheetSendTitle(body) }
+            var failed: [String] = []
+            var why: String?
+            for username in to {
+                let r: Load<Void> = await model.fetch { try await $0.sendMessage(to: username, body) }
+                if let e = r.error {
+                    failed.append(username)
+                    why = e
+                }
+            }
             sending = false
-            if let why = r.error {
-                model.notice = "Couldn't send it: \(why)"
+            if let why {
+                // keep only those it didn't reach picked, so Send tries just them again
+                picks.picked = picks.picked.filter { failed.contains($0) }
+                model.notice = "Couldn't send it to \(failed.joined(separator: ", ")): \(why)"
                 return
             }
             model.sheet = nil

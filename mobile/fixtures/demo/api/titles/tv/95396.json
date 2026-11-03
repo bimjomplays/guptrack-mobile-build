@@ -1,0 +1,379 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://image.tmdb.org/t/p/w1280/ixgFmf1X59PUZam2qbAfskx2gQr.jpg",
+  "cast": [
+   {
+    "note": "19 episodes",
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/b82C29R6fGiPoqIglQ4lzS6q2YX.jpg",
+     "name": "Adam Scott",
+     "ref": {
+      "id": "91532490",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Mark Scout"
+   },
+   {
+    "note": "19 episodes",
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/5XIcTMDSyj7hRICQAcnY9U83ujF.jpg",
+     "name": "Britt Lower",
+     "ref": {
+      "id": "98309190",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Helly Riggs"
+   },
+   {
+    "note": "19 episodes",
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg",
+     "name": "Tramell Tillman",
+     "ref": {
+      "id": "98325514",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Seth Milchick"
+   },
+   {
+    "note": "19 episodes",
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/fT3Wv8ef0Vn0daHWAObCp2Bd4Y.jpg",
+     "name": "Zach Cherry",
+     "ref": {
+      "id": "97882332",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Dylan George"
+   },
+   {
+    "note": "15 episodes",
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/jeThSouMatiuRiLkjDvSBLHpmq0.jpg",
+     "name": "Patricia Arquette",
+     "ref": {
+      "id": "90121129",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Harmony Cobel"
+   },
+   {
+    "note": "11 episodes",
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/91vck8hZ1VZGV6PTcwFWEEdzGE0.jpg",
+     "name": "Jen Tullock",
+     "ref": {
+      "id": "93742427",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Devon Scout-Hale"
+   },
+   {
+    "note": "10 episodes",
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/yLrpMHBNtuUAu3M9EjaYHnn5EEY.jpg",
+     "name": "Dichen Lachman",
+     "ref": {
+      "id": "92810883",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Ms. Casey"
+   },
+   {
+    "note": "18 episodes",
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/6O9W9cJW0kCqMzYeLupV9oH0ftn.jpg",
+     "name": "John Turturro",
+     "ref": {
+      "id": "92846643",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Irving Bailiff"
+   },
+   {
+    "note": "18 episodes",
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/ApgDL7nudR9T2GpjCG4vESgymO2.jpg",
+     "name": "Christopher Walken",
+     "ref": {
+      "id": "98209092",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Burt Goodman"
+   }
+  ],
+  "characters": [],
+  "count": 19,
+  "cover": "https://image.tmdb.org/t/p/w500/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Series"
+   },
+   {
+    "label": "Seasons",
+    "value": "2"
+   },
+   {
+    "label": "Episodes",
+    "value": "19"
+   },
+   {
+    "label": "Episode length",
+    "value": "54 min"
+   },
+   {
+    "label": "Status",
+    "value": "Returning series"
+   },
+   {
+    "label": "Aired",
+    "value": "Feb 18, 2022"
+   },
+   {
+    "label": "Creator",
+    "links": [
+     {
+      "ref": {
+       "id": "91304832",
+       "source": "tmdb",
+       "to": "person"
+      },
+      "text": "Dan Erickson"
+     }
+    ],
+    "value": "Dan Erickson"
+   },
+   {
+    "label": "Rated",
+    "value": "TV-MA"
+   },
+   {
+    "label": "Language",
+    "value": "English"
+   }
+  ],
+  "format": "Series",
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Sci-Fi & Fantasy"
+  ],
+  "headline": [
+   "Series",
+   "2022–",
+   "2 seasons",
+   "19 episodes",
+   "TV-MA"
+  ],
+  "makers": [
+   {
+    "ref": {
+     "id": "91304832",
+     "source": "tmdb",
+     "to": "person"
+    },
+    "text": "Dan Erickson"
+   }
+  ],
+  "media": "tv",
+  "minutes": 54,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "136315",
+     "kind": "tv"
+    },
+    "score": 82,
+    "title": "The Bear",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "126308",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "Shōgun",
+    "year": 2024
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "100088",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "The Last of Us",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "83867",
+     "kind": "tv"
+    },
+    "score": 83,
+    "title": "Andor",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "1396",
+     "kind": "tv"
+    },
+    "score": 90,
+    "title": "Breaking Bad",
+    "year": 2008
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "95480",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Slow Horses",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "225171",
+     "kind": "tv"
+    },
+    "score": 79,
+    "title": "Pluribus",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "76479",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "The Boys",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "87108",
+     "kind": "tv"
+    },
+    "score": 87,
+    "title": "Chernobyl",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "108978",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Reacher",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "110316",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Alice in Borderland",
+    "year": 2020
+   }
+  ],
+  "ref": {
+   "id": "95396",
+   "kind": "tv"
+  },
+  "relations": [],
+  "score": 84,
+  "scoreNote": "26,033 votes",
+  "seasons": [
+   {
+    "air": "2022-02-18",
+    "episodes": 9,
+    "name": "Season 1",
+    "number": 1,
+    "overview": "",
+    "poster": "https://image.tmdb.org/t/p/w185/lFf6LLrQjYldcZItzOkGmMMigP7.jpg",
+    "year": 2022
+   },
+   {
+    "air": "2025-01-16",
+    "episodes": 10,
+    "name": "Season 2",
+    "number": 2,
+    "overview": "",
+    "poster": "https://image.tmdb.org/t/p/w185/Rb7sga832Cyqvafd7CqOzbwdK4.jpg",
+    "year": 2025
+   }
+  ],
+  "staff": [
+   {
+    "person": {
+     "image": null,
+     "name": "Dan Erickson",
+     "ref": {
+      "id": "91304832",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Creator"
+   }
+  ],
+  "status": "releasing",
+  "statusText": "Returning series",
+  "synopsis": [
+   [
+    {
+     "text": "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs."
+    }
+   ]
+  ],
+  "tags": [],
+  "title": "Severance",
+  "trailer": null,
+  "year": 2022
+ }
+}

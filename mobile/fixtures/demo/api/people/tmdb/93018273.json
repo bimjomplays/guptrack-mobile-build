@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Ellie Williams",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "100088",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "The Last of Us",
+       "year": 2023
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Ellie Williams",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "100088",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "The Last of Us",
+       "year": 2023
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/vDbgxc7RYawpB1wK7JDEj62j06H.jpg",
+  "known": "Acting",
+  "name": "Bella Ramsey",
+  "native": null,
+  "ref": {
+   "id": "93018273",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

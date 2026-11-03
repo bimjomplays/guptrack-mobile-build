@@ -7,10 +7,47 @@ import Foundation
 enum TitleSheets {
     // MARK: the title a sheet is about
 
-    /// The bit of `GET titles/<id>` a sheet needs when the title isn't on your list (the title page's own models
-    /// live with the title page; this decodes only its "title").
+    /// "titles/anime/210482" for "anime:210482", "titles/movie/603" for "movie:603" (the title page's address,
+    /// docs/app-api.md §8.3; nil for an id that isn't "<kind>:<id>")
+    static func path(_ titleId: String) -> String? {
+        guard let k = TitleKey(titleId: titleId) else { return nil }
+        return "titles/\(k.media.kind.rawValue)/\(k.id)"
+    }
+
+    /// The bit of `GET titles/:kind/:id` (`{ title: TitleDetail }`, src/catalog/detail.ts) a sheet needs when the
+    /// title isn't on your list; the title page's own models live with the title page.
     struct TitleLookup: Decodable, Sendable {
-        var title: Title
+        struct Ref: Decodable, Sendable {
+            var kind: String
+            var id: String
+        }
+
+        struct Detail: Decodable, Sendable {
+            var ref: Ref
+            var title: String
+            var alt: [String]?
+            var cover: String?
+            var format: String?
+            var year: Int?
+            /// episodes, chapters or pages
+            var count: Int?
+            /// one episode's length (a film's whole length)
+            var minutes: Int?
+            var volumes: Int?
+        }
+
+        var title: Detail
+
+        /// the title as the sheets show it
+        func sheetTitle() -> Title? {
+            let d = title
+            guard let kind = MediaKind(rawValue: d.ref.kind) else { return nil }
+            let alt = (d.alt ?? []).filter { !$0.isEmpty }
+            return Title(id: TitleKey(media: kind.api, id: d.ref.id).titleId, media: kind, name: d.title,
+                         subtitle: alt.isEmpty ? nil : alt.joined(separator: " · "), cover: d.cover.flatMap { URL(string: $0) },
+                         format: d.format.flatMap { $0.isEmpty ? nil : $0 }, year: d.year, total: d.count,
+                         volumes: d.volumes, runtime: ListEntry.runtime(d.minutes ?? 0, kind))
+        }
     }
 
     /// "Anime · 11 episodes · Fall 2026" under a title in the send-to sheet
@@ -46,7 +83,6 @@ enum TitleSheets {
         var status: ListStatus
         var progress: Int
         var volume: Int?
-        var season: Int?
         var score: Int?
         var repeats: Int
         var started: String?
@@ -60,7 +96,6 @@ enum TitleSheets {
             status = e.status
             progress = e.progress
             volume = e.volume
-            season = e.season
             score = e.score
             repeats = e.repeats
             started = e.started
@@ -76,7 +111,6 @@ enum TitleSheets {
             status = .planned
             progress = 0
             volume = nil
-            season = nil
             score = nil
             repeats = 0
             started = nil
@@ -100,7 +134,8 @@ enum TitleSheets {
             return total.map { n + " of \(Format.grouped($0))" } ?? n
         }
 
-        /// "Ep 7 airs Fri" next to Progress (the next episode's day; a date when it's over a week away)
+        /// "Ep 7 airs Fri" next to Progress (the next episode's day; a date when it's over a week away). Only when the
+        /// title carries its next episode: the library feed's entries don't (§7.1), so the editor shows none.
         var nextLine: String? {
             guard let next = title.next, next.at > Clock.now else { return nil }
             let days = Format.dayOffset(next.at)
@@ -155,7 +190,6 @@ enum TitleSheets {
             let v = max(0, (volume ?? 0) + d)
             volume = title.volumes.map { min(v, $0) } ?? v
         }
-        mutating func stepSeason(_ d: Int) { season = max(1, (season ?? 1) + d) }
 
         /// what ✓ sends: only what changed (a new title sends its status and anything set)
         var patch: LibraryPatch {
@@ -164,7 +198,6 @@ enum TitleSheets {
                 p.status = status
                 if progress > 0 { p.progress = progress }
                 p.volume = volume
-                p.season = season
                 p.score = score
                 if repeats > 0 { p.repeats = repeats }
                 p.started = started
@@ -180,7 +213,6 @@ enum TitleSheets {
             }
             if status != o.status { p.status = status }
             if volume != o.volume, let volume { p.volume = volume }
-            if season != o.season, let season { p.season = season }
             if score != o.score { p.score = score ?? -1 }
             if repeats != o.repeats { p.repeats = repeats }
             if started != o.started { p.started = started ?? "" }
@@ -216,63 +248,72 @@ enum TitleSheets {
 
     // MARK: add to a custom list (26)
 
-    /// The lists ticked for one title. Ticks are kept here until Done; Done sends one add or remove per list that
-    /// changed, ✕ sends nothing.
+    /// The lists ticked for one title (`ListChoices` from GET titles/:kind/:id/lists). Ticks are kept here until
+    /// Done; Done sends one add or take-off per list that changed, ✕ sends nothing.
     struct ListPicks: Equatable, Sendable {
         let titleId: String
-        let lists: [CustomList]
-        private(set) var ticked: Set<String>
-        private let before: Set<String>
+        private(set) var choices: [ListWire.Choice]
+        private(set) var ticked: Set<Int>
+        private var before: Set<Int>
 
-        init(titleId: String, lists: [CustomList]) {
+        init(titleId: String, choices: ListWire.Choices) {
             self.titleId = titleId
-            self.lists = lists
-            before = Set(lists.filter { l in l.items.contains { $0.title.id == titleId } }.map(\.id))
+            self.choices = choices.lists
+            before = Set(choices.lists.filter(\.has).map(\.id))
             ticked = before
         }
 
-        func isOn(_ listId: String) -> Bool { ticked.contains(listId) }
+        func isOn(_ listId: Int) -> Bool { ticked.contains(listId) }
 
-        mutating func toggle(_ listId: String) {
+        mutating func toggle(_ listId: Int) {
             if ticked.contains(listId) { ticked.remove(listId) } else { ticked.insert(listId) }
         }
 
-        /// the list's size with this title's tick counted in
-        func count(_ list: CustomList) -> Int {
-            list.items.count + (isOn(list.id) ? 1 : 0) - (before.contains(list.id) ? 1 : 0)
+        /// a list just made with this title on it (New list in the sheet): on top, already ticked and saved
+        mutating func made(_ id: Int, name: String) {
+            guard !choices.contains(where: { $0.id == id }) else { return }
+            choices.insert(ListWire.Choice(id: id, name: name, has: true), at: 0)
+            before.insert(id)
+            ticked.insert(id)
         }
 
-        /// "12 titles · Public"
-        func caption(_ list: CustomList) -> String {
-            let n = count(list)
+        /// the list's size with this title's tick counted in; the size comes from the phone's copy of the list
+        /// (ListChoices has only id, name and has), nil when the copy doesn't have it
+        func count(_ choice: ListWire.Choice, list: CustomList?) -> Int? {
+            guard let list else { return nil }
+            let had = list.items.contains { $0.id == titleId }
+            return list.items.count + (isOn(choice.id) && !had ? 1 : 0) - (!isOn(choice.id) && had ? 1 : 0)
+        }
+
+        /// "12 titles · Public" (from the phone's copy; nil when it doesn't have the list)
+        func caption(_ choice: ListWire.Choice, list: CustomList?) -> String? {
+            guard let list, let n = count(choice, list: list) else { return nil }
             return "\(Format.grouped(n)) title\(n == 1 ? "" : "s") · \(list.visibility.label)"
         }
 
-        /// what Done sends: (list id, true to add / false to take out), in the lists' order
-        var changes: [(listId: String, add: Bool)] {
-            lists.compactMap { l in
-                let now = ticked.contains(l.id), was = before.contains(l.id)
-                return now == was ? nil : (l.id, now)
+        /// what Done sends: (list id, true to add / false to take off), in the lists' order
+        var changes: [(listId: Int, add: Bool)] {
+            choices.compactMap { c in
+                let now = ticked.contains(c.id), was = before.contains(c.id)
+                return now == was ? nil : (c.id, now)
             }
         }
     }
 
-    struct ListItemBody: Codable, Equatable, Sendable {
-        var titleId: String
-    }
-
     // MARK: write a review (27)
 
-    static let reviewLimit = 5000
+    /// REVIEW_MAX (src/social/reviews.ts)
+    static let reviewLimit = 10_000
 
+    /// The review being written. The score isn't part of a review: a review shows the score from your list, so a
+    /// changed score is saved to your list (only when the title is on it).
     struct ReviewDraft: Equatable, Sendable {
         var score: Int?
         var text = ""
         var spoilers = false
-        var visibility: Visibility = .public
 
         var count: Int { text.count }
-        /// "196 / 5,000"
+        /// "196 / 10,000"
         var countText: String { "\(Format.grouped(count)) / \(Format.grouped(TitleSheets.reviewLimit))" }
         var tooLong: Bool { count > TitleSheets.reviewLimit }
         var canPost: Bool {
@@ -284,19 +325,42 @@ enum TitleSheets {
         /// "9 / 10", or nil when unscored
         var scoreText: String? { score.map { "\(Format.score10($0)) / 10" } }
 
-        var body: ReviewBody {
-            ReviewBody(score: score, text: text.trimmingCharacters(in: .whitespacesAndNewlines), spoilers: spoilers,
-                       visibility: visibility)
+        /// PUT titles/:kind/:id/review's body for a title
+        func body(_ t: Title) -> ReviewBody {
+            ReviewBody(body: text.trimmingCharacters(in: .whitespacesAndNewlines), spoiler: spoilers,
+                       meta: .init(title: t.name, cover: t.cover.flatMap { $0.scheme == "https" ? $0.absoluteString : nil } ?? "",
+                                   format: t.format ?? ""))
         }
     }
 
+    /// `{ body (1–10000), spoiler, meta: { title, cover, format } }`
     struct ReviewBody: Codable, Equatable, Sendable {
-        /// 0-100, nil when unscored
-        var score: Int?
-        var text: String
-        var spoilers: Bool
-        var visibility: Visibility
+        struct Meta: Codable, Equatable, Sendable {
+            var title: String
+            /// https or ""
+            var cover: String
+            var format: String
+        }
+
+        var body: String
+        var spoiler: Bool
+        var meta: Meta
     }
+
+    /// The bits of `TitleReviews` (GET titles/:kind/:id/reviews) the sheet uses: your review so far, and who may see
+    /// it (the lower of your profile's and the list's setting; set in Settings › Privacy, not here).
+    struct MyReview: Decodable, Equatable, Sendable {
+        struct Mine: Decodable, Equatable, Sendable {
+            var body: String
+            var spoiler: Bool
+        }
+
+        var mine: Mine?
+        var visibility: WireVisibility
+    }
+
+    /// PUT's answer `{ review: Review }`: the sheet only needs to know it worked
+    struct ReviewSaved: Decodable, Sendable {}
 
     /// "Manga · Reading · Ch 97" under the title in the review sheet (status and progress from your list)
     static func reviewLine(_ t: Title, entry: LibraryEntry?) -> (kind: String, status: ListStatus?, progress: String?) {
@@ -314,18 +378,47 @@ enum TitleSheets {
 
     // MARK: send to friends (53)
 
-    /// GET send-to: the friends to offer, most recently talked to first
-    struct SendToPage: Codable, Equatable, Sendable {
-        var friends: [UserRef]
+    /// `{ recipients: [{ person, canSend }] }` (GET messages/recipients): recent conversations first, then friends
+    struct Recipients: Codable, Equatable, Sendable {
+        var recipients: [Recipient]
     }
 
-    struct SendToBody: Codable, Equatable, Sendable {
-        var titleId: String
-        var to: [String]
-        var message: String?
+    struct Recipient: Codable, Equatable, Identifiable, Sendable {
+        /// the bits of `Person` (src/social/types.ts) the sheet shows
+        struct Person: Codable, Equatable, Sendable {
+            var username: String
+            /// "" when not set or not yours to see
+            var name: String
+            var avatar: String?
+        }
+
+        var person: Person
+        var canSend: Bool
+
+        var id: String { person.username }
+        var username: String { person.username }
+        /// GupTrack's own "/media/…" addresses stay relative; the image loader resolves them
+        var avatarURL: URL? { person.avatar.flatMap { URL(string: $0) } }
     }
 
-    /// The friends picked to send a title to, in the order they show.
+    /// POST conversations/:username/messages `{ body, card: { kind, id, mine } }`
+    struct MessageBody: Codable, Equatable, Sendable {
+        struct Card: Codable, Equatable, Sendable {
+            /// the title's kind, singular ("anime", "movie")
+            var kind: String
+            var id: String
+            /// true adds your status and score
+            var mine: Bool
+        }
+
+        var body: String?
+        var card: Card
+    }
+
+    /// the answer `{ message: Message }`: the sheet only needs to know it went
+    struct MessageSent: Decodable, Sendable {}
+
+    /// The people picked to send a title to, in the order they show.
     struct SendPicks: Equatable, Sendable {
         var picked: [String] = []
         var message = ""
@@ -342,43 +435,61 @@ enum TitleSheets {
         /// "Send 2"
         var sendLabel: String { picked.isEmpty ? "Send" : "Send \(picked.count)" }
 
-        /// the friends matching the search (name or username), all of them without one
-        func shown(_ friends: [UserRef]) -> [UserRef] {
+        /// the people matching the search (name or username), all of them without one
+        func shown(_ people: [Recipient]) -> [Recipient] {
             let q = query.trimmingCharacters(in: .whitespaces).lowercased()
-            guard !q.isEmpty else { return friends }
-            return friends.filter { $0.username.lowercased().contains(q) || $0.name.lowercased().contains(q) }
+            guard !q.isEmpty else { return people }
+            return people.filter { $0.username.lowercased().contains(q) || $0.person.name.lowercased().contains(q) }
         }
 
-        func body(_ titleId: String, friends: [UserRef]) -> SendToBody {
-            let order = friends.map(\.username)
-            let to = picked.sorted { (order.firstIndex(of: $0) ?? .max) < (order.firstIndex(of: $1) ?? .max) }
+        /// who it goes to, in the sheet's order (only those who can be sent to)
+        func to(_ people: [Recipient]) -> [String] {
+            people.filter { $0.canSend && picked.contains($0.username) }.map(\.username)
+        }
+
+        /// the message each of them gets: the title as a card, with the words when there are any
+        func body(_ titleId: String) -> MessageBody? {
+            guard let k = TitleKey(titleId: titleId) else { return nil }
             let m = message.trimmingCharacters(in: .whitespacesAndNewlines)
-            return SendToBody(titleId: titleId, to: to, message: m.isEmpty ? nil : m)
+            return MessageBody(body: m.isEmpty ? nil : String(m.prefix(4000)),
+                               card: .init(kind: k.media.kind.rawValue, id: k.id, mine: false))
         }
     }
 }
 
 extension APIClient {
-    /// a title that isn't on your list, for a sheet over its page
-    func sheetTitle(_ id: String) async throws -> Title {
-        let page: TitleSheets.TitleLookup = try await get("titles/" + id)
-        return page.title
+    /// GET titles/:kind/:id: a title that isn't on your list, for a sheet over its page
+    func sheetTitle(_ titleId: String) async throws -> Title {
+        guard let path = TitleSheets.path(titleId) else { throw APIError.server(404, "not_found", "No such title.") }
+        let page: TitleSheets.TitleLookup = try await get(path)
+        guard let t = page.sheetTitle() else { throw APIError.unreadable }
+        return t
     }
 
-    /// POST lists/<id>/items {titleId} adds a title to a custom list; DELETE lists/<id>/items/<titleId> takes it out
-    func sheetPickList(_ listId: String, titleId: String, on: Bool) async throws -> OKReply {
-        if on { return try await send("POST", "lists/\(listId)/items", TitleSheets.ListItemBody(titleId: titleId)) }
-        return try await send("DELETE", "lists/\(listId)/items/\(titleId)")
+    /// GET titles/:kind/:id/lists: your lists, and which have this title
+    func listChoices(_ titleId: String) async throws -> ListWire.Choices {
+        guard let path = TitleSheets.path(titleId) else { throw APIError.server(404, "not_found", "No such title.") }
+        return try await get(path + "/lists")
     }
 
-    /// POST titles/<id>/reviews: your review of a title
-    func sheetPostReview(_ titleId: String, _ body: TitleSheets.ReviewBody) async throws -> OKReply {
-        try await send("POST", "titles/\(titleId)/reviews", body)
+    /// GET titles/:kind/:id/reviews, for your review so far and who may see it
+    func myReview(_ titleId: String) async throws -> TitleSheets.MyReview {
+        guard let path = TitleSheets.path(titleId) else { throw APIError.server(404, "not_found", "No such title.") }
+        return try await get(path + "/reviews")
     }
 
-    /// GET send-to: friends to send a title to
-    func sheetSendToFriends() async throws -> TitleSheets.SendToPage { try await get("send-to") }
+    /// PUT titles/:kind/:id/review: writes or replaces yours
+    func putReview(_ titleId: String, _ body: TitleSheets.ReviewBody) async throws {
+        guard let path = TitleSheets.path(titleId) else { throw APIError.server(404, "not_found", "No such title.") }
+        let _: TitleSheets.ReviewSaved = try await send("PUT", path + "/review", body)
+    }
 
-    /// POST send-to: a title to friends (it arrives in their messages)
-    func sheetSendTitle(_ body: TitleSheets.SendToBody) async throws -> OKReply { try await send("POST", "send-to", body) }
+    /// GET messages/recipients: who to send a title to
+    func recipients() async throws -> TitleSheets.Recipients { try await get("messages/recipients") }
+
+    /// POST conversations/:username/messages (with an X-Request-Id, so a resend doesn't send it twice)
+    func sendMessage(to username: String, _ body: TitleSheets.MessageBody, requestId: String? = nil) async throws {
+        let _: TitleSheets.MessageSent = try await send("POST", "conversations/\(username)/messages", body,
+                                                        requestId: requestId)
+    }
 }

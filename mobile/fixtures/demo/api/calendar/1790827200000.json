@@ -1,0 +1,637 @@
+{
+ "at": 1793716860000,
+ "entries": {
+  "anime:191656": {
+   "added": 1788823140000,
+   "alt": [
+    "Seitokai ni mo Ana wa Aru!",
+    "生徒会にも穴はある！"
+   ],
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png",
+   "favourite": false,
+   "finished": null,
+   "format": "TV",
+   "id": "191656",
+   "idMal": null,
+   "minutes": 24,
+   "notes": "",
+   "position": 0,
+   "progress": 0,
+   "readVolumes": 0,
+   "repeats": 0,
+   "rewatch": null,
+   "score": null,
+   "started": null,
+   "status": "planned",
+   "title": "Even the Student Council Has Its Holes!",
+   "total": 12,
+   "updated": 53.6403,
+   "volumes": null
+  },
+  "anime:195516": {
+   "added": 1792237020000,
+   "alt": [
+    "Kusuriya no Hitorigoto 3rd Season",
+    "薬屋のひとりごと 第3期"
+   ],
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg",
+   "favourite": false,
+   "finished": null,
+   "format": "TV",
+   "id": "195516",
+   "idMal": null,
+   "minutes": 24,
+   "notes": "",
+   "position": 0,
+   "progress": 0,
+   "readVolumes": 0,
+   "repeats": 0,
+   "rewatch": null,
+   "score": null,
+   "started": null,
+   "status": "planned",
+   "title": "The Apothecary Diaries Season 3",
+   "total": 12,
+   "updated": 14.1278,
+   "volumes": null
+  },
+  "anime:206949": {
+   "added": 1789383180000,
+   "alt": [
+    "Kyouran Reijou Nia Liston",
+    "凶乱令嬢ニア・リストン"
+   ],
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png",
+   "favourite": false,
+   "finished": null,
+   "format": "TV",
+   "id": "206949",
+   "idMal": null,
+   "minutes": 24,
+   "notes": "",
+   "position": 0,
+   "progress": 0,
+   "readVolumes": 0,
+   "repeats": 0,
+   "rewatch": null,
+   "score": null,
+   "started": null,
+   "status": "planned",
+   "title": "Nia Liston: The Merciless Maiden",
+   "total": 25,
+   "updated": 47.1583,
+   "volumes": null
+  },
+  "anime:210482": {
+   "added": 1790942400000,
+   "alt": [
+    "JoJo no Kimyou na Bouken: Steel Ball Run - 2nd & 3rd STAGE",
+    "ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE"
+   ],
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+   "favourite": false,
+   "finished": null,
+   "format": "ONA",
+   "id": "210482",
+   "idMal": null,
+   "minutes": 23,
+   "notes": "",
+   "position": 0,
+   "progress": 5,
+   "readVolumes": 0,
+   "repeats": 0,
+   "rewatch": null,
+   "score": null,
+   "started": "2026-10-02",
+   "status": "current",
+   "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+   "total": 11,
+   "updated": 4.0417,
+   "volumes": null
+  },
+  "anime:212888": {
+   "added": 1789202280000,
+   "alt": [
+    "Tempal: Item no Chikara",
+    "テムパル～アイテムの力～"
+   ],
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg",
+   "favourite": false,
+   "finished": null,
+   "format": "ONA",
+   "id": "212888",
+   "idMal": null,
+   "minutes": 24,
+   "notes": "",
+   "position": 0,
+   "progress": 0,
+   "readVolumes": 0,
+   "repeats": 0,
+   "rewatch": null,
+   "score": null,
+   "started": null,
+   "status": "planned",
+   "title": "Overgeared",
+   "total": 12,
+   "updated": 49.2521,
+   "volumes": null
+  },
+  "tv:95480": {
+   "added": 1769125080000,
+   "alt": [],
+   "cover": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+   "favourite": false,
+   "finished": null,
+   "format": "TV",
+   "id": "95480",
+   "idMal": null,
+   "minutes": 0,
+   "notes": "",
+   "position": 0,
+   "progress": 38,
+   "readVolumes": 0,
+   "repeats": 0,
+   "rewatch": null,
+   "score": 80,
+   "started": null,
+   "status": "hold",
+   "title": "Slow Horses",
+   "total": null,
+   "updated": 281.6271,
+   "volumes": null
+  }
+ },
+ "from": 1790827200000,
+ "items": [
+  {
+   "at": 1790928000000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+   "dateOnly": false,
+   "id": "210482",
+   "key": "anime:210482:ep2",
+   "kind": "episode",
+   "label": "Ep 2",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 2,
+   "ref": {
+    "id": "210482",
+    "kind": "anime"
+   },
+   "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE"
+  },
+  {
+   "at": 1790949600000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg",
+   "dateOnly": false,
+   "id": "195516",
+   "key": "anime:195516:ep1",
+   "kind": "episode",
+   "label": "Ep 1",
+   "media": "anime",
+   "news": null,
+   "note": "Premiere",
+   "number": 1,
+   "ref": {
+    "id": "195516",
+    "kind": "anime"
+   },
+   "title": "The Apothecary Diaries Season 3"
+  },
+  {
+   "at": 1791041400000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png",
+   "dateOnly": false,
+   "id": "191656",
+   "key": "anime:191656:ep1",
+   "kind": "episode",
+   "label": "Ep 1",
+   "media": "anime",
+   "news": null,
+   "note": "Premiere",
+   "number": 1,
+   "ref": {
+    "id": "191656",
+    "kind": "anime"
+   },
+   "title": "Even the Student Council Has Its Holes!"
+  },
+  {
+   "at": 1791124200000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg",
+   "dateOnly": false,
+   "id": "212888",
+   "key": "anime:212888:ep2",
+   "kind": "episode",
+   "label": "Ep 2",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 2,
+   "ref": {
+    "id": "212888",
+    "kind": "anime"
+   },
+   "title": "Overgeared"
+  },
+  {
+   "at": 1791289560000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png",
+   "dateOnly": false,
+   "id": "206949",
+   "key": "anime:206949:ep1",
+   "kind": "episode",
+   "label": "Ep 1",
+   "media": "anime",
+   "news": null,
+   "note": "Premiere",
+   "number": 1,
+   "ref": {
+    "id": "206949",
+    "kind": "anime"
+   },
+   "title": "Nia Liston: The Merciless Maiden"
+  },
+  {
+   "at": 1791532800000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+   "dateOnly": false,
+   "id": "210482",
+   "key": "anime:210482:ep3",
+   "kind": "episode",
+   "label": "Ep 3",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 3,
+   "ref": {
+    "id": "210482",
+    "kind": "anime"
+   },
+   "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE"
+  },
+  {
+   "at": 1791554400000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg",
+   "dateOnly": false,
+   "id": "195516",
+   "key": "anime:195516:ep2",
+   "kind": "episode",
+   "label": "Ep 2",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 2,
+   "ref": {
+    "id": "195516",
+    "kind": "anime"
+   },
+   "title": "The Apothecary Diaries Season 3"
+  },
+  {
+   "at": 1791646200000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png",
+   "dateOnly": false,
+   "id": "191656",
+   "key": "anime:191656:ep2",
+   "kind": "episode",
+   "label": "Ep 2",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 2,
+   "ref": {
+    "id": "191656",
+    "kind": "anime"
+   },
+   "title": "Even the Student Council Has Its Holes!"
+  },
+  {
+   "at": 1791729000000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg",
+   "dateOnly": false,
+   "id": "212888",
+   "key": "anime:212888:ep3",
+   "kind": "episode",
+   "label": "Ep 3",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 3,
+   "ref": {
+    "id": "212888",
+    "kind": "anime"
+   },
+   "title": "Overgeared"
+  },
+  {
+   "at": 1791894360000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png",
+   "dateOnly": false,
+   "id": "206949",
+   "key": "anime:206949:ep2",
+   "kind": "episode",
+   "label": "Ep 2",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 2,
+   "ref": {
+    "id": "206949",
+    "kind": "anime"
+   },
+   "title": "Nia Liston: The Merciless Maiden"
+  },
+  {
+   "at": 1791950400000,
+   "cover": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+   "dateOnly": true,
+   "id": "95480",
+   "key": "tv:95480:s6e1",
+   "kind": "episode",
+   "label": "S6 · E1",
+   "media": "tv",
+   "news": null,
+   "note": "Season premiere",
+   "number": 31,
+   "ref": {
+    "id": "95480",
+    "kind": "tv"
+   },
+   "title": "Slow Horses"
+  },
+  {
+   "at": 1792137600000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+   "dateOnly": false,
+   "id": "210482",
+   "key": "anime:210482:ep4",
+   "kind": "episode",
+   "label": "Ep 4",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 4,
+   "ref": {
+    "id": "210482",
+    "kind": "anime"
+   },
+   "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE"
+  },
+  {
+   "at": 1792159200000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg",
+   "dateOnly": false,
+   "id": "195516",
+   "key": "anime:195516:ep3",
+   "kind": "episode",
+   "label": "Ep 3",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 3,
+   "ref": {
+    "id": "195516",
+    "kind": "anime"
+   },
+   "title": "The Apothecary Diaries Season 3"
+  },
+  {
+   "at": 1792251000000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png",
+   "dateOnly": false,
+   "id": "191656",
+   "key": "anime:191656:ep3",
+   "kind": "episode",
+   "label": "Ep 3",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 3,
+   "ref": {
+    "id": "191656",
+    "kind": "anime"
+   },
+   "title": "Even the Student Council Has Its Holes!"
+  },
+  {
+   "at": 1792333800000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg",
+   "dateOnly": false,
+   "id": "212888",
+   "key": "anime:212888:ep4",
+   "kind": "episode",
+   "label": "Ep 4",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 4,
+   "ref": {
+    "id": "212888",
+    "kind": "anime"
+   },
+   "title": "Overgeared"
+  },
+  {
+   "at": 1792499160000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png",
+   "dateOnly": false,
+   "id": "206949",
+   "key": "anime:206949:ep3",
+   "kind": "episode",
+   "label": "Ep 3",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 3,
+   "ref": {
+    "id": "206949",
+    "kind": "anime"
+   },
+   "title": "Nia Liston: The Merciless Maiden"
+  },
+  {
+   "at": 1792555200000,
+   "cover": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+   "dateOnly": true,
+   "id": "95480",
+   "key": "tv:95480:s6e2",
+   "kind": "episode",
+   "label": "S6 · E2",
+   "media": "tv",
+   "news": null,
+   "note": null,
+   "number": 32,
+   "ref": {
+    "id": "95480",
+    "kind": "tv"
+   },
+   "title": "Slow Horses"
+  },
+  {
+   "at": 1792742400000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+   "dateOnly": false,
+   "id": "210482",
+   "key": "anime:210482:ep5",
+   "kind": "episode",
+   "label": "Ep 5",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 5,
+   "ref": {
+    "id": "210482",
+    "kind": "anime"
+   },
+   "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE"
+  },
+  {
+   "at": 1792764000000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg",
+   "dateOnly": false,
+   "id": "195516",
+   "key": "anime:195516:ep4",
+   "kind": "episode",
+   "label": "Ep 4",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 4,
+   "ref": {
+    "id": "195516",
+    "kind": "anime"
+   },
+   "title": "The Apothecary Diaries Season 3"
+  },
+  {
+   "at": 1792855800000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png",
+   "dateOnly": false,
+   "id": "191656",
+   "key": "anime:191656:ep4",
+   "kind": "episode",
+   "label": "Ep 4",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 4,
+   "ref": {
+    "id": "191656",
+    "kind": "anime"
+   },
+   "title": "Even the Student Council Has Its Holes!"
+  },
+  {
+   "at": 1792938600000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg",
+   "dateOnly": false,
+   "id": "212888",
+   "key": "anime:212888:ep5",
+   "kind": "episode",
+   "label": "Ep 5",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 5,
+   "ref": {
+    "id": "212888",
+    "kind": "anime"
+   },
+   "title": "Overgeared"
+  },
+  {
+   "at": 1793103960000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png",
+   "dateOnly": false,
+   "id": "206949",
+   "key": "anime:206949:ep4",
+   "kind": "episode",
+   "label": "Ep 4",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 4,
+   "ref": {
+    "id": "206949",
+    "kind": "anime"
+   },
+   "title": "Nia Liston: The Merciless Maiden"
+  },
+  {
+   "at": 1793160000000,
+   "cover": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+   "dateOnly": true,
+   "id": "95480",
+   "key": "tv:95480:s6e3",
+   "kind": "episode",
+   "label": "S6 · E3",
+   "media": "tv",
+   "news": null,
+   "note": null,
+   "number": 33,
+   "ref": {
+    "id": "95480",
+    "kind": "tv"
+   },
+   "title": "Slow Horses"
+  },
+  {
+   "at": 1793347200000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+   "dateOnly": false,
+   "id": "210482",
+   "key": "anime:210482:ep6",
+   "kind": "episode",
+   "label": "Ep 6",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 6,
+   "ref": {
+    "id": "210482",
+    "kind": "anime"
+   },
+   "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE"
+  },
+  {
+   "at": 1793368800000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg",
+   "dateOnly": false,
+   "id": "195516",
+   "key": "anime:195516:ep5",
+   "kind": "episode",
+   "label": "Ep 5",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 5,
+   "ref": {
+    "id": "195516",
+    "kind": "anime"
+   },
+   "title": "The Apothecary Diaries Season 3"
+  },
+  {
+   "at": 1793460600000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png",
+   "dateOnly": false,
+   "id": "191656",
+   "key": "anime:191656:ep5",
+   "kind": "episode",
+   "label": "Ep 5",
+   "media": "anime",
+   "news": null,
+   "note": null,
+   "number": 5,
+   "ref": {
+    "id": "191656",
+    "kind": "anime"
+   },
+   "title": "Even the Student Council Has Its Holes!"
+  }
+ ],
+ "tmdb": true,
+ "to": 1793505600000
+}

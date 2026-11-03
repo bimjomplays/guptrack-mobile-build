@@ -4,7 +4,6 @@ import SwiftUI
 /// whole library; the ⋯ menu has a new list, stats and the offline library.
 struct LibraryView: View {
     @Environment(AppModel.self) private var model
-    @State private var loaded: [CustomList] = []
     @State private var searching = false
     @State private var query = ""
 
@@ -28,15 +27,7 @@ struct LibraryView: View {
         .modifier(LibraryToolbarSearch(on: $searching, text: $query, prompt: "Search your library"))
         .onChange(of: searching) { _, on in if !on { query = "" } }
         .toolbar { toolbar }
-        .task { await load() }
-        .refreshable {
-            await model.refresh()
-            await load()
-        }
-    }
-
-    private func load() async {
-        if let l = await model.fetch({ try await $0.customLists() }).value { loaded = l }
+        .refreshable { await model.refresh() }
     }
 
     // MARK: the five media
@@ -78,7 +69,7 @@ struct LibraryView: View {
     }
 
     @ViewBuilder private var listsGrid: some View {
-        let lists = CustomListEdits.shared(for: model).merged(loaded)
+        let lists = model.customLists
         if lists.isEmpty {
             Text("Make a list to keep titles together, with a note on why each is there.")
                 .font(.system(size: 15)).foregroundStyle(Theme.inkMuted)

@@ -1,0 +1,42 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195516-MJpUZlOberqH.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "195516",
+       "kind": "anime"
+      },
+      "score": 85,
+      "title": "The Apothecary Diaries Season 3",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx129201-HJBauga2be8I.png",
+      "format": "TV",
+      "ref": {
+       "id": "129201",
+       "kind": "anime"
+      },
+      "score": 83,
+      "title": "Summer Time Rendering",
+      "year": 2022
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "OLM",
+  "ref": {
+   "id": "28",
+   "to": "studio"
+  }
+ }
+}

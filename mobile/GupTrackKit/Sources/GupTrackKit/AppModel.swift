@@ -70,6 +70,7 @@ final class AppModel {
         self.tokens = tokens
         self.isDemo = demo
         account = tokens.load()
+        Pictures.signedIn = account.map { ($0.baseURL, $0.token) }
         reload()
     }
 
@@ -191,7 +192,7 @@ final class AppModel {
             sync = .idle
             lastSynced = Clock.now
             if let first = report.rejected.first {
-                notice = "GupTrack didn't take a change to \(first.title?.name ?? "a title"): \(first.lastError ?? "no reason given")."
+                notice = "GupTrack didn't take a change to \(first.name): \(first.lastError ?? "no reason given")."
             }
         } catch let e as APIError {
             handle(e)
@@ -231,6 +232,8 @@ final class AppModel {
             notice = e.message
         case .unreachable(let why):
             sync = .offline(why)
+        case .server(let s) where s.status == 429:
+            sync = .offline(e.message)
         default:
             sync = .failed(e.message)
         }
@@ -238,14 +241,18 @@ final class AppModel {
 
     // MARK: signing in and out
 
-    /// a grant from pairing, signing in or joining
-    func signedIn(_ grant: DeviceGrant, server: URL) async {
-        let a = ServerAccount(baseURL: server, token: grant.token, deviceId: grant.deviceId, user: grant.user,
-                              signedInAt: Clock.now)
+    /// the answer from pairing, signing in, joining or recovering: keeps the token, then reads GET me for the
+    /// name and picture to show
+    func signedIn(_ answer: SignInAnswer, server: URL) async {
+        var a = ServerAccount(baseURL: server, token: answer.token, deviceId: answer.device.id,
+                              user: UserRef(username: answer.user.username, name: answer.user.username, avatar: nil),
+                              role: answer.user.role, signedInAt: Clock.now)
+        api = APIClient(transport: isDemo ? api.transport : LiveTransport(base: server), token: answer.token)
+        Pictures.signedIn = (server, answer.token)
+        if let me = try? await api.me() { a.user = me.user(on: server) }
         tokens.save(a)
         account = a
         accountScreen = nil
-        api = APIClient(transport: isDemo ? api.transport : LiveTransport(base: server), token: grant.token)
         await refresh()
     }
 
@@ -261,6 +268,7 @@ final class AppModel {
 
     private func forget() {
         tokens.clear()
+        Pictures.signedIn = nil
         try? store.wipe()
         account = nil
         api = APIClient(transport: api.transport)

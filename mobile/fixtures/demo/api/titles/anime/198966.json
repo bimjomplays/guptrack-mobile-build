@@ -1,0 +1,87 @@
+{
+ "title": {
+  "alt": [
+   "ダンダダン 第3期"
+  ],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198966-9Ji1GwIyRiiu.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Status",
+    "value": "Not yet aired"
+   },
+   {
+    "label": "Aired",
+    "value": "2027"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "6145",
+       "to": "studio"
+      },
+      "text": "Science SARU"
+     }
+    ],
+    "value": "Science SARU"
+   },
+   {
+    "label": "Members",
+    "value": "55,153"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Drama",
+   "Fantasy",
+   "Sci-Fi",
+   "Supernatural"
+  ],
+  "headline": [
+   "TV",
+   "2027"
+  ],
+  "idMal": 62516,
+  "makers": [
+   {
+    "ref": {
+     "id": "6145",
+     "to": "studio"
+    },
+    "text": "Science SARU"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "198966",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": null,
+  "scoreNote": "55,153 members",
+  "seasons": [],
+  "staff": [],
+  "status": "upcoming",
+  "statusText": "Not yet aired",
+  "synopsis": [],
+  "tags": [],
+  "title": "Dandadan 3rd Season",
+  "trailer": null,
+  "volumes": null,
+  "year": 2027
+ }
+}

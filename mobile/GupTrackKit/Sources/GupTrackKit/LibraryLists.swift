@@ -3,7 +3,8 @@ import Observation
 
 // The Library tab's logic (32-40): the five media lists with their counts, a list's status chips, sorting, the
 // format filter, rows or covers, the captions in its rows, and custom lists (loading, creating, editing, deleting).
-// The library itself is the offline `model.library`; custom lists come from the app API.
+// The library itself is the offline `model.library`. Custom lists come whole with the library feed (docs/app-api.md
+// §7.1, kept by LibraryStore); changing them is the §9 calls (types in src/lists/types.ts).
 
 // MARK: a media list's view, sort and filters
 
@@ -290,6 +291,154 @@ enum LibraryLists {
 
 // MARK: custom lists (32, 38-40)
 
+/// The §9 shapes (src/lists/types.ts) that the feed's copy (MyList, ListItem in Wire.swift) doesn't already cover.
+enum ListWire {
+    /// Which title (`{ media, id }`).
+    struct Ref: Codable, Hashable, Sendable {
+        var media: APIMedia
+        var id: String
+
+        init(media: APIMedia, id: String) {
+            self.media = media
+            self.id = id
+        }
+
+        /// "anime:210482" -> { anime, 210482 }; "movie:603" -> { movies, 603 }
+        init?(titleId: String) {
+            guard let k = TitleKey(titleId: titleId) else { return nil }
+            self.init(media: k.media, id: k.id)
+        }
+    }
+
+    /// `ListTitle`: a title as it goes on a list.
+    struct ListTitle: Codable, Hashable, Sendable {
+        var media: APIMedia
+        var id: String
+        var title: String
+        /// https only (the server drops anything else)
+        var cover: String?
+        var format: String
+        var year: Int?
+
+        init(media: APIMedia, id: String, title: String, cover: String?, format: String, year: Int?) {
+            self.media = media
+            self.id = id
+            self.title = title
+            self.cover = cover
+            self.format = format
+            self.year = year
+        }
+
+        /// what the app knows about a title (nil for an id that isn't "<kind>:<id>")
+        init?(_ t: Title) {
+            guard let k = TitleKey(titleId: t.id) else { return nil }
+            self.init(media: k.media, id: k.id, title: t.name,
+                      cover: t.cover.flatMap { $0.scheme == "https" ? $0.absoluteString : nil },
+                      format: t.format ?? "", year: t.year)
+        }
+
+        var ref: Ref { Ref(media: media, id: id) }
+    }
+
+    /// `MyListSummary`: one of your lists without its titles.
+    struct Summary: Codable, Hashable, Sendable {
+        var id: Int
+        var slug: String
+        var name: String
+        var description: String
+        var count: Int
+        var covers: [String?]
+        var media: [APIMedia]
+        var updated: Int64
+        var level: ListLevel
+    }
+
+    /// `YourLists`: GET lists
+    struct Yours: Codable, Hashable, Sendable {
+        var profile: WireVisibility
+        var lists: [Summary]
+    }
+
+    /// `ListChoice` / `ListChoices`: GET titles/:kind/:id/lists, the Add to list sheet
+    struct Choice: Codable, Hashable, Identifiable, Sendable {
+        var id: Int
+        var name: String
+        var has: Bool
+    }
+
+    struct Choices: Codable, Hashable, Sendable {
+        var profile: WireVisibility
+        var lists: [Choice]
+    }
+
+    /// POST lists (`NewList`)
+    struct NewList: Codable, Equatable, Sendable {
+        var name: String
+        var description: String
+        var visibility: WireVisibility
+        var item: ListTitle?
+    }
+
+    /// PATCH lists/:id: only what changed
+    struct Patch: Codable, Equatable, Sendable {
+        var name: String?
+        var description: String?
+        var visibility: WireVisibility?
+
+        var isEmpty: Bool { name == nil && description == nil && visibility == nil }
+    }
+
+    /// PATCH lists/:id's answer (renaming changes the slug)
+    struct Renamed: Codable, Equatable, Sendable {
+        var slug: String
+    }
+
+    struct Add: Codable, Equatable, Sendable { var title: ListTitle }
+    struct TakeOff: Codable, Equatable, Sendable {
+        var on = false
+        var title: Ref
+    }
+    struct Note: Codable, Equatable, Sendable {
+        var ref: Ref
+        var note: String
+    }
+    struct ItemOrder: Codable, Equatable, Sendable { var refs: [Ref] }
+    struct ListOrder: Codable, Equatable, Sendable { var ids: [Int] }
+
+    /// the website's limits (src/lists/types.ts)
+    static let nameMax = 80
+    static let descriptionMax = 500
+    static let noteMax = 280
+}
+
+extension WireVisibility {
+    init(_ v: Visibility) {
+        switch v {
+        case .private: self = .private
+        case .friends: self = .friends
+        case .public: self = .public
+        }
+    }
+}
+
+extension ListItem {
+    /// a list's title as the screens show it
+    func asTitle() -> Title {
+        Title(id: titleId, media: media.kind, name: title, cover: cover.flatMap { URL(string: $0) },
+              format: format.isEmpty ? nil : format, year: year)
+    }
+}
+
+extension MyList {
+    /// the list as the screens show it: its numeric id as the app's id, its own setting as who can see it
+    func customList() -> CustomList {
+        CustomList(id: String(id), name: name, description: description.isEmpty ? nil : description,
+                   visibility: level.list.visibility,
+                   items: items.map { CustomListItem(title: $0.asTitle(), note: $0.note.isEmpty ? nil : $0.note) },
+                   updatedAt: Millis.date(updated))
+    }
+}
+
 extension Visibility {
     /// the line under "Who can see it" (40)
     var listFootnote: String {
@@ -312,6 +461,9 @@ extension CustomList {
 
     /// "12 titles · drag to reorder" (39)
     var reorderLine: String { "\(countLine) · drag to reorder" }
+
+    /// the server's number for it
+    var serverId: Int? { Int(id) }
 }
 
 /// What the new-list sheet and the list editor change (39, 40).
@@ -343,8 +495,11 @@ struct CustomListDraft: Equatable, Sendable {
         return d.isEmpty ? nil : d
     }
 
-    /// a list needs a name (100 characters at most, as on the website)
-    var isValid: Bool { !trimmedName.isEmpty && trimmedName.count <= 100 }
+    /// a list needs a name of 1–80 characters, and a description of 500 at most (the website's limits)
+    var isValid: Bool {
+        !trimmedName.isEmpty && trimmedName.count <= ListWire.nameMax
+            && (trimmedDescription?.count ?? 0) <= ListWire.descriptionMax
+    }
 
     mutating func move(from source: IndexSet, to destination: Int) {
         // IndexSet moves as SwiftUI's onMove does them, without SwiftUI (the Kit is Foundation only)
@@ -359,10 +514,10 @@ struct CustomListDraft: Equatable, Sendable {
         items = items.enumerated().filter { !offsets.contains($0.offset) }.map(\.element)
     }
 
-    /// a title's note: blank takes it off
+    /// a title's note (280 characters at most): blank takes it off
     mutating func setNote(_ note: String, for titleId: String) {
         guard let i = items.firstIndex(where: { $0.id == titleId }) else { return }
-        let n = note.trimmingCharacters(in: .whitespacesAndNewlines)
+        let n = String(note.trimmingCharacters(in: .whitespacesAndNewlines).prefix(ListWire.noteMax))
         items[i].note = n.isEmpty ? nil : n
     }
 
@@ -383,59 +538,146 @@ struct CustomListDraft: Equatable, Sendable {
         return l
     }
 
-    /// a new list from the sheet (the server's id when it gave one)
-    func created(id: String, at now: Date = Clock.now) -> CustomList {
-        CustomList(id: id, name: trimmedName, description: trimmedDescription, visibility: visibility, items: items,
-                   updatedAt: now)
+    /// POST lists: the sheet's fields, and a title to put on it at once (Add to list → New list)
+    func newList(item: Title? = nil) -> ListWire.NewList {
+        ListWire.NewList(name: trimmedName, description: trimmedDescription ?? "",
+                         visibility: WireVisibility(visibility), item: item.flatMap(ListWire.ListTitle.init))
     }
 
-    var body: CustomListBody {
-        CustomListBody(name: trimmedName, description: trimmedDescription ?? "", visibility: visibility,
-                       items: items.map { CustomListBody.Item(titleId: $0.id, note: $0.note) })
+    /// a new list as the server made it, with the title it was made with
+    func created(_ s: ListWire.Summary, item: Title? = nil) -> CustomList {
+        CustomList(id: String(s.id), name: s.name, description: s.description.isEmpty ? nil : s.description,
+                   visibility: s.level.list.visibility,
+                   items: item.map { [CustomListItem(title: $0, note: nil)] } ?? [], updatedAt: Millis.date(s.updated))
+    }
+
+    /// What saving sends for the list as it was (§9), in order: the fields that changed, titles taken off, titles
+    /// added (they go on the end), notes that changed, then the order when those calls don't leave it right.
+    func calls(from list: CustomList) -> [CustomListCall] {
+        var out: [CustomListCall] = []
+        var patch = ListWire.Patch()
+        if trimmedName != list.name { patch.name = trimmedName }
+        if (trimmedDescription ?? "") != (list.description ?? "") { patch.description = trimmedDescription ?? "" }
+        if visibility != list.visibility { patch.visibility = WireVisibility(visibility) }
+        if !patch.isEmpty { out.append(.change(patch)) }
+
+        let now = Set(items.map(\.id)), was = Set(list.items.map(\.id))
+        for item in list.items where !now.contains(item.id) {
+            if let r = ListWire.Ref(titleId: item.id) { out.append(.takeOff(r)) }
+        }
+        var left = list.items.filter { now.contains($0.id) }.map(\.id)
+        for item in items where !was.contains(item.id) {
+            if let t = ListWire.ListTitle(item.title) {
+                out.append(.add(t))
+                left.append(item.id)
+            }
+        }
+        let notes = Dictionary(list.items.map { ($0.id, $0.note ?? "") }, uniquingKeysWith: { a, _ in a })
+        for item in items where (item.note ?? "") != (notes[item.id] ?? "") {
+            if let r = ListWire.Ref(titleId: item.id) { out.append(.note(r, item.note ?? "")) }
+        }
+        if left != items.map(\.id) { out.append(.order(items.compactMap { ListWire.Ref(titleId: $0.id) })) }
+        return out
     }
 }
 
-/// POST lists and PATCH lists/<id>: the list's fields and its titles in order with their notes
-struct CustomListBody: Codable, Equatable, Sendable {
-    struct Item: Codable, Equatable, Sendable {
-        var titleId: String
-        var note: String?
-    }
-
-    var name: String
-    var description: String
-    var visibility: Visibility
-    var items: [Item]
-}
-
-/// the server's answer to creating a list: ok, and the new list's id (the demo leaves it out)
-struct CustomListCreated: Codable, Equatable, Sendable {
-    var ok: Bool
-    var id: String?
+/// One change to a list (§9).
+enum CustomListCall: Equatable, Sendable {
+    /// PATCH lists/:id
+    case change(ListWire.Patch)
+    /// POST lists/:id/items { on: false, title: { media, id } }
+    case takeOff(ListWire.Ref)
+    /// POST lists/:id/items { title }
+    case add(ListWire.ListTitle)
+    /// POST lists/:id/items/note
+    case note(ListWire.Ref, String)
+    /// POST lists/:id/items/order
+    case order([ListWire.Ref])
 }
 
 extension APIClient {
-    /// GET lists/<id>: one custom list
-    func customList(_ id: String) async throws -> CustomList { try await get("lists/" + id) }
+    /// GET lists: yours, in your order
+    func yourLists() async throws -> ListWire.Yours { try await get("lists") }
 
-    /// POST lists
-    func createList(_ body: CustomListBody) async throws -> CustomListCreated { try await send("POST", "lists", body) }
+    /// GET lists/:slug: one of yours with its titles
+    func myList(slug: String) async throws -> MyList { try await get("lists/" + slug) }
 
-    /// PATCH lists/<id>
-    func updateList(_ id: String, _ body: CustomListBody) async throws -> OKReply {
-        try await send("PATCH", "lists/" + id, body)
+    /// one of your lists by its number (GET lists for its slug, then GET lists/:slug), for when the phone's copy
+    /// doesn't have it yet
+    func myList(id: Int) async throws -> MyList {
+        guard let s = try await yourLists().lists.first(where: { $0.id == id }) else {
+            throw APIError.server(404, "not_found", "That list isn't one of yours any more.")
+        }
+        return try await myList(slug: s.slug)
     }
 
-    /// DELETE lists/<id>
-    func deleteList(_ id: String) async throws -> OKReply { try await send("DELETE", "lists/" + id) }
+    /// every one of your lists, whole (GET lists, then each)
+    func customLists() async throws -> [CustomList] {
+        var out: [CustomList] = []
+        for s in try await yourLists().lists { out.append(try await myList(slug: s.slug).customList()) }
+        return out
+    }
+
+    /// POST lists
+    func createList(_ body: ListWire.NewList) async throws -> ListWire.Summary { try await send("POST", "lists", body) }
+
+    /// PATCH lists/:id
+    func updateList(_ id: Int, _ patch: ListWire.Patch) async throws -> ListWire.Renamed {
+        try await send("PATCH", "lists/\(id)", patch)
+    }
+
+    /// DELETE lists/:id
+    func deleteList(_ id: Int) async throws -> OKReply { try await send("DELETE", "lists/\(id)") }
+
+    /// POST lists/order
+    func orderLists(_ ids: [Int]) async throws -> OKReply {
+        try await send("POST", "lists/order", ListWire.ListOrder(ids: ids))
+    }
+
+    /// POST lists/:id/items { title }: on the list
+    func putOnList(_ id: Int, _ title: ListWire.ListTitle) async throws -> OKReply {
+        try await send("POST", "lists/\(id)/items", ListWire.Add(title: title))
+    }
+
+    /// POST lists/:id/items { on: false, title: { media, id } }: off the list
+    func takeOffList(_ id: Int, _ ref: ListWire.Ref) async throws -> OKReply {
+        try await send("POST", "lists/\(id)/items", ListWire.TakeOff(title: ref))
+    }
+
+    /// POST lists/:id/items/note
+    func noteOnList(_ id: Int, _ ref: ListWire.Ref, _ note: String) async throws -> OKReply {
+        try await send("POST", "lists/\(id)/items/note", ListWire.Note(ref: ref, note: note))
+    }
+
+    /// POST lists/:id/items/order
+    func orderList(_ id: Int, _ refs: [ListWire.Ref]) async throws -> OKReply {
+        try await send("POST", "lists/\(id)/items/order", ListWire.ItemOrder(refs: refs))
+    }
+
+    /// one change to a list
+    func run(_ call: CustomListCall, on id: Int) async throws {
+        switch call {
+        case .change(let p): _ = try await updateList(id, p)
+        case .takeOff(let r): _ = try await takeOffList(id, r)
+        case .add(let t): _ = try await putOnList(id, t)
+        case .note(let r, let n): _ = try await noteOnList(id, r, n)
+        case .order(let refs): _ = try await orderList(id, refs)
+        }
+    }
 }
 
-/// Custom lists as saved on this iPhone since they were loaded: made, changed and deleted ones, laid over what the
-/// server sent, so every Library page shows the same lists right after a save.
+/// Custom lists as saved on this iPhone, laid over the library feed's copy until the feed catches up: a list made
+/// here shows until the feed has it, a saved one until the feed's copy of it changes, and a deleted one stays hidden.
 @Observable @MainActor
 final class CustomListEdits {
+    private struct Saved {
+        var list: CustomList
+        /// the feed copy's `updated` the save was made over (nil: it wasn't in the feed)
+        var base: Int64?
+    }
+
     private(set) var created: [CustomList] = []
-    private(set) var saved: [String: CustomList] = [:]
+    private var saved: [String: Saved] = [:]
     private(set) var deleted: Set<String> = []
 
     private static var current = CustomListEdits()
@@ -450,33 +692,39 @@ final class CustomListEdits {
         return current
     }
 
-    /// the server's lists with this iPhone's changes: new ones first
-    func merged(_ loaded: [CustomList]) -> [CustomList] {
-        let known = Set(loaded.map(\.id))
-        let fresh = created.filter { !known.contains($0.id) && !deleted.contains($0.id) }.map { saved[$0.id] ?? $0 }
-        return fresh + loaded.filter { !deleted.contains($0.id) }.map { saved[$0.id] ?? $0 }
-    }
-
-    /// a list saved or made here (shown without loading)
-    func local(_ id: String) -> CustomList? {
-        if deleted.contains(id) { return nil }
-        return saved[id] ?? created.first { $0.id == id }
+    /// the feed's lists with this iPhone's changes: new ones first
+    func merged(_ feed: [MyList]) -> [CustomList] {
+        let known = Set(feed.map { String($0.id) })
+        let fresh = created.filter { !known.contains($0.id) && !deleted.contains($0.id) }
+            .map { saved[$0.id]?.list ?? $0 }
+        return fresh + feed.filter { !deleted.contains(String($0.id)) }.map { l in
+            if let s = saved[String(l.id)], s.base == l.updated { return s.list }
+            return l.customList()
+        }
     }
 
     func isDeleted(_ id: String) -> Bool { deleted.contains(id) }
 
     func didCreate(_ list: CustomList) { created.insert(list, at: 0) }
 
-    func didSave(_ list: CustomList) { saved[list.id] = list }
+    /// `base`: the feed copy's `updated` the save was made over
+    func didSave(_ list: CustomList, over base: Int64?) { saved[list.id] = Saved(list: list, base: base) }
 
     func didDelete(_ id: String) { deleted.insert(id) }
+}
 
-    /// an id for a list the server didn't name: "winter-evenings", "winter-evenings-2"…
-    func newId(for name: String, taken: [String]) -> String {
-        let base = Demo.slug(name).isEmpty ? "list" : Demo.slug(name)
-        let all = Set(taken + created.map(\.id))
-        var id = base, n = 2
-        while all.contains(id) { id = "\(base)-\(n)"; n += 1 }
-        return id
+extension AppModel {
+    var listEdits: CustomListEdits { CustomListEdits.shared(for: self) }
+
+    /// your lists as the library feed last sent them, in your order (read again after every sync)
+    var feedLists: [MyList] {
+        _ = library
+        _ = lastSynced
+        return ((try? store.lists()) ?? []).map(\.list)
     }
+
+    /// your custom lists, offline, with this iPhone's changes
+    var customLists: [CustomList] { listEdits.merged(feedLists) }
+
+    func customList(_ id: String) -> CustomList? { customLists.first { $0.id == id } }
 }

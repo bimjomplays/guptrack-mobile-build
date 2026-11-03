@@ -55,7 +55,7 @@ enum Demo {
     }
 
     static func load<T: Decodable>(_ type: T.Type, _ relative: String) throws -> T {
-        guard let d = data(relative) else { throw APIError.server(404, "No demo data at \(relative).") }
+        guard let d = data(relative) else { throw APIError.server(404, "not_found", "No demo data at \(relative).") }
         return try APIClient.decoder.decode(type, from: d)
     }
 
@@ -82,20 +82,102 @@ enum Demo {
         return out.trimmingCharacters(in: CharacterSet(charactersIn: "-"))
     }
 
-    /// the demo user, signed in
+    /// the demo user, signed in (from GET me's fixture)
     static func account() -> ServerAccount {
-        let me = (try? load(UserRef.self, "api/me.json"))
-            ?? UserRef(username: "demo", name: "Demo", avatar: nil)
-        return ServerAccount(baseURL: server, token: "demo-token", deviceId: "demo-device", user: me,
-                             signedInAt: Clock.demoNow)
+        let me = try? load(MeAnswer.self, "api/me.json")
+        return ServerAccount(baseURL: server, token: "demo-token", deviceId: me?.device.id ?? 1,
+                             user: me?.user(on: server) ?? UserRef(username: "demo", name: "Demo", avatar: nil),
+                             role: me?.me.role ?? "owner", signedInAt: Clock.demoNow)
+    }
+
+    /// the demo library as the screens show it (the change feed's fixture)
+    static func library() -> [LibraryEntry] {
+        ((try? load(ChangeFeed.self, "api/library/changes.json"))?.entries ?? []).map(\.library)
+    }
+}
+
+/// The demo's library on the "server": the change feed's fixture, then every op written to it, each with the next
+/// revision. Cursors are "demo.<rev>".
+final class DemoLibrary: @unchecked Sendable {
+    private let lock = NSLock()
+    private var entries: [String: SyncEntry] = [:]
+    private var removed: [String: (ChangeFeed.Removed, Int)] = [:]
+    private var lists: [FeedList] = []
+    private var rev = 0
+    private var loaded = false
+
+    private func load() {
+        guard !loaded else { return }
+        loaded = true
+        guard let feed = try? Demo.load(ChangeFeed.self, "api/library/changes.json") else { return }
+        for e in feed.entries {
+            entries[e.titleId] = e
+            rev = max(rev, e.rev)
+        }
+        lists = feed.lists.changed
+        rev = max(rev, lists.map(\.rev).max() ?? 0)
+    }
+
+    var cursor: String { "demo.\(rev)" }
+
+    /// GET library/changes: what changed after `since` (nil: everything); nil when the cursor isn't the demo's
+    func changes(since: String?, limit: Int) -> ChangeFeed? {
+        lock.lock(); defer { lock.unlock() }
+        load()
+        var after = 0
+        if let since {
+            guard since.hasPrefix("demo."), let n = Int(since.dropFirst(5)), n <= rev else { return nil }
+            after = n
+        }
+        let page = entries.values.filter { $0.rev > after }.sorted { $0.rev < $1.rev }
+        let shown = Array(page.prefix(limit))
+        let more = page.count > shown.count
+        let upTo = more ? (shown.last?.rev ?? after) : rev
+        return ChangeFeed(entries: shown,
+                          removed: removed.values.filter { $0.1 > after && $0.1 <= upTo }.map(\.0),
+                          lists: .init(changed: lists.filter { $0.rev > after && $0.rev <= upTo }, removed: []),
+                          cursor: "demo.\(upTo)", more: more, serverTime: Millis.of(Clock.now))
+    }
+
+    /// POST library/write: each op folded in with the website's list rules; an older op than the entry is stale
+    func write(_ batch: WriteBatch) -> WriteAnswer {
+        lock.lock(); defer { lock.unlock() }
+        load()
+        let results = batch.ops.map { op -> WriteResult in
+            let key = op.titleId
+            let now = entries[key]
+            if let now, op.at < now.changedAt {
+                return WriteResult(requestId: op.requestId, applied: false, reason: "stale", media: op.media, id: op.id,
+                                   entry: now)
+            }
+            guard let next = op.applied(to: now?.entry) else {
+                guard now != nil else {
+                    return WriteResult(requestId: op.requestId, applied: false, reason: "not_on_list", media: op.media,
+                                       id: op.id, entry: nil)
+                }
+                rev += 1
+                entries[key] = nil
+                removed[key] = (ChangeFeed.Removed(media: op.media, id: op.id, removedAt: op.at), rev)
+                return WriteResult(requestId: op.requestId, applied: true, media: op.media, id: op.id, entry: nil,
+                                   removed: true)
+            }
+            rev += 1
+            var e = next
+            e.updated = 0  // days since the last change, as the server writes it
+            let s = SyncEntry(media: op.media, entry: e, statusAt: op.at, progressAt: op.at, scoreAt: op.at,
+                              changedAt: op.at, rev: rev)
+            entries[key] = s
+            removed[key] = nil
+            return WriteResult(requestId: op.requestId, applied: true, media: op.media, id: op.id, entry: s)
+        }
+        return WriteAnswer(results: results, cursor: "demo.\(rev)", serverTime: Millis.of(Clock.now))
     }
 }
 
 /// Answers app API calls from the fixtures in mobile/fixtures/demo/api, so the demo runs the app's real decoding:
 ///   GET  <path>?<k>=<v>   api/<path>/<v>.json, else api/<path>.json
 ///   POST <path>           api/<path>.post.json, else {"ok":true}
-/// The library sync is answered from api/library.json (a full copy on the first pull, then nothing new), and sent
-/// changes are all accepted.
+/// The library (GET library/changes, POST library/write) is a small in-memory server, DemoLibrary.
 final class DemoTransport: Transport, @unchecked Sendable {
     typealias Handler = @Sendable (APIRequest) -> (Data, Int)?
 
@@ -105,28 +187,28 @@ final class DemoTransport: Transport, @unchecked Sendable {
     var offline: Bool
     /// pretend network time (seconds); 0 in tests and screenshots
     var delay: Double
+    let library = DemoLibrary()
 
     init(offline: Bool = false, delay: Double = 0) {
         self.offline = offline
         self.delay = delay
+        let library = self.library
         handle("GET", "library/changes") { r in
             let since = r.query.first { $0.name == "since" }?.value
-            if since == DemoTransport.cursor { return Self.json(ChangePage(changes: [], cursor: DemoTransport.cursor, more: false, reset: false)) }
-            let entries = (try? Demo.load([LibraryEntry].self, "api/library.json")) ?? []
-            let changes = entries.map { FeedChange(titleId: $0.id, revision: 1, entry: $0) }
-            return Self.json(ChangePage(changes: changes, cursor: DemoTransport.cursor, more: false, reset: true))
-        }
-        handle("POST", "library/changes") { r in
-            guard let body = r.body, let batch = try? APIClient.decoder.decode(ChangeBatch.self, from: body) else {
-                return (Data(#"{"error":"Not a change batch."}"#.utf8), 400)
+            let limit = r.query.first { $0.name == "limit" }?.value.flatMap(Int.init) ?? 200
+            guard let feed = library.changes(since: since, limit: limit) else {
+                return Self.error(409, "cursor_expired", "That cursor is from before a reset. Read the library again.")
             }
-            return Self.json(ChangeBatchReply(results: batch.changes.map {
-                ChangeResult(requestId: $0.requestId, ok: true, revision: 2, entry: nil, error: nil)
-            }))
+            return Self.json(feed)
+        }
+        handle("POST", "library/write") { r in
+            guard let body = r.body, let batch = try? APIClient.decoder.decode(WriteBatch.self, from: body),
+                  (1...100).contains(batch.ops.count) else {
+                return Self.error(400, "bad_request", "Send 1 to 100 ops.")
+            }
+            return Self.json(library.write(batch))
         }
     }
-
-    static let cursor = "demo-1"
 
     /// answer one call yourself (tests, special cases)
     func handle(_ method: String, _ path: String, _ h: @escaping Handler) {
@@ -140,7 +222,12 @@ final class DemoTransport: Transport, @unchecked Sendable {
         return _requests
     }
 
-    func send(_ r: APIRequest) async throws -> (Data, Int) {
+    func send(_ r: APIRequest) async throws -> APIResponse {
+        let (data, status) = try await answer(r)
+        return APIResponse(data, status)
+    }
+
+    private func answer(_ r: APIRequest) async throws -> (Data, Int) {
         let h: Handler? = {
             lock.lock(); defer { lock.unlock() }
             _requests.append(r)
@@ -152,7 +239,7 @@ final class DemoTransport: Transport, @unchecked Sendable {
         if r.method == "GET" {
             if let v = r.query.first?.value, let d = Demo.data(Demo.file(r.path, variant: v)) { return (d, 200) }
             if let d = Demo.data(Demo.file(r.path)) { return (d, 200) }
-            return (Data(#"{"error":"Nothing here in the demo."}"#.utf8), 404)
+            return Self.error(404, "not_found", "Nothing here in the demo.")
         }
         if let d = Demo.data(Demo.file(r.path, method: r.method)) { return (d, 200) }
         return (Data(#"{"ok":true}"#.utf8), 200)
@@ -160,5 +247,12 @@ final class DemoTransport: Transport, @unchecked Sendable {
 
     static func json<T: Encodable>(_ v: T) -> (Data, Int) {
         ((try? APIClient.encoder.encode(v)) ?? Data("{}".utf8), 200)
+    }
+
+    /// an error answer as the server writes it (§3)
+    static func error(_ status: Int, _ code: String, _ message: String) -> (Data, Int) {
+        let body = ["error": JSONValue.string(code), "message": .string(message),
+                    "serverTime": .number(Double(Millis.of(Clock.now)))]
+        return ((try? APIClient.encoder.encode(body)) ?? Data("{}".utf8), status)
     }
 }

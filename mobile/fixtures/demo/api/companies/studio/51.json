@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx207191-VgkIzfH92WoZ.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "207191",
+       "kind": "anime"
+      },
+      "score": 72,
+      "title": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
+      "year": 2026
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "diomedéa",
+  "ref": {
+   "id": "51",
+   "to": "studio"
+  }
+ }
+}

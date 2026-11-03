@@ -1,0 +1,98 @@
+{
+ "title": {
+  "alt": [
+   "Mob Psycho 100: Daiikkai Rei toka Soudansho Ian Ryokou - Kokoro Mitasu Iyashi no Tabi",
+   "モブサイコ100 第一回霊とか相談所慰安旅行~ココロ満たす癒やしの旅~"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/109819-x6X6TbHlXyBr.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx109819-71ZeBjJuU3da.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "OVA"
+   },
+   {
+    "label": "Episodes",
+    "value": "1"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Sep 25, 2019"
+   },
+   {
+    "label": "Season",
+    "value": "Summer 2019"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "4",
+       "to": "studio"
+      },
+      "text": "bones"
+     }
+    ],
+    "value": "bones"
+   },
+   {
+    "label": "Members",
+    "value": "46,484"
+   }
+  ],
+  "format": "OVA",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Supernatural"
+  ],
+  "headline": [
+   "OVA",
+   "Summer 2019",
+   "1 episode"
+  ],
+  "idMal": 39651,
+  "makers": [
+   {
+    "ref": {
+     "id": "4",
+     "to": "studio"
+    },
+    "text": "bones"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "109819",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 76,
+  "scoreNote": "46,484 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Mob Psycho 100 II: The First Spirits and Such Company Trip ~A Journey that Mends the Heart and Heals the Soul~",
+  "trailer": null,
+  "volumes": null,
+  "year": 2019
+ }
+}

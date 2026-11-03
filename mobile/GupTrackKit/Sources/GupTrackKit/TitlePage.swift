@@ -1,309 +1,341 @@
 import Foundation
 
-// A title's own page (16-25): everything one layout needs for every media, and the words and numbers it shows.
-// GET titles/<id> answers a TitlePage; GET titles/<id>/seasons/<n> a TVSeason with its episodes. "Your list" (status,
-// progress, score) is the offline library's, not the page's, so the page works and edits offline.
+// A title's own page (16-25) and a TV season (22), docs/app-api.md §8.3. The wire shapes are the website's
+// (src/catalog/detail.ts) field for field; `TitlePage` adds the words and numbers the screen shows. "Your list"
+// (status, progress, score) is the offline library's copy (§7), not the page's, so it works and edits offline.
 //
-// Ids of the people around a title (the routes they open):
-//   character:<anilistId>                .character   (AniList characters)
-//   person:<anilistStaffId>              .person      (AniList staff and voice actors)
-//   person:tmdb-<tmdbPersonId>           .person      (TMDB cast and crew)
-//   studio:<anilistStudioId>             .studio      (AniList studios)
-//   studio:tmdb-<companyOrNetworkId>     .studio      (TMDB networks and companies)
-//   author:<openLibraryAuthorKey>        .author      (Open Library authors)
+// The people around a title open with these route ids (CatalogRef.route):
+//   .character("40")                    GET characters/40
+//   .person("anilist:95075")            GET people/anilist/95075 (also "tmdb:1190668")
+//   .author("OL7234434A")               GET authors/OL7234434A
+//   .studio("studio:569")               GET companies/studio/569 (also "network:49", "company:41077")
 
-/// GET titles/<id>
-struct TitlePage: Codable, Equatable, Sendable {
-    var title: Title
-    /// the story (plain text, paragraphs split by blank lines)
-    var description: String?
-    /// a film's tagline ("Long live the fighters.")
-    var tagline: String?
-    var trailer: URL?
-    /// who made it, on the hero's second line: the studio, the show's creator, the director, the author
-    var creator: Credit?
-    /// "2026-09-25"; endDate nil while it runs
-    var startDate: String?
-    var endDate: String?
-    /// what it's adapted from ("Manga", "Original")
-    var source: String?
-    /// how many people have it on a list (the score average's "48,869 members")
-    var members: Int?
-    /// how the scores spread, 10...100
-    var scores: [ScoreBar]?
-    /// a book's subjects as Open Library has them (cleaned up for show by `subjectTags`)
-    var subjects: [String]?
-    var characters: [Character]?
-    var cast: [Credit]?
-    /// "Denis Villeneuve · Director", "Jon Spaihts, Denis Villeneuve · Screenplay"
-    var crew: [Credit]?
-    /// the makers shown as rows (a manga's "Tatsuki Fujimoto · Story & Art", a book's author)
-    var staff: [Credit]?
-    var studios: [Credit]?
-    var relations: [Relation]?
-    var recommendations: [Title]?
-    /// a show's seasons (no specials), oldest first
-    var seasons: [TVSeason]?
-    /// the title on other sites (AniList, MyAnimeList, TMDB, Open Library), for the ••• menu
-    var links: [Link]?
-    /// how many reviews it has on GupTrack
-    var reviews: Int?
+// MARK: - the wire shapes
 
-    init(title: Title, description: String? = nil, tagline: String? = nil, trailer: URL? = nil, creator: Credit? = nil,
-         startDate: String? = nil, endDate: String? = nil, source: String? = nil, members: Int? = nil,
-         scores: [ScoreBar]? = nil, subjects: [String]? = nil, characters: [Character]? = nil, cast: [Credit]? = nil,
-         crew: [Credit]? = nil, staff: [Credit]? = nil, studios: [Credit]? = nil, relations: [Relation]? = nil,
-         recommendations: [Title]? = nil, seasons: [TVSeason]? = nil, links: [Link]? = nil, reviews: Int? = nil) {
-        self.title = title
-        self.description = description
-        self.tagline = tagline
-        self.trailer = trailer
-        self.creator = creator
-        self.startDate = startDate
-        self.endDate = endDate
-        self.source = source
-        self.members = members
-        self.scores = scores
-        self.subjects = subjects
-        self.characters = characters
-        self.cast = cast
-        self.crew = crew
-        self.staff = staff
-        self.studios = studios
-        self.relations = relations
-        self.recommendations = recommendations
-        self.seasons = seasons
-        self.links = links
-        self.reviews = reviews
-    }
+/// `NameCard`: a person or character as a small card
+struct NameCard: Codable, Hashable, Sendable {
+    var ref: CatalogRef
+    var name: String
+    var image: URL?
 
-    /// Someone (or a studio) credited on a title. `ref` is the page id it opens ("person:97619"); nil when there's
-    /// no page for them.
-    struct Credit: Codable, Equatable, Hashable, Sendable {
-        var ref: String?
-        var name: String
-        var image: URL?
-        /// the character played, the job ("Director"), "Story & Art"
-        var role: String?
-
-        var route: Route? { ref.flatMap(TitlePage.route(for:)) }
-    }
-
-    /// A character with the voice behind them.
-    struct Character: Codable, Equatable, Hashable, Sendable {
-        var ref: String
-        var name: String
-        var image: URL?
-        /// "Main", "Supporting"
-        var role: String?
-        var voice: Credit?
-
-        var route: Route? { TitlePage.route(for: ref) }
-    }
-
-    /// Another title it's tied to: "Prequel", "Sequel", "Source", "Side story"…
-    struct Relation: Codable, Equatable, Hashable, Sendable {
-        var relation: String
-        var title: Title
-    }
-
-    /// How many gave a score (10, 20 … 100).
-    struct ScoreBar: Codable, Equatable, Hashable, Sendable {
-        var score: Int
-        var amount: Int
-    }
-
-    struct Link: Codable, Equatable, Hashable, Sendable {
-        /// "AniList", "MyAnimeList", "TMDB", "Open Library"
-        var label: String
-        var url: URL
-    }
-
-    /// a page from only a Title (the library's copy when the page can't load)
-    static func basic(_ t: Title) -> TitlePage { TitlePage(title: t) }
+    var route: Route? { ref.route }
 }
 
-/// One season of a show. On a title page `episodes` may be short (number, name, runtime); GET
-/// titles/<id>/seasons/<n> gives them in full.
-struct TVSeason: Codable, Equatable, Hashable, Sendable, Identifiable {
+/// `NameLink`: a link inside running text or a fact
+struct NameLink: Codable, Hashable, Sendable {
+    var text: String
+    var ref: CatalogRef?
+
+    var route: Route? { ref?.route }
+}
+
+/// `Fact`: a row in a page's facts ("Studio  Wit Studio")
+struct Fact: Codable, Hashable, Sendable {
+    var label: String
+    var value: String
+    var links: [NameLink]?
+
+    /// the one page the fact opens (several links show as a menu)
+    var routes: [(text: String, route: Route)] {
+        (links ?? []).compactMap { l in l.route.map { (l.text, $0) } }
+    }
+}
+
+/// `RichSpan`
+struct RichSpan: Codable, Hashable, Sendable {
+    var text: String
+    var bold: Bool?
+    var italic: Bool?
+    var spoiler: Bool?
+    var ref: CatalogRef?
+}
+
+/// `Rich`: one array of spans per paragraph
+typealias Rich = [[RichSpan]]
+
+/// Rich text as the app shows it: plain paragraphs, spoilers left out until asked for.
+enum RichText {
+    /// the paragraphs joined by a blank line; `spoilers` false leaves spoiler spans out (and paragraphs left empty)
+    static func plain(_ r: Rich, spoilers: Bool = false) -> String {
+        r.map { p in
+            p.filter { spoilers || $0.spoiler != true }.map(\.text).joined()
+                .trimmingCharacters(in: .whitespacesAndNewlines)
+        }
+        .filter { !$0.isEmpty }
+        .joined(separator: "\n\n")
+    }
+
+    static func hasSpoilers(_ r: Rich) -> Bool { r.contains { $0.contains { $0.spoiler == true } } }
+}
+
+/// `TitleCard`: a title as a small card (relations, recommendations, credits)
+struct TitleCard: Codable, Hashable, Sendable {
+    var ref: TitleRef
+    var title: String
+    var cover: URL?
+    /// "TV", "Film", "Manga", "Novel"
+    var format: String
+    var year: Int?
+    /// 0–100, when the card shows one
+    var score: Double?
+
+    /// the card as the app's title
+    var app: Title {
+        Title(id: ref.titleId, media: ref.kind, name: title, cover: cover, format: format, year: year,
+              score: score.map { $0 / 10 })
+    }
+}
+
+/// `CharacterCredit`
+struct CharacterCredit: Codable, Hashable, Sendable {
+    var character: NameCard
+    /// "Main", "Supporting", "Background"
+    var role: String
+    var voices: [Voice]
+
+    struct Voice: Codable, Hashable, Sendable {
+        var person: NameCard
+        var language: String
+    }
+
+    /// the voice the page shows: Japanese first, as the website does
+    var voice: Voice? { voices.first { $0.language == "Japanese" } ?? voices.first }
+}
+
+/// `Credit`: an actor and who they play, or a person and their job
+struct Credit: Codable, Hashable, Sendable {
+    var person: NameCard
+    var role: String
+    /// "62 episodes"
+    var note: String?
+}
+
+/// `SeasonSummary`: one season of a show
+struct SeasonSummary: Codable, Hashable, Sendable, Identifiable {
     var number: Int
     var name: String
-    var poster: URL?
+    var episodes: Int
     var year: Int?
-    /// episodes in the season (aired or announced)
-    var count: Int
-    var episodes: [Episode]?
+    /// "2025-01-17"
+    var air: String?
+    var poster: URL?
+    var overview: String
+
+    init(number: Int, name: String, episodes: Int, year: Int? = nil, air: String? = nil, poster: URL? = nil,
+         overview: String = "") {
+        self.number = number
+        self.name = name
+        self.episodes = episodes
+        self.year = year
+        self.air = air
+        self.poster = poster
+        self.overview = overview
+    }
+
+    var id: Int { number }
+    /// episodes in the season
+    var count: Int { episodes }
+}
+
+/// `Episode`
+struct Episode: Codable, Hashable, Sendable, Identifiable {
+    var number: Int
+    var name: String
+    /// "2025-01-17"
+    var air: String?
+    var minutes: Int?
+    var overview: String
+    var still: URL?
+    /// 0–100
+    var score: Double?
 
     var id: Int { number }
 
-    struct Episode: Codable, Equatable, Hashable, Sendable, Identifiable {
-        var number: Int
-        var name: String
-        var still: URL?
-        /// "2025-01-30"
-        var aired: String?
-        /// "57m"
-        var runtime: String?
-        var overview: String?
-
-        var id: Int { number }
-
-        /// "Jan 30, 2025 · 57m"
-        var line: String {
-            var parts: [String] = []
-            if let a = aired, let d = Format.parseDay(a) { parts.append(Format.longDay(d)) }
-            if let r = runtime, !r.isEmpty { parts.append(r) }
-            return parts.joined(separator: " · ")
-        }
-    }
-}
-
-/// GET titles/<id>/seasons/<n>: a season in full, with the show and every season's size (to place progress).
-struct TVSeasonPage: Codable, Equatable, Sendable {
-    var show: Title
-    var season: TVSeason
-    var seasons: [TVSeason]
-}
-
-extension APIClient {
-    func titlePage(_ id: String) async throws -> TitlePage { try await get("titles/" + id) }
-
-    func tvSeason(_ id: String, _ number: Int) async throws -> TVSeasonPage {
-        try await get("titles/\(id)/seasons/\(number)")
-    }
-}
-
-// MARK: - the page's words
-
-extension TitlePage {
-    /// the page a credit's id opens: "person:97619" -> .person("person:97619")
-    static func route(for ref: String) -> Route? {
-        guard let kind = ref.split(separator: ":", maxSplits: 1).first, ref.count > kind.count + 1 else { return nil }
-        switch kind {
-        case "character": return .character(ref)
-        case "person": return .person(ref)
-        case "studio": return .studio(ref)
-        case "author": return .author(ref)
-        default: return nil
-        }
-    }
-
-    /// a format as the page writes it: anime films are "Film", a TV show is a "Series"
-    static func formatLabel(_ t: Title) -> String? {
-        switch t.media {
-        case .movie: return "Film"
-        case .tv: return "Series"
-        case .anime: return t.format == "Movie" ? "Film" : t.format
-        case .manga, .book: return t.format
-        }
-    }
-
-    /// the hero's line under the name: "ONA · Fall 2026 · 11 episodes", "Series · 2022 · 2 seasons",
-    /// "Film · 2024 · 2h 47m", "Manga · 2018 · 232 ch · 24 vols", "Novel · 2021 · 496 pages"
-    var metaLine: String {
-        let t = title
+    /// "Jan 17, 2025 · 57m"
+    var line: String {
         var parts: [String] = []
-        if let f = Self.formatLabel(t), !f.isEmpty { parts.append(f) }
-        switch t.media {
-        case .anime:
-            if let s = t.season { parts.append(s) } else if let y = t.year { parts.append(String(y)) }
-            if t.format == "Movie" {
-                if let r = t.runtime { parts.append(r) }
-            } else if let n = t.total {
-                parts.append(t.media.units(n))
-            }
-        case .tv:
-            if let y = t.year { parts.append(String(y)) }
-            let n = seasons?.count ?? 0
-            if n > 0 { parts.append("\(n) season\(n == 1 ? "" : "s")") } else if let e = t.total { parts.append(t.media.units(e)) }
-        case .movie:
-            if let y = t.year { parts.append(String(y)) }
-            if let r = t.runtime { parts.append(r) }
-        case .manga:
-            if let y = t.year { parts.append(String(y)) }
-            if let n = t.total { parts.append("\(Format.grouped(n)) ch") }
-            if let v = t.volumes { parts.append("\(v) vol\(v == 1 ? "" : "s")") }
-        case .book:
-            if let y = t.year { parts.append(String(y)) }
-            if let n = t.total { parts.append("\(Format.grouped(n)) pages") }
-        }
+        if let a = air, let d = Format.parseDay(a) { parts.append(Format.longDay(d)) }
+        if let m = minutes, let r = ListEntry.runtime(m, .movie) { parts.append(r) }
         return parts.joined(separator: " · ")
+    }
+}
+
+/// `Trailer`: a YouTube video id
+struct Trailer: Codable, Hashable, Sendable {
+    var youtube: String
+
+    var url: URL? { URL(string: "https://www.youtube.com/watch?v=" + youtube) }
+}
+
+/// `TitleDetail`
+struct TitleDetail: Codable, Hashable, Sendable {
+    var ref: TitleRef
+    /// the list it belongs on (plural; anime films stay under Anime)
+    var media: APIMedia
+    var title: String
+    var alt: [String]
+    var cover: URL?
+    var banner: URL?
+    var synopsis: Rich
+    var format: String
+    var status: CatalogStatus
+    /// "Finished", "Returning series"
+    var statusText: String
+    var year: Int?
+    /// "TV · 2013 · 25 episodes"
+    var headline: [String]
+    var makers: [NameLink]
+    var facts: [Fact]
+    var genres: [String]
+    var tags: [String]
+    /// 0–100
+    var score: Double?
+    var scoreNote: String?
+    /// episodes, chapters or pages: your list's total
+    var count: Int?
+    /// minutes per episode, or a film's runtime
+    var minutes: Int
+    var trailer: Trailer?
+    var volumes: Int?
+    var idMal: Int?
+    var relations: [Relation]
+    var characters: [CharacterCredit]
+    var cast: [Credit]
+    var staff: [Credit]
+    var seasons: [SeasonSummary]
+    var recommendations: [TitleCard]
+    var more: [More]
+
+    struct Relation: Codable, Hashable, Sendable {
+        var relation: String
+        var title: TitleCard
+    }
+
+    /// an extra shelf, "More by Andy Weir"
+    struct More: Codable, Hashable, Sendable {
+        var title: String
+        var ref: CatalogRef?
+        var titles: [TitleCard]
+    }
+}
+
+/// `GET titles/:kind/:id`
+struct TitleAnswer: Codable, Equatable, Sendable { var title: TitleDetail }
+
+/// `GET titles/tv/:id/seasons/:season`
+struct SeasonAnswer: Codable, Equatable, Sendable { var episodes: [Episode] }
+
+// MARK: - the page
+
+/// A title page as the screen shows it: the answer, and the title as the app's cards and the library know it.
+struct TitlePage: Equatable, Sendable {
+    var detail: TitleDetail?
+    var title: Title
+
+    init(_ d: TitleDetail) {
+        detail = d
+        let kind = d.ref.kind
+        let season = d.facts.first { $0.label == "Season" }?.value
+        title = Title(id: d.ref.titleId, media: kind, name: d.title, subtitle: d.alt.first, cover: d.cover,
+                      banner: d.banner, format: d.format, year: d.year, season: season, total: d.count,
+                      volumes: d.volumes, score: d.score.map { $0 / 10 }, genres: d.genres,
+                      studio: d.makers.first?.text, runtime: ListEntry.runtime(d.minutes, kind),
+                      state: Catalog.state(d.status))
+    }
+
+    /// a page from only a Title (the library's copy while the page can't load)
+    init(basic t: Title) {
+        detail = nil
+        title = t
+    }
+
+    static func basic(_ t: Title) -> TitlePage { TitlePage(basic: t) }
+
+    var seasons: [SeasonSummary] { detail?.seasons ?? [] }
+    var makers: [NameLink] { detail?.makers ?? [] }
+
+    /// a format as the page writes it
+    static func formatLabel(_ t: Title) -> String? { t.format }
+
+    /// the hero's line under the name: the answer's headline ("TV · Fall 2026 · 11 episodes")
+    var metaLine: String {
+        if let h = detail?.headline, !h.isEmpty { return h.joined(separator: " · ") }
+        return [title.format, title.year.map(String.init)].compactMap { $0 }.joined(separator: " · ")
     }
 
     /// the maker on the hero's second line (before the score)
-    var creatorName: String? { creator?.name ?? title.studio }
+    var creatorName: String? {
+        let names = makers.prefix(2).map(\.text)
+        return names.isEmpty ? title.studio : names.joined(separator: ", ")
+    }
 
-    /// the line under the name in the native script / other titles (anime and manga only; a book's subtitle is its
-    /// author, shown on the next line)
+    /// the page the maker's name opens
+    var creatorRoute: Route? { makers.first?.route }
+
+    /// another name (romaji, native) under the name, for anime and manga
     var nativeLine: String? {
-        guard title.media == .anime || title.media == .manga, let s = title.subtitle, !s.isEmpty else { return nil }
+        guard title.media == .anime || title.media == .manga, let s = title.subtitle, !s.isEmpty, s != title.name
+        else { return nil }
         return s
     }
 
-    /// the average as shown: "8.6" (out of 10), books "4.5" (out of 5, as readers rate them)
+    /// the average as shown: "8.6" (0–100 shown out of 10)
     var averageText: String? {
         guard let s = title.score, s > 0 else { return nil }
-        return title.media == .book ? Format.average(s / 2) : Format.average(s)
+        return Format.average(s)
     }
 
-    /// books say "/ 5" after the score
-    var averageOutOf: String? { title.media == .book ? "/ 5" : nil }
+    /// "48,869 members", "1,204 ratings"
+    var scoreNote: String? { detail?.scoreNote }
 
     /// "Story", or "About the book"
     var storyHeading: String { title.media == .book ? "About the book" : "Story" }
 
-    /// the story's first paragraphs (the page shows a few lines with More)
-    var story: String? {
-        guard let d = description?.trimmingCharacters(in: .whitespacesAndNewlines), !d.isEmpty else { return nil }
-        return d
+    /// the story, spoilers left out unless asked for
+    func story(spoilers: Bool = false) -> String? {
+        guard let r = detail?.synopsis else { return nil }
+        let s = RichText.plain(r, spoilers: spoilers)
+        return s.isEmpty ? nil : s
     }
 
-    /// the tags under the story: a book's cleaned-up subjects, else the genres
+    var storyHasSpoilers: Bool { detail.map { RichText.hasSpoilers($0.synopsis) } ?? false }
+
+    /// the genres, then the tags (no repeats)
     var tags: [String] {
-        if title.media == .book, let s = subjects, !s.isEmpty {
-            let clean = Self.subjectTags(s)
-            if !clean.isEmpty { return clean }
-        }
-        return title.genres ?? []
-    }
-
-    /// Open Library's subjects made readable: "hard science-fiction" -> "Hard science fiction", "sci-fi" ->
-    /// "Science fiction", "New York Times bestseller" -> "NYT bestseller"; machine tags ("nyt:…"), long catalogue
-    /// headings and repeats go.
-    static func subjectTags(_ raw: [String], limit: Int = 6) -> [String] {
-        var out: [String] = []
-        var seen = Set<String>()
-        for s in raw {
-            var t = s.trimmingCharacters(in: .whitespaces)
-            if t.isEmpty || t.contains(":") || t.contains(",") || t.count > 28 { continue }
-            let lower = t.lowercased()
-            if lower == "new york times reviewed" || lower.hasPrefix("accessible book") || lower.hasPrefix("protected daisy") { continue }
-            if lower == "new york times bestseller" || lower == "nyt bestseller" { t = "NYT bestseller" }
-            else {
-                t = lower.replacingOccurrences(of: "sci-fi", with: "science fiction")
-                    .replacingOccurrences(of: "science-fiction", with: "science fiction")
-                    .replacingOccurrences(of: "-", with: " ")
-                t = t.prefix(1).uppercased() + t.dropFirst()
-            }
-            let key = t.lowercased()
-            if seen.contains(key) { continue }
-            seen.insert(key)
+        var seen = Set<String>(), out: [String] = []
+        for t in (detail?.genres ?? title.genres ?? []) + (detail?.tags ?? []) where seen.insert(t.lowercased()).inserted {
             out.append(t)
-            if out.count == limit { break }
         }
         return out
     }
 
-    /// "8.6", "48,869 members", and the bars (only when the spread is known)
-    var hasScoreAverage: Bool { title.score != nil && !(scores ?? []).isEmpty }
+    /// the line "Next episode  Ep 7, Nov 6, 2026" from the facts
+    var nextEpisode: String? { detail?.facts.first { $0.label == "Next episode" }?.value }
 
-    var membersLine: String? { members.map { "\(Format.grouped($0)) members" } }
+    /// the trailer on YouTube
+    var trailer: URL? { detail?.trailer?.url }
 
-    /// each bar's height 0...1 of the tallest
-    var scoreHeights: [(score: Int, height: Double)] {
-        let bars = (scores ?? []).sorted { $0.score < $1.score }
-        let top = Double(bars.map(\.amount).max() ?? 0)
-        return bars.map { ($0.score, top > 0 ? Double($0.amount) / top : 0) }
+    /// the facts, as the answer orders them
+    var details: [Fact] { detail?.facts ?? [] }
+
+    var relations: [TitleDetail.Relation] { detail?.relations ?? [] }
+    var characters: [CharacterCredit] { detail?.characters ?? [] }
+    var cast: [Credit] { detail?.cast ?? [] }
+    var staff: [Credit] { detail?.staff ?? [] }
+    var recommendations: [Title] { (detail?.recommendations ?? []).map(\.app) }
+    var more: [TitleDetail.More] { (detail?.more ?? []).filter { !$0.titles.isEmpty } }
+
+    /// "Prequel", "Source · Manga" (the media when it differs from this title's)
+    func relationLabel(_ r: TitleDetail.Relation) -> String {
+        r.title.ref.kind != title.media ? "\(r.relation) · \(r.title.ref.kind.singular)" : r.relation
+    }
+
+    /// "ONA · 2026", "Manga" (the status after it is the library's)
+    static func relationLine(_ t: Title) -> String {
+        var parts: [String] = []
+        if let f = t.format, !f.isEmpty { parts.append(f) } else { parts.append(t.media.singular) }
+        if let y = t.year { parts.append(String(y)) }
+        return parts.joined(separator: " · ")
     }
 
     /// "Sep 25, 2026" from "2026-09-25" (a bare year passes through)
@@ -313,85 +345,68 @@ extension TitlePage {
         return s
     }
 
-    /// "Sep 25, 2026 – ongoing", "Dec 3, 2018 – Dec 14, 2020"
-    var runLine: String? {
-        guard let start = Self.dateText(startDate) else { return nil }
-        if let end = Self.dateText(endDate) { return start == end ? start : "\(start) – \(end)" }
-        if title.state == "Releasing" { return "\(start) – ongoing" }
-        return start
-    }
-
-    /// One row of Details. `ref` makes it a link (a studio, an author).
-    struct Detail: Equatable, Hashable, Sendable {
+    struct Link: Equatable, Hashable, Sendable {
+        /// "AniList", "MyAnimeList", "TMDB", "Open Library"
         var label: String
-        var value: String
-        var ref: String?
+        var url: URL
     }
 
-    /// Details, per media (17, 23b). Your watch history is added by the page (it's the library's).
-    var details: [Detail] {
-        let t = title
-        var out: [Detail] = []
-        func add(_ label: String, _ value: String?, _ ref: String? = nil) {
-            if let value, !value.isEmpty { out.append(Detail(label: label, value: value, ref: ref)) }
-        }
-        let studio = studios?.first
-        switch t.media {
-        case .anime:
-            add("Format", Self.formatLabel(t))
-            if t.format == "Movie" {
-                add("Runtime", t.runtime)
-            } else if let n = t.total {
-                add("Episodes", t.runtime.map { "\(n) · \($0) each" } ?? String(n))
-            }
-            add(t.format == "Movie" ? "Released" : "Airing", runLine)
-            add("Season", t.season)
-            add("Studio", studio?.name ?? t.studio, studio?.ref)
-            add("Source", source)
-        case .manga:
-            add("Format", t.format)
-            add("Chapters", t.total.map { Format.grouped($0) })
-            add("Volumes", t.volumes.map { String($0) })
-            add("Published", runLine)
-            add("Status", t.state)
-            add("Source", source)
-        case .tv:
-            add("First aired", Self.dateText(startDate) ?? t.year.map { String($0) })
-            if let s = seasons, !s.isEmpty {
-                let eps = s.reduce(0) { $0 + $1.count }
-                add("Seasons", "\(s.count) · \(t.media.units(eps))")
-            }
-            add("Network", studio?.name ?? t.studio, studio?.ref)
-            add("Status", t.state)
-            add("Genres", t.genres?.joined(separator: ", "))
-        case .movie:
-            add("Released", Self.dateText(startDate) ?? t.year.map { String($0) })
-            add("Runtime", t.runtime)
-            add("Genres", t.genres?.joined(separator: ", "))
-            add("Studio", studio?.name, studio?.ref)
+    /// the ••• menu's "Open on AniList": the source's own page from the title's id (and MyAnimeList's id)
+    var openLinks: [Link] {
+        guard let r = TitleRef(titleId: title.id) else { return [] }
+        var out: [Link] = []
+        func add(_ label: String, _ s: String) { if let u = URL(string: s) { out.append(Link(label: label, url: u)) } }
+        switch r.kind {
+        case .anime, .manga:
+            add("AniList", "https://anilist.co/\(r.kind.rawValue)/\(r.id)")
+            if let mal = detail?.idMal { add("MyAnimeList", "https://myanimelist.net/\(r.kind.rawValue)/\(mal)") }
+        case .tv, .movie:
+            add("TMDB", "https://www.themoviedb.org/\(r.kind.rawValue)/\(r.id)")
         case .book:
-            add("Published", t.year.map { String($0) })
-            add("Pages", t.total.map { Format.grouped($0) })
-            add("Author", creator?.name ?? t.studio, creator?.ref)
+            add("Open Library", "https://openlibrary.org/works/\(r.id)")
         }
         return out
     }
+}
 
-    /// "Prequel", "Source · Manga" (the media when it differs from this title's)
-    func relationLabel(_ r: Relation) -> String {
-        r.title.media != title.media ? "\(r.relation) · \(r.title.media.singular)" : r.relation
+/// A season in full (22): the show's page (for its seasons and the library's progress) and the season's episodes.
+struct TVSeasonPage: Equatable, Sendable {
+    var show: TitlePage
+    var number: Int
+    var episodes: [Episode]
+
+    var seasons: [SeasonSummary] { show.seasons }
+    var season: SeasonSummary {
+        seasons.first { $0.number == number } ?? SeasonSummary(number: number, name: "Season \(number)",
+                                                                 episodes: episodes.count)
+    }
+}
+
+extension APIClient {
+    /// GET titles/:kind/:id (`id` is the app's "anime:210482")
+    func titleDetail(_ id: String) async throws -> TitleDetail {
+        guard let r = TitleRef(titleId: id) else { throw APIError.server(404, "not_found", "That title isn't one GupTrack knows.") }
+        let a: TitleAnswer = try await get("titles/\(r.kind.rawValue)/\(r.id)")
+        return a.title
     }
 
-    /// "ONA · 2026", "Manga" (the status after it is the library's)
-    static func relationLine(_ t: Title) -> String {
-        var parts: [String] = []
-        if let f = formatLabel(t), !f.isEmpty { parts.append(f) } else { parts.append(t.media.singular) }
-        if let y = t.year { parts.append(String(y)) }
-        return parts.joined(separator: " · ")
+    func titlePage(_ id: String) async throws -> TitlePage { TitlePage(try await titleDetail(id)) }
+
+    /// GET titles/tv/:id/seasons/:season
+    func seasonEpisodes(_ id: String, _ number: Int) async throws -> [Episode] {
+        guard let r = TitleRef(titleId: id), r.kind == .tv else {
+            throw APIError.server(404, "not_found", "Only TV shows have seasons.")
+        }
+        let a: SeasonAnswer = try await get("titles/tv/\(r.id)/seasons/\(number)")
+        return a.episodes
     }
 
-    /// the ••• menu's "Open on AniList" links
-    var openLinks: [Link] { links ?? [] }
+    /// the season page: the show and the season's episodes
+    func tvSeason(_ id: String, _ number: Int) async throws -> TVSeasonPage {
+        async let show = titlePage(id)
+        async let episodes = seasonEpisodes(id, number)
+        return TVSeasonPage(show: try await show, number: number, episodes: try await episodes)
+    }
 }
 
 // MARK: - the main button and "Your list"
@@ -439,8 +454,8 @@ enum TitlePrimary: Equatable {
 
 enum TitleListText {
     /// "Your list", "Your list · Season 2"
-    static func label(_ e: LibraryEntry, seasons: [TVSeason]?) -> String {
-        if e.media == .tv, let p = TVProgress.position(e.progress, seasons ?? []), (seasons ?? []).count > 1 {
+    static func label(_ e: LibraryEntry, seasons: [SeasonSummary]) -> String {
+        if e.media == .tv, TVProgress.regular(seasons).count > 1, let p = TVProgress.position(e.progress, seasons) {
             return "Your list · Season \(p.season)"
         }
         return "Your list"
@@ -514,12 +529,13 @@ struct TVProgress: Equatable, Sendable {
     /// the next episode's number in its season, nil when the show is all watched
     var next: Int? { watched < count ? watched + 1 : nil }
 
-    static func regular(_ seasons: [TVSeason]) -> [TVSeason] {
+    /// the seasons that count (no specials, none empty), in order
+    static func regular(_ seasons: [SeasonSummary]) -> [SeasonSummary] {
         seasons.filter { $0.number > 0 && $0.count > 0 }.sorted { $0.number < $1.number }
     }
 
     /// where `progress` episodes leave you; nil without seasons
-    static func position(_ progress: Int, _ seasons: [TVSeason]) -> TVProgress? {
+    static func position(_ progress: Int, _ seasons: [SeasonSummary]) -> TVProgress? {
         let list = regular(seasons)
         guard let last = list.last else { return nil }
         var left = max(0, progress)
@@ -531,20 +547,20 @@ struct TVProgress: Equatable, Sendable {
     }
 
     /// episodes in the seasons before `season`
-    static func offset(_ season: Int, _ seasons: [TVSeason]) -> Int {
+    static func offset(_ season: Int, _ seasons: [SeasonSummary]) -> Int {
         regular(seasons).filter { $0.number < season }.reduce(0) { $0 + $1.count }
     }
 
-    static func total(_ seasons: [TVSeason]) -> Int { regular(seasons).reduce(0) { $0 + $1.count } }
+    static func total(_ seasons: [SeasonSummary]) -> Int { regular(seasons).reduce(0) { $0 + $1.count } }
 
     /// how many of a season's episodes are watched
-    static func watched(in season: TVSeason, progress: Int, _ seasons: [TVSeason]) -> Int {
+    static func watched(in season: SeasonSummary, progress: Int, _ seasons: [SeasonSummary]) -> Int {
         min(season.count, max(0, progress - offset(season.number, seasons)))
     }
 
     /// The patch for tapping an episode's circle: an unwatched one marks it and everything before it watched; a
     /// watched one goes back to just before it.
-    static func mark(episode n: Int, season: Int, progress: Int, _ seasons: [TVSeason]) -> LibraryPatch {
+    static func mark(episode n: Int, season: Int, progress: Int, _ seasons: [SeasonSummary]) -> LibraryPatch {
         let off = offset(season, seasons)
         let isWatched = progress >= off + n
         let p = isWatched ? off + n - 1 : off + n
@@ -552,18 +568,18 @@ struct TVProgress: Equatable, Sendable {
     }
 
     /// the patch for all of a season watched
-    static func markAll(season: Int, _ seasons: [TVSeason]) -> LibraryPatch {
+    static func markAll(season: Int, _ seasons: [SeasonSummary]) -> LibraryPatch {
         let count = regular(seasons).first { $0.number == season }?.count ?? 0
         return patch(offset(season, seasons) + count, seasons)
     }
 
     /// +1 / −1 on the season's stepper
-    static func step(_ progress: Int, by n: Int, _ seasons: [TVSeason]) -> LibraryPatch {
+    static func step(_ progress: Int, by n: Int, _ seasons: [SeasonSummary]) -> LibraryPatch {
         patch(min(total(seasons), max(0, progress + n)), seasons)
     }
 
     /// progress and the season it puts you in; finishing the last episode completes the show
-    static func patch(_ progress: Int, _ seasons: [TVSeason]) -> LibraryPatch {
+    static func patch(_ progress: Int, _ seasons: [SeasonSummary]) -> LibraryPatch {
         let p = max(0, progress)
         var patch = LibraryPatch(progress: p, season: position(p, seasons)?.season)
         let all = total(seasons)

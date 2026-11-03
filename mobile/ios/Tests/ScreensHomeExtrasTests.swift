@@ -7,7 +7,6 @@ final class ScreensHomeExtrasTests: ScreenTestCase {
         let app = launch(["-open", "notifications"])
         expect(app, "Today")
         expect(app, "wants to be friends")
-        expect(app, "titles in common")
         expect(app, "sent you a message")
         expect(app, "commented on your profile")
         expect(app, "liked your review of")
@@ -67,7 +66,7 @@ final class ScreensHomeExtrasTests: ScreenTestCase {
     func testPastDaysUnfold() {
         let app = launch(["-open", "calendar"])
         expect(app, "Sun, Nov 1").tap()
-        expect(app, "Blue Box Season 2")
+        expect(app, "Overgeared")
     }
 
     func testNextWeekAndBackToToday() {

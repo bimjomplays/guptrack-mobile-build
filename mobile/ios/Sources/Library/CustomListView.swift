@@ -2,20 +2,20 @@ import SwiftUI
 
 /// A custom list (38): its covers, name, description and "Public · 12 titles · updated yesterday"; Edit list, Add
 /// titles and Shuffle; then the titles in order with your status, score and the note on why each is there.
-/// A list saved or made on this iPhone shows straight away, without loading.
+/// Your lists come with the library feed, so the page shows offline; one saved or made here shows at once.
 struct CustomListView: View {
     let id: String
 
     @Environment(AppModel.self) private var model
 
     var body: some View {
-        let edits = CustomListEdits.shared(for: model)
-        if edits.isDeleted(id) {
+        if model.listEdits.isDeleted(id) {
             ContentUnavailableView("This list was deleted", systemImage: "trash").pageBackground()
-        } else if let local = edits.local(id) {
+        } else if let local = model.customList(id) {
             CustomListPage(list: local)
         } else {
-            PageLoader(id: id, load: { try await $0.customList(id) }) { list in
+            // not in the phone's copy yet (a link, or before the first sync): GET lists, then lists/:slug
+            PageLoader(id: id, load: { try await $0.myList(id: Int(id) ?? 0).customList() }) { list in
                 CustomListPage(list: list)
             }
             .pageBackground()
@@ -288,10 +288,10 @@ struct EditListSheet: View {
     var body: some View {
         NavigationStack {
             Group {
-                if let local = CustomListEdits.shared(for: model).local(id) {
+                if let local = model.customList(id) {
                     EditListForm(list: local)
                 } else {
-                    PageLoader(id: id, load: { try await $0.customList(id) }) { list in
+                    PageLoader(id: id, load: { try await $0.myList(id: Int(id) ?? 0).customList() }) { list in
                         EditListForm(list: list)
                     }
                 }

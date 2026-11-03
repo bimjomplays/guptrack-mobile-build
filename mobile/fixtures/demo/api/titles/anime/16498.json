@@ -1,0 +1,99 @@
+{
+ "title": {
+  "alt": [
+   "Shingeki no Kyojin",
+   "進撃の巨人"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/16498-8jpFCOcDmneX.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 25,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-buvcRTBx4NSm.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "25"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Apr 7, 2013"
+   },
+   {
+    "label": "Season",
+    "value": "Spring 2013"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "858",
+       "to": "studio"
+      },
+      "text": "WIT STUDIO"
+     }
+    ],
+    "value": "WIT STUDIO"
+   },
+   {
+    "label": "Members",
+    "value": "1,074,702"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Fantasy",
+   "Mystery"
+  ],
+  "headline": [
+   "TV",
+   "Spring 2013",
+   "25 episodes"
+  ],
+  "idMal": 16498,
+  "makers": [
+   {
+    "ref": {
+     "id": "858",
+     "to": "studio"
+    },
+    "text": "WIT STUDIO"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "16498",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 85,
+  "scoreNote": "1,074,702 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Attack on Titan",
+  "trailer": null,
+  "volumes": null,
+  "year": 2013
+ }
+}

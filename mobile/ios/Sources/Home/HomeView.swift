@@ -1,18 +1,20 @@
 import SwiftUI
 
 /// Home (05, 06): Continue first, as on the website, then Upcoming, Stalled, Start something and Trending. Calendar
-/// and notifications sit in the toolbar. Everything but Trending comes from the offline library.
+/// and notifications sit in the toolbar. Continue and Stalled come from the offline library; Upcoming and Trending
+/// from GET home/live; Start something from POST home/picks (docs/app-api.md §6).
 struct HomeView: View {
     @Environment(AppModel.self) private var model
-    @State private var feed: HomeFeed?
+    @State private var live: HomeLive?
+    @State private var picks: [OnTheGo]?
     @State private var shuffle = 0
 
     var body: some View {
         let lib = model.library
         let continuing = HomeShelves.continuing(lib)
-        let upcoming = HomeShelves.upcoming(lib)
+        let upcoming = HomeShelves.upcoming(live?.upcoming ?? [], library: lib)
         let stalled = HomeShelves.stalled(lib)
-        let starts = HomeShelves.startCandidates(lib)
+        let starts = HomeShelves.startCandidates(picks, library: lib)
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
                 if continuing.isEmpty && stalled.isEmpty {
@@ -30,13 +32,14 @@ struct HomeView: View {
                     SectionHeader("Upcoming", sub: "Next episodes of what you watch", chevron: false)
                         .sectionGap()
                     Shelf {
-                        ForEach(upcoming.prefix(10)) { e in
-                            NavigationLink(value: Route.title(e.id)) {
-                                PosterCard(url: e.title.cover, title: e.title.name,
-                                           caption: e.title.next.map { HomeShelves.upcomingCaption($0, media: e.media) })
+                        ForEach(upcoming.prefix(10), id: \.titleId) { n in
+                            let e = model.entry(n.titleId)
+                            NavigationLink(value: Route.title(n.titleId)) {
+                                PosterCard(url: e?.title.cover ?? n.cover, title: e?.title.name ?? n.title,
+                                           caption: HomeShelves.upcomingCaption(n))
                             }
                             .buttonStyle(.plain)
-                            .contextMenu { EntryMenu(entry: e) }
+                            .contextMenu { if let e { EntryMenu(entry: e) } }
                         }
                     }
                 }
@@ -53,18 +56,12 @@ struct HomeView: View {
                         .sectionGap(34)
                     StartCard(entry: pick, canShuffle: starts.count > 1) { shuffle += 1 }
                 }
-                if let feed, !feed.trending.isEmpty {
+                if let live, !live.trending.isEmpty {
                     SectionHeader("Trending anime", chevron: false).sectionGap(34)
                     Shelf {
-                        ForEach(feed.trending) { t in
+                        ForEach(live.trending) { t in
                             NavigationLink(value: Route.title(t.id)) {
-                                PosterCard(url: t.cover, title: t.name) {
-                                    if let c = HomeShelves.trendingCaption(t) {
-                                        Text(c)
-                                    } else if let s = t.score {
-                                        ScoreLabel(value: Format.average(s), muted: true)
-                                    }
-                                }
+                                PosterCard(url: t.cover, title: t.title, caption: t.note.isEmpty ? nil : t.note)
                             }
                             .buttonStyle(.plain)
                         }
@@ -98,19 +95,25 @@ struct HomeView: View {
                 .accessibilityLabel("Notifications")
             }
         }
-        .task { await load(counts: feed == nil) }
+        .task { await load(counts: live == nil) }
         .refreshable {
             await model.refresh()
             await load(counts: true)
         }
     }
 
-    /// `counts`: also take the bell's unread count (first load and pull to refresh; coming back from Notifications
-    /// keeps what was read there)
+    /// `counts`: also take the bell's unseen count from GET notices (first load and pull to refresh; coming back
+    /// from Notifications keeps what was seen there). Picks avoid what Start something showed before.
     private func load(counts: Bool) async {
-        guard let f = await model.fetch({ try await $0.home() }).value else { return }
-        feed = f
-        if counts { model.unreadNotifications = f.unreadNotifications }
+        if let v = await model.fetch({ try await $0.homeLive() }).value { live = v }
+        let shown = Array((picks ?? []).map(\.titleId).prefix(shuffle + 1))
+        if let v = await model.fetch({ try await $0.picks(avoid: HomeShelves.avoid(shown)) }).value {
+            picks = v
+            shuffle = 0
+        }
+        if counts, let n = await model.fetch({ try await $0.notices() }).value {
+            model.unreadNotifications = NoticeSection.unseen(n)
+        }
     }
 
     private func openList(_ media: MediaKind) {
@@ -216,8 +219,8 @@ struct StalledRow: View {
     }
 }
 
-/// Start something (06): the banner art, the poster and title over its foot, Start and Shuffle. A flat dark layer
-/// keeps the words readable (no gradient).
+/// Start something (06): the title's art, the poster and title over its foot, Start and Shuffle. A flat dark layer
+/// keeps the words readable (no gradient). The library carries no banner, so the art is the cover, cropped wide.
 struct StartCard: View {
     let entry: LibraryEntry
     var canShuffle = true
@@ -228,7 +231,7 @@ struct StartCard: View {
     var body: some View {
         let t = entry.title
         let shape = RoundedRectangle(cornerRadius: 22, style: .continuous)
-        Artwork(url: t.banner)
+        Artwork(url: t.cover)
             .overlay(Color.black.opacity(0.45))
             .frame(height: 214)
             .overlay(alignment: .bottomLeading) {

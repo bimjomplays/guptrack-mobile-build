@@ -4,7 +4,7 @@ import XCTest
 /// People (28 character, 29 person, 30 studio, 31 author).
 final class ScreensPeopleTests: ScreenTestCase {
     func testCharacter() {
-        let app = launch(["-open", "character/character:40"])
+        let app = launch(["-open", "character/40"])
         expect(app, "Monkey D. Luffy")
         expect(app, "About")
         expect(app, "Voiced by")
@@ -14,10 +14,10 @@ final class ScreensPeopleTests: ScreenTestCase {
     }
 
     func testPerson() {
-        let app = launch(["-open", "person/person:tmdb-1190668"])
+        let app = launch(["-open", "person/tmdb:1190668"])
         expect(app, "Timothée Chalamet")
         expect(app, "Known for")
-        expect(app, "Filmography")
+        expect(app, "Acting")
         shot("29-person")
     }
 
@@ -30,7 +30,7 @@ final class ScreensPeopleTests: ScreenTestCase {
     }
 
     func testAuthor() {
-        let app = launch(["-open", "author/author:OL7234434A"])
+        let app = launch(["-open", "author/OL7234434A"])
         expect(app, "Andy Weir")
         expect(app, "Books")
         expect(app, "Project Hail Mary")
@@ -38,27 +38,28 @@ final class ScreensPeopleTests: ScreenTestCase {
     }
 
     func testVoiceRowOpensTheVoiceActor() {
-        let app = launch(["-open", "character/character:40"])
+        let app = launch(["-open", "character/40"])
         expect(app, "Mayumi Tanaka").tap()
-        XCTAssertEqual(app.model.path(.browse).last, .person("person:95075"))
+        XCTAssertEqual(app.model.path(.browse).last, .person("anilist:95075"))
     }
 
     func testAppearanceOpensItsTitle() {
-        let app = launch(["-open", "character/character:40"])
-        scroll(app, until: "Appears in", top: 200)
+        let app = launch(["-open", "character/40"])
+        expect(app, "Appears in")
+        scroll(app, until: "TV · 1999", top: 420)
         expect(app, "TV · 1999").tap()
         XCTAssertEqual(app.model.path(.browse).last, .title("anime:21"))
     }
 
     func testVoiceActorListsRoles() {
-        let app = launch(["-open", "person/person:95075"])
+        let app = launch(["-open", "person/anilist:95075"])
         expect(app, "Mayumi Tanaka")
-        expect(app, "Roles")
+        expect(app, "Voice roles")
         expect(app, "Monkey D. Luffy")
     }
 
     func testPlanToReadAddsTheBook() {
-        let app = launch(["-open", "author/author:OL7234434A"])
+        let app = launch(["-open", "author/OL7234434A"])
         expect(app, "Andy Weir")
         XCTAssertNil(app.model.entry("book:OL17837968W"))
         scroll(app, until: "Artemis", top: 300)

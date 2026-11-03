@@ -27,8 +27,9 @@ final class ScreensHomeTests: ScreenTestCase {
     func test07HomeContextMenu() {
         let app = launch()
         let row = expect(app, "STEEL BALL RUN")
+        let next = (app.model.entry("anime:210482")?.progress ?? 0) + 1
         row.press(forDuration: 1.0)
-        expect(app, "Watched episode 7")
+        expect(app, "Watched episode \(next)")
         expect(app, "Open in Harbor")
         expect(app, "Send to a friend")
         shot("07-home-context-menu")

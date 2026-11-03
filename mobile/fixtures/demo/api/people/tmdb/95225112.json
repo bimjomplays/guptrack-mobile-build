@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "J. Robert Oppenheimer",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "872585",
+        "kind": "movie"
+       },
+       "score": 80,
+       "title": "Oppenheimer",
+       "year": 2023
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "J. Robert Oppenheimer",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "872585",
+        "kind": "movie"
+       },
+       "score": 80,
+       "title": "Oppenheimer",
+       "year": 2023
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/2lKs67r7FI4bPu0AXxMUJZxmUXn.jpg",
+  "known": "Acting",
+  "name": "Cillian Murphy",
+  "native": null,
+  "ref": {
+   "id": "95225112",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

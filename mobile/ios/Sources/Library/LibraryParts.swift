@@ -200,43 +200,54 @@ struct LibraryToolbarSearch: ViewModifier {
     }
 }
 
-/// Creating, saving and deleting custom lists: the app API call, then this iPhone's copy (CustomListEdits) so every
-/// Library page shows the change at once.
+/// Creating, saving and deleting custom lists (§9): the app API calls, then this iPhone's copy (CustomListEdits) so
+/// every Library page shows the change at once, then a library sync so the feed's copy catches up.
 @MainActor
 enum CustomListActions {
-    static func create(_ draft: CustomListDraft, model: AppModel) async -> CustomList? {
-        let r = await model.fetch { try await $0.createList(draft.body) }
-        guard let reply = r.value, reply.ok else {
+    /// POST lists, with a title to put on it at once (Add to list → New list)
+    static func create(_ draft: CustomListDraft, item: Title? = nil, model: AppModel) async -> CustomList? {
+        let body = draft.newList(item: item)
+        let r = await model.fetch { try await $0.createList(body) }
+        guard let made = r.value else {
             model.notice = "Couldn't make the list. \(r.error ?? "")"
             return nil
         }
-        let edits = CustomListEdits.shared(for: model)
-        let list = draft.created(id: reply.id ?? edits.newId(for: draft.trimmedName, taken: []))
-        edits.didCreate(list)
+        let list = draft.created(made, item: item)
+        model.listEdits.didCreate(list)
+        Task { await model.syncLibrary() }
         return list
     }
 
+    /// only what changed: the fields, titles off, titles on, notes, then the order
     static func save(_ draft: CustomListDraft, to list: CustomList, model: AppModel) async -> Bool {
-        let r = await model.fetch { try await $0.updateList(list.id, draft.body) }
-        guard r.value?.ok == true else {
-            model.notice = "Couldn't save the list. \(r.error ?? "")"
-            return false
+        guard let id = list.serverId else { return false }
+        let over = model.feedLists.first { $0.id == id }?.updated
+        for call in draft.calls(from: list) {
+            let r = await model.fetch { try await $0.run(call, on: id) }
+            if r.value == nil {
+                model.notice = "Couldn't save the list. \(r.error ?? "")"
+                Task { await model.syncLibrary() }
+                return false
+            }
         }
-        CustomListEdits.shared(for: model).didSave(draft.applied(to: list))
+        model.listEdits.didSave(draft.applied(to: list), over: over)
+        Task { await model.syncLibrary() }
         return true
     }
 
     /// deletes it and takes its page off the stack
     static func delete(_ list: CustomList, model: AppModel) async -> Bool {
-        let r = await model.fetch { try await $0.deleteList(list.id) }
+        guard let id = list.serverId else { return false }
+        let r = await model.fetch { try await $0.deleteList(id) }
         guard r.value?.ok == true else {
             model.notice = "Couldn't delete the list. \(r.error ?? "")"
             return false
         }
-        CustomListEdits.shared(for: model).didDelete(list.id)
+        model.listEdits.didDelete(list.id)
         for tab in AppTab.allCases where model.path(tab).contains(.customList(list.id)) {
             model.setPath(tab, model.path(tab).filter { $0 != .customList(list.id) })
         }
+        Task { await model.syncLibrary() }
         return true
     }
 }

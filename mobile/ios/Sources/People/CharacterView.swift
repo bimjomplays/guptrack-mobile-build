@@ -109,7 +109,7 @@ private struct VoiceRow: View {
 
     var body: some View {
         Button {
-            if let id = voice.id { model.open(.person(id)) }
+            if let r = voice.route { model.open(r) }
         } label: {
             HStack(spacing: 12) {
                 Avatar(url: voice.image, size: 48)
@@ -118,7 +118,7 @@ private struct VoiceRow: View {
                     Text(voice.line).font(.caption14).foregroundStyle(Theme.inkMuted).lineLimit(1)
                 }
                 Spacer(minLength: 8)
-                if voice.id != nil {
+                if voice.route != nil {
                     Image(systemName: "chevron.right").font(.system(size: 15, weight: .semibold))
                         .foregroundStyle(Theme.inkMuted)
                 }
@@ -127,7 +127,7 @@ private struct VoiceRow: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
-        .disabled(voice.id == nil)
+        .disabled(voice.route == nil)
     }
 }
 

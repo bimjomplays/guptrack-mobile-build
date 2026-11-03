@@ -14,7 +14,6 @@ struct LibraryListView: View {
     @State private var formatId = LibraryFormat.all.id
     @State private var searching = false
     @State private var query = ""
-    @State private var lists: [CustomList] = []
     @State private var statusFor: LibraryEntry?
     @State private var rateFor: LibraryEntry?
 
@@ -43,8 +42,7 @@ struct LibraryListView: View {
         }
         .pageBackground()
         .navigationTitle(media.plural)
-        .navigationBarTitleDisplayMode(.large)
-        .toolbarTitleMenu { titleMenu }
+        .navigationBarTitleDisplayMode(.inline)
         .modifier(LibraryToolbarSearch(on: $searching, text: $query, prompt: "Search \(media.plural)"))
         .onChange(of: searching) { _, on in if !on { query = "" } }
         .toolbar { toolbar }
@@ -63,16 +61,33 @@ struct LibraryListView: View {
                 Button("No score", role: .destructive) { model.change(e.id, LibraryPatch(score: -1)) }
             }
         }
-        .task {
-            if let l = await model.fetch({ try await $0.customLists() }).value { lists = l }
-        }
     }
 
     private func present(_ item: Binding<LibraryEntry?>) -> Binding<Bool> {
         Binding(get: { item.wrappedValue != nil }, set: { if !$0 { item.wrappedValue = nil } })
     }
 
-    // MARK: the header (summary and chips)
+    // MARK: the header (title menu, summary and chips)
+
+    /// the big title is the menu (35): a plain Menu in the page, so it opens on a tap and its items are buttons
+    private var header: some View {
+        Menu { titleMenu } label: {
+            HStack(spacing: 10) {
+                Text(media.plural).font(.system(size: 34, weight: .bold)).foregroundStyle(Theme.ink)
+                Image(systemName: "chevron.down")
+                    .font(.system(size: 13, weight: .bold)).foregroundStyle(Theme.inkSoft)
+                    .frame(width: 28, height: 28)
+                    .background(Theme.raised, in: Circle())
+            }
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(media.plural)
+        .accessibilityHint("Switch media, your lists and the view")
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.horizontal, Theme.pad)
+        .padding(.top, 4)
+        .padding(.bottom, 6)
+    }
 
     private var summary: some View {
         Text(LibraryLists.summary(model.library, media: media))
@@ -92,6 +107,7 @@ struct LibraryListView: View {
         let rows = shown
         return List {
             Group {
+                header
                 summary.padding(.bottom, 16)
                 chips.padding(.bottom, 12)
             }
@@ -196,6 +212,7 @@ struct LibraryListView: View {
         let columns = Array(repeating: GridItem(.flexible(), spacing: 16, alignment: .top), count: 3)
         return ScrollView {
             VStack(alignment: .leading, spacing: 0) {
+                header
                 summary.padding(.bottom, 16)
                 chips.padding(.bottom, 18)
                 if rows.isEmpty { empty }
@@ -224,7 +241,7 @@ struct LibraryListView: View {
             }
             .pickerStyle(.inline)
         }
-        let all = CustomListEdits.shared(for: model).merged(lists)
+        let all = model.customLists
         Menu {
             ForEach(all) { l in
                 Button(l.name) { model.open(.customList(l.id)) }
@@ -257,6 +274,8 @@ struct LibraryListView: View {
     }
 
     @ToolbarContentBuilder private var toolbar: some ToolbarContent {
+        // the page's own header is the title (and its menu); the bar stays clear like the mockup's
+        ToolbarItem(placement: .principal) { Color.clear.frame(width: 1, height: 1).accessibilityHidden(true) }
         ToolbarItemGroup(placement: .topBarTrailing) {
             Button {
                 searching = true

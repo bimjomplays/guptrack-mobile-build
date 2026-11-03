@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Directing"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1233413",
+        "kind": "movie"
+       },
+       "score": 75,
+       "title": "Sinners",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1233413",
+        "kind": "movie"
+       },
+       "score": 75,
+       "title": "Sinners",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Directing"
+   }
+  ],
+  "image": null,
+  "known": "Directing",
+  "name": "Ryan Coogler",
+  "native": null,
+  "ref": {
+   "id": "97765407",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

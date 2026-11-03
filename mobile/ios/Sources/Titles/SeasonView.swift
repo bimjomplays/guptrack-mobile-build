@@ -21,14 +21,14 @@ private struct SeasonPageBody: View {
 
     @Environment(AppModel.self) private var model
 
-    private var progress: Int { model.entry(page.show.id)?.progress ?? 0 }
+    private var progress: Int { model.entry(page.show.title.id)?.progress ?? 0 }
 
     var body: some View {
         let watched = TVProgress.watched(in: page.season, progress: progress, page.seasons)
         ScrollView {
-            LazyVStack(alignment: .leading, spacing: 0) {
+            VStack(alignment: .leading, spacing: 0) {
                 SeasonHeader(page: page, watched: watched).padding(.bottom, 18)
-                ForEach(page.season.episodes ?? []) { ep in
+                ForEach(page.episodes) { ep in
                     SeasonEpisodeRow(episode: ep, watched: ep.number <= watched, upNext: ep.number == watched + 1) {
                         mark(ep)
                     }
@@ -45,13 +45,13 @@ private struct SeasonPageBody: View {
                 .accessibilityLabel("Mark all watched")
                 .disabled(watched >= page.season.count)
                 Menu {
-                    Button { model.open(.title(page.show.id)) } label: { Label("Open \(page.show.name)", systemImage: "tv") }
+                    Button { model.open(.title(page.show.title.id)) } label: { Label("Open \(page.show.title.name)", systemImage: "tv") }
                     Button { change(TVProgress.patch(TVProgress.offset(page.season.number, page.seasons), page.seasons)) } label: {
                         Label("Mark season unwatched", systemImage: "arrow.uturn.backward")
                     }
                     .disabled(watched == 0)
-                    if model.entry(page.show.id) != nil {
-                        Button { model.sheet = .editor(page.show.id, expanded: false) } label: {
+                    if model.entry(page.show.title.id) != nil {
+                        Button { model.sheet = .editor(page.show.title.id, expanded: false) } label: {
                             Label("Edit your list entry", systemImage: "slider.horizontal.3")
                         }
                     }
@@ -63,19 +63,19 @@ private struct SeasonPageBody: View {
         }
     }
 
-    private func mark(_ ep: TVSeason.Episode) {
+    private func mark(_ ep: Episode) {
         change(TVProgress.mark(episode: ep.number, season: page.season.number, progress: progress, page.seasons))
     }
 
     /// a progress change; a show not on the list yet is added as watching
     private func change(_ patch: LibraryPatch) {
         var patch = patch
-        if let e = model.entry(page.show.id) {
+        if let e = model.entry(page.show.title.id) {
             if e.status == .planned, patch.status == nil, (patch.progress ?? 0) > 0 { patch.status = .current }
-            model.change(page.show.id, patch)
+            model.change(page.show.title.id, patch)
         } else {
             if patch.status == nil { patch.status = .current }
-            model.change(page.show.id, patch, title: page.show)
+            model.change(page.show.title.id, patch, title: page.show.title)
         }
     }
 }
@@ -88,11 +88,11 @@ private struct SeasonHeader: View {
     var body: some View {
         let s = page.season
         HStack(alignment: .center, spacing: 16) {
-            Poster(url: s.poster ?? page.show.cover, width: 76)
+            Poster(url: s.poster ?? page.show.title.cover, width: 76)
             VStack(alignment: .leading, spacing: 4) {
                 Text(s.name).font(.system(size: 22, weight: .bold)).foregroundStyle(Theme.ink)
                     .accessibilityAddTraits(.isHeader)
-                Text([page.show.name, s.year.map { String($0) }, page.show.media.units(s.count)]
+                Text([page.show.title.name, s.year.map { String($0) }, page.show.title.media.units(s.count)]
                         .compactMap { $0 }.joined(separator: " · "))
                     .font(.system(size: 14)).foregroundStyle(Theme.inkMuted).lineLimit(2)
                 ProgressBar(fraction: Double(watched) / Double(max(1, s.count))).padding(.top, 8)
@@ -106,7 +106,7 @@ private struct SeasonHeader: View {
 
 /// one episode: still, number and name, date and length, and its circle
 private struct SeasonEpisodeRow: View {
-    let episode: TVSeason.Episode
+    let episode: Episode
     let watched: Bool
     let upNext: Bool
     let toggle: () -> Void

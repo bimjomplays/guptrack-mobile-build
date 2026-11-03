@@ -1,0 +1,99 @@
+{
+ "title": {
+  "alt": [
+   "Gintama.: Shirogane no Tamashii-hen - Kouhan-sen",
+   "銀魂. 銀ノ魂篇2"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/101925-eyVjqcyh4Gsu.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 14,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101925-gcA84dgcSj2w.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "14"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Jul 9, 2018"
+   },
+   {
+    "label": "Season",
+    "value": "Summer 2018"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "6116",
+       "to": "studio"
+      },
+      "text": "Bandai Namco Pictures"
+     }
+    ],
+    "value": "Bandai Namco Pictures"
+   },
+   {
+    "label": "Members",
+    "value": "56,962"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Drama",
+   "Sci-Fi"
+  ],
+  "headline": [
+   "TV",
+   "Summer 2018",
+   "14 episodes"
+  ],
+  "idMal": 37491,
+  "makers": [
+   {
+    "ref": {
+     "id": "6116",
+     "to": "studio"
+    },
+    "text": "Bandai Namco Pictures"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "101925",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 87,
+  "scoreNote": "56,962 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Gintama.: Silver Soul Arc - Second Half War",
+  "trailer": null,
+  "volumes": null,
+  "year": 2018
+ }
+}

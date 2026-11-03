@@ -2,7 +2,8 @@ import SwiftUI
 
 /// The calendar (09, 10), pushed from Home's calendar button. Week: past days folded to one line, today tinted with
 /// a now line, the days ahead in full. Month: a grid with a dot per status airing that day; tap a day to list it.
-/// The airing schedule comes from the server a month at a time; your statuses come from the offline library.
+/// GET calendar answers a month at a time (only titles you follow, and sequels to them); statuses come from the
+/// offline library, else the list entries the answer came with.
 struct CalendarView: View {
     @Environment(AppModel.self) private var model
     @State private var mode: AiringSchedule.Mode = .week
@@ -10,13 +11,14 @@ struct CalendarView: View {
     /// the month view's tapped day
     @State private var selected: Date = Clock.now
     @State private var filter = AiringSchedule.Filter()
-    /// loaded months ("2026-11") and their items
-    @State private var months: [String: [AiringSchedule.Item]] = [:]
+    /// loaded months ("2026-11") and their answers
+    @State private var months: [String: CalendarData] = [:]
     @State private var failed: String?
     /// past days opened in the week view (day keys)
     @State private var opened: Set<String> = []
 
-    private var needed: [String] { AiringSchedule.monthsToLoad(anchor, mode: mode) }
+    private var neededMonths: [Date] { AiringSchedule.monthsToLoad(anchor, mode: mode) }
+    private var needed: [String] { neededMonths.map { AiringSchedule.monthKey($0) } }
 
     var body: some View {
         ScrollView {
@@ -35,10 +37,10 @@ struct CalendarView: View {
                 Button("Today") { goToday() }
             }
         }
-        .task(id: needed.joined(separator: ",")) { await load(needed) }
+        .task(id: needed.joined(separator: ",")) { await load(neededMonths) }
         .refreshable {
             months = [:]
-            await load(needed)
+            await load(neededMonths)
         }
     }
 
@@ -78,8 +80,8 @@ struct CalendarView: View {
     @ViewBuilder
     private var page: some View {
         if needed.allSatisfy({ months[$0] != nil }) {
-            let all = needed.flatMap { months[$0] ?? [] }
-            let rows = AiringSchedule.rows(all, library: model.library, filter: filter)
+            let data = CalendarData.merged(needed.compactMap { months[$0] })
+            let rows = AiringSchedule.rows(data, library: model.library, filter: filter)
             if mode == .week {
                 WeekList(days: AiringSchedule.days(rows, on: AiringSchedule.weekDays(AiringSchedule.weekStart(anchor))),
                          opened: $opened)
@@ -92,7 +94,7 @@ struct CalendarView: View {
             } description: {
                 Text(failed)
             } actions: {
-                Button("Try again") { Task { await load(needed) } }.buttonStyle(.capsule(.tone, .small))
+                Button("Try again") { Task { await load(neededMonths) } }.buttonStyle(.capsule(.tone, .small))
             }
             .padding(.top, 30)
         } else {
@@ -114,11 +116,11 @@ struct CalendarView: View {
         selected = Clock.now
     }
 
-    private func load(_ keys: [String]) async {
-        for key in keys where months[key] == nil {
-            switch await model.fetch({ try await $0.airingSchedule(month: key) }) {
+    private func load(_ starts: [Date]) async {
+        for m in starts where months[AiringSchedule.monthKey(m)] == nil {
+            switch await model.fetch({ try await $0.calendar(month: m) }) {
             case .loaded(let s):
-                months[key] = s.items
+                months[AiringSchedule.monthKey(m)] = s
                 failed = nil
             case .failed(let why):
                 failed = why
@@ -221,7 +223,7 @@ private struct FoldedDay: View {
                     .frame(width: 96, alignment: .leading)
                 HStack(spacing: -6) {
                     ForEach(day.rows.prefix(4)) { r in
-                        Poster(url: r.item.title.cover, width: 20, radius: 4, flat: true)
+                        Poster(url: r.item.cover, width: 20, radius: 4, flat: true)
                             .overlay(RoundedRectangle(cornerRadius: 4, style: .continuous).stroke(Theme.sheet, lineWidth: 1.5))
                     }
                 }
@@ -338,7 +340,8 @@ private struct NowLine: View {
     }
 }
 
-/// One airing: time, cover, title, "Episode 5 · ● Watching", Out once it has aired. A tap opens the title.
+/// One airing: time (All day when TMDB knows only the day), cover, title, "Episode 5 · Finale · ● Watching", Out
+/// once it has aired. A tap opens the title.
 private struct AirRow: View {
     let row: AiringSchedule.Row
     var out = false
@@ -349,17 +352,17 @@ private struct AirRow: View {
     var body: some View {
         let item = row.item
         HStack(spacing: 12) {
-            Text(Format.time(item.at))
+            Text(AiringSchedule.timeLabel(item))
                 .font(.system(size: 13, weight: .medium))
                 .foregroundStyle(out ? Theme.inkFaint : Theme.inkSoft)
                 .numbers()
                 .lineLimit(1)
                 .frame(width: 62, alignment: .leading)
-            Poster(url: item.title.cover, width: 36, radius: 6, flat: true)
+            Poster(url: item.cover, width: 36, radius: 6, flat: true)
                 .padding(.vertical, 6)
             HStack(spacing: 8) {
                 VStack(alignment: .leading, spacing: 1) {
-                    Text(item.title.name)
+                    Text(item.title)
                         .font(.system(size: 15, weight: .semibold))
                         .foregroundStyle(Theme.ink)
                         .lineLimit(1)
@@ -379,9 +382,9 @@ private struct AirRow: View {
         .padding(.horizontal, Theme.pad)
         .fixedSize(horizontal: false, vertical: true)
         .contentShape(Rectangle())
-        .onTapGesture { model.open(.title(item.title.id)) }
+        .onTapGesture { model.open(.title(item.titleId)) }
         .contextMenu {
-            if let e = model.entry(item.title.id) { EntryMenu(entry: e) }
+            if let e = model.entry(item.titleId) { EntryMenu(entry: e) }
         }
         .accessibilityElement(children: .combine)
         .accessibilityAddTraits(.isButton)
@@ -389,14 +392,14 @@ private struct AirRow: View {
 
     private var caption: some View {
         HStack(spacing: 6) {
-            Text(row.item.what)
+            Text(AiringSchedule.detail(row.item))
             Text("·")
             if let s = row.status {
                 StatusDot(status: s, size: 6)
             } else {
                 Circle().fill(Theme.inkFaint).frame(width: 6, height: 6)
             }
-            Text(AiringSchedule.statusLabel(row.status, media: row.item.title.media))
+            Text(AiringSchedule.statusLabel(row.status, media: row.item.titleKind))
         }
         .font(.system(size: 13))
         .foregroundStyle(Theme.inkMuted)
@@ -440,7 +443,7 @@ private struct MonthPanel: View {
 
     private var grid: some View {
         let cells = AiringSchedule.monthGrid(month)
-        let byDay = Dictionary(grouping: rows) { Format.day($0.item.at) }
+        let byDay = Dictionary(grouping: rows) { Format.day($0.item.date) }
         return VStack(spacing: 0) {
             LazyVGrid(columns: columns, spacing: 0) {
                 ForEach(Array(AiringSchedule.weekdayLetters.enumerated()), id: \.offset) { _, w in

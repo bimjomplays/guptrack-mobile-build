@@ -1,0 +1,300 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://image.tmdb.org/t/p/w1280/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
+  "cast": [
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/7Y96dAfg0HcFrcLjlD5eD9N0uj4.jpg",
+     "name": "Karl Urban",
+     "ref": {
+      "id": "97896343",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Billy Butcher"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/320qW5yEbxpmyxQ3evmClJbtKag.jpg",
+     "name": "Jack Quaid",
+     "ref": {
+      "id": "98450212",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Hugh &#39;Hughie&#39; Campbell"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/xx3As5SWcE8vYOKZgtjDjqmT3jc.jpg",
+     "name": "Antony Starr",
+     "ref": {
+      "id": "94631357",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Homelander"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/2tFblvjBRUYwcVT1V1i79Ppd6wG.jpg",
+     "name": "Erin Moriarty",
+     "ref": {
+      "id": "91907512",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Annie January / Starlight"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/nmgOd3X2Xn3jIp9OLCRJzLExRWN.jpg",
+     "name": "Laz Alonso",
+     "ref": {
+      "id": "98185277",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Marvin T. &#39;Mother&#39;s Milk&#39; Milk / M.M."
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/yWZILsr2mBQBCG1LOcCYYshIbts.jpg",
+     "name": "Chace Crawford",
+     "ref": {
+      "id": "97596684",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Kevin Moskowitz / The Deep"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/r6s7dkYZUJpd00C7p9itT6Gp8XB.jpg",
+     "name": "Tomer Capone",
+     "ref": {
+      "id": "94630648",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Serge / Frenchie"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/sG6CWLdENCtzukNFkFYyPxqyRmS.jpg",
+     "name": "Karen Fukuhara",
+     "ref": {
+      "id": "97460528",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Kimiko Miyashiro"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/ivaVpN1bU2HzKmncuf1IAG6ohlb.jpg",
+     "name": "Nathan Mitchell",
+     "ref": {
+      "id": "97351731",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Justin / Black Noir II, Earving / Black Noir"
+   }
+  ],
+  "characters": [],
+  "count": null,
+  "cover": "https://image.tmdb.org/t/p/w500/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Series"
+   },
+   {
+    "label": "Status",
+    "value": "Returning series"
+   },
+   {
+    "label": "Aired",
+    "value": "Jul 25, 2019"
+   },
+   {
+    "label": "Rated",
+    "value": "TV-MA"
+   },
+   {
+    "label": "Language",
+    "value": "English"
+   }
+  ],
+  "format": "Series",
+  "genres": [
+   "Sci-Fi & Fantasy",
+   "Action & Adventure"
+  ],
+  "headline": [
+   "Series",
+   "2019–",
+   "TV-MA"
+  ],
+  "makers": [],
+  "media": "tv",
+  "minutes": 45,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "95396",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "Severance",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "136315",
+     "kind": "tv"
+    },
+    "score": 82,
+    "title": "The Bear",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "126308",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "Shōgun",
+    "year": 2024
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "100088",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "The Last of Us",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "83867",
+     "kind": "tv"
+    },
+    "score": 83,
+    "title": "Andor",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "1396",
+     "kind": "tv"
+    },
+    "score": 90,
+    "title": "Breaking Bad",
+    "year": 2008
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "95480",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Slow Horses",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "225171",
+     "kind": "tv"
+    },
+    "score": 79,
+    "title": "Pluribus",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "87108",
+     "kind": "tv"
+    },
+    "score": 87,
+    "title": "Chernobyl",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "108978",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Reacher",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "110316",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Alice in Borderland",
+    "year": 2020
+   }
+  ],
+  "ref": {
+   "id": "76479",
+   "kind": "tv"
+  },
+  "relations": [],
+  "score": 84,
+  "scoreNote": "15,331 votes",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Returning series",
+  "synopsis": [
+   [
+    {
+     "text": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty."
+    }
+   ]
+  ],
+  "tags": [],
+  "title": "The Boys",
+  "trailer": null,
+  "year": 2019
+ }
+}

@@ -1,8 +1,8 @@
 import SwiftUI
 import UIKit
 
-/// Posters, banners and avatars from the catalogue CDNs (AniList, TMDB, Open Library), loaded at runtime and kept in
-/// memory and in Caches. Nothing is bundled. Offline (or without a URL) a neutral placeholder shows instead.
+/// Posters, banners and avatars from the catalogue CDNs (AniList, TMDB, Open Library) and GupTrack's own pictures
+/// (avatars, banners, message photos: with the token), loaded at runtime and kept in memory and in Caches. Nothing is bundled. Offline (or without a URL) a neutral placeholder shows instead.
 @MainActor
 final class ImageLoader {
     static let shared = ImageLoader()
@@ -27,9 +27,11 @@ final class ImageLoader {
     }
 
     /// already here (memory only), for a first frame without a flash
-    func cached(_ url: URL) -> UIImage? { memory.object(forKey: url as NSURL) }
+    func cached(_ url: URL) -> UIImage? { Pictures.resolve(url).flatMap { memory.object(forKey: $0 as NSURL) } }
 
-    func image(_ url: URL) async -> UIImage? {
+    func image(_ given: URL) async -> UIImage? {
+        // GupTrack's own pictures ("/media/…") come from the signed-in server, with the token (docs/app-api.md §5)
+        guard let url = Pictures.resolve(given) else { return nil }
         if let hit = memory.object(forKey: url as NSURL) { return hit }
         if let running = tasks[url] { return await running.value }
         let file = dir.appendingPathComponent(Self.key(url))
@@ -37,7 +39,9 @@ final class ImageLoader {
         let session = session
         let task = Task<UIImage?, Never>.detached(priority: .userInitiated) {
             if let d = try? Data(contentsOf: file), let img = UIImage(data: d) { return img }
-            guard let (data, response) = try? await session.data(from: url),
+            var request = URLRequest(url: url)
+            if let auth = Pictures.authorization(for: url) { request.setValue(auth, forHTTPHeaderField: "Authorization") }
+            guard let (data, response) = try? await session.data(for: request),
                   (response as? HTTPURLResponse)?.statusCode ?? 200 < 400,
                   let img = UIImage(data: data) else { return nil }
             try? data.write(to: file, options: .atomic)

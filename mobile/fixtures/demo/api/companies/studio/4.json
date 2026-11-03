@@ -1,0 +1,218 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx163139-JchZhUFlNTWU.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "163139",
+       "kind": "anime"
+      },
+      "score": 82,
+      "title": "My Hero Academia Season 7",
+      "year": 2024
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx168013-eeyN5L8tmYKI.png",
+      "format": "Film",
+      "ref": {
+       "id": "168013",
+       "kind": "anime"
+      },
+      "score": 76,
+      "title": "My Hero Academia: You’re Next",
+      "year": 2024
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx139630-3v4gxWtNZxLV.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "139630",
+       "kind": "anime"
+      },
+      "score": 82,
+      "title": "My Hero Academia Season 6",
+      "year": 2022
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx140439-bPKmhe1wNxc9.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "140439",
+       "kind": "anime"
+      },
+      "score": 87,
+      "title": "Mob Psycho 100 III",
+      "year": 2022
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx109946-S05QNnNplFV2.jpg",
+      "format": "ONA",
+      "ref": {
+       "id": "109946",
+       "kind": "anime"
+      },
+      "score": 71,
+      "title": "Super Crooks",
+      "year": 2021
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx117193-E75BlZmDh1aB.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "117193",
+       "kind": "anime"
+      },
+      "score": 73,
+      "title": "My Hero Academia Season 5",
+      "year": 2021
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101338-rokVscjRYzdP.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "101338",
+       "kind": "anime"
+      },
+      "score": 87,
+      "title": "Mob Psycho 100 II",
+      "year": 2019
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx104276-SnEowMvesWIE.png",
+      "format": "TV",
+      "ref": {
+       "id": "104276",
+       "kind": "anime"
+      },
+      "score": 78,
+      "title": "My Hero Academia Season 4",
+      "year": 2019
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx109819-71ZeBjJuU3da.png",
+      "format": "OVA",
+      "ref": {
+       "id": "109819",
+       "kind": "anime"
+      },
+      "score": 76,
+      "title": "Mob Psycho 100 II: The First Spirits and Such Company Trip ~A Journey that Mends the Heart and Heals the Soul~",
+      "year": 2019
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx100166-jUCZYbzn2XLw.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "100166",
+       "kind": "anime"
+      },
+      "score": 79,
+      "title": "My Hero Academia Season 3",
+      "year": 2018
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx100353-6dM62JCho2Yg.png",
+      "format": "OVA",
+      "ref": {
+       "id": "100353",
+       "kind": "anime"
+      },
+      "score": 73,
+      "title": "Mob Psycho 100 REIGEN The Miraculous Unknown Psychic",
+      "year": 2018
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx100723-7f5e1BCTCDoB.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "100723",
+       "kind": "anime"
+      },
+      "score": 74,
+      "title": "My Hero Academia: Two Heroes",
+      "year": 2018
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21856-gutauxhWAwn6.png",
+      "format": "TV",
+      "ref": {
+       "id": "21856",
+       "kind": "anime"
+      },
+      "score": 79,
+      "title": "My Hero Academia Season 2",
+      "year": 2017
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21311-hAXyT8Yoh6G9.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "21311",
+       "kind": "anime"
+      },
+      "score": 77,
+      "title": "Bungo Stray Dogs",
+      "year": 2016
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21459-nYh85uj2Fuwr.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "21459",
+       "kind": "anime"
+      },
+      "score": 76,
+      "title": "My Hero Academia",
+      "year": 2016
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21507-6YUSbh2m0N1p.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "21507",
+       "kind": "anime"
+      },
+      "score": 84,
+      "title": "Mob Psycho 100",
+      "year": 2016
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx5114-nSWCgQlmOMtj.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "5114",
+       "kind": "anime"
+      },
+      "score": 90,
+      "title": "Fullmetal Alchemist: Brotherhood",
+      "year": 2009
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx3588-fSMggQoFSbUI.png",
+      "format": "TV",
+      "ref": {
+       "id": "3588",
+       "kind": "anime"
+      },
+      "score": 77,
+      "title": "Soul Eater",
+      "year": 2008
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "bones",
+  "ref": {
+   "id": "4",
+   "to": "studio"
+  }
+ }
+}

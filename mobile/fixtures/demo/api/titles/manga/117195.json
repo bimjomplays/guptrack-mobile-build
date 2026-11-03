@@ -1,0 +1,73 @@
+{
+ "title": {
+  "alt": [
+   "【推しの子】"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/117195-VVYq1EEOwR0K.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 171,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117195-r3kf8eF0xkDJ.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Chapters",
+    "value": "171"
+   },
+   {
+    "label": "Volumes",
+    "value": "16"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Published",
+    "value": "Apr 23, 2020"
+   },
+   {
+    "label": "Members",
+    "value": "107,808"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Psychological",
+   "Supernatural"
+  ],
+  "headline": [
+   "Manga",
+   "2020",
+   "171 chapters"
+  ],
+  "idMal": 126146,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "117195",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 77,
+  "scoreNote": "107,808 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "[Oshi no Ko]",
+  "trailer": null,
+  "volumes": 16,
+  "year": 2020
+ }
+}

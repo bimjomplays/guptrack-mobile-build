@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Directing"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "545611",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "Everything Everywhere All at Once",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "545611",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "Everything Everywhere All at Once",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Directing"
+   }
+  ],
+  "image": null,
+  "known": "Directing",
+  "name": "Daniel Kwan",
+  "native": null,
+  "ref": {
+   "id": "93883550",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206949-4HYI3YuP0eLI.png",
+      "format": "TV",
+      "ref": {
+       "id": "206949",
+       "kind": "anime"
+      },
+      "score": 75,
+      "title": "Nia Liston: The Merciless Maiden",
+      "year": 2026
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "KONAMI animation",
+  "ref": {
+   "id": "7494",
+   "to": "studio"
+  }
+ }
+}

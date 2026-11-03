@@ -1,0 +1,86 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx217434-xqZNBp5U3hgY.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "217434",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "Mushoku Tensei III: Isekai Ittara Honki Dasu Part 2",
+      "year": 2027
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178789-hNXjKFzUq7mk.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "178789",
+       "kind": "anime"
+      },
+      "score": 86,
+      "title": "Mushoku Tensei: Jobless Reincarnation Season 3",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx166873-xO0BRPkmwFll.png",
+      "format": "TV",
+      "ref": {
+       "id": "166873",
+       "kind": "anime"
+      },
+      "score": 83,
+      "title": "Mushoku Tensei: Jobless Reincarnation Season 2 Part 2",
+      "year": 2024
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx146065-IjirxRK26O03.png",
+      "format": "TV",
+      "ref": {
+       "id": "146065",
+       "kind": "anime"
+      },
+      "score": 81,
+      "title": "Mushoku Tensei: Jobless Reincarnation Season 2",
+      "year": 2023
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108465-1ANspF1EWyFx.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "108465",
+       "kind": "anime"
+      },
+      "score": 81,
+      "title": "Mushoku Tensei: Jobless Reincarnation",
+      "year": 2021
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx127720-ADJgIrUVMdU9.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "127720",
+       "kind": "anime"
+      },
+      "score": 85,
+      "title": "Mushoku Tensei: Jobless Reincarnation Cour 2",
+      "year": 2021
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Studio Bind",
+  "ref": {
+   "id": "6309",
+   "to": "studio"
+  }
+ }
+}

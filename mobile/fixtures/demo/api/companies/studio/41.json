@@ -1,0 +1,53 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx204011-j45RZoqYbdZK.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "204011",
+       "kind": "anime"
+      },
+      "score": 70,
+      "title": "PSYREN",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b6702-KI4qgSMyI8Pm.png",
+      "format": "TV",
+      "ref": {
+       "id": "6702",
+       "kind": "anime"
+      },
+      "score": 72,
+      "title": "Fairy Tail",
+      "year": 2009
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx777-F6547pSAR2Zd.jpg",
+      "format": "OVA",
+      "ref": {
+       "id": "777",
+       "kind": "anime"
+      },
+      "score": 81,
+      "title": "Hellsing Ultimate",
+      "year": 2006
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Satelight",
+  "ref": {
+   "id": "41",
+   "to": "studio"
+  }
+ }
+}

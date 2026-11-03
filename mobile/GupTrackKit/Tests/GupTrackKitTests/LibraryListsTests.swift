@@ -18,7 +18,7 @@ final class LibraryListsTests: XCTestCase {
         Clock.fixedZone = nil
     }
 
-    private func library() throws -> [LibraryEntry] { try Demo.load([LibraryEntry].self, "api/library.json") }
+    private func library() throws -> [LibraryEntry] { Demo.library() }
 
     private func entry(_ name: String, media: MediaKind = .anime, format: String? = "TV", total: Int? = 12,
                        status: ListStatus = .current, progress: Int = 0, score: Int? = nil, runtime: String? = nil,
@@ -190,21 +190,48 @@ final class LibraryListsTests: XCTestCase {
 
     // MARK: 38-40 custom lists
 
+    private func myList(_ slug: String) throws -> MyList { try Demo.load(MyList.self, "api/lists/\(slug).json") }
+
     func testCustomListFixtures() throws {
-        let lists = try Demo.load([CustomList].self, "api/lists.json")
-        XCTAssertGreaterThanOrEqual(lists.count, 4)
-        let comfort = try Demo.load(CustomList.self, "api/lists/rainy-sundays.json")
+        let yours = try Demo.load(ListWire.Yours.self, "api/lists.json")
+        XCTAssertEqual(yours.profile, .public)
+        XCTAssertEqual(yours.lists.map(\.id), [1, 2, 3, 4])
+        XCTAssertEqual(yours.lists.map(\.slug), ["rainy-sundays", "this-years-highlights", "shonen-marathon", "start-here"])
+        let rainy = try myList("rainy-sundays")
+        XCTAssertEqual(rainy.count, rainy.items.count)
+        let comfort = rainy.customList()
+        XCTAssertEqual(comfort.id, "1")
+        XCTAssertEqual(comfort.serverId, 1)
         XCTAssertEqual(comfort.name, "Rainy Sundays")
         XCTAssertEqual(comfort.countLine, "12 titles")
         XCTAssertEqual(comfort.metaLine(), "Public · 12 titles · updated yesterday")
         XCTAssertEqual(comfort.reorderLine, "12 titles · drag to reorder")
         XCTAssertEqual(comfort.covers.count, 4)
         XCTAssertGreaterThanOrEqual(comfort.items.filter { $0.note != nil }.count, 3)
-        for l in lists {
-            for u in l.covers {
+        XCTAssertEqual(try myList("shonen-marathon").customList().visibility, .friends, "the list's own setting")
+        for s in yours.lists {
+            let l = try myList(s.slug)
+            XCTAssertEqual(l.id, s.id)
+            for u in l.customList().covers {
                 XCTAssertTrue(["s4.anilist.co", "image.tmdb.org", "covers.openlibrary.org"].contains(u.host ?? ""), "\(u)")
             }
         }
+    }
+
+    func testMyListDecodesTheDocShape() throws {
+        let json = #"""
+        {"id":9,"slug":"cozy","name":"Cozy","description":"","count":1,"covers":[null],"media":["books"],"updated":1793700000000,
+         "level":{"list":"private","profile":"friends"},"future":true,
+         "items":[{"media":"books","id":"OL1W","title":"A Book","cover":null,"format":"","year":null,"note":"","added":1,"mine":null}]}
+        """#
+        let l = try APIClient.decoder.decode(MyList.self, from: Data(json.utf8)).customList()
+        XCTAssertEqual(l.id, "9")
+        XCTAssertNil(l.description)
+        XCTAssertEqual(l.visibility, .private)
+        XCTAssertEqual(l.items.map(\.id), ["book:OL1W"])
+        XCTAssertNil(l.items[0].note)
+        XCTAssertNil(l.items[0].title.format)
+        XCTAssertEqual(l.updatedAt, Millis.date(1_793_700_000_000))
     }
 
     func testVisibilityFootnotes() {
@@ -221,12 +248,17 @@ final class LibraryListsTests: XCTestCase {
         XCTAssertTrue(d.isValid)
         XCTAssertEqual(d.trimmedName, "Winter evenings")
         XCTAssertNil(d.trimmedDescription)
-        d.name = String(repeating: "x", count: 101)
+        d.name = String(repeating: "x", count: 80)
+        XCTAssertTrue(d.isValid)
+        d.name = String(repeating: "x", count: 81)
+        XCTAssertFalse(d.isValid)
+        d.name = "Ok"
+        d.description = String(repeating: "y", count: 501)
         XCTAssertFalse(d.isValid)
     }
 
     func testDraftEditing() throws {
-        let list = try Demo.load(CustomList.self, "api/lists/rainy-sundays.json")
+        let list = try myList("rainy-sundays").customList()
         var d = CustomListDraft(list)
         let ids = list.items.map(\.id)
         d.move(from: IndexSet(integer: 1), to: 0)
@@ -237,6 +269,8 @@ final class LibraryListsTests: XCTestCase {
         XCTAssertEqual(d.items.count, list.items.count - 1)
         d.setNote("  A rainy-day pick ", for: ids[2])
         XCTAssertEqual(d.items.first { $0.id == ids[2] }?.note, "A rainy-day pick")
+        d.setNote(String(repeating: "n", count: 300), for: ids[2])
+        XCTAssertEqual(d.items.first { $0.id == ids[2] }?.note?.count, 280)
         d.setNote(" ", for: ids[2])
         XCTAssertNil(d.items.first { $0.id == ids[2] }?.note)
         d.add(list.items[1].title)
@@ -247,54 +281,100 @@ final class LibraryListsTests: XCTestCase {
         XCTAssertEqual(saved.visibility, .friends)
         XCTAssertNil(saved.description)
         XCTAssertEqual(saved.updatedAt, Clock.now)
-        XCTAssertEqual(d.body.items.map(\.titleId), saved.items.map(\.id))
     }
 
-    func testBodyIsCamelCaseJSON() throws {
-        let d = CustomListDraft(name: "Winter evenings", visibility: .private,
-                                items: [CustomListItem(title: Title(id: "anime:1", media: .anime, name: "X"), note: "n")])
-        let json = String(decoding: try APIClient.encoder.encode(d.body), as: UTF8.self)
-        XCTAssertEqual(json, #"{"description":"","items":[{"note":"n","titleId":"anime:1"}],"name":"Winter evenings","visibility":"private"}"#)
+    func testNewListBody() throws {
+        let d = CustomListDraft(name: " Winter evenings ", visibility: .private)
+        let t = Title(id: "movie:603", media: .movie, name: "The Matrix",
+                      cover: URL(string: "https://image.tmdb.org/t/p/w500/a.jpg"), format: "Film", year: 1999)
+        let json = String(decoding: try APIClient.encoder.encode(d.newList(item: t)), as: UTF8.self)
+        XCTAssertEqual(json, #"{"description":"","item":{"cover":"https:\/\/image.tmdb.org\/t\/p\/w500\/a.jpg","format":"Film","id":"603","media":"movies","title":"The Matrix","year":1999},"name":"Winter evenings","visibility":"private"}"#)
+        XCTAssertEqual(String(decoding: try APIClient.encoder.encode(d.newList()), as: UTF8.self),
+                       #"{"description":"","name":"Winter evenings","visibility":"private"}"#)
+        let s = try Demo.load(ListWire.Summary.self, "api/lists.post.json")
+        let made = d.created(s, item: t)
+        XCTAssertEqual(made.id, String(s.id))
+        XCTAssertEqual(made.items.map(\.id), ["movie:603"])
+    }
+
+    func testSavingSendsOnlyWhatChanged() throws {
+        let list = try myList("start-here").customList()
+        XCTAssertTrue(CustomListDraft(list).calls(from: list).isEmpty, "nothing changed, nothing sent")
+        let ids = list.items.map(\.id)
+        var d = CustomListDraft(list)
+        d.name = "Start here first"
+        d.visibility = .friends
+        d.remove(at: IndexSet(integer: 0))
+        d.add(Title(id: "anime:21", media: .anime, name: "One Piece", format: "TV", year: 1999))
+        d.setNote("Begin with this one", for: ids[2])
+        d.move(from: IndexSet(integer: 3), to: 0)
+        let calls = d.calls(from: list)
+        let refs = d.items.compactMap { ListWire.Ref(titleId: $0.id) }
+        XCTAssertEqual(calls, [
+            .change(.init(name: "Start here first", visibility: .friends)),
+            .takeOff(try XCTUnwrap(ListWire.Ref(titleId: ids[0]))),
+            .add(.init(media: .anime, id: "21", title: "One Piece", cover: nil, format: "TV", year: 1999)),
+            .note(try XCTUnwrap(ListWire.Ref(titleId: ids[2])), "Begin with this one"),
+            .order(refs),
+        ])
+        XCTAssertEqual(refs.first?.id, "21")
+        var plain = CustomListDraft(list)
+        plain.remove(at: IndexSet(integer: 1))
+        XCTAssertEqual(plain.calls(from: list).count, 1, "taking one off keeps the order: no order call")
     }
 
     @MainActor
-    func testEditsLayOverTheServersLists() throws {
+    func testEditsLayOverTheFeedsLists() throws {
         let owner = NSObject()
         let edits = CustomListEdits.shared(for: owner)
         XCTAssertTrue(CustomListEdits.shared(for: owner) === edits)
-        let loaded = try Demo.load([CustomList].self, "api/lists.json")
-        XCTAssertEqual(edits.merged(loaded).map(\.id), loaded.map(\.id))
-        var renamed = loaded[0]
+        let feed = try ["rainy-sundays", "this-years-highlights", "shonen-marathon"].map(myList)
+        XCTAssertEqual(edits.merged(feed).map(\.id), ["1", "2", "3"])
+        var renamed = feed[0].customList()
         renamed.name = "Renamed"
-        edits.didSave(renamed)
-        edits.didDelete(loaded[1].id)
-        let id = edits.newId(for: "Winter evenings", taken: loaded.map(\.id))
-        XCTAssertEqual(id, "winter-evenings")
-        edits.didCreate(CustomListDraft(name: "Winter evenings").created(id: id))
-        XCTAssertEqual(edits.newId(for: "Winter evenings", taken: []), "winter-evenings-2")
-        let merged = edits.merged(loaded)
-        XCTAssertEqual(merged.first?.id, "winter-evenings")
+        edits.didSave(renamed, over: feed[0].updated)
+        edits.didDelete("2")
+        let s = try Demo.load(ListWire.Summary.self, "api/lists.post.json")
+        edits.didCreate(CustomListDraft(name: "Winter evenings").created(s))
+        var merged = edits.merged(feed)
+        XCTAssertEqual(merged.map(\.id), ["5", "1", "3"], "new first, deleted hidden")
         XCTAssertEqual(merged[1].name, "Renamed")
-        XCTAssertFalse(merged.contains { $0.id == loaded[1].id })
-        XCTAssertEqual(edits.local(loaded[0].id)?.name, "Renamed")
-        XCTAssertNil(edits.local(loaded[1].id))
-        XCTAssertTrue(edits.isDeleted(loaded[1].id))
+        XCTAssertTrue(edits.isDeleted("2"))
+        var newer = feed
+        newer[0].updated += 1
+        newer[0].name = "From the server"
+        merged = edits.merged(newer)
+        XCTAssertEqual(merged[1].name, "From the server", "the feed's newer copy wins")
         XCTAssertFalse(CustomListEdits.shared(for: NSObject()) === edits, "a new session starts clean")
     }
 
     func testListCallsInTheDemo() async throws {
         let transport = DemoTransport()
-        let api = APIClient(transport: transport, token: "t")
-        let one = try await api.customList("rainy-sundays")
+        let api = APIClient(transport: transport, token: "demo-token")
+        let one = try await api.myList(id: 1)
         XCTAssertEqual(one.items.count, 12)
-        let made = try await api.createList(CustomListDraft(name: "Winter evenings").body)
-        XCTAssertTrue(made.ok)
-        let patched = try await api.updateList("rainy-sundays", CustomListDraft(one).body)
-        XCTAssertTrue(patched.ok)
-        let gone = try await api.deleteList("rainy-sundays")
+        let all = try await api.customLists()
+        XCTAssertEqual(all.map(\.id), ["1", "2", "3", "4"])
+        let made = try await api.createList(CustomListDraft(name: "Winter evenings").newList())
+        XCTAssertEqual(made.id, 5)
+        let renamed = try await api.updateList(1, .init(name: "Rainy Sundays"))
+        XCTAssertEqual(renamed.slug, "rainy-sundays")
+        let ref = ListWire.Ref(media: .anime, id: "1575")
+        try await api.run(.note(ref, "x"), on: 1)
+        try await api.run(.order([ref]), on: 1)
+        _ = try await api.orderLists([2, 1])
+        let gone = try await api.deleteList(1)
         XCTAssertTrue(gone.ok)
-        XCTAssertEqual(transport.requests.map { "\($0.method) \($0.path)" },
-                       ["GET lists/rainy-sundays", "POST lists", "PATCH lists/rainy-sundays",
-                        "DELETE lists/rainy-sundays"])
+        let writes = transport.requests.filter { $0.method != "GET" }
+        XCTAssertEqual(writes.map { "\($0.method) \($0.path)" },
+                       ["POST lists", "PATCH lists/1", "POST lists/1/items/note", "POST lists/1/items/order",
+                        "POST lists/order", "DELETE lists/1"])
+        XCTAssertEqual(writes.map { $0.body.map { String(decoding: $0, as: UTF8.self) } ?? "-" },
+                       [#"{"description":"","name":"Winter evenings","visibility":"public"}"#,
+                        #"{"name":"Rainy Sundays"}"#,
+                        #"{"note":"x","ref":{"id":"1575","media":"anime"}}"#,
+                        #"{"refs":[{"id":"1575","media":"anime"}]}"#,
+                        #"{"ids":[2,1]}"#, "-"])
+        XCTAssertEqual(transport.requests.prefix(2).map(\.path), ["lists", "lists/rainy-sundays"])
     }
 }

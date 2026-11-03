@@ -17,21 +17,27 @@ private struct ProfileSettingsForm: View {
     @Environment(AppModel.self) private var model
     @State private var renaming = false
     @State private var newName = ""
-    @State private var photo: PhotosPickerItem?
+    @State private var pickingPicture = false
+    @State private var pickingBanner = false
+    @State private var picturePhoto: PhotosPickerItem?
+    @State private var bannerPhoto: PhotosPickerItem?
     @State private var picked: UIImage?
 
-    private var p: AccountSettings.Profile { settings.profile }
+    private var bio: BioState { settings.bio }
+    private var fade: BannerFade { bio.banner.fade }
+    private var store: AccountSettingsStore { AccountSettingsStore.shared }
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
-                ProfileBannerPreview(profile: p, joined: settings.account.joined, picked: picked) {
+                ProfileBannerPreview(banner: bio.banner, avatar: settings.avatar, name: settings.displayName,
+                                     joined: settings.joined, picked: picked) {
                     bannerMenu { bannerChangeLabel }
                 }
                 .padding(.horizontal, Theme.pad)
                 .padding(.bottom, 24)
                 rows
-                fade
+                fadeControls
             }
             .padding(.top, 4)
             .padding(.bottom, 40)
@@ -41,35 +47,56 @@ private struct ProfileSettingsForm: View {
             Button("Cancel", role: .cancel) {}
             Button("Save") {
                 let name = newName.trimmingCharacters(in: .whitespacesAndNewlines)
-                if !name.isEmpty { model.editSettings(delay: 0) { $0.profile.displayName = name } }
+                if !name.isEmpty { model.editSettings(delay: 0) { $0.profile.name = name } }
             }
         } message: {
             Text("How your name shows on your profile, in activity and in messages.")
         }
-        .onChange(of: photo) { _, item in
+        .photosPicker(isPresented: $pickingPicture, selection: $picturePhoto, matching: .images)
+        .photosPicker(isPresented: $pickingBanner, selection: $bannerPhoto, matching: .images)
+        .onChange(of: picturePhoto) { _, item in
             guard let item else { return }
-            Task { await upload(item) }
+            picturePhoto = nil
+            Task { await uploadPicture(item) }
+        }
+        .onChange(of: bannerPhoto) { _, item in
+            guard let item else { return }
+            bannerPhoto = nil
+            Task { await uploadBanner(item) }
         }
     }
 
     private var rows: some View {
         SettingsGroup {
             Button {
-                newName = p.displayName
+                newName = settings.profile.name
                 renaming = true
-            } label: { SettingsRow("Name", value: p.displayName) }
+            } label: { SettingsRow("Name", value: settings.displayName) }
             .buttonStyle(.plain)
-            PhotosPicker(selection: $photo, matching: .images) {
+            Menu {
+                Button("Choose a photo", systemImage: "photo") { pickingPicture = true }
+                if settings.avatar != nil {
+                    Button("Remove picture", systemImage: "trash", role: .destructive) {
+                        Task { await removePicture() }
+                    }
+                }
+            } label: {
                 SettingsRow("Picture") { pictureThumb }
             }
             .buttonStyle(.plain)
             .accessibilityLabel("Picture")
-            bannerMenu { SettingsRow("Banner", value: p.bannerName ?? "None") }
+            bannerMenu { SettingsRow("Banner", value: bannerValue) }
             Button { model.sheet = .bioEditor } label: {
-                SettingsRow("Bio", value: BioDocument.summary(p.bio), separator: false)
+                SettingsRow("Bio", value: BioDocument.summary(bio.doc), separator: false)
             }
             .buttonStyle(.plain)
         }
+    }
+
+    /// the title whose art the banner is, "Your photo" for an upload, "None"
+    private var bannerValue: String {
+        guard let src = bio.banner.src else { return "None" }
+        return model.library.first { $0.title.banner == src }?.title.name ?? "Your photo"
     }
 
     @ViewBuilder private var pictureThumb: some View {
@@ -77,7 +104,7 @@ private struct ProfileSettingsForm: View {
             Image(uiImage: picked).resizable().scaledToFill().frame(width: 30, height: 30)
                 .clipShape(RoundedRectangle(cornerRadius: 9, style: .continuous))
         } else {
-            Avatar(url: p.avatar, size: 30)
+            Avatar(url: settings.avatar, size: 30)
         }
     }
 
@@ -91,27 +118,22 @@ private struct ProfileSettingsForm: View {
             .overlay(Capsule().strokeBorder(Color.white.opacity(0.18), lineWidth: 0.5))
     }
 
-    /// banners come from the art of titles on your list
+    /// a banner from the art of titles on your list, or a photo of your own
     private func bannerMenu<L: View>(@ViewBuilder label: () -> L) -> some View {
         let choices = bannerChoices
         return Menu {
-            Section("From your library") {
-                ForEach(choices, id: \.id) { e in
-                    Button(e.title.name) {
-                        model.editSettings(delay: 0) {
-                            $0.profile.banner = e.title.banner
-                            $0.profile.bannerName = e.title.name
+            Button("Upload a photo", systemImage: "photo") { pickingBanner = true }
+            if !choices.isEmpty {
+                Section("From your library") {
+                    ForEach(choices, id: \.id) { e in
+                        Button(e.title.name) {
+                            model.editSettings(delay: 0) { $0.bio.banner.src = e.title.banner }
                         }
                     }
                 }
             }
-            if p.banner != nil {
-                Button("No banner", role: .destructive) {
-                    model.editSettings(delay: 0) {
-                        $0.profile.banner = nil
-                        $0.profile.bannerName = nil
-                    }
-                }
+            if bio.banner.src != nil {
+                Button("No banner", role: .destructive) { Task { await removeBanner() } }
             }
         } label: { label() }
         .buttonStyle(.plain)
@@ -124,52 +146,89 @@ private struct ProfileSettingsForm: View {
         return Array((favs + rest).prefix(12))
     }
 
-    private var fade: some View {
+    private func fadeBinding<V>(_ path: WritableKeyPath<BannerFade, V>, fallback: V, delay: Double = 0) -> Binding<V> {
+        model.settingsBinding((\AccountSettings.bio.banner.fade).appending(path: path), fallback: fallback, delay: delay)
+    }
+
+    private var fadeControls: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text("Banner fade").font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.inkMuted)
                 .padding(.horizontal, Theme.pad).padding(.bottom, 6)
+                .accessibilityAddTraits(.isHeader)
             Hairline()
-            VStack(alignment: .leading, spacing: 0) {
-                HStack {
-                    Text("Strength")
-                    Spacer()
-                    Text("\(p.fade)%").foregroundStyle(Theme.inkMuted).numbers()
+            SettingsToggleRow(label: "Fade", separator: fade.on, isOn: fadeBinding(\.on, fallback: true))
+            if fade.on {
+                VStack(alignment: .leading, spacing: 0) {
+                    HStack {
+                        Text("Strength")
+                        Spacer()
+                        Text("\(Int(fade.strength))%").foregroundStyle(Theme.inkMuted).numbers()
+                    }
+                    .font(.system(size: 17)).foregroundStyle(Theme.ink)
+                    Slider(value: fadeBinding(\.strength, fallback: 74, delay: 0.5), in: 0...100, step: 1)
+                        .tint(Theme.brand)
+                        .accessibilityLabel("Fade strength")
+                        .padding(.top, 4)
+                    Text("Fade colour").font(.system(size: 17)).foregroundStyle(Theme.ink).padding(.top, 14).padding(.bottom, 10)
+                    Picker("Fade colour", selection: fadeBinding(\.color, fallback: "dark")) {
+                        ForEach(BannerFade.colors, id: \.0) { Text($0.1).tag($0.0) }
+                    }
+                    .pickerStyle(.segmented)
+                    Text("Banner text").font(.system(size: 17)).foregroundStyle(Theme.ink).padding(.top, 16).padding(.bottom, 10)
+                    Picker("Banner text", selection: fadeBinding(\.text, fallback: "auto")) {
+                        ForEach(BannerFade.texts, id: \.0) { Text($0.1).tag($0.0) }
+                    }
+                    .pickerStyle(.segmented)
                 }
-                .font(.system(size: 17)).foregroundStyle(Theme.ink)
-                Slider(value: Binding(get: { Double(p.fade) }, set: { v in model.editSettings { $0.profile.fade = Int(v) } }),
-                       in: 0...100, step: 5)
-                    .tint(Theme.brand)
-                    .accessibilityLabel("Fade strength")
-                    .padding(.top, 4)
-                Text("Fade colour").font(.system(size: 17)).foregroundStyle(Theme.ink).padding(.top, 14).padding(.bottom, 10)
-                Picker("Fade colour", selection: model.settingsBinding(\.profile.fadeColour, fallback: .dark, delay: 0)) {
-                    ForEach(AccountSettings.FadeColour.allCases) { Text($0.label).tag($0) }
-                }
-                .pickerStyle(.segmented)
-                Text("Banner text").font(.system(size: 17)).foregroundStyle(Theme.ink).padding(.top, 16).padding(.bottom, 10)
-                Picker("Banner text", selection: model.settingsBinding(\.profile.bannerText, fallback: .auto, delay: 0)) {
-                    ForEach(AccountSettings.BannerText.allCases) { Text($0.label).tag($0) }
-                }
-                .pickerStyle(.segmented)
+                .padding(.horizontal, Theme.pad)
+                .padding(.top, 12)
+                .padding(.bottom, 18)
             }
-            .padding(.horizontal, Theme.pad)
-            .padding(.top, 12)
-            .padding(.bottom, 18)
             Hairline()
         }
         .padding(.bottom, 26)
     }
 
-    private func upload(_ item: PhotosPickerItem) async {
+    private func image(_ item: PhotosPickerItem) async -> UIImage? {
         guard let data = try? await item.loadTransferable(type: Data.self), let img = UIImage(data: data) else {
             model.notice = "Couldn't read that picture."
-            return
+            return nil
         }
+        return img
+    }
+
+    private func uploadPicture(_ item: PhotosPickerItem) async {
+        guard let img = await image(item) else { return }
         let small = Self.square(img, side: 512)
         picked = small
         guard let jpeg = small.jpegData(compressionQuality: 0.85) else { return }
-        if let why = await model.fetch({ try await $0.uploadPicture(jpeg) }).error {
-            model.notice = "Couldn't change your picture: \(why)"
+        took(await model.fetch({ try await $0.uploadAvatar(jpeg, contentType: "image/jpeg") }),
+             else: "Couldn't change your picture")
+        picked = nil
+    }
+
+    private func uploadBanner(_ item: PhotosPickerItem) async {
+        guard let img = await image(item), let jpeg = Self.fit(img, width: 2000).jpegData(compressionQuality: 0.85) else {
+            return
+        }
+        took(await model.fetch({ try await $0.uploadBanner(jpeg, contentType: "image/jpeg") }),
+             else: "Couldn't change your banner")
+    }
+
+    private func removePicture() async {
+        took(await model.fetch({ try await $0.removeAvatar() }), else: "Couldn't remove your picture")
+    }
+
+    private func removeBanner() async {
+        took(await model.fetch({ try await $0.removeBanner() }), else: "Couldn't remove your banner")
+    }
+
+    /// the profile the server answered with, shown and kept at once
+    private func took(_ answer: Load<ProfileAnswer>, else message: String) {
+        switch answer {
+        case .loaded(let a): store.took(a.profile)
+        case .failed(let why): model.notice = "\(message): \(why)"
+        case .loading: break
         }
     }
 
@@ -184,27 +243,41 @@ private struct ProfileSettingsForm: View {
             img.draw(in: CGRect(x: (side - size.width) / 2, y: (side - size.height) / 2, width: size.width, height: size.height))
         }
     }
+
+    /// a picture no wider than `width` (uploads stay well under the 8 MB limit)
+    static func fit(_ img: UIImage, width: CGFloat) -> UIImage {
+        guard img.size.width > width else { return img }
+        let size = CGSize(width: width, height: (img.size.height * width / img.size.width).rounded())
+        let format = UIGraphicsImageRendererFormat()
+        format.scale = 1
+        return UIGraphicsImageRenderer(size: size, format: format).image { _ in img.draw(in: CGRect(origin: .zero, size: size)) }
+    }
 }
 
 /// The profile banner as the profile shows it: the art, the fade, the picture and name in the corner.
 struct ProfileBannerPreview<Action: View>: View {
-    let profile: AccountSettings.Profile
+    let banner: BioBanner
+    let avatar: URL?
+    let name: String
     let joined: Date
     var picked: UIImage?
     @ViewBuilder var action: () -> Action
 
-    private var fadeColour: Color { profile.fadeColour == .dark ? .black : Theme.sheet }
+    private var fade: BannerFade { banner.fade }
+    private var fadeColour: Color { fade.color == "page" ? Theme.sheet : .black }
 
     var body: some View {
         let shape = RoundedRectangle(cornerRadius: 20, style: .continuous)
-        Artwork(url: profile.banner)
+        Artwork(url: banner.src)
             .frame(height: 120)
             .frame(maxWidth: .infinity)
             .overlay {
-                // the approved banner fade (the website's profile banner)
-                LinearGradient(stops: [.init(color: fadeColour.opacity(0), location: 0.2),
-                                       .init(color: fadeColour.opacity(Double(profile.fade) / 100), location: 1)],
-                               startPoint: .top, endPoint: .bottom)
+                if fade.on && banner.src != nil {
+                    // the approved banner fade (the website's profile banner)
+                    LinearGradient(stops: [.init(color: fadeColour.opacity(0), location: 0.2),
+                                           .init(color: fadeColour.opacity(fade.strength / 100), location: 1)],
+                                   startPoint: .top, endPoint: .bottom)
+                }
             }
             .overlay(alignment: .bottomLeading) { identity.padding(.leading, 14).padding(.bottom, 12) }
             .overlay(alignment: .topTrailing) { action().padding(10) }
@@ -219,35 +292,39 @@ struct ProfileBannerPreview<Action: View>: View {
                 Image(uiImage: picked).resizable().scaledToFill().frame(width: 44, height: 44)
                     .clipShape(RoundedRectangle(cornerRadius: 13, style: .continuous))
             } else {
-                Avatar(url: profile.avatar, size: 44)
+                Avatar(url: avatar, size: 44)
             }
             VStack(alignment: .leading, spacing: 1) {
-                Text(profile.displayName).font(.system(size: 17, weight: .bold)).foregroundStyle(.white)
+                Text(name).font(.system(size: 17, weight: .bold)).foregroundStyle(.white)
                 Text("Joined \(Format.longDay(joined))").font(.system(size: 12)).foregroundStyle(.white.opacity(0.75))
             }
-            .modifier(BannerTextStyle(style: profile.bannerText))
+            .modifier(BannerTextStyle(style: fade.text))
         }
     }
 }
 
 /// the banner text's legibility: a shadow, a dark backing, or nothing
 private struct BannerTextStyle: ViewModifier {
-    let style: AccountSettings.BannerText
+    let style: String
 
     func body(content: Content) -> some View {
         switch style {
-        case .auto, .shadow:
-            content.shadow(color: .black.opacity(0.6), radius: 3, y: 1)
-        case .backing:
+        case "backing":
             content.padding(.horizontal, 8).padding(.vertical, 4)
                 .background(Color.black.opacity(0.45), in: RoundedRectangle(cornerRadius: 8, style: .continuous))
-        case .none:
+        case "none":
             content
+        default:
+            content.shadow(color: .black.opacity(0.6), radius: 3, y: 1)
         }
     }
 }
 
 // MARK: 58 privacy
+
+/// the three levels, most open first
+private let visibilityChoices: [(WireVisibility, String)] =
+    [WireVisibility.public, .friends, .private].map { ($0, $0.visibility.label) }
 
 /// Settings › Privacy (58): who sees the profile as checkmarks; each list, comments and messages as pull-downs.
 struct PrivacySettingsView: View {
@@ -271,19 +348,20 @@ struct PrivacySettingsView: View {
     private func profileGroup(_ s: AccountSettings) -> some View {
         SettingsGroup(label: "Who can see your profile",
                       footer: "Public means everyone signed in to your GupTrack. Private shows it only to you.") {
-            ForEach(Visibility.allCases) { v in
-                SettingsCheckRow(label: v.label, checked: s.privacy.profile == v, separator: v != .private) {
-                    model.editSettings(delay: 0) { $0.privacy.profile = v }
+            ForEach(visibilityChoices, id: \.0) { choice in
+                SettingsCheckRow(label: choice.1, checked: s.privacy.visibility == choice.0,
+                                 separator: choice.0 != .private) {
+                    model.editSettings(delay: 0) { $0.privacy.visibility = choice.0 }
                 }
             }
         }
     }
 
     private func lists(_ s: AccountSettings) -> some View {
-        SettingsGroup(label: "Lists") {
-            ForEach(MediaKind.allCases) { m in
-                SettingsPickerRow(label: m.plural, choices: Visibility.allCases.map { ($0, $0.label) },
-                                  separator: m != MediaKind.allCases.last,
+        SettingsGroup(label: "Lists", footer: "A list is never more open than your profile.") {
+            ForEach(APIMedia.allCases, id: \.self) { m in
+                SettingsPickerRow(label: m.kind.plural, choices: visibilityChoices,
+                                  separator: m != APIMedia.allCases.last,
                                   selection: Binding(get: { s.privacy.list(m) },
                                                      set: { v in model.editSettings(delay: 0) { $0.privacy.lists[m.rawValue] = v } }))
             }
@@ -291,12 +369,11 @@ struct PrivacySettingsView: View {
     }
 
     private var reach: some View {
-        let choices = AccountSettings.Reach.allCases.map { ($0, $0.label) }
-        return SettingsGroup(label: "Who can reach you") {
-            SettingsPickerRow(label: "Comments on your profile", choices: choices,
-                              selection: model.settingsBinding(\.privacy.comments, fallback: .friends, delay: 0))
-            SettingsPickerRow(label: "Messages", choices: choices, separator: false,
-                              selection: model.settingsBinding(\.privacy.messages, fallback: .everyone, delay: 0))
+        SettingsGroup(label: "Who can reach you") {
+            SettingsPickerRow(label: "Comments on your profile", choices: SettingsChoices.comments,
+                              selection: model.settingsBinding(\.privacy.comments, fallback: "friends", delay: 0))
+            SettingsPickerRow(label: "Messages", choices: SettingsChoices.messages, separator: false,
+                              selection: model.settingsBinding(\.messages, fallback: "everyone", delay: 0))
         }
     }
 }
@@ -312,8 +389,8 @@ struct AppearanceSettingsView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
                     ForEach(SettingsThemes.shelves) { shelf in
-                        ThemeShelf(shelf: shelf, picked: s.theme) { name in
-                            model.editSettings(delay: 0) { $0.theme = name }
+                        ThemeShelf(shelf: shelf, picked: s.prefs.theme) { key in
+                            model.editSettings(delay: 0) { $0.prefs.theme = key }
                         }
                     }
                     Text("Your theme follows your account, so the website and this iPhone match.")
@@ -341,10 +418,10 @@ private struct ThemeShelf: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 14) {
                     ForEach(shelf.themes) { t in
-                        Button { pick(t.name) } label: { ThemeTile(look: t, selected: t.name == picked) }
+                        Button { pick(t.key) } label: { ThemeTile(look: t, selected: t.key == picked) }
                             .buttonStyle(.plain)
                             .accessibilityLabel(t.name)
-                            .accessibilityAddTraits(t.name == picked ? .isSelected : [])
+                            .accessibilityAddTraits(t.key == picked ? .isSelected : [])
                     }
                 }
                 .padding(.horizontal, Theme.pad)
@@ -382,10 +459,10 @@ private struct ThemeTile: View {
     }
 
     @ViewBuilder private var preview: some View {
-        if look.split, let light = SettingsThemes.named("Light") {
+        if look.split {
             ZStack {
                 MiniHome(look: look)
-                MiniHome(look: light).clipShape(LowerTriangle())
+                MiniHome(look: SettingsThemes.light).clipShape(LowerTriangle())
             }
         } else {
             MiniHome(look: look)

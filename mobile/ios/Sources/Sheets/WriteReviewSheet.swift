@@ -1,7 +1,9 @@
 import SwiftUI
 
 /// Write a review (27): a full-height sheet with the title on top, your score, the review, a spoiler switch and who
-/// can see it; Post in the bar. A changed score is saved to your list too.
+/// can see it; Post in the bar (PUT titles/:kind/:id/review). A review shows the score from your list, so a changed
+/// score is saved to your list (the score row shows only when the title is on it). Who can see it follows your
+/// privacy settings (TitleReviews' `visibility`), so it's shown, not picked here.
 struct WriteReviewSheet: View {
     let titleId: String
 
@@ -21,6 +23,7 @@ private struct ReviewForm: View {
 
     @Environment(AppModel.self) private var model
     @State private var posting = false
+    @State private var seenBy: Visibility?
     @FocusState private var writing: Bool
 
     var body: some View {
@@ -28,11 +31,13 @@ private struct ReviewForm: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
                     titleRow
-                    SheetEditLabel(text: "Your score") {
-                        Text(draft.scoreText ?? "Not scored").font(.system(size: 13)).foregroundStyle(Theme.inkMuted)
-                            .monospacedDigit()
+                    if entry != nil {
+                        SheetEditLabel(text: "Your score") {
+                            Text(draft.scoreText ?? "Not scored").font(.system(size: 13))
+                                .foregroundStyle(Theme.inkMuted).monospacedDigit()
+                        }
+                        SheetScoreRow(chosen: TitleSheets.scoreDot(draft.score)) { draft.pickScore($0) }
                     }
-                    SheetScoreRow(chosen: TitleSheets.scoreDot(draft.score)) { draft.pickScore($0) }
                     textArea
                     spoilerRow.padding(.top, 12)
                     footerRow.padding(.top, 10)
@@ -54,7 +59,10 @@ private struct ReviewForm: View {
                 }
             }
         }
-        .task { writing = true }
+        .task {
+            writing = true
+            await loadMine()
+        }
     }
 
     private var titleRow: some View {
@@ -117,17 +125,14 @@ private struct ReviewForm: View {
 
     private var footerRow: some View {
         HStack {
-            Menu {
-                Picker("Who can see it", selection: $draft.visibility) {
-                    ForEach(Visibility.allCases) { v in
-                        Label(v.label, systemImage: v.symbol).tag(v)
-                    }
-                }
-            } label: {
-                ChipLabel(text: draft.visibility.label, menu: true, symbol: draft.visibility.symbol)
+            if let v = seenBy {
+                Label(v.label, systemImage: v.symbol)
+                    .font(.system(size: 13, weight: .medium))
+                    .foregroundStyle(Theme.inkMuted)
+                    .labelStyle(TightLabelStyle())
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel("Who can see it: \(v.label)")
             }
-            .buttonStyle(.plain)
-            .accessibilityLabel("Who can see it: \(draft.visibility.label)")
             Spacer(minLength: 8)
             Text(draft.countText).font(.system(size: 13)).monospacedDigit()
                 .foregroundStyle(draft.tooLong ? Theme.danger : Theme.inkFaint)
@@ -135,13 +140,24 @@ private struct ReviewForm: View {
         .padding(.horizontal, Theme.pad)
     }
 
+    /// your review so far (to change it) and who may see it; the sheet works without them
+    private func loadMine() async {
+        let id = title.id
+        guard let r = await model.fetch({ try await $0.myReview(id) }).value else { return }
+        seenBy = r.visibility.visibility
+        if let mine = r.mine, draft.text.isEmpty {
+            draft.text = mine.body
+            draft.spoilers = mine.spoiler
+        }
+    }
+
     private func post() {
-        let body = draft.body
+        let body = draft.body(title)
         let score = draft.score
         let id = title.id
         posting = true
         Task {
-            let r: Load<OKReply> = await model.fetch { try await $0.sheetPostReview(id, body) }
+            let r: Load<Void> = await model.fetch { try await $0.putReview(id, body) }
             posting = false
             if let why = r.error {
                 model.notice = "Couldn't post your review: \(why)"

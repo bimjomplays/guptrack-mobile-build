@@ -1,0 +1,99 @@
+{
+ "title": {
+  "alt": [
+   "Kaguya-sama wa Kokurasetai: Tensaitachi no Renai Zunousen",
+   "かぐや様は告らせたい～天才たちの恋愛頭脳戦～"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/101921-GgvvFhlNhzlF.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 12,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101921-ufrjLzhSz7L1.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "12"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Jan 12, 2019"
+   },
+   {
+    "label": "Season",
+    "value": "Winter 2019"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "561",
+       "to": "studio"
+      },
+      "text": "A-1 Pictures"
+     }
+    ],
+    "value": "A-1 Pictures"
+   },
+   {
+    "label": "Members",
+    "value": "568,621"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Comedy",
+   "Psychological",
+   "Romance",
+   "Slice of Life"
+  ],
+  "headline": [
+   "TV",
+   "Winter 2019",
+   "12 episodes"
+  ],
+  "idMal": 37999,
+  "makers": [
+   {
+    "ref": {
+     "id": "561",
+     "to": "studio"
+    },
+    "text": "A-1 Pictures"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "101921",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 83,
+  "scoreNote": "568,621 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Kaguya-sama: Love is War",
+  "trailer": null,
+  "volumes": null,
+  "year": 2019
+ }
+}

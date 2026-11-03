@@ -7,7 +7,25 @@ import FoundationNetworking
 /// `LiveTransport` talks HTTPS; `DemoTransport` (Demo.swift) answers from the recorded fixtures, so the demo and the
 /// tests go through the same decoding as the real app.
 protocol Transport: AnyObject, Sendable {
-    func send(_ request: APIRequest) async throws -> (Data, Int)
+    func send(_ request: APIRequest) async throws -> APIResponse
+}
+
+/// What came back: the body, the HTTP status and the headers the client reads (Retry-After, x-request-replayed).
+struct APIResponse: Equatable, Sendable {
+    var data: Data
+    var status: Int
+    var headers: [String: String]
+
+    init(_ data: Data, _ status: Int, headers: [String: String] = [:]) {
+        self.data = data
+        self.status = status
+        self.headers = headers
+    }
+
+    /// a header by name, any case
+    func header(_ name: String) -> String? {
+        headers.first { $0.key.caseInsensitiveCompare(name) == .orderedSame }?.value
+    }
 }
 
 /// One call to the app API. `path` is relative to /api/app/v1 ("library/changes", "titles/anime/210482").
@@ -17,13 +35,29 @@ struct APIRequest: Equatable, Sendable {
     var query: [URLQueryItem]
     var body: Data?
     var token: String?
+    /// X-Request-Id (§2): the same id again gets the first answer again, nothing done twice
+    var requestId: String?
+    /// the body's type; JSON unless it's an upload's raw bytes
+    var contentType: String
 
-    init(_ method: String = "GET", _ path: String, query: [URLQueryItem] = [], body: Data? = nil, token: String? = nil) {
+    init(_ method: String = "GET", _ path: String, query: [URLQueryItem] = [], body: Data? = nil, token: String? = nil,
+         requestId: String? = nil, contentType: String = "application/json") {
         self.method = method
         self.path = path.hasPrefix("/") ? String(path.dropFirst()) : path
         self.query = query
         self.body = body
         self.token = token
+        self.requestId = requestId
+        self.contentType = contentType
+    }
+
+    /// A write that may carry X-Request-Id: every POST, PUT, PATCH and DELETE but the signed-out calls (§4) and the
+    /// ones whose answer holds a secret, which the server never keeps.
+    static func takesRequestId(_ method: String, _ path: String) -> Bool {
+        guard ["POST", "PUT", "PATCH", "DELETE"].contains(method) else { return false }
+        let p = path.hasPrefix("/") ? String(path.dropFirst()) : path
+        if p.hasPrefix("auth/") && p != "auth/sign-out" { return false }
+        return !["account/password", "account/recovery-codes", "devices/pairing", "accounts/invites"].contains(p)
     }
 
     /// the full URL on a server: <base>/api/app/v1/<path>?<query>
@@ -37,24 +71,64 @@ struct APIRequest: Equatable, Sendable {
 }
 
 enum APIError: Error, Equatable {
-    case signedOut              // 401: the server doesn't know this device's token (anymore)
+    case signedOut              // 401 unauthorized: the server doesn't know this phone's token (anymore)
     case unreachable(String)    // no answer: Tailscale off, the PC asleep, offline
-    case server(Int, String)    // the server answered with an error
+    case server(ServerError)    // the server answered with an error (§3)
     case unreadable             // an answer this app can't read (app or server out of date)
+
+    /// an error answer: status, code and the message written for people
+    static func server(_ status: Int, _ code: String, _ message: String, retryAfter: Int? = nil) -> APIError {
+        .server(ServerError(status: status, code: code, message: message, retryAfter: retryAfter))
+    }
 
     var message: String {
         switch self {
         case .signedOut: return "Your GupTrack server signed this iPhone out. Sign in again."
         case .unreachable(let why): return why
-        case .server(_, let text): return text
+        case .server(let e): return e.message
         case .unreadable: return "GupTrack sent something this app can't read. Update the app or the server."
         }
+    }
+
+    /// the error's code (`not_found`, `cursor_expired`…); nil when the server didn't answer
+    var code: String? {
+        switch self {
+        case .signedOut: return "unauthorized"
+        case .server(let e): return e.code
+        default: return nil
+        }
+    }
+
+    var status: Int? {
+        if case .server(let e) = self { return e.status }
+        return nil
     }
 
     var isUnreachable: Bool {
         if case .unreachable = self { return true }
         return false
     }
+
+    /// worth sending again later: no answer, 429, 5xx (§7.2)
+    var isRetryable: Bool {
+        switch self {
+        case .unreachable: return true
+        case .server(let e): return e.status == 429 || e.status >= 500
+        default: return false
+        }
+    }
+}
+
+/// An error answer (§3): `{ "error": "not_found", "message": "That account isn’t here.", "serverTime": … }`.
+struct ServerError: Equatable, Sendable {
+    var status: Int
+    /// bad_request, unauthorized, wrong_password, bad_code, forbidden, not_found, unknown_endpoint,
+    /// method_not_allowed, cursor_expired, conflict, too_large, rate_limited, upstream_unavailable,
+    /// catalogue_unavailable, server_error
+    var code: String
+    var message: String
+    /// 429: seconds to wait (Retry-After)
+    var retryAfter: Int?
 }
 
 /// HTTPS to the GupTrack server: an ephemeral session (no cookies, cache or stored credentials), no redirects, the
@@ -83,18 +157,24 @@ final class LiveTransport: Transport, @unchecked Sendable {
         req.httpMethod = r.method
         req.setValue("application/json", forHTTPHeaderField: "Accept")
         if let token = r.token { req.setValue("Bearer " + token, forHTTPHeaderField: "Authorization") }
+        if let id = r.requestId { req.setValue(id, forHTTPHeaderField: "X-Request-Id") }
         if let body = r.body {
-            req.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            req.setValue(r.contentType, forHTTPHeaderField: "Content-Type")
             req.httpBody = body
         }
         return req
     }
 
-    func send(_ r: APIRequest) async throws -> (Data, Int) {
+    func send(_ r: APIRequest) async throws -> APIResponse {
         let req = try Self.makeRequest(r, base: base)
         do {
             let (data, response) = try await session.data(for: req)
-            return (data, (response as? HTTPURLResponse)?.statusCode ?? 0)
+            let http = response as? HTTPURLResponse
+            var headers: [String: String] = [:]
+            for (k, v) in http?.allHeaderFields ?? [:] {
+                if let k = k as? String, let v = v as? String { headers[k.lowercased()] = v }
+            }
+            return APIResponse(data, http?.statusCode ?? 0, headers: headers)
         } catch {
             throw APIError.unreachable(Self.why(error))
         }
@@ -124,7 +204,8 @@ private final class NoRedirects: NSObject, URLSessionTaskDelegate {
     }
 }
 
-/// The app API client: typed calls over a transport. Dates are ISO 8601 both ways.
+/// The app API client: typed calls over a transport. Times are ms since 1970 both ways (§2); a write carries a new
+/// X-Request-Id unless the caller passes the one it keeps with the action.
 final class APIClient: @unchecked Sendable {
     let transport: Transport
     var token: String?
@@ -148,10 +229,7 @@ final class APIClient: @unchecked Sendable {
 
     static let encoder: JSONEncoder = {
         let e = JSONEncoder()
-        e.dateEncodingStrategy = .custom { date, enc in
-            var c = enc.singleValueContainer()
-            try c.encode(ISO8601.string(date))
-        }
+        e.dateEncodingStrategy = .millisecondsSince1970
         e.outputFormatting = [.sortedKeys]
         return e
     }()
@@ -160,31 +238,54 @@ final class APIClient: @unchecked Sendable {
         try await call(APIRequest("GET", path, query: query, token: token))
     }
 
-    func send<T: Decodable, B: Encodable>(_ method: String, _ path: String, _ body: B) async throws -> T {
-        try await call(APIRequest(method, path, body: try Self.encoder.encode(body), token: token))
+    func send<T: Decodable, B: Encodable>(_ method: String, _ path: String, _ body: B, query: [URLQueryItem] = [],
+                                          requestId: String? = nil) async throws -> T {
+        try await call(APIRequest(method, path, query: query, body: try Self.encoder.encode(body), token: token,
+                                  requestId: Self.requestId(method, path, requestId)))
     }
 
-    func send<T: Decodable>(_ method: String, _ path: String) async throws -> T {
-        try await call(APIRequest(method, path, token: token))
+    func send<T: Decodable>(_ method: String, _ path: String, query: [URLQueryItem] = [],
+                            requestId: String? = nil) async throws -> T {
+        try await call(APIRequest(method, path, query: query, token: token,
+                                  requestId: Self.requestId(method, path, requestId)))
+    }
+
+    /// an upload: the raw file as the body, with its type (§5)
+    func upload<T: Decodable>(_ path: String, _ data: Data, contentType: String, requestId: String? = nil) async throws -> T {
+        try await call(APIRequest("POST", path, body: data, token: token,
+                                  requestId: Self.requestId("POST", path, requestId), contentType: contentType))
+    }
+
+    static func requestId(_ method: String, _ path: String, _ given: String?) -> String? {
+        APIRequest.takesRequestId(method, path) ? (given ?? UUID().uuidString) : nil
     }
 
     func call<T: Decodable>(_ r: APIRequest) async throws -> T {
-        let (data, status) = try await transport.send(r)
-        if status == 401 && r.token != nil { throw APIError.signedOut }
-        guard (200..<300).contains(status) else {
-            let text = (try? Self.decoder.decode(ErrorBody.self, from: data))?.error
-            throw APIError.server(status, text ?? "GupTrack answered with an error (\(status)).")
-        }
+        let answer = try await transport.send(r)
+        try Self.check(answer, signedIn: r.token != nil)
         do {
-            return try Self.decoder.decode(T.self, from: data)
+            return try Self.decoder.decode(T.self, from: answer.data)
         } catch {
             throw APIError.unreadable
         }
+    }
+
+    /// an error answer as an APIError; a 401 `unauthorized` with a token means this phone was signed out
+    static func check(_ answer: APIResponse, signedIn: Bool) throws {
+        guard !(200..<300).contains(answer.status) else { return }
+        let body = try? decoder.decode(ErrorBody.self, from: answer.data)
+        let code = body?.error ?? (answer.status == 401 ? "unauthorized" : "server_error")
+        if answer.status == 401 && signedIn && code == "unauthorized" { throw APIError.signedOut }
+        let retry = answer.header("Retry-After").flatMap { Int($0.trimmingCharacters(in: .whitespaces)) }
+        throw APIError.server(answer.status, code, body?.message ?? "GupTrack answered with an error (\(answer.status)).",
+                              retryAfter: retry)
     }
 }
 
 private struct ErrorBody: Decodable {
     var error: String?
+    var message: String?
+    var serverTime: Int64?
 }
 
 struct OKReply: Codable, Equatable, Sendable {

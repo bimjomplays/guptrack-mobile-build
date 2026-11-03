@@ -36,7 +36,7 @@ final class ScreensTitleTests: ScreenTestCase {
     func test21TitleTV() {
         let app = open("tv:95396")
         expect(app, "Severance")
-        expect(app, "Series · 2022 · 2 seasons")
+        expect(app, "Series · 2022– · 2 seasons")
         expect(app, "Dan Erickson")
         expect(app, "Your list · Season")
         expect(app, "Up next")
@@ -55,7 +55,6 @@ final class ScreensTitleTests: ScreenTestCase {
         let app = open("movie:693134")
         expect(app, "Dune: Part Two")
         expect(app, "Film · 2024 · 2h 47m")
-        expect(app, "Long live the fighters.")
         expect(app, "Trailer")
         shot("23-title-movie")
     }
@@ -114,7 +113,7 @@ final class ScreensTitleTests: ScreenTestCase {
     func testRelatedOpensTheTitle() {
         let app = open("anime:210482")
         expect(app, "Your list")
-        scroll(app, until: "Related", top: 120)
+        scroll(app, until: "Prequel", top: 300)
         expect(app, "Prequel").tap()
         XCTAssertEqual(app.model.path(.browse).last, .title("anime:190327"))
     }
@@ -124,6 +123,7 @@ final class ScreensTitleTests: ScreenTestCase {
         expect(app, "Season 2")
         let before = app.model.entry("tv:95396")?.progress ?? 0
         let next = before - 9 + 1
+        scroll(app, until: "Mark episode \(next) watched", top: 400)
         app.buttons["Mark episode \(next) watched"].tap()
         XCTAssertEqual(app.model.entry("tv:95396")?.progress, before + 1)
     }

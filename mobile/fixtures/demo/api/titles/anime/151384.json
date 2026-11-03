@@ -1,0 +1,99 @@
+{
+ "title": {
+  "alt": [
+   "Kaguya-sama wa Kokurasetai: First Kiss wa Owaranai",
+   "かぐや様は告らせたい -ファーストキッスは終わらない-"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/151384-JybfIpHr2gx6.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 4,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151384-gv0q8wOE6D58.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "4"
+   },
+   {
+    "label": "Episode length",
+    "value": "25 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Apr 1, 2023"
+   },
+   {
+    "label": "Season",
+    "value": "Spring 2023"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "561",
+       "to": "studio"
+      },
+      "text": "A-1 Pictures"
+     }
+    ],
+    "value": "A-1 Pictures"
+   },
+   {
+    "label": "Members",
+    "value": "151,634"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Comedy",
+   "Psychological",
+   "Romance",
+   "Slice of Life"
+  ],
+  "headline": [
+   "TV",
+   "Spring 2023",
+   "4 episodes"
+  ],
+  "idMal": 52198,
+  "makers": [
+   {
+    "ref": {
+     "id": "561",
+     "to": "studio"
+    },
+    "text": "A-1 Pictures"
+   }
+  ],
+  "media": "anime",
+  "minutes": 25,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "151384",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 87,
+  "scoreNote": "151,634 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Kaguya-sama: Love is War -The First Kiss That Never Ends-",
+  "trailer": null,
+  "volumes": null,
+  "year": 2023
+ }
+}

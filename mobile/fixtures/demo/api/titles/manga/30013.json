@@ -1,0 +1,64 @@
+{
+ "title": {
+  "alt": [
+   "ONE PIECE"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30013-hbbRZqC5MjYh.jpg",
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30013-BeslEMqiPhlk.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Status",
+    "value": "Releasing"
+   },
+   {
+    "label": "Published",
+    "value": "Jul 22, 1997"
+   },
+   {
+    "label": "Members",
+    "value": "236,185"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Fantasy"
+  ],
+  "headline": [
+   "Manga",
+   "1997"
+  ],
+  "idMal": 13,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "30013",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 91,
+  "scoreNote": "236,185 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Releasing",
+  "synopsis": [],
+  "tags": [],
+  "title": "One Piece",
+  "trailer": null,
+  "volumes": null,
+  "year": 1997
+ }
+}

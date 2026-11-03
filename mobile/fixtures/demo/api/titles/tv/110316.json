@@ -1,0 +1,303 @@
+{
+ "title": {
+  "alt": [
+   "今際の国のアリス"
+  ],
+  "banner": "https://image.tmdb.org/t/p/w1280/QZaPkNUvhdcKONuO2fXuqtcQRo.jpg",
+  "cast": [
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/nUWXgjDfRxFJ3P20lyMJr8qDIJ0.jpg",
+     "name": "Kento Yamazaki",
+     "ref": {
+      "id": "96867797",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Arisu Ryohei / Alice"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/n2665l3bguzDTm5CnyP99ipU9Z0.jpg",
+     "name": "Tao Tsuchiya",
+     "ref": {
+      "id": "93442861",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Usagi Yuzuha / “Rabbit”"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/cl0PnyIo5X1hN0eDpnYbT6qWNo0.jpg",
+     "name": "Nijiro Murakami",
+     "ref": {
+      "id": "94959183",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Chishiya Shuntaro"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/zF3la0KvayUV3uACYPiBgCRIQcI.jpg",
+     "name": "Aya Asahina",
+     "ref": {
+      "id": "91304091",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Kuina Hikari"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/et1creCXulwYMBB4Wv9upbUyXn3.jpg",
+     "name": "Nobuaki Kaneko",
+     "ref": {
+      "id": "91473036",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Takeru Danma, Takeru / Bossia / The Hatter"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/tqFHQiJUycuob3ytvilaAWDlbQ8.jpg",
+     "name": "Riisa Naka",
+     "ref": {
+      "id": "94016154",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Mira Kano, Kano Mira"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/a4aTIpAFyXXzmhDMZ56kV29s8kU.jpg",
+     "name": "Keita Machida",
+     "ref": {
+      "id": "96022601",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Karube Daikichi, Daikichi Karube"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/62oahK2mc58X5sNrxyhCVXKryIx.jpg",
+     "name": "Ayaka Miyoshi",
+     "ref": {
+      "id": "93189533",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Ann Rizuna"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/pQHayu4kmoJ8T7ebKsGBc7egHCa.jpg",
+     "name": "Dori Sakurada",
+     "ref": {
+      "id": "96567954",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Niragi Suguru"
+   }
+  ],
+  "characters": [],
+  "count": null,
+  "cover": "https://image.tmdb.org/t/p/w500/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Series"
+   },
+   {
+    "label": "Status",
+    "value": "Returning series"
+   },
+   {
+    "label": "Aired",
+    "value": "Dec 10, 2020"
+   },
+   {
+    "label": "Rated",
+    "value": "TV-MA"
+   },
+   {
+    "label": "Language",
+    "value": "Japanese"
+   }
+  ],
+  "format": "Series",
+  "genres": [
+   "Mystery",
+   "Drama",
+   "Action & Adventure"
+  ],
+  "headline": [
+   "Series",
+   "2020–",
+   "TV-MA"
+  ],
+  "makers": [],
+  "media": "tv",
+  "minutes": 45,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "95396",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "Severance",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "136315",
+     "kind": "tv"
+    },
+    "score": 82,
+    "title": "The Bear",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "126308",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "Shōgun",
+    "year": 2024
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "100088",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "The Last of Us",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "83867",
+     "kind": "tv"
+    },
+    "score": 83,
+    "title": "Andor",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "1396",
+     "kind": "tv"
+    },
+    "score": 90,
+    "title": "Breaking Bad",
+    "year": 2008
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "95480",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Slow Horses",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "225171",
+     "kind": "tv"
+    },
+    "score": 79,
+    "title": "Pluribus",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "76479",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "The Boys",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "87108",
+     "kind": "tv"
+    },
+    "score": 87,
+    "title": "Chernobyl",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "108978",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Reacher",
+    "year": 2022
+   }
+  ],
+  "ref": {
+   "id": "110316",
+   "kind": "tv"
+  },
+  "relations": [],
+  "score": 81,
+  "scoreNote": "10,910 votes",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Returning series",
+  "synopsis": [
+   [
+    {
+     "text": "With his two friends, a video-game-obsessed young man finds himself in a strange version of Tokyo where they must compete in dangerous games to win."
+    }
+   ]
+  ],
+  "tags": [],
+  "title": "Alice in Borderland",
+  "trailer": null,
+  "year": 2020
+ }
+}

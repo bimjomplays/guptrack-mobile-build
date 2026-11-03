@@ -26,7 +26,7 @@ struct SearchResultsView: View {
     }
 }
 
-/// One search: scope chips, the top hit, then a group per media and people.
+/// One search: scope chips, the top hit, then the server's groups (each media, characters, people).
 struct BrowseSearchContent: View {
     let query: String
 
@@ -43,7 +43,7 @@ struct BrowseSearchContent: View {
 struct BrowseSearchList: View {
     let results: SearchResults
 
-    @State private var scope: SearchResults.Scope = .all
+    @State private var scope = "All"
 
     var body: some View {
         if results.isEmpty {
@@ -52,16 +52,16 @@ struct BrowseSearchList: View {
         } else {
             VStack(alignment: .leading, spacing: 0) {
                 scopes
-                if scope == .all, let top = results.top {
-                    BrowseTopHit(title: top).padding(.top, 18)
+                if scope == "All", let top = results.top {
+                    BrowseTopHit(hit: top).padding(.top, 18)
                 }
-                ForEach(results.shown(scope)) { g in
+                ForEach(results.shown(scope), id: \.title) { g in
                     group(g).padding(.top, 24)
                 }
             }
             .padding(.top, 8)
             .padding(.bottom, 40)
-            .onChange(of: results.query) { scope = .all }
+            .onChange(of: results.query) { scope = "All" }
         }
     }
 
@@ -69,11 +69,11 @@ struct BrowseSearchList: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 8) {
                 ForEach(results.scopes, id: \.0) { item in
-                    let (s, n) = item
+                    let s = item.0
                     Button {
                         scope = s
                     } label: {
-                        ChipLabel(text: s.label, on: scope == s, count: n.map(String.init))
+                        ChipLabel(text: s, on: scope == s, count: item.1.map(String.init))
                     }
                     .buttonStyle(.plain)
                     .accessibilityAddTraits(scope == s ? .isSelected : [])
@@ -84,72 +84,56 @@ struct BrowseSearchList: View {
         .scrollClipDisabled()
     }
 
-    private func group(_ g: SearchResults.Group) -> some View {
-        let more = scope == .all && g.total > g.titles.count + g.people.count
-        return VStack(alignment: .leading, spacing: 0) {
-            HStack(alignment: .lastTextBaseline) {
-                Text(g.scope.label).font(.system(size: 15, weight: .semibold)).foregroundStyle(Theme.inkSoft)
-                    .accessibilityAddTraits(.isHeader)
-                Spacer()
-                if more {
-                    Button {
-                        scope = g.scope
-                    } label: {
-                        HStack(spacing: 3) {
-                            Text("See all \(g.total)")
-                            Image(systemName: "chevron.right").font(.system(size: 12, weight: .bold))
-                        }
-                    }
-                    .font(.system(size: 15, weight: .medium))
-                    .foregroundStyle(Theme.brandSoft)
-                    .buttonStyle(.plain)
-                    .numbers()
+    private func group(_ g: SearchGroup) -> some View {
+        VStack(alignment: .leading, spacing: 0) {
+            Text(g.title).font(.system(size: 15, weight: .semibold)).foregroundStyle(Theme.inkSoft)
+                .accessibilityAddTraits(.isHeader)
+                .padding(.horizontal, Theme.pad)
+                .padding(.bottom, 4)
+            ForEach(g.hits, id: \.self) { h in
+                if let t = h.title {
+                    BrowseSearchRow(hit: h, title: t)
+                } else {
+                    BrowsePersonRow(hit: h)
                 }
             }
-            .padding(.horizontal, Theme.pad)
-            .padding(.bottom, 4)
-            ForEach(g.titles) { t in BrowseSearchRow(title: t) }
-            ForEach(g.people) { p in BrowsePersonRow(person: p) }
         }
     }
 }
 
-/// The best match: poster, "Top hit · Anime · 2022", the name, its facts and score, then your status or the add button.
+/// The best match: poster, "Top hit · Anime · TV · 2022", the name, then your status or the add button.
 struct BrowseTopHit: View {
-    let title: Title
+    let hit: SearchHit
 
     @Environment(AppModel.self) private var model
 
     var body: some View {
-        let t = title
-        HStack(alignment: .center, spacing: 14) {
-            Poster(url: t.cover, width: 54, radius: 8, flat: true)
-            VStack(alignment: .leading, spacing: 2) {
-                Text(SearchResults.topLine(t)).font(.system(size: 13, weight: .semibold))
-                    .foregroundStyle(Theme.inkMuted).numbers()
-                Text(t.name).font(.system(size: 19, weight: .bold)).foregroundStyle(Theme.ink).lineLimit(2)
-                HStack(spacing: 6) {
-                    Text(SearchResults.topFacts(t)).foregroundStyle(Theme.inkSoft).lineLimit(1)
-                    if let s = t.score { ScoreLabel(value: Format.average(s), muted: true) }
+        if let t = hit.title {
+            HStack(alignment: .center, spacing: 14) {
+                Poster(url: t.cover, width: 54, radius: 8, flat: true)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(SearchResults.topLine(hit)).font(.system(size: 13, weight: .semibold))
+                        .foregroundStyle(Theme.inkMuted).numbers().lineLimit(1)
+                    Text(t.name).font(.system(size: 19, weight: .bold)).foregroundStyle(Theme.ink).lineLimit(2)
+                    BrowseStatusControl(title: t).padding(.top, 8)
                 }
-                .font(.caption14)
-                BrowseStatusControl(title: t).padding(.top, 8)
+                .frame(maxWidth: .infinity, alignment: .leading)
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(14)
+            .background(Theme.panel, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+            .padding(.horizontal, Theme.pad)
+            .contentShape(Rectangle())
+            .onTapGesture { model.open(.title(t.id)) }
+            .contextMenu { if let e = model.entry(t.id) { EntryMenu(entry: e) } }
+            .accessibilityElement(children: .contain)
+            .accessibilityAction(named: "Open") { model.open(.title(t.id)) }
         }
-        .padding(14)
-        .background(Theme.panel, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
-        .padding(.horizontal, Theme.pad)
-        .contentShape(Rectangle())
-        .onTapGesture { model.open(.title(t.id)) }
-        .contextMenu { if let e = model.entry(t.id) { EntryMenu(entry: e) } }
-        .accessibilityElement(children: .contain)
-        .accessibilityAction(named: "Open") { model.open(.title(t.id)) }
     }
 }
 
-/// a title in the results: 40pt cover, name, caption, score on the right
+/// a title in the results: 40pt cover, name, the server's note, your status on the right
 struct BrowseSearchRow: View {
+    let hit: SearchHit
     let title: Title
 
     @Environment(AppModel.self) private var model
@@ -161,15 +145,13 @@ struct BrowseSearchRow: View {
                 Poster(url: t.cover, width: 40, radius: 6, flat: true)
                 VStack(alignment: .leading, spacing: 2) {
                     Text(t.name).font(.rowTitle).foregroundStyle(Theme.ink).lineLimit(1)
-                    Text(SearchResults.caption(t)).font(.caption14).foregroundStyle(Theme.inkMuted).lineLimit(1)
+                    Text(hit.note).font(.caption14).foregroundStyle(Theme.inkMuted).lineLimit(1)
                         .numbers()
                 }
                 Spacer(minLength: 8)
                 if let e = model.entry(t.id) {
                     StatusDot(status: e.status)
                         .accessibilityLabel(e.status.label(e.media))
-                } else if let s = t.score {
-                    ScoreLabel(value: Format.average(s), muted: true)
                 }
             }
             .padding(.horizontal, Theme.pad)
@@ -183,26 +165,26 @@ struct BrowseSearchRow: View {
     }
 }
 
-/// someone in the results: a round picture, the name and what they do
+/// a character or person in the results: a round picture, the name and the server's note
 struct BrowsePersonRow: View {
-    let person: SearchResults.Person
+    let hit: SearchHit
 
     var body: some View {
         let row = HStack(spacing: 12) {
-            Artwork(url: person.image)
+            Artwork(url: hit.image)
                 .frame(width: 40, height: 40)
                 .clipShape(Circle())
                 .overlay(Circle().strokeBorder(Theme.keyline, lineWidth: 0.5))
             VStack(alignment: .leading, spacing: 2) {
-                Text(person.name).font(.rowTitle).foregroundStyle(Theme.ink).lineLimit(1)
-                Text(person.caption).font(.caption14).foregroundStyle(Theme.inkMuted).lineLimit(1)
+                Text(hit.name).font(.rowTitle).foregroundStyle(Theme.ink).lineLimit(1)
+                Text(hit.note).font(.caption14).foregroundStyle(Theme.inkMuted).lineLimit(1)
             }
             Spacer(minLength: 8)
         }
         .padding(.horizontal, Theme.pad)
         .padding(.vertical, 7)
         .contentShape(Rectangle())
-        if let r = person.route {
+        if let r = hit.route {
             NavigationLink(value: r) { row }.buttonStyle(.plain)
         } else {
             row

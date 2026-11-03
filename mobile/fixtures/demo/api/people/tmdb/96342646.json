@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Directing"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "496243",
+        "kind": "movie"
+       },
+       "score": 85,
+       "title": "Parasite",
+       "year": 2019
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "496243",
+        "kind": "movie"
+       },
+       "score": 85,
+       "title": "Parasite",
+       "year": 2019
+      }
+     }
+    ],
+    "title": "Directing"
+   }
+  ],
+  "image": null,
+  "known": "Directing",
+  "name": "Bong Joon Ho",
+  "native": null,
+  "ref": {
+   "id": "96342646",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

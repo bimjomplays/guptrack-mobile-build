@@ -7,6 +7,7 @@ struct SettingsPageView: View {
     var body: some View {
         switch page {
         case .profile: ProfileSettingsView()
+        case .account: AccountPageView()
         case .privacy: PrivacySettingsView()
         case .appearance: AppearanceSettingsView()
         case .preferences: PreferencesSettingsView()

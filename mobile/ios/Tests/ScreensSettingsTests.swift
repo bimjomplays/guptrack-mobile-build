@@ -2,7 +2,7 @@ import XCTest
 @testable import GupTrack
 
 /// Settings (55-64b): the root, Profile with the bio editor, Privacy, Appearance, Preferences, Notifications,
-/// Import & export, Connected apps, Backups, Accounts.
+/// Account, Import & export, Connected apps, Backups, Accounts.
 final class ScreensSettingsTests: ScreenTestCase {
     /// a settings page on top of Profile › Settings, with the shared settings loaded fresh (edits in one test stay
     /// out of the next)
@@ -16,10 +16,10 @@ final class ScreensSettingsTests: ScreenTestCase {
     func testSettings() {
         let app = open()
         expect(app, "Mika")
-        expect(app, "Owner · Joined Mar 14, 2025")
+        expect(app, "Owner · Joined Sep 9, 2025")
         expect(app, "Privacy")
         expect(app, "Appearance")
-        expect(app, "Midnight")
+        expect(app, "Dark")
         expect(app, "Connected apps")
         shot("55-settings")
     }
@@ -37,7 +37,7 @@ final class ScreensSettingsTests: ScreenTestCase {
     func testProfilePage() {
         let app = open("profile")
         expect(app, "Banner fade")
-        expect(app, "Frieren")
+        expect(app, "Banner")
         expect(app, "Seasonal anime, slow manga")
         expect(app, "Fade colour")
         shot("56-settings-profile")
@@ -48,7 +48,7 @@ final class ScreensSettingsTests: ScreenTestCase {
         expect(app, "Edit bio")
         expect(app, "Presets")
         expect(app, "Editorial")
-        expect(app, "Favourites · Anime")
+        expect(app, "Favourite anime")
         XCTAssertTrue(app.buttons["Insert list"].exists)
         shot("57-bio-editor")
     }
@@ -56,7 +56,7 @@ final class ScreensSettingsTests: ScreenTestCase {
     func testPrivacy() {
         let app = open("privacy")
         expect(app, "Who can see your profile")
-        expect(app, "Friends only")
+        expect(app, "Friends")
         expect(app, "Movies")
         expect(app, "Messages")
         shot("58-settings-privacy")
@@ -89,25 +89,27 @@ final class ScreensSettingsTests: ScreenTestCase {
     func testNotifications() {
         let app = open("notifications")
         expect(app, "On this iPhone")
-        expect(app, "New episodes and chapters")
+        expect(app, "New episodes")
         expect(app, "Friend requests")
         shot("61-settings-notifications")
     }
 
     func testImport() {
         let app = open("import")
-        expect(app, "Last import · AniList")
-        expect(app, "162 anime from mika")
+        expect(app, "Import from")
+        expect(app, "AniList")
         expect(app, "Goodreads")
-        expect(app, "Export as CSV")
+        expect(app, "Every list as CSV")
+        expect(app, "Full backup")
         shot("62-settings-import")
     }
 
     func testConnectedApps() {
         let app = open("connected-apps")
-        expect(app, "Pair Harbor")
-        expect(app, "517-260")
         expect(app, "Harbor on the living-room PC")
+        expect(app, "This iPhone")
+        expect(app, "Pair Harbor").tap()
+        expect(app, "7KQ4-M2XD")
         shot("63-settings-connected-apps")
     }
 
@@ -115,16 +117,16 @@ final class ScreensSettingsTests: ScreenTestCase {
         let app = open("backups")
         expect(app, "Back up now")
         expect(app, "1.8 MB")
-        expect(app, "Before AniList import")
+        expect(app, "Before a restore")
         shot("64-settings-backups")
     }
 
     func testAccounts() {
         let app = open("accounts")
-        expect(app, "Kenji")
-        expect(app, "Lena")
-        expect(app, "Invite only")
-        expect(app, "Create invite link")
+        expect(app, "kenji")
+        expect(app, "lena")
+        expect(app, "5 accounts")
+        expect(app, "New invite")
         shot("64b-settings-accounts")
     }
 
@@ -140,8 +142,8 @@ final class ScreensSettingsTests: ScreenTestCase {
         let app = open("privacy")
         expect(app, "Who can see your profile")
         app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Private")).firstMatch.tap()
-        XCTAssertTrue(poll(3) { AccountSettingsStore.shared.settings?.privacy.profile == .private })
-        XCTAssertTrue(poll(3) { AccountSettingsStore.shared.pendingPatch == nil })
+        XCTAssertTrue(poll(3) { AccountSettingsStore.shared.settings?.privacy.visibility == .private })
+        XCTAssertTrue(poll(3) { AccountSettingsStore.shared.pendingChanges.isEmpty })
     }
 
     func testBioRowOpensEditor() {
@@ -158,6 +160,15 @@ final class ScreensSettingsTests: ScreenTestCase {
         find(app, "Sign out").tap()
         expect(app, "Sign out of GupTrack on this iPhone?")
         XCTAssertNotNil(app.model.account)
+    }
+
+    func testAccount() {
+        let app = open("account")
+        expect(app, "Change password")
+        expect(app, "Codes left")
+        expect(app, "Browsers signed in")
+        expect(app, "Sign out everywhere")
+        XCTAssertFalse(find(app, "Add passkey").exists)
     }
 
     func testOfflineLibrary() {

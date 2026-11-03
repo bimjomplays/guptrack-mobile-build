@@ -1,0 +1,42 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx169579-KxMH0iq7jlPr.png",
+      "format": "TV",
+      "ref": {
+       "id": "169579",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru 2nd Season",
+      "year": 2027
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx176314-lpvca6vjmkeO.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "176314",
+       "kind": "anime"
+      },
+      "score": 70,
+      "title": "Sasaki and Peeps Season 2",
+      "year": 2026
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "SILVER LINK.",
+  "ref": {
+   "id": "300",
+   "to": "studio"
+  }
+ }
+}

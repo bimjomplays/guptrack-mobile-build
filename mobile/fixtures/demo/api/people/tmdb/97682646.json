@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Alexandr Akimov",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "87108",
+        "kind": "tv"
+       },
+       "score": 87,
+       "title": "Chernobyl",
+       "year": 2019
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Alexandr Akimov",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "87108",
+        "kind": "tv"
+       },
+       "score": 87,
+       "title": "Chernobyl",
+       "year": 2019
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/daT0NIIeYxCsxjJ0200wAfJGfEE.jpg",
+  "known": "Acting",
+  "name": "Sam Troughton",
+  "native": null,
+  "ref": {
+   "id": "97682646",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

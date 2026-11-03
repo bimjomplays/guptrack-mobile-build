@@ -1,0 +1,64 @@
+{
+ "title": {
+  "alt": [
+   "Sousou no Frieren",
+   "葬送のフリーレン"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/118586-R1c7mc72oPvS.jpg",
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx118586-CXKgWikBFQgS.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Status",
+    "value": "Releasing"
+   },
+   {
+    "label": "Published",
+    "value": "Apr 28, 2020"
+   },
+   {
+    "label": "Members",
+    "value": "86,748"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Adventure",
+   "Drama",
+   "Fantasy"
+  ],
+  "headline": [
+   "Manga",
+   "2020"
+  ],
+  "idMal": 126287,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "118586",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 87,
+  "scoreNote": "86,748 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Releasing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Frieren: Beyond Journey’s End",
+  "trailer": null,
+  "volumes": null,
+  "year": 2020
+ }
+}

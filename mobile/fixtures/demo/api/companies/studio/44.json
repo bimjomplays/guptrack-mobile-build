@@ -1,0 +1,42 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx213457-gN5p1GZjK3zi.jpg",
+      "format": "ONA",
+      "ref": {
+       "id": "213457",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "Fool Night",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx9756-QnUGwlwwnsuN.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "9756",
+       "kind": "anime"
+      },
+      "score": 83,
+      "title": "Puella Magi Madoka Magica",
+      "year": 2011
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Shaft",
+  "ref": {
+   "id": "44",
+   "to": "studio"
+  }
+ }
+}

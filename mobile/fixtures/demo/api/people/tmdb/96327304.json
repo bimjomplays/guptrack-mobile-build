@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Willa",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1054867",
+        "kind": "movie"
+       },
+       "score": 73,
+       "title": "One Battle After Another",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Willa",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1054867",
+        "kind": "movie"
+       },
+       "score": 73,
+       "title": "One Battle After Another",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/2goENGgg9OCz7qjMmm0HNxV9Kjj.jpg",
+  "known": "Acting",
+  "name": "Chase Infiniti",
+  "native": null,
+  "ref": {
+   "id": "96327304",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

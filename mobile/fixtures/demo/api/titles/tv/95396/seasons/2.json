@@ -1,0 +1,94 @@
+{
+ "episodes": [
+  {
+   "air": "2025-01-16",
+   "minutes": 54,
+   "name": "Hello, Ms. Cobel",
+   "number": 1,
+   "overview": "Mark returns to work under different circumstances. Secrets from the Outie world come to light.",
+   "score": 80,
+   "still": "https://image.tmdb.org/t/p/w300/a97vNY8Knu45FLQib0uQZ2VReLy.jpg"
+  },
+  {
+   "air": "2025-01-23",
+   "minutes": 49,
+   "name": "Goodbye, Mrs. Selvig",
+   "number": 2,
+   "overview": "Mark contemplates the meaning of a message.",
+   "score": 79,
+   "still": "https://image.tmdb.org/t/p/w300/wjlSkqMoLngSO6fv2Ajt2CIeCSi.jpg"
+  },
+  {
+   "air": "2025-01-30",
+   "minutes": 57,
+   "name": "Who Is Alive?",
+   "number": 3,
+   "overview": "Mark, Helly, Irving, and Dylan search for answers.",
+   "score": 81,
+   "still": "https://image.tmdb.org/t/p/w300/j4AUAq1XJOBmfXsLphZzsCz6pZs.jpg"
+  },
+  {
+   "air": "2025-02-06",
+   "minutes": 54,
+   "name": "Woe&#39;s Hollow",
+   "number": 4,
+   "overview": "The team participates in a group activity.",
+   "score": 81,
+   "still": "https://image.tmdb.org/t/p/w300/mioOOhTaShLd1MPKsmfirbe9AwI.jpg"
+  },
+  {
+   "air": "2025-02-13",
+   "minutes": 50,
+   "name": "Trojan&#39;s Horse",
+   "number": 5,
+   "overview": "Tensions emerge after the team suffers a loss.",
+   "score": 80,
+   "still": "https://image.tmdb.org/t/p/w300/7Gw2DWAbhsBREKFbM2S0h5sD0tL.jpg"
+  },
+  {
+   "air": "2025-02-20",
+   "minutes": 52,
+   "name": "Attila",
+   "number": 6,
+   "overview": "Bonds are tested. Mark continues on his path of discovery.",
+   "score": 80,
+   "still": "https://image.tmdb.org/t/p/w300/l9CC3onLMDBDKxs6Ie0yIWI8VmC.jpg"
+  },
+  {
+   "air": "2025-02-27",
+   "minutes": 53,
+   "name": "Chikhai Bardo",
+   "number": 7,
+   "overview": "An old romance intersects with a deadly present threat.",
+   "score": 86,
+   "still": "https://image.tmdb.org/t/p/w300/dmzBzYcEtjOYJO46p7kyRmYrHZu.jpg"
+  },
+  {
+   "air": "2025-03-06",
+   "minutes": 41,
+   "name": "Sweet Vitriol",
+   "number": 8,
+   "overview": "Discoveries are made.",
+   "score": 70,
+   "still": "https://image.tmdb.org/t/p/w300/piWjCKARsSkmr9kMKHZ5ynengj3.jpg"
+  },
+  {
+   "air": "2025-03-13",
+   "minutes": 48,
+   "name": "The After Hours",
+   "number": 9,
+   "overview": "Mark and Devon team with an ally. Helly investigates further.",
+   "score": 80,
+   "still": "https://image.tmdb.org/t/p/w300/2RJaWjY4dD5s7jpdo2aGeSLmtI3.jpg"
+  },
+  {
+   "air": "2025-03-20",
+   "minutes": 80,
+   "name": "Cold Harbor",
+   "number": 10,
+   "overview": "Mark forms a shaky alliance in an all-or-nothing play, while the team makes a dangerous last stand.",
+   "score": 86,
+   "still": "https://image.tmdb.org/t/p/w300/gXUvGwpZxrpqMRouxM7yI28lgNa.jpg"
+  }
+ ]
+}

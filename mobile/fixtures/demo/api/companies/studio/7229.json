@@ -1,0 +1,53 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178868-mfp0HIHNJNAm.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "178868",
+       "kind": "anime"
+      },
+      "score": 69,
+      "title": "Magic Knight Rayearth (2026)",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx151639-7KqJ7BgaM9Mx.png",
+      "format": "TV",
+      "ref": {
+       "id": "151639",
+       "kind": "anime"
+      },
+      "score": 64,
+      "title": "Ninja Kamui",
+      "year": 2024
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx167404-QMZJVARntkbv.jpg",
+      "format": "ONA",
+      "ref": {
+       "id": "167404",
+       "kind": "anime"
+      },
+      "score": 76,
+      "title": "MONSTERS: 103 Mercies Dragon Damnation",
+      "year": 2024
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "E&H Production",
+  "ref": {
+   "id": "7229",
+   "to": "studio"
+  }
+ }
+}

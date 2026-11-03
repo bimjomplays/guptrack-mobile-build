@@ -66,7 +66,7 @@ final class ScreensLibraryTests: ScreenTestCase {
     }
 
     func test38CustomList() {
-        let app = launch(["-tab", "library", "-open", "custom-list/rainy-sundays"])
+        let app = launch(["-tab", "library", "-open", "custom-list/1"])
         expect(app, "Rainy Sundays")
         expect(app, "Edit list")
         expect(app, "Add titles")
@@ -76,7 +76,7 @@ final class ScreensLibraryTests: ScreenTestCase {
     }
 
     func test39EditList() {
-        let app = launch(["-tab", "library", "-sheet", "edit-list/rainy-sundays"])
+        let app = launch(["-tab", "library", "-sheet", "edit-list/1"])
         expect(app, "Edit list")
         expect(app, "drag to reorder")
         expect(app, "Who can see it")
@@ -103,7 +103,7 @@ final class ScreensLibraryTests: ScreenTestCase {
     func testListCardOpensTheList() {
         let app = launch(["-tab", "library"])
         expect(app, "Rainy Sundays").tap()
-        XCTAssertTrue(poll(5) { app.model.path(.library).last == .customList("rainy-sundays") })
+        XCTAssertTrue(poll(5) { app.model.path(.library).last == .customList("1") })
     }
 
     func testRowOpensItsTitle() {

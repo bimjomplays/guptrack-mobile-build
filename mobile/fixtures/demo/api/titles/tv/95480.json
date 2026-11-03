@@ -1,0 +1,301 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://image.tmdb.org/t/p/w1280/gPQppUnLx9vqPDLz3WwZ2HJsNbt.jpg",
+  "cast": [
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/yhaSM5habNNI1Tf4ALRwRk3VvSZ.jpg",
+     "name": "Gary Oldman",
+     "ref": {
+      "id": "90782161",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Jackson Lamb"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/mQeiB35UBxjcO1D0pc8ZHKJW5dP.jpg",
+     "name": "Jack Lowden",
+     "ref": {
+      "id": "93015542",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "River Cartwright"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/axksw0vAjBPSW02ZqpcC0V8rPD7.jpg",
+     "name": "Kristin Scott Thomas",
+     "ref": {
+      "id": "97090204",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Diana Taverner"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/1NM6rp95ec83tPa2Tnq66RV6Frc.jpg",
+     "name": "Saskia Reeves",
+     "ref": {
+      "id": "95195103",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Catherine Standish"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/wV4r6tVjP9Prk2acj7bYTmdtaMF.jpg",
+     "name": "Christopher Chung",
+     "ref": {
+      "id": "91240637",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Roddy Ho"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/mpsq3UnNiFgmd3MY2Q6a3ZBMGQ8.jpg",
+     "name": "Aimee-Ffion Edwards",
+     "ref": {
+      "id": "91709066",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Shirley Dander"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/9Tb1rLSnyCfnZXYixfjWJuQJig9.jpg",
+     "name": "Rosalind Eleazar",
+     "ref": {
+      "id": "90108468",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Louisa Guy"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/3AG36VEfMGOvamBewyEHZ5KGyVb.jpg",
+     "name": "Kadiff Kirwan",
+     "ref": {
+      "id": "96937611",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Marcus Longridge"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/uO0nTFqsheS8sVRZYKsx4qGXQwP.jpg",
+     "name": "Ruth Bradley",
+     "ref": {
+      "id": "93238856",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Emma Flyte"
+   }
+  ],
+  "characters": [],
+  "count": null,
+  "cover": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Series"
+   },
+   {
+    "label": "Status",
+    "value": "Returning series"
+   },
+   {
+    "label": "Aired",
+    "value": "Apr 1, 2022"
+   },
+   {
+    "label": "Rated",
+    "value": "TV-MA"
+   },
+   {
+    "label": "Language",
+    "value": "English"
+   }
+  ],
+  "format": "Series",
+  "genres": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "headline": [
+   "Series",
+   "2022–",
+   "TV-MA"
+  ],
+  "makers": [],
+  "media": "tv",
+  "minutes": 45,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "95396",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "Severance",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "136315",
+     "kind": "tv"
+    },
+    "score": 82,
+    "title": "The Bear",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "126308",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "Shōgun",
+    "year": 2024
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "100088",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "The Last of Us",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "83867",
+     "kind": "tv"
+    },
+    "score": 83,
+    "title": "Andor",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "1396",
+     "kind": "tv"
+    },
+    "score": 90,
+    "title": "Breaking Bad",
+    "year": 2008
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "225171",
+     "kind": "tv"
+    },
+    "score": 79,
+    "title": "Pluribus",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "76479",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "The Boys",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "87108",
+     "kind": "tv"
+    },
+    "score": 87,
+    "title": "Chernobyl",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "108978",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Reacher",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "110316",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Alice in Borderland",
+    "year": 2020
+   }
+  ],
+  "ref": {
+   "id": "95480",
+   "kind": "tv"
+  },
+  "relations": [],
+  "score": 81,
+  "scoreNote": "18,357 votes",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Returning series",
+  "synopsis": [
+   [
+    {
+     "text": "Follow a dysfunctional team of MI5 agents—and their obnoxious boss, the notorious Jackson Lamb—as they navigate the espionage world's smoke and mirrors to defend England from sinister forces."
+    }
+   ]
+  ],
+  "tags": [],
+  "title": "Slow Horses",
+  "trailer": null,
+  "year": 2022
+ }
+}

@@ -1,179 +1,179 @@
 import Foundation
 
-/// GET notifications: what happened for you (08), newest first. Friend requests are answered right in the list
-/// (POST friends/requests/<username>/accept or /decline); Mark all read is POST notifications/read.
-struct NotificationFeed: Codable, Equatable, Sendable {
-    var items: [Item]
+// docs/app-api.md §6: the bell. `GET notices` → `BellNotice[]` (src/home/notices.server.ts: `Notice` from
+// src/home/types.ts plus `seenAt` and `unseen`), newest first; `POST notices/seen` when the bell is opened. The
+// server writes each notice's words: `title` is the person (their display name) or the title, `text` the rest.
+// Friend requests are answered inline with answerFriendRequest(_:accept:) (Social.swift).
 
-    struct Item: Codable, Identifiable, Hashable, Sendable {
-        enum Kind: String, Codable, Hashable, Sendable {
-            /// someone wants to be friends (Accept / Decline inline)
-            case friendRequest
-            /// a direct message
-            case message
-            /// a comment on your profile or one of your activities
-            case comment
-            /// likes on your review or activity
-            case like
-            /// a reply to your comment
-            case reply
-            /// a new episode of something you watch
-            case episode
-            /// a sequel to something on your list was announced
-            case sequel
-            /// something on your Plan to Watch / Read comes out
-            case release
+/// What a like or a reply is on (src/social/reactions.ts `ItemLink`): an activity line or a review.
+enum ItemLink: Codable, Hashable, Sendable {
+    case activity(id: Int)
+    case review(username: String, kind: MediaKind, id: String)
+
+    private enum Key: String, CodingKey { case to, id, username, kind }
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: Key.self)
+        switch try c.decode(String.self, forKey: .to) {
+        case "activity":
+            self = .activity(id: try c.decode(Int.self, forKey: .id))
+        case "review":
+            self = .review(username: try c.decode(String.self, forKey: .username),
+                           kind: try c.decode(MediaKind.self, forKey: .kind), id: try c.decode(String.self, forKey: .id))
+        case let other:
+            throw DecodingError.dataCorruptedError(forKey: .to, in: c, debugDescription: "not an item link: \(other)")
         }
-
-        var id: String
-        var kind: Kind
-        var at: Date
-        var unread: Bool
-        var user: UserRef?
-        /// "and 2 others" on likes
-        var others: Int?
-        var title: Title?
-        /// the message or comment
-        var quote: String?
-        /// what a tap opens: a conversation, activity or review id
-        var target: String?
-        /// what a comment or like is on: "profile", "activity", "review"
-        var subject: String?
-        var episode: Int?
-        /// when a planned title comes out
-        var releaseAt: Date?
-        /// "comes 2027" when there's no date yet
-        var note: String?
-        /// on a friend request: titles you both have
-        var inCommon: Int?
-        /// the server's copy of your status for the title (the library's wins)
-        var status: ListStatus?
     }
 
-    /// a piece of a notification's sentence; strong pieces are names and titles (semibold, full ink)
+    func encode(to encoder: Encoder) throws {
+        var c = encoder.container(keyedBy: Key.self)
+        switch self {
+        case .activity(let id):
+            try c.encode("activity", forKey: .to)
+            try c.encode(id, forKey: .id)
+        case .review(let username, let kind, let id):
+            try c.encode("review", forKey: .to)
+            try c.encode(username, forKey: .username)
+            try c.encode(kind, forKey: .kind)
+            try c.encode(id, forKey: .id)
+        }
+    }
+
+    /// the page it opens: the activity line, or the review ("<username>:<kind>:<id>")
+    var route: Route {
+        switch self {
+        case .activity(let id): return .activity(String(id))
+        case .review(let username, let kind, let id): return .review("\(username):\(kind.rawValue):\(id)")
+        }
+    }
+}
+
+/// One thing the bell tells you about.
+struct BellNotice: Codable, Identifiable, Hashable, Sendable {
+    enum Kind: String, Codable, Hashable, Sendable {
+        case episode, sequel, release
+        case friendRequest = "friend-request"
+        case friendAccepted = "friend-accepted"
+        case comment, like, reply
+        case replyToYou = "reply-to-you"
+        case message
+        case messageRequest = "message-request"
+    }
+
+    /// stable for the same news
+    var key: String
+    var kind: Kind
+    /// the title it's about; nil for news about people
+    var ref: TitleRef?
+    /// friend news, comments and messages: who (their username)
+    var user: String?
+    /// likes and replies: the activity line or review they're on
+    var item: ItemLink?
+    /// the person's name, or the title's
+    var title: String
+    /// their avatar or the title's cover ("" = none)
+    @Picture var cover: URL?
+    /// "Episode 7 is out", "Wants to be friends", "Commented on your profile: “…”"
+    var text: String
+    /// when it happened (ms); 0 = unknown
+    var at: Int64
+    /// when it first showed up (ms)
+    var seenAt: Int64
+    /// came in since the bell was last opened
+    var unseen: Bool
+
+    var id: String { key }
+
+    /// when it happened, else when it first showed up
+    var date: Date { Millis.date(at > 0 ? at : seenAt) }
+
+    /// a person leads the row (avatar); title news leads with the poster
+    var leadsWithPerson: Bool {
+        switch kind {
+        case .episode, .sequel, .release: return false
+        default: return true
+        }
+    }
+
+    /// a piece of the sentence; strong pieces are names and titles (semibold, full ink)
     struct Run: Hashable, Sendable {
         var text: String
         var strong: Bool
     }
 
-    struct Section: Identifiable, Hashable, Sendable {
-        var name: String
-        var items: [Item]
-
-        var id: String { name }
-    }
-
-    /// Today, This week, Earlier (empty ones left out)
-    static func sections(_ items: [Item], now: Date = Clock.now) -> [Section] {
-        let sorted = items.sorted { $0.at > $1.at }
-        var today: [Item] = [], week: [Item] = [], earlier: [Item] = []
-        for i in sorted {
-            let d = Format.dayOffset(i.at, now: now)
-            if d >= 0 { today.append(i) } else if d >= -6 { week.append(i) } else { earlier.append(i) }
+    /// [kenji] sent you a message…: a person's notice reads name + the server's text (its first letter lowered);
+    /// a title's reads title, then the text on its own ("Episode 7 is out"). A single message's text is just the
+    /// message, so it reads "sent you a message: “…”"; "3 new messages: “…”" reads "sent you 3 new messages: “…”".
+    var runs: [Run] {
+        guard leadsWithPerson else { return [Run(text: title, strong: true), Run(text: " · " + text, strong: false)] }
+        if kind == .message {
+            let several = text.first?.isNumber == true && text.contains(" new messages: “")
+            return [Run(text: title, strong: true),
+                    Run(text: several ? " sent you \(text)" : " sent you a message: “\(text)”", strong: false)]
         }
-        return [Section(name: "Today", items: today), Section(name: "This week", items: week),
-                Section(name: "Earlier", items: earlier)].filter { !$0.items.isEmpty }
-    }
-
-    static func unreadCount(_ items: [Item]) -> Int { items.filter(\.unread).count }
-}
-
-extension NotificationFeed.Item {
-    private typealias Run = NotificationFeed.Run
-
-    /// the sentence, e.g. [kenji] sent you a message: “…”. `entry` is the title's library entry (for "on your Plan
-    /// to Watch").
-    func runs(entry: LibraryEntry? = nil) -> [NotificationFeed.Run] {
-        let who = user?.username ?? "Someone"
-        let name = title?.name ?? "a title"
-        let q = quote.map { "“\($0)”" } ?? ""
-        switch kind {
-        case .friendRequest:
-            return [Run(text: who, strong: true), Run(text: " wants to be friends", strong: false)]
-        case .message:
-            return [Run(text: who, strong: true), Run(text: " sent you a message" + (q.isEmpty ? "" : ": " + q), strong: false)]
-        case .comment:
-            let on = subject == "activity" ? "your activity" : "your profile"
-            return [Run(text: who, strong: true), Run(text: " commented on \(on)" + (q.isEmpty ? "" : ": " + q), strong: false)]
-        case .like:
-            var out = [Run(text: who, strong: true)]
-            if let n = others, n > 0 { out.append(Run(text: " and \(n) other\(n == 1 ? "" : "s")", strong: false)) }
-            let what = subject == "activity" ? "your update on " : "your review of "
-            out.append(Run(text: " liked " + what, strong: false))
-            out.append(Run(text: name, strong: true))
-            return out
-        case .reply:
-            return [Run(text: who, strong: true), Run(text: " replied to your comment on ", strong: false),
-                    Run(text: name, strong: true)]
-        case .episode:
-            let unit = (title?.media).map { $0 == .manga ? "Chapter" : "Episode" } ?? "Episode"
-            return [Run(text: "\(unit) \(episode ?? 1)", strong: true), Run(text: " of ", strong: false),
-                    Run(text: name, strong: true), Run(text: " is out", strong: false)]
-        case .sequel:
-            return [Run(text: "A sequel was announced: ", strong: false), Run(text: name, strong: true)]
-        case .release:
-            var tail = ""
-            if let s = entry?.status ?? status, let media = title?.media { tail += ", on your \(s.label(media))," }
-            if let d = releaseAt { tail += " comes out \(ScheduleWords.format("EEE, MMM d", d))" }
-            else if let note { tail += " " + note }
-            else { tail += " is out" }
-            return [Run(text: name, strong: true), Run(text: tail, strong: false)]
-        }
+        let rest = text.prefix(1).lowercased() + text.dropFirst()
+        return [Run(text: title, strong: true), Run(text: " " + rest, strong: false)]
     }
 
     /// the whole sentence as plain text (VoiceOver, tests)
-    func sentence(entry: LibraryEntry? = nil) -> String { runs(entry: entry).map(\.text).joined() }
+    var sentence: String { runs.map(\.text).joined() }
 
-    /// the grey line: "12 min ago · 12 titles in common", "Fri, Oct 30 · you're on 6 of 11", "Thu · comes 2027"
+    /// the grey line: "12 min ago", "Wed", "Oct 21"; a new episode adds where you are ("you're on 5 of 11")
     func caption(entry: LibraryEntry? = nil, now: Date = Clock.now) -> String {
-        let today = Format.dayOffset(at, now: now) == 0
-        var parts: [String] = []
-        if today { parts.append(Format.agoLong(at, now: now)) }
-        else if kind == .episode { parts.append(ScheduleWords.format("EEE, MMM d", at)) }
-        else if Format.dayOffset(at, now: now) >= -6 { parts.append(Format.weekday(at)) }
-        else { parts.append(Format.shortDay(at)) }
-        switch kind {
-        case .friendRequest:
-            if let n = inCommon, n > 0 { parts.append("\(n) title\(n == 1 ? "" : "s") in common") }
-        case .episode:
-            if let e = entry, e.status.isActive || e.status == .hold {
-                parts.append("you're on \(Format.grouped(e.progress))" + (e.title.total.map { " of \(Format.grouped($0))" } ?? ""))
-            }
-        case .sequel:
-            if let note { parts.append(note) }
-        default: break
+        let d = date
+        let offset = Format.dayOffset(d, now: now)
+        var parts = [offset == 0 ? Format.agoLong(d, now: now) : offset >= -6 ? Format.weekday(d) : Format.shortDay(d)]
+        if kind == .episode, let e = entry, e.status.isActive || e.status == .hold {
+            parts.append("you're on \(Format.grouped(e.progress))" + (e.title.total.map { " of \(Format.grouped($0))" } ?? ""))
         }
         return parts.joined(separator: " · ")
     }
 
-    /// the page a tap opens
-    var route: Route? {
+    /// the page a tap opens; `me` is your username (a comment is on your profile)
+    func route(me: String? = nil) -> Route? {
         switch kind {
-        case .friendRequest: return user.map { .user($0.username) }
-        case .message: return target.map { .conversation($0) } ?? user.map { .user($0.username) }
-        case .comment, .reply: return target.map { .activity($0) } ?? user.map { .user($0.username) }
-        case .like:
-            guard let target else { return title.map { .title($0.id) } }
-            return subject == "activity" ? .activity(target) : .review(target)
-        case .episode, .sequel, .release: return title.map { .title($0.id) }
+        case .episode, .sequel, .release:
+            return ref.map { .title($0.titleId) }
+        case .friendRequest, .friendAccepted:
+            return user.map { .user($0) }
+        case .message:
+            return user.map { .conversation($0) }
+        case .messageRequest:
+            return user.map { .messageRequest($0) }
+        case .comment:
+            return item?.route ?? me.map { .user($0) } ?? user.map { .user($0) }
+        case .like, .reply, .replyToYou:
+            return item?.route ?? ref.map { .title($0.titleId) } ?? user.map { .user($0) }
         }
     }
+}
 
-    /// a person leads the row (avatar); title news leads with the poster
-    var leadsWithPerson: Bool {
-        switch kind {
-        case .friendRequest, .message, .comment, .like, .reply: return true
-        case .episode, .sequel, .release: return false
+/// The bell's sections: Today, This week, Earlier.
+struct NoticeSection: Identifiable, Hashable, Sendable {
+    var name: String
+    var items: [BellNotice]
+
+    var id: String { name }
+
+    /// newest first, empty sections left out
+    static func of(_ items: [BellNotice], now: Date = Clock.now) -> [NoticeSection] {
+        var today: [BellNotice] = [], week: [BellNotice] = [], earlier: [BellNotice] = []
+        for i in items.sorted(by: { $0.date > $1.date }) {
+            let d = Format.dayOffset(i.date, now: now)
+            if d >= 0 { today.append(i) } else if d >= -6 { week.append(i) } else { earlier.append(i) }
         }
+        return [NoticeSection(name: "Today", items: today), NoticeSection(name: "This week", items: week),
+                NoticeSection(name: "Earlier", items: earlier)].filter { !$0.items.isEmpty }
     }
 
-    /// a small poster on the right (likes on a review show what was reviewed)
-    var showsThumb: Bool { kind == .like && title != nil }
+    /// the bell's dot: how many came in since it was last opened
+    static func unseen(_ items: [BellNotice]) -> Int { items.filter(\.unseen).count }
 }
 
 extension APIClient {
-    func notifications() async throws -> NotificationFeed { try await get("notifications") }
+    /// GET notices: the bell, newest first
+    func notices() async throws -> [BellNotice] { try await get("notices") }
 
-    func markNotificationsRead() async throws -> OKReply { try await send("POST", "notifications/read") }
-    // friend requests are answered with answerFriendRequest(_:accept:) from Social.swift (the same call)
+    /// POST notices/seen: the bell was opened
+    func markNoticesSeen() async throws -> OKReply { try await send("POST", "notices/seen") }
 }

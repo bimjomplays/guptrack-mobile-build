@@ -50,7 +50,11 @@ private struct TitlePageBody: View {
     let page: TitlePage
     let reload: () async -> Void
 
+    @Environment(AppModel.self) private var model
     @State private var scrolled = false
+    @State private var confirmRemove = false
+
+    private var t: Title { page.title }
 
     var body: some View {
         ScrollView {
@@ -83,24 +87,34 @@ private struct TitlePageBody: View {
                     Image(systemName: "square.and.arrow.up")
                 }
                 .accessibilityLabel("Share")
-                TitleMoreMenu(page: page)
+                // the Menu sits in the toolbar itself (a view wrapping it isn't hosted as a bar button)
+                Menu {
+                    TitleMoreItems(page: page, confirmRemove: $confirmRemove)
+                } label: {
+                    Image(systemName: "ellipsis")
+                }
+                .accessibilityLabel("More")
             }
+        }
+        .confirmationDialog("Remove \(t.name) from your list?", isPresented: $confirmRemove, titleVisibility: .visible) {
+            Button("Remove from list", role: .destructive) { model.change(t.id, LibraryPatch(remove: true)) }
+        } message: {
+            Text("Your progress, score and dates for it go too.")
         }
     }
 }
 
 /// ••• (20): Harbor, lists, send, share, copy | review, the title elsewhere | remove
-struct TitleMoreMenu: View {
+struct TitleMoreItems: View {
     let page: TitlePage
+    @Binding var confirmRemove: Bool
 
     @Environment(AppModel.self) private var model
     @Environment(\.openURL) private var openURL
-    @State private var confirmRemove = false
 
     private var t: Title { page.title }
 
     var body: some View {
-        Menu {
             Section {
                 if Harbor.plays(t.media), let url = Harbor.link(t) {
                     Button { openURL(url) } label: { Label("Open in Harbor", systemImage: "play") }
@@ -125,14 +139,5 @@ struct TitleMoreMenu: View {
                     }
                 }
             }
-        } label: {
-            Image(systemName: "ellipsis")
-        }
-        .accessibilityLabel("More")
-        .confirmationDialog("Remove \(t.name) from your list?", isPresented: $confirmRemove, titleVisibility: .visible) {
-            Button("Remove from list", role: .destructive) { model.change(t.id, LibraryPatch(remove: true)) }
-        } message: {
-            Text("Your progress, score and dates for it go too.")
-        }
     }
 }

@@ -5,6 +5,7 @@ import SwiftUI
 struct SettingsView: View {
     @Environment(AppModel.self) private var model
     @State private var confirmSignOut = false
+    @State private var summary = SettingsSummary()
 
     var body: some View {
         SettingsLoaded { s in
@@ -25,6 +26,10 @@ struct SettingsView: View {
                 .padding(.bottom, 40)
             }
         }
+        .task {
+            let owner = AccountSettingsStore.shared.settings?.isOwner ?? (model.account?.role == "owner")
+            if let s = await model.fetch({ await $0.settingsSummary(owner: owner) }).value { summary = s }
+        }
         .pageBackground()
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.large)
@@ -43,9 +48,9 @@ struct SettingsView: View {
     private func header(_ s: AccountSettings) -> some View {
         link(.profile) {
             HStack(spacing: 14) {
-                Avatar(url: s.profile.avatar, size: 60)
+                Avatar(url: s.avatar, size: 60)
                 VStack(alignment: .leading, spacing: 1) {
-                    Text(s.profile.displayName).font(.system(size: 20, weight: .bold)).foregroundStyle(Theme.ink)
+                    Text(s.displayName).font(.system(size: 20, weight: .bold)).foregroundStyle(Theme.ink)
                     Text(s.accountLine).font(.system(size: 14)).foregroundStyle(Theme.inkMuted)
                 }
                 Spacer(minLength: 8)
@@ -61,17 +66,19 @@ struct SettingsView: View {
     private func yours(_ s: AccountSettings) -> some View {
         SettingsGroup {
             link(.profile) { SettingsRow("Profile", symbol: "person", sub: "Name, picture, banner, bio") }
-            // no Account page in the app yet: username, password and passkeys live on the profile page for now
-            link(.profile) { SettingsRow("Account", symbol: "key", sub: "Username, password, passkeys") }
-            link(.privacy) { SettingsRow("Privacy", symbol: "lock", value: s.privacy.profile.label, separator: false) }
+            link(.account) { SettingsRow("Account", symbol: "key", sub: "Password, recovery codes, sessions") }
+            link(.privacy) {
+                SettingsRow("Privacy", symbol: "lock", value: s.privacy.visibility.visibility.label, separator: false)
+            }
         }
     }
 
     private func app(_ s: AccountSettings) -> some View {
         SettingsGroup {
-            link(.appearance) { SettingsRow("Appearance", symbol: "paintpalette", value: s.theme) }
+            link(.appearance) { SettingsRow("Appearance", symbol: "paintpalette", value: s.theme?.name) }
             link(.preferences) {
-                SettingsRow("Preferences", symbol: "slider.horizontal.3", value: s.preferences.titleLanguage.label)
+                SettingsRow("Preferences", symbol: "slider.horizontal.3",
+                            value: SettingsChoices.label(s.prefs.titleLanguage, in: SettingsChoices.titleLanguages))
             }
             link(.notifications) { SettingsRow("Notifications", symbol: "bell", separator: false) }
         }
@@ -79,18 +86,14 @@ struct SettingsView: View {
 
     private func data(_ s: AccountSettings) -> some View {
         SettingsGroup {
-            // no Data sources page in the app yet: Import & export is the closest
-            link(.importExport) {
-                SettingsRow("Data sources", symbol: "cylinder.split.1x2", value: "\(s.summary.sourcesOn) on")
-            }
             link(.importExport) { SettingsRow("Import & export", symbol: "arrow.down.to.line") }
-            link(.connectedApps) { SettingsRow("Connected apps", symbol: "powerplug", value: s.connectedValue) }
+            link(.connectedApps) { SettingsRow("Connected apps", symbol: "powerplug", value: summary.connectedValue) }
             link(.backups) {
-                SettingsRow("Backups", symbol: "archivebox", value: s.backupValue, separator: s.account.isOwner)
+                SettingsRow("Backups", symbol: "archivebox", value: summary.backupValue, separator: s.isOwner)
             }
-            if s.account.isOwner {
+            if s.isOwner {
                 link(.accounts) {
-                    SettingsRow("Accounts", symbol: "person.2", value: "\(s.summary.accounts)", separator: false)
+                    SettingsRow("Accounts", symbol: "person.2", value: summary.accounts.map(String.init), separator: false)
                 }
             }
         }

@@ -1,0 +1,616 @@
+{
+ "title": {
+  "alt": [
+   "JoJo no Kimyou na Bouken: Steel Ball Run - 2nd & 3rd STAGE",
+   "ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE",
+   "JoJo's Bizarre Adventure: Part 7–Steel Ball Run",
+   "SBR"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210482-pYAD0IbzNbgS.jpg",
+  "cast": [],
+  "characters": [
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+     "name": "Gyro Zeppeli",
+     "ref": {
+      "id": "11772",
+      "to": "character"
+     }
+    },
+    "role": "Main",
+    "voices": [
+     {
+      "language": "Japanese",
+      "person": {
+       "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n109155-kQHazg0bG4Pv.png",
+       "name": "Youhei Azakami",
+       "ref": {
+        "id": "109155",
+        "source": "anilist",
+        "to": "person"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+     "name": "Johnny Joestar",
+     "ref": {
+      "id": "19492",
+      "to": "character"
+     }
+    },
+    "role": "Main",
+    "voices": [
+     {
+      "language": "Japanese",
+      "person": {
+       "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n158510-QDmd7dD9Rg89.jpg",
+       "name": "Shougo Sakata",
+       "ref": {
+        "id": "158510",
+        "source": "anilist",
+        "to": "person"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b20147-paS2fNaB3yOv.png",
+     "name": "Funny Valentine",
+     "ref": {
+      "id": "20147",
+      "to": "character"
+     }
+    },
+    "role": "Supporting",
+    "voices": [
+     {
+      "language": "Japanese",
+      "person": {
+       "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95002-nDIvHaynicEg.png",
+       "name": "Tomokazu Sugita",
+       "ref": {
+        "id": "95002",
+        "source": "anilist",
+        "to": "person"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+     "name": "Diego Brando",
+     "ref": {
+      "id": "20148",
+      "to": "character"
+     }
+    },
+    "role": "Supporting",
+    "voices": [
+     {
+      "language": "Japanese",
+      "person": {
+       "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n115156-ngYfqBazlxYQ.png",
+       "name": "Kaito Ishikawa",
+       "ref": {
+        "id": "115156",
+        "source": "anilist",
+        "to": "person"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+     "name": "Hot Pants",
+     "ref": {
+      "id": "23650",
+      "to": "character"
+     }
+    },
+    "role": "Supporting",
+    "voices": [
+     {
+      "language": "Japanese",
+      "person": {
+       "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n102263-aaPZtNXVUljW.jpg",
+       "name": "Youko Hikasa",
+       "ref": {
+        "id": "102263",
+        "source": "anilist",
+        "to": "person"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+     "name": "Lucy Steel",
+     "ref": {
+      "id": "23651",
+      "to": "character"
+     }
+    },
+    "role": "Supporting",
+    "voices": [
+     {
+      "language": "Japanese",
+      "person": {
+       "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n119331-5dPuMCxu4RWf.jpg",
+       "name": "Rie Takahashi",
+       "ref": {
+        "id": "119331",
+        "source": "anilist",
+        "to": "person"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/n23652-fJf6jduDv3iY.png",
+     "name": "Steven Steel",
+     "ref": {
+      "id": "23652",
+      "to": "character"
+     }
+    },
+    "role": "Supporting",
+    "voices": [
+     {
+      "language": "Japanese",
+      "person": {
+       "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95720-enxx6kZKuwGi.jpg",
+       "name": "Kenta Miyake",
+       "ref": {
+        "id": "95720",
+        "source": "anilist",
+        "to": "person"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b28967-ShW5sAxzZDny.png",
+     "name": "Sandman",
+     "ref": {
+      "id": "28967",
+      "to": "character"
+     }
+    },
+    "role": "Supporting",
+    "voices": [
+     {
+      "language": "Japanese",
+      "person": {
+       "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n126794-tZzYeLEQbsrj.png",
+       "name": "Masaaki Mizunaka",
+       "ref": {
+        "id": "126794",
+        "source": "anilist",
+        "to": "person"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b28968-fUKdmdflOwcv.png",
+     "name": "Pocoloco",
+     "ref": {
+      "id": "28968",
+      "to": "character"
+     }
+    },
+    "role": "Supporting",
+    "voices": [
+     {
+      "language": "Japanese",
+      "person": {
+       "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n105273-asextl049B2s.png",
+       "name": "Kenichirou Matsuda",
+       "ref": {
+        "id": "105273",
+        "source": "anilist",
+        "to": "person"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b28990-rOK1FsEOdabY.png",
+     "name": "Mountain Tim",
+     "ref": {
+      "id": "28990",
+      "to": "character"
+     }
+    },
+    "role": "Supporting",
+    "voices": [
+     {
+      "language": "Japanese",
+      "person": {
+       "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n96489-xTzYxgdC9g9l.png",
+       "name": "Tomoaki Maeno",
+       "ref": {
+        "id": "96489",
+        "source": "anilist",
+        "to": "person"
+       }
+      }
+     }
+    ]
+   }
+  ],
+  "count": 11,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "ONA"
+   },
+   {
+    "label": "Episodes",
+    "value": "11"
+   },
+   {
+    "label": "Episode length",
+    "value": "23 min"
+   },
+   {
+    "label": "Status",
+    "value": "Airing"
+   },
+   {
+    "label": "Next episode",
+    "value": "Ep 7, Nov 6, 2026"
+   },
+   {
+    "label": "Aired",
+    "value": "Sep 25, 2026"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2026"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "287",
+       "to": "studio"
+      },
+      "text": "david production"
+     }
+    ],
+    "value": "david production"
+   },
+   {
+    "label": "Source",
+    "value": "Manga"
+   },
+   {
+    "label": "Members",
+    "value": "48,869"
+   }
+  ],
+  "format": "ONA",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Mystery",
+   "Supernatural"
+  ],
+  "headline": [
+   "ONA",
+   "Fall 2026",
+   "11 episodes"
+  ],
+  "idMal": 61469,
+  "makers": [
+   {
+    "ref": {
+     "id": "287",
+     "to": "studio"
+    },
+    "text": "david production"
+   }
+  ],
+  "media": "anime",
+  "minutes": 23,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20474-xuqem5GBlBtb.jpg",
+    "format": "TV",
+    "ref": {
+     "id": "20474",
+     "kind": "anime"
+    },
+    "score": 79,
+    "title": "JoJo's Bizarre Adventure: Stardust Crusaders",
+    "year": 2014
+   },
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx102883-S9KzdMJhDswJ.png",
+    "format": "TV",
+    "ref": {
+     "id": "102883",
+     "kind": "anime"
+    },
+    "score": 85,
+    "title": "JoJo's Bizarre Adventure: Golden Wind",
+    "year": 2018
+   },
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx14719-VT5dRzTBSZ0w.jpg",
+    "format": "TV",
+    "ref": {
+     "id": "14719",
+     "kind": "anime"
+    },
+    "score": 77,
+    "title": "JoJo's Bizarre Adventure (TV)",
+    "year": 2012
+   },
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20799-S1eyqBDlx51E.jpg",
+    "format": "TV",
+    "ref": {
+     "id": "20799",
+     "kind": "anime"
+    },
+    "score": 83,
+    "title": "JoJo's Bizarre Adventure: Stardust Crusaders - Battle in Egypt",
+    "year": 2015
+   },
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21450-D7XFwEQjZ5GA.jpg",
+    "format": "TV",
+    "ref": {
+     "id": "21450",
+     "kind": "anime"
+    },
+    "score": 84,
+    "title": "JoJo's Bizarre Adventure: Diamond is Unbreakable",
+    "year": 2016
+   },
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx146722-hiZU7M33fBhn.jpg",
+    "format": "ONA",
+    "ref": {
+     "id": "146722",
+     "kind": "anime"
+    },
+    "score": 82,
+    "title": "JoJo's Bizarre Adventure: STONE OCEAN Part 2",
+    "year": 2022
+   },
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx131942-rermlZ9lplHX.png",
+    "format": "ONA",
+    "ref": {
+     "id": "131942",
+     "kind": "anime"
+    },
+    "score": 80,
+    "title": "JoJo's Bizarre Adventure: STONE OCEAN",
+    "year": 2021
+   },
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx172420-4LjhmwpNMHti.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "172420",
+     "kind": "anime"
+    },
+    "score": 86,
+    "title": "Umamusume: Pretty Derby - Beginning of a New Era",
+    "year": null
+   },
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx3603-SlwsgQeC4fTg.png",
+    "format": "Film",
+    "ref": {
+     "id": "3603",
+     "kind": "anime"
+    },
+    "score": 77,
+    "title": "JoJo no Kimyou na Bouken: Phantom Blood",
+    "year": null
+   },
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx99699-mBCjpoWpAVGX.jpg",
+    "format": "TV",
+    "ref": {
+     "id": "99699",
+     "kind": "anime"
+    },
+    "score": 77,
+    "title": "Golden Kamuy",
+    "year": null
+   }
+  ],
+  "ref": {
+   "id": "210482",
+   "kind": "anime"
+  },
+  "relations": [
+   {
+    "relation": "Prequel",
+    "title": {
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx190327-riJNCFL7w9y4.jpg",
+     "format": "ONA",
+     "ref": {
+      "id": "190327",
+      "kind": "anime"
+     },
+     "score": 87,
+     "title": "STEEL BALL RUN JoJo's Bizarre Adventure 1st STAGE",
+     "year": 2026
+    }
+   },
+   {
+    "relation": "Adaptation",
+    "title": {
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx31706-lRncu9VbcBB7.png",
+     "format": "Manga",
+     "ref": {
+      "id": "31706",
+      "kind": "manga"
+     },
+     "score": 92,
+     "title": "JoJo's Bizarre Adventure: Part 7–Steel Ball Run",
+     "year": 2004
+    }
+   }
+  ],
+  "score": 86,
+  "scoreNote": "48,869 members",
+  "seasons": [],
+  "staff": [
+   {
+    "person": {
+     "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n97619-IWURoFca9uNY.jpg",
+     "name": "Hirohiko Araki",
+     "ref": {
+      "id": "97619",
+      "source": "anilist",
+      "to": "person"
+     }
+    },
+    "role": "Original Creator"
+   },
+   {
+    "person": {
+     "image": null,
+     "name": "Minoru Murao",
+     "ref": {
+      "id": "97931",
+      "source": "anilist",
+      "to": "person"
+     }
+    },
+    "role": "Sub Character Design"
+   },
+   {
+    "person": {
+     "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n101016-H7RaX55ooWr0.png",
+     "name": "Yoshikazu Iwanami",
+     "ref": {
+      "id": "101016",
+      "source": "anilist",
+      "to": "person"
+     }
+    },
+    "role": "Sound Director"
+   },
+   {
+    "person": {
+     "image": "https://s4.anilist.co/file/anilistcdn/staff/large/6385.jpg",
+     "name": "Eiichi Kamagata",
+     "ref": {
+      "id": "101385",
+      "source": "anilist",
+      "to": "person"
+     }
+    },
+    "role": "Planning"
+   },
+   {
+    "person": {
+     "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n102071-gPeWt6xwz2Dr.png",
+     "name": "Yasuko Kobayashi",
+     "ref": {
+      "id": "102071",
+      "source": "anilist",
+      "to": "person"
+     }
+    },
+    "role": "Series Composition"
+   },
+   {
+    "person": {
+     "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n106845-x1f5cBSXNAfC.png",
+     "name": "Toshiyuki Katou",
+     "ref": {
+      "id": "106845",
+      "source": "anilist",
+      "to": "person"
+     }
+    },
+    "role": "Chief Director"
+   },
+   {
+    "person": {
+     "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n109287-ceSE7YTdY5H5.png",
+     "name": "Yuugo Kanno",
+     "ref": {
+      "id": "109287",
+      "source": "anilist",
+      "to": "person"
+     }
+    },
+    "role": "Music"
+   },
+   {
+    "person": {
+     "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n111053-JqHbuORNk3e5.png",
+     "name": "Yasumasa Koyama",
+     "ref": {
+      "id": "111053",
+      "source": "anilist",
+      "to": "person"
+     }
+    },
+    "role": "Sound Effects"
+   }
+  ],
+  "status": "releasing",
+  "statusText": "Airing",
+  "synopsis": [
+   [
+    {
+     "text": "In the 2nd STAGE, a desert crossing spanning roughly 750 miles- the land that Johnny Joestar and Gyro Zeppeli must challenge, is home to the area that is feared as the \"Devil's Palm.\" In 1875, a threat lurking in said desert wiped out a cavalry of 26 people, eliciting fear from the local native people. As ominous incidents begin to unfold, they are forced to realize that this race is far more than a mere competition. The two press forward, where countless hidden motives collide.."
+    }
+   ]
+  ],
+  "tags": [
+   "Desert",
+   "Super Power",
+   "Cowboys",
+   "Travel",
+   "Disability",
+   "Primarily Male Cast",
+   "Male Protagonist",
+   "Foreign",
+   "Primarily Adult Cast",
+   "Seinen",
+   "Crime"
+  ],
+  "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+  "trailer": null,
+  "volumes": null,
+  "year": 2026
+ }
+}

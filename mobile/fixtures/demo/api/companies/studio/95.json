@@ -1,0 +1,53 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx181641-4BnzXGnA7CJL.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "181641",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "Tokidoki Bosotto Rossiya-go de Dereru Tonari no Alya-san Season 2",
+      "year": 2027
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx150672-WqmmwZ4nMzAy.png",
+      "format": "TV",
+      "ref": {
+       "id": "150672",
+       "kind": "anime"
+      },
+      "score": 84,
+      "title": "OSHI NO KO",
+      "year": 2023
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209827-uHqVlWylCpTT.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "209827",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "[Oshi no Ko] Final Season",
+      "year": null
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Doga Kobo",
+  "ref": {
+   "id": "95",
+   "to": "studio"
+  }
+ }
+}

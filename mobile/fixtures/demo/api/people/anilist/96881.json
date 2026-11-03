@@ -1,0 +1,17 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [],
+  "groups": [],
+  "image": null,
+  "known": "",
+  "name": "Eiichiro Oda",
+  "native": null,
+  "ref": {
+   "id": "96881",
+   "source": "anilist",
+   "to": "person"
+  }
+ }
+}

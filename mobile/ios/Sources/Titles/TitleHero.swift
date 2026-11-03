@@ -67,7 +67,6 @@ private struct TitleHeroText: View {
                 HStack(spacing: 3) {
                     Image(systemName: "star.fill").font(.system(size: 11)).foregroundStyle(Theme.star)
                     Text(avg).foregroundStyle(Theme.inkSoft).numbers()
-                    if let out = page.averageOutOf { Text(out) }
                 }
                 .accessibilityElement(children: .combine)
             }

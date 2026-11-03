@@ -1,0 +1,119 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx143103-vvsaIpZPpIuE.png",
+      "format": "Film",
+      "ref": {
+       "id": "143103",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "Witch on the Holy Night",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx166240-PBV7zukIHW7V.png",
+      "format": "TV",
+      "ref": {
+       "id": "166240",
+       "kind": "anime"
+      },
+      "score": 79,
+      "title": "Demon Slayer: Kimetsu no Yaiba Hashira Training Arc",
+      "year": 2024
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx145139-rRimpHGWLhym.png",
+      "format": "TV",
+      "ref": {
+       "id": "145139",
+       "kind": "anime"
+      },
+      "score": 80,
+      "title": "Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc",
+      "year": 2023
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx129874-g6ZKXB94Hui1.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "129874",
+       "kind": "anime"
+      },
+      "score": 82,
+      "title": "Demon Slayer: Kimetsu no Yaiba Mugen Train Arc",
+      "year": 2021
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx142329-kET1PIXJv2eW.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "142329",
+       "kind": "anime"
+      },
+      "score": 85,
+      "title": "Demon Slayer: Kimetsu no Yaiba Entertainment District Arc",
+      "year": 2021
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101922-WBsBl0ClmgYL.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "101922",
+       "kind": "anime"
+      },
+      "score": 82,
+      "title": "Demon Slayer: Kimetsu no Yaiba",
+      "year": 2019
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx11741-oEy1fJHYm2zJ.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "11741",
+       "kind": "anime"
+      },
+      "score": 84,
+      "title": "Fate/Zero Season 2",
+      "year": 2012
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx10087-M4Hd9qrHGrXk.png",
+      "format": "TV",
+      "ref": {
+       "id": "10087",
+       "kind": "anime"
+      },
+      "score": 81,
+      "title": "Fate/Zero",
+      "year": 2011
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195200-wJaLJ4mDDKGc.png",
+      "format": "Film",
+      "ref": {
+       "id": "195200",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle Part 2",
+      "year": null
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "ufotable",
+  "ref": {
+   "id": "43",
+   "to": "studio"
+  }
+ }
+}

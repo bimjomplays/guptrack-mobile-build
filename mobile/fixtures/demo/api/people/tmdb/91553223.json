@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Getty",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "157336",
+        "kind": "movie"
+       },
+       "score": 85,
+       "title": "Interstellar",
+       "year": 2014
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Getty",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "157336",
+        "kind": "movie"
+       },
+       "score": 85,
+       "title": "Interstellar",
+       "year": 2014
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/89sF57Br5lq8nrepS7HLzJ41QD1.jpg",
+  "known": "Acting",
+  "name": "Topher Grace",
+  "native": null,
+  "ref": {
+   "id": "91553223",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

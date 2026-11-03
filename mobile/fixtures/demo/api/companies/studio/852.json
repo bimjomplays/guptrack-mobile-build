@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx171952-uB8CTTCBI1u5.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "171952",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "Kage no Jitsuryokusha ni Naritakute!: Zankyou-hen",
+      "year": 2027
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Nexus",
+  "ref": {
+   "id": "852",
+   "to": "studio"
+  }
+ }
+}

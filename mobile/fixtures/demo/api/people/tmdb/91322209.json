@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Grace Chow",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1233413",
+        "kind": "movie"
+       },
+       "score": 75,
+       "title": "Sinners",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Grace Chow",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1233413",
+        "kind": "movie"
+       },
+       "score": 75,
+       "title": "Sinners",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/9glGNxymt1vHxyMPesTreJTpD7n.jpg",
+  "known": "Acting",
+  "name": "Li Jun Li",
+  "native": null,
+  "ref": {
+   "id": "91322209",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx147105-rwOX8qyUy8gV.jpg",
+      "format": "ONA",
+      "ref": {
+       "id": "147105",
+       "kind": "anime"
+      },
+      "score": 85,
+      "title": "Witch Hat Atelier",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx159831-cJUNqCqzuApc.png",
+      "format": "TV",
+      "ref": {
+       "id": "159831",
+       "kind": "anime"
+      },
+      "score": 76,
+      "title": "Zom 100: Bucket List of the Dead",
+      "year": 2023
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx213702-vCWQFcAfDF8c.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "213702",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "Witch Hat Atelier Season 2",
+      "year": null
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "BUG FILMS",
+  "ref": {
+   "id": "7348",
+   "to": "studio"
+  }
+ }
+}

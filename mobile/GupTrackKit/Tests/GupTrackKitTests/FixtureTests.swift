@@ -20,7 +20,7 @@ final class FixtureTests: XCTestCase {
     }
 
     func testSharedFixturesDecode() throws {
-        let lib = try Demo.load([LibraryEntry].self, "api/library.json")
+        let lib = Demo.library()
         XCTAssertEqual(Set(lib.map(\.media)), Set(MediaKind.allCases))
         XCTAssertEqual(Set(lib.map(\.id)).count, lib.count, "a title is on the list twice")
         for e in lib {
@@ -28,10 +28,10 @@ final class FixtureTests: XCTestCase {
             if let total = e.title.total { XCTAssertLessThanOrEqual(e.progress, total, e.id) }
             XCTAssertNotNil(e.title.cover, "\(e.id) has no cover")
         }
-        _ = try Demo.load(UserRef.self, "api/me.json")
-        _ = try Demo.load(ServerHello.self, "api/hello.json")
-        let lists = try Demo.load([CustomList].self, "api/lists.json")
-        for l in lists { _ = try Demo.load(CustomList.self, "api/lists/\(l.id).json") }
+        XCTAssertEqual(try Demo.load(MeAnswer.self, "api/me.json").me.username, "mika")
+        XCTAssertEqual(try Demo.load(ServerInfo.self, "api/server.json").api, AppAPI.version)
+        let lists = try Demo.load(ListWire.Yours.self, "api/lists.json").lists
+        for l in lists { _ = try Demo.load(MyList.self, "api/lists/\(l.slug).json") }
     }
 
     /// The public build copy only ever loads art from the catalogue CDNs at runtime.

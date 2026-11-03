@@ -1,32 +1,295 @@
 import Foundation
 
-// Browse (11-15): the media switch's shelves, the filters, the season chart and search. The decoding, filtering,
-// grouping, counting and captions live here so they're tested on Linux; the views only draw them.
+// Browse (11-15): the shelves, the filters, the season chart and search (docs/app-api.md §8.1, §8.2). The wire
+// shapes are the website's own, field for field (src/catalog/types.ts, src/catalog/detail.ts,
+// src/components/browse/search.ts); the screens show them as the app's `Title`. Filtering, grouping and captions
+// live here so they're tested on Linux; the views only draw them.
 
-// MARK: the Browse page
+// MARK: the catalogue's shapes
 
-/// GET browse?media=anime: one media's shelves, and a feature card for TMDB media (TV and films).
-struct BrowsePage: Codable, Equatable, Sendable {
+/// `CatalogStatus`
+enum CatalogStatus: String, Codable, CaseIterable, Hashable, Sendable {
+    case releasing, finished, upcoming
+}
+
+/// `Season` (anime)
+enum CatalogSeason: String, Codable, CaseIterable, Hashable, Sendable {
+    case winter, spring, summer, fall
+
+    /// "Fall"
+    var label: String { rawValue.prefix(1).uppercased() + rawValue.dropFirst() }
+}
+
+/// `CatalogTitle`: one title in the Browse catalogue. What `count` and `by` mean depends on the media.
+struct CatalogTitle: Codable, Hashable, Sendable {
+    /// "anilist:16498", "tmdb:1399", "ol:OL45804W" (unique within its media)
+    var id: String
+    /// "anilist", "tmdb", "openlibrary"
+    var source: String
+    /// AniList "154587", TMDB "tv/1399" or "movie/693134", Open Library "OL45804W"
+    var sourceId: String
+    var title: String
+    var alt: [String]?
+    /// a picture as the answer has it (https, or a GupTrack "/" address the image loader resolves)
+    var cover: URL?
+    /// one of the media's formats: "TV", "Film", "Manhwa", "Novel"
+    var format: String
+    var year: Int?
+    var season: CatalogSeason?
+    /// "2026-10-04", "2026-10" or "2026"
+    var start: String?
+    var status: CatalogStatus
+    var genres: [String]
+    var tags: [String]
+    /// 0–100
+    var score: Double?
+    var popularity: Double
+    var trending: Double
+    /// episodes (anime, TV), chapters (manga), minutes (movies), pages (books)
+    var count: Int?
+    /// studio (anime), author (manga, books), creator (TV), director (movies)
+    var by: String
+
+    init(id: String, source: String, sourceId: String, title: String, alt: [String]? = nil, cover: URL? = nil,
+         format: String, year: Int? = nil, season: CatalogSeason? = nil, start: String? = nil,
+         status: CatalogStatus = .finished, genres: [String] = [], tags: [String] = [], score: Double? = nil,
+         popularity: Double = 0, trending: Double = 0, count: Int? = nil, by: String = "") {
+        self.id = id
+        self.source = source
+        self.sourceId = sourceId
+        self.title = title
+        self.alt = alt
+        self.cover = cover
+        self.format = format
+        self.year = year
+        self.season = season
+        self.start = start
+        self.status = status
+        self.genres = genres
+        self.tags = tags
+        self.score = score
+        self.popularity = popularity
+        self.trending = trending
+        self.count = count
+        self.by = by
+    }
+
+    /// the title page it opens (`titleRefOf`: TMDB's "tv/1399" is 1399)
+    func ref(_ media: APIMedia) -> TitleRef {
+        let id = sourceId.firstIndex(of: "/").map { String(sourceId[sourceId.index(after: $0)...]) } ?? sourceId
+        return TitleRef(kind: media.kind, id: id)
+    }
+
+    /// the title as the app's cards and rows show it
+    func title(_ media: APIMedia, next: Airing? = nil) -> Title {
+        let kind = media.kind
+        return Title(id: ref(media).titleId, media: kind, name: title, subtitle: alt?.first, cover: cover,
+                     format: format, year: year, season: season.flatMap { s in year.map { "\(s.label) \($0)" } },
+                     total: kind == .movie ? nil : count, score: score.map { $0 / 10 },
+                     genres: genres, studio: by.isEmpty ? nil : by, next: next,
+                     runtime: kind == .movie ? count.flatMap { ListEntry.runtime($0, .movie) } : nil,
+                     state: Catalog.state(status))
+    }
+}
+
+// `TitleRef` (a title page, by its kind and source id) lives in WidgetSnapshot.swift: the widget compiles only that file.
+
+/// `Ref`: any page a name can link to, told apart by `to`.
+enum CatalogRef: Codable, Hashable, Sendable {
+    case title(TitleRef)
+    case character(String)
+    /// source "anilist" or "tmdb"
+    case person(source: String, id: String)
+    /// an Open Library author ("OL7234434A")
+    case author(String)
+    /// to "studio", "network" or "company"
+    case company(to: String, id: String)
+    /// a kind of page this app doesn't know yet
+    case other(String)
+
+    private enum Keys: String, CodingKey { case to, kind, id, source }
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: Keys.self)
+        let to = try c.decode(String.self, forKey: .to)
+        func id() throws -> String { try c.decode(String.self, forKey: .id) }
+        switch to {
+        case "title": self = .title(TitleRef(kind: try c.decode(MediaKind.self, forKey: .kind), id: try id()))
+        case "character": self = .character(try id())
+        case "person": self = .person(source: try c.decode(String.self, forKey: .source), id: try id())
+        case "author": self = .author(try id())
+        case "studio", "network", "company": self = .company(to: to, id: try id())
+        default: self = .other(to)
+        }
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var c = encoder.container(keyedBy: Keys.self)
+        switch self {
+        case .title(let r):
+            try c.encode("title", forKey: .to)
+            try c.encode(r.kind, forKey: .kind)
+            try c.encode(r.id, forKey: .id)
+        case .character(let id):
+            try c.encode("character", forKey: .to)
+            try c.encode(id, forKey: .id)
+        case .person(let source, let id):
+            try c.encode("person", forKey: .to)
+            try c.encode(source, forKey: .source)
+            try c.encode(id, forKey: .id)
+        case .author(let id):
+            try c.encode("author", forKey: .to)
+            try c.encode(id, forKey: .id)
+        case .company(let to, let id):
+            try c.encode(to, forKey: .to)
+            try c.encode(id, forKey: .id)
+        case .other(let to):
+            try c.encode(to, forKey: .to)
+        }
+    }
+
+    /// the page it opens in the app
+    var route: Route? {
+        switch self {
+        case .title(let r): return .title(r.titleId)
+        case .character(let id): return .character(id)
+        case .person(let s, let id): return .person("\(s):\(id)")
+        case .author(let id): return .author(id)
+        case .company(let to, let id): return .studio("\(to):\(id)")
+        case .other: return nil
+        }
+    }
+
+    /// the title it is, when it's one
+    var titleRef: TitleRef? {
+        if case .title(let r) = self { return r }
+        return nil
+    }
+}
+
+/// Small helpers every catalogue page shares.
+enum Catalog {
+    /// the app's state words for a title ("Releasing", "Finished", "Not yet released")
+    static func state(_ s: CatalogStatus) -> String {
+        switch s {
+        case .releasing: return "Releasing"
+        case .finished: return "Finished"
+        case .upcoming: return "Not yet released"
+        }
+    }
+
+    /// the website's words for a status, per media (catalog/config.ts)
+    static func statusLabel(_ s: CatalogStatus, _ m: MediaKind) -> String {
+        switch (m, s) {
+        case (.anime, .releasing), (.tv, .releasing): return "Airing"
+        case (.anime, .upcoming): return "Not yet aired"
+        case (.tv, .finished): return "Not airing"
+        case (.tv, .upcoming), (.movie, .upcoming): return "Upcoming"
+        case (.movie, .finished): return "Released"
+        case (.book, .finished): return "Published"
+        case (_, .releasing): return "Releasing"
+        case (_, .finished): return "Finished"
+        case (_, .upcoming): return "Not yet released"
+        }
+    }
+
+    /// the formats a media's titles come in (catalog/config.ts)
+    static func formats(_ m: MediaKind) -> [String] {
+        switch m {
+        case .anime: return ["TV", "Film", "OVA", "ONA", "Special"]
+        case .manga: return ["Manga", "Manhwa", "Manhua", "Light Novel", "One-shot"]
+        case .tv: return ["Series", "Miniseries"]
+        case .movie: return ["Film", "Documentary"]
+        case .book: return ["Novel", "Nonfiction", "Graphic novel"]
+        }
+    }
+
+    /// the statuses a media's filter offers (catalog/config.ts)
+    static func statuses(_ m: MediaKind) -> [CatalogStatus] {
+        switch m {
+        case .anime, .manga, .tv: return [.releasing, .finished, .upcoming]
+        case .movie: return [.finished, .upcoming]
+        case .book: return [.finished]
+        }
+    }
+
+    /// `plain`: lower case, no accents or punctuation, so "steins gate" finds "Steins;Gate"
+    static func plain(_ s: String) -> String {
+        let folded = s.lowercased().folding(options: .diacriticInsensitive, locale: nil)
+        var out = "", gap = false
+        for ch in folded {
+            if ch.isLetter || ch.isNumber {
+                if gap && !out.isEmpty { out.append(" ") }
+                out.append(ch)
+                gap = false
+            } else {
+                gap = true
+            }
+        }
+        return out
+    }
+}
+
+// MARK: the Browse page (§8.1)
+
+/// `GET browse/:media/shelves`
+struct BrowseShelves: Codable, Equatable, Sendable {
+    var shelves: [Shelf]
+
+    /// `{ spec, titles }`
+    struct Shelf: Codable, Equatable, Sendable {
+        var spec: ShelfSpec
+        var titles: [CatalogTitle]
+    }
+}
+
+/// `ShelfSpec`: a shelf on the Browse page; See all opens its filter (or the season chart).
+struct ShelfSpec: Codable, Hashable, Sendable {
+    var title: String
+    /// "Fall 2026", "All time"
+    var note: String?
+    var filter: BrowseFilters
+    var chart: Bool?
+    var min: Int
+    var fresh: Bool?
+}
+
+/// `GET browse/:media/filters`: what the Genres and Tags filters offer
+struct Facets: Codable, Equatable, Sendable {
+    var genres: [String]
+    var tags: [String]
+}
+
+/// `GET browse/:media/results`: one page of the catalogue with filters
+struct BrowseResults: Codable, Equatable, Sendable {
+    var titles: [CatalogTitle]
+    /// how many match in all (nil: not known; `more`: at least this many)
+    var total: Int?
+    var more: Bool
+    /// the page to ask for next, nil at the end
+    var next: Int?
+}
+
+/// The Browse page of one media, as the screen shows it: the shelves as titles, and for TV and films the first
+/// title of the first shelf as the big card on top (labelled with that shelf).
+struct BrowsePage: Equatable, Sendable {
     var media: MediaKind
     var feature: Feature?
     var shelves: [Shelf]
 
-    struct Shelf: Codable, Equatable, Sendable, Identifiable {
-        var id: String
+    struct Shelf: Equatable, Sendable, Identifiable {
         var title: String
-        var sub: String?
-        /// a page the header opens ("season-chart")
-        var link: String?
-        /// or: the whole catalogue in this order (the header shows it as results)
-        var sort: BrowseFilters.Sort?
+        var note: String?
+        var filter: BrowseFilters
+        /// See all opens the season chart
+        var chart: Bool
         var titles: [Title]
 
-        var route: Route? { link.flatMap(Route.init(path:)) }
-        var opens: Bool { route != nil || sort != nil }
+        var id: String { title }
     }
 
-    /// the big card on top of TV and Movies ("Most added this week")
-    struct Feature: Codable, Equatable, Sendable {
+    /// the big card on top of TV and Movies
+    struct Feature: Equatable, Sendable {
         var label: String
         var title: Title
 
@@ -38,6 +301,26 @@ struct BrowsePage: Codable, Equatable, Sendable {
             if let s = title.score { parts.append("★ " + Format.average(s)) }
             return parts.joined(separator: " · ")
         }
+    }
+
+    init(media: MediaKind, feature: Feature? = nil, shelves: [Shelf]) {
+        self.media = media
+        self.feature = feature
+        self.shelves = shelves
+    }
+
+    init(_ media: MediaKind, _ answer: BrowseShelves) {
+        var shelves = answer.shelves.filter { !$0.titles.isEmpty }.map { s in
+            Shelf(title: s.spec.title, note: s.spec.note, filter: s.spec.filter, chart: s.spec.chart == true,
+                  titles: s.titles.map { $0.title(media.api) })
+        }
+        var feature: Feature?
+        if media == .tv || media == .movie, let first = shelves.first, let t = first.titles.first {
+            feature = Feature(label: first.title, title: t)
+            shelves[0].titles.removeFirst()
+            if shelves[0].titles.isEmpty { shelves.removeFirst() }
+        }
+        self.init(media: media, feature: feature, shelves: shelves)
     }
 }
 
@@ -51,8 +334,9 @@ enum BrowseCaption: Equatable, Sendable {
     static func of(_ t: Title, entry: LibraryEntry?, withYear: Bool = false) -> BrowseCaption {
         if let e = entry { return .status(e.status, e.media) }
         if let s = t.score { return .score(Format.average(s), year: withYear ? t.year : nil) }
-        if t.media == .anime && t.format == "Movie" { return .text("Film") }
+        if t.media == .anime && t.format == "Film" { return .text("Film") }
         if let n = t.next { return .text("Starts \(Format.shortDay(n.at))") }
+        if t.state == "Not yet released", let y = t.year { return .text(String(y)) }
         return .text(t.format ?? t.media.singular)
     }
 
@@ -70,100 +354,108 @@ enum BrowseAdd {
 
 // MARK: filters
 
-/// The filters sheet (13) and the chips under the media switch. Applied on top of the catalogue
-/// (GET browse/titles?media=…&sort=…): the server filters, and the app applies the same filters again so the
-/// demo's recorded catalogue and the sheet's live count agree.
+/// `BrowseSearch` without its media: the filters sheet (13), the chips under the media switch and a shelf's filter.
+/// Sent as the results' query; the app applies the same rules again (the website's `filterTitles`), so the demo's
+/// recorded catalogue and the sheet's count agree.
 struct BrowseFilters: Codable, Equatable, Hashable, Sendable {
+    /// `SortKey`
     enum Sort: String, Codable, CaseIterable, Identifiable, Sendable {
-        case popularity, score, newest, title
+        case popular, top, new, trending
 
         var id: String { rawValue }
 
         var label: String {
             switch self {
-            case .popularity: return "Popularity"
-            case .score: return "Score"
-            case .newest: return "Newest"
-            case .title: return "Title"
+            case .popular: return "Popularity"
+            case .top: return "Top rated"
+            case .new: return "Newest"
+            case .trending: return "Trending"
             }
         }
     }
 
-    var sort: Sort = .popularity
+    var q: String?
+    /// comma list on the wire; every one must match
     var genres: [String] = []
-    /// nil: no limit that side
-    var yearFrom: Int?
-    var yearTo: Int?
-    /// "Winter", "Spring", "Summer", "Fall"; anime only
-    var season: String?
-    var formats: [String] = []
-    var statuses: [String] = []
-    /// out of 10; TV, films and books
-    var minScore: Double?
+    var tags: [String] = []
+    var from: Int?
+    var to: Int?
+    var season: CatalogSeason?
+    var format: String?
+    var status: CatalogStatus?
+    /// the least score, on the 10-point scale (8, 8.5)
+    var score: Double?
+    /// nil: the catalogue's own order (popularity)
+    var sort: Sort?
 
-    init(sort: Sort = .popularity, genres: [String] = [], yearFrom: Int? = nil, yearTo: Int? = nil,
-         season: String? = nil, formats: [String] = [], statuses: [String] = [], minScore: Double? = nil) {
-        self.sort = sort
+    init(q: String? = nil, genres: [String] = [], tags: [String] = [], from: Int? = nil, to: Int? = nil,
+         season: CatalogSeason? = nil, format: String? = nil, status: CatalogStatus? = nil, score: Double? = nil,
+         sort: Sort? = nil) {
+        self.q = q
         self.genres = genres
-        self.yearFrom = yearFrom
-        self.yearTo = yearTo
+        self.tags = tags
+        self.from = from
+        self.to = to
         self.season = season
-        self.formats = formats
-        self.statuses = statuses
-        self.minScore = minScore
+        self.format = format
+        self.status = status
+        self.score = score
+        self.sort = sort
+    }
+
+    private enum Keys: String, CodingKey { case q, genres, tags, from, to, season, format, status, score, sort }
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: Keys.self)
+        func list(_ k: Keys) throws -> [String] { Self.list(try c.decodeIfPresent(String.self, forKey: k)) }
+        q = try c.decodeIfPresent(String.self, forKey: .q)
+        genres = try list(.genres)
+        tags = try list(.tags)
+        from = try c.decodeIfPresent(Int.self, forKey: .from)
+        to = try c.decodeIfPresent(Int.self, forKey: .to)
+        season = (try? c.decodeIfPresent(CatalogSeason.self, forKey: .season)) ?? nil
+        format = try c.decodeIfPresent(String.self, forKey: .format)
+        status = (try? c.decodeIfPresent(CatalogStatus.self, forKey: .status)) ?? nil
+        score = try c.decodeIfPresent(Double.self, forKey: .score)
+        sort = (try? c.decodeIfPresent(Sort.self, forKey: .sort)) ?? nil
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var c = encoder.container(keyedBy: Keys.self)
+        try c.encodeIfPresent(q, forKey: .q)
+        try c.encodeIfPresent(genres.isEmpty ? nil : genres.joined(separator: ","), forKey: .genres)
+        try c.encodeIfPresent(tags.isEmpty ? nil : tags.joined(separator: ","), forKey: .tags)
+        try c.encodeIfPresent(from, forKey: .from)
+        try c.encodeIfPresent(to, forKey: .to)
+        try c.encodeIfPresent(season, forKey: .season)
+        try c.encodeIfPresent(format, forKey: .format)
+        try c.encodeIfPresent(status, forKey: .status)
+        try c.encodeIfPresent(score, forKey: .score)
+        try c.encodeIfPresent(sort, forKey: .sort)
+    }
+
+    /// `listOf`
+    static func list(_ s: String?) -> [String] {
+        (s ?? "").split(separator: ",").map(String.init).filter { !$0.isEmpty }
     }
 
     /// nothing narrows the catalogue (the sort alone doesn't count)
     var isEmpty: Bool {
-        genres.isEmpty && yearFrom == nil && yearTo == nil && season == nil && formats.isEmpty && statuses.isEmpty
-            && minScore == nil
+        (q ?? "").isEmpty && genres.isEmpty && tags.isEmpty && from == nil && to == nil && season == nil
+            && format == nil && status == nil && score == nil
     }
 
-    /// how many filters are on (genres count once)
+    /// how many filters are on (genres count once, tags once, the years once)
     var count: Int {
-        [!genres.isEmpty, yearFrom != nil || yearTo != nil, season != nil, !formats.isEmpty, !statuses.isEmpty,
-         minScore != nil].filter { $0 }.count
+        [!genres.isEmpty, !tags.isEmpty, from != nil || to != nil, season != nil, format != nil, status != nil,
+         score != nil].filter { $0 }.count
     }
 
     // the choices, per media
 
-    static let seasons = ["Winter", "Spring", "Summer", "Fall"]
     static let scoreSteps: [Double] = [6, 7, 8]
 
-    static func genreChoices(_ m: MediaKind) -> [String] {
-        switch m {
-        case .anime, .manga:
-            return ["Action", "Adventure", "Comedy", "Drama", "Fantasy", "Horror", "Mystery", "Psychological",
-                    "Romance", "Sci-Fi", "Slice of Life", "Sports"]
-        case .tv:
-            return ["Action & Adventure", "Comedy", "Crime", "Drama", "Mystery", "Sci-Fi & Fantasy", "War & Politics"]
-        case .movie:
-            return ["Action", "Adventure", "Animation", "Comedy", "Crime", "Drama", "Horror", "Mystery", "Romance",
-                    "Science Fiction", "Thriller", "War"]
-        case .book:
-            return ["Fantasy", "Science fiction", "Literature", "Thriller", "Adventure"]
-        }
-    }
-
-    static func formatChoices(_ m: MediaKind) -> [String] {
-        switch m {
-        case .anime: return ["TV", "TV Short", "Movie", "Special", "OVA", "ONA"]
-        case .manga: return ["Manga", "Light Novel", "One Shot"]
-        default: return []
-        }
-    }
-
-    static func statusChoices(_ m: MediaKind) -> [String] {
-        switch m {
-        case .anime, .tv: return ["Airing", "Finished", "Not yet aired", "Cancelled"]
-        case .manga: return ["Releasing", "Finished", "Not yet released", "Hiatus"]
-        case .movie: return ["Released", "Upcoming"]
-        case .book: return []
-        }
-    }
-
     static func hasSeason(_ m: MediaKind) -> Bool { m == .anime }
-    static func hasScore(_ m: MediaKind) -> Bool { m == .tv || m == .movie || m == .book }
 
     /// the year slider's ends: the left end means "any year before", the right end "up to now and coming"
     static let firstYear = 2010
@@ -171,7 +463,7 @@ struct BrowseFilters: Codable, Equatable, Hashable, Sendable {
 
     /// "2020 – 2026" (to now), "Up to 2015", "Any year"
     var yearLabel: String {
-        switch (yearFrom, yearTo) {
+        switch (from, to) {
         case (nil, nil): return "Any year"
         case (nil, let b?): return "Up to \(b)"
         default:
@@ -182,19 +474,18 @@ struct BrowseFilters: Codable, Equatable, Hashable, Sendable {
 
     /// what the year slider shows: the limits, or its ends
     var yearRange: ClosedRange<Int> {
-        let lo = yearFrom ?? Self.firstYear, hi = yearTo ?? Self.lastYear
+        let lo = from ?? Self.firstYear, hi = to ?? Self.lastYear
         return min(lo, hi)...max(lo, hi)
     }
 
     /// the slider moved: an end at the slider's end means no limit
     mutating func setYears(_ r: ClosedRange<Int>) {
-        yearFrom = r.lowerBound <= Self.firstYear ? nil : r.lowerBound
-        yearTo = r.upperBound >= Self.lastYear ? nil : r.upperBound
+        from = r.lowerBound <= Self.firstYear ? nil : r.lowerBound
+        to = r.upperBound >= Self.lastYear ? nil : r.upperBound
     }
 
     mutating func toggleGenre(_ g: String) { genres.browseToggle(g) }
-    mutating func toggleFormat(_ f: String) { formats.browseToggle(f) }
-    mutating func toggleStatus(_ s: String) { statuses.browseToggle(s) }
+    mutating func toggleTag(_ t: String) { tags.browseToggle(t) }
 
     /// "Genres", "Action", "Action +2": a chip's text
     static func chipText(_ name: String, _ picked: [String]) -> String {
@@ -202,43 +493,53 @@ struct BrowseFilters: Codable, Equatable, Hashable, Sendable {
         return picked.count == 1 ? first : "\(first) +\(picked.count - 1)"
     }
 
-    // the query (sent to the server, and the demo's saved form)
+    /// "★ 8+", "★ 8.5+"
+    static func scoreText(_ s: Double) -> String { "★ \(Format.trim(s))+" }
 
-    func query(_ media: MediaKind) -> [URLQueryItem] {
-        var q = [URLQueryItem(name: "media", value: media.rawValue)]
-        if sort != .popularity { q.append(URLQueryItem(name: "sort", value: sort.rawValue)) }
-        if !genres.isEmpty { q.append(URLQueryItem(name: "genres", value: genres.joined(separator: ","))) }
-        if yearFrom != nil || yearTo != nil {
-            q.append(URLQueryItem(name: "years", value: "\(yearFrom.map(String.init) ?? "")-\(yearTo.map(String.init) ?? "")"))
-        }
-        if let season { q.append(URLQueryItem(name: "season", value: season)) }
-        if !formats.isEmpty { q.append(URLQueryItem(name: "formats", value: formats.joined(separator: ","))) }
-        if !statuses.isEmpty { q.append(URLQueryItem(name: "statuses", value: statuses.joined(separator: ","))) }
-        if let minScore { q.append(URLQueryItem(name: "minScore", value: Format.trim(minScore))) }
+    // the query (sent to the server, and the saved form)
+
+    /// the results' query: the sort first (the demo picks its answer by the first value), the page only past 1
+    func query(page: Int = 1) -> [URLQueryItem] {
+        var q: [URLQueryItem] = []
+        func add(_ name: String, _ v: String?) { if let v, !v.isEmpty { q.append(URLQueryItem(name: name, value: v)) } }
+        add("sort", sort?.rawValue)
+        add("q", self.q?.trimmingCharacters(in: .whitespaces))
+        add("genres", genres.isEmpty ? nil : genres.joined(separator: ","))
+        add("tags", tags.isEmpty ? nil : tags.joined(separator: ","))
+        add("format", format)
+        add("from", from.map(String.init))
+        add("to", to.map(String.init))
+        add("season", season?.rawValue)
+        add("status", status?.rawValue)
+        add("score", score.map(Format.trim))
+        if page > 1 { add("page", String(page)) }
         return q
     }
 
-    /// "sort=score&genres=Action,Drama&years=2020-2026&season=Fall" (the media is left out)
+    /// "sort=top&genres=Action,Drama&from=2020&season=fall": the saved form, as the website's address has it
     var encoded: String {
-        query(.anime).dropFirst().map { "\($0.name)=\($0.value ?? "")" }.joined(separator: "&")
+        query().map { "\($0.name)=\($0.value ?? "")" }.joined(separator: "&")
     }
 
+    /// back from `encoded`, keeping only values that make sense (`validateBrowse`)
     init(encoded s: String) {
         self.init()
         for pair in s.split(separator: "&") {
             let kv = pair.split(separator: "=", maxSplits: 1).map(String.init)
             guard kv.count == 2 else { continue }
-            let list = kv[1].split(separator: ",").map { String($0).trimmingCharacters(in: .whitespaces) }
+            let v = kv[1].trimmingCharacters(in: .whitespaces)
+            func year() -> Int? { Int(v).flatMap { $0 > 1800 && $0 < 2100 ? $0 : nil } }
             switch kv[0] {
-            case "sort": sort = Sort(rawValue: kv[1]) ?? .popularity
-            case "genres": genres = list
-            case "years":
-                let ends = kv[1].split(separator: "-", omittingEmptySubsequences: false).map { Int($0) }
-                if ends.count == 2 { yearFrom = ends[0]; yearTo = ends[1] }
-            case "season": season = Self.seasons.contains(kv[1]) ? kv[1] : nil
-            case "formats": formats = list
-            case "statuses": statuses = list
-            case "minScore": minScore = Double(kv[1])
+            case "q": q = v.isEmpty ? nil : v
+            case "genres": genres = Self.list(v)
+            case "tags": tags = Self.list(v)
+            case "from": from = year()
+            case "to": to = year()
+            case "season": season = CatalogSeason(rawValue: v)
+            case "format": format = v.isEmpty ? nil : v
+            case "status": status = CatalogStatus(rawValue: v)
+            case "score": score = Double(v).flatMap { $0 > 0 && $0 <= 10 ? $0 : nil }
+            case "sort": sort = Sort(rawValue: v)
             default: break
             }
         }
@@ -246,61 +547,43 @@ struct BrowseFilters: Codable, Equatable, Hashable, Sendable {
 
     // applying them
 
-    func matches(_ t: Title) -> Bool {
-        if !genres.isEmpty {
-            let have = (t.genres ?? []).map { $0.lowercased() }
-            // every picked genre, as AniList's genre filter does; books match a subject that contains it
-            for g in genres where !have.contains(where: { $0 == g.lowercased() || (t.media == .book && $0.contains(g.lowercased())) }) {
-                return false
-            }
+    /// `filterTitles`: the titles a search keeps (all genres and tags must match)
+    func matches(_ t: CatalogTitle) -> Bool {
+        let q = Catalog.plain(self.q ?? "")
+        if !q.isEmpty {
+            let names = [t.title] + (t.alt ?? []) + [t.by]
+            if !names.contains(where: { Catalog.plain($0).contains(q) }) { return false }
         }
-        if yearFrom != nil || yearTo != nil {
-            guard let y = t.year else { return false }
-            if let a = yearFrom, y < a { return false }
-            if let b = yearTo, y > b { return false }
-        }
-        if let season {
-            guard let s = t.season, s.hasPrefix(season + " ") else { return false }
-        }
-        if !formats.isEmpty {
-            guard let f = t.format, formats.contains(f) else { return false }
-        }
-        if !statuses.isEmpty, let state = Self.statusWord(t) {
-            // a title whose state isn't known (TMDB's catalogue doesn't say) isn't left out
-            if !statuses.contains(state) { return false }
-        }
-        if let minScore {
-            guard let s = t.score, s >= minScore else { return false }
-        }
+        if !genres.allSatisfy(t.genres.contains) { return false }
+        if !tags.allSatisfy(t.tags.contains) { return false }
+        if let from { guard let y = t.year, y >= from else { return false } }
+        if let to { guard let y = t.year, y <= to else { return false } }
+        if let season, t.season != season { return false }
+        if let format, t.format != format { return false }
+        if let status, t.status != status { return false }
+        if let score { guard let s = t.score, s >= score * 10 else { return false } }
         return true
     }
 
-    /// the catalogue filtered and sorted (popularity keeps the server's order)
-    func apply(_ titles: [Title]) -> [Title] {
+    /// the titles kept, in the sort's order (ties keep the server's order)
+    func apply(_ titles: [CatalogTitle]) -> [CatalogTitle] {
         let kept = titles.filter(matches)
-        switch sort {
-        case .popularity: return kept
-        case .score: return kept.enumerated().sorted { a, b in
-            let x = a.element.score ?? -1, y = b.element.score ?? -1
-            return x != y ? x > y : a.offset < b.offset
-        }.map(\.element)
-        case .newest: return kept.enumerated().sorted { a, b in
-            let x = a.element.year ?? 0, y = b.element.year ?? 0
-            return x != y ? x > y : a.offset < b.offset
-        }.map(\.element)
-        case .title: return kept.sorted { $0.name.localizedCaseInsensitiveCompare($1.name) == .orderedAscending }
+        func by(_ key: (CatalogTitle) -> Double) -> [CatalogTitle] {
+            kept.enumerated().sorted { a, b in
+                let x = key(a.element), y = key(b.element)
+                return x != y ? x > y : a.offset < b.offset
+            }.map(\.element)
         }
-    }
-
-    /// a title's state in the status filter's words ("Releasing" is "Airing" for anime and TV)
-    static func statusWord(_ t: Title) -> String? {
-        guard let s = t.state else { return nil }
-        switch (t.media, s) {
-        case (.anime, "Releasing"), (.tv, "Releasing"), (.tv, "Returning Series"): return "Airing"
-        case (.anime, "Not yet released"), (.tv, "Not yet released"): return "Not yet aired"
-        case (.tv, "Ended"): return "Finished"
-        case (.movie, "Not yet released"): return "Upcoming"
-        default: return s
+        switch sort {
+        case nil: return kept
+        case .popular: return by(\.popularity)
+        case .top: return by { $0.score ?? -1 }
+        case .trending: return by(\.trending)
+        case .new:
+            return kept.enumerated().sorted { a, b in
+                let x = a.element.start ?? "", y = b.element.start ?? ""
+                return x != y ? x > y : a.offset < b.offset
+            }.map(\.element)
         }
     }
 }
@@ -313,7 +596,7 @@ fileprivate extension Array where Element == String {
 }
 
 /// The filters for every media, kept in one string (UserDefaults, through @AppStorage) so Browse and the filters
-/// sheet share them: "anime:genres=Action,Drama&season=Fall|tv:sort=score".
+/// sheet share them: "anime:genres=Action,Drama&season=fall|tv:sort=top".
 enum BrowseFilterStore {
     static let key = "browse.filters"
 
@@ -346,52 +629,121 @@ enum BrowseFilterStore {
     }
 }
 
+/// One page of results as the screen shows them, and how many there are.
+struct BrowseResultsPage: Equatable, Sendable {
+    var titles: [Title]
+    /// the server's count, or what's here when it's all here
+    var total: Int?
+    var more: Bool
+    var next: Int?
+
+    init(titles: [Title], total: Int?, more: Bool, next: Int?) {
+        self.titles = titles
+        self.total = total
+        self.more = more
+        self.next = next
+    }
+
+    /// the answer with the filters applied again (a no-op on a real server; the demo's catalogue isn't filtered)
+    init(_ media: MediaKind, _ answer: BrowseResults, _ f: BrowseFilters) {
+        let kept = f.apply(answer.titles)
+        let filtered = kept.count != answer.titles.count
+        titles = kept.map { $0.title(media.api) }
+        more = filtered ? false : answer.more
+        next = filtered ? nil : answer.next
+        if filtered { total = kept.count } else { total = answer.total ?? (answer.more ? nil : kept.count) }
+    }
+
+    /// "Show 120 results", "Show 50+ results"
+    var showText: String {
+        if let total { return "Show \(Format.grouped(total)) \(total == 1 ? "result" : "results")" }
+        return "Show \(Format.grouped(titles.count))\(more ? "+" : "") results"
+    }
+}
+
 // MARK: the season chart
 
-/// GET season-chart?season=fall-2026: every anime of one season (14), most popular first.
+/// `SeasonEntry`: a season chart anime, its catalogue card plus its next episode
+struct SeasonEntry: Codable, Hashable, Sendable {
+    var title: CatalogTitle
+    var next: Next?
+    /// started in an earlier season and still airing
+    var carried: Bool
+
+    struct Next: Codable, Hashable, Sendable {
+        var episode: Int
+        /// unix seconds (not ms)
+        var at: Double
+    }
+
+    private enum Keys: String, CodingKey { case next, carried }
+
+    init(title: CatalogTitle, next: Next? = nil, carried: Bool = false) {
+        self.title = title
+        self.next = next
+        self.carried = carried
+    }
+
+    init(from decoder: Decoder) throws {
+        title = try CatalogTitle(from: decoder)
+        let c = try decoder.container(keyedBy: Keys.self)
+        next = try c.decodeIfPresent(Next.self, forKey: .next)
+        carried = try c.decodeIfPresent(Bool.self, forKey: .carried) ?? false
+    }
+
+    func encode(to encoder: Encoder) throws {
+        try title.encode(to: encoder)
+        var c = encoder.container(keyedBy: Keys.self)
+        try c.encode(next, forKey: .next)
+        try c.encode(carried, forKey: .carried)
+    }
+
+    var app: Title {
+        title.title(.anime, next: next.map { Airing(episode: $0.episode, at: Date(timeIntervalSince1970: $0.at)) })
+    }
+}
+
+/// `GET season-chart?season=fall&year=2026`: every anime of one season (14), most popular first.
 struct SeasonChart: Codable, Equatable, Sendable {
+    var season: CatalogSeason
+    var year: Int
+    var titles: [SeasonEntry]
+
     /// "Fall 2026"
-    var season: String
-    var titles: [Title]
+    var label: String { "\(season.label) \(year)" }
 
     /// one season: Fall 2026
     struct Ref: Hashable, Sendable {
-        var name: String     // "Winter", "Spring", "Summer", "Fall"
+        var season: CatalogSeason
         var year: Int
 
-        var label: String { "\(name) \(year)" }
-        /// "fall-2026", the API's form
-        var slug: String { "\(name.lowercased())-\(year)" }
+        var label: String { "\(season.label) \(year)" }
+        /// "fall-2026", the page's id
+        var slug: String { "\(season.rawValue)-\(year)" }
 
-        private var index: Int { BrowseFilters.seasons.firstIndex(of: name) ?? 0 }
+        private var index: Int { CatalogSeason.allCases.firstIndex(of: season) ?? 0 }
 
         var previous: Ref {
-            index == 0 ? Ref(name: "Fall", year: year - 1) : Ref(name: BrowseFilters.seasons[index - 1], year: year)
+            index == 0 ? Ref(season: .fall, year: year - 1) : Ref(season: CatalogSeason.allCases[index - 1], year: year)
         }
 
         var next: Ref {
-            index == 3 ? Ref(name: "Winter", year: year + 1) : Ref(name: BrowseFilters.seasons[index + 1], year: year)
+            index == 3 ? Ref(season: .winter, year: year + 1) : Ref(season: CatalogSeason.allCases[index + 1], year: year)
         }
 
-        /// the anime season a day falls in (AniList's: Winter is Dec–Feb, counted in the new year)
+        /// the website's `currentSeason`: January–March is Winter, and so on
         static func of(_ d: Date) -> Ref {
             let c = Clock.calendar
             let m = c.component(.month, from: d), y = c.component(.year, from: d)
-            switch m {
-            case 12: return Ref(name: "Winter", year: y + 1)
-            case 1, 2: return Ref(name: "Winter", year: y)
-            case 3...5: return Ref(name: "Spring", year: y)
-            case 6...8: return Ref(name: "Summer", year: y)
-            default: return Ref(name: "Fall", year: y)
-            }
+            return Ref(season: CatalogSeason.allCases[(m - 1) / 3], year: y)
         }
 
         static var current: Ref { of(Clock.now) }
     }
 
-    /// the format switch: All, TV, ONA, Movies, Other
+    /// the format switch: All, then the website's groups (TV, ONA, Film, OVA & Special)
     enum Kind: String, CaseIterable, Identifiable, Sendable {
-        case all, tv, ona, movies, other
+        case all, tv, ona, film, other
 
         var id: String { rawValue }
 
@@ -400,16 +752,19 @@ struct SeasonChart: Codable, Equatable, Sendable {
             case .all: return "All"
             case .tv: return "TV"
             case .ona: return "ONA"
-            case .movies: return "Movies"
-            case .other: return "Other"
+            case .film: return "Film"
+            case .other: return "OVA & Special"
             }
         }
+
+        /// the switch's shorter word
+        var short: String { self == .other ? "Other" : label }
 
         static func of(_ t: Title) -> Kind {
             switch t.format {
             case "TV": return .tv
             case "ONA": return .ona
-            case "Movie": return .movies
+            case "Film": return .film
             default: return .other
             }
         }
@@ -438,7 +793,10 @@ struct SeasonChart: Codable, Equatable, Sendable {
         var label: String { kind.label }
     }
 
-    func count(_ k: Kind) -> Int { k == .all ? titles.count : titles.filter { Kind.of($0) == k }.count }
+    /// the rows as the app's titles
+    var rows: [Title] { titles.map(\.app) }
+
+    func count(_ k: Kind) -> Int { k == .all ? titles.count : rows.filter { Kind.of($0) == k }.count }
 
     /// the switch's segments with counts ("All 50", "TV 31"); empty kinds are left out
     var kinds: [(Kind, Int)] {
@@ -448,9 +806,9 @@ struct SeasonChart: Codable, Equatable, Sendable {
     /// "Anime season · 50 anime"
     var subtitle: String { "Anime season · \(titles.count) anime" }
 
-    /// the rows under their format, in the switch's order; `notListed` keeps only what isn't on your list
+    /// the rows under their format, in the switch's order; `hide` leaves out what's on your list
     func groups(_ k: Kind, order: Order = .popularity, hide: Set<String> = [], now: Date = Clock.now) -> [Group] {
-        let kept = titles.filter { !hide.contains($0.id) }
+        let kept = rows.filter { !hide.contains($0.id) }
         let kinds = k == .all ? Kind.allCases.filter { $0 != .all } : [k]
         return kinds.compactMap { kind in
             let rows = Self.ordered(kept.filter { Kind.of($0) == kind }, order, now: now)
@@ -478,7 +836,7 @@ struct SeasonChart: Codable, Equatable, Sendable {
     static func facts(_ t: Title) -> String {
         var parts: [String] = []
         if let s = t.studio { parts.append(s) }
-        if t.format == "Movie" {
+        if t.format == "Film" {
             parts.append(t.runtime ?? "Film")
         } else {
             parts.append(t.total.map { t.media.units($0) } ?? "? episodes")
@@ -497,7 +855,7 @@ struct SeasonChart: Codable, Equatable, Sendable {
             return ("calendar.badge.clock", Format.airing(n, media: t.media, now: now))
         }
         if t.state == "Finished" {
-            if t.format == "Movie" { return ("checkmark", "Out now") }
+            if t.format == "Film" { return ("checkmark", "Out now") }
             if let total = t.total { return ("checkmark", "All \(total) out") }
             return ("checkmark", "Finished")
         }
@@ -505,132 +863,112 @@ struct SeasonChart: Codable, Equatable, Sendable {
     }
 }
 
-extension APIClient {
-    func browsePage(_ media: MediaKind) async throws -> BrowsePage {
-        try await get("browse", query: [URLQueryItem(name: "media", value: media.rawValue)])
+// MARK: search (§8.2)
+
+/// `GET search?q=`: `{ groups }`, each group's best few hits (titles, characters, people)
+struct SearchAnswer: Codable, Equatable, Sendable {
+    var groups: [SearchGroup]
+}
+
+/// `SearchGroup`: "Anime", "Manga", "TV", "Movies", "Books", "Characters", "People"
+struct SearchGroup: Codable, Hashable, Sendable {
+    var title: String
+    var hits: [SearchHit]
+}
+
+/// `SearchHit`
+struct SearchHit: Codable, Hashable, Sendable {
+    var ref: CatalogRef
+    var name: String
+    var image: URL?
+    /// "Anime · TV · 2013", "Voice actor", "Character · Attack on Titan"
+    var note: String
+
+    /// a title hit as the app's title (only what the hit carries)
+    var title: Title? {
+        guard let r = ref.titleRef else { return nil }
+        return Title(id: r.titleId, media: r.kind, name: name, cover: image)
     }
 
-    /// the catalogue with filters (the media first: the demo picks its answer by it)
-    func browseTitles(_ media: MediaKind, _ f: BrowseFilters) async throws -> [Title] {
-        f.apply(try await get("browse/titles", query: f.query(media)))
+    var route: Route? { ref.route }
+}
+
+/// One search as the screen shows it (15): chips per group, the top hit, then the groups.
+struct SearchResults: Equatable, Sendable {
+    var query: String
+    var groups: [SearchGroup]
+
+    init(query: String, groups: [SearchGroup]) {
+        self.query = query
+        self.groups = groups.filter { !$0.hits.isEmpty }
     }
 
-    func seasonChart(_ s: SeasonChart.Ref) async throws -> SeasonChart {
-        try await get("season-chart", query: [URLQueryItem(name: "season", value: s.slug)])
+    /// the first title of the first group
+    var top: SearchHit? { groups.first?.hits.first { $0.title != nil } }
+
+    var isEmpty: Bool { groups.isEmpty }
+
+    /// the chips: All, then each group with how many hits it has
+    var scopes: [(String, Int?)] {
+        [("All", nil)] + groups.map { ($0.title, $0.hits.count) }
     }
 
-    func search(_ q: String) async throws -> SearchResults {
-        try await get("search", query: [URLQueryItem(name: "q", value: q)])
+    /// the groups a chip shows: All has every group (without the top hit), a group's chip that group
+    func shown(_ scope: String) -> [SearchGroup] {
+        if scope == "All" {
+            return groups.compactMap { g in
+                var g = g
+                g.hits = g.hits.filter { $0 != top }
+                return g.hits.isEmpty ? nil : g
+            }
+        }
+        return groups.filter { $0.title == scope }
+    }
+
+    /// "Top hit · Anime · TV · 2013": the hit's own note after it
+    static func topLine(_ h: SearchHit) -> String {
+        h.note.isEmpty ? "Top hit" : "Top hit · " + h.note
     }
 }
 
-// MARK: search
+// MARK: calls
 
-/// GET search?q=chain: one search across every media and people (15).
-struct SearchResults: Codable, Equatable, Sendable {
-    var query: String
-    var top: Title?
-    var groups: [Group]
-
-    enum Scope: String, Codable, CaseIterable, Identifiable, Sendable {
-        case all, anime, manga, tv, movie, book, people
-
-        var id: String { rawValue }
-
-        var label: String {
-            switch self {
-            case .all: return "All"
-            case .anime: return "Anime"
-            case .manga: return "Manga"
-            case .tv: return "TV"
-            case .movie: return "Movies"
-            case .book: return "Books"
-            case .people: return "People"
-            }
-        }
+extension APIClient {
+    /// GET browse/:media/shelves
+    func browseShelves(_ media: MediaKind) async throws -> BrowseShelves {
+        try await get("browse/\(media.api.rawValue)/shelves")
     }
 
-    struct Group: Codable, Equatable, Sendable, Identifiable {
-        var scope: Scope
-        /// how many the server found (it may send fewer)
-        var total: Int
-        var titles: [Title]
-        var people: [Person]
-
-        var id: Scope { scope }
-        var isEmpty: Bool { titles.isEmpty && people.isEmpty }
+    /// the shelves as the Browse page shows them
+    func browsePage(_ media: MediaKind) async throws -> BrowsePage {
+        BrowsePage(media, try await browseShelves(media))
     }
 
-    /// someone in the results: staff, an actor, an author
-    struct Person: Codable, Equatable, Sendable, Identifiable {
-        var id: String
-        var name: String
-        var image: URL?
-        /// "Mangaka · Chainsaw Man, Fire Punch"
-        var caption: String
-        /// the page it opens ("person/person:119917")
-        var link: String
-
-        var route: Route? { Route(path: link) }
+    /// GET browse/:media/filters
+    func browseFacets(_ media: MediaKind) async throws -> Facets {
+        try await get("browse/\(media.api.rawValue)/filters")
     }
 
-    var isEmpty: Bool { top == nil && groups.allSatisfy(\.isEmpty) }
-
-    /// the scope chips: All, then each group with its count
-    var scopes: [(Scope, Int?)] {
-        [(.all, nil)] + groups.filter { !$0.isEmpty }.map { ($0.scope, $0.total) }
+    /// GET browse/:media/results?sort=…&genres=…&page=…
+    func browseResults(_ media: MediaKind, _ f: BrowseFilters, page: Int = 1) async throws -> BrowseResults {
+        try await get("browse/\(media.api.rawValue)/results", query: f.query(page: page))
     }
 
-    /// the groups a scope shows: All has every group (without the top hit, a few rows each), a scope its own, whole
-    func shown(_ scope: Scope, perGroup: Int = 3) -> [Group] {
-        if scope == .all {
-            return groups.compactMap { g in
-                var g = g
-                g.titles = Array(g.titles.filter { $0.id != top?.id }.prefix(perGroup))
-                g.people = Array(g.people.prefix(perGroup))
-                return g.isEmpty ? nil : g
-            }
-        }
-        return groups.filter { $0.scope == scope && !$0.isEmpty }
+    /// one page of results, filtered as the website does
+    func browseTitles(_ media: MediaKind, _ f: BrowseFilters, page: Int = 1) async throws -> BrowseResultsPage {
+        BrowseResultsPage(media, try await browseResults(media, f, page: page), f)
     }
 
-    /// "Top hit · Anime · 2022"
-    static func topLine(_ t: Title) -> String {
-        var parts = ["Top hit", kindWord(t)]
-        if let y = t.year { parts.append(String(y)) }
-        return parts.joined(separator: " · ")
+    /// GET season-chart?season=fall&year=2026 (the season first: the demo picks its answer by it)
+    func seasonChart(_ s: SeasonChart.Ref) async throws -> SeasonChart {
+        try await get("season-chart", query: [URLQueryItem(name: "season", value: s.season.rawValue),
+                                              URLQueryItem(name: "year", value: String(s.year))])
     }
 
-    /// "MAPPA · 12 episodes" under the top hit (its score follows)
-    static func topFacts(_ t: Title) -> String {
-        var parts: [String] = []
-        if let s = t.studio { parts.append(s) }
-        if let n = t.total, t.media.unit != nil, t.format != "Movie" { parts.append(t.media.units(n)) }
-        else if let r = t.runtime, t.media == .movie || t.format == "Movie" { parts.append(r) }
-        return parts.joined(separator: " · ")
-    }
-
-    /// a result row's caption: "Film · 2025 · MAPPA", "Manga · 2018 · 232 chapters", "Anime · Not yet aired · MAPPA"
-    static func caption(_ t: Title) -> String {
-        var parts = [kindWord(t)]
-        if t.state == "Not yet released" {
-            parts.append(t.media == .anime || t.media == .tv ? "Not yet aired" : "Not yet released")
-        } else if let y = t.year {
-            parts.append(String(y))
-        }
-        switch t.media {
-        case .manga: if let n = t.total { parts.append(t.media.units(n)) }
-        case .movie: if let r = t.runtime { parts.append(r) }
-        case .tv: if let n = t.total { parts.append(t.media.units(n)) } else if let s = t.studio { parts.append(s) }
-        case .anime, .book: if let s = t.studio { parts.append(s) }
-        }
-        return parts.joined(separator: " · ")
-    }
-
-    /// what a title is, in a word: anime films are "Film" (they stay under Anime)
-    static func kindWord(_ t: Title) -> String {
-        if t.media == .anime && t.format == "Movie" { return "Film" }
-        if t.media == .manga, let f = t.format, f != "Manga" { return f }
-        return t.media.singular
+    /// GET search?q= (1–80 characters)
+    func search(_ q: String) async throws -> SearchResults {
+        let q = String(q.trimmingCharacters(in: .whitespacesAndNewlines).prefix(80))
+        let answer: SearchAnswer = try await get("search", query: [URLQueryItem(name: "q", value: q)])
+        return SearchResults(query: q, groups: answer.groups)
     }
 }

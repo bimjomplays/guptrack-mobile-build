@@ -1,0 +1,60 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Works",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Novel · 2022",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/12468631-M.jpg",
+       "format": "Novel",
+       "ref": {
+        "id": "OL26443093W",
+        "kind": "book"
+       },
+       "score": 81,
+       "title": "Babel",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Most read"
+   },
+   {
+    "items": [
+     {
+      "role": "Novel · 2022",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/12468631-M.jpg",
+       "format": "Novel",
+       "ref": {
+        "id": "OL26443093W",
+        "kind": "book"
+       },
+       "score": 81,
+       "title": "Babel",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Books"
+   }
+  ],
+  "image": null,
+  "known": "Author",
+  "name": "R. F. Kuang",
+  "native": null,
+  "ref": {
+   "id": "OL7486601A",
+   "to": "author"
+  }
+ }
+}

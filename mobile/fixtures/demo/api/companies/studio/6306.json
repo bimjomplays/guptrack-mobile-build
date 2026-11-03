@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185407-7uzY4fA3hokP.jpg",
+      "format": "ONA",
+      "ref": {
+       "id": "185407",
+       "kind": "anime"
+      },
+      "score": 86,
+      "title": "Takopi's Original Sin",
+      "year": 2025
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "ENISHIYA",
+  "ref": {
+   "id": "6306",
+   "to": "studio"
+  }
+ }
+}

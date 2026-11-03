@@ -1,0 +1,101 @@
+{
+ "title": {
+  "alt": [
+   "Kyouran Reijou Nia Liston",
+   "凶乱令嬢ニア・リストン"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206949-c5hfhixdgvy5.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 25,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "25"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Airing"
+   },
+   {
+    "label": "Next episode",
+    "value": "Ep 6, Nov 10, 2026"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 6, 2026"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2026"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "7494",
+       "to": "studio"
+      },
+      "text": "KONAMI animation"
+     }
+    ],
+    "value": "KONAMI animation"
+   },
+   {
+    "label": "Members",
+    "value": "28,185"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Fantasy"
+  ],
+  "headline": [
+   "TV",
+   "Fall 2026",
+   "25 episodes"
+  ],
+  "idMal": 63382,
+  "makers": [
+   {
+    "ref": {
+     "id": "7494",
+     "to": "studio"
+    },
+    "text": "KONAMI animation"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "206949",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 75,
+  "scoreNote": "28,185 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Airing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Nia Liston: The Merciless Maiden",
+  "trailer": null,
+  "volumes": null,
+  "year": 2026
+ }
+}

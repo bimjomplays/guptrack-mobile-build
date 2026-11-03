@@ -1,14 +1,15 @@
 import SwiftUI
 
-/// Filters (13): sort, genres, years, season, format, status (score for TV, films and books). Edits a draft; ✓ or
-/// "Show N results" keeps it, Reset clears it. The count is the demo catalogue with the draft applied.
+/// Filters (13): sort, genres (and tags where the media has them), years, season, format, status and score. Edits a
+/// draft; ✓ or "Show N results" keeps it, Reset clears it. The count is the server's answer for the draft.
 struct BrowseFiltersSheet: View {
     let media: MediaKind
 
     @Environment(AppModel.self) private var model
     @AppStorage(BrowseFilterStore.key) private var saved: String = BrowseFilterStore.initial
     @State private var draft: BrowseFilters
-    @State private var pool: [Title]?
+    @State private var facets: Facets?
+    @State private var preview: BrowseResultsPage?
 
     init(media: MediaKind) {
         self.media = media
@@ -16,24 +17,25 @@ struct BrowseFiltersSheet: View {
         _draft = State(initialValue: BrowseFilterStore.get(s, media))
     }
 
-    private var count: Int? { pool.map { draft.apply($0).count } }
-
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 28) {
                     sortSection
-                    picks("Genres", BrowseFilters.genreChoices(media), draft.genres) { draft.toggleGenre($0) }
+                    picks("Genres", facets?.genres ?? draft.genres, draft.genres) { draft.toggleGenre($0) }
+                    if let tags = facets?.tags, !tags.isEmpty {
+                        picks("Tags", Array(tags.prefix(30)), draft.tags) { draft.toggleTag($0) }
+                    }
                     yearSection
                     if BrowseFilters.hasSeason(media) { seasonSection }
-                    if !BrowseFilters.formatChoices(media).isEmpty {
-                        picks("Format", BrowseFilters.formatChoices(media), draft.formats) { draft.toggleFormat($0) }
+                    single("Format", Catalog.formats(media), $draft.format) { $0 }
+                    if Catalog.statuses(media).count > 1 {
+                        single("Status", Catalog.statuses(media), $draft.status) { s in
+                            Catalog.statusLabel(s, media)
+                        }
                     }
-                    if !BrowseFilters.statusChoices(media).isEmpty {
-                        picks("Status", BrowseFilters.statusChoices(media), draft.statuses) { draft.toggleStatus($0) }
-                    }
-                    if BrowseFilters.hasScore(media) { scoreSection }
-                    Button(count.map { "Show \($0) results" } ?? "Show results") { keep() }
+                    scoreSection
+                    Button(draft.isEmpty ? "Show results" : (preview?.showText ?? "Show results")) { keep() }
                         .buttonStyle(.capsule(.tint, .large, full: true))
                         .numbers()
                         .padding(.top, 4)
@@ -58,7 +60,13 @@ struct BrowseFiltersSheet: View {
         }
         .presentationDetents([.large])
         .task {
-            pool = try? await model.api.browseTitles(media, BrowseFilters())
+            facets = try? await model.api.browseFacets(media)
+        }
+        .task(id: draft.encoded) {
+            // a short pause so each tap doesn't ask the server
+            try? await Task.sleep(for: .milliseconds(200))
+            guard !Task.isCancelled else { return }
+            preview = try? await model.api.browseTitles(media, draft)
         }
     }
 
@@ -83,7 +91,7 @@ struct BrowseFiltersSheet: View {
     private var sortSection: some View {
         VStack(alignment: .leading, spacing: 0) {
             header("Sort by")
-            Picker("Sort by", selection: $draft.sort) {
+            Picker("Sort by", selection: Binding(get: { draft.sort ?? .popular }, set: { draft.sort = $0 })) {
                 ForEach(BrowseFilters.Sort.allCases) { s in Text(s.label).tag(s) }
             }
             .pickerStyle(.segmented)
@@ -97,6 +105,21 @@ struct BrowseFiltersSheet: View {
             BrowseFlowLayout(spacing: 8) {
                 ForEach(choices, id: \.self) { c in
                     BrowsePick(text: c, on: picked.contains(c)) { toggle(c) }
+                }
+            }
+        }
+    }
+
+    /// one choice or none (tap the picked one again to clear it)
+    private func single<V: Hashable>(_ title: String, _ choices: [V], _ picked: Binding<V?>,
+                                     label: @escaping (V) -> String) -> some View {
+        VStack(alignment: .leading, spacing: 0) {
+            header(title, picked.wrappedValue.map(label) ?? "Any")
+            BrowseFlowLayout(spacing: 8) {
+                ForEach(choices, id: \.self) { c in
+                    BrowsePick(text: label(c), on: picked.wrappedValue == c) {
+                        picked.wrappedValue = picked.wrappedValue == c ? nil : c
+                    }
                 }
             }
         }
@@ -121,10 +144,10 @@ struct BrowseFiltersSheet: View {
     private var seasonSection: some View {
         VStack(alignment: .leading, spacing: 0) {
             header("Season")
-            Picker("Season", selection: Binding(get: { draft.season ?? "" },
-                                                set: { draft.season = $0.isEmpty ? nil : $0 })) {
+            Picker("Season", selection: Binding(get: { draft.season?.rawValue ?? "" },
+                                                set: { draft.season = CatalogSeason(rawValue: $0) })) {
                 Text("Any").tag("")
-                ForEach(BrowseFilters.seasons, id: \.self) { s in Text(s).tag(s) }
+                ForEach(CatalogSeason.allCases, id: \.self) { s in Text(s.label).tag(s.rawValue) }
             }
             .pickerStyle(.segmented)
         }
@@ -133,10 +156,10 @@ struct BrowseFiltersSheet: View {
     private var scoreSection: some View {
         VStack(alignment: .leading, spacing: 0) {
             header("Score")
-            Picker("Score", selection: Binding(get: { draft.minScore ?? 0 },
-                                               set: { draft.minScore = $0 == 0 ? nil : $0 })) {
+            Picker("Score", selection: Binding(get: { draft.score ?? 0 },
+                                               set: { draft.score = $0 == 0 ? nil : $0 })) {
                 Text("Any").tag(0.0)
-                ForEach(BrowseFilters.scoreSteps, id: \.self) { s in Text("\(Int(s))+").tag(s) }
+                ForEach(BrowseFilters.scoreSteps, id: \.self) { s in Text("\(Format.trim(s))+").tag(s) }
             }
             .pickerStyle(.segmented)
         }

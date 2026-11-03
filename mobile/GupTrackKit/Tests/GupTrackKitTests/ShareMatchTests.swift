@@ -8,7 +8,7 @@ import XCTest
 
 /// Share to GupTrack (66): a shared link or text -> the title.
 final class ShareMatchTests: XCTestCase {
-    private func library() throws -> [LibraryEntry] { try Demo.load([LibraryEntry].self, "api/library.json") }
+    private func library() throws -> [LibraryEntry] { Demo.library() }
     private func catalog() throws -> ExtensionCatalog { try Demo.load(ExtensionCatalog.self, "api/extensions.json") }
     private func resolve(_ s: String) throws -> ShareMatch.Found? {
         ShareMatch.resolve(s, library: try library(), catalog: try catalog())
@@ -48,7 +48,10 @@ final class ShareMatchTests: XCTestCase {
         XCTAssertEqual(f.link, "themoviedb.org/tv/95396-severance")
         XCTAssertEqual(f.entry?.status, .current)
         XCTAssertEqual(ShareMatch.addLabel(f), "Save")
-        XCTAssertEqual(ShareMatch.caption(f.title, seasons: [9, 10]), "TV · 2022 · 2 seasons")
+        XCTAssertEqual(ShareMatch.caption(f.title, seasons: [9, 10]), "TV · 2 seasons", "the library feed has no year")
+        var dated = f.title
+        dated.year = 2022
+        XCTAssertEqual(ShareMatch.caption(dated, seasons: [9, 10]), "TV · 2022 · 2 seasons")
     }
 
     func testAMALLinkGoesThroughTheCatalogue() throws {

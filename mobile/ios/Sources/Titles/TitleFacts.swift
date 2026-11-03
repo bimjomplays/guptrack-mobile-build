@@ -3,7 +3,7 @@ import SwiftUI
 /// Seasons (21): each season's poster, year and size, with a check when watched or how far you are.
 struct TitleSeasons: View {
     let page: TitlePage
-    let seasons: [TVSeason]
+    let seasons: [SeasonSummary]
 
     @Environment(AppModel.self) private var model
 
@@ -17,7 +17,7 @@ struct TitleSeasons: View {
         }
     }
 
-    private func row(_ s: TVSeason) -> some View {
+    private func row(_ s: SeasonSummary) -> some View {
         let progress = model.entry(page.title.id)?.progress
         let watched = progress.map { TVProgress.watched(in: s, progress: $0, seasons) } ?? 0
         return HStack(spacing: 12) {
@@ -46,34 +46,23 @@ struct TitleSeasons: View {
     }
 }
 
-/// The score average (17): the number, how many have it, and how the scores spread.
+/// The score average (17): the number and how many have it ("48,869 members"). The answer has no spread of scores,
+/// so there are no bars.
 struct TitleScoreAverage: View {
     let page: TitlePage
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             TitleHeading("Score")
-            HStack(alignment: .bottom, spacing: 18) {
-                VStack(alignment: .leading, spacing: 0) {
-                    Text(page.averageText ?? "–").font(.system(size: 40, weight: .bold)).foregroundStyle(Theme.ink).numbers()
-                    Text(page.title.media == .book ? "out of 5" : "out of 10")
-                        .font(.system(size: 12)).foregroundStyle(Theme.inkMuted)
-                }
-                HStack(alignment: .bottom, spacing: 4) {
-                    ForEach(page.scoreHeights, id: \.score) { bar in
-                        RoundedRectangle(cornerRadius: 3, style: .continuous)
-                            .fill(bar.score >= 70 ? Theme.brand : Color.gray.opacity(0.45))
-                            .frame(height: max(3, 58 * bar.height))
-                            .frame(maxWidth: .infinity)
-                    }
-                }
-                .frame(height: 58, alignment: .bottom)
-                .accessibilityHidden(true)
+            HStack(alignment: .firstTextBaseline, spacing: 10) {
+                Text(page.averageText ?? "–").font(.system(size: 40, weight: .bold)).foregroundStyle(Theme.ink).numbers()
+                Text("out of 10").font(.system(size: 13)).foregroundStyle(Theme.inkMuted)
+                Spacer(minLength: 0)
             }
             .padding(.horizontal, Theme.pad)
-            if let members = page.membersLine {
-                Text(members).font(.system(size: 13)).foregroundStyle(Theme.inkMuted).numbers()
-                    .padding(.horizontal, Theme.pad).padding(.top, 8)
+            if let note = page.scoreNote {
+                Text(note).font(.system(size: 13)).foregroundStyle(Theme.inkMuted).numbers()
+                    .padding(.horizontal, Theme.pad).padding(.top, 4)
             }
         }
     }
@@ -100,13 +89,19 @@ struct TitleDetails: View {
         }
     }
 
-    private func row(_ d: TitlePage.Detail, last: Bool) -> some View {
-        HStack(alignment: .firstTextBaseline, spacing: 16) {
+    private func row(_ d: Fact, last: Bool) -> some View {
+        let links = d.routes
+        return HStack(alignment: .firstTextBaseline, spacing: 16) {
             Text(d.label).foregroundStyle(Theme.inkMuted).frame(width: 118, alignment: .leading)
-            if let route = d.ref.flatMap(TitlePage.route(for:)) {
-                Button(d.value) { model.open(route) }
-                    .buttonStyle(.plain).foregroundStyle(Theme.brandSoft)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+            if !links.isEmpty {
+                // each linked name opens its page (studios, creators, authors)
+                TitleFlow(spacing: 6) {
+                    ForEach(Array(links.enumerated()), id: \.offset) { i, l in
+                        Button(l.text + (i < links.count - 1 ? "," : "")) { model.open(l.route) }
+                            .buttonStyle(.plain).foregroundStyle(Theme.brandSoft)
+                    }
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
             } else {
                 Text(d.value).foregroundStyle(Theme.ink).frame(maxWidth: .infinity, alignment: .leading)
             }
@@ -137,22 +132,28 @@ struct TitleReviewsRow: View {
 
     var body: some View {
         Button { model.open(.reviews(page.title.id)) } label: {
-            PlainRow("Reviews", value: page.reviews.map { Format.grouped($0) }, symbol: "text.bubble",
+            PlainRow("Reviews", value: nil, symbol: "text.bubble",
                      symbolColor: Theme.brand)
         }
         .buttonStyle(.plain)
     }
 }
 
-/// More like this: recommendations as poster cards with their average.
+/// More like this (and the answer's other shelves, "More by Andy Weir"): poster cards with their average.
 struct TitleMoreLikeThis: View {
+    let title: String
     let titles: [Title]
+    var route: Route?
 
     @Environment(AppModel.self) private var model
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            TitleHeading("More like this")
+            if let route {
+                Button { model.open(route) } label: { TitleHeading(title) }.buttonStyle(.plain)
+            } else {
+                TitleHeading(title)
+            }
             Shelf(spacing: 12) {
                 ForEach(titles) { t in
                     Button { model.open(.title(t.id)) } label: {

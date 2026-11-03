@@ -18,7 +18,7 @@ final class ProfileTests: XCTestCase {
         Clock.fixedZone = nil
     }
 
-    private func library() throws -> [LibraryEntry] { try Demo.load([LibraryEntry].self, "api/library.json") }
+    private func library() throws -> [LibraryEntry] { Demo.library() }
 
     private func entry(_ id: String, _ status: ListStatus, progress: Int = 0, total: Int? = 12, score: Int? = nil,
                        repeats: Int = 0, media: MediaKind = .anime, format: String? = "TV", runtime: String? = nil,

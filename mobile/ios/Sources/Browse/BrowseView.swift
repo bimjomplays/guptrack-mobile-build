@@ -81,7 +81,7 @@ struct BrowseView: View {
 
     private func shelf(_ s: BrowsePage.Shelf, media m: MediaKind) -> some View {
         VStack(alignment: .leading, spacing: 0) {
-            SectionHeader(s.title, sub: s.sub, action: s.opens ? { open(s) } : nil)
+            SectionHeader(s.title, sub: s.note, action: { open(s) })
             Shelf {
                 ForEach(s.titles) { t in
                     BrowseCard(title: t, withYear: m == .tv || m == .movie)
@@ -90,9 +90,10 @@ struct BrowseView: View {
         }
     }
 
+    /// See all: the season chart, or the shelf's own filter as a list
     private func open(_ s: BrowsePage.Shelf) {
-        if let r = s.route {
-            model.open(r)
+        if s.chart {
+            model.open(.seasonChart)
         } else {
             expanded = s
         }
@@ -101,8 +102,7 @@ struct BrowseView: View {
     // MARK: the catalogue as a list
 
     private var results: some View {
-        var f = filters
-        if let s = expanded?.sort { f.sort = s }
+        let f = expanded?.filter ?? filters
         let key = "\(media.rawValue)|\(f.encoded)"
         return VStack(alignment: .leading, spacing: 0) {
             HStack(alignment: .lastTextBaseline) {
@@ -118,20 +118,58 @@ struct BrowseView: View {
             .padding(.horizontal, Theme.pad)
             .padding(.top, 24)
             .padding(.bottom, 4)
-            PageLoader(id: key, load: { [media, f] api in try await api.browseTitles(media, f) }) { titles in
-                if titles.isEmpty {
-                    ContentUnavailableView("Nothing matches", systemImage: "line.3.horizontal.decrease",
-                                           description: Text("Try fewer filters."))
-                        .padding(.top, 40)
-                } else {
-                    LazyVStack(spacing: 0) {
-                        ForEach(Array(titles.prefix(100).enumerated()), id: \.element.id) { i, t in
-                            BrowseTitleRow(title: t, separator: i < min(titles.count, 100) - 1)
-                        }
-                    }
+            PageLoader(id: key, load: { [media, f] api in try await api.browseTitles(media, f) }) { first in
+                BrowseResultsList(media: media, filters: f, first: first).id(key)
+            }
+        }
+    }
+}
+
+/// The results, a page at a time: "Show more" asks for the next page while the server has one.
+struct BrowseResultsList: View {
+    let media: MediaKind
+    let filters: BrowseFilters
+    let first: BrowseResultsPage
+
+    @Environment(AppModel.self) private var model
+    @State private var extra: [Title] = []
+    @State private var next: Int?
+    @State private var started = false
+    @State private var loading = false
+
+    private var titles: [Title] {
+        var seen = Set<String>()
+        return (first.titles + extra).filter { seen.insert($0.id).inserted }
+    }
+
+    var body: some View {
+        let ts = titles
+        if ts.isEmpty {
+            ContentUnavailableView("Nothing matches", systemImage: "line.3.horizontal.decrease",
+                                   description: Text("Try fewer filters."))
+                .padding(.top, 40)
+        } else {
+            VStack(spacing: 0) {
+                ForEach(Array(ts.enumerated()), id: \.element.id) { i, t in
+                    BrowseTitleRow(title: t, separator: i < ts.count - 1)
+                }
+                if let page = started ? next : first.next {
+                    Button(loading ? "Loading…" : "Show more") { Task { await more(page) } }
+                        .buttonStyle(.capsule(.tone, .regular))
+                        .disabled(loading)
+                        .padding(.top, 18)
                 }
             }
         }
+    }
+
+    private func more(_ page: Int) async {
+        loading = true
+        defer { loading = false }
+        guard let p = try? await model.api.browseTitles(media, filters, page: page) else { return }
+        extra += p.titles
+        next = p.next
+        started = true
     }
 }
 
@@ -154,6 +192,10 @@ struct BrowseChips: View {
     let media: MediaKind
     @Binding var saved: String
 
+    @Environment(AppModel.self) private var model
+    /// the genres the server offers for this media
+    @State private var facets: Facets?
+
     private var f: BrowseFilters { BrowseFilterStore.get(saved, media) }
 
     private func edit(_ change: (inout BrowseFilters) -> Void) {
@@ -166,31 +208,53 @@ struct BrowseChips: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 8) {
                 sortChip
-                multi("Genres", BrowseFilters.genreChoices(media), f.genres) { x, g in x.toggleGenre(g) }
+                multi("Genres", facets?.genres ?? f.genres, f.genres) { x, g in x.toggleGenre(g) }
                 yearChip
                 if BrowseFilters.hasSeason(media) { seasonChip }
-                if !BrowseFilters.formatChoices(media).isEmpty && !BrowseFilters.hasScore(media) {
-                    multi("Format", BrowseFilters.formatChoices(media), f.formats) { x, v in x.toggleFormat(v) }
+                single("Format", Catalog.formats(media), f.format, label: { $0 }) { x, v in x.format = v }
+                if Catalog.statuses(media).count > 1 {
+                    single("Status", Catalog.statuses(media), f.status,
+                           label: { s in Catalog.statusLabel(s, media) }) { x, v in x.status = v }
                 }
-                if !BrowseFilters.statusChoices(media).isEmpty {
-                    multi("Status", BrowseFilters.statusChoices(media), f.statuses) { x, v in x.toggleStatus(v) }
-                }
-                if BrowseFilters.hasScore(media) { scoreChip }
+                scoreChip
             }
             .padding(.horizontal, Theme.pad)
         }
         .scrollClipDisabled()
+        .task(id: media) {
+            facets = nil
+            facets = try? await model.api.browseFacets(media)
+        }
     }
+
+    private var sortLabel: String { (f.sort ?? .popular).label }
 
     private var sortChip: some View {
         Menu {
-            Picker("Sort by", selection: Binding(get: { f.sort }, set: { s in edit { $0.sort = s } })) {
+            Picker("Sort by", selection: Binding(get: { f.sort ?? .popular }, set: { s in edit { $0.sort = s } })) {
                 ForEach(BrowseFilters.Sort.allCases) { s in Text(s.label).tag(s) }
             }
         } label: {
-            ChipLabel(text: f.sort.label, on: true, symbol: "arrow.up.arrow.down")
+            ChipLabel(text: sortLabel, on: true, symbol: "arrow.up.arrow.down")
         }
-        .accessibilityLabel("Sort by \(f.sort.label)")
+        .accessibilityLabel("Sort by \(sortLabel)")
+    }
+
+    private func single<V: Hashable>(_ name: String, _ choices: [V], _ picked: V?,
+                                     label: @escaping (V) -> String,
+                                     set: @escaping (inout BrowseFilters, V?) -> Void) -> some View {
+        Menu {
+            Button("Any") { edit { set(&$0, nil) } }
+            ForEach(choices, id: \.self) { c in
+                Button {
+                    edit { set(&$0, picked == c ? nil : c) }
+                } label: {
+                    if picked == c { Label(label(c), systemImage: "checkmark") } else { Text(label(c)) }
+                }
+            }
+        } label: {
+            ChipLabel(text: picked.map(label) ?? name, on: picked != nil, menu: true)
+        }
     }
 
     private func multi(_ name: String, _ choices: [String], _ picked: [String],
@@ -212,13 +276,13 @@ struct BrowseChips: View {
     private var yearChip: some View {
         let last = BrowseFilters.lastYear
         return Menu {
-            Button("Any year") { edit { $0.yearFrom = nil; $0.yearTo = nil } }
-            Button("This year") { edit { $0.yearFrom = last; $0.yearTo = nil } }
-            Button("Last 5 years") { edit { $0.yearFrom = last - 4; $0.yearTo = nil } }
-            Button("2010s") { edit { $0.yearFrom = 2010; $0.yearTo = 2019 } }
-            Button("Before 2010") { edit { $0.yearFrom = nil; $0.yearTo = 2009 } }
+            Button("Any year") { edit { $0.from = nil; $0.to = nil } }
+            Button("This year") { edit { $0.from = last; $0.to = nil } }
+            Button("Last 5 years") { edit { $0.from = last - 4; $0.to = nil } }
+            Button("2010s") { edit { $0.from = 2010; $0.to = 2019 } }
+            Button("Before 2010") { edit { $0.from = nil; $0.to = 2009 } }
         } label: {
-            let on = f.yearFrom != nil || f.yearTo != nil
+            let on = f.from != nil || f.to != nil
             ChipLabel(text: on ? f.yearLabel : "Year", on: on, menu: true)
         }
     }
@@ -226,22 +290,22 @@ struct BrowseChips: View {
     private var seasonChip: some View {
         Menu {
             Button("Any season") { edit { $0.season = nil } }
-            ForEach(BrowseFilters.seasons, id: \.self) { s in
-                Button(s) { edit { $0.season = s } }
+            ForEach(CatalogSeason.allCases, id: \.self) { s in
+                Button(s.label) { edit { $0.season = s } }
             }
         } label: {
-            ChipLabel(text: f.season ?? "Season", on: f.season != nil, menu: true)
+            ChipLabel(text: f.season?.label ?? "Season", on: f.season != nil, menu: true)
         }
     }
 
     private var scoreChip: some View {
         Menu {
-            Button("Any score") { edit { $0.minScore = nil } }
+            Button("Any score") { edit { $0.score = nil } }
             ForEach(BrowseFilters.scoreSteps, id: \.self) { s in
-                Button("\(Int(s))+") { edit { $0.minScore = s } }
+                Button("\(Format.trim(s))+") { edit { $0.score = s } }
             }
         } label: {
-            ChipLabel(text: f.minScore.map { "★ \(Int($0))+" } ?? "Score", on: f.minScore != nil, menu: true)
+            ChipLabel(text: f.score.map(BrowseFilters.scoreText) ?? "Score", on: f.score != nil, menu: true)
         }
     }
 }

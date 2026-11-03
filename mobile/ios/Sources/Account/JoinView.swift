@@ -49,7 +49,7 @@ struct JoinView: View {
         .pageBackground()
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
-        .task { await flow.loadHello() }
+        .task { await flow.loadServer() }
         .onAppear {
             // the demo fills in an invented new account
             if flow.model.isDemo && flow.username.isEmpty {

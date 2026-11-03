@@ -1,0 +1,97 @@
+{
+ "title": {
+  "alt": [
+   "サイバーパンク: エッジランナーズ2"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195539-lO5SUdp4SOrq.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 10,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "ONA"
+   },
+   {
+    "label": "Episodes",
+    "value": "10"
+   },
+   {
+    "label": "Episode length",
+    "value": "28 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 20, 2026"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2026"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "803",
+       "to": "studio"
+      },
+      "text": "TRIGGER"
+     }
+    ],
+    "value": "TRIGGER"
+   },
+   {
+    "label": "Members",
+    "value": "116,324"
+   }
+  ],
+  "format": "ONA",
+  "genres": [
+   "Action",
+   "Drama",
+   "Sci-Fi"
+  ],
+  "headline": [
+   "ONA",
+   "Fall 2026",
+   "10 episodes"
+  ],
+  "idMal": 61990,
+  "makers": [
+   {
+    "ref": {
+     "id": "803",
+     "to": "studio"
+    },
+    "text": "TRIGGER"
+   }
+  ],
+  "media": "anime",
+  "minutes": 28,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "195539",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 83,
+  "scoreNote": "116,324 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Cyberpunk: Edgerunners 2",
+  "trailer": null,
+  "volumes": null,
+  "year": 2026
+ }
+}

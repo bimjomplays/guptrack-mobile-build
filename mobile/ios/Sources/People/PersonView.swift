@@ -19,7 +19,7 @@ struct PersonView: View {
 private struct PersonPageBody: View {
     let page: PersonPage
 
-    @State private var group: MediaKind?
+    @State private var group: String?
 
     var body: some View {
         ScrollView {
@@ -37,7 +37,7 @@ private struct PersonPageBody: View {
 
     private var head: some View {
         PeopleHead(image: page.image, name: page.name, native: page.native, width: 100) {
-            PeopleHeadLine(text: page.headline)
+            if let h = page.headline { PeopleHeadLine(text: h) }
             if let born = page.bornLine { PeopleHeadLine(text: born, muted: true) }
         }
     }
@@ -64,17 +64,17 @@ private struct PersonPageBody: View {
 
     private var credits: some View {
         let groups = page.groups
-        let chosen = group ?? groups.first?.media
+        let chosen = group ?? groups.first
         let list = page.credits(groups.count > 1 ? chosen : nil)
         return VStack(alignment: .leading, spacing: 0) {
             HStack {
-                Text(page.creditsTitle).font(.system(size: 20, weight: .bold)).tracking(-0.5)
+                Text(groups.count == 1 ? groups[0] : "Credits").font(.system(size: 20, weight: .bold)).tracking(-0.5)
                     .foregroundStyle(Theme.ink)
                     .accessibilityAddTraits(.isHeader)
                 Spacer(minLength: 12)
                 if groups.count > 1 {
-                    Picker(page.creditsTitle, selection: Binding(get: { chosen ?? .movie }, set: { group = $0 })) {
-                        ForEach(groups) { g in Text(g.label).tag(g.media) }
+                    Picker("Credits", selection: Binding(get: { chosen ?? "" }, set: { group = $0 })) {
+                        ForEach(groups, id: \.self) { g in Text(g).tag(g) }
                     }
                     .pickerStyle(.segmented)
                     .frame(width: 170)
@@ -195,10 +195,6 @@ private struct CreditRow: View {
     }
 
     private func open() {
-        if let id = credit.character?.id {
-            model.open(.character(id))
-        } else {
-            model.open(.title(credit.title.id))
-        }
+        model.open(credit.route)
     }
 }

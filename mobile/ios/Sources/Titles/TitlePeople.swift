@@ -1,8 +1,8 @@
 import SwiftUI
 
-/// Characters & voices (17): the character's art, name, and the voice under it.
+/// Characters & voices (17): the character's art, name, and the voice under it (Japanese first).
 struct TitleCharacters: View {
-    let characters: [TitlePage.Character]
+    let characters: [CharacterCredit]
 
     @Environment(AppModel.self) private var model
 
@@ -11,21 +11,21 @@ struct TitleCharacters: View {
             TitleHeading("Characters & voices", count: characters.count)
             Shelf(spacing: 12) {
                 ForEach(characters, id: \.self) { c in
-                    Button { if let r = c.route { model.open(r) } } label: { card(c) }
+                    Button { if let r = c.character.route { model.open(r) } } label: { card(c) }
                         .buttonStyle(.plain)
                 }
             }
         }
     }
 
-    private func card(_ c: TitlePage.Character) -> some View {
+    private func card(_ c: CharacterCredit) -> some View {
         VStack(alignment: .leading, spacing: 0) {
-            Artwork(url: c.image).frame(width: 92, height: 120)
+            Artwork(url: c.character.image).frame(width: 92, height: 120)
                 .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-            Text(c.name).font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.ink)
+            Text(c.character.name).font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.ink)
                 .lineLimit(2).multilineTextAlignment(.leading).padding(.top, 7)
             if let v = c.voice {
-                Text(v.name).font(.system(size: 12)).foregroundStyle(Theme.inkMuted).lineLimit(1).padding(.top, 1)
+                Text(v.person.name).font(.system(size: 12)).foregroundStyle(Theme.inkMuted).lineLimit(1).padding(.top, 1)
             }
         }
         .frame(width: 92, alignment: .leading)
@@ -35,7 +35,7 @@ struct TitleCharacters: View {
 
 /// Cast (23b): round portraits with the name and the part.
 struct TitleCast: View {
-    let cast: [TitlePage.Credit]
+    let cast: [Credit]
 
     @Environment(AppModel.self) private var model
 
@@ -43,23 +43,23 @@ struct TitleCast: View {
         VStack(alignment: .leading, spacing: 0) {
             TitleHeading("Cast", count: cast.count)
             Shelf(spacing: 14) {
-                ForEach(cast, id: \.self) { p in
-                    Button { if let r = p.route { model.open(r) } } label: { card(p) }
+                ForEach(cast, id: \.self) { c in
+                    Button { if let r = c.person.route { model.open(r) } } label: { card(c) }
                         .buttonStyle(.plain)
-                        .disabled(p.route == nil)
+                        .disabled(c.person.route == nil)
                 }
             }
         }
     }
 
-    private func card(_ p: TitlePage.Credit) -> some View {
+    private func card(_ c: Credit) -> some View {
         VStack(spacing: 0) {
-            Artwork(url: p.image).frame(width: 84, height: 84).clipShape(Circle())
+            Artwork(url: c.person.image).frame(width: 84, height: 84).clipShape(Circle())
                 .overlay(Circle().strokeBorder(Theme.keyline, lineWidth: 0.5))
-            Text(p.name).font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.ink)
+            Text(c.person.name).font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.ink)
                 .lineLimit(2).multilineTextAlignment(.center).padding(.top, 8)
-            if let role = p.role {
-                Text(role).font(.system(size: 12)).foregroundStyle(Theme.inkMuted)
+            if !c.role.isEmpty {
+                Text(c.role).font(.system(size: 12)).foregroundStyle(Theme.inkMuted)
                     .lineLimit(2).multilineTextAlignment(.center).padding(.top, 1)
             }
         }
@@ -68,34 +68,35 @@ struct TitleCast: View {
     }
 }
 
-/// Crew and staff (17, 23b): name on the left, the job on the right.
+/// Staff (anime) and crew (TV, films) (17, 23b): name on the left, the job on the right.
 struct TitleCrew: View {
-    let crew: [TitlePage.Credit]
+    let crew: [Credit]
+    var heading = "Crew"
 
     @Environment(AppModel.self) private var model
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            TitleHeading(crew.contains { $0.ref?.hasPrefix("person:tmdb") == false } ? "Staff" : "Crew")
+            TitleHeading(heading)
             VStack(spacing: 0) {
-                ForEach(Array(crew.enumerated()), id: \.offset) { i, p in
-                    Button { if let r = p.route { model.open(r) } } label: { row(p, last: i == crew.count - 1) }
+                ForEach(Array(crew.enumerated()), id: \.offset) { i, c in
+                    Button { if let r = c.person.route { model.open(r) } } label: { row(c, last: i == crew.count - 1) }
                         .buttonStyle(.plain)
-                        .disabled(p.route == nil)
+                        .disabled(c.person.route == nil)
                 }
             }
             .padding(.horizontal, Theme.pad)
         }
     }
 
-    private func row(_ p: TitlePage.Credit, last: Bool) -> some View {
+    private func row(_ c: Credit, last: Bool) -> some View {
         HStack(spacing: 10) {
-            Text(p.name).font(.rowTitle).foregroundStyle(Theme.ink).lineLimit(1)
+            Text(c.person.name).font(.rowTitle).foregroundStyle(Theme.ink).lineLimit(1)
             Spacer(minLength: 8)
-            if let job = p.role {
-                Text(job).font(.system(size: 15)).foregroundStyle(Theme.inkMuted).lineLimit(1)
+            if !c.role.isEmpty {
+                Text(c.role).font(.system(size: 15)).foregroundStyle(Theme.inkMuted).lineLimit(1)
             }
-            if p.route != nil {
+            if c.person.route != nil {
                 Image(systemName: "chevron.right").font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.inkFaint)
             }
         }
@@ -108,7 +109,7 @@ struct TitleCrew: View {
 /// Related (17): prequels, sequels, the source, with where each is on your list.
 struct TitleRelated: View {
     let page: TitlePage
-    let relations: [TitlePage.Relation]
+    let relations: [TitleDetail.Relation]
 
     @Environment(AppModel.self) private var model
 
@@ -116,19 +117,20 @@ struct TitleRelated: View {
         VStack(alignment: .leading, spacing: 0) {
             TitleHeading("Related")
             ForEach(relations, id: \.self) { r in
-                Button { model.open(.title(r.title.id)) } label: { row(r) }
+                let t = r.title.app
+                Button { model.open(.title(t.id)) } label: { row(r, t) }
                     .buttonStyle(.plain)
             }
         }
     }
 
-    private func row(_ r: TitlePage.Relation) -> some View {
+    private func row(_ r: TitleDetail.Relation, _ t: Title) -> some View {
         HStack(spacing: 12) {
-            Poster(url: r.title.cover, width: 44, ratio: 64.0 / 44.0, radius: 6, flat: true)
+            Poster(url: t.cover, width: 44, ratio: 64.0 / 44.0, radius: 6, flat: true)
             VStack(alignment: .leading, spacing: 2) {
                 Text(page.relationLabel(r)).font(.system(size: 12, weight: .semibold)).foregroundStyle(Theme.inkMuted)
-                Text(r.title.name).font(.system(size: 15, weight: .semibold)).foregroundStyle(Theme.ink).lineLimit(1)
-                status(r.title)
+                Text(t.name).font(.system(size: 15, weight: .semibold)).foregroundStyle(Theme.ink).lineLimit(1)
+                status(t)
             }
             Spacer(minLength: 8)
             Image(systemName: "chevron.right").font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.inkFaint)

@@ -43,7 +43,7 @@ final class ShareViewController: UIViewController {
     }
 
     private func show(_ shared: String) {
-        let library = ExtensionsJSON.bundled([LibraryEntry].self, "library") ?? []
+        let library = ExtensionsJSON.bundledLibrary()
         let catalog = ExtensionsJSON.bundled(ExtensionCatalog.self, "extensions") ?? ExtensionCatalog()
         let found = ShareMatch.resolve(shared, library: library, catalog: catalog)
         let sheet = ShareSheetView(

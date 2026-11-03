@@ -1,44 +1,115 @@
 import Foundation
 
-/// GET schedule?month=2026-11: what airs in a month (09, 10). The server sends the episodes and releases of the
-/// titles on your list (and may add popular ones); your status comes from the offline library, so an edit made
-/// offline shows at once. The week view loads the one or two months its seven days touch.
-struct AiringSchedule: Codable, Equatable, Sendable {
-    /// "2026-11"
-    var month: String
-    var items: [Item]
+// docs/app-api.md §6: the calendar. `GET calendar?from=<ms>&to=<ms>` → `CalendarData` (src/calendar/types.ts):
+// the episodes, releases and starts of the titles on your Watching, Planning and On-Hold lists (plus new releases of
+// what you completed), with the list entries they belong to. Local midnights, `to` exclusive, about 3 months at most.
+// The app asks one month at a time; your status comes from the offline library first, so an offline edit shows.
 
-    /// One episode (or a film's release) at a time.
-    struct Item: Codable, Identifiable, Hashable, Sendable {
-        var title: Title
-        var at: Date
-        var episode: Int?
-        /// TV: the season the episode is in
-        var season: Int?
-        /// the server's copy of your status (nil when the title isn't on your list); the library's wins
-        var status: ListStatus?
+/// GET calendar's answer.
+struct CalendarData: Codable, Hashable, Sendable {
+    var items: [CalendarItem]
+    /// the list entries the items belong to, by "<media>:<id>" (none for a sequel you haven't added)
+    var entries: [String: ListEntry]
+    /// the days asked for (ms, local midnights): from inclusive, to exclusive
+    var from: Int64
+    var to: Int64
+    /// false: no TV and films (no TMDB key on the server)
+    var tmdb: Bool
+    var at: Int64
 
-        var id: String { "\(title.id)@\(Int(at.timeIntervalSince1970))" }
-
-        /// a film (anime films too: they stay under Anime, marked Film)
-        var isFilm: Bool { title.media == .movie || title.format == "Movie" }
-
-        /// "Episode 5", "Season 6 · Episode 4", "Film"
-        var what: String {
-            if isFilm || episode == nil { return "Film" }
-            let ep = "Episode \(episode!)"
-            if title.media == .tv, let season { return "Season \(season) · \(ep)" }
-            return ep
+    /// several answers as one (a week across two months)
+    static func merged(_ parts: [CalendarData]) -> CalendarData {
+        var out = CalendarData(items: [], entries: [:], from: parts.map(\.from).min() ?? 0,
+                               to: parts.map(\.to).max() ?? 0, tmdb: parts.allSatisfy(\.tmdb),
+                               at: parts.map(\.at).max() ?? 0)
+        var seen = Set<String>()
+        for p in parts {
+            out.items += p.items.filter { seen.insert($0.key).inserted }
+            out.entries.merge(p.entries) { a, _ in a }
         }
+        return out
+    }
+}
+
+/// One thing on a day: an episode, a film coming out, a series starting.
+struct CalendarItem: Codable, Identifiable, Hashable, Sendable {
+    enum Kind: String, Codable, Hashable, Sendable { case episode, release, start }
+
+    /// unique on the page
+    var key: String
+    var media: APIMedia
+    var id: String
+    var ref: TitleRef
+    var title: String
+    @Picture var cover: URL?
+    var kind: Kind
+    /// episodes: counted the way the list counts (across seasons for shows); nil for the rest
+    var number: Int?
+    /// "Ep 7", "S2 · E5", "Film", "Anime film", "Anime", "Manga"
+    var label: String
+    /// "Premiere", "Season finale", "In cinemas"…
+    var note: String?
+    /// ms; with `dateOnly` only the day is known
+    var at: Int64
+    var dateOnly: Bool
+    /// a new release of a Completed title: `sequelOf` names the Completed anime a sequel follows (the sequel is on
+    /// none of your lists); nil for a Completed show's new episodes. nil on everything else.
+    var news: News?
+
+    struct News: Codable, Hashable, Sendable {
+        var sequelOf: String?
     }
 
-    /// An item with the status it shows (yours from the library, else the server's).
+    init(key: String, media: APIMedia, id: String, title: String, cover: URL? = nil, kind: Kind = .episode,
+         number: Int? = nil, label: String, note: String? = nil, at: Int64, dateOnly: Bool = false, news: News? = nil) {
+        self.key = key
+        self.media = media
+        self.id = id
+        self.ref = TitleRef(kind: media.kind, id: id)
+        self.title = title
+        _cover = Picture(wrappedValue: cover)
+        self.kind = kind
+        self.number = number
+        self.label = label
+        self.note = note
+        self.at = at
+        self.dateOnly = dateOnly
+        self.news = news
+    }
+
+    var titleId: String { ref.titleId }
+    var date: Date { Millis.date(at) }
+    /// the list entry's key in `CalendarData.entries`
+    var entryKey: String { "\(media.rawValue):\(id)" }
+    /// the title's kind (anime films stay under Anime)
+    var titleKind: MediaKind { ref.kind }
+
+    /// a release (a film, an anime film) rather than an episode or a start
+    var isFilm: Bool { kind == .release }
+
+    /// the label in words: "Episode 5", "Season 6 · Episode 4", "Anime film"
+    var what: String {
+        let words = label.components(separatedBy: " · ")
+        if words.count == 2, words[0].hasPrefix("S"), words[1].hasPrefix("E"),
+           let s = Int(words[0].dropFirst()), let e = Int(words[1].dropFirst()) {
+            return "Season \(s) · Episode \(e)"
+        }
+        if label.hasPrefix("Ep "), let n = Int(label.dropFirst(3)) { return "Episode \(n)" }
+        return label
+    }
+}
+
+/// The calendar's days, rows, filters and words (09, 10).
+enum AiringSchedule {
+    typealias Item = CalendarItem
+
+    /// An item with the status it shows (yours from the library, else the list entry the answer came with).
     struct Row: Identifiable, Hashable, Sendable {
         var item: Item
         var status: ListStatus?
 
-        var id: String { item.id }
-        var titleId: String { item.title.id }
+        var id: String { item.key }
+        var titleId: String { item.titleId }
     }
 
     /// One day of the week view or of a tapped month day.
@@ -58,7 +129,7 @@ struct AiringSchedule: Codable, Equatable, Sendable {
 
     /// The status chips: which of your titles show.
     enum Show: String, CaseIterable, Identifiable, Hashable, Sendable {
-        case watching, planning, completed, onHold, dropped, notOnList
+        case watching, planning, completed, onHold, notOnList
 
         var id: String { rawValue }
 
@@ -68,7 +139,6 @@ struct AiringSchedule: Codable, Equatable, Sendable {
             case .planning: return "Planning"
             case .completed: return "Completed"
             case .onHold: return "On-Hold"
-            case .dropped: return "Dropped"
             case .notOnList: return "Not on your list"
             }
         }
@@ -79,7 +149,6 @@ struct AiringSchedule: Codable, Equatable, Sendable {
             case .planning: return s == .planned
             case .completed: return s == .completed
             case .onHold: return s == .hold
-            case .dropped: return s == .dropped
             case .notOnList: return s == nil
             }
         }
@@ -91,13 +160,14 @@ struct AiringSchedule: Codable, Equatable, Sendable {
         var media: MediaKind?
         var shows: Set<Show> = [.watching, .planning]
 
-        /// the kinds the calendar has (books and manga don't air)
-        static let kinds: [MediaKind] = [.anime, .tv, .movie]
+        /// the kinds the calendar has (books don't air; manga only has its starts)
+        static let kinds: [MediaKind] = [.anime, .manga, .tv, .movie]
 
         var mediaLabel: String { media?.plural ?? "All types" }
 
         func keeps(_ row: Row) -> Bool {
-            if let media, row.item.title.media != media { return false }
+            if let media, row.item.titleKind != media { return false }
+            if row.status == .dropped { return false }
             return shows.contains { $0.matches(row.status) }
         }
 
@@ -108,21 +178,41 @@ struct AiringSchedule: Codable, Equatable, Sendable {
 
     // MARK: rows
 
-    /// the items with your statuses, filtered, by time (one copy of each)
-    static func rows(_ items: [Item], library: [LibraryEntry], filter: Filter = Filter()) -> [Row] {
+    /// an item's status: the library's, else the entry the answer came with (a rewatch reads as Rewatching), else
+    /// a Completed show's new episode is Completed; a sequel you haven't added has none
+    static func status(_ item: Item, entries: [String: ListEntry], library: [String: ListStatus]) -> ListStatus? {
+        if let s = library[item.titleId] { return s }
+        if let e = entries[item.entryKey] {
+            return e.rewatch != nil ? .repeating : ListStatus(rawValue: e.status.rawValue)
+        }
+        if let n = item.news, n.sequelOf == nil { return .completed }
+        return nil
+    }
+
+    /// the items with your statuses, filtered, in the server's order (time, day-only first, title), one of each
+    static func rows(_ items: [Item], entries: [String: ListEntry] = [:], library: [LibraryEntry],
+                     filter: Filter = Filter()) -> [Row] {
         let mine = Dictionary(library.map { ($0.id, $0.status) }, uniquingKeysWith: { a, _ in a })
         var seen = Set<String>()
         return items
-            .filter { seen.insert($0.id).inserted }
-            .map { Row(item: $0, status: mine[$0.title.id] ?? $0.status) }
+            .filter { seen.insert($0.key).inserted }
+            .map { Row(item: $0, status: status($0, entries: entries, library: mine)) }
             .filter { filter.keeps($0) }
-            .sorted { $0.item.at == $1.item.at ? $0.item.title.name < $1.item.title.name : $0.item.at < $1.item.at }
+            .sorted {
+                if $0.item.at != $1.item.at { return $0.item.at < $1.item.at }
+                if $0.item.dateOnly != $1.item.dateOnly { return $0.item.dateOnly }
+                return $0.item.title < $1.item.title
+            }
+    }
+
+    static func rows(_ data: CalendarData, library: [LibraryEntry], filter: Filter = Filter()) -> [Row] {
+        rows(data.items, entries: data.entries, library: library, filter: filter)
     }
 
     /// rows grouped onto the given days (each day keeps its order; days with nothing get an empty list)
     static func days(_ rows: [Row], on dates: [Date]) -> [Day] {
         let c = Clock.calendar
-        return dates.map { d in Day(date: d, rows: rows.filter { c.isDate($0.item.at, inSameDayAs: d) }) }
+        return dates.map { d in Day(date: d, rows: rows.filter { c.isDate($0.item.date, inSameDayAs: d) }) }
     }
 
     // MARK: dates
@@ -139,6 +229,11 @@ struct AiringSchedule: Codable, Equatable, Sendable {
     static func monthStart(_ d: Date) -> Date {
         let c = Clock.calendar
         return c.date(from: c.dateComponents([.year, .month], from: d)) ?? d
+    }
+
+    /// the first day of the month after d's
+    static func nextMonthStart(_ d: Date) -> Date {
+        Clock.calendar.date(byAdding: .month, value: 1, to: monthStart(d)) ?? d
     }
 
     /// seven days from a week's start
@@ -169,13 +264,13 @@ struct AiringSchedule: Codable, Equatable, Sendable {
         return String(format: "%04d-%02d", c.year ?? 0, c.month ?? 0)
     }
 
-    /// the months to load for a view: one for a month, one or two for a week
-    static func monthsToLoad(_ anchor: Date, mode: Mode) -> [String] {
+    /// the months to load for a view (their first days): one for a month, one or two for a week
+    static func monthsToLoad(_ anchor: Date, mode: Mode) -> [Date] {
         switch mode {
-        case .month: return [monthKey(anchor)]
+        case .month: return [monthStart(anchor)]
         case .week:
-            var out: [String] = []
-            for d in weekDays(weekStart(anchor)) where !out.contains(monthKey(d)) { out.append(monthKey(d)) }
+            var out: [Date] = []
+            for d in weekDays(weekStart(anchor)) where !out.contains(monthStart(d)) { out.append(monthStart(d)) }
             return out
         }
     }
@@ -212,11 +307,14 @@ struct AiringSchedule: Codable, Equatable, Sendable {
     /// "Friday, Nov 6" (under the month grid)
     static func longDayLabel(_ d: Date) -> String { ScheduleWords.format("EEEE, MMM d", d) }
 
+    /// a row's time: "3:00 AM", or "All day" when only the day is known
+    static func timeLabel(_ item: Item) -> String { item.dateOnly ? "All day" : Format.time(item.date) }
+
     /// "4 episodes", "1 episode", "2 releases", "Nothing airing"
     static func countLabel(_ rows: [Row]) -> String {
         if rows.isEmpty { return "Nothing airing" }
         let n = rows.count
-        if rows.allSatisfy({ !$0.item.isFilm }) { return "\(n) episode\(n == 1 ? "" : "s")" }
+        if rows.allSatisfy({ $0.item.kind == .episode }) { return "\(n) episode\(n == 1 ? "" : "s")" }
         return "\(n) release\(n == 1 ? "" : "s")"
     }
 
@@ -227,10 +325,11 @@ struct AiringSchedule: Codable, Equatable, Sendable {
 
     /// where the now line goes in today's rows: before the first that hasn't aired (rows.count after them all)
     static func nowIndex(_ rows: [Row], now: Date = Clock.now) -> Int {
-        rows.firstIndex { $0.item.at > now } ?? rows.count
+        rows.firstIndex { !isOut($0, now: now) } ?? rows.count
     }
 
-    static func isOut(_ row: Row, now: Date = Clock.now) -> Bool { row.item.at <= now }
+    /// out already (a day-only one is out on its day)
+    static func isOut(_ row: Row, now: Date = Clock.now) -> Bool { row.item.date <= now }
 
     /// past days fold to one line in the week view
     static func isPast(_ d: Date, now: Date = Clock.now) -> Bool { Format.dayOffset(d, now: now) < 0 }
@@ -240,14 +339,14 @@ struct AiringSchedule: Codable, Equatable, Sendable {
     /// a month day's dots: the statuses airing that day, each once, in the legend's order, at most three
     /// (nil: a title that isn't on your list)
     static func dots(_ rows: [Row]) -> [ListStatus?] {
-        let order: [ListStatus?] = [.current, .repeating, .planned, .completed, .hold, .dropped, nil]
+        let order: [ListStatus?] = [.current, .planned, .completed, .hold, nil]
         let here = Set(rows.map { $0.status == .repeating ? ListStatus.current : $0.status })
         return Array(order.filter { here.contains($0) }.prefix(3))
     }
 
     /// the legend under the grid: the statuses the month has, in order
     static func legend(_ rows: [Row]) -> [ListStatus?] {
-        let order: [ListStatus?] = [.current, .planned, .completed, .hold, .dropped, nil]
+        let order: [ListStatus?] = [.current, .planned, .completed, .hold, nil]
         let here = Set(rows.map { $0.status == .repeating ? ListStatus.current : $0.status })
         return order.filter { here.contains($0) }
     }
@@ -255,6 +354,14 @@ struct AiringSchedule: Codable, Equatable, Sendable {
     /// a status's word on the calendar ("Watching", "Plan to Watch", "Not on your list")
     static func statusLabel(_ s: ListStatus?, media: MediaKind) -> String {
         s?.label(media) ?? "Not on your list"
+    }
+
+    /// the second line of a row: "Episode 5 · Finale", "Sequel to Frieren · Premiere"
+    static func detail(_ item: Item) -> String {
+        var parts = [item.what]
+        if let n = item.note, !item.what.localizedCaseInsensitiveContains(n) { parts.append(n) }
+        if let of = item.news?.sequelOf, !of.isEmpty { parts.insert("Sequel to \(of)", at: 0) }
+        return parts.joined(separator: " · ")
     }
 }
 
@@ -270,15 +377,21 @@ enum ScheduleWords {
 }
 
 extension APIClient {
-    /// one month of the airing schedule ("2026-11")
-    func airingSchedule(month: String) async throws -> AiringSchedule {
-        try await get("schedule", query: [URLQueryItem(name: "month", value: month)])
+    /// GET calendar?from=<ms>&to=<ms>: local midnights, `to` exclusive
+    func calendar(from: Date, to: Date) async throws -> CalendarData {
+        try await get("calendar", query: [URLQueryItem(name: "from", value: String(Millis.of(from))),
+                                          URLQueryItem(name: "to", value: String(Millis.of(to)))])
     }
 
-    /// several months' items together (a week across two months)
-    func airingSchedule(months: [String]) async throws -> [AiringSchedule.Item] {
-        var out: [AiringSchedule.Item] = []
-        for m in months { out += try await airingSchedule(month: m).items }
-        return out
+    /// one month (d's)
+    func calendar(month d: Date) async throws -> CalendarData {
+        try await calendar(from: AiringSchedule.monthStart(d), to: AiringSchedule.nextMonthStart(d))
+    }
+
+    /// several months as one answer (a week across two months)
+    func calendar(months: [Date]) async throws -> CalendarData {
+        var parts: [CalendarData] = []
+        for m in months { parts.append(try await calendar(month: m)) }
+        return CalendarData.merged(parts)
     }
 }

@@ -1,11 +1,12 @@
 import SwiftUI
 
 /// Notifications (08), pushed from Home's bell: Today, This week and Earlier as plain hairline rows. Friend requests
-/// are answered inline; a tap opens the person, the conversation, the activity, the review or the title. Mark all
-/// read sits in the toolbar.
+/// are answered inline; a tap opens the person, the conversation, the activity, the review or the title. Opening the
+/// bell marks everything seen (POST notices/seen) and clears Home's dot; the rows keep their dots for this visit
+/// until Mark all read in the toolbar.
 struct NotificationsView: View {
     @Environment(AppModel.self) private var model
-    @State private var items: [NotificationFeed.Item]?
+    @State private var items: [BellNotice]?
     @State private var failed: String?
     /// friend requests answered here: username -> accepted
     @State private var answered: [String: Bool] = [:]
@@ -23,7 +24,7 @@ struct NotificationsView: View {
                         Image(systemName: "checkmark.circle")
                     }
                     .accessibilityLabel("Mark all read")
-                    .disabled(NotificationFeed.unreadCount(items ?? []) == 0)
+                    .disabled(NoticeSection.unseen(items ?? []) == 0)
                 }
             }
             .task { if items == nil { await load() } }
@@ -52,8 +53,8 @@ struct NotificationsView: View {
         }
     }
 
-    private func list(_ items: [NotificationFeed.Item]) -> some View {
-        let sections = NotificationFeed.sections(items)
+    private func list(_ items: [BellNotice]) -> some View {
+        let sections = NoticeSection.of(items)
         return ScrollView {
             LazyVStack(alignment: .leading, spacing: 0) {
                 ForEach(Array(sections.enumerated()), id: \.element.id) { si, section in
@@ -65,7 +66,7 @@ struct NotificationsView: View {
                         .padding(.bottom, 2)
                         .accessibilityAddTraits(.isHeader)
                     ForEach(Array(section.items.enumerated()), id: \.element.id) { i, item in
-                        NotificationRow(item: item, entry: item.title.flatMap { model.entry($0.id) },
+                        NotificationRow(item: item, entry: item.ref.flatMap { model.entry($0.titleId) },
                                         separator: i < section.items.count - 1 || si < sections.count - 1,
                                         answer: answerBinding(item))
                     }
@@ -76,8 +77,8 @@ struct NotificationsView: View {
         }
     }
 
-    private func answerBinding(_ item: NotificationFeed.Item) -> FriendAnswer? {
-        guard item.kind == .friendRequest, let u = item.user?.username else { return nil }
+    private func answerBinding(_ item: BellNotice) -> FriendAnswer? {
+        guard item.kind == .friendRequest, let u = item.user else { return nil }
         return FriendAnswer(state: answered[u]) { accept in
             answered[u] = accept
             markRead(item.id)
@@ -86,11 +87,14 @@ struct NotificationsView: View {
     }
 
     private func load() async {
-        switch await model.fetch({ try await $0.notifications() }) {
-        case .loaded(let f):
-            items = f.items
-            model.unreadNotifications = NotificationFeed.unreadCount(f.items)
+        switch await model.fetch({ try await $0.notices() }) {
+        case .loaded(let list):
+            items = list
             failed = nil
+            model.unreadNotifications = 0
+            if NoticeSection.unseen(list) > 0 {
+                _ = await model.fetch { try await $0.markNoticesSeen() }
+            }
         case .failed(let why):
             if items == nil { failed = why }
         case .loading:
@@ -100,16 +104,15 @@ struct NotificationsView: View {
 
     private func markRead(_ id: String) {
         guard let i = items?.firstIndex(where: { $0.id == id }) else { return }
-        items?[i].unread = false
-        model.unreadNotifications = NotificationFeed.unreadCount(items ?? [])
+        items?[i].unseen = false
     }
 
     private func markAllRead() {
         guard var all = items else { return }
-        for i in all.indices { all[i].unread = false }
+        for i in all.indices { all[i].unseen = false }
         items = all
         model.unreadNotifications = 0
-        Task { _ = await model.fetch { try await $0.markNotificationsRead() } }
+        Task { _ = await model.fetch { try await $0.markNoticesSeen() } }
     }
 }
 
@@ -120,9 +123,10 @@ fileprivate struct FriendAnswer {
 }
 
 /// One notification: the unread dot, an avatar or a poster, the sentence with names in bold, the grey time line,
-/// Accept / Decline on friend requests, a small poster on the right for likes on a review.
+/// Accept / Decline on friend requests. The notice carries one picture (`cover`): the person's avatar when a person
+/// leads, else the title's poster.
 private struct NotificationRow: View {
-    let item: NotificationFeed.Item
+    let item: BellNotice
     let entry: LibraryEntry?
     var separator = true
     var answer: FriendAnswer?
@@ -146,16 +150,13 @@ private struct NotificationRow: View {
                     if let answer { answerButtons(answer) }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
-                if item.showsThumb, let t = item.title {
-                    Poster(url: t.cover, width: 34, radius: 5, flat: true)
-                }
             }
             .padding(.vertical, 12)
             .overlay(alignment: .bottom) { if separator { Hairline() } }
         }
         .padding(.horizontal, Theme.pad)
         .overlay(alignment: .leading) {
-            if item.unread {
+            if item.unseen {
                 Circle().fill(Theme.brand).frame(width: 8, height: 8).padding(.leading, 7)
                     .accessibilityLabel("Unread")
             }
@@ -169,16 +170,16 @@ private struct NotificationRow: View {
     @ViewBuilder
     private var lead: some View {
         if item.leadsWithPerson {
-            Avatar(url: item.user?.avatar, size: 40)
+            Avatar(url: item.cover, size: 40)
         } else {
-            Poster(url: item.title?.cover, width: 40, radius: 6, flat: true)
+            Poster(url: item.cover, width: 40, radius: 6, flat: true)
         }
     }
 
     /// names and titles semibold in full ink, the rest soft
     private var sentence: AttributedString {
         var out = AttributedString()
-        for run in item.runs(entry: entry) {
+        for run in item.runs {
             var piece = AttributedString(run.text)
             let color: Color = run.strong ? Theme.ink : Theme.inkSoft
             piece.foregroundColor = color
@@ -207,6 +208,6 @@ private struct NotificationRow: View {
     }
 
     private func open() {
-        if let r = item.route { model.open(r) }
+        if let r = item.route(me: model.account?.user.username) { model.open(r) }
     }
 }

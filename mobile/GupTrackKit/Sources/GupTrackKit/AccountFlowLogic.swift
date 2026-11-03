@@ -5,15 +5,13 @@ import Observation
 // the recovery codes as text, and the flow itself (AccountFlowModel) from the first screen to the signed-in app.
 // The views are mobile/ios/Sources/Account/.
 //
-// Pairing: the website's Settings › Connected apps shows a QR code of a PairLink (Account.swift):
-//     guptrack://pair?v=1&url=<percent-encoded https server address>&code=<one-time code, base64url, 43+ chars>
-// Scanning it (in the app, or with the Camera app, which opens the link) pairs this iPhone in one step: POST
-// auth/pair with the code and the device's name gives the DeviceGrant.
+// Pairing (docs/app-api.md §4.1): the website's Settings › Connected apps shows a code like 7KQ4-M2XD and a QR of
+// a PairLink (Account.swift): guptrack://pair?server=<encoded base URL>&code=<code>. Scanning it (in the app, or
+// with the Camera app, which opens the link) pairs this iPhone in one step: POST auth/pair with the code and the
+// device ({name, platform}) gives the sign-in answer.
 //
-// Passkeys: a native passkey needs the server's domain in the app's Associated Domains, which a self-hosted server
-// can't have. So "Sign in with a passkey" opens the website's own sign-in in a system web sheet
-// (ASWebAuthenticationSession) at <server>/connect/app?device=<name>; once signed in there the website redirects
-// to the same guptrack://pair link, and the app pairs with it. (The website route is still to be built.)
+// Passkeys are website-only for now (§4.2), so the app signs in with a username and password, a pairing code, an
+// invite (joining) or a recovery code.
 
 // MARK: the server address
 
@@ -23,7 +21,7 @@ enum ServerCheck: Equatable, Sendable {
     /// not an https address the app would use
     case invalid
     case checking(URL)
-    case found(URL, ServerHello)
+    case found(URL, ServerInfo)
     /// something answered, but not GupTrack (or a GupTrack this app can't talk to)
     case wrong(URL, String)
     case unreachable(URL, String)
@@ -34,7 +32,7 @@ enum ServerCheck: Equatable, Sendable {
         return nil
     }
 
-    var hello: ServerHello? {
+    var info: ServerInfo? {
         if case .found(_, let h) = self { return h }
         return nil
     }
@@ -53,24 +51,26 @@ enum ServerCheck: Equatable, Sendable {
             return (nil, "That isn't an address the app can use. It's a name like your-pc.example, over HTTPS.", true)
         case .checking:
             return (nil, "Looking for GupTrack…", false)
-        case .found(_, let h):
-            let next = h.joining == "closed" ? "you sign in next" : "you sign in or join next"
-            return ("Found \(h.name)", " · " + next, false)
+        case .found:
+            return ("Found GupTrack", " · you sign in or join next", false)
         case .wrong(_, let why), .unreachable(_, let why):
             return (nil, why, true)
         }
     }
 
-    /// what a server's hello means for this app
-    static func verdict(_ hello: ServerHello, at url: URL) -> ServerCheck {
-        guard hello.app == "guptrack" else { return .wrong(url, "Something answered there, but it isn't GupTrack.") }
-        if hello.api > AppAPI.version {
+    /// what a server's GET server answer means for this app
+    static func verdict(_ info: ServerInfo, at url: URL) -> ServerCheck {
+        guard info.app == AppAPI.app else { return .wrong(url, "Something answered there, but it isn't GupTrack.") }
+        if info.api > AppAPI.version {
             return .wrong(url, "This GupTrack is newer than the app. Update the app.")
         }
-        if hello.api < AppAPI.version {
+        if info.api < AppAPI.version {
             return .wrong(url, "This GupTrack is older than the app. Update GupTrack on the PC.")
         }
-        return .found(url, hello)
+        if info.setupOpen {
+            return .wrong(url, "This GupTrack has no accounts yet. Make the first one on the website, then come back.")
+        }
+        return .found(url, info)
     }
 
     /// the field's text as an address, without asking the server yet
@@ -84,7 +84,7 @@ enum ServerCheck: Equatable, Sendable {
     /// asks the server at `url` who it is
     static func check(_ url: URL, with client: APIClient) async -> ServerCheck {
         do {
-            return verdict(try await client.hello(), at: url)
+            return verdict(try await client.server(), at: url)
         } catch let e as APIError {
             switch e {
             case .unreachable(let why): return .unreachable(url, why)
@@ -196,27 +196,21 @@ enum RecoveryCodes {
     /// the saved file's name
     static func fileName(username: String) -> String { "GupTrack recovery codes (\(username)).txt" }
 
-    /// two columns when every code is short enough to fit half the width (the mockup's "k7rq-2mvx"), else one
+    /// two columns when every code is short enough to fit half the width, else one (GupTrack's 26-symbol codes)
     static func columns(_ codes: [String]) -> Int { (codes.map(\.count).max() ?? 0) <= 12 ? 2 : 1 }
 
-    /// how a typed code is compared (the website's normalizeCode): case, spaces and dashes don't matter
+    /// how a typed code is compared (the website's normalizeCode, src/auth/codes.server.ts): case, spaces and dashes
+    /// don't matter, o reads as 0 and i/l as 1
     static func normalize(_ s: String) -> String {
-        s.lowercased().filter { !$0.isWhitespace && $0 != "-" }
+        String(s.lowercased().compactMap { ch -> Character? in
+            switch ch {
+            case "o": return "0"
+            case "i", "l": return "1"
+            case "-": return nil
+            default: return ch.isWhitespace ? nil : ch
+            }
+        })
     }
-}
-
-// MARK: recovering with a code (not in AppAPI yet)
-
-/// POST auth/recover: a new password with a recovery code; signs this device in like sign-in does
-struct RecoverBody: Codable, Equatable, Sendable {
-    var username: String
-    var code: String
-    var password: String
-    var device: String
-}
-
-extension APIClient {
-    func recover(_ body: RecoverBody) async throws -> DeviceGrant { try await send("POST", "auth/recover", body) }
 }
 
 // MARK: the flow
@@ -237,10 +231,13 @@ final class AccountFlowModel {
     // connect
     var address = ""
     var check: ServerCheck = .empty
+    /// this device's name as Connected apps shows it
     var device: String
+    /// "iOS 26.1"
+    let platform: String
     // the server signed-in screens use (checked on connect, or kept from last time)
     var server: URL?
-    var hello: ServerHello?
+    var info: ServerInfo?
 
     // sign in, join, recover
     var username = ""
@@ -252,15 +249,16 @@ final class AccountFlowModel {
     var busy = false
     var error: String?
 
-    /// after joining: the grant waits here until the codes are saved
-    private(set) var joined: DeviceGrant?
+    /// after joining: the sign-in answer waits here until the codes are saved
+    private(set) var joined: SignInAnswer?
 
     let model: AppModel
 
-    init(model: AppModel, start: String?, server: URL?, device: String) {
+    init(model: AppModel, start: String?, server: URL?, device: String, platform: String = AccountFlowModel.platform) {
         self.model = model
         self.server = server
         self.device = device
+        self.platform = platform
         if let server { address = ServerCheck.display(server) }
         switch start {
         case "sign-in": root = server == nil ? .connect : .signIn
@@ -298,7 +296,7 @@ final class AccountFlowModel {
     func useCheckedServer() {
         guard let url = check.server else { return }
         server = url
-        hello = check.hello
+        info = check.info
         error = nil
         root = .signIn
         path = []
@@ -321,7 +319,7 @@ final class AccountFlowModel {
             busy = true
             defer { busy = false }
             do {
-                let grant = try await model.client(for: link.baseURL).pair(code: link.code, device: deviceNameOrDefault)
+                let grant = try await model.client(for: link.baseURL).pair(code: link.code, device: deviceInfo)
                 server = link.baseURL
                 address = ServerCheck.display(link.baseURL)
                 await model.signedIn(grant, server: link.baseURL)
@@ -334,7 +332,18 @@ final class AccountFlowModel {
         }
     }
 
-    private var deviceNameOrDefault: String { deviceName.isEmpty ? "iPhone" : deviceName }
+    /// what every sign-in call says about this phone
+    var deviceInfo: DeviceInfo { DeviceInfo(name: deviceName.isEmpty ? "iPhone" : deviceName, platform: platform) }
+
+    /// "iOS 26.1" on a phone
+    nonisolated static var platform: String {
+        #if os(iOS)
+        let v = ProcessInfo.processInfo.operatingSystemVersion
+        return "iOS \(v.majorVersion).\(v.minorVersion)"
+        #else
+        return "iOS"
+        #endif
+    }
 
     // MARK: sign in
 
@@ -344,32 +353,20 @@ final class AccountFlowModel {
         guard canSignIn, let client, let server else { return }
         await run {
             let grant = try await client.signIn(username: UsernameRule.normalize(self.username),
-                                                password: self.password, device: self.deviceNameOrDefault)
+                                                password: self.password, device: self.deviceInfo)
             self.password = ""
             await self.model.signedIn(grant, server: server)
         }
     }
 
-    /// whether the server lets new people join from here
-    var canJoinHere: Bool { (hello?.joining ?? "invite") != "closed" }
+    /// new accounts join with an invite from someone on the server (§4.3)
+    var canJoinHere: Bool { true }
+    var needsInvite: Bool { true }
 
-    /// the server wants an invite code with a new account
-    var needsInvite: Bool { (hello?.joining ?? "invite") == "invite" }
-
-    var passkeys: Bool { hello?.passkeys ?? false }
-
-    /// where the passkey sign-in opens (see the note at the top)
-    func passkeyURL() -> URL? {
-        guard let server, var c = URLComponents(url: server, resolvingAgainstBaseURL: false) else { return nil }
-        c.path = "/connect/app"
-        c.queryItems = [URLQueryItem(name: "device", value: deviceNameOrDefault)]
-        return c.url
-    }
-
-    /// reads the hello again for a server kept from last time (passkeys, joining)
-    func loadHello() async {
-        guard hello == nil, let server else { return }
-        if case .found(_, let h) = await ServerCheck.check(server, with: model.client(for: server)) { hello = h }
+    /// reads GET server again for a server kept from last time
+    func loadServer() async {
+        guard info == nil, let server else { return }
+        if case .found(_, let h) = await ServerCheck.check(server, with: model.client(for: server)) { info = h }
     }
 
     // MARK: join
@@ -386,18 +383,21 @@ final class AccountFlowModel {
         guard canJoin, let client else { return }
         let name = UsernameRule.normalize(username)
         let shown = displayName.trimmingCharacters(in: .whitespacesAndNewlines)
-        let body = JoinBody(username: name, displayName: shown.isEmpty ? name : shown, password: password,
-                            device: deviceNameOrDefault,
-                            invite: needsInvite ? invite.trimmingCharacters(in: .whitespacesAndNewlines) : nil)
+        let body = JoinBody(invite: invite.trimmingCharacters(in: .whitespacesAndNewlines), username: name,
+                            password: password, device: deviceInfo)
         await run {
             let grant = try await client.join(body)
             self.password = ""
+            // the name to show is the profile's, set with the new token (the join call has no name)
+            if !shown.isEmpty {
+                _ = try? await client.signedIn(grant.token).updateProfile(ProfilePatch(name: shown))
+            }
             self.showCodes(grant)
         }
     }
 
     /// the codes screen for a new account (the demo's -account recovery joins the demo user first)
-    func showCodes(_ grant: DeviceGrant) {
+    func showCodes(_ grant: SignInAnswer) {
         joined = grant
         saved = false
         path = []
@@ -426,7 +426,7 @@ final class AccountFlowModel {
         guard joined == nil else { return }
         let url = server ?? Demo.server
         server = url
-        let body = JoinBody(username: "mika", displayName: "Mika", password: "", device: deviceNameOrDefault, invite: nil)
+        let body = JoinBody(invite: "demo", username: "mika", password: "", device: deviceInfo)
         if let grant = try? await model.client(for: url).join(body) { showCodes(grant) }
     }
 
@@ -440,7 +440,7 @@ final class AccountFlowModel {
     func recover() async {
         guard canRecover, let client, let server else { return }
         let body = RecoverBody(username: UsernameRule.normalize(username), code: RecoveryCodes.normalize(code),
-                               password: password, device: deviceNameOrDefault)
+                               password: password, device: deviceInfo)
         await run {
             let grant = try await client.recover(body)
             self.password = ""

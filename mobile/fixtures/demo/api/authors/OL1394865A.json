@@ -1,0 +1,60 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Works",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Novel · 2001",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/11329782-M.jpg",
+       "format": "Novel",
+       "ref": {
+        "id": "OL16044142W",
+        "kind": "book"
+       },
+       "score": 98,
+       "title": "Mistborn",
+       "year": 2001
+      }
+     }
+    ],
+    "title": "Most read"
+   },
+   {
+    "items": [
+     {
+      "role": "Novel · 2001",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/11329782-M.jpg",
+       "format": "Novel",
+       "ref": {
+        "id": "OL16044142W",
+        "kind": "book"
+       },
+       "score": 98,
+       "title": "Mistborn",
+       "year": 2001
+      }
+     }
+    ],
+    "title": "Books"
+   }
+  ],
+  "image": null,
+  "known": "Author",
+  "name": "Brandon Sanderson",
+  "native": null,
+  "ref": {
+   "id": "OL1394865A",
+   "to": "author"
+  }
+ }
+}

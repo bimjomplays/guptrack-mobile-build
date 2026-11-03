@@ -1,0 +1,1652 @@
+{
+ "season": "fall",
+ "titles": [
+  {
+   "alt": [
+    "JoJo no Kimyou na Bouken: Steel Ball Run - 2nd & 3rd STAGE",
+    "ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE",
+    "JoJo's Bizarre Adventure: Part 7–Steel Ball Run",
+    "SBR"
+   ],
+   "by": "david production",
+   "carried": false,
+   "count": 11,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+   "format": "ONA",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Mystery",
+    "Supernatural"
+   ],
+   "id": "anilist:210482",
+   "next": {
+    "at": 1793952000,
+    "episode": 7
+   },
+   "popularity": 48869,
+   "score": 86,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "210482",
+   "start": "2026-09-25",
+   "status": "releasing",
+   "tags": [
+    "Desert",
+    "Super Power",
+    "Cowboys",
+    "Travel",
+    "Disability",
+    "Primarily Male Cast",
+    "Male Protagonist"
+   ],
+   "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+   "trending": 488,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "サイバーパンク: エッジランナーズ2"
+   ],
+   "by": "TRIGGER",
+   "carried": false,
+   "count": 10,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png",
+   "format": "ONA",
+   "genres": [
+    "Action",
+    "Drama",
+    "Sci-Fi"
+   ],
+   "id": "anilist:195539",
+   "next": null,
+   "popularity": 116324,
+   "score": 83,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "195539",
+   "start": "2026-10-20",
+   "status": "finished",
+   "tags": [],
+   "title": "Cyberpunk: Edgerunners 2",
+   "trending": 3400,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Kusuriya no Hitorigoto 3rd Season",
+    "薬屋のひとりごと 第3期"
+   ],
+   "by": "OLM",
+   "carried": false,
+   "count": 12,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Mystery"
+   ],
+   "id": "anilist:195516",
+   "next": {
+    "at": 1793973600,
+    "episode": 6
+   },
+   "popularity": 109096,
+   "score": 85,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "195516",
+   "start": "2026-10-02",
+   "status": "releasing",
+   "tags": [],
+   "title": "The Apothecary Diaries Season 3",
+   "trending": 3000,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Black Clover 2nd Season",
+    "ブラッククローバー 第2期"
+   ],
+   "by": "Studio Pierrot",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tSZcfKbVqSEG.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+   ],
+   "id": "anilist:195604",
+   "next": {
+    "at": 1794060000,
+    "episode": 6
+   },
+   "popularity": 104185,
+   "score": 87,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "195604",
+   "start": "2026-10-03",
+   "status": "releasing",
+   "tags": [],
+   "title": "Black Clover Season 2",
+   "trending": 3500,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Ao no Hako Season 2",
+    "アオのハコ Season２"
+   ],
+   "by": "Electric Circus",
+   "carried": false,
+   "count": 12,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189123-0secXELIhkIW.jpg",
+   "format": "TV",
+   "genres": [
+    "Romance",
+    "Slice of Life",
+    "Sports"
+   ],
+   "id": "anilist:189123",
+   "next": {
+    "at": 1794123000,
+    "episode": 5
+   },
+   "popularity": 51677,
+   "score": 81,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "189123",
+   "start": "2026-10-04",
+   "status": "releasing",
+   "tags": [],
+   "title": "Blue Box Season 2",
+   "trending": 516,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "ワンピース",
+    "海贼王",
+    "וואן פיס",
+    "ون بيس"
+   ],
+   "by": "Toei Animation",
+   "carried": true,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy"
+   ],
+   "id": "anilist:21",
+   "next": {
+    "at": 1798985760,
+    "episode": 1181
+   },
+   "popularity": 765924,
+   "score": 87,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "21",
+   "start": "1999-10-20",
+   "status": "releasing",
+   "tags": [
+    "Pirates",
+    "Travel",
+    "Shounen",
+    "Ensemble Cast",
+    "Super Power",
+    "Found Family",
+    "Male Protagonist"
+   ],
+   "title": "ONE PIECE",
+   "trending": 3900,
+   "year": 1999
+  },
+  {
+   "alt": [
+    "Tempal: Item no Chikara",
+    "テムパル～アイテムの力～"
+   ],
+   "by": "J.C.STAFF",
+   "carried": false,
+   "count": 12,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg",
+   "format": "ONA",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+   ],
+   "id": "anilist:212888",
+   "next": {
+    "at": 1794148200,
+    "episode": 7
+   },
+   "popularity": 56398,
+   "score": 76,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "212888",
+   "start": "2026-09-27",
+   "status": "releasing",
+   "tags": [],
+   "title": "Overgeared",
+   "trending": 3700,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Tensei Shitara Ken Deshita 2nd Season",
+    "転生したら剣でした 第2期"
+   ],
+   "by": "C2C",
+   "carried": false,
+   "count": 12,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159042-GGFwlDskc5vR.png",
+   "format": "ONA",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+   ],
+   "id": "anilist:159042",
+   "next": {
+    "at": 1793806200,
+    "episode": 6
+   },
+   "popularity": 54301,
+   "score": 75,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "159042",
+   "start": "2026-10-01",
+   "status": "releasing",
+   "tags": [],
+   "title": "Reincarnated as a Sword Season 2",
+   "trending": 543,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Hotaru no Yomeiri",
+    "ホタルの嫁入り"
+   ],
+   "by": "david production",
+   "carried": false,
+   "count": 12,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205909-DM0fAzNQulod.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Romance"
+   ],
+   "id": "anilist:205909",
+   "next": {
+    "at": 1793975400,
+    "episode": 5
+   },
+   "popularity": 49801,
+   "score": 75,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "205909",
+   "start": "2026-10-09",
+   "status": "releasing",
+   "tags": [],
+   "title": "Firefly Wedding",
+   "trending": 498,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Seitokai ni mo Ana wa Aru!",
+    "生徒会にも穴はある！"
+   ],
+   "by": "Passione",
+   "carried": false,
+   "count": 12,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Ecchi",
+    "Slice of Life"
+   ],
+   "id": "anilist:191656",
+   "next": {
+    "at": 1794065400,
+    "episode": 6
+   },
+   "popularity": 47885,
+   "score": 73,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "191656",
+   "start": "2026-10-04",
+   "status": "releasing",
+   "tags": [],
+   "title": "Even the Student Council Has Its Holes!",
+   "trending": 2700,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "メイドインアビス 目覚める神秘"
+   ],
+   "by": "Kinema Citrus",
+   "carried": false,
+   "count": 1,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx160275-cBOWJpcCGeMq.jpg",
+   "format": "Film",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Horror",
+    "Mystery",
+    "Sci-Fi"
+   ],
+   "id": "anilist:160275",
+   "next": null,
+   "popularity": 45489,
+   "score": 80,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "160275",
+   "start": "2026-10-23",
+   "status": "finished",
+   "tags": [],
+   "title": "Made in Abyss: Mezameru Shinpi",
+   "trending": 454,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Mahoutsukai no Yoru",
+    "魔法使いの夜"
+   ],
+   "by": "ufotable",
+   "carried": false,
+   "count": 1,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx143103-vvsaIpZPpIuE.png",
+   "format": "Film",
+   "genres": [
+    "Action",
+    "Drama",
+    "Fantasy"
+   ],
+   "id": "anilist:143103",
+   "next": {
+    "at": 1795100400,
+    "episode": 1
+   },
+   "popularity": 43081,
+   "score": null,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "143103",
+   "start": "2026-11-20",
+   "status": "upcoming",
+   "tags": [],
+   "title": "Witch on the Holy Night",
+   "trending": 430,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Tsuihou Sareta Cheat Fuyo Majutsushi wa Kimama na Second Life wo Ouka Suru.: Ore wa Buki dake ja Naku, Arayuru Mono ni \"Kyouka Point\" wo Fuyo Dekiru shi, Ore no Ishi de Itsudemo Kouka wo Kaijo Dekiru kedo, Nokotta Hitotachi Daijoubu?",
+    "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。　～俺は武器だけじゃなく、あらゆるものに『強化ポイント』を付与できるし、俺の意思でいつでも効果を解除できるけど、残った人たち大丈夫？～"
+   ],
+   "by": "P.A.WORKS",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b207329-6VPeZIDfF4Sr.png",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Slice of Life"
+   ],
+   "id": "anilist:207329",
+   "next": {
+    "at": 1794322800,
+    "episode": 6
+   },
+   "popularity": 42627,
+   "score": 73,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "207329",
+   "start": "2026-10-07",
+   "status": "releasing",
+   "tags": [],
+   "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
+   "trending": 426,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Koori no Jouheki 2nd Season",
+    "氷の城壁 第2期"
+   ],
+   "by": "Studio KAI",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx213805-Nokui3uWlIlw.png",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "Slice of Life"
+   ],
+   "id": "anilist:213805",
+   "next": {
+    "at": 1793890560,
+    "episode": 6
+   },
+   "popularity": 38559,
+   "score": 81,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "213805",
+   "start": "2026-10-01",
+   "status": "releasing",
+   "tags": [],
+   "title": "The Ramparts of Ice Season 2",
+   "trending": 385,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Tokyo Revengers: Santen Sensou-hen",
+    "東京リベンジャーズ 三天戦争編"
+   ],
+   "by": "LIDENFILMS",
+   "carried": false,
+   "count": 13,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178083-bg7pg6TCHwtG.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Romance",
+    "Supernatural"
+   ],
+   "id": "anilist:178083",
+   "next": {
+    "at": 1793983980,
+    "episode": 6
+   },
+   "popularity": 38360,
+   "score": 77,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "178083",
+   "start": "2026-10-03",
+   "status": "releasing",
+   "tags": [],
+   "title": "Tokyo Revengers: War of the Three Titans Arc",
+   "trending": 383,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Seishun Buta Yarou wa Dear Friend no Yume wo Minai",
+    "青春ブタ野郎はディアフレンドの夢を見ない"
+   ],
+   "by": "CloverWorks",
+   "carried": false,
+   "count": 1,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199340-YQlmzvmcJzyt.jpg",
+   "format": "Film",
+   "genres": [
+    "Drama",
+    "Psychological",
+    "Romance",
+    "Supernatural"
+   ],
+   "id": "anilist:199340",
+   "next": null,
+   "popularity": 35266,
+   "score": 84,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "199340",
+   "start": "2026-10-16",
+   "status": "finished",
+   "tags": [],
+   "title": "Rascal Does Not Dream of a Dear Friend",
+   "trending": 352,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Kikansha no Mahou wa Tokubetsu desu 2nd Season",
+    "帰還者の魔法は特別です 第2期"
+   ],
+   "by": "Arvo Animation",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172192-W7P5xEUaxF3y.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+   ],
+   "id": "anilist:172192",
+   "next": {
+    "at": 1793807100,
+    "episode": 5
+   },
+   "popularity": 33804,
+   "score": 69,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "172192",
+   "start": "2026-10-08",
+   "status": "releasing",
+   "tags": [],
+   "title": "A Returner's Magic Should be Special Season 2",
+   "trending": 338,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Kusuriya no Hitorigoto: Bouhi no Hihou",
+    "薬屋のひとりごと 亡妃の秘宝"
+   ],
+   "by": "TOHO animation STUDIO",
+   "carried": false,
+   "count": 1,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx200929-dx3hnftE7K7C.jpg",
+   "format": "Film",
+   "genres": [
+    "Drama",
+    "Mystery"
+   ],
+   "id": "anilist:200929",
+   "next": {
+    "at": 1796914800,
+    "episode": 1
+   },
+   "popularity": 32495,
+   "score": null,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "200929",
+   "start": "2026-12-11",
+   "status": "upcoming",
+   "tags": [],
+   "title": "The Apothecary Diaries: The Late Lady’s Treasure",
+   "trending": 324,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "ドラゴンボール超 ビルス"
+   ],
+   "by": "Toei Animation",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206814-PVVzRbf1IQpe.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+   ],
+   "id": "anilist:206814",
+   "next": {
+    "at": 1794147360,
+    "episode": 5
+   },
+   "popularity": 29949,
+   "score": 81,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "206814",
+   "start": "2026-10-11",
+   "status": "releasing",
+   "tags": [],
+   "title": "Dragon Ball Super: Beerus",
+   "trending": 2100,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Tensei Kizoku, Kantei Skill de Nariagaru 3rd Season",
+    "転生貴族、鑑定スキルで成り上がる 第3期"
+   ],
+   "by": "GeyeG Pictures",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185756-xPCl0RyQ7fXD.jpg",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Fantasy"
+   ],
+   "id": "anilist:185756",
+   "next": {
+    "at": 1794148200,
+    "episode": 7
+   },
+   "popularity": 29558,
+   "score": 69,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "185756",
+   "start": "2026-09-27",
+   "status": "releasing",
+   "tags": [],
+   "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
+   "trending": 2400,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Doumo, Suki na Hito ni Horegusuri wo Irai Sareta Majo desu.",
+    "どうも、好きな人に惚れ薬を依頼された魔女です。"
+   ],
+   "by": "diomedéa",
+   "carried": false,
+   "count": 12,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207191-VgkIzfH92WoZ.jpg",
+   "format": "TV",
+   "genres": [
+    "Fantasy",
+    "Romance"
+   ],
+   "id": "anilist:207191",
+   "next": {
+    "at": 1794227400,
+    "episode": 6
+   },
+   "popularity": 29342,
+   "score": 72,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "207191",
+   "start": "2026-10-05",
+   "status": "releasing",
+   "tags": [],
+   "title": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
+   "trending": 3100,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Dark Summoner to Dekiteiru",
+    "ダークサモナーとデキている"
+   ],
+   "by": "AtoriE",
+   "carried": false,
+   "count": 12,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208025-JKvqWNr8rz8l.jpg",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Ecchi",
+    "Fantasy",
+    "Romance"
+   ],
+   "id": "anilist:208025",
+   "next": {
+    "at": 1794154800,
+    "episode": 6
+   },
+   "popularity": 28719,
+   "score": 67,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "208025",
+   "start": "2026-10-05",
+   "status": "releasing",
+   "tags": [],
+   "title": "I'm Dating a Dark Summoner",
+   "trending": 287,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Mezametara Saikyou Soubi to Uchuusen-mochi datta node, Ikkodate Mezashite Youhei to shite Jiyuu ni Ikitai",
+    "目覚めたら最強装備と宇宙船持ちだったので、一戸建て目指して傭兵として自由に生きたい"
+   ],
+   "by": "studio A-CAT",
+   "carried": false,
+   "count": 13,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186541-caYpLsLmbCh7.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Mecha",
+    "Romance",
+    "Sci-Fi"
+   ],
+   "id": "anilist:186541",
+   "next": {
+    "at": 1794141000,
+    "episode": 6
+   },
+   "popularity": 28381,
+   "score": 69,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "186541",
+   "start": "2026-10-04",
+   "status": "releasing",
+   "tags": [],
+   "title": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
+   "trending": 2200,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Kyouran Reijou Nia Liston",
+    "凶乱令嬢ニア・リストン"
+   ],
+   "by": "KONAMI animation",
+   "carried": false,
+   "count": 25,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Fantasy"
+   ],
+   "id": "anilist:206949",
+   "next": {
+    "at": 1794313560,
+    "episode": 6
+   },
+   "popularity": 28185,
+   "score": 75,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "206949",
+   "start": "2026-10-06",
+   "status": "releasing",
+   "tags": [],
+   "title": "Nia Liston: The Merciless Maiden",
+   "trending": 4000,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Aoashi 2nd Season",
+    "アオアシ 第2期"
+   ],
+   "by": "TMS Entertainment",
+   "carried": false,
+   "count": 24,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191788-XC6F24LdX6a4.jpg",
+   "format": "TV",
+   "genres": [
+    "Sports"
+   ],
+   "id": "anilist:191788",
+   "next": {
+    "at": 1794124800,
+    "episode": 6
+   },
+   "popularity": 26936,
+   "score": 80,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "191788",
+   "start": "2026-10-04",
+   "status": "releasing",
+   "tags": [],
+   "title": "Aoashi Season 2",
+   "trending": 269,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Tantei wa mou, Shindeiru. Season 2",
+    "探偵はもう、死んでいる。Season2"
+   ],
+   "by": "ENGI",
+   "carried": false,
+   "count": 13,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx152677-gtJbgjE94lCN.png",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "Romance",
+    "Supernatural"
+   ],
+   "id": "anilist:152677",
+   "next": {
+    "at": 1793795400,
+    "episode": 5
+   },
+   "popularity": 26438,
+   "score": 71,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "152677",
+   "start": "2026-10-07",
+   "status": "releasing",
+   "tags": [],
+   "title": "The Detective Is Already Dead Season 2",
+   "trending": 264,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "フールナイト"
+   ],
+   "by": "Shaft",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx213457-gN5p1GZjK3zi.jpg",
+   "format": "ONA",
+   "genres": [
+    "Drama",
+    "Psychological",
+    "Sci-Fi",
+    "Thriller"
+   ],
+   "id": "anilist:213457",
+   "next": {
+    "at": 1795680000,
+    "episode": 1
+   },
+   "popularity": 25107,
+   "score": null,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "213457",
+   "start": "2026-11-26",
+   "status": "upcoming",
+   "tags": [],
+   "title": "Fool Night",
+   "trending": 251,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Magical★Explorer: Eroge no Yuujin Chara ni Tensei Shitakedo, Game Chishiki Tsukatte Jiyuu ni Ikiru",
+    "マジカル★エクスプローラー　エロゲの友人キャラに転生したけど、ゲーム知識使って自由に生きる"
+   ],
+   "by": "WHITE FOX",
+   "carried": false,
+   "count": 13,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169581-UlAviVH36Hxi.png",
+   "format": "ONA",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Ecchi",
+    "Fantasy",
+    "Romance"
+   ],
+   "id": "anilist:169581",
+   "next": {
+    "at": 1794063600,
+    "episode": 7
+   },
+   "popularity": 24932,
+   "score": 69,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "169581",
+   "start": "2026-09-27",
+   "status": "releasing",
+   "tags": [],
+   "title": "Magical Explorer",
+   "trending": 249,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Kashita Maryoku wa [Revo Barai] de Kyousei Choushuu",
+    "貸した魔力は【リボ払い】で強制徴収"
+   ],
+   "by": "SynergySP",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202250-mpm2cvr92Au2.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+   ],
+   "id": "anilist:202250",
+   "next": {
+    "at": 1794069000,
+    "episode": 6
+   },
+   "popularity": 24636,
+   "score": 61,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "202250",
+   "start": "2026-10-04",
+   "status": "releasing",
+   "tags": [],
+   "title": "Magic Repo Man: Dumped by My Party, I’ll Cash In With a Cute Support Fairy to Become the Strongest!",
+   "trending": 246,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Yasei no Last Boss ga Arawareta! 2nd Season",
+    "野生のラスボスが現れた！ 第2期"
+   ],
+   "by": "WAO World",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204389-jCoFCeTthDMy.jpg",
+   "format": "ONA",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+   ],
+   "id": "anilist:204389",
+   "next": {
+    "at": 1794058200,
+    "episode": 7
+   },
+   "popularity": 24213,
+   "score": 73,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "204389",
+   "start": "2026-09-26",
+   "status": "releasing",
+   "tags": [],
+   "title": "A Wild Last Boss Appeared! Season 2",
+   "trending": 242,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "PSYЯEN",
+    "PSYREN -サイレン-"
+   ],
+   "by": "Satelight",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204011-j45RZoqYbdZK.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+   ],
+   "id": "anilist:204011",
+   "next": {
+    "at": 1794232800,
+    "episode": 5
+   },
+   "popularity": 23178,
+   "score": 70,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "204011",
+   "start": "2026-10-05",
+   "status": "releasing",
+   "tags": [],
+   "title": "PSYREN",
+   "trending": 231,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Tensei Goblin Dakedo Shitsumon Aru?",
+    "転生ゴブリンだけど質問ある？"
+   ],
+   "by": "BAKKKA",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209219-3yhKlRx0LX3p.jpg",
+   "format": "ONA",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Romance"
+   ],
+   "id": "anilist:209219",
+   "next": {
+    "at": 1794229200,
+    "episode": 7
+   },
+   "popularity": 22310,
+   "score": 65,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "209219",
+   "start": "2026-10-05",
+   "status": "releasing",
+   "tags": [],
+   "title": "So What's Wrong with Getting Reborn as a Goblin?",
+   "trending": 3200,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Hyouken no Majutsushi ga Sekai wo Suberu II",
+    "冰剣の魔術師が世界を統べるⅡ"
+   ],
+   "by": "Zero-G",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212503-sXBpRZr96c4e.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+   ],
+   "id": "anilist:212503",
+   "next": {
+    "at": 1793896080,
+    "episode": 5
+   },
+   "popularity": 22212,
+   "score": 66,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "212503",
+   "start": "2026-10-09",
+   "status": "releasing",
+   "tags": [],
+   "title": "The Iceblade Sorcerer Shall Rule the World II",
+   "trending": 222,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Shiotaiou no Satou-san ga Ore ni dake Amai",
+    "塩対応の佐藤さんが俺にだけ甘い"
+   ],
+   "by": "Tezuka Productions",
+   "carried": false,
+   "count": 12,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209502-C81oN8M4Smlo.jpg",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Romance"
+   ],
+   "id": "anilist:209502",
+   "next": {
+    "at": 1794315600,
+    "episode": 6
+   },
+   "popularity": 22131,
+   "score": 69,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "209502",
+   "start": "2026-10-06",
+   "status": "releasing",
+   "tags": [],
+   "title": "The Cold Sato-san is Only Sweet to Me",
+   "trending": 3800,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Tougen Anki: Nikko・Kegon no Taki-hen",
+    "桃源暗鬼 日光・華厳の滝編"
+   ],
+   "by": "Studio Hibari",
+   "carried": false,
+   "count": 12,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204650-cAQOzQ84Lwk8.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Mystery",
+    "Supernatural"
+   ],
+   "id": "anilist:204650",
+   "next": {
+    "at": 1793975400,
+    "episode": 6
+   },
+   "popularity": 20994,
+   "score": 72,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "204650",
+   "start": "2026-10-02",
+   "status": "releasing",
+   "tags": [],
+   "title": "TOUGEN ANKI: Nikko Kegon Falls Arc",
+   "trending": 209,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Shinja Zero no Megami-sama to Hajimeru Isekai Kouryaku",
+    "信者ゼロの女神サマと始める異世界攻略"
+   ],
+   "by": "HORNETS",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205896-ElrV8oVAsuax.jpg",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Fantasy"
+   ],
+   "id": "anilist:205896",
+   "next": {
+    "at": 1794148200,
+    "episode": 5
+   },
+   "popularity": 20513,
+   "score": 65,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "205896",
+   "start": "2026-10-11",
+   "status": "releasing",
+   "tags": [],
+   "title": "Full Clearing Another World under a Goddess with Zero Believers",
+   "trending": 2800,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Sekai Saikyou no Majo, Hajimemashita",
+    "世界最強の魔女、始めました"
+   ],
+   "by": "Bridge",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211778-0MXK5HqVFBYH.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Comedy",
+    "Fantasy"
+   ],
+   "id": "anilist:211778",
+   "next": {
+    "at": 1793797200,
+    "episode": 5
+   },
+   "popularity": 19342,
+   "score": 70,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "211778",
+   "start": "2026-10-07",
+   "status": "releasing",
+   "tags": [],
+   "title": "The World's Strongest Witch",
+   "trending": 193,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Tensei shita Dai Seijo wa, Seijo de Aru Koto wo Hita Kakusu",
+    "転生した大聖女は、聖女であることをひた隠す"
+   ],
+   "by": "Felix Film",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187402-ReKkLwFmMV3q.jpg",
+   "format": "ONA",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+   ],
+   "id": "anilist:187402",
+   "next": {
+    "at": 1794056400,
+    "episode": 7
+   },
+   "popularity": 19200,
+   "score": 69,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "187402",
+   "start": "2026-10-03",
+   "status": "releasing",
+   "tags": [],
+   "title": "A Tale of the Secret Saint",
+   "trending": 192,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "FX Senshi Kurumi-chan",
+    "FX戦士くるみちゃん"
+   ],
+   "by": "Passione",
+   "carried": false,
+   "count": 12,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206401-8cAebkI0i8BA.png",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Slice of Life"
+   ],
+   "id": "anilist:206401",
+   "next": {
+    "at": 1793881800,
+    "episode": 6
+   },
+   "popularity": 18586,
+   "score": 67,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "206401",
+   "start": "2026-10-01",
+   "status": "releasing",
+   "tags": [],
+   "title": "FX Fighter Kurumi-chan",
+   "trending": 185,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Ranma 1/2 (2024) 3rd Season",
+    "らんま1/2 (2024) 第3期"
+   ],
+   "by": "MAPPA",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209872-RBeVPqwejHFp.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Comedy",
+    "Romance"
+   ],
+   "id": "anilist:209872",
+   "next": {
+    "at": 1794066960,
+    "episode": 6
+   },
+   "popularity": 18019,
+   "score": 78,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "209872",
+   "start": "2026-10-04",
+   "status": "releasing",
+   "tags": [],
+   "title": "Ranma1/2 (2024) Season 3",
+   "trending": 180,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Romelia Senki: Maou wo Taoshita nochi mo Jinrui Yabasou dakara Guntai Soshiki Shita",
+    "ロメリア戦記 〜魔王を倒した後も人類やばそうだから軍隊組織した〜"
+   ],
+   "by": "Atra",
+   "carried": false,
+   "count": 12,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180894-o3pz4DWFm3je.png",
+   "format": "ONA",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Fantasy"
+   ],
+   "id": "anilist:180894",
+   "next": {
+    "at": 1794052800,
+    "episode": 6
+   },
+   "popularity": 17609,
+   "score": 72,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "180894",
+   "start": "2026-10-03",
+   "status": "releasing",
+   "tags": [],
+   "title": "Romelia War Chronicle",
+   "trending": 176,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Shuiro no Kamen",
+    "朱色の仮面"
+   ],
+   "by": "100studio",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195571-fvj7u5GI7BRT.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Supernatural"
+   ],
+   "id": "anilist:195571",
+   "next": {
+    "at": 1794040200,
+    "episode": 5
+   },
+   "popularity": 16751,
+   "score": 68,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "195571",
+   "start": "2026-10-10",
+   "status": "releasing",
+   "tags": [],
+   "title": "The Vermilion Mask",
+   "trending": 167,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Chitose-kun wa Ramune Bin no Naka Part 2",
+    "千歳くんはラムネ瓶のなか 2クール"
+   ],
+   "by": "feel.",
+   "carried": false,
+   "count": 11,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198727-BL0JTpg0G8tq.jpg",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Romance"
+   ],
+   "id": "anilist:198727",
+   "next": {
+    "at": 1794319200,
+    "episode": 5
+   },
+   "popularity": 16037,
+   "score": 78,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "198727",
+   "start": "2026-10-13",
+   "status": "releasing",
+   "tags": [],
+   "title": "Chitose Is in the Ramune Bottle 2nd Cour",
+   "trending": 160,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Toaru Anbu no ITEM",
+    "とある暗部の少女共棲"
+   ],
+   "by": "J.C.STAFF",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186742-v7yfbefc8fuO.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Sci-Fi"
+   ],
+   "id": "anilist:186742",
+   "next": {
+    "at": 1793971800,
+    "episode": 5
+   },
+   "popularity": 16013,
+   "score": 67,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "186742",
+   "start": "2026-10-09",
+   "status": "releasing",
+   "tags": [],
+   "title": "A Certain Dark Item",
+   "trending": 160,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Sasaki to Pii-chan Season 2",
+    "佐々木とピーちゃん シーズン２"
+   ],
+   "by": "SILVER LINK.",
+   "carried": false,
+   "count": 12,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176314-lpvca6vjmkeO.jpg",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Fantasy",
+    "Mahou Shoujo"
+   ],
+   "id": "anilist:176314",
+   "next": {
+    "at": 1793797200,
+    "episode": 5
+   },
+   "popularity": 15571,
+   "score": 70,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "176314",
+   "start": "2026-10-07",
+   "status": "releasing",
+   "tags": [],
+   "title": "Sasaki and Peeps Season 2",
+   "trending": 155,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "GROTESQQQUE-グロテスク-"
+   ],
+   "by": "CloverWorks",
+   "carried": false,
+   "count": 3,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178972-THp4trZ9uR9b.jpg",
+   "format": "Film",
+   "genres": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Sci-Fi",
+    "Slice of Life",
+    "Supernatural"
+   ],
+   "id": "anilist:178972",
+   "next": {
+    "at": 1793890800,
+    "episode": 1
+   },
+   "popularity": 15010,
+   "score": null,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "178972",
+   "start": "2026-11-06",
+   "status": "upcoming",
+   "tags": [],
+   "title": "GROTESQQQUE",
+   "trending": 150,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Kanojo no Tomodachi",
+    "彼女の友達"
+   ],
+   "by": "Quad",
+   "carried": false,
+   "count": 12,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211877-yWQ2r7XmWvG6.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Ecchi",
+    "Romance"
+   ],
+   "id": "anilist:211877",
+   "next": {
+    "at": 1794153900,
+    "episode": 6
+   },
+   "popularity": 13807,
+   "score": 49,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "211877",
+   "start": "2026-10-05",
+   "status": "releasing",
+   "tags": [],
+   "title": "My Girlfriend's Friend",
+   "trending": 138,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Doko yori mo Tooi Basho ni Iru Kimi e",
+    "どこよりも遠い場所にいる君へ"
+   ],
+   "by": "TMS Entertainment",
+   "carried": false,
+   "count": 1,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207327-OSrMbh8DrGE4.jpg",
+   "format": "Film",
+   "genres": [
+    "Mystery",
+    "Romance"
+   ],
+   "id": "anilist:207327",
+   "next": null,
+   "popularity": 13606,
+   "score": 69,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "207327",
+   "start": "2026-10-09",
+   "status": "finished",
+   "tags": [],
+   "title": "To You in the Beyond",
+   "trending": 136,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Yowaki MAX Reijou Nano ni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta",
+    "弱気MAX令嬢なのに、辣腕婚約者様の賭けに乗ってしまった"
+   ],
+   "by": "Jumondou",
+   "carried": false,
+   "count": 12,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx200455-P3XStRQMJ7Di.png",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Fantasy",
+    "Romance"
+   ],
+   "id": "anilist:200455",
+   "next": {
+    "at": 1794148200,
+    "episode": 6
+   },
+   "popularity": 13334,
+   "score": 67,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "200455",
+   "start": "2026-10-04",
+   "status": "releasing",
+   "tags": [],
+   "title": "Even Though I'm a Super Timid Noble Girl, I Accepted the Bet From My Cunning Fiancé",
+   "trending": 133,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Watashi no Shiawase na Kekkon Tokubetsu-hen",
+    "わたしの幸せな結婚 特別篇"
+   ],
+   "by": "Kinema Citrus",
+   "carried": false,
+   "count": 3,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190054-8h0AuqQjwcCL.png",
+   "format": "Special",
+   "genres": [
+    "Drama",
+    "Romance",
+    "Supernatural"
+   ],
+   "id": "anilist:190054",
+   "next": null,
+   "popularity": 12064,
+   "score": 76,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "190054",
+   "start": "2026-10-25",
+   "status": "finished",
+   "tags": [],
+   "title": "My Happy Marriage Special Episodes",
+   "trending": 120,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "魔法騎士レイアース (2026)"
+   ],
+   "by": "E&H Production",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178868-mfp0HIHNJNAm.jpg",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Fantasy",
+    "Mahou Shoujo",
+    "Mecha"
+   ],
+   "id": "anilist:178868",
+   "next": {
+    "at": 1793803560,
+    "episode": 5
+   },
+   "popularity": 11977,
+   "score": 69,
+   "season": "fall",
+   "source": "anilist",
+   "sourceId": "178868",
+   "start": "2026-10-07",
+   "status": "releasing",
+   "tags": [],
+   "title": "Magic Knight Rayearth (2026)",
+   "trending": 119,
+   "year": 2026
+  }
+ ],
+ "year": 2026
+}

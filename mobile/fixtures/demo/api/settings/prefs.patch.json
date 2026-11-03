@@ -1,0 +1,25 @@
+{
+ "prefs": {
+  "adult": false,
+  "autoDates": true,
+  "dateFormat": "mdy",
+  "hidden": [],
+  "notify": {
+   "comments": true,
+   "desktop": false,
+   "episodes": true,
+   "friends": true,
+   "lists": "watching",
+   "messages": true,
+   "releases": true,
+   "sequels": true,
+   "social": true
+  },
+  "scoreFormat": "10.0",
+  "smartProgress": true,
+  "spoilers": "hide",
+  "theme": "dark",
+  "titleLanguage": "english",
+  "weekStart": "sunday"
+ }
+}

@@ -132,12 +132,13 @@ enum Route: Hashable, Sendable {
 
 /// The pages under Settings, in the website's order.
 enum SettingsPage: String, CaseIterable, Hashable, Sendable {
-    case profile, privacy, appearance, preferences, notifications, importExport = "import", connectedApps = "connected-apps",
-         backups, accounts, server, offline, widgets
+    case profile, account, privacy, appearance, preferences, notifications, importExport = "import",
+         connectedApps = "connected-apps", backups, accounts, server, offline, widgets
 
     var label: String {
         switch self {
         case .profile: return "Profile"
+        case .account: return "Account"
         case .privacy: return "Privacy"
         case .appearance: return "Appearance"
         case .preferences: return "Preferences"

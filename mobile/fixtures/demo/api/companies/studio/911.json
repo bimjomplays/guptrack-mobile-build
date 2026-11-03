@@ -1,0 +1,42 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx191656-xFHtxM8SUTdU.png",
+      "format": "TV",
+      "ref": {
+       "id": "191656",
+       "kind": "anime"
+      },
+      "score": 73,
+      "title": "Even the Student Council Has Its Holes!",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206401-8cAebkI0i8BA.png",
+      "format": "TV",
+      "ref": {
+       "id": "206401",
+       "kind": "anime"
+      },
+      "score": 67,
+      "title": "FX Fighter Kurumi-chan",
+      "year": 2026
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Passione",
+  "ref": {
+   "id": "911",
+   "to": "studio"
+  }
+ }
+}

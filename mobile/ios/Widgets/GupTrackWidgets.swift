@@ -35,7 +35,7 @@ enum WidgetDemoStore {
     }
 
     static func baseLibrary() -> [LibraryEntry] {
-        ExtensionsJSON.bundled([LibraryEntry].self, "library") ?? []
+        ExtensionsJSON.bundledLibrary()
     }
 
     static func catalog() -> ExtensionCatalog {

@@ -1,0 +1,63 @@
+{
+ "title": {
+  "alt": [
+   "Jeoldaegeomgam",
+   "절대검감"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/151460-zE0YRolZcxEq.jpg",
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx151460-Cb2CXwN2ZElE.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Status",
+    "value": "Releasing"
+   },
+   {
+    "label": "Published",
+    "value": "Jun 19, 2022"
+   },
+   {
+    "label": "Members",
+    "value": "17,763"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Fantasy"
+  ],
+  "headline": [
+   "Manga",
+   "2022"
+  ],
+  "idMal": 149880,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "151460",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 78,
+  "scoreNote": "17,763 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Releasing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Absolute Sword Sense",
+  "trailer": null,
+  "volumes": null,
+  "year": 2022
+ }
+}

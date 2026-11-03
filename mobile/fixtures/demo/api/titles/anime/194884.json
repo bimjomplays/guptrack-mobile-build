@@ -1,0 +1,99 @@
+{
+ "title": {
+  "alt": [
+   "Kaguya-sama wa Kokurasetai: Otona e no Kaidan",
+   "かぐや様は告らせたい 大人への階段"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/194884-PwYRWyOUEwZI.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 2,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194884-rHgGAzKSCEWz.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Special"
+   },
+   {
+    "label": "Episodes",
+    "value": "2"
+   },
+   {
+    "label": "Episode length",
+    "value": "26 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Dec 31, 2025"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2025"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "561",
+       "to": "studio"
+      },
+      "text": "A-1 Pictures"
+     }
+    ],
+    "value": "A-1 Pictures"
+   },
+   {
+    "label": "Members",
+    "value": "53,967"
+   }
+  ],
+  "format": "Special",
+  "genres": [
+   "Comedy",
+   "Psychological",
+   "Romance",
+   "Slice of Life"
+  ],
+  "headline": [
+   "Special",
+   "Fall 2025",
+   "2 episodes"
+  ],
+  "idMal": 61903,
+  "makers": [
+   {
+    "ref": {
+     "id": "561",
+     "to": "studio"
+    },
+    "text": "A-1 Pictures"
+   }
+  ],
+  "media": "anime",
+  "minutes": 26,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "194884",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 84,
+  "scoreNote": "53,967 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Kaguya-sama: Love Is War -Stairway to Adulthood-",
+  "trailer": null,
+  "volumes": null,
+  "year": 2025
+ }
+}

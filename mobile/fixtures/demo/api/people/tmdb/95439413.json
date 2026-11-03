@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Annie",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1233413",
+        "kind": "movie"
+       },
+       "score": 75,
+       "title": "Sinners",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Annie",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1233413",
+        "kind": "movie"
+       },
+       "score": 75,
+       "title": "Sinners",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/vp7qDA7cYZj0MDYk1k4wysmznnN.jpg",
+  "known": "Acting",
+  "name": "Wunmi Mosaku",
+  "native": null,
+  "ref": {
+   "id": "95439413",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

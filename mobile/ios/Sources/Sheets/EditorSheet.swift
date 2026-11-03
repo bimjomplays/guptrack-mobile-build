@@ -2,7 +2,7 @@ import SwiftUI
 
 /// The list editor over a title page (18 at its short height, 19 pulled up to large). It edits a draft of the entry;
 /// ✓ saves it with one `model.change`, ✕ drops it. Short: status, the big − 6 / 11 +, the 10-point score, favourite.
-/// Large: the compact stepper, then favourite, volume/season, rewatches, dates, the note, review and remove.
+/// Large: the compact stepper, then favourite, volume (manga), rewatches, dates, the note, review and remove.
 struct EditorSheet: View {
     let titleId: String
     var expanded = false
@@ -211,12 +211,6 @@ private struct EditorForm: View {
                 PlainRow(label: "Volume", chevron: false) {
                     ProgressStepper(progress: draft.volume ?? 0, total: draft.title.volumes, small: true,
                                     minus: { draft.stepVolume(-1) }, plus: { draft.stepVolume(1) })
-                }
-            }
-            if draft.media == .tv {
-                PlainRow(label: "Season", chevron: false) {
-                    ProgressStepper(progress: draft.season ?? 1, total: nil, small: true,
-                                    minus: { draft.stepSeason(-1) }, plus: { draft.stepSeason(1) })
                 }
             }
             PlainRow(label: draft.media.isReading ? "Rereads" : "Rewatches", chevron: false) {

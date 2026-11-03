@@ -1,0 +1,93 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Directing"
+   },
+   {
+    "label": "Credits",
+    "value": "2"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "872585",
+        "kind": "movie"
+       },
+       "score": 80,
+       "title": "Oppenheimer",
+       "year": 2023
+      }
+     },
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "157336",
+        "kind": "movie"
+       },
+       "score": 85,
+       "title": "Interstellar",
+       "year": 2014
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "872585",
+        "kind": "movie"
+       },
+       "score": 80,
+       "title": "Oppenheimer",
+       "year": 2023
+      }
+     },
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "157336",
+        "kind": "movie"
+       },
+       "score": 85,
+       "title": "Interstellar",
+       "year": 2014
+      }
+     }
+    ],
+    "title": "Directing"
+   }
+  ],
+  "image": null,
+  "known": "Directing",
+  "name": "Christopher Nolan",
+  "native": null,
+  "ref": {
+   "id": "92180385",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

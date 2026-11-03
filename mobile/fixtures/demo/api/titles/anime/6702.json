@@ -1,0 +1,112 @@
+{
+ "title": {
+  "alt": [
+   "FAIRY TAIL"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/6702-VSHyctSAeUBS.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 175,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b6702-KI4qgSMyI8Pm.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "175"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 12, 2009"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2009"
+   },
+   {
+    "label": "Studios",
+    "links": [
+     {
+      "ref": {
+       "id": "41",
+       "to": "studio"
+      },
+      "text": "Satelight"
+     },
+     {
+      "ref": {
+       "id": "561",
+       "to": "studio"
+      },
+      "text": "A-1 Pictures"
+     }
+    ],
+    "value": "Satelight, A-1 Pictures"
+   },
+   {
+    "label": "Members",
+    "value": "385,908"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Fantasy"
+  ],
+  "headline": [
+   "TV",
+   "Fall 2009",
+   "175 episodes"
+  ],
+  "idMal": 6702,
+  "makers": [
+   {
+    "ref": {
+     "id": "41",
+     "to": "studio"
+    },
+    "text": "Satelight"
+   },
+   {
+    "ref": {
+     "id": "561",
+     "to": "studio"
+    },
+    "text": "A-1 Pictures"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "6702",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 72,
+  "scoreNote": "385,908 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Fairy Tail",
+  "trailer": null,
+  "volumes": null,
+  "year": 2009
+ }
+}

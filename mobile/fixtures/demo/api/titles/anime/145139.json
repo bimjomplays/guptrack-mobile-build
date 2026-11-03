@@ -1,0 +1,100 @@
+{
+ "title": {
+  "alt": [
+   "Kimetsu no Yaiba: Katanakaji no Sato-hen",
+   "鬼滅の刃 刀鍛冶の里編"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/145139-V01Prh6UzfRk.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 11,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145139-rRimpHGWLhym.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "11"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Apr 9, 2023"
+   },
+   {
+    "label": "Season",
+    "value": "Spring 2023"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "43",
+       "to": "studio"
+      },
+      "text": "ufotable"
+     }
+    ],
+    "value": "ufotable"
+   },
+   {
+    "label": "Members",
+    "value": "382,073"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Fantasy",
+   "Supernatural"
+  ],
+  "headline": [
+   "TV",
+   "Spring 2023",
+   "11 episodes"
+  ],
+  "idMal": 51019,
+  "makers": [
+   {
+    "ref": {
+     "id": "43",
+     "to": "studio"
+    },
+    "text": "ufotable"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "145139",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 80,
+  "scoreNote": "382,073 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc",
+  "trailer": null,
+  "volumes": null,
+  "year": 2023
+ }
+}

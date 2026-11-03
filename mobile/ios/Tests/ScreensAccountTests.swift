@@ -18,7 +18,6 @@ final class ScreensAccountTests: ScreenTestCase {
         let app = launch(["-account", "sign-in"])
         expect(app, "Sign in to your library.")
         expect(app, "guptrack.example")
-        expect(app, "Sign in with a passkey")
         expect(app, "Use a recovery code")
         expect(app, "Join GupTrack")
         shot("02-sign-in")
@@ -37,8 +36,9 @@ final class ScreensAccountTests: ScreenTestCase {
     func test04RecoveryCodes() {
         let app = launch(["-account", "recovery"])
         expect(app, "Save your recovery codes")
-        expect(app, "h3tm-8qwe")
-        expect(app, "s7gh-5wnp")
+        // GupTrack's codes: 26 symbols in groups of five, one column
+        expect(app, "92qhv-1fkpj-86nmg-egagw-6txnh-s")
+        expect(app, "a3k2m-e19xb-wc4g2-sr386-vqv4h-8")
         expect(app, "Save to Files")
         expect(app, "I've saved these").tap()
         XCTAssertTrue(app.buttons["Open GupTrack"].isEnabled)
@@ -80,8 +80,8 @@ final class ScreensAccountTests: ScreenTestCase {
         let app = launch(["-account", "connect"])
         expect(app, "Scan the pairing code").tap()
         expect(app, "The camera isn't available here.")
-        let code = String(repeating: "demo-pair-", count: 5)
-        app.textFields["Pairing link"].typeText("guptrack://pair?v=1&url=https%3A%2F%2Fguptrack.example&code=\(code)")
+        // the website's QR (docs/app-api.md §4.1): the server's address and an 8-symbol code
+        app.textFields["Pairing link"].typeText("guptrack://pair?server=https%3A%2F%2Fguptrack.example&code=7KQ4-M2XD")
         app.buttons["Connect"].tap()
         expect(app, "Upcoming")
         XCTAssertTrue(app.model.isSignedIn)

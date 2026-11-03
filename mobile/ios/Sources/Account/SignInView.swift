@@ -1,7 +1,6 @@
-import AuthenticationServices
 import SwiftUI
 
-/// 02 Sign in: username and password, a passkey (through the website, see AccountFlowLogic.swift), a recovery code;
+/// 02 Sign in: username and password, or a recovery code (passkeys are website-only for now);
 /// shows the server it talks to, with Change.
 struct SignInView: View {
     @Bindable var flow: AccountFlowModel
@@ -9,7 +8,6 @@ struct SignInView: View {
     private enum Field: Hashable { case username, password }
     @FocusState private var focus: Field?
     @State private var shown = false
-    @Environment(\.webAuthenticationSession) private var webAuth
 
     var body: some View {
         ScrollView {
@@ -22,7 +20,7 @@ struct SignInView: View {
         .safeAreaInset(edge: .bottom) { footer }
         .pageBackground()
         .toolbar(.hidden, for: .navigationBar)
-        .task { await flow.loadHello() }
+        .task { await flow.loadServer() }
         .onAppear {
             // the demo fills in the demo user so it signs in with one tap
             if flow.model.isDemo && flow.username.isEmpty {
@@ -93,24 +91,9 @@ struct SignInView: View {
             .padding(.horizontal, Theme.pad)
             .padding(.top, 8)
             AccountErrorLine(text: flow.error)
-            if flow.passkeys {
-                AccountOrRule().padding(.vertical, 22)
-                passkeyButton
-            }
             AccountLinkLine(lead: "Forgot your password? ", link: "Use a recovery code") { flow.go(.recover) }
                 .padding(.top, 24)
         }
-    }
-
-    private var passkeyButton: some View {
-        Button {
-            Task { await passkey() }
-        } label: {
-            Label("Sign in with a passkey", systemImage: "touchid")
-        }
-        .buttonStyle(.capsule(.tone, .large, full: true))
-        .disabled(flow.busy)
-        .padding(.horizontal, Theme.pad)
     }
 
     @ViewBuilder private var footer: some View {
@@ -120,26 +103,6 @@ struct SignInView: View {
                 .padding(.top, 8)
                 .frame(maxWidth: .infinity)
                 .background(Theme.sheet)
-        }
-    }
-
-    /// the website's passkey sign-in in a system sheet; it comes back as a guptrack://pair link
-    private func passkey() async {
-        if flow.model.isDemo {
-            // no website in the demo: pair with an invented code
-            let code = String(repeating: "demo-pair-", count: 5)
-            let link = "guptrack://pair?v=1&url=" + (Demo.server.absoluteString.addingPercentEncoding(
-                withAllowedCharacters: .alphanumerics) ?? "") + "&code=" + code
-            if let p = await flow.pair(link) { flow.error = p }
-            return
-        }
-        guard let url = flow.passkeyURL() else { return }
-        do {
-            let back = try await webAuth.authenticate(using: url, callbackURLScheme: "guptrack",
-                                                      preferredBrowserSession: .ephemeral)
-            if let p = await flow.pair(back.absoluteString) { flow.error = p }
-        } catch {
-            // closed by the person: nothing to say
         }
     }
 }

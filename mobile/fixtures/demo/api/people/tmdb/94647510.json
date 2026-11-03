@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Judy Hopps (voice)",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1084242",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "Zootopia 2",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Judy Hopps (voice)",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1084242",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "Zootopia 2",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/eByMpalFhQxUYuzA0srCN8rnfOZ.jpg",
+  "known": "Acting",
+  "name": "Ginnifer Goodwin",
+  "native": null,
+  "ref": {
+   "id": "94647510",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

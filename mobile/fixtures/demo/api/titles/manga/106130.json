@@ -1,0 +1,63 @@
+{
+ "title": {
+  "alt": [
+   "ブルーロック"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/106130-4UbnMTU80zur.jpg",
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx106130-yPNeuSu75ey1.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Status",
+    "value": "Releasing"
+   },
+   {
+    "label": "Published",
+    "value": "Aug 1, 2018"
+   },
+   {
+    "label": "Members",
+    "value": "126,555"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Drama",
+   "Sports"
+  ],
+  "headline": [
+   "Manga",
+   "2018"
+  ],
+  "idMal": 114745,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "106130",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 82,
+  "scoreNote": "126,555 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Releasing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Blue Lock",
+  "trailer": null,
+  "volumes": null,
+  "year": 2018
+ }
+}

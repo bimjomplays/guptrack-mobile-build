@@ -1,0 +1,72 @@
+{
+ "title": {
+  "alt": [
+   "ホリミヤ"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/42451-shG1Ksjxm3pw.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 152,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx72451-vVXtRwyttjGG.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Chapters",
+    "value": "152"
+   },
+   {
+    "label": "Volumes",
+    "value": "17"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Published",
+    "value": "Oct 18, 2011"
+   },
+   {
+    "label": "Members",
+    "value": "124,199"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Comedy",
+   "Romance",
+   "Slice of Life"
+  ],
+  "headline": [
+   "Manga",
+   "2011",
+   "152 chapters"
+  ],
+  "idMal": 42451,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "72451",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 82,
+  "scoreNote": "124,199 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Horimiya",
+  "trailer": null,
+  "volumes": 17,
+  "year": 2011
+ }
+}

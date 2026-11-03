@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Writing"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Creator",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "100088",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "The Last of Us",
+       "year": 2023
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Creator",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "100088",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "The Last of Us",
+       "year": 2023
+      }
+     }
+    ],
+    "title": "Writing"
+   }
+  ],
+  "image": null,
+  "known": "Writing",
+  "name": "Neil Druckmann",
+  "native": null,
+  "ref": {
+   "id": "97503536",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

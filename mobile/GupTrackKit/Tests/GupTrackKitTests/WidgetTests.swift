@@ -6,7 +6,7 @@ import XCTest
 @testable import GupTrack
 #endif
 
-/// The widgets' snapshot (65, 65b) from the demo library, and a widget's +1.
+/// The widgets' snapshot (65, 65b) from the demo library and home/live's next episodes, and a widget's +1.
 final class WidgetTests: XCTestCase {
     override func setUp() {
         Clock.fixed = Clock.demoNow
@@ -18,7 +18,7 @@ final class WidgetTests: XCTestCase {
         Clock.fixedZone = nil
     }
 
-    private func library() throws -> [LibraryEntry] { try Demo.load([LibraryEntry].self, "api/library.json") }
+    private func library() throws -> [LibraryEntry] { Demo.library() }
     private func catalog() throws -> ExtensionCatalog { try Demo.load(ExtensionCatalog.self, "api/extensions.json") }
     private func snapshot() throws -> WidgetSnapshot {
         WidgetSnapshot.make(library: try library(), catalog: try catalog(), now: Clock.demoNow)
@@ -29,6 +29,8 @@ final class WidgetTests: XCTestCase {
         XCTAssertFalse(c.titles.isEmpty)
         XCTAssertEqual(c.seasons["tv:95396"], [9, 10])
         XCTAssertEqual(c.malIds["anime/61469"], "anime:210482", "the MAL id of the list's own entry wins")
+        XCTAssertEqual(c.upcoming, try Demo.load(HomeLive.self, "api/home/live.json").upcoming,
+                       "the widgets' next episodes are home/live's")
         let onList = Set(try library().map(\.id))
         for t in c.titles { XCTAssertFalse(onList.contains(t.id), "\(t.id) is on the list already") }
     }
@@ -79,7 +81,7 @@ final class WidgetTests: XCTestCase {
         let manga = WidgetSnapshot.item(try XCTUnwrap(lib.first { $0.id == "manga:105778" }))
         XCTAssertTrue(manga.caption.hasPrefix("Ch "), manga.caption)
         let film = WidgetSnapshot.item(try XCTUnwrap(lib.first { $0.id == "movie:693134" }))
-        XCTAssertEqual(film.caption, "Film · 2024")
+        XCTAssertEqual(film.caption, "Film", "the library feed has no year")
         XCTAssertFalse(film.canStep)
         let op = WidgetSnapshot.item(try XCTUnwrap(lib.first { $0.id == "anime:21" }))
         XCTAssertNil(op.fraction, "no total, no bar")
@@ -93,15 +95,41 @@ final class WidgetTests: XCTestCase {
         XCTAssertEqual(spot.caption, "Ep 7 · Fri 3:00 AM")
         XCTAssertTrue(spot.inline.hasPrefix("Ep 7 · Fri 3:00 AM · STEEL BALL RUN"))
         XCTAssertNotNil(spot.at)
+        XCTAssertEqual(spot.at, Date(timeIntervalSince1970: 1_793_952_000))
+    }
+
+    func testNextEpisodeCaptions() throws {
+        let sbr = try XCTUnwrap(try catalog().upcoming.first { $0.titleId == "anime:210482" })
         // a week or more away: the day instead of the weekday
-        let op = try XCTUnwrap(try library().first { $0.id == "anime:21" })
-        XCTAssertEqual(WidgetSnapshot.airingCaption(op.title.next!, media: .anime, now: Clock.demoNow), "Ep 1181 · Jan 3")
+        var later = sbr
+        later.number = 1181
+        later.at = Millis.of(ExtensionsJSON.parse("2027-01-03T14:30:00Z")!)
+        XCTAssertEqual(later.caption(now: Clock.demoNow), "Ep 1,181 · Jan 3")
+        // TMDB knows only the day
+        var tv = sbr
+        tv.ref = TitleRef(kind: .tv, id: "95480")
+        tv.dateOnly = true
+        tv.number = 34
+        tv.at = Millis.of(ExtensionsJSON.parse("2026-11-04T05:00:00Z")!)
+        XCTAssertEqual(tv.caption(now: Clock.demoNow), "Ep 34 · Tomorrow")
+        tv.at = Millis.of(ExtensionsJSON.parse("2026-11-06T05:00:00Z")!)
+        XCTAssertEqual(tv.caption(now: Clock.demoNow), "Ep 34 · Fri")
+    }
+
+    func testOnlyWhatYouWatchGetsTheSpotlight() throws {
+        let lib = try library()
+        let up = try catalog().upcoming
+        // Slow Horses (on hold) airs first, but only watching titles take the spotlight
+        XCTAssertEqual(up.first?.titleId, "tv:95480")
+        XCTAssertEqual(WidgetSnapshot.upcoming(up, library: lib, now: Clock.demoNow).map(\.titleId), ["anime:210482"])
+        // once it has aired it's gone
+        let after = Clock.demoNow.addingTimeInterval(4 * 86_400)
+        XCTAssertTrue(WidgetSnapshot.upcoming(up, library: lib, now: after).isEmpty)
     }
 
     func testSpotlightFallsBackToUpNextWhenNothingAirs() throws {
-        var lib = try library()
-        for i in lib.indices { lib[i].title.next = nil }
-        let snap = WidgetSnapshot.make(library: lib, catalog: try catalog(), now: Clock.demoNow)
+        let lib = try library()
+        let snap = WidgetSnapshot.make(library: lib, catalog: try catalog(), upcoming: [], now: Clock.demoNow)
         let first = try XCTUnwrap(snap.items.first)
         let spot = try XCTUnwrap(snap.spotlight)
         XCTAssertEqual(spot.id, first.id)

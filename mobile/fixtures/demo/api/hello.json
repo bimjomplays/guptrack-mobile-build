@@ -1,8 +1,0 @@
-{
- "api": 1,
- "app": "guptrack",
- "joining": "invite",
- "name": "GupTrack",
- "passkeys": true,
- "version": "1.0.0"
-}

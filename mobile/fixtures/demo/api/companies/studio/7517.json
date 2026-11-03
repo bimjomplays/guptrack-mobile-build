@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185874-aU3e6tBT6wwA.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "185874",
+       "kind": "anime"
+      },
+      "score": 88,
+      "title": "BLEACH: Thousand-Year Blood War - The Calamity",
+      "year": 2026
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "PIERROT FILMS",
+  "ref": {
+   "id": "7517",
+   "to": "studio"
+  }
+ }
+}

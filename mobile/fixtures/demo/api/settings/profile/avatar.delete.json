@@ -1,0 +1,128 @@
+{
+ "profile": {
+  "avatar": null,
+  "bio": {
+   "banner": {
+    "aspect": 6.5,
+    "fade": {
+     "color": "dark",
+     "on": true,
+     "strength": 74,
+     "text": "auto"
+    },
+    "posX": 50,
+    "posY": 42,
+    "src": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/154587-ivXNJ23SM1xB.jpg",
+    "zoom": 1
+   },
+   "doc": {
+    "content": [
+     {
+      "content": [
+       {
+        "text": "Seasonal anime, slow manga, one book a month.",
+        "type": "text"
+       }
+      ],
+      "type": "paragraph"
+     },
+     {
+      "content": [
+       {
+        "text": "Watching ",
+        "type": "text"
+       },
+       {
+        "marks": [
+         {
+          "type": "bold"
+         }
+        ],
+        "text": "Frieren",
+        "type": "text"
+       },
+       {
+        "text": " every Friday. Comfort rewatch: ",
+        "type": "text"
+       },
+       {
+        "marks": [
+         {
+          "type": "italic"
+         }
+        ],
+        "text": "Code Geass",
+        "type": "text"
+       },
+       {
+        "text": ".",
+        "type": "text"
+       }
+      ],
+      "type": "paragraph"
+     },
+     {
+      "attrs": {
+       "level": 2
+      },
+      "content": [
+       {
+        "text": "On repeat",
+        "type": "text"
+       }
+      ],
+      "type": "heading"
+     },
+     {
+      "attrs": {
+       "count": 6,
+       "heading": "",
+       "items": [],
+       "layout": "grid",
+       "media": "anime",
+       "showHeading": false,
+       "showProgress": true,
+       "showScore": false,
+       "showTitles": true,
+       "size": "m",
+       "source": "favourites"
+      },
+      "type": "listBlock"
+     },
+     {
+      "attrs": {
+       "variant": "bar"
+      },
+      "content": [
+       {
+        "content": [
+         {
+          "text": "Ask me about the long ones.",
+          "type": "text"
+         }
+        ],
+        "type": "paragraph"
+       }
+      ],
+      "type": "blockquote"
+     }
+    ],
+    "type": "doc"
+   },
+   "style": {
+    "accent": "brand",
+    "align": "left",
+    "bodyFont": "lora",
+    "collapse": "none",
+    "frame": "none",
+    "headingFont": "fraunces",
+    "headings": "plain",
+    "measure": "reading",
+    "size": "l",
+    "spacing": "airy"
+   }
+  },
+  "joined": 1757428860000,
+  "name": "Mika"
+ }
+}

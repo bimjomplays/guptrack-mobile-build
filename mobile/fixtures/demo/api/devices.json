@@ -1,0 +1,32 @@
+{
+ "current": 1,
+ "devices": [
+  {
+   "app": "GupTrack",
+   "createdAt": 1791902460000,
+   "id": 1,
+   "lastUsedAt": 1793716740000,
+   "name": "iPhone",
+   "platform": "iOS 26.1",
+   "scope": "app"
+  },
+  {
+   "app": "Harbor",
+   "createdAt": 1792680060000,
+   "id": 7,
+   "lastUsedAt": 1793706060000,
+   "name": "Harbor on the living-room PC",
+   "platform": "Windows 11",
+   "scope": "sync"
+  },
+  {
+   "app": "GupTrack",
+   "createdAt": 1788532860000,
+   "id": 9,
+   "lastUsedAt": 1793544060000,
+   "name": "iPad",
+   "platform": "iPadOS 26.1",
+   "scope": "app"
+  }
+ ]
+}

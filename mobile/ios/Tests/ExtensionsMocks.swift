@@ -229,7 +229,7 @@ struct MockSharePage: View {
     private func behind(_ t: Title?) -> some View {
         ZStack(alignment: .topLeading) {
             Color(red: 14 / 255, green: 15 / 255, blue: 18 / 255)
-            Artwork(url: t?.banner).frame(maxWidth: .infinity).frame(height: 300)
+            Artwork(url: t?.banner ?? t?.cover).frame(maxWidth: .infinity).frame(height: 300)
             VStack(alignment: .leading, spacing: 4) {
                 Text(t?.name ?? "").font(.system(size: 30, weight: .heavy)).foregroundStyle(.white)
                 Text(([t?.year.map(String.init)] + (t?.genres ?? []).prefix(3).map { Optional($0) }).compactMap { $0 }

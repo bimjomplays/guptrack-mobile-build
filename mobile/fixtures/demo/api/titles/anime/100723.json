@@ -1,0 +1,95 @@
+{
+ "title": {
+  "alt": [
+   "Boku no Hero Academia THE MOVIE: Futari no Hero",
+   "僕のヒーローアカデミア THE MOVIE 〜2人の英雄〜"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/100723-B3tiFsddYmfF.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100723-7f5e1BCTCDoB.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "1h 36m"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Released",
+    "value": "Aug 3, 2018"
+   },
+   {
+    "label": "Season",
+    "value": "Summer 2018"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "4",
+       "to": "studio"
+      },
+      "text": "bones"
+     }
+    ],
+    "value": "bones"
+   },
+   {
+    "label": "Members",
+    "value": "225,171"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Drama",
+   "Sci-Fi"
+  ],
+  "headline": [
+   "Film",
+   "Summer 2018",
+   "1h 36m"
+  ],
+  "idMal": 36896,
+  "makers": [
+   {
+    "ref": {
+     "id": "4",
+     "to": "studio"
+    },
+    "text": "bones"
+   }
+  ],
+  "media": "anime",
+  "minutes": 96,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "100723",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 74,
+  "scoreNote": "225,171 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "My Hero Academia: Two Heroes",
+  "trailer": null,
+  "volumes": null,
+  "year": 2018
+ }
+}

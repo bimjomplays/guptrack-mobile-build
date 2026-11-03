@@ -6,7 +6,8 @@ import XCTest
 @testable import GupTrack
 #endif
 
-/// Browse (11-15): the pages decode, filters filter, the season chart groups, search captions read right.
+/// Browse (11-15), docs/app-api.md §8.1–8.2: the answers decode as the doc writes them, the calls go where the doc
+/// says, filters round-trip, the season chart groups, search reads right.
 final class BrowseTests: XCTestCase {
     override func setUp() {
         Clock.fixed = Clock.demoNow
@@ -18,228 +19,248 @@ final class BrowseTests: XCTestCase {
         Clock.fixedZone = nil
     }
 
-    private func library() throws -> [LibraryEntry] { try Demo.load([LibraryEntry].self, "api/library.json") }
-
-    // MARK: pages
-
-    func testEveryMediaHasABrowsePage() throws {
-        for m in MediaKind.allCases {
-            let page = try Demo.load(BrowsePage.self, Demo.file("browse", variant: m.rawValue))
-            XCTAssertEqual(page.media, m)
-            XCTAssertGreaterThanOrEqual(page.shelves.count, 2, "\(m)")
-            XCTAssertTrue(page.shelves.allSatisfy { !$0.titles.isEmpty && $0.titles.allSatisfy { $0.media == m } }, "\(m)")
-            XCTAssertEqual(page.feature != nil, m == .tv || m == .movie, "TMDB media get the feature card")
-            let pool = try Demo.load([Title].self, Demo.file("browse/titles", variant: m.rawValue))
-            XCTAssertGreaterThanOrEqual(pool.count, 10, "\(m)")
-            XCTAssertTrue(pool.allSatisfy { $0.media == m })
-        }
+    func decode<T: Decodable>(_ type: T.Type, _ json: String) throws -> T {
+        try APIClient.decoder.decode(T.self, from: Data(json.utf8))
     }
 
-    func testAnimePageStartsWithThisSeason() throws {
-        let page = try Demo.load(BrowsePage.self, "api/browse/anime.json")
-        let season = page.shelves[0]
-        XCTAssertEqual(season.title, "This season")
-        XCTAssertEqual(season.sub, "Fall 2026 · 50 anime")
-        XCTAssertEqual(season.route, .seasonChart)
-        XCTAssertEqual(season.titles.prefix(3).map(\.id), ["anime:210482", "anime:195539", "anime:195516"])
-        XCTAssertFalse(page.shelves[1].titles.contains { $0.id == "anime:21" })
-        XCTAssertEqual(page.shelves[1].sort, .popularity)
+    static let frieren = #"""
+    { "id": "anilist:154587", "source": "anilist", "sourceId": "154587", "title": "Frieren: Beyond Journey’s End",
+      "alt": ["Sousou no Frieren"], "cover": "https://img.example/frieren.jpg", "format": "TV", "year": 2023,
+      "season": "fall", "start": "2023-09-29", "status": "finished", "genres": ["Adventure", "Drama", "Fantasy"],
+      "tags": ["Elf"], "score": 90, "popularity": 410000, "trending": 120, "count": 28, "by": "Madhouse",
+      "newField": 1 }
+    """#
+
+    static let dune = #"""
+    { "id": "tmdb:movie:693134", "source": "tmdb", "sourceId": "movie/693134", "title": "Dune: Part Two",
+      "cover": "/api/app/v1/pictures/dune.jpg", "format": "Film", "year": 2024, "season": null, "start": "2024-02-27",
+      "status": "finished", "genres": ["Science Fiction"], "tags": [], "score": 82, "popularity": 900,
+      "trending": 40, "count": 167, "by": "Denis Villeneuve" }
+    """#
+
+    // MARK: §8.1 answers
+
+    func testCatalogTitleDecodesAndBecomesATitle() throws {
+        let c = try decode(CatalogTitle.self, Self.frieren)
+        XCTAssertEqual(c.status, .finished)
+        XCTAssertEqual(c.season, .fall)
+        let t = c.title(.anime)
+        XCTAssertEqual(t.id, "anime:154587")
+        XCTAssertEqual(t.score, 9.0, "0–100 shown out of 10")
+        XCTAssertEqual(t.total, 28)
+        XCTAssertEqual(t.state, "Finished")
+        XCTAssertEqual(t.studio, "Madhouse")
+
+        let m = try decode(CatalogTitle.self, Self.dune)
+        XCTAssertEqual(m.ref(.movies), TitleRef(kind: .movie, id: "693134"))
+        let film = m.title(.movies)
+        XCTAssertEqual(film.id, "movie:693134")
+        XCTAssertNil(film.total, "a film's count is its runtime")
+        XCTAssertEqual(film.runtime, "2h 47m")
+        // a "/" picture stays a relative address for the image loader
+        XCTAssertEqual(film.cover?.absoluteString, "/api/app/v1/pictures/dune.jpg")
     }
 
-    func testTVFeatureIsPluribus() throws {
-        let page = try Demo.load(BrowsePage.self, "api/browse/tv.json")
-        XCTAssertEqual(page.feature?.title.name, "Pluribus")
-        XCTAssertEqual(page.feature?.label, "Most added this week")
-        XCTAssertEqual(page.feature?.line, "2025 · Drama · ★ 7.9")
-        XCTAssertEqual(page.shelves.map(\.title), ["Popular shows", "Top rated"])
-        XCTAssertEqual(page.shelves[0].titles.prefix(3).map(\.name), ["Severance", "The Last of Us", "Shōgun"])
+    func testShelvesAnswer() throws {
+        let a = try decode(BrowseShelves.self, #"""
+        { "shelves": [
+          { "spec": { "title": "This season", "note": "Fall 2026", "filter": { "season": "fall", "from": 2026, "to": 2026 },
+                      "chart": true, "min": 4 }, "titles": [\#(Self.frieren)] },
+          { "spec": { "title": "Top rated", "filter": { "sort": "top", "genres": "Drama,Mystery" }, "min": 4, "fresh": true },
+            "titles": [\#(Self.frieren)] },
+          { "spec": { "title": "Empty", "filter": {}, "min": 4 }, "titles": [] }
+        ] }
+        """#)
+        XCTAssertEqual(a.shelves.count, 3)
+        XCTAssertEqual(a.shelves[0].spec.filter.season, .fall)
+        XCTAssertEqual(a.shelves[1].spec.filter.genres, ["Drama", "Mystery"])
+        XCTAssertEqual(a.shelves[1].spec.filter.sort, .top)
+
+        let anime = BrowsePage(.anime, a)
+        XCTAssertNil(anime.feature)
+        XCTAssertEqual(anime.shelves.map(\.title), ["This season", "Top rated"], "empty shelves go")
+        XCTAssertTrue(anime.shelves[0].chart)
+        XCTAssertEqual(anime.shelves[0].note, "Fall 2026")
     }
 
-    func testAnimeFilmsStayUnderAnime() throws {
-        let films = try Demo.load([Title].self, "api/browse/titles/movie.json")
-        XCTAssertFalse(films.contains { $0.id.hasPrefix("anime:") })
-        let anime = try Demo.load([Title].self, "api/browse/titles/anime.json")
-        XCTAssertTrue(anime.contains { $0.format == "Movie" })
+    func testTVAndMoviesLeadWithTheFirstShelfsFirstTitle() throws {
+        let a = try decode(BrowseShelves.self, #"""
+        { "shelves": [
+          { "spec": { "title": "Trending", "filter": { "sort": "trending" }, "min": 4 }, "titles": [\#(Self.dune), \#(Self.dune)] },
+          { "spec": { "title": "Top rated", "filter": { "sort": "top" }, "min": 4 }, "titles": [\#(Self.dune)] }
+        ] }
+        """#)
+        let p = BrowsePage(.movie, a)
+        XCTAssertEqual(p.feature?.label, "Trending")
+        XCTAssertEqual(p.feature?.title.name, "Dune: Part Two")
+        XCTAssertEqual(p.shelves.first?.titles.count, 1)
     }
 
-    func testCaptionIsYourStatusElseTheScore() throws {
-        let lib = try library()
-        let page = try Demo.load(BrowsePage.self, "api/browse/anime.json")
-        let sbr = page.shelves[0].titles[0]
-        let e = lib.first { $0.id == sbr.id }
-        XCTAssertEqual(BrowseCaption.of(sbr, entry: e), .status(.current, .anime))
-        var t = Make.title()
-        t.score = 8.5
-        XCTAssertEqual(BrowseCaption.of(t, entry: nil), .score("8.5", year: nil))
-        t.year = 2022
-        XCTAssertEqual(BrowseCaption.of(t, entry: nil, withYear: true), .score("8.5", year: 2022))
-        t.score = nil
-        t.format = "Movie"
-        XCTAssertEqual(BrowseCaption.of(t, entry: nil), .text("Film"))
-        XCTAssertEqual(BrowseAdd.label(.manga), "Plan to Read")
+    func testFacetsAndResults() throws {
+        let f = try decode(Facets.self, #"{"genres":["Action","Drama"],"tags":["Elf","Time Skip"]}"#)
+        XCTAssertEqual(f.tags, ["Elf", "Time Skip"])
+        let r = try decode(BrowseResults.self, #"{"titles":[\#(Self.frieren)],"total":null,"more":true,"next":2}"#)
+        XCTAssertNil(r.total)
+        XCTAssertEqual(r.next, 2)
+        let page = BrowseResultsPage(.anime, r, BrowseFilters())
+        XCTAssertEqual(page.showText, "Show 1+ results")
+        let all = BrowseResultsPage(titles: [], total: 120, more: false, next: nil)
+        XCTAssertEqual(all.showText, "Show 120 results")
     }
 
     // MARK: filters
 
-    private let mockup = "genres=Action,Drama,Mystery&years=2020-&season=Fall&formats=TV,ONA&statuses=Airing"
-
-    func testFiltersRoundTripThroughTheirSavedForm() {
-        let f = BrowseFilters(sort: .score, genres: ["Action", "Drama"], yearFrom: 2020, season: "Fall",
-                              formats: ["TV", "ONA"], statuses: ["Airing"], minScore: 7)
-        XCTAssertEqual(BrowseFilters(encoded: f.encoded), f)
-        XCTAssertEqual(f.query(.anime).first, URLQueryItem(name: "media", value: "anime"))
-        XCTAssertEqual(f.count, 6)
-        XCTAssertTrue(BrowseFilters(sort: .title).isEmpty)
-        let saved = BrowseFilterStore.set("", .anime, f)
-        XCTAssertEqual(BrowseFilterStore.get(saved, .anime), f)
-        XCTAssertEqual(BrowseFilterStore.get(saved, .tv), BrowseFilters())
-        XCTAssertEqual(BrowseFilterStore.set(saved, .anime, BrowseFilters()), "")
-    }
-
-    func testTheMockupsFiltersFindFallActionShows() throws {
-        let f = BrowseFilters(encoded: mockup)
-        XCTAssertEqual(f.genres, ["Action", "Drama", "Mystery"])
-        XCTAssertEqual(f.yearLabel, "2020 – 2026")
-        let pool = try Demo.load([Title].self, "api/browse/titles/anime.json")
-        let found = f.apply(pool)
-        XCTAssertFalse(found.isEmpty)
-        XCTAssertLessThan(found.count, pool.count)
-        for t in found {
-            XCTAssertTrue(t.season?.hasPrefix("Fall") ?? false)
-            XCTAssertTrue(["TV", "ONA"].contains(t.format ?? ""))
-            XCTAssertTrue(Set(t.genres ?? []).isSuperset(of: ["Action", "Drama", "Mystery"]))
-        }
-        // one genre finds more
-        var loose = f
-        loose.genres = ["Action"]
-        XCTAssertGreaterThan(loose.apply(pool).count, found.count)
-    }
-
-    func testYearSliderEndsMeanNoLimit() {
+    func testFiltersQueryIsTheWebsitesAddress() {
         var f = BrowseFilters()
-        XCTAssertEqual(f.yearRange, BrowseFilters.firstYear...2026)
+        f.sort = .top
+        f.genres = ["Action", "Drama"]
+        f.from = 2020
+        f.season = .fall
+        f.format = "TV"
+        f.status = .releasing
+        f.score = 8.5
+        XCTAssertEqual(f.encoded, "sort=top&genres=Action,Drama&format=TV&from=2020&season=fall&status=releasing&score=8.5")
+        XCTAssertEqual(BrowseFilters(encoded: f.encoded), f)
+        XCTAssertEqual(f.query(page: 3).last, URLQueryItem(name: "page", value: "3"))
+        XCTAssertFalse(f.query().contains { $0.name == "page" }, "page 1 is left out")
+        // values that make no sense are dropped quietly
+        let bad = BrowseFilters(encoded: "season=autumn&status=airing&from=1066&score=11&sort=best&genres=Action")
+        XCTAssertEqual(bad, BrowseFilters(genres: ["Action"]))
+    }
+
+    func testFiltersTextAndCounts() {
+        var f = BrowseFilters()
+        XCTAssertTrue(f.isEmpty)
         XCTAssertEqual(f.yearLabel, "Any year")
-        f.setYears(2020...2026)
-        XCTAssertEqual(f.yearFrom, 2020)
-        XCTAssertNil(f.yearTo)
-        XCTAssertEqual(f.yearLabel, "2020 – 2026")
-        f.setYears(BrowseFilters.firstYear...2015)
-        XCTAssertNil(f.yearFrom)
-        XCTAssertEqual(f.yearLabel, "Up to 2015")
+        f.genres = ["Action", "Drama", "Mystery"]
+        f.from = 2020
+        XCTAssertEqual(BrowseFilters.chipText("Genres", f.genres), "Action +2")
+        XCTAssertEqual(f.yearLabel, "2020 – \(BrowseFilters.lastYear)")
+        XCTAssertEqual(BrowseFilters.scoreText(8), "★ 8+")
+        XCTAssertTrue(BrowseFilters.hasSeason(.anime))
+        XCTAssertFalse(BrowseFilters.hasSeason(.tv))
     }
 
-    func testSortsAndChipText() {
-        let a = Title(id: "anime:1", media: .anime, name: "Beta", year: 2020, score: 7)
-        let b = Title(id: "anime:2", media: .anime, name: "alpha", year: 2024, score: 9)
-        XCTAssertEqual(BrowseFilters(sort: .popularity).apply([a, b]).map(\.id), ["anime:1", "anime:2"])
-        XCTAssertEqual(BrowseFilters(sort: .score).apply([a, b]).map(\.id), ["anime:2", "anime:1"])
-        XCTAssertEqual(BrowseFilters(sort: .newest).apply([a, b]).map(\.id), ["anime:2", "anime:1"])
-        XCTAssertEqual(BrowseFilters(sort: .title).apply([a, b]).map(\.id), ["anime:2", "anime:1"])
-        XCTAssertEqual(BrowseFilters.chipText("Genres", []), "Genres")
-        XCTAssertEqual(BrowseFilters.chipText("Genres", ["Action"]), "Action")
-        XCTAssertEqual(BrowseFilters.chipText("Genres", ["Action", "Drama"]), "Action +1")
+    func testFilterStoreKeepsEachMedia() {
+        var s = ""
+        s = BrowseFilterStore.set(s, .anime, BrowseFilters(genres: ["Action"]))
+        s = BrowseFilterStore.set(s, .tv, BrowseFilters(sort: .new))
+        XCTAssertEqual(BrowseFilterStore.get(s, .anime).genres, ["Action"])
+        XCTAssertEqual(BrowseFilterStore.get(s, .tv).sort, .new)
+        XCTAssertTrue(BrowseFilterStore.get(s, .book).isEmpty)
     }
 
-    func testStatusFilterKeepsTitlesWithoutAState() {
-        let shows = [Title(id: "tv:1", media: .tv, name: "A"), Title(id: "tv:2", media: .tv, name: "B", state: "Ended")]
-        XCTAssertEqual(BrowseFilters(statuses: ["Airing"]).apply(shows).map(\.id), ["tv:1"])
+    func testFiltersMatchAsTheWebsiteDoes() throws {
+        let c = try decode(CatalogTitle.self, Self.frieren)
+        XCTAssertTrue(BrowseFilters(genres: ["Drama", "Fantasy"]).matches(c))
+        XCTAssertFalse(BrowseFilters(genres: ["Drama", "Horror"]).matches(c), "every genre must match")
+        XCTAssertFalse(BrowseFilters(from: 2024).matches(c))
+        XCTAssertTrue(BrowseFilters(season: .fall).matches(c))
+        XCTAssertFalse(BrowseFilters(status: .releasing).matches(c))
     }
 
-    // MARK: season chart
+    // MARK: the season chart
 
-    func testSeasonsStepAcrossTheYear() {
-        let fall = SeasonChart.Ref.current
-        XCTAssertEqual(fall, SeasonChart.Ref(name: "Fall", year: 2026))
-        XCTAssertEqual(fall.previous.label, "Summer 2026")
-        XCTAssertEqual(fall.next.label, "Winter 2027")
-        XCTAssertEqual(fall.next.previous, fall)
-        XCTAssertEqual(fall.slug, "fall-2026")
+    func testSeasonChartAnswer() throws {
+        let entry = Self.frieren.replacingOccurrences(of: "\"newField\": 1", with: "\"next\": { \"episode\": 7, \"at\": 1793800000 }, \"carried\": true")
+        let c = try decode(SeasonChart.self, #"{"season":"fall","year":2026,"titles":[\#(entry)]}"#)
+        XCTAssertEqual(c.label, "Fall 2026")
+        XCTAssertTrue(c.titles[0].carried)
+        let t = c.rows[0]
+        XCTAssertEqual(t.next?.episode, 7)
+        XCTAssertEqual(t.next?.at, Date(timeIntervalSince1970: 1_793_800_000), "seconds, not ms")
+        XCTAssertEqual(c.count(.tv), 1)
+        XCTAssertEqual(c.count(.film), 0)
     }
 
-    func testFallChartGroupsByFormat() throws {
-        let chart = try Demo.load(SeasonChart.self, "api/season-chart/fall-2026.json")
-        XCTAssertEqual(chart.season, "Fall 2026")
-        XCTAssertEqual(chart.subtitle, "Anime season · 50 anime")
-        XCTAssertEqual(chart.kinds.map(\.0), [.all, .tv, .ona, .movies, .other])
-        XCTAssertEqual(chart.kinds.map(\.1).dropFirst().reduce(0, +), 50)
-        let groups = chart.groups(.all)
-        XCTAssertEqual(groups.map(\.kind), [.tv, .ona, .movies, .other])
-        XCTAssertEqual(groups[0].titles.first?.name, "The Apothecary Diaries Season 3")
-        XCTAssertEqual(groups[1].titles.first?.id, "anime:210482")
-        XCTAssertEqual(chart.groups(.ona).map(\.kind), [.ona])
-        let hidden = chart.groups(.ona, hide: ["anime:210482"])
-        XCTAssertFalse(hidden[0].titles.contains { $0.id == "anime:210482" })
-        for s in ["summer-2026", "winter-2027"] {
-            XCTAssertNoThrow(try Demo.load(SeasonChart.self, "api/season-chart/\(s).json"))
-        }
+    func testSeasonRefsStepAndStartFromToday() {
+        let now = SeasonChart.Ref.of(Clock.now)
+        XCTAssertEqual(now, SeasonChart.Ref(season: .fall, year: 2026))
+        XCTAssertEqual(now.next, SeasonChart.Ref(season: .winter, year: 2027))
+        XCTAssertEqual(now.previous.label, "Summer 2026")
+        XCTAssertEqual(SeasonChart.Ref(season: .winter, year: 2027).previous, now)
+        XCTAssertEqual(now.slug, "fall-2026")
     }
 
-    func testChartRowLines() throws {
-        let chart = try Demo.load(SeasonChart.self, "api/season-chart/fall-2026.json")
-        let sbr = chart.titles.first { $0.id == "anime:210482" }!
-        XCTAssertEqual(SeasonChart.airing(sbr)?.text, "Ep 7 · Fri 3:00 AM · in 3 days")
-        let edge = chart.titles.first { $0.id == "anime:195539" }!
-        XCTAssertEqual(SeasonChart.facts(edge), "TRIGGER · 10 episodes")
-        XCTAssertEqual(SeasonChart.genres(edge), "Action, Drama")
-        XCTAssertEqual(SeasonChart.airing(edge)?.text, "All 10 out")
-        let byNext = SeasonChart.ordered(chart.titles, .airing, now: Clock.now)
-        XCTAssertNotNil(byNext.first?.next)
-    }
+    // MARK: §8.2 search
 
-    // MARK: search
-
-    func testChainFindsChainsawMan() throws {
-        let r = try Demo.load(SearchResults.self, Demo.file("search", variant: "chain"))
-        XCTAssertEqual(r.top?.id, "anime:127230")
-        XCTAssertEqual(r.top.map(SearchResults.topLine), "Top hit · Anime · 2022")
-        XCTAssertEqual(r.top.map(SearchResults.topFacts), "MAPPA · 12 episodes")
-        XCTAssertEqual(r.scopes.map(\.0), [.all, .anime, .manga, .people])
-        XCTAssertEqual(r.scopes[1].1, 4)
-        let all = r.shown(.all)
-        XCTAssertFalse(all[0].titles.contains { $0.id == r.top?.id }, "the top hit isn't repeated")
-        XCTAssertEqual(SearchResults.caption(all[0].titles[0]), "Film · 2025 · MAPPA")
-        XCTAssertEqual(SearchResults.caption(all[0].titles[1]), "Anime · Not yet aired · MAPPA")
-        XCTAssertEqual(SearchResults.caption(r.shown(.manga)[0].titles[0]), "Manga · 2018 · 232 chapters")
-        XCTAssertEqual(r.shown(.anime)[0].titles.count, 4)
-        let fujimoto = r.shown(.people)[0].people[0]
-        XCTAssertEqual(fujimoto.name, "Tatsuki Fujimoto")
-        XCTAssertEqual(fujimoto.route, .person("person:119917"))
-    }
-
-    func testSearchVariantsAndNothingFound() throws {
-        XCTAssertEqual(Demo.file("search", variant: "Chainsaw Man"), "api/search/chainsaw-man.json")
-        let dune = try Demo.load(SearchResults.self, Demo.file("search", variant: "dune"))
-        XCTAssertEqual(dune.scopes.map(\.0), [.all, .movie, .book, .people])
-        XCTAssertEqual(dune.top.map(SearchResults.caption), "Movie · 2024 · 2h 47m")
-        let none = try Demo.load(SearchResults.self, "api/search.json")
-        XCTAssertTrue(none.isEmpty)
-    }
-
-    func testSearchGoesThroughTheDemo() async throws {
-        let api = APIClient(transport: DemoTransport(), token: "demo-token")
-        let r = try await api.search("chain")
+    func testSearchAnswer() throws {
+        let a = try decode(SearchAnswer.self, #"""
+        { "groups": [
+          { "title": "Anime", "hits": [
+            { "ref": { "to": "title", "kind": "anime", "id": "127230" }, "name": "Chainsaw Man",
+              "image": "https://img.example/csm.jpg", "note": "Anime · TV · 2022" } ] },
+          { "title": "Characters", "hits": [
+            { "ref": { "to": "character", "id": "138101" }, "name": "Reze", "image": null, "note": "Chainsaw Man" } ] },
+          { "title": "People", "hits": [
+            { "ref": { "to": "person", "source": "anilist", "id": "118739" }, "name": "Tatsuki Fujimoto",
+              "image": null, "note": "Story & Art" },
+            { "ref": { "to": "author", "id": "OL7234434A" }, "name": "Andy Weir", "image": null, "note": "Author" },
+            { "ref": { "to": "network", "id": "49" }, "name": "HBO", "image": null, "note": "TV network" },
+            { "ref": { "to": "something-new", "id": "1" }, "name": "Later", "image": null, "note": "" } ] }
+        ] }
+        """#)
+        let r = SearchResults(query: "chain", groups: a.groups)
         XCTAssertEqual(r.top?.name, "Chainsaw Man")
-        let nothing = try await api.search("zzz")
-        XCTAssertTrue(nothing.isEmpty)
-        let page = try await api.browsePage(.tv)
-        XCTAssertEqual(page.media, .tv)
-        let found = try await api.browseTitles(.anime, BrowseFilters(encoded: mockup))
-        XCTAssertFalse(found.isEmpty)
-        let chart = try await api.seasonChart(.current)
-        XCTAssertEqual(chart.season, "Fall 2026")
+        XCTAssertEqual(r.top?.route, .title("anime:127230"))
+        XCTAssertEqual(SearchResults.topLine(r.top!), "Top hit · Anime · TV · 2022")
+        XCTAssertEqual(r.scopes.map(\.0), ["All", "Anime", "Characters", "People"])
+        XCTAssertEqual(r.scopes[3].1, 4)
+        XCTAssertEqual(r.shown("All").map(\.title), ["Characters", "People"], "the top hit isn't shown twice")
+        let people = a.groups[2].hits.map(\.route)
+        XCTAssertEqual(people, [.person("anilist:118739"), .author("OL7234434A"), .studio("network:49"), nil])
+        XCTAssertEqual(a.groups[1].hits[0].route, .character("138101"))
     }
 
-    func testImagesComeFromTheCatalogueCDNs() throws {
-        let hosts = ["s4.anilist.co", "image.tmdb.org", "covers.openlibrary.org"]
-        var urls: [URL] = []
+    // MARK: calls
+
+    func testCallsGoWhereTheDocSays() async throws {
+        let t = StubTransport()
+        let api = APIClient(transport: t, token: "demo-token")
+
+        t.reply(#"{"shelves":[]}"#)
+        _ = try await api.browseShelves(.movie)
+        t.reply(#"{"genres":[],"tags":[]}"#)
+        _ = try await api.browseFacets(.book)
+        t.reply(#"{"titles":[],"total":0,"more":false,"next":null}"#)
+        _ = try await api.browseResults(.tv, BrowseFilters(genres: ["Drama"], sort: .top), page: 2)
+        t.reply(#"{"season":"winter","year":2027,"titles":[]}"#)
+        _ = try await api.seasonChart(SeasonChart.Ref(season: .winter, year: 2027))
+        t.reply(#"{"groups":[]}"#)
+        _ = try await api.search("  chainsaw  ")
+
+        XCTAssertEqual(t.sent.map(\.method), ["GET", "GET", "GET", "GET", "GET"])
+        XCTAssertEqual(t.sent.map(\.path), ["browse/movies/shelves", "browse/books/filters", "browse/tv/results",
+                                            "season-chart", "search"])
+        XCTAssertEqual(t.sent[2].query, [URLQueryItem(name: "sort", value: "top"), URLQueryItem(name: "genres", value: "Drama"),
+                                         URLQueryItem(name: "page", value: "2")])
+        XCTAssertEqual(t.sent[3].query, [URLQueryItem(name: "season", value: "winter"), URLQueryItem(name: "year", value: "2027")])
+        XCTAssertEqual(t.sent[4].query, [URLQueryItem(name: "q", value: "chainsaw")])
+        XCTAssertTrue(t.sent.allSatisfy { $0.body == nil })
+    }
+
+    func testSearchKeepsTo80Characters() async throws {
+        let t = StubTransport()
+        t.reply(#"{"groups":[]}"#)
+        let api = APIClient(transport: t, token: "demo-token")
+        _ = try await api.search(String(repeating: "a", count: 120))
+        XCTAssertEqual(t.sent[0].query.first?.value?.count, 80)
+    }
+
+    // MARK: the demo's answers
+
+    func testDemoAnswersDecode() throws {
         for m in MediaKind.allCases {
-            let p = try Demo.load(BrowsePage.self, Demo.file("browse", variant: m.rawValue))
-            urls += p.shelves.flatMap(\.titles).compactMap(\.cover) + [p.feature?.title.banner].compactMap { $0 }
+            let a = try Demo.load(BrowseShelves.self, "api/browse/\(m.api.rawValue)/shelves.json")
+            XCTAssertFalse(BrowsePage(m, a).shelves.isEmpty, "\(m)")
+            _ = try Demo.load(Facets.self, "api/browse/\(m.api.rawValue)/filters.json")
+            _ = try Demo.load(BrowseResults.self, "api/browse/\(m.api.rawValue)/results.json")
         }
-        for q in ["chain", "dune"] {
-            let r = try Demo.load(SearchResults.self, Demo.file("search", variant: q))
-            urls += r.groups.flatMap(\.people).compactMap(\.image)
+        for s in ["summer", "fall", "winter"] {
+            let c = try Demo.load(SeasonChart.self, "api/season-chart/\(s).json")
+            XCTAssertFalse(c.titles.isEmpty, s)
         }
-        for u in urls { XCTAssertTrue(hosts.contains(u.host ?? ""), u.absoluteString) }
+        let s = try Demo.load(SearchAnswer.self, "api/search/chain.json")
+        XCTAssertFalse(s.groups.isEmpty)
     }
 }

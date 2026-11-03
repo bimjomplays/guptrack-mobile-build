@@ -1,9 +1,17 @@
 {
- "deviceId": "demo-device",
- "token": "demo-token",
+ "device": {
+  "app": "GupTrack",
+  "createdAt": 1791902460000,
+  "id": 1,
+  "lastUsedAt": 1793716740000,
+  "name": "iPhone",
+  "platform": "iOS 26.1",
+  "scope": "app"
+ },
+ "serverTime": 1793716860000,
+ "token": "demo-token-from-the-demo-server",
  "user": {
-  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
-  "name": "Mika",
+  "role": "owner",
   "username": "mika"
  }
 }

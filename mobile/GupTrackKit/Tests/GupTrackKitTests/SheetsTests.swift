@@ -18,7 +18,7 @@ final class SheetsTests: XCTestCase {
         Clock.fixedZone = nil
     }
 
-    private func library() throws -> [LibraryEntry] { try Demo.load([LibraryEntry].self, "api/library.json") }
+    private func library() throws -> [LibraryEntry] { Demo.library() }
 
     private func entry(_ id: String) throws -> LibraryEntry {
         try XCTUnwrap(try library().first { $0.id == id })
@@ -106,15 +106,11 @@ final class SheetsTests: XCTestCase {
         XCTAssertTrue(d.progressCaption.hasPrefix("Page \(b.progress + 10)"))
     }
 
-    func testMangaVolumeAndTVSeason() throws {
+    func testMangaVolume() throws {
         let manga = try entry("manga:105778")
         var m = TitleSheets.EditorDraft(entry: manga)
         m.stepVolume(1)
         XCTAssertEqual(m.patch, LibraryPatch(volume: (manga.volume ?? 0) + 1))
-        let show = try XCTUnwrap(try library().first { $0.media == .tv && $0.status == .current })
-        var t = TitleSheets.EditorDraft(entry: show)
-        t.stepSeason(1)
-        XCTAssertEqual(t.patch.season, (show.season ?? 1) + 1)
     }
 
     func testFilmsHaveNoProgress() throws {
@@ -151,50 +147,86 @@ final class SheetsTests: XCTestCase {
         XCTAssertEqual(d.patch, LibraryPatch(status: .current, score: 90, started: today))
     }
 
+    /// The library feed carries no next episode (§7.1), so the line shows only for a title that has one.
     func testNextLine() throws {
-        let d = TitleSheets.EditorDraft(entry: try entry("anime:210482"))
-        let next = try XCTUnwrap(d.title.next)
-        XCTAssertEqual(d.nextLine, "Ep \(next.episode) airs \(Format.dayOffset(next.at) < 7 ? Format.weekday(next.at) : Format.shortDay(next.at))")
+        var e = try entry("anime:210482")
+        XCTAssertNil(e.title.next)
+        XCTAssertNil(TitleSheets.EditorDraft(entry: e).nextLine)
+        e.title.next = Airing(episode: 8, at: Clock.demoNow.addingTimeInterval(86_400))
+        XCTAssertEqual(TitleSheets.EditorDraft(entry: e).nextLine, "Ep 8 airs tomorrow")
+        e.title.next = Airing(episode: 8, at: Clock.demoNow.addingTimeInterval(-60))
+        XCTAssertNil(TitleSheets.EditorDraft(entry: e).nextLine, "already out")
     }
 
     // MARK: add to a list
 
-    func testListPicksTickAndCount() throws {
-        let lists = try Demo.load([CustomList].self, "api/lists.json")
-        var p = TitleSheets.ListPicks(titleId: "anime:210482", lists: lists)
-        let on = lists.filter { p.isOn($0.id) }
-        XCTAssertFalse(on.isEmpty, "SBR is on some lists already")
+    func testListChoicesFixtureAndPicks() throws {
+        let choices = try Demo.load(ListWire.Choices.self, "api/titles/anime/210482/lists.json")
+        XCTAssertEqual(choices.profile, .public)
+        let lists = Dictionary(uniqueKeysWithValues: try ["rainy-sundays", "start-here"].map {
+            let l = try Demo.load(MyList.self, "api/lists/\($0).json").customList()
+            return (l.id, l)
+        })
+        var p = TitleSheets.ListPicks(titleId: "anime:210482", choices: choices)
+        XCTAssertEqual(choices.lists.map(\.id), [1, 2, 3, 4])
+        XCTAssertEqual(choices.lists.filter { p.isOn($0.id) }.map(\.id), [1, 2, 3], "SBR is on three lists already")
         XCTAssertTrue(p.changes.isEmpty)
-        let off = try XCTUnwrap(lists.first { !p.isOn($0.id) })
-        let first = try XCTUnwrap(on.first)
-        p.toggle(off.id)
-        p.toggle(first.id)
-        XCTAssertEqual(p.count(off), off.items.count + 1)
-        XCTAssertEqual(p.count(first), first.items.count - 1)
-        let changes = p.changes.map { "\($0.listId):\($0.add)" }
-        XCTAssertEqual(Set(changes), ["\(off.id):true", "\(first.id):false"])
-        XCTAssertTrue(p.caption(first).hasSuffix("· " + first.visibility.label))
+        let rainy = choices.lists[0], start = choices.lists[3]
+        XCTAssertEqual(p.caption(rainy, list: lists["1"]), "12 titles · Public")
+        p.toggle(start.id)
+        p.toggle(rainy.id)
+        XCTAssertEqual(p.count(start, list: lists["4"]), 5)
+        XCTAssertEqual(p.count(rainy, list: lists["1"]), 11)
+        XCTAssertNil(p.caption(rainy, list: nil), "no count without the phone's copy")
+        XCTAssertEqual(p.changes.map { "\($0.listId):\($0.add)" }, ["1:false", "4:true"])
+        p.made(5, name: "Winter evenings")
+        XCTAssertEqual(p.choices.first?.name, "Winter evenings")
+        XCTAssertTrue(p.isOn(5))
+        XCTAssertEqual(p.changes.count, 2, "a list made with the title on it is already saved")
+    }
+
+    func testListChoicesDecodeTheDocShape() throws {
+        let json = #"{"profile":"friends","lists":[{"id":7,"name":"Cozy","has":false,"extra":1}]}"#
+        let c = try APIClient.decoder.decode(ListWire.Choices.self, from: Data(json.utf8))
+        XCTAssertEqual(c.profile, .friends)
+        XCTAssertEqual(c.lists, [ListWire.Choice(id: 7, name: "Cozy", has: false)])
     }
 
     // MARK: review
 
-    func testReviewDraft() {
+    func testReviewDraft() throws {
         var r = TitleSheets.ReviewDraft(score: 85)
         XCTAssertEqual(r.scoreText, "8.5 / 10")
         XCTAssertFalse(r.canPost)
         r.text = String(repeating: "a", count: 196)
-        XCTAssertEqual(r.countText, "196 / 5,000")
+        XCTAssertEqual(r.countText, "196 / 10,000")
         XCTAssertTrue(r.canPost)
         r.pickScore(9)
-        XCTAssertNil(r.body.score, "85 shows as 9, so tapping 9 clears it")
+        XCTAssertNil(r.score, "85 shows as 9, so tapping 9 clears it")
         r.pickScore(10)
-        XCTAssertEqual(r.body.score, 100)
-        r.text = String(repeating: "a", count: 5001)
+        XCTAssertEqual(r.score, 100)
+        r.text = String(repeating: "a", count: 10_001)
         XCTAssertFalse(r.canPost)
-        let data = try? APIClient.encoder.encode(TitleSheets.ReviewBody(score: nil, text: "x", spoilers: true,
-                                                                          visibility: .friends))
-        XCTAssertEqual(data.map { String(decoding: $0, as: UTF8.self) },
-                       #"{"spoilers":true,"text":"x","visibility":"friends"}"#)
+        r.text = "  Still great.  "
+        r.spoilers = true
+        let t = Title(id: "manga:105778", media: .manga, name: "Chainsaw Man",
+                      cover: URL(string: "https://s4.anilist.co/file/x.jpg"), format: "Manga")
+        let json = String(decoding: try APIClient.encoder.encode(r.body(t)), as: UTF8.self)
+        XCTAssertEqual(json, #"{"body":"Still great.","meta":{"cover":"https:\/\/s4.anilist.co\/file\/x.jpg","format":"Manga","title":"Chainsaw Man"},"spoiler":true}"#)
+        var own = t
+        own.cover = URL(string: "/media/covers/1.jpg")
+        own.format = nil
+        XCTAssertEqual(r.body(own).meta, .init(title: "Chainsaw Man", cover: "", format: ""), "https covers only")
+    }
+
+    func testMyReviewDecodesTitleReviews() throws {
+        let json = #"{"mine":{"id":3,"body":"Loved it","spoiler":false,"score":90,"at":1},"reviews":[],"visibility":"friends"}"#
+        let r = try APIClient.decoder.decode(TitleSheets.MyReview.self, from: Data(json.utf8))
+        XCTAssertEqual(r.mine, .init(body: "Loved it", spoiler: false))
+        XCTAssertEqual(r.visibility, .friends)
+        let none = try APIClient.decoder.decode(TitleSheets.MyReview.self,
+                                                from: Data(#"{"mine":null,"reviews":[],"visibility":"public"}"#.utf8))
+        XCTAssertNil(none.mine)
     }
 
     func testReviewLine() throws {
@@ -207,28 +239,35 @@ final class SheetsTests: XCTestCase {
 
     // MARK: send to
 
-    func testSendToFixtureAndPicks() throws {
-        let page = try Demo.load(TitleSheets.SendToPage.self, "api/send-to.json")
-        XCTAssertEqual(page.friends.map(\.username), ["kenji", "noor.reads", "tobiwan", "lena", "sorawatches", "hal"])
+    func testRecipientsFixtureAndPicks() throws {
+        let page = try Demo.load(TitleSheets.Recipients.self, "api/messages/recipients.json").recipients
+        XCTAssertEqual(page.map(\.username), ["kenji", "noor.reads", "tobiwan", "lena", "sorawatches", "hal"])
+        XCTAssertTrue(page.allSatisfy(\.canSend))
         var p = TitleSheets.SendPicks()
         XCTAssertFalse(p.canSend)
         p.toggle("tobiwan")
         p.toggle("kenji")
         XCTAssertEqual(p.sendLabel, "Send 2")
+        XCTAssertEqual(p.to(page), ["kenji", "tobiwan"], "in the sheet's order")
+        XCTAssertEqual(p.body("anime:210482"),
+                       TitleSheets.MessageBody(body: nil, card: .init(kind: "anime", id: "210482", mine: false)))
         p.message = " watch the first three, trust me "
-        XCTAssertEqual(p.body("anime:210482", friends: page.friends),
-                       TitleSheets.SendToBody(titleId: "anime:210482", to: ["kenji", "tobiwan"],
-                                              message: "watch the first three, trust me"))
+        let json = String(decoding: try APIClient.encoder.encode(p.body("movie:603")), as: UTF8.self)
+        XCTAssertEqual(json, #"{"body":"watch the first three, trust me","card":{"id":"603","kind":"movie","mine":false}}"#)
         p.toggle("kenji")
         XCTAssertEqual(p.picked, ["tobiwan"])
         p.query = "NOOR"
-        XCTAssertEqual(p.shown(page.friends).map(\.username), ["noor.reads"])
+        XCTAssertEqual(p.shown(page).map(\.username), ["noor.reads"])
     }
 
-    func testTitlePageGivesTheSheetItsTitle() throws {
-        let t = try Demo.load(TitleSheets.TitleLookup.self, "api/titles/anime_210482.json").title
+    func testTitleDetailGivesTheSheetItsTitle() throws {
+        let json = #"{"title":{"ref":{"kind":"anime","id":"210482"},"media":"anime","title":"Steel Ball Run","alt":["JoJo Part 7"],"cover":"/media/covers/a.jpg","banner":null,"format":"TV","status":"RELEASING","statusText":"Airing","year":2026,"count":11,"minutes":24,"genres":[]}}"#
+        let t = try XCTUnwrap(try APIClient.decoder.decode(TitleSheets.TitleLookup.self, from: Data(json.utf8)).sheetTitle())
         XCTAssertEqual(t.id, "anime:210482")
         XCTAssertEqual(t.total, 11)
+        XCTAssertEqual(t.subtitle, "JoJo Part 7")
+        XCTAssertEqual(t.cover?.absoluteString, "/media/covers/a.jpg", "GupTrack's own address stays as it came")
+        XCTAssertEqual(TitleSheets.path("movie:603"), "titles/movie/603")
     }
 
     func testSummary() {
@@ -278,16 +317,31 @@ final class SheetsModelTests: XCTestCase {
 
     func testListsReviewAndSendGoToTheServer() async throws {
         let transport = DemoTransport()
-        let api = APIClient(transport: transport, token: "t")
-        _ = try await api.sheetPickList("best-of-2026", titleId: "anime:1", on: true)
-        _ = try await api.sheetPickList("best-of-2026", titleId: "anime:1", on: false)
-        _ = try await api.sheetPostReview("manga:105778", TitleSheets.ReviewBody(score: 90, text: "x", spoilers: false,
-                                                                               visibility: .public))
-        let friends = try await api.sheetSendToFriends()
-        XCTAssertEqual(friends.friends.count, 6)
-        _ = try await api.sheetSendTitle(TitleSheets.SendToBody(titleId: "anime:1", to: ["kenji"], message: nil))
+        let api = APIClient(transport: transport, token: "demo-token")
+        let choices = try await api.listChoices("anime:210482")
+        XCTAssertEqual(choices.lists.count, 4)
+        let t = ListWire.ListTitle(media: .anime, id: "1", title: "X", cover: nil, format: "TV", year: 2001)
+        _ = try await api.putOnList(4, t)
+        _ = try await api.takeOffList(1, t.ref)
+        let mine = try? await api.myReview("manga:105778")
+        _ = mine
+        let r = TitleSheets.ReviewBody(body: "x", spoiler: false, meta: .init(title: "X", cover: "", format: "Manga"))
+        try await api.putReview("manga:105778", r)
+        let people = try await api.recipients()
+        XCTAssertEqual(people.recipients.count, 6)
+        let card = TitleSheets.MessageBody(body: nil, card: .init(kind: "anime", id: "1", mine: false))
+        try await api.sendMessage(to: "kenji", card)
         XCTAssertEqual(transport.requests.map { "\($0.method) \($0.path)" },
-                       ["POST lists/best-of-2026/items", "DELETE lists/best-of-2026/items/anime:1",
-                        "POST titles/manga:105778/reviews", "GET send-to", "POST send-to"])
+                       ["GET titles/anime/210482/lists", "POST lists/4/items", "POST lists/1/items",
+                        "GET titles/manga/105778/reviews", "PUT titles/manga/105778/review", "GET messages/recipients",
+                        "POST conversations/kenji/messages"])
+        let bodies = transport.requests.compactMap { $0.body.map { String(decoding: $0, as: UTF8.self) } }
+        XCTAssertEqual(bodies, [
+            #"{"title":{"format":"TV","id":"1","media":"anime","title":"X","year":2001}}"#,
+            #"{"on":false,"title":{"id":"1","media":"anime"}}"#,
+            #"{"body":"x","meta":{"cover":"","format":"Manga","title":"X"},"spoiler":false}"#,
+            #"{"card":{"id":"1","kind":"anime","mine":false}}"#,
+        ])
+        XCTAssertTrue(transport.requests.allSatisfy { $0.query.isEmpty })
     }
 }

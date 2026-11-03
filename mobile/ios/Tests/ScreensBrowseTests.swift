@@ -3,7 +3,7 @@ import XCTest
 
 /// Browse (11-15).
 final class ScreensBrowseTests: ScreenTestCase {
-    private let filters = "anime:genres=Action,Drama,Mystery&years=2020-&season=Fall&formats=TV,ONA&statuses=Airing"
+    private let filters = "anime:genres=Action,Drama,Mystery&from=2020&season=fall&format=TV&status=releasing"
 
     func test11Browse() {
         let app = launch(["-tab", "browse"])
@@ -20,9 +20,9 @@ final class ScreensBrowseTests: ScreenTestCase {
         let app = launch(["-tab", "browse"])
         expect(app, "This season")
         app.buttons["TV"].tap()
-        expect(app, "Pluribus")
-        expect(app, "Most added this week")
-        expect(app, "Popular shows")
+        expect(app, "Severance")
+        expect(app, "On the air")
+        expect(app, "Popular")
         expect(app, "Score")
         shot("12-browse-tv")
     }

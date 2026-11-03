@@ -1,0 +1,94 @@
+{
+ "title": {
+  "alt": [
+   "Kimi no Na wa.",
+   "君の名は。"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21519-1ayMXgNlmByb.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21519-SUo3ZQuCbYhJ.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "1h 47m"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Released",
+    "value": "Aug 26, 2016"
+   },
+   {
+    "label": "Season",
+    "value": "Summer 2016"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "291",
+       "to": "studio"
+      },
+      "text": "CoMix Wave"
+     }
+    ],
+    "value": "CoMix Wave"
+   },
+   {
+    "label": "Members",
+    "value": "726,602"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Drama",
+   "Romance",
+   "Supernatural"
+  ],
+  "headline": [
+   "Film",
+   "Summer 2016",
+   "1h 47m"
+  ],
+  "idMal": 32281,
+  "makers": [
+   {
+    "ref": {
+     "id": "291",
+     "to": "studio"
+    },
+    "text": "CoMix Wave"
+   }
+  ],
+  "media": "anime",
+  "minutes": 107,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "21519",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 85,
+  "scoreNote": "726,602 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Your Name.",
+  "trailer": null,
+  "volumes": null,
+  "year": 2016
+ }
+}

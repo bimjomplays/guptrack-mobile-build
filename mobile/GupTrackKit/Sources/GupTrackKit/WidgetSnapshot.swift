@@ -4,9 +4,82 @@ import Foundation
 // widget extension compiles this file (with Models, Format and Route), and so do the app and the Linux tests. The
 // extension has no AppModel or APIClient: it gets the library as a list of entries.
 //
-// Demo: the extensions bundle api/library.json and api/extensions.json and build the snapshot themselves; a widget's
+// Demo: the extensions bundle api/library/changes.json and api/extensions.json (with home/live's `upcoming`) and build
+// the snapshot themselves; a widget's
 // +1 is kept in the extension's own WidgetOutbox. The real app would write the library (or this snapshot) into an
 // App Group the widgets read, and the +1s into the App Group's outbox for the app to sync.
+
+/// A picture address from an answer, kept as the server wrote it: catalogue covers are https URLs, GupTrack's own
+/// ("/media/…") are relative and the app's image loader resolves them on the signed-in server. "" = none.
+@propertyWrapper
+struct Picture: Codable, Hashable, Sendable {
+    var wrappedValue: URL?
+
+    init(wrappedValue: URL?) { self.wrappedValue = wrappedValue }
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.singleValueContainer()
+        if c.decodeNil() { wrappedValue = nil; return }
+        let s = try c.decode(String.self)
+        wrappedValue = s.isEmpty ? nil : URL(string: s)
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var c = encoder.singleValueContainer()
+        try c.encode(wrappedValue?.absoluteString ?? "")
+    }
+}
+
+/// A title, as the catalogue pages name it (`TitleRef`, src/catalog/detail.ts): `{ kind, id }`.
+struct TitleRef: Codable, Hashable, Sendable {
+    var kind: MediaKind
+    var id: String
+
+    /// the app's title id ("anime:210482")
+    var titleId: String { TitleKey(media: kind.api, id: id).titleId }
+
+    init(kind: MediaKind, id: String) {
+        self.kind = kind
+        self.id = id
+    }
+
+    init?(titleId: String) {
+        guard let k = TitleKey(titleId: titleId) else { return nil }
+        self.init(kind: k.media.kind, id: k.id)
+    }
+}
+
+/// The next episode of a title on your list (`NextEpisode`, src/home/types.ts): home/live's Upcoming, and the Up
+/// Next widget's spotlight. Lives here so the widget extension (which compiles this file, not Home.swift) has it.
+struct NextEpisode: Codable, Hashable, Sendable, Identifiable {
+    var ref: TitleRef
+    /// the list it's on
+    var media: APIMedia
+    var id: String
+    var title: String
+    @Picture var cover: URL?
+    /// the episode; TV counts across seasons
+    var number: Int
+    /// ms; with `dateOnly` only the day is known (TMDB)
+    var at: Int64
+    var dateOnly: Bool
+
+    var titleId: String { ref.titleId }
+    var date: Date { Millis.date(at) }
+
+    /// "Ep 7 · Fri 3:00 AM" this week, "Ep 1181 · Jan 3" later; a day-only one has no time ("Ep 4 · Wed")
+    func caption(now: Date = Clock.now) -> String {
+        let d = date
+        let offset = Format.dayOffset(d, now: now)
+        let when: String
+        if offset >= 7 { when = Format.shortDay(d) }
+        else if !dateOnly { when = Format.weekdayTime(d) }
+        else if offset == 0 { when = "Today" }
+        else if offset == 1 { when = "Tomorrow" }
+        else { when = Format.weekday(d) }
+        return "\(ref.kind.unitShort) \(Format.grouped(number)) · \(when)"
+    }
+}
 
 /// What the extensions know beyond the library (api/extensions.json in the demo): titles the share extension can
 /// match that aren't on the list, TV season lengths, MyAnimeList ids to AniList title ids.
@@ -16,11 +89,26 @@ struct ExtensionCatalog: Codable, Equatable, Sendable {
     var seasons: [String: [Int]]
     /// "anime/61469" -> "anime:210482"
     var malIds: [String: String]
+    /// the next episodes of what you watch, as GET home/live answers `upcoming` (the real app writes the last answer
+    /// into the App Group); none when it isn't known
+    var upcoming: [NextEpisode]
 
-    init(titles: [Title] = [], seasons: [String: [Int]] = [:], malIds: [String: String] = [:]) {
+    init(titles: [Title] = [], seasons: [String: [Int]] = [:], malIds: [String: String] = [:],
+         upcoming: [NextEpisode] = []) {
         self.titles = titles
         self.seasons = seasons
         self.malIds = malIds
+        self.upcoming = upcoming
+    }
+
+    private enum CodingKeys: String, CodingKey { case titles, seasons, malIds, upcoming }
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        titles = try c.decodeIfPresent([Title].self, forKey: .titles) ?? []
+        seasons = try c.decodeIfPresent([String: [Int]].self, forKey: .seasons) ?? [:]
+        malIds = try c.decodeIfPresent([String: String].self, forKey: .malIds) ?? [:]
+        upcoming = try c.decodeIfPresent([NextEpisode].self, forKey: .upcoming) ?? []
     }
 }
 
@@ -44,7 +132,12 @@ enum ExtensionsJSON {
         return e
     }()
 
-    /// a JSON file bundled into an extension (the demo's library.json and extensions.json); nil when it isn't there
+    /// the demo's library, bundled as GET library/changes answers it (changes.json), as the screens show it
+    static func bundledLibrary(bundle: Bundle = .main) -> [LibraryEntry] {
+        bundled(ChangeFeed.self, "changes", bundle: bundle)?.entries.map(\.library) ?? []
+    }
+
+    /// a JSON file bundled into an extension (the demo's changes.json and extensions.json); nil when it isn't there
     static func bundled<T: Decodable>(_ type: T.Type, _ name: String, bundle: Bundle = .main) -> T? {
         guard let url = bundle.url(forResource: name, withExtension: "json"),
               let data = try? Data(contentsOf: url) else { return nil }
@@ -93,7 +186,6 @@ struct WidgetSnapshot: Codable, Equatable, Sendable {
         var media: MediaKind
         var name: String
         var cover: URL?
-        var banner: URL?
         /// what you're on in its own count (the episode of the season for TV)
         var progress: Int
         var total: Int?
@@ -115,7 +207,6 @@ struct WidgetSnapshot: Codable, Equatable, Sendable {
         var id: String
         var name: String
         var cover: URL?
-        var banner: URL?
         /// "Next episode" or "Up next" (the widget shows it in small capitals, as the mockup)
         var label: String
         /// "Ep 7 · Fri 3:00 AM", "Ep 7"
@@ -139,12 +230,14 @@ struct WidgetSnapshot: Codable, Equatable, Sendable {
 
     static let empty = WidgetSnapshot(made: Date(timeIntervalSince1970: 0), items: [], spotlight: nil)
 
-    /// the snapshot for a library at `now`
+    /// the snapshot for a library at `now`; `upcoming` is home/live's next episodes (else the catalog's)
     static func make(library: [LibraryEntry], catalog: ExtensionCatalog = ExtensionCatalog(),
-                     now: Date = Clock.now) -> WidgetSnapshot {
+                     upcoming next: [NextEpisode]? = nil, now: Date = Clock.now) -> WidgetSnapshot {
         let cont = continuing(library, now: now)
         let items = cont.prefix(maxItems).map { item($0, seasons: catalog.seasons[$0.id]) }
-        let spot = upcoming(library, now: now).first.map { spotlight(airing: $0, now: now) }
+        let lib = Dictionary(library.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
+        let spot = upcoming(next ?? catalog.upcoming, library: library, now: now).first
+            .map { spotlight(airing: $0, entry: lib[$0.titleId], now: now) }
             ?? cont.first.map { spotlight(upNext: $0, seasons: catalog.seasons[$0.id]) }
         return WidgetSnapshot(made: now, items: Array(items), spotlight: spot)
     }
@@ -155,10 +248,12 @@ struct WidgetSnapshot: Codable, Equatable, Sendable {
             .sorted { $0.updatedAt > $1.updatedAt }
     }
 
-    /// what you watch with a next episode still to air, soonest first
-    static func upcoming(_ lib: [LibraryEntry], now: Date) -> [LibraryEntry] {
-        lib.filter { $0.status.isActive && ($0.title.next.map { $0.at > now } ?? false) }
-            .sorted { $0.title.next!.at < $1.title.next!.at }
+    /// next episodes of what you watch (watching or rewatching it) still to air, soonest first
+    static func upcoming(_ next: [NextEpisode], library: [LibraryEntry], now: Date) -> [NextEpisode] {
+        let active = Set(library.filter { $0.status.isActive }.map(\.id))
+        return next.filter { n in
+            active.contains(n.titleId) && (n.dateOnly ? Format.dayOffset(n.date, now: now) >= 0 : n.date > now)
+        }.sorted { $0.at < $1.at }
     }
 
     static func item(_ e: LibraryEntry, seasons: [Int]? = nil) -> Item {
@@ -168,7 +263,7 @@ struct WidgetSnapshot: Codable, Equatable, Sendable {
         var caption: String
         switch e.media {
         case .movie:
-            caption = e.title.year.map { "Film · \($0)" } ?? "Film"
+            caption = "Film"
         default:
             caption = "\(e.media.unitShort) \(Format.grouped(progress))"
             if let total { caption += " of \(Format.grouped(total))" }
@@ -176,22 +271,17 @@ struct WidgetSnapshot: Codable, Equatable, Sendable {
         }
         let fraction = total.flatMap { $0 > 0 ? min(1, Double(progress) / Double($0)) : nil }
         let unit = e.media == .book ? "p." : e.media.unitShort.lowercased()
-        return Item(id: e.id, media: e.media, name: e.title.name, cover: e.title.cover, banner: e.title.banner,
+        return Item(id: e.id, media: e.media, name: e.title.name, cover: e.title.cover,
                     progress: progress, total: total, caption: caption, fraction: fraction,
                     canStep: plusOne(e) != nil, ringCaption: total.map { "of \(Format.grouped($0))" } ?? unit)
     }
 
-    /// "Ep 7 · Fri 3:00 AM" this week, "Ep 1181 · Jan 3" later
-    static func airingCaption(_ a: Airing, media: MediaKind, now: Date) -> String {
-        let when = Format.dayOffset(a.at, now: now) < 7 ? Format.weekdayTime(a.at) : Format.shortDay(a.at)
-        return "\(media.unitShort) \(a.episode) · \(when)"
-    }
-
-    static func spotlight(airing e: LibraryEntry, now: Date) -> Spotlight {
-        let a = e.title.next!
-        let caption = airingCaption(a, media: e.media, now: now)
-        return Spotlight(id: e.id, name: e.title.name, cover: e.title.cover, banner: e.title.banner,
-                         label: "Next episode", caption: caption, inline: caption + " · " + e.title.name, at: a.at)
+    /// the next episode's spotlight; the library's copy names it (its cover is the one the widget already shows)
+    static func spotlight(airing n: NextEpisode, entry: LibraryEntry? = nil, now: Date) -> Spotlight {
+        let caption = n.caption(now: now)
+        let name = entry?.title.name ?? n.title
+        return Spotlight(id: n.titleId, name: name, cover: entry?.title.cover ?? n.cover,
+                         label: "Next episode", caption: caption, inline: caption + " · " + name, at: n.date)
     }
 
     static func spotlight(upNext e: LibraryEntry, seasons: [Int]? = nil) -> Spotlight {
@@ -204,7 +294,7 @@ struct WidgetSnapshot: Codable, Equatable, Sendable {
         } else {
             caption = "\(e.media.unitShort) \(Format.grouped(e.progress + e.media.step))"
         }
-        return Spotlight(id: e.id, name: e.title.name, cover: e.title.cover, banner: e.title.banner,
+        return Spotlight(id: e.id, name: e.title.name, cover: e.title.cover,
                          label: "Up next", caption: caption, inline: caption + " · " + e.title.name, at: nil)
     }
 

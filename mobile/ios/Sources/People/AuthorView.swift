@@ -42,10 +42,11 @@ private struct AuthorPageBody: View {
     }
 
     private var facts: [(value: String, label: String)] {
+        // the answer has no page total: books shown, then everything Open Library lists when it says
         var out: [(value: String, label: String)] = [
             (value: Format.grouped(page.books.count), label: page.books.count == 1 ? "Book" : "Books"),
-            (value: Format.grouped(page.pages), label: "Pages"),
         ]
+        if let w = page.works, w != page.books.count { out.append((value: Format.grouped(w), label: "Works")) }
         if let r = page.averageRating { out.append((value: "★ " + r, label: "Avg rating")) }
         out.append((value: Format.grouped(page.inLibrary(model.library)), label: "In your library"))
         return out

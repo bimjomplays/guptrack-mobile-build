@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Manousos Oviedo",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "225171",
+        "kind": "tv"
+       },
+       "score": 79,
+       "title": "Pluribus",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Manousos Oviedo",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "225171",
+        "kind": "tv"
+       },
+       "score": 79,
+       "title": "Pluribus",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/crm5YcUTtb5pXhZbJsATA8EAoPD.jpg",
+  "known": "Acting",
+  "name": "Carlos-Manuel Vesga",
+  "native": null,
+  "ref": {
+   "id": "93652789",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

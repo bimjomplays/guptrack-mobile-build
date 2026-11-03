@@ -1,0 +1,64 @@
+{
+ "title": {
+  "alt": [
+   "Cheonhwaseogo Daegongja",
+   "천화서고 대공자"
+  ],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx160693-IAEQE4iXLbo5.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Status",
+    "value": "Releasing"
+   },
+   {
+    "label": "Published",
+    "value": "Jan 14, 2023"
+   },
+   {
+    "label": "Members",
+    "value": "9,415"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "headline": [
+   "Manga",
+   "2023"
+  ],
+  "idMal": 162325,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "160693",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 74,
+  "scoreNote": "9,415 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Releasing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Cheonhwa Archive's Young Master",
+  "trailer": null,
+  "volumes": null,
+  "year": 2023
+ }
+}

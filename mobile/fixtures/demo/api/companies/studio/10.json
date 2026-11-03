@@ -1,0 +1,75 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx153288-25FBfFJzEQ5O.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "153288",
+       "kind": "anime"
+      },
+      "score": 81,
+      "title": "Kaiju No. 8",
+      "year": 2024
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20464-ooZUyBe4ptp9.png",
+      "format": "TV",
+      "ref": {
+       "id": "20464",
+       "kind": "anime"
+      },
+      "score": 83,
+      "title": "HAIKYU!!",
+      "year": 2014
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx13601-i42VFuHpqEOJ.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "13601",
+       "kind": "anime"
+      },
+      "score": 81,
+      "title": "PSYCHO-PASS",
+      "year": 2012
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx32-5JYsv0wc122I.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "32",
+       "kind": "anime"
+      },
+      "score": 86,
+      "title": "Neon Genesis Evangelion: The End of Evangelion",
+      "year": 1997
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx43-Y6EjeEMM14dj.png",
+      "format": "Film",
+      "ref": {
+       "id": "43",
+       "kind": "anime"
+      },
+      "score": 80,
+      "title": "Ghost in the Shell",
+      "year": 1995
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Production I.G",
+  "ref": {
+   "id": "10",
+   "to": "studio"
+  }
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "title": {
+  "alt": [
+   "Tempal: Item no Chikara",
+   "テムパル～アイテムの力～"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/212888-ZsnNegBCKXQq.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 12,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "ONA"
+   },
+   {
+    "label": "Episodes",
+    "value": "12"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Airing"
+   },
+   {
+    "label": "Next episode",
+    "value": "Ep 7, Nov 8, 2026"
+   },
+   {
+    "label": "Aired",
+    "value": "Sep 27, 2026"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2026"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "7",
+       "to": "studio"
+      },
+      "text": "J.C.STAFF"
+     }
+    ],
+    "value": "J.C.STAFF"
+   },
+   {
+    "label": "Members",
+    "value": "56,398"
+   }
+  ],
+  "format": "ONA",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Fantasy"
+  ],
+  "headline": [
+   "ONA",
+   "Fall 2026",
+   "12 episodes"
+  ],
+  "idMal": 64340,
+  "makers": [
+   {
+    "ref": {
+     "id": "7",
+     "to": "studio"
+    },
+    "text": "J.C.STAFF"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "212888",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 76,
+  "scoreNote": "56,398 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Airing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Overgeared",
+  "trailer": null,
+  "volumes": null,
+  "year": 2026
+ }
+}

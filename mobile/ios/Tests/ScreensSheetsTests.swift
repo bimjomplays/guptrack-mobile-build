@@ -21,7 +21,6 @@ final class ScreensSheetsTests: ScreenTestCase {
         expect(app, "Plan to Watch")
         let e = app.model.entry(sbr)
         expect(app, "Episode \(e?.progress ?? 0) of 11")
-        expect(app, "airs")
         expect(app, "Your score")
         expect(app, "Favourite")
         find(app, "Score 7").tap()
@@ -74,7 +73,7 @@ final class ScreensSheetsTests: ScreenTestCase {
     func test26AddToListSheet() {
         let app = launch(["-open", "title/" + sbr, "-sheet", "add-to-list/" + sbr])
         expect(app, "New list")
-        expect(app, "Comfort rewatches")
+        expect(app, "Rainy Sundays")
         expect(app, "titles · Public")
         expect(app, "Lists can mix")
         shot("26-add-to-list-sheet")
@@ -85,13 +84,14 @@ final class ScreensSheetsTests: ScreenTestCase {
         expect(app, "Start here").tap()
         app.buttons["Done"].tap()
         XCTAssertTrue(poll(5) { app.model.sheet == nil })
-        XCTAssertTrue(requests(app).contains("POST lists/start-here/items"))
+        XCTAssertTrue(requests(app).contains("POST lists/4/items"))
     }
 
-    func testNewListOpensItsSheet() {
+    func testNewListOpensInTheSheet() {
         let app = launch(["-open", "title/" + sbr, "-sheet", "add-to-list/" + sbr])
         expect(app, "New list").tap()
-        XCTAssertEqual(app.model.sheet, .newList)
+        expect(app, "Description (optional)")
+        XCTAssertEqual(app.model.sheet, .addToList(sbr), "pushed inside Add to list, with the title to put on it")
     }
 
     func test27WriteReview() {
@@ -102,8 +102,7 @@ final class ScreensSheetsTests: ScreenTestCase {
         find(app, "Review text").typeText(
             "Every chapter ends on a turn I didn't see coming, and the art never lets up. "
                 + "The second part takes its time, but it earns it. Easy to recommend")
-        expect(app, "/ 5,000")
-        expect(app, "Public")
+        expect(app, "/ 10,000")
         shot("27-write-review")
     }
 
@@ -112,7 +111,7 @@ final class ScreensSheetsTests: ScreenTestCase {
         find(app, "Review text").typeText("Worth it.")
         app.buttons["Post"].tap()
         XCTAssertTrue(poll(5) { app.model.sheet == nil })
-        XCTAssertTrue(requests(app).contains("POST titles/\(csm)/reviews"))
+        XCTAssertTrue(requests(app).contains("PUT titles/manga/105778/review"))
     }
 
     func test53SendToSheet() {
@@ -126,11 +125,11 @@ final class ScreensSheetsTests: ScreenTestCase {
         shot("53-send-to-sheet")
     }
 
-    func testSendingPostsToFriends() {
+    func testSendingPostsToEachFriend() {
         let app = launch(["-open", "title/" + sbr, "-sheet", "send-to/" + sbr])
         expect(app, "tobiwan").tap()
         app.buttons["Send 1"].tap()
         XCTAssertTrue(poll(5) { app.model.sheet == nil })
-        XCTAssertTrue(requests(app).contains("POST send-to"))
+        XCTAssertTrue(requests(app).contains("POST conversations/tobiwan/messages"))
     }
 }

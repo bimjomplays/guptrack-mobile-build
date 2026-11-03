@@ -1,19 +1,29 @@
 {
- "deviceId": "demo-device",
+ "device": {
+  "app": "GupTrack",
+  "createdAt": 1791902460000,
+  "id": 1,
+  "lastUsedAt": 1793716740000,
+  "name": "iPhone",
+  "platform": "iOS 26.1",
+  "scope": "app"
+ },
  "recoveryCodes": [
-  "h3tm-8qwe",
-  "z6pa-2nvc",
-  "r9kd-4fyu",
-  "c2xw-7gbj",
-  "v5ns-3ktr",
-  "e8jb-6mzq",
-  "y4uf-9dla",
-  "s7gh-5wnp"
+  "92qhv-1fkpj-86nmg-egagw-6txnh-s",
+  "a3k2m-e19xb-wc4g2-sr386-vqv4h-8",
+  "wq2da-7s2t1-aa7wb-ztd1q-dwr11-7",
+  "3ah9p-svfrn-kcrvq-5c28m-s2zzf-d",
+  "e19mn-r1wn6-rxd12-0xqk9-y1157-r",
+  "qc6kt-mvywz-xjp9h-1brp6-101km-d",
+  "aaaj7-jhp2y-nmrdx-fqefn-q9p3n-w",
+  "g0phq-dtgrs-n4ww6-fahdg-d7x7z-d",
+  "38g8f-06mm7-htmrv-w52j4-s7d0c-y",
+  "dvzgk-y6ny7-g2sc1-zpq7c-82apz-c"
  ],
- "token": "demo-token",
+ "serverTime": 1793716860000,
+ "token": "demo-token-from-the-demo-server",
  "user": {
-  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
-  "name": "Mika",
+  "role": "owner",
   "username": "mika"
  }
 }

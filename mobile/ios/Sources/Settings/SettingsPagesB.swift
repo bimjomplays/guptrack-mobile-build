@@ -3,8 +3,8 @@ import UserNotifications
 
 // MARK: 60 preferences
 
-/// Settings › Preferences (60, 60b): titles, content, scores and dates. Score format is a pull-down that shows an
-/// example score under each choice.
+/// Settings › Preferences (60, 60b): titles, content, scores, dates and which media types show. Score format is a
+/// pull-down that shows an example score under each choice.
 struct PreferencesSettingsView: View {
     @Environment(AppModel.self) private var model
 
@@ -12,9 +12,10 @@ struct PreferencesSettingsView: View {
         SettingsLoaded { s in
             ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
-                    titles(s)
+                    titles
                     scores(s)
                     dates
+                    mediaTypes(s)
                 }
                 .padding(.top, 4)
                 .padding(.bottom, 40)
@@ -23,47 +24,68 @@ struct PreferencesSettingsView: View {
         .settingsPage("Preferences")
     }
 
-    private func titles(_ s: AccountSettings) -> some View {
+    private func prefs<V>(_ path: WritableKeyPath<Prefs, V>, fallback: V, delay: Double = 0) -> Binding<V> {
+        model.settingsBinding((\AccountSettings.prefs).appending(path: path), fallback: fallback, delay: delay)
+    }
+
+    private var titles: some View {
         SettingsGroup(label: "Titles") {
-            SettingsPickerRow(label: "Title language",
-                              choices: AccountSettings.TitleLanguage.allCases.map { ($0, $0.label) },
-                              selection: model.settingsBinding(\.preferences.titleLanguage, fallback: .english, delay: 0))
-            SettingsToggleRow(label: "Adult content", sub: "Show 18+ titles in search and browse",
-                              isOn: model.settingsBinding(\.preferences.adult, fallback: false))
-            SettingsToggleRow(label: "Hide spoilers", sub: "Blur episode titles and descriptions you haven't reached",
-                              separator: false, isOn: model.settingsBinding(\.preferences.hideSpoilers, fallback: true))
+            SettingsPickerRow(label: "Title language", choices: SettingsChoices.titleLanguages,
+                              selection: prefs(\.titleLanguage, fallback: "english"))
+            SettingsToggleRow(label: "Adult titles", sub: "Show 18+ titles in Browse and search",
+                              isOn: prefs(\.adult, fallback: false))
+            SettingsToggleRow(label: "Hide spoilers", sub: "In descriptions, tags and names, until you tap them",
+                              separator: false,
+                              isOn: Binding(get: { AccountSettingsStore.shared.settings?.prefs.spoilers != "show" },
+                                            set: { on in model.editSettings(delay: 0) { $0.prefs.spoilers = on ? "hide" : "show" } }))
         }
     }
 
     private func scores(_ s: AccountSettings) -> some View {
         SettingsGroup(label: "Scores and progress") {
-            ScoreFormatMenu(selection: model.settingsBinding(\.preferences.scoreFormat, fallback: .point10, delay: 0))
-            SettingsToggleRow(label: "Smart progress", sub: "Finishing the last episode marks the title Completed",
-                              isOn: model.settingsBinding(\.preferences.smartProgress, fallback: true))
-            SettingsToggleRow(label: "Fill in dates", sub: "Set start and finish dates as you go", separator: false,
-                              isOn: model.settingsBinding(\.preferences.autoDates, fallback: true))
+            ScoreFormatMenu(selection: Binding(get: { s.scoreFormat },
+                                               set: { f in model.editSettings(delay: 0) { $0.prefs.scoreFormat = f.rawValue } }))
+            SettingsToggleRow(label: "Smart progress", sub: "Starts and completes titles as you log progress",
+                              isOn: prefs(\.smartProgress, fallback: true))
+            SettingsToggleRow(label: "Automatic dates", sub: "Fills in when you started and finished", separator: false,
+                              isOn: prefs(\.autoDates, fallback: true))
         }
     }
 
     private var dates: some View {
         SettingsGroup(label: "Dates") {
-            SettingsPickerRow(label: "Date format",
-                              choices: AccountSettings.DateStyle.allCases.map { ($0, $0.show(Clock.now)) },
-                              selection: model.settingsBinding(\.preferences.dateFormat, fallback: .medium, delay: 0))
-            SettingsPickerRow(label: "Week starts on",
-                              choices: AccountSettings.WeekStart.allCases.map { ($0, $0.label) }, separator: false,
-                              selection: model.settingsBinding(\.preferences.weekStart, fallback: .monday, delay: 0))
+            SettingsPickerRow(label: "Date format", choices: DateStyle.allCases.map { ($0.rawValue, $0.show(Clock.now)) },
+                              selection: prefs(\.dateFormat, fallback: "mdy"))
+            SettingsPickerRow(label: "First day of week", choices: SettingsChoices.weekStarts, separator: false,
+                              selection: prefs(\.weekStart, fallback: "sunday"))
+        }
+    }
+
+    /// the lists switched off in Settings leave the app and the website; one always stays on
+    private func mediaTypes(_ s: AccountSettings) -> some View {
+        let shown = APIMedia.allCases.filter { !s.prefs.hidden.contains($0) }
+        return SettingsGroup(label: "Media types", footer: "Turned-off media types are hidden everywhere in GupTrack.") {
+            ForEach(APIMedia.allCases, id: \.self) { m in
+                SettingsToggleRow(label: m.kind.plural, separator: m != APIMedia.allCases.last,
+                                  isOn: Binding(get: { !s.prefs.hidden.contains(m) }, set: { on in
+                                      model.editSettings(delay: 0) {
+                                          $0.prefs.hidden.removeAll { $0 == m }
+                                          if !on { $0.prefs.hidden.append(m) }
+                                      }
+                                  }))
+                    .disabled(shown == [m])
+            }
         }
     }
 }
 
-/// The Score format pull-down (60b): each choice with how 8.5 / 10 shows in it.
+/// The Score format pull-down (60b): each choice with how the same score shows in it.
 private struct ScoreFormatMenu: View {
-    @Binding var selection: AccountSettings.ScoreFormat
+    @Binding var selection: ScoreFormat
 
     var body: some View {
         Menu {
-            ForEach(AccountSettings.ScoreFormat.allCases) { f in
+            ForEach(ScoreFormat.allCases) { f in
                 Toggle(isOn: Binding(get: { selection == f }, set: { on in if on { selection = f } })) {
                     Text(f.label)
                     Text(f.example)
@@ -79,7 +101,8 @@ private struct ScoreFormatMenu: View {
 
 // MARK: 61 notifications
 
-/// Settings › Notifications (61): whether this iPhone may show them, then the website's switches.
+/// Settings › Notifications (61): whether this iPhone may show them, then the website's switches (the website's
+/// desktop switch is for browsers, so it isn't here).
 struct NotificationSettingsView: View {
     @Environment(AppModel.self) private var model
 
@@ -98,25 +121,32 @@ struct NotificationSettingsView: View {
         .settingsPage("Notifications")
     }
 
-    private func toggle(_ label: String, _ path: WritableKeyPath<AccountSettings, Bool>, sub: String? = nil,
+    private func notify<V>(_ path: WritableKeyPath<Prefs.Notify, V>, fallback: V) -> Binding<V> {
+        model.settingsBinding((\AccountSettings.prefs.notify).appending(path: path), fallback: fallback, delay: 0)
+    }
+
+    private func toggle(_ label: String, _ path: WritableKeyPath<Prefs.Notify, Bool>, sub: String? = nil,
                         last: Bool = false) -> some View {
-        SettingsToggleRow(label: label, sub: sub, separator: !last, isOn: model.settingsBinding(path, fallback: false))
+        SettingsToggleRow(label: label, sub: sub, separator: !last, isOn: notify(path, fallback: true))
     }
 
     private var releases: some View {
-        SettingsGroup(label: "Releases") {
-            toggle("New episodes and chapters", \.notifications.newEpisodes, sub: "For titles you're watching or reading")
-            toggle("New seasons", \.notifications.newSeasons)
-            toggle("Planned titles come out", \.notifications.plannedReleases, last: true)
+        SettingsGroup(label: "Releases",
+                      footer: "New seasons and sequels also follow what you've completed. Planned titles coming out always use your planning lists.") {
+            toggle("New episodes", \.episodes, sub: "Anime and TV")
+            toggle("New seasons and sequels", \.sequels)
+            toggle("Planned titles coming out", \.releases)
+            SettingsPickerRow(label: "Follow", choices: SettingsChoices.notifyLists, separator: false,
+                              selection: notify(\.lists, fallback: "watching"))
         }
     }
 
     private var social: some View {
         SettingsGroup(label: "People") {
-            toggle("Friend requests", \.notifications.friendRequests)
-            toggle("Comments on your profile", \.notifications.profileComments)
-            toggle("Likes and replies", \.notifications.likesAndReplies)
-            toggle("Messages", \.notifications.messages, last: true)
+            toggle("Friend requests", \.friends, sub: "And when one is accepted")
+            toggle("Comments on your profile", \.comments)
+            toggle("Likes and replies", \.social, sub: "On your activity and reviews")
+            toggle("Messages", \.messages, sub: "And message requests", last: true)
         }
     }
 }
@@ -170,15 +200,15 @@ private struct PushPermissionGroup: View {
 
 // MARK: server
 
-/// Settings › Server: the GupTrack server this iPhone talks to (from GET hello), who's signed in, this device.
+/// Settings › Server: the GupTrack server this iPhone talks to (from GET server), who's signed in, this device.
 struct ServerSettingsView: View {
     @Environment(AppModel.self) private var model
 
     var body: some View {
-        PageLoader(load: { try await $0.hello() }) { hello in
+        PageLoader(load: { try await $0.server() }) { info in
             ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
-                    server(hello)
+                    server(info)
                     you
                 }
                 .padding(.top, 4)
@@ -188,14 +218,12 @@ struct ServerSettingsView: View {
         .settingsPage("Server")
     }
 
-    private func server(_ hello: ServerHello) -> some View {
+    private func server(_ info: ServerInfo) -> some View {
         let state = SettingsConnection.state(model.sync)
         return SettingsGroup(label: "Server", footer: "Your library lives on this server. The iPhone keeps a copy to use offline.") {
             SettingsRow("Status", chevron: false) { SettingsLiveLabel(text: state.0, live: state.1) }
             SettingsRow("Address", value: model.account?.baseURL.host ?? "", chevron: false)
-            SettingsRow("Name", value: hello.name, chevron: false)
-            SettingsRow("Version", value: "\(hello.version) · API \(hello.api)", chevron: false)
-            SettingsRow("New accounts", value: AccountList.joiningLabel(hello.joining), chevron: false, separator: false)
+            SettingsRow("App API", value: "Version \(info.api)", chevron: false, separator: false)
         }
     }
 
@@ -204,7 +232,7 @@ struct ServerSettingsView: View {
             SettingsGroup(label: "This iPhone") {
                 SettingsRow("Signed in as", value: "@" + a.user.username, chevron: false)
                 SettingsRow("Since", value: Format.longDay(a.signedInAt), chevron: false)
-                SettingsRow("Device", value: a.deviceId, chevron: false, separator: false)
+                SettingsRow("Device", value: String(a.deviceId), chevron: false, separator: false)
             }
         }
     }
