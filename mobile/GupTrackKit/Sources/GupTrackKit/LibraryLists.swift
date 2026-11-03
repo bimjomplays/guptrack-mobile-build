@@ -132,9 +132,12 @@ enum LibraryLists {
     /// what a media list shows: its media, the status chip, the format, the search, in the chosen order
     static func shown(_ entries: [LibraryEntry], media: MediaKind, status: ListStatus?, format: LibraryFormat = .all,
                       query: String = "", sort: LibrarySort = .updated) -> [LibraryEntry] {
-        sort.sorted(entries.filter {
+        let rows = sort.sorted(entries.filter {
             $0.media == media && keeps(status, $0) && format.matches($0) && matchesQuery(query, $0)
         })
+        // All is grouped by status, each group in the sort, as on the website (groupRows, src/components/list/view.ts)
+        guard status == nil else { return rows }
+        return ListStatus.ordered.flatMap { s in rows.filter { keeps(s, $0) } }
     }
 
     /// a search over the title, its other names and its studio or author

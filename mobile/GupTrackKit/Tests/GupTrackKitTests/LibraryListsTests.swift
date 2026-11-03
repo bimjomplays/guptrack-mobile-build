@@ -60,12 +60,21 @@ final class LibraryListsTests: XCTestCase {
         XCTAssertTrue(LibraryLists.keeps(nil, e))
     }
 
-    func testTheAnimeListStartsWithWhatYouJustWatched() throws {
+    func testAllIsGroupedByStatusLikeTheWebsite() throws {
         let rows = LibraryLists.shown(try library(), media: .anime, status: nil)
-        XCTAssertEqual(rows.prefix(2).map(\.id), ["anime:150672", "anime:142853"], "On-Hold ones touched 15 hours ago")
-        XCTAssertEqual(rows.first { $0.status == .current }?.id, "anime:210482")
-        XCTAssertEqual(zip(rows, rows.dropFirst()).filter { $0.updatedAt < $1.updatedAt }.count, 0)
+        XCTAssertEqual(rows.first?.id, "anime:210482", "Watching comes first, though On-Hold ones were touched later")
+        let groups = rows.map { ListStatus.ordered.firstIndex(of: $0.status.isActive ? .current : $0.status) ?? 0 }
+        XCTAssertEqual(groups, groups.sorted(), "Watching, Completed, On-Hold, Dropped, Plan to Watch")
+        for (a, b) in zip(rows, rows.dropFirst()) where a.status == b.status {
+            XCTAssertGreaterThanOrEqual(a.updatedAt, b.updatedAt, "last updated first within a status")
+        }
         XCTAssertTrue(rows.allSatisfy { $0.media == .anime })
+        // another sort keeps the groups, sorted inside each
+        let byTitle = LibraryLists.shown(try library(), media: .anime, status: nil, sort: .title)
+        XCTAssertEqual(byTitle.first?.status, .current)
+        for (a, b) in zip(byTitle, byTitle.dropFirst()) where a.status == b.status {
+            XCTAssertNotEqual(a.title.name.localizedCaseInsensitiveCompare(b.title.name), .orderedDescending)
+        }
     }
 
     func testSummaryLine() throws {

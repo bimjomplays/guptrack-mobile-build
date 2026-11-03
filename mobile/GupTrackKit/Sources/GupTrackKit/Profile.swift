@@ -64,32 +64,32 @@ struct MediaStats: Codable, Hashable, Sendable {
     var meanText: String { ProfileText.mean(meanScore) }
 
     /// the four columns under the media switch (41, 48)
-    var columns: [StatColumn] {
-        let mean = StatColumn(value: meanText, label: "Mean score")
+    var columns: [StatFigure] {
+        let mean = StatFigure(value: meanText, label: "Mean score")
         let days = Format.trim((amount * 10).rounded() / 10)
         let amountText = Format.grouped(Int(amount.rounded()))
         switch kind {
         case .anime, .tv:
-            return [StatColumn(value: days, label: "Days"), mean,
-                    StatColumn(value: Format.grouped(repeats), label: "Rewatched"),
-                    StatColumn(value: Format.grouped(progress), label: "Episodes")]
+            return [StatFigure(value: days, label: "Days"), mean,
+                    StatFigure(value: Format.grouped(repeats), label: "Rewatched"),
+                    StatFigure(value: Format.grouped(progress), label: "Episodes")]
         case .movie:
-            return [StatColumn(value: days, label: "Days"), mean,
-                    StatColumn(value: Format.grouped(repeats), label: "Rewatched"),
-                    StatColumn(value: Format.grouped(count(.completed)), label: "Films")]
+            return [StatFigure(value: days, label: "Days"), mean,
+                    StatFigure(value: Format.grouped(repeats), label: "Rewatched"),
+                    StatFigure(value: Format.grouped(count(.completed)), label: "Films")]
         case .manga:
-            return [StatColumn(value: amountText, label: "Chapters"), mean,
-                    StatColumn(value: Format.grouped(repeats), label: "Reread"),
-                    StatColumn(value: Format.grouped(count(.completed)), label: "Completed")]
+            return [StatFigure(value: amountText, label: "Chapters"), mean,
+                    StatFigure(value: Format.grouped(repeats), label: "Reread"),
+                    StatFigure(value: Format.grouped(count(.completed)), label: "Completed")]
         case .book:
-            return [StatColumn(value: amountText, label: "Pages"), mean,
-                    StatColumn(value: Format.grouped(repeats), label: "Reread"),
-                    StatColumn(value: Format.grouped(count(.completed)), label: "Books read")]
+            return [StatFigure(value: amountText, label: "Pages"), mean,
+                    StatFigure(value: Format.grouped(repeats), label: "Reread"),
+                    StatFigure(value: Format.grouped(count(.completed)), label: "Books read")]
         }
     }
 }
 
-struct StatColumn: Hashable, Sendable {
+struct StatFigure: Hashable, Sendable {
     var value: String
     var label: String
 }
