@@ -5,8 +5,8 @@ import SwiftUI
 struct TitleHero: View {
     let page: TitlePage
 
-    /// where the name's last line ends, in the hero: the banner stops just under it, so a long name never puts
-    /// the banner's edge through the lines below it (16, 21)
+    /// where the name (and its original-language line) ends, in the hero: the banner stops just under it, so a
+    /// long name never puts the banner's edge through the lines below it (16, 21, 24)
     @State private var nameBottom: CGFloat = 0
 
     private var t: Title { page.title }
@@ -14,7 +14,7 @@ struct TitleHero: View {
     var body: some View {
         ZStack(alignment: .topLeading) {
             TitleBackdrop(title: t)
-                .frame(height: max(220, nameBottom + 12))
+                .frame(height: max(220, nameBottom + 6))
                 .frame(maxWidth: .infinity)
                 .clipped()
             HStack(alignment: .bottom, spacing: 16) {
@@ -52,18 +52,21 @@ private struct TitleHeroText: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            Text(page.title.name)
-                .font(.system(size: 22, weight: .bold)).foregroundStyle(Theme.ink)
-                // two lines at most; a long name gets smaller instead
-                .lineLimit(2).minimumScaleFactor(0.7)
-                .accessibilityAddTraits(.isHeader)
-                .onGeometryChange(for: CGFloat.self) { $0.frame(in: .named(TitleHero.space)).maxY } action: {
-                    nameBottom = $0
+            // the name and its original-language line sit on the banner; the banner ends under them
+            VStack(alignment: .leading, spacing: 3) {
+                Text(page.title.name)
+                    .font(.system(size: 22, weight: .bold)).foregroundStyle(Theme.ink)
+                    // two lines at most; a long name gets smaller instead
+                    .lineLimit(2).minimumScaleFactor(0.7)
+                    .accessibilityAddTraits(.isHeader)
+                if let native = page.nativeLine {
+                    Text(native).font(.system(size: 13)).foregroundStyle(Theme.inkMuted).lineLimit(1)
                 }
-            if let native = page.nativeLine {
-                Text(native).font(.system(size: 13)).foregroundStyle(Theme.inkMuted).lineLimit(1).padding(.top, 3)
             }
-            Text(page.metaLine).font(.system(size: 14)).foregroundStyle(Theme.inkSoft).lineLimit(1).padding(.top, 6)
+            .onGeometryChange(for: CGFloat.self) { $0.frame(in: .named(TitleHero.space)).maxY } action: {
+                nameBottom = $0
+            }
+            Text(page.metaLine).font(.system(size: 14)).foregroundStyle(Theme.inkSoft).lineLimit(1).padding(.top, 12)
             creatorLine.padding(.top, 2)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
