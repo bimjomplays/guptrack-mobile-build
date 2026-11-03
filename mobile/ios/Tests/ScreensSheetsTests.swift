@@ -100,7 +100,7 @@ final class ScreensSheetsTests: ScreenTestCase {
         expect(app, "Reading")
         expect(app, "Contains spoilers")
         find(app, "Review text").typeText(
-            "Every chapter ends on a turn I didn't see coming, and the art never lets up. "
+            " Every chapter ends on a turn I didn't see coming, and the art never lets up. "
                 + "The second part takes its time, but it earns it. Easy to recommend")
         expect(app, "/ 10,000")
         shot("27-write-review")

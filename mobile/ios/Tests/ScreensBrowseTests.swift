@@ -3,7 +3,7 @@ import XCTest
 
 /// Browse (11-15).
 final class ScreensBrowseTests: ScreenTestCase {
-    private let filters = "anime:genres=Action,Drama,Mystery&from=2020&season=fall&format=TV&status=releasing"
+    private let filters = "anime:genres=Action,Adventure,Fantasy&from=2020&season=fall&format=TV&status=releasing"
 
     func test11Browse() {
         let app = launch(["-tab", "browse"])
@@ -32,8 +32,8 @@ final class ScreensBrowseTests: ScreenTestCase {
         expect(app, "Sort by")
         expect(app, "3 selected")
         expect(app, "2020 – 2026")
-        expect(app, "Show")
-        expect(app, "results")
+        // the demo catalogue has four airing fall TV anime with all three genres
+        expect(app, "Show 4 results")
         shot("13-browse-filters")
     }
 

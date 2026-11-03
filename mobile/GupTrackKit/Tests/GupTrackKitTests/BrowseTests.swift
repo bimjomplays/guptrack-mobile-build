@@ -159,6 +159,15 @@ final class BrowseTests: XCTestCase {
         XCTAssertFalse(BrowseFilters(status: .releasing).matches(c))
     }
 
+    /// the filters sheet's screen (13) shows a count the demo catalogue really has
+    func testDemoFiltersCountForTheSheet() async throws {
+        let api = APIClient(transport: DemoTransport(), token: "demo")
+        let f = BrowseFilterStore.get("anime:genres=Action,Adventure,Fantasy&from=2020&season=fall&format=TV&status=releasing", .anime)
+        XCTAssertEqual(f.genres, ["Action", "Adventure", "Fantasy"])
+        let page = try await api.browseTitles(.anime, f)
+        XCTAssertEqual(page.showText, "Show 4 results")
+    }
+
     // MARK: the season chart
 
     func testSeasonChartAnswer() throws {
