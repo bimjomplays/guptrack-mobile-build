@@ -35,8 +35,10 @@ final class FixtureTests: XCTestCase {
     }
 
     /// The public build copy only ever loads art from the catalogue CDNs at runtime.
-    func testImagesComeFromThePublicCatalogues() throws {
-        let hosts: Set<String> = ["s4.anilist.co", "image.tmdb.org", "covers.openlibrary.org"]
+    func testLinksGoOnlyToThePublicCatalogues() throws {
+        // the catalogues' picture CDNs, plus their own title pages (a title's links) and trailers
+        let hosts: Set<String> = ["s4.anilist.co", "image.tmdb.org", "covers.openlibrary.org", "anilist.co",
+                                  "myanimelist.net", "www.themoviedb.org", "openlibrary.org", "www.youtube.com"]
         let api = Demo.root.appendingPathComponent("api")
         let files = FileManager.default.enumerator(at: api, includingPropertiesForKeys: nil)?
             .compactMap { $0 as? URL }.filter { $0.pathExtension == "json" } ?? []

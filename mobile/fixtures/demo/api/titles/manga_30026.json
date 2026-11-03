@@ -1,0 +1,32 @@
+{
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/manga/30026"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/manga/26"
+  }
+ ],
+ "members": 110994,
+ "startDate": "1998-03-03",
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30026-JXfraiazLTQe.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30026-uCvXMudMzmwI.jpg",
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Fantasy"
+  ],
+  "id": "manga:30026",
+  "media": "manga",
+  "name": "Hunter x Hunter",
+  "score": 8.8,
+  "state": "Releasing",
+  "subtitle": "HUNTER×HUNTER · HUNTER×HUNTER",
+  "year": 1998
+ }
+}

@@ -1,0 +1,188 @@
+{
+ "cast": [
+  {
+   "image": "https://image.tmdb.org/t/p/w185/7Y96dAfg0HcFrcLjlD5eD9N0uj4.jpg",
+   "name": "Karl Urban",
+   "role": "Billy Butcher"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/320qW5yEbxpmyxQ3evmClJbtKag.jpg",
+   "name": "Jack Quaid",
+   "role": "Hugh &#39;Hughie&#39; Campbell"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/xx3As5SWcE8vYOKZgtjDjqmT3jc.jpg",
+   "name": "Antony Starr",
+   "role": "Homelander"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/2tFblvjBRUYwcVT1V1i79Ppd6wG.jpg",
+   "name": "Erin Moriarty",
+   "role": "Annie January / Starlight"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/nmgOd3X2Xn3jIp9OLCRJzLExRWN.jpg",
+   "name": "Laz Alonso",
+   "role": "Marvin T. &#39;Mother&#39;s Milk&#39; Milk / M.M."
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/yWZILsr2mBQBCG1LOcCYYshIbts.jpg",
+   "name": "Chace Crawford",
+   "role": "Kevin Moskowitz / The Deep"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/r6s7dkYZUJpd00C7p9itT6Gp8XB.jpg",
+   "name": "Tomer Capone",
+   "role": "Serge / Frenchie"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/sG6CWLdENCtzukNFkFYyPxqyRmS.jpg",
+   "name": "Karen Fukuhara",
+   "role": "Kimiko Miyashiro"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/ivaVpN1bU2HzKmncuf1IAG6ohlb.jpg",
+   "name": "Nathan Mitchell",
+   "role": "Justin / Black Noir II, Earving / Black Noir"
+  }
+ ],
+ "description": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
+ "links": [
+  {
+   "label": "TMDB",
+   "url": "https://www.themoviedb.org/tv/76479"
+  }
+ ],
+ "recommendations": [
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/ixgFmf1X59PUZam2qbAfskx2gQr.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Mystery",
+    "Sci-Fi & Fantasy"
+   ],
+   "id": "tv:95396",
+   "media": "tv",
+   "name": "Severance",
+   "score": 8.4,
+   "year": 2022
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Comedy"
+   ],
+   "id": "tv:136315",
+   "media": "tv",
+   "name": "The Bear",
+   "score": 8.2,
+   "year": 2022
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/bwSmgmd90hCWwqOKQYTEraeOZhJ.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "War & Politics"
+   ],
+   "id": "tv:126308",
+   "media": "tv",
+   "name": "Shōgun",
+   "score": 8.4,
+   "year": 2024
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/lY2DhbA7Hy44fAKddr06UrXWWaQ.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama"
+   ],
+   "id": "tv:100088",
+   "media": "tv",
+   "name": "The Last of Us",
+   "score": 8.4,
+   "year": 2023
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/quCeAmVQHfsdcYkicbxZWVauCVb.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+   "format": "TV",
+   "genres": [
+    "Sci-Fi & Fantasy",
+    "Action & Adventure",
+    "Drama",
+    "War & Politics"
+   ],
+   "id": "tv:83867",
+   "media": "tv",
+   "name": "Andor",
+   "score": 8.3,
+   "year": 2022
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/tsRy63Mu5cu8etL1X7ZLyf7UP1M.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Crime"
+   ],
+   "id": "tv:1396",
+   "media": "tv",
+   "name": "Breaking Bad",
+   "score": 9.0,
+   "year": 2008
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/gPQppUnLx9vqPDLz3WwZ2HJsNbt.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+   "format": "TV",
+   "genres": [
+    "Crime",
+    "Drama",
+    "Mystery"
+   ],
+   "id": "tv:95480",
+   "media": "tv",
+   "name": "Slow Horses",
+   "score": 8.1,
+   "year": 2022
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/ulm1ex4JFYJByyaPyqTr47MFyEQ.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Sci-Fi & Fantasy"
+   ],
+   "id": "tv:225171",
+   "media": "tv",
+   "name": "Pluribus",
+   "score": 7.9,
+   "year": 2025
+  }
+ ],
+ "tagline": "Never meet your heroes.",
+ "title": {
+  "banner": "https://image.tmdb.org/t/p/w1280/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
+  "cover": "https://image.tmdb.org/t/p/w500/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+  "format": "TV",
+  "genres": [
+   "Sci-Fi & Fantasy",
+   "Action & Adventure"
+  ],
+  "id": "tv:76479",
+  "media": "tv",
+  "name": "The Boys",
+  "score": 8.4,
+  "year": 2019
+ }
+}

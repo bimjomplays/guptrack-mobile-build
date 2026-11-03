@@ -1,0 +1,65 @@
+{
+ "likedBy": [
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+   "name": "Tobi",
+   "username": "tobiwan"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+   "name": "Lena",
+   "username": "lena"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+   "name": "Hal",
+   "username": "hal"
+  }
+ ],
+ "replies": [
+  {
+   "at": "2026-11-03T08:01:00.000Z",
+   "id": "dune-ren-1",
+   "liked": false,
+   "likes": 2,
+   "text": "This is exactly how I felt, especially the ending.",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "name": "Lena",
+    "username": "lena"
+   }
+  }
+ ],
+ "review": {
+  "at": "2026-07-06T14:41:00.000Z",
+  "body": "I admired it more than I felt it. The book’s inner voice is hard to film.",
+  "friend": false,
+  "headline": "Big, loud, a little cold",
+  "id": "dune-ren",
+  "liked": false,
+  "likes": 8,
+  "replies": 1,
+  "score": 75,
+  "spoiler": false,
+  "user": {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b28968-fUKdmdflOwcv.png",
+   "name": "Ren",
+   "username": "ren_reads"
+  }
+ },
+ "title": {
+  "banner": "https://image.tmdb.org/t/p/w1280/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+  "cover": "https://image.tmdb.org/t/p/w500/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+  "format": "Movie",
+  "genres": [
+   "Science Fiction",
+   "Adventure"
+  ],
+  "id": "movie:693134",
+  "media": "movie",
+  "name": "Dune: Part Two",
+  "runtime": "2h 47m",
+  "score": 8.1,
+  "year": 2024
+ }
+}

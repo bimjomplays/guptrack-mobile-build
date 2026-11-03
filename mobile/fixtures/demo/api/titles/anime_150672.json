@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "Doga Kobo",
+  "ref": "studio:95"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/150672"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/52034"
+  }
+ ],
+ "members": 336742,
+ "startDate": "2023-04-12",
+ "studios": [
+  {
+   "name": "Doga Kobo",
+   "ref": "studio:95"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/150672-ISwoA0eS722H.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx150672-WqmmwZ4nMzAy.png",
+  "format": "TV",
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Psychological",
+   "Supernatural"
+  ],
+  "id": "anime:150672",
+  "media": "anime",
+  "name": "OSHI NO KO",
+  "runtime": "24 min",
+  "score": 8.4,
+  "season": "Spring 2023",
+  "state": "Finished",
+  "studio": "Doga Kobo",
+  "subtitle": "[Oshi no Ko] · 【推しの子】",
+  "total": 11,
+  "year": 2023
+ }
+}

@@ -1,0 +1,141 @@
+{
+ "media": "book",
+ "rows": [
+  {
+   "theirs": 50,
+   "title": {
+    "cover": "https://covers.openlibrary.org/b/id/11200092-L.jpg",
+    "format": "Book",
+    "genres": [
+     "hard science-fiction",
+     "science-fiction",
+     "sci-fi",
+     "hard sci-fi"
+    ],
+    "id": "book:OL21745884W",
+    "media": "book",
+    "name": "Project Hail Mary",
+    "score": 9.1,
+    "studio": "Andy Weir",
+    "subtitle": "Andy Weir",
+    "total": 496,
+    "year": 2021
+   }
+  },
+  {
+   "mine": 90,
+   "theirs": 90,
+   "title": {
+    "cover": "https://covers.openlibrary.org/b/id/11447888-L.jpg",
+    "format": "Book",
+    "genres": [
+     "Science-Fiction",
+     "Science Fiction & Fantasy",
+     "Suspense & Thriller",
+     "Science fiction"
+    ],
+    "id": "book:OL17091839W",
+    "media": "book",
+    "name": "The Martian",
+    "score": 8.8,
+    "studio": "Andy Weir",
+    "subtitle": "Andy Weir",
+    "total": 407,
+    "year": 2011
+   }
+  },
+  {
+   "mine": 85,
+   "theirs": 45,
+   "title": {
+    "cover": "https://covers.openlibrary.org/b/id/11481354-L.jpg",
+    "format": "Book",
+    "genres": [
+     "Dune (Imaginary place)",
+     "Fiction",
+     "Fiction, science fiction, general",
+     "Dune (imaginary place), fiction"
+    ],
+    "id": "book:OL893414W",
+    "media": "book",
+    "name": "Dune",
+    "score": 8.6,
+    "studio": "Frank Herbert",
+    "subtitle": "Frank Herbert",
+    "total": 608,
+    "year": 1965
+   }
+  },
+  {
+   "mine": 95,
+   "theirs": 90,
+   "title": {
+    "cover": "https://covers.openlibrary.org/b/id/10226290-L.jpg",
+    "format": "Book",
+    "genres": [
+     "English literature",
+     "Labyrinths",
+     "Fiction",
+     "Curiosities and wonders"
+    ],
+    "id": "book:OL20893680W",
+    "media": "book",
+    "name": "Piranesi",
+    "score": 8.7,
+    "studio": "Susanna Clarke",
+    "subtitle": "Susanna Clarke",
+    "total": 272,
+    "year": 2020
+   }
+  },
+  {
+   "mine": 80,
+   "theirs": 80,
+   "title": {
+    "cover": "https://covers.openlibrary.org/b/id/10648686-L.jpg",
+    "format": "Book",
+    "genres": [
+     "Fiction, science fiction, general",
+     "speculative fiction",
+     "Fiction, dystopian",
+     "British and irish fiction (fictional works by one author)"
+    ],
+    "id": "book:OL20883297W",
+    "media": "book",
+    "name": "Klara and the Sun",
+    "score": 7.6,
+    "studio": "Kazuo Ishiguro",
+    "subtitle": "Kazuo Ishiguro",
+    "total": 334,
+    "year": 2019
+   }
+  },
+  {
+   "mine": 85,
+   "theirs": 85,
+   "title": {
+    "cover": "https://covers.openlibrary.org/b/id/1047334-L.jpg",
+    "format": "Book",
+    "genres": [
+     "Fiction",
+     "Organ donors",
+     "Cloning",
+     "Donation of organs, tissues"
+    ],
+    "id": "book:OL59038W",
+    "media": "book",
+    "name": "Never Let Me Go",
+    "score": 7.7,
+    "studio": "Kazuo Ishiguro",
+    "subtitle": "Kazuo Ishiguro",
+    "total": 319,
+    "year": 2005
+   }
+  }
+ ],
+ "user": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+  "name": "Noor",
+  "username": "noor.reads"
+ }
+}

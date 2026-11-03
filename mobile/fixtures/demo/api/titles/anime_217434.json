@@ -1,0 +1,41 @@
+{
+ "creator": {
+  "name": "Studio Bind",
+  "ref": "studio:6309"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/217434"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/65077"
+  }
+ ],
+ "members": 30879,
+ "startDate": "2027",
+ "studios": [
+  {
+   "name": "Studio Bind",
+   "ref": "studio:6309"
+  }
+ ],
+ "title": {
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx217434-xqZNBp5U3hgY.jpg",
+  "format": "TV",
+  "genres": [
+   "Adventure",
+   "Drama",
+   "Ecchi",
+   "Fantasy"
+  ],
+  "id": "anime:217434",
+  "media": "anime",
+  "name": "Mushoku Tensei III: Isekai Ittara Honki Dasu Part 2",
+  "state": "Not yet released",
+  "studio": "Studio Bind",
+  "subtitle": "無職転生Ⅲ ～異世界行ったら本気だす～ 第2クール",
+  "year": 2027
+ }
+}

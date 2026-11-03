@@ -1,0 +1,32 @@
+{
+ "id": "studio:397",
+ "kind": "Animation studio",
+ "name": "Bridge",
+ "titles": [
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/211778-ZbXEhqfFkj62.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211778-0MXK5HqVFBYH.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Comedy",
+    "Fantasy"
+   ],
+   "id": "anime:211778",
+   "media": "anime",
+   "name": "The World's Strongest Witch",
+   "next": {
+    "at": "2026-11-04T13:00:00.000Z",
+    "episode": 5
+   },
+   "runtime": "24 min",
+   "score": 7.0,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "Bridge",
+   "subtitle": "Sekai Saikyou no Majo, Hajimemashita · 世界最強の魔女、始めました",
+   "year": 2026
+  }
+ ],
+ "total": 1
+}

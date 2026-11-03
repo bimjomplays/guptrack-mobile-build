@@ -1,0 +1,45 @@
+{
+ "creator": {
+  "name": "Studio Pierrot",
+  "ref": "studio:1"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/1281"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/1281"
+  }
+ ],
+ "members": 81910,
+ "startDate": "2000-10-22",
+ "studios": [
+  {
+   "name": "Studio Pierrot",
+   "ref": "studio:1"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1281-QjxPqVZpNYDs.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1281-1D6fuMnHwor0.png",
+  "format": "TV",
+  "genres": [
+   "Horror",
+   "Mystery",
+   "Supernatural"
+  ],
+  "id": "anime:1281",
+  "media": "anime",
+  "name": "Ghost Stories",
+  "runtime": "25 min",
+  "score": 7.4,
+  "season": "Fall 2000",
+  "state": "Finished",
+  "studio": "Studio Pierrot",
+  "subtitle": "Gakkou no Kaidan · 学校の怪談",
+  "total": 19,
+  "year": 2000
+ }
+}

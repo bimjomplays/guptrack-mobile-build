@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "WHITE FOX",
+  "ref": "studio:314"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/21127"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/30484"
+  }
+ ],
+ "members": 226189,
+ "startDate": "2018-04-12",
+ "studios": [
+  {
+   "name": "WHITE FOX",
+   "ref": "studio:314"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21127-6jTjz7ndTHOi.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21127-7ARWZkDXKiiD.jpg",
+  "format": "TV",
+  "genres": [
+   "Drama",
+   "Psychological",
+   "Sci-Fi",
+   "Thriller"
+  ],
+  "id": "anime:21127",
+  "media": "anime",
+  "name": "Steins;Gate 0",
+  "runtime": "24 min",
+  "score": 8.4,
+  "season": "Spring 2018",
+  "state": "Finished",
+  "studio": "WHITE FOX",
+  "subtitle": "シュタインズ・ゲート ゼロ",
+  "total": 23,
+  "year": 2018
+ }
+}

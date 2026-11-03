@@ -1,0 +1,32 @@
+{
+ "id": "studio:7002",
+ "kind": "Animation studio",
+ "name": "Quad",
+ "titles": [
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211877-yWQ2r7XmWvG6.jpg",
+   "format": "TV Short",
+   "genres": [
+    "Drama",
+    "Ecchi",
+    "Romance"
+   ],
+   "id": "anime:211877",
+   "media": "anime",
+   "name": "My Girlfriend's Friend",
+   "next": {
+    "at": "2026-11-08T16:05:00.000Z",
+    "episode": 6
+   },
+   "runtime": "12 min",
+   "score": 4.9,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "Quad",
+   "subtitle": "Kanojo no Tomodachi · 彼女の友達",
+   "total": 12,
+   "year": 2026
+  }
+ ],
+ "total": 1
+}

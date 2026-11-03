@@ -1,0 +1,45 @@
+{
+ "creator": {
+  "name": "MADHOUSE",
+  "ref": "studio:11"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/11061"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/11061"
+  }
+ ],
+ "members": 855093,
+ "startDate": "2011-10-02",
+ "studios": [
+  {
+   "name": "MADHOUSE",
+   "ref": "studio:11"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11061-8WkkTZ6duKpq.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11061-y5gsT1hoHuHw.png",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "id": "anime:11061",
+  "media": "anime",
+  "name": "Hunter x Hunter (2011)",
+  "runtime": "24 min",
+  "score": 8.9,
+  "season": "Fall 2011",
+  "state": "Finished",
+  "studio": "MADHOUSE",
+  "subtitle": "HUNTER×HUNTER (2011) · HUNTER×HUNTER (2011)",
+  "total": 148,
+  "year": 2011
+ }
+}

@@ -90,7 +90,7 @@ struct HomeView: View {
                 } label: {
                     Image(systemName: "bell")
                         .overlay(alignment: .topTrailing) {
-                            if (feed?.unreadNotifications ?? 0) > 0 {
+                            if model.unreadNotifications > 0 {
                                 Circle().fill(Theme.danger).frame(width: 9, height: 9).offset(x: 3, y: -2)
                             }
                         }
@@ -98,15 +98,19 @@ struct HomeView: View {
                 .accessibilityLabel("Notifications")
             }
         }
-        .task { await load() }
+        .task { await load(counts: feed == nil) }
         .refreshable {
             await model.refresh()
-            await load()
+            await load(counts: true)
         }
     }
 
-    private func load() async {
-        if let f = await model.fetch({ try await $0.home() }).value { feed = f }
+    /// `counts`: also take the bell's unread count (first load and pull to refresh; coming back from Notifications
+    /// keeps what was read there)
+    private func load(counts: Bool) async {
+        guard let f = await model.fetch({ try await $0.home() }).value else { return }
+        feed = f
+        if counts { model.unreadNotifications = f.unreadNotifications }
     }
 
     private func openList(_ media: MediaKind) {

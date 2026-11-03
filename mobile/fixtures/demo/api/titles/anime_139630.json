@@ -1,0 +1,44 @@
+{
+ "creator": {
+  "name": "bones",
+  "ref": "studio:4"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/139630"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/49918"
+  }
+ ],
+ "members": 276529,
+ "startDate": "2022-10-01",
+ "studios": [
+  {
+   "name": "bones",
+   "ref": "studio:4"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/139630-XLc90c6CJjZv.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx139630-3v4gxWtNZxLV.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure"
+  ],
+  "id": "anime:139630",
+  "media": "anime",
+  "name": "My Hero Academia Season 6",
+  "runtime": "24 min",
+  "score": 8.2,
+  "season": "Fall 2022",
+  "state": "Finished",
+  "studio": "bones",
+  "subtitle": "Boku no Hero Academia 6 · 僕のヒーローアカデミア６",
+  "total": 25,
+  "year": 2022
+ }
+}

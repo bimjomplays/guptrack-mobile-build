@@ -1,0 +1,48 @@
+{
+ "creator": {
+  "name": "WHITE FOX",
+  "ref": "studio:314"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/108632"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/39587"
+  }
+ ],
+ "members": 389155,
+ "startDate": "2020-07-08",
+ "studios": [
+  {
+   "name": "WHITE FOX",
+   "ref": "studio:314"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/108632-yeLbrgPN4Oni.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108632-lQWnmw7XaNOK.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Fantasy",
+   "Psychological",
+   "Thriller"
+  ],
+  "id": "anime:108632",
+  "media": "anime",
+  "name": "Re:ZERO -Starting Life in Another World- Season 2",
+  "runtime": "26 min",
+  "score": 8.3,
+  "season": "Summer 2020",
+  "state": "Finished",
+  "studio": "WHITE FOX",
+  "subtitle": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season · Re:ゼロから始める異世界生活 2nd Season",
+  "total": 13,
+  "year": 2020
+ }
+}

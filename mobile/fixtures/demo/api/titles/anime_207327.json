@@ -1,0 +1,44 @@
+{
+ "creator": {
+  "name": "TMS Entertainment",
+  "ref": "studio:73"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/207327"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/63423"
+  }
+ ],
+ "members": 13606,
+ "startDate": "2026-10-09",
+ "studios": [
+  {
+   "name": "TMS Entertainment",
+   "ref": "studio:73"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207327-IogsMAKdwdlz.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207327-OSrMbh8DrGE4.jpg",
+  "format": "Movie",
+  "genres": [
+   "Mystery",
+   "Romance"
+  ],
+  "id": "anime:207327",
+  "media": "anime",
+  "name": "To You in the Beyond",
+  "runtime": "116 min",
+  "score": 6.9,
+  "season": "Fall 2026",
+  "state": "Finished",
+  "studio": "TMS Entertainment",
+  "subtitle": "Doko yori mo Tooi Basho ni Iru Kimi e · どこよりも遠い場所にいる君へ",
+  "total": 1,
+  "year": 2026
+ }
+}

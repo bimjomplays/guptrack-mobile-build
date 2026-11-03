@@ -1,0 +1,47 @@
+{
+ "creator": {
+  "name": "bones",
+  "ref": "studio:4"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/3588"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/3588"
+  }
+ ],
+ "members": 400718,
+ "startDate": "2008-04-07",
+ "studios": [
+  {
+   "name": "bones",
+   "ref": "studio:4"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/3588-rpnVOMaLD3is.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx3588-fSMggQoFSbUI.png",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Fantasy",
+   "Supernatural"
+  ],
+  "id": "anime:3588",
+  "media": "anime",
+  "name": "Soul Eater",
+  "runtime": "24 min",
+  "score": 7.7,
+  "season": "Spring 2008",
+  "state": "Finished",
+  "studio": "bones",
+  "subtitle": "ソウルイーター",
+  "total": 51,
+  "year": 2008
+ }
+}

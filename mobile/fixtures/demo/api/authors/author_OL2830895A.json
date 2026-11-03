@@ -1,0 +1,28 @@
+{
+ "books": [
+  {
+   "rating": 4.34,
+   "title": {
+    "cover": "https://covers.openlibrary.org/b/id/11480483-L.jpg",
+    "format": "Book",
+    "genres": [
+     "orphans",
+     "American fantasy fiction",
+     "Adult books for young adults",
+     "epic fiction"
+    ],
+    "id": "book:OL8479867W",
+    "media": "book",
+    "name": "The Name of the Wind",
+    "score": 8.7,
+    "studio": "Patrick Rothfuss",
+    "subtitle": "Patrick Rothfuss",
+    "total": 736,
+    "year": 2007
+   }
+  }
+ ],
+ "id": "author:OL2830895A",
+ "name": "Patrick Rothfuss",
+ "photo": "https://covers.openlibrary.org/a/olid/OL2830895A-L.jpg"
+}

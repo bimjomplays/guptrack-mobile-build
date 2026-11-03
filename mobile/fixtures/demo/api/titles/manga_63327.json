@@ -1,0 +1,35 @@
+{
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/manga/63327"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/manga/33327"
+  }
+ ],
+ "members": 199490,
+ "startDate": "2011-09-22",
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/63327-uaFaG1HAJ0tK.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx63327-glC9cDxYBja9.png",
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Horror",
+   "Mystery",
+   "Psychological",
+   "Supernatural"
+  ],
+  "id": "manga:63327",
+  "media": "manga",
+  "name": "Tokyo Ghoul",
+  "score": 8.5,
+  "state": "Finished",
+  "subtitle": "東京喰種 トーキョーグール",
+  "total": 144,
+  "volumes": 14,
+  "year": 2011
+ }
+}

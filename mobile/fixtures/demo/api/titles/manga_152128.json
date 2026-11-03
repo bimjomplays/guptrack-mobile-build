@@ -1,0 +1,31 @@
+{
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/manga/152128"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/manga/148985"
+  }
+ ],
+ "members": 30947,
+ "startDate": "2022-06-30",
+ "title": {
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx152128-hk1Dq8zlEPVn.png",
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Fantasy"
+  ],
+  "id": "manga:152128",
+  "media": "manga",
+  "name": "The Novel's Extra",
+  "score": 7.7,
+  "state": "Releasing",
+  "subtitle": "Soseol Sok Extra · 소설 속 엑스트라",
+  "year": 2022
+ }
+}

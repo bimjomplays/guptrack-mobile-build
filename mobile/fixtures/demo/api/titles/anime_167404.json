@@ -1,0 +1,45 @@
+{
+ "creator": {
+  "name": "E&H Production",
+  "ref": "studio:7229"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/167404"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/56055"
+  }
+ ],
+ "members": 26561,
+ "startDate": "2024-01-21",
+ "studios": [
+  {
+   "name": "E&H Production",
+   "ref": "studio:7229"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/167404-Hhvbg3APdan0.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx167404-QMZJVARntkbv.jpg",
+  "format": "ONA",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Drama"
+  ],
+  "id": "anime:167404",
+  "media": "anime",
+  "name": "MONSTERS: 103 Mercies Dragon Damnation",
+  "runtime": "25 min",
+  "score": 7.6,
+  "season": "Winter 2024",
+  "state": "Finished",
+  "studio": "E&H Production",
+  "subtitle": "MONSTERS: Ippaku Sanjou Hiryuu Jigoku · MONSTERS 一百三情飛龍侍極",
+  "total": 1,
+  "year": 2024
+ }
+}

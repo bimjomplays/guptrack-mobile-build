@@ -1,0 +1,51 @@
+{
+ "creator": {
+  "name": "WIT STUDIO",
+  "ref": "studio:858"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/158928"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/53888"
+  }
+ ],
+ "members": 106944,
+ "startDate": "2023-12-22",
+ "studios": [
+  {
+   "name": "WIT STUDIO",
+   "ref": "studio:858"
+  },
+  {
+   "name": "CloverWorks",
+   "ref": "studio:6222"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/158928-7j4JK7pGvZnZ.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx158928-xqE0euKlQMnY.jpg",
+  "format": "Movie",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Slice of Life",
+   "Supernatural"
+  ],
+  "id": "anime:158928",
+  "media": "anime",
+  "name": "SPY x FAMILY CODE: White",
+  "runtime": "110 min",
+  "score": 8.1,
+  "season": "Fall 2023",
+  "state": "Finished",
+  "studio": "WIT STUDIO",
+  "subtitle": "SPY×FAMILY CODE: White · SPY×FAMILY CODE: White",
+  "total": 1,
+  "year": 2023
+ }
+}

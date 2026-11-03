@@ -1,0 +1,47 @@
+{
+ "creator": {
+  "name": "Sunrise",
+  "ref": "studio:14"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/1575"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/1575"
+  }
+ ],
+ "members": 511550,
+ "startDate": "2006-10-06",
+ "studios": [
+  {
+   "name": "Sunrise",
+   "ref": "studio:14"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1575.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1575-hsmWM2ydNm1m.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Mecha",
+   "Sci-Fi",
+   "Thriller"
+  ],
+  "id": "anime:1575",
+  "media": "anime",
+  "name": "Code Geass: Lelouch of the Rebellion",
+  "runtime": "24 min",
+  "score": 8.5,
+  "season": "Fall 2006",
+  "state": "Finished",
+  "studio": "Sunrise",
+  "subtitle": "Code Geass: Hangyaku no Lelouch · コードギアス 反逆のルルーシュ",
+  "total": 25,
+  "year": 2006
+ }
+}

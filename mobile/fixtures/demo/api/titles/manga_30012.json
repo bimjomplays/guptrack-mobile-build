@@ -1,0 +1,33 @@
+{
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/manga/30012"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/manga/12"
+  }
+ ],
+ "members": 123097,
+ "startDate": "2001-08-07",
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30012-RpbdVc2yNxhw.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30012-1epmVfTSv2rr.png",
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Supernatural"
+  ],
+  "id": "manga:30012",
+  "media": "manga",
+  "name": "Bleach",
+  "score": 8.0,
+  "state": "Finished",
+  "subtitle": "BLEACH · BLEACH",
+  "total": 706,
+  "volumes": 74,
+  "year": 2001
+ }
+}

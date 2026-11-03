@@ -1,7 +1,7 @@
 [
  {
   "description": "For when the week was long.",
-  "id": "comfort-rewatches",
+  "id": "rainy-sundays",
   "items": [
    {
     "note": "The ending still gets me every time.",
@@ -109,6 +109,7 @@
     }
    },
    {
+    "note": "Best watched with tea on a quiet evening.",
     "title": {
      "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/154587-ivXNJ23SM1xB.jpg",
      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
@@ -155,6 +156,7 @@
     }
    },
    {
+    "note": "Worth it for the final stretch alone.",
     "title": {
      "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/2904-X71fcvE83n3s.jpg",
      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2904-Fet9Q33suC7G.jpg",
@@ -301,12 +303,13 @@
     }
    }
   ],
-  "name": "Comfort rewatches",
-  "updatedAt": "2026-10-31T14:41:00.000Z",
+  "name": "Rainy Sundays",
+  "updatedAt": "2026-11-02T12:41:00.000Z",
   "visibility": "public"
  },
  {
-  "id": "best-of-2026",
+  "description": "The year's standouts, in the order I'd recommend them.",
+  "id": "this-years-highlights",
   "items": [
    {
     "title": {
@@ -529,7 +532,7 @@
     }
    }
   ],
-  "name": "Best of 2026",
+  "name": "This year's highlights",
   "updatedAt": "2026-10-28T14:41:00.000Z",
   "visibility": "public"
  },

@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "david production",
+  "ref": "studio:287"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/105310"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/38671"
+  }
+ ],
+ "members": 492291,
+ "startDate": "2019-07-06",
+ "studios": [
+  {
+   "name": "david production",
+   "ref": "studio:287"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/105310-ygGL9yweZM2Q.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx105310-2PKUvoaA6fTn.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Sci-Fi",
+   "Supernatural"
+  ],
+  "id": "anime:105310",
+  "media": "anime",
+  "name": "Fire Force",
+  "runtime": "24 min",
+  "score": 7.6,
+  "season": "Summer 2019",
+  "state": "Finished",
+  "studio": "david production",
+  "subtitle": "Enen no Shouboutai · 炎炎ノ消防隊",
+  "total": 24,
+  "year": 2019
+ }
+}

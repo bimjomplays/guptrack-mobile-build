@@ -1,0 +1,128 @@
+{
+ "groups": [
+  {
+   "people": [],
+   "scope": "anime",
+   "titles": [
+    {
+     "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/127230-o8IRwCGVr9KW.jpg",
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127230-DdP4vAdssLoz.png",
+     "format": "TV",
+     "genres": [
+      "Action",
+      "Drama",
+      "Horror",
+      "Supernatural"
+     ],
+     "id": "anime:127230",
+     "media": "anime",
+     "name": "Chainsaw Man",
+     "runtime": "25 min",
+     "score": 8.3,
+     "season": "Fall 2022",
+     "state": "Finished",
+     "studio": "MAPPA",
+     "subtitle": "チェンソーマン",
+     "total": 12,
+     "year": 2022
+    },
+    {
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171627-ZN9D7P46yHnw.png",
+     "format": "Movie",
+     "id": "anime:171627",
+     "media": "anime",
+     "name": "Chainsaw Man – The Movie: Reze Arc",
+     "score": 9.0,
+     "studio": "MAPPA",
+     "subtitle": "Chainsaw Man: Reze-hen",
+     "year": 2025
+    },
+    {
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204429-9scYA2ab3Zz3.jpg",
+     "id": "anime:204429",
+     "media": "anime",
+     "name": "Chainsaw Man: Shikaku-hen",
+     "state": "Not yet released",
+     "studio": "MAPPA"
+    },
+    {
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198726-ys3lfvQfwBTM.png",
+     "format": "ONA",
+     "id": "anime:198726",
+     "media": "anime",
+     "name": "Chainsaw Days",
+     "score": 7.3,
+     "studio": "MAPPA",
+     "subtitle": "Chainsaw Biyori",
+     "year": 2025
+    }
+   ],
+   "total": 4
+  },
+  {
+   "people": [],
+   "scope": "manga",
+   "titles": [
+    {
+     "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/105778-ppHaMwown6c9.jpg",
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-euxXZEIfDY2u.png",
+     "format": "Manga",
+     "genres": [
+      "Action",
+      "Comedy",
+      "Drama",
+      "Horror",
+      "Supernatural"
+     ],
+     "id": "manga:105778",
+     "media": "manga",
+     "name": "Chainsaw Man",
+     "score": 8.4,
+     "state": "Finished",
+     "subtitle": "チェンソーマン",
+     "total": 232,
+     "volumes": 24,
+     "year": 2018
+    }
+   ],
+   "total": 1
+  },
+  {
+   "people": [
+    {
+     "caption": "Mangaka · Chainsaw Man, Fire Punch",
+     "id": "person:119917",
+     "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n119917-xrVbuHyr6y1I.jpg",
+     "link": "person/person:119917",
+     "name": "Tatsuki Fujimoto"
+    }
+   ],
+   "scope": "people",
+   "titles": [],
+   "total": 1
+  }
+ ],
+ "query": "chainsaw",
+ "top": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/127230-o8IRwCGVr9KW.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127230-DdP4vAdssLoz.png",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Horror",
+   "Supernatural"
+  ],
+  "id": "anime:127230",
+  "media": "anime",
+  "name": "Chainsaw Man",
+  "runtime": "25 min",
+  "score": 8.3,
+  "season": "Fall 2022",
+  "state": "Finished",
+  "studio": "MAPPA",
+  "subtitle": "チェンソーマン",
+  "total": 12,
+  "year": 2022
+ }
+}

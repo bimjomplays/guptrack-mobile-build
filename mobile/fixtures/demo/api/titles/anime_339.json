@@ -1,0 +1,47 @@
+{
+ "creator": {
+  "name": "Triangle Staff",
+  "ref": "studio:110"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/339"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/339"
+  }
+ ],
+ "members": 258438,
+ "startDate": "1998-07-06",
+ "studios": [
+  {
+   "name": "Triangle Staff",
+   "ref": "studio:110"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/339-Lh0tuuwRLRgI.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx339-xF2wp1NQuQ4r.png",
+  "format": "TV",
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Psychological",
+   "Sci-Fi",
+   "Supernatural"
+  ],
+  "id": "anime:339",
+  "media": "anime",
+  "name": "Serial Experiments Lain",
+  "runtime": "23 min",
+  "score": 8.0,
+  "season": "Summer 1998",
+  "state": "Finished",
+  "studio": "Triangle Staff",
+  "subtitle": "serial experiments lain · serial experiments lain",
+  "total": 13,
+  "year": 1998
+ }
+}

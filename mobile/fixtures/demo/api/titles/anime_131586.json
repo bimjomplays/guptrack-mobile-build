@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "A-1 Pictures",
+  "ref": "studio:561"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/131586"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/48569"
+  }
+ ],
+ "members": 202036,
+ "startDate": "2021-10-03",
+ "studios": [
+  {
+   "name": "A-1 Pictures",
+   "ref": "studio:561"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/131586-TQED17cUhGnT.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131586-JhC0wcBi09EZ.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Mecha",
+   "Sci-Fi"
+  ],
+  "id": "anime:131586",
+  "media": "anime",
+  "name": "86 EIGHTY-SIX Part 2",
+  "runtime": "24 min",
+  "score": 8.7,
+  "season": "Fall 2021",
+  "state": "Finished",
+  "studio": "A-1 Pictures",
+  "subtitle": "86: Eighty Six Part 2 · 86－エイティシックス－ 第2クール",
+  "total": 12,
+  "year": 2021
+ }
+}

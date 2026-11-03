@@ -1,0 +1,37 @@
+{
+ "messages": [
+  {
+   "at": "2026-10-27T12:40:00.000Z",
+   "fromMe": false,
+   "id": "h1",
+   "text": "you’d like this, it’s stressful in a good way"
+  },
+  {
+   "at": "2026-10-27T12:41:00.000Z",
+   "fromMe": false,
+   "id": "h2",
+   "title": {
+    "banner": "https://image.tmdb.org/t/p/w1280/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
+    "cover": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+    "format": "TV",
+    "genres": [
+     "Drama",
+     "Comedy"
+    ],
+    "id": "tv:136315",
+    "media": "tv",
+    "name": "The Bear",
+    "score": 8.2,
+    "year": 2022
+   }
+  }
+ ],
+ "status": "3 days ago",
+ "typing": false,
+ "unread": 0,
+ "user": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+  "name": "Hal",
+  "username": "hal"
+ }
+}

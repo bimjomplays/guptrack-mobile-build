@@ -1,0 +1,48 @@
+{
+ "creator": {
+  "name": "Tokyo Movie Shinsha",
+  "ref": "studio:65"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/47"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/47"
+  }
+ ],
+ "members": 235640,
+ "startDate": "1988-07-16",
+ "studios": [
+  {
+   "name": "Tokyo Movie Shinsha",
+   "ref": "studio:65"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/47-fof8HqtNDtvx.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx47-4CR68arv452h.jpg",
+  "format": "Movie",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Horror",
+   "Psychological",
+   "Sci-Fi",
+   "Supernatural"
+  ],
+  "id": "anime:47",
+  "media": "anime",
+  "name": "Akira",
+  "runtime": "125 min",
+  "score": 7.9,
+  "season": "Summer 1988",
+  "state": "Finished",
+  "studio": "Tokyo Movie Shinsha",
+  "subtitle": "AKIRA · AKIRA",
+  "total": 1,
+  "year": 1988
+ }
+}

@@ -1,0 +1,273 @@
+{
+ "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1-OquNCNB6srGe.jpg",
+ "bannerFade": 0.7,
+ "bio": "Mecha, heists and anything with a good soundtrack.",
+ "friendsSince": "2025-09-01T15:00:00.000Z",
+ "friendship": "friends",
+ "inCommon": {
+  "anime": 27,
+  "book": 6,
+  "manga": 13,
+  "movie": 6,
+  "tv": 7
+ },
+ "joined": "2025-06-18T15:00:00.000Z",
+ "lastUpdates": [
+  {
+   "at": "2026-11-03T11:41:00.000Z",
+   "caption": "Ep 33 of 37",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1535.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1535-kUgkcrfOrkUM.jpg",
+    "format": "TV",
+    "genres": [
+     "Mystery",
+     "Psychological",
+     "Supernatural",
+     "Thriller"
+    ],
+    "id": "anime:1535",
+    "media": "anime",
+    "name": "Death Note",
+    "runtime": "23 min",
+    "score": 8.4,
+    "season": "Fall 2006",
+    "state": "Finished",
+    "studio": "MADHOUSE",
+    "subtitle": "DEATH NOTE · DEATH NOTE",
+    "total": 37,
+    "year": 2006
+   }
+  },
+  {
+   "at": "2026-11-02T16:41:00.000Z",
+   "caption": "Ep 8 of 11",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210482-pYAD0IbzNbgS.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+    "format": "ONA",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Drama",
+     "Mystery",
+     "Supernatural"
+    ],
+    "id": "anime:210482",
+    "media": "anime",
+    "name": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+    "next": {
+     "at": "2026-11-06T08:00:00.000Z",
+     "episode": 7
+    },
+    "runtime": "23 min",
+    "score": 8.6,
+    "season": "Fall 2026",
+    "state": "Releasing",
+    "studio": "david production",
+    "subtitle": "JoJo no Kimyou na Bouken: Steel Ball Run - 2nd & 3rd STAGE · ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE",
+    "total": 11,
+    "year": 2026
+   }
+  },
+  {
+   "at": "2026-11-01T21:41:00.000Z",
+   "caption": "Rewatching · Ep 41",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11061-8WkkTZ6duKpq.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11061-y5gsT1hoHuHw.png",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Fantasy"
+    ],
+    "id": "anime:11061",
+    "media": "anime",
+    "name": "Hunter x Hunter (2011)",
+    "runtime": "24 min",
+    "score": 8.9,
+    "season": "Fall 2011",
+    "state": "Finished",
+    "studio": "MADHOUSE",
+    "subtitle": "HUNTER×HUNTER (2011) · HUNTER×HUNTER (2011)",
+    "total": 148,
+    "year": 2011
+   }
+  },
+  {
+   "at": "2026-11-01T02:41:00.000Z",
+   "caption": "Ep 15 of 25",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21355-f9SjOfEJMk5P.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21355-wRVUrGxpvIQQ.jpg",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Drama",
+     "Fantasy",
+     "Psychological",
+     "Romance",
+     "Thriller"
+    ],
+    "id": "anime:21355",
+    "media": "anime",
+    "name": "Re:ZERO -Starting Life in Another World-",
+    "runtime": "25 min",
+    "score": 8.1,
+    "season": "Spring 2016",
+    "state": "Finished",
+    "studio": "WHITE FOX",
+    "subtitle": "Re:Zero kara Hajimeru Isekai Seikatsu · Re:ゼロから始める異世界生活",
+    "total": 25,
+    "year": 2016
+   }
+  },
+  {
+   "at": "2026-10-31T07:41:00.000Z",
+   "caption": "Rewatching · Ep 2",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n9253-JIhmKgBKsWUN.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9253-tIUXF2gfU8Sg.jpg",
+    "format": "TV",
+    "genres": [
+     "Drama",
+     "Psychological",
+     "Sci-Fi",
+     "Thriller"
+    ],
+    "id": "anime:9253",
+    "media": "anime",
+    "name": "Steins;Gate",
+    "runtime": "24 min",
+    "score": 8.9,
+    "season": "Spring 2011",
+    "state": "Finished",
+    "studio": "WHITE FOX",
+    "subtitle": "シュタインズ・ゲート",
+    "total": 24,
+    "year": 2011
+   }
+  },
+  {
+   "at": "2026-10-30T12:41:00.000Z",
+   "caption": "Completed · ★9",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/2904-X71fcvE83n3s.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2904-Fet9Q33suC7G.jpg",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Drama",
+     "Mecha",
+     "Sci-Fi",
+     "Thriller"
+    ],
+    "id": "anime:2904",
+    "media": "anime",
+    "name": "Code Geass: Lelouch of the Rebellion R2",
+    "runtime": "24 min",
+    "score": 8.7,
+    "season": "Spring 2008",
+    "state": "Finished",
+    "studio": "Sunrise",
+    "subtitle": "Code Geass: Hangyaku no Lelouch R2 · コードギアス 反逆のルルーシュ R2",
+    "total": 25,
+    "year": 2008
+   }
+  }
+ ],
+ "summaries": [
+  {
+   "completed": 125,
+   "counts": {
+    "completed": 125,
+    "current": 8,
+    "dropped": 11,
+    "hold": 4,
+    "planned": 50
+   },
+   "entries": 198,
+   "mean": 7.42,
+   "media": "anime",
+   "minutes": 55704,
+   "rewatched": 5,
+   "scored": 115,
+   "units": 2321
+  },
+  {
+   "completed": 48,
+   "counts": {
+    "completed": 48,
+    "current": 3,
+    "dropped": 3,
+    "hold": 2,
+    "planned": 15
+   },
+   "entries": 71,
+   "mean": 7.27,
+   "media": "manga",
+   "minutes": 0,
+   "rewatched": 2,
+   "scored": 33,
+   "units": 2978
+  },
+  {
+   "completed": 25,
+   "counts": {
+    "completed": 25,
+    "current": 1,
+    "dropped": 2,
+    "hold": 1,
+    "planned": 20
+   },
+   "entries": 49,
+   "mean": 7.52,
+   "media": "tv",
+   "minutes": 32640,
+   "rewatched": 1,
+   "scored": 16,
+   "units": 680
+  },
+  {
+   "completed": 70,
+   "counts": {
+    "completed": 70,
+    "current": 2,
+    "dropped": 4,
+    "hold": 3,
+    "planned": 23
+   },
+   "entries": 102,
+   "mean": 7.27,
+   "media": "movie",
+   "minutes": 7906,
+   "rewatched": 6,
+   "scored": 46,
+   "units": 67
+  },
+  {
+   "completed": 24,
+   "counts": {
+    "completed": 24,
+    "current": 1,
+    "dropped": 2,
+    "hold": 0,
+    "planned": 17
+   },
+   "entries": 44,
+   "mean": 8.29,
+   "media": "book",
+   "minutes": 0,
+   "rewatched": 1,
+   "scored": 17,
+   "units": 7362
+  }
+ ],
+ "user": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+  "name": "Tobi",
+  "username": "tobiwan"
+ }
+}

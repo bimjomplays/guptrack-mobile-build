@@ -1,0 +1,229 @@
+{
+ "description": "The year's standouts, in the order I'd recommend them.",
+ "id": "this-years-highlights",
+ "items": [
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/163134-CqaXjXVivwJ5.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163134-yieRFbvUOH9a.jpg",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Drama",
+     "Fantasy",
+     "Psychological",
+     "Romance",
+     "Thriller"
+    ],
+    "id": "anime:163134",
+    "media": "anime",
+    "name": "Re:ZERO -Starting Life in Another World- Season 3",
+    "runtime": "24 min",
+    "score": 8.4,
+    "season": "Fall 2024",
+    "state": "Finished",
+    "studio": "WHITE FOX",
+    "subtitle": "Re:Zero kara Hajimeru Isekai Seikatsu 3rd Season · Re:ゼロから始める異世界生活 3rd season",
+    "total": 16,
+    "year": 2024
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/172463-3J2o3qQZadFJ.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172463-LnXqHzt74SJL.jpg",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Drama",
+     "Supernatural"
+    ],
+    "id": "anime:172463",
+    "media": "anime",
+    "name": "JUJUTSU KAISEN Season 3: The Culling Game Part 1",
+    "runtime": "24 min",
+    "score": 8.6,
+    "season": "Winter 2026",
+    "state": "Finished",
+    "studio": "MAPPA",
+    "subtitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen · 呪術廻戦 死滅回游 前編",
+    "total": 12,
+    "year": 2026
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/182896-iJt79hYTpv8w.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182896-mvxTVHGdDB4q.jpg",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Adventure"
+    ],
+    "id": "anime:182896",
+    "media": "anime",
+    "name": "My Hero Academia FINAL SEASON",
+    "runtime": "23 min",
+    "score": 8.7,
+    "season": "Fall 2025",
+    "state": "Finished",
+    "studio": "bones film",
+    "subtitle": "Boku no Hero Academia FINAL SEASON · 僕のヒーローアカデミア FINAL SEASON",
+    "total": 11,
+    "year": 2025
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/194884-PwYRWyOUEwZI.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194884-rHgGAzKSCEWz.jpg",
+    "format": "Special",
+    "genres": [
+     "Comedy",
+     "Psychological",
+     "Romance",
+     "Slice of Life"
+    ],
+    "id": "anime:194884",
+    "media": "anime",
+    "name": "Kaguya-sama: Love Is War -Stairway to Adulthood-",
+    "runtime": "26 min",
+    "score": 8.4,
+    "season": "Fall 2025",
+    "state": "Finished",
+    "studio": "A-1 Pictures",
+    "subtitle": "Kaguya-sama wa Kokurasetai: Otona e no Kaidan · かぐや様は告らせたい 大人への階段",
+    "total": 2,
+    "year": 2025
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210482-pYAD0IbzNbgS.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+    "format": "ONA",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Drama",
+     "Mystery",
+     "Supernatural"
+    ],
+    "id": "anime:210482",
+    "media": "anime",
+    "name": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+    "next": {
+     "at": "2026-11-06T08:00:00.000Z",
+     "episode": 7
+    },
+    "runtime": "23 min",
+    "score": 8.6,
+    "season": "Fall 2026",
+    "state": "Releasing",
+    "studio": "david production",
+    "subtitle": "JoJo no Kimyou na Bouken: Steel Ball Run - 2nd & 3rd STAGE · ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE",
+    "total": 11,
+    "year": 2026
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195539-lO5SUdp4SOrq.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png",
+    "format": "ONA",
+    "genres": [
+     "Action",
+     "Drama",
+     "Sci-Fi"
+    ],
+    "id": "anime:195539",
+    "media": "anime",
+    "name": "Cyberpunk: Edgerunners 2",
+    "runtime": "28 min",
+    "score": 8.3,
+    "season": "Fall 2026",
+    "state": "Finished",
+    "studio": "TRIGGER",
+    "subtitle": "サイバーパンク: エッジランナーズ2",
+    "total": 10,
+    "year": 2026
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178789-9nHWmoRLlcLu.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg",
+    "format": "TV",
+    "genres": [
+     "Adventure",
+     "Drama",
+     "Ecchi",
+     "Fantasy"
+    ],
+    "id": "anime:178789",
+    "media": "anime",
+    "name": "Mushoku Tensei: Jobless Reincarnation Season 3",
+    "runtime": "24 min",
+    "score": 8.6,
+    "season": "Summer 2026",
+    "state": "Finished",
+    "studio": "Studio Bind",
+    "subtitle": "Mushoku Tensei III: Isekai Ittara Honki Dasu · 無職転生Ⅲ ～異世界行ったら本気だす～",
+    "total": 14,
+    "year": 2026
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/147105-fTjmRrILFixZ.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx147105-rwOX8qyUy8gV.jpg",
+    "format": "ONA",
+    "genres": [
+     "Adventure",
+     "Drama",
+     "Fantasy"
+    ],
+    "id": "anime:147105",
+    "media": "anime",
+    "name": "Witch Hat Atelier",
+    "runtime": "24 min",
+    "score": 8.5,
+    "season": "Spring 2026",
+    "state": "Finished",
+    "studio": "BUG FILMS",
+    "subtitle": "Tongari Boushi no Atelier · とんがり帽子のアトリエ",
+    "total": 13,
+    "year": 2026
+   }
+  },
+  {
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/166240-YdxoEhrfwNk0.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166240-PBV7zukIHW7V.png",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Drama",
+     "Fantasy",
+     "Supernatural"
+    ],
+    "id": "anime:166240",
+    "media": "anime",
+    "name": "Demon Slayer: Kimetsu no Yaiba Hashira Training Arc",
+    "runtime": "30 min",
+    "score": 7.9,
+    "season": "Spring 2024",
+    "state": "Finished",
+    "studio": "ufotable",
+    "subtitle": "Kimetsu no Yaiba: Hashira Geiko-hen · 鬼滅の刃 柱稽古編",
+    "total": 8,
+    "year": 2024
+   }
+  }
+ ],
+ "name": "This year's highlights",
+ "updatedAt": "2026-10-28T14:41:00.000Z",
+ "visibility": "public"
+}

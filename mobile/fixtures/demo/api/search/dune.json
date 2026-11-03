@@ -1,0 +1,81 @@
+{
+ "groups": [
+  {
+   "people": [],
+   "scope": "movie",
+   "titles": [
+    {
+     "banner": "https://image.tmdb.org/t/p/w1280/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+     "cover": "https://image.tmdb.org/t/p/w500/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+     "format": "Movie",
+     "genres": [
+      "Science Fiction",
+      "Adventure"
+     ],
+     "id": "movie:693134",
+     "media": "movie",
+     "name": "Dune: Part Two",
+     "runtime": "2h 47m",
+     "score": 8.1,
+     "year": 2024
+    }
+   ],
+   "total": 1
+  },
+  {
+   "people": [],
+   "scope": "book",
+   "titles": [
+    {
+     "cover": "https://covers.openlibrary.org/b/id/11481354-L.jpg",
+     "format": "Book",
+     "genres": [
+      "Dune (Imaginary place)",
+      "Fiction",
+      "Fiction, science fiction, general",
+      "Dune (imaginary place), fiction"
+     ],
+     "id": "book:OL893414W",
+     "media": "book",
+     "name": "Dune",
+     "score": 8.6,
+     "studio": "Frank Herbert",
+     "subtitle": "Frank Herbert",
+     "total": 608,
+     "year": 1965
+    }
+   ],
+   "total": 1
+  },
+  {
+   "people": [
+    {
+     "caption": "Actor · Dune: Part Two, Interstellar",
+     "id": "person:tmdb-1190668",
+     "image": "https://image.tmdb.org/t/p/h632/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
+     "link": "person/person:tmdb-1190668",
+     "name": "Timothée Chalamet"
+    }
+   ],
+   "scope": "people",
+   "titles": [],
+   "total": 1
+  }
+ ],
+ "query": "dune",
+ "top": {
+  "banner": "https://image.tmdb.org/t/p/w1280/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+  "cover": "https://image.tmdb.org/t/p/w500/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+  "format": "Movie",
+  "genres": [
+   "Science Fiction",
+   "Adventure"
+  ],
+  "id": "movie:693134",
+  "media": "movie",
+  "name": "Dune: Part Two",
+  "runtime": "2h 47m",
+  "score": 8.1,
+  "year": 2024
+ }
+}

@@ -32,6 +32,9 @@ targets:
       # tests on Linux; the app compiles its files directly
       - ../GupTrackKit/Sources/GupTrackKit
       - Resources
+      # the widgets' and the share sheet's faces, so the screen tests can draw them (65, 65b, 66)
+      - Widgets/WidgetViews.swift
+      - Share/ShareView.swift
       # recorded app-API answers (invented users, public catalogue titles) for the demo and the screen tests
       - path: ../fixtures/demo
         type: folder
@@ -86,6 +89,13 @@ targets:
       - ../GupTrackKit/Sources/GupTrackKit/Models.swift
       - ../GupTrackKit/Sources/GupTrackKit/Format.swift
       - ../GupTrackKit/Sources/GupTrackKit/Route.swift
+      - ../GupTrackKit/Sources/GupTrackKit/WidgetSnapshot.swift
+      - ../GupTrackKit/Sources/GupTrackKit/ShareMatch.swift
+      # demo: the library and the extensions' catalogue, bundled (the real app shares them through an App Group)
+      - path: ../fixtures/demo/api/library.json
+        buildPhase: resources
+      - path: ../fixtures/demo/api/extensions.json
+        buildPhase: resources
     info:
       path: Widgets/Info.plist
       properties:
@@ -111,6 +121,13 @@ targets:
       - ../GupTrackKit/Sources/GupTrackKit/Models.swift
       - ../GupTrackKit/Sources/GupTrackKit/Format.swift
       - ../GupTrackKit/Sources/GupTrackKit/Route.swift
+      - ../GupTrackKit/Sources/GupTrackKit/WidgetSnapshot.swift
+      - ../GupTrackKit/Sources/GupTrackKit/ShareMatch.swift
+      # demo: the library and the extensions' catalogue, bundled (the real app shares them through an App Group)
+      - path: ../fixtures/demo/api/library.json
+        buildPhase: resources
+      - path: ../fixtures/demo/api/extensions.json
+        buildPhase: resources
     info:
       path: Share/Info.plist
       properties:

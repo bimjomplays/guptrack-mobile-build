@@ -1,8 +1,23 @@
 import SwiftUI
 
-/// not built yet (a screen group fills this in)
+/// A page under Settings.
 struct SettingsPageView: View {
     let page: SettingsPage
 
-    var body: some View { ContentUnavailableView("SettingsPageView", systemImage: "hammer") }
+    var body: some View {
+        switch page {
+        case .profile: ProfileSettingsView()
+        case .privacy: PrivacySettingsView()
+        case .appearance: AppearanceSettingsView()
+        case .preferences: PreferencesSettingsView()
+        case .notifications: NotificationSettingsView()
+        case .importExport: ImportExportView()
+        case .connectedApps: ConnectedAppsView()
+        case .backups: BackupsView()
+        case .accounts: AccountsSettingsView()
+        case .server: ServerSettingsView()
+        case .offline: OfflineLibraryView()
+        case .widgets: WidgetSettingsView()
+        }
+    }
 }

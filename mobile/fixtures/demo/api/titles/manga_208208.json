@@ -1,0 +1,29 @@
+{
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/manga/208208"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/manga/191370"
+  }
+ ],
+ "members": 7621,
+ "startDate": "2026-02-23",
+ "title": {
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx208208-azuHfUiSOUSZ.jpg",
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Fantasy"
+  ],
+  "id": "manga:208208",
+  "media": "manga",
+  "name": "The Shepherd Wizard",
+  "score": 7.8,
+  "state": "Releasing",
+  "subtitle": "Yangchigi Mabeopsa · 양치기 마법사",
+  "year": 2026
+ }
+}

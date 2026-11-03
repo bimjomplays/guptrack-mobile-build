@@ -1,0 +1,55 @@
+{
+ "id": "studio:28",
+ "kind": "Animation studio",
+ "name": "OLM",
+ "titles": [
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195516-B5M0cPaQbQXI.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Mystery"
+   ],
+   "id": "anime:195516",
+   "media": "anime",
+   "name": "The Apothecary Diaries Season 3",
+   "next": {
+    "at": "2026-11-06T14:00:00.000Z",
+    "episode": 6
+   },
+   "runtime": "24 min",
+   "score": 8.5,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "OLM",
+   "subtitle": "Kusuriya no Hitorigoto 3rd Season · 薬屋のひとりごと 第3期",
+   "total": 12,
+   "year": 2026
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/129201-eeCsKFrCSQPS.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx129201-HJBauga2be8I.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Mystery",
+    "Supernatural",
+    "Thriller"
+   ],
+   "id": "anime:129201",
+   "media": "anime",
+   "name": "Summer Time Rendering",
+   "runtime": "24 min",
+   "score": 8.3,
+   "season": "Spring 2022",
+   "state": "Finished",
+   "studio": "OLM",
+   "subtitle": "Summer Time Render · サマータイムレンダ",
+   "total": 25,
+   "year": 2022
+  }
+ ],
+ "total": 2
+}

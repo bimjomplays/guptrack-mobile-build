@@ -1,0 +1,30 @@
+{
+ "id": "studio:7857",
+ "kind": "Animation studio",
+ "name": "GeyeG Pictures",
+ "titles": [
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185756-xPCl0RyQ7fXD.jpg",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Fantasy"
+   ],
+   "id": "anime:185756",
+   "media": "anime",
+   "name": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
+   "next": {
+    "at": "2026-11-08T14:30:00.000Z",
+    "episode": 7
+   },
+   "runtime": "24 min",
+   "score": 6.9,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "GeyeG Pictures",
+   "subtitle": "Tensei Kizoku, Kantei Skill de Nariagaru 3rd Season · 転生貴族、鑑定スキルで成り上がる 第3期",
+   "year": 2026
+  }
+ ],
+ "total": 1
+}

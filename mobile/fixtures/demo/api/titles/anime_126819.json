@@ -1,0 +1,43 @@
+{
+ "creator": {
+  "name": "Bandai Namco Pictures",
+  "ref": "studio:6116"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/126819"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/44087"
+  }
+ ],
+ "members": 32322,
+ "startDate": "2021-01-15",
+ "studios": [
+  {
+   "name": "Bandai Namco Pictures",
+   "ref": "studio:6116"
+  }
+ ],
+ "title": {
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126819-KlcARzqDMjvf.jpg",
+  "format": "Special",
+  "genres": [
+   "Action",
+   "Comedy"
+  ],
+  "id": "anime:126819",
+  "media": "anime",
+  "name": "Gintama: THE SEMI-FINAL",
+  "runtime": "24 min",
+  "score": 8.3,
+  "season": "Winter 2021",
+  "state": "Finished",
+  "studio": "Bandai Namco Pictures",
+  "subtitle": "銀魂 THE SEMI-FINAL",
+  "total": 2,
+  "year": 2021
+ }
+}

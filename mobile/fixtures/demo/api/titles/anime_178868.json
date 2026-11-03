@@ -1,0 +1,48 @@
+{
+ "creator": {
+  "name": "E&H Production",
+  "ref": "studio:7229"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/178868"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/59204"
+  }
+ ],
+ "members": 11977,
+ "startDate": "2026-10-07",
+ "studios": [
+  {
+   "name": "E&H Production",
+   "ref": "studio:7229"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178868-l7VyM7j7LRtH.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178868-mfp0HIHNJNAm.jpg",
+  "format": "TV",
+  "genres": [
+   "Adventure",
+   "Fantasy",
+   "Mahou Shoujo",
+   "Mecha"
+  ],
+  "id": "anime:178868",
+  "media": "anime",
+  "name": "Magic Knight Rayearth (2026)",
+  "next": {
+   "at": "2026-11-04T14:46:00.000Z",
+   "episode": 5
+  },
+  "score": 6.9,
+  "season": "Fall 2026",
+  "state": "Releasing",
+  "studio": "E&H Production",
+  "subtitle": "魔法騎士レイアース (2026)",
+  "year": 2026
+ }
+}

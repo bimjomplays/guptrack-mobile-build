@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "WIT STUDIO",
+  "ref": "studio:858"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/20958"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/25777"
+  }
+ ],
+ "members": 746241,
+ "startDate": "2017-04-01",
+ "studios": [
+  {
+   "name": "WIT STUDIO",
+   "ref": "studio:858"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20958-Y7eQdz9VENBD.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20958-HuFJyr54Mmir.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Fantasy",
+   "Mystery"
+  ],
+  "id": "anime:20958",
+  "media": "anime",
+  "name": "Attack on Titan Season 2",
+  "runtime": "25 min",
+  "score": 8.5,
+  "season": "Spring 2017",
+  "state": "Finished",
+  "studio": "WIT STUDIO",
+  "subtitle": "Shingeki no Kyojin Season 2 · 進撃の巨人 Season２",
+  "total": 12,
+  "year": 2017
+ }
+}

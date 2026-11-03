@@ -1,0 +1,45 @@
+{
+ "creator": {
+  "name": "MAPPA",
+  "ref": "studio:569"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/145064"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/51009"
+  }
+ ],
+ "members": 504822,
+ "startDate": "2023-07-06",
+ "studios": [
+  {
+   "name": "MAPPA",
+   "ref": "studio:569"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/145064-esDtAY2He7sk.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-hSNRJM03pvv1.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Supernatural"
+  ],
+  "id": "anime:145064",
+  "media": "anime",
+  "name": "JUJUTSU KAISEN Season 2",
+  "runtime": "24 min",
+  "score": 8.6,
+  "season": "Summer 2023",
+  "state": "Finished",
+  "studio": "MAPPA",
+  "subtitle": "Jujutsu Kaisen 2nd Season · 呪術廻戦 第2期",
+  "total": 23,
+  "year": 2023
+ }
+}

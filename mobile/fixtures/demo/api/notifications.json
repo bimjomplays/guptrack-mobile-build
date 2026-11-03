@@ -1,0 +1,255 @@
+{
+ "items": [
+  {
+   "at": "2026-11-03T14:29:00.000Z",
+   "id": "n1",
+   "inCommon": 12,
+   "kind": "friendRequest",
+   "unread": true,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b723-vp5hPptgnNEC.png",
+    "name": "Aoi",
+    "username": "aoi_reads"
+   }
+  },
+  {
+   "at": "2026-11-03T14:12:00.000Z",
+   "id": "n2",
+   "kind": "message",
+   "quote": "Gyro’s steel ball bit is my whole personality now",
+   "target": "kenji",
+   "unread": true,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "name": "Kenji",
+    "username": "kenji"
+   }
+  },
+  {
+   "at": "2026-11-03T13:37:00.000Z",
+   "id": "n3",
+   "kind": "comment",
+   "quote": "Rezero solos?? we need to talk",
+   "subject": "profile",
+   "target": "act-noor-profile",
+   "unread": true,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+    "name": "Noor",
+    "username": "noor.reads"
+   }
+  },
+  {
+   "at": "2026-11-03T11:31:00.000Z",
+   "id": "n4",
+   "kind": "like",
+   "others": 2,
+   "subject": "review",
+   "target": "rev-mika-120377",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/120377-c15oLS8CA31s.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx120377-ayZPoxiWt4Li.jpg",
+    "format": "ONA",
+    "genres": [
+     "Action",
+     "Drama",
+     "Psychological",
+     "Sci-Fi"
+    ],
+    "id": "anime:120377",
+    "media": "anime",
+    "name": "Cyberpunk: Edgerunners",
+    "runtime": "24 min",
+    "score": 8.5,
+    "season": "Summer 2022",
+    "state": "Finished",
+    "studio": "TRIGGER",
+    "subtitle": "サイバーパンク エッジランナーズ",
+    "total": 10,
+    "year": 2022
+   },
+   "unread": true,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+    "name": "Tobi",
+    "username": "tobiwan"
+   }
+  },
+  {
+   "at": "2026-10-30T08:00:00.000Z",
+   "episode": 6,
+   "id": "n5",
+   "kind": "episode",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210482-pYAD0IbzNbgS.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+    "format": "ONA",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Drama",
+     "Mystery",
+     "Supernatural"
+    ],
+    "id": "anime:210482",
+    "media": "anime",
+    "name": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+    "next": {
+     "at": "2026-11-06T08:00:00.000Z",
+     "episode": 7
+    },
+    "runtime": "23 min",
+    "score": 8.6,
+    "season": "Fall 2026",
+    "state": "Releasing",
+    "studio": "david production",
+    "subtitle": "JoJo no Kimyou na Bouken: Steel Ball Run - 2nd & 3rd STAGE · ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE",
+    "total": 11,
+    "year": 2026
+   },
+   "unread": false
+  },
+  {
+   "at": "2026-10-29T15:20:00.000Z",
+   "id": "n6",
+   "kind": "sequel",
+   "note": "comes 2027",
+   "title": {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198966-9Ji1GwIyRiiu.jpg",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Comedy",
+     "Drama",
+     "Fantasy",
+     "Sci-Fi",
+     "Supernatural"
+    ],
+    "id": "anime:198966",
+    "media": "anime",
+    "name": "Dandadan 3rd Season",
+    "state": "Not yet released",
+    "studio": "Science SARU",
+    "subtitle": "ダンダダン 第3期",
+    "year": 2027
+   },
+   "unread": false
+  },
+  {
+   "at": "2026-10-28T13:05:00.000Z",
+   "id": "n7",
+   "kind": "release",
+   "releaseAt": "2026-11-19T15:00:00.000Z",
+   "status": "planned",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/143103-KwDRPfPl4OwL.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx143103-vvsaIpZPpIuE.png",
+    "format": "Movie",
+    "genres": [
+     "Action",
+     "Drama",
+     "Fantasy"
+    ],
+    "id": "anime:143103",
+    "media": "anime",
+    "name": "Witch on the Holy Night",
+    "next": {
+     "at": "2026-11-19T15:00:00.000Z",
+     "episode": 1
+    },
+    "season": "Fall 2026",
+    "state": "Not yet released",
+    "studio": "ufotable",
+    "subtitle": "Mahoutsukai no Yoru · 魔法使いの夜",
+    "total": 1,
+    "year": 2026
+   },
+   "unread": false
+  },
+  {
+   "at": "2026-11-03T01:14:00.000Z",
+   "id": "n8",
+   "kind": "reply",
+   "target": "act-hal-21",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21-wf37VakJmZqs.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Comedy",
+     "Drama",
+     "Fantasy"
+    ],
+    "id": "anime:21",
+    "media": "anime",
+    "name": "ONE PIECE",
+    "next": {
+     "at": "2027-01-03T14:16:00.000Z",
+     "episode": 1181
+    },
+    "runtime": "24 min",
+    "score": 8.7,
+    "season": "Fall 1999",
+    "state": "Releasing",
+    "studio": "Toei Animation",
+    "year": 1999
+   },
+   "unread": false,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+    "name": "Hal",
+    "username": "hal"
+   }
+  },
+  {
+   "at": "2026-10-24T22:02:00.000Z",
+   "id": "n9",
+   "kind": "like",
+   "subject": "activity",
+   "target": "act-mika-195539",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195539-lO5SUdp4SOrq.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png",
+    "format": "ONA",
+    "genres": [
+     "Action",
+     "Drama",
+     "Sci-Fi"
+    ],
+    "id": "anime:195539",
+    "media": "anime",
+    "name": "Cyberpunk: Edgerunners 2",
+    "runtime": "28 min",
+    "score": 8.3,
+    "season": "Fall 2026",
+    "state": "Finished",
+    "studio": "TRIGGER",
+    "subtitle": "サイバーパンク: エッジランナーズ2",
+    "total": 10,
+    "year": 2026
+   },
+   "unread": false,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "name": "Lena",
+    "username": "lena"
+   }
+  },
+  {
+   "at": "2026-10-22T02:40:00.000Z",
+   "id": "n10",
+   "kind": "comment",
+   "quote": "ok you were right about this one",
+   "subject": "activity",
+   "target": "act-mika-178789",
+   "unread": false,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+    "name": "Sora",
+    "username": "sorawatches"
+   }
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "creator": {
+  "name": "Studio KAI",
+  "ref": "studio:6312"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/213805"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/64534"
+  }
+ ],
+ "members": 38559,
+ "startDate": "2026-10-01",
+ "studios": [
+  {
+   "name": "Studio KAI",
+   "ref": "studio:6312"
+  }
+ ],
+ "title": {
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx213805-Nokui3uWlIlw.png",
+  "format": "TV",
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Romance",
+   "Slice of Life"
+  ],
+  "id": "anime:213805",
+  "media": "anime",
+  "name": "The Ramparts of Ice Season 2",
+  "next": {
+   "at": "2026-11-05T14:56:00.000Z",
+   "episode": 6
+  },
+  "runtime": "25 min",
+  "score": 8.1,
+  "season": "Fall 2026",
+  "state": "Releasing",
+  "studio": "Studio KAI",
+  "subtitle": "Koori no Jouheki 2nd Season · 氷の城壁 第2期",
+  "year": 2026
+ }
+}

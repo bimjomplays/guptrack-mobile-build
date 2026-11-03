@@ -1,0 +1,47 @@
+{
+ "creator": {
+  "name": "MAPPA",
+  "ref": "studio:569"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/131681"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/48583"
+  }
+ ],
+ "members": 450506,
+ "startDate": "2022-01-10",
+ "studios": [
+  {
+   "name": "MAPPA",
+   "ref": "studio:569"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/131681-3tNurPRsqsfz.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131681-5ooUqvqNtee1.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Fantasy",
+   "Mystery",
+   "Psychological"
+  ],
+  "id": "anime:131681",
+  "media": "anime",
+  "name": "Attack on Titan Final Season Part 2",
+  "runtime": "24 min",
+  "score": 8.7,
+  "season": "Winter 2022",
+  "state": "Finished",
+  "studio": "MAPPA",
+  "subtitle": "Shingeki no Kyojin: The Final Season Part 2 · 進撃の巨人 The Final Season Part 2",
+  "total": 12,
+  "year": 2022
+ }
+}

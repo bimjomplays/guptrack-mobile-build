@@ -1,0 +1,45 @@
+{
+ "creator": {
+  "name": "TRIGGER",
+  "ref": "studio:803"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/195539"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/61990"
+  }
+ ],
+ "members": 116324,
+ "startDate": "2026-10-20",
+ "studios": [
+  {
+   "name": "TRIGGER",
+   "ref": "studio:803"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195539-lO5SUdp4SOrq.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png",
+  "format": "ONA",
+  "genres": [
+   "Action",
+   "Drama",
+   "Sci-Fi"
+  ],
+  "id": "anime:195539",
+  "media": "anime",
+  "name": "Cyberpunk: Edgerunners 2",
+  "runtime": "28 min",
+  "score": 8.3,
+  "season": "Fall 2026",
+  "state": "Finished",
+  "studio": "TRIGGER",
+  "subtitle": "サイバーパンク: エッジランナーズ2",
+  "total": 10,
+  "year": 2026
+ }
+}

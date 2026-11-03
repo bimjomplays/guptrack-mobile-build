@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "Studio Pierrot",
+  "ref": "studio:1"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/392"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/392"
+  }
+ ],
+ "members": 161098,
+ "startDate": "1992-10-10",
+ "studios": [
+  {
+   "name": "Studio Pierrot",
+   "ref": "studio:1"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/392-nbB6cBnhHOFb.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx392-z90299zIvYmx.png",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Supernatural"
+  ],
+  "id": "anime:392",
+  "media": "anime",
+  "name": "Yu Yu Hakusho: Ghostfiles",
+  "runtime": "24 min",
+  "score": 8.3,
+  "season": "Fall 1992",
+  "state": "Finished",
+  "studio": "Studio Pierrot",
+  "subtitle": "Yuu☆Yuu☆Hakusho · 幽☆遊☆白書",
+  "total": 112,
+  "year": 1992
+ }
+}

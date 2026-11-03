@@ -1,0 +1,29 @@
+{
+ "id": "studio:6360",
+ "kind": "Animation studio",
+ "name": "HORNETS",
+ "titles": [
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205896-ElrV8oVAsuax.jpg",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Fantasy"
+   ],
+   "id": "anime:205896",
+   "media": "anime",
+   "name": "Full Clearing Another World under a Goddess with Zero Believers",
+   "next": {
+    "at": "2026-11-08T14:30:00.000Z",
+    "episode": 5
+   },
+   "score": 6.5,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "HORNETS",
+   "subtitle": "Shinja Zero no Megami-sama to Hajimeru Isekai Kouryaku · 信者ゼロの女神サマと始める異世界攻略",
+   "year": 2026
+  }
+ ],
+ "total": 1
+}

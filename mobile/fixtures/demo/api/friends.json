@@ -1,0 +1,102 @@
+{
+ "blocked": [
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b28990-rOK1FsEOdabY.png",
+   "name": "Spoiler Bot",
+   "username": "spoilerbot"
+  }
+ ],
+ "friends": [
+  {
+   "inCommon": 38,
+   "online": true,
+   "seen": "Active now",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "name": "Kenji",
+    "username": "kenji"
+   }
+  },
+  {
+   "inCommon": 21,
+   "online": false,
+   "seen": "Reading Vagabond",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+    "name": "Noor",
+    "username": "noor.reads"
+   }
+  },
+  {
+   "inCommon": 57,
+   "online": false,
+   "seen": "Watched The Bear",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+    "name": "Tobi",
+    "username": "tobiwan"
+   }
+  },
+  {
+   "inCommon": 24,
+   "online": false,
+   "seen": "Active yesterday",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "name": "Lena",
+    "username": "lena"
+   }
+  },
+  {
+   "inCommon": 11,
+   "online": false,
+   "seen": "Watching Severance",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+    "name": "Sora",
+    "username": "sorawatches"
+   }
+  },
+  {
+   "inCommon": 30,
+   "online": false,
+   "seen": "3 days ago",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+    "name": "Hal",
+    "username": "hal"
+   }
+  }
+ ],
+ "requests": [
+  {
+   "at": "2026-11-03T14:29:00.000Z",
+   "inCommon": 15,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b723-vp5hPptgnNEC.png",
+    "name": "Nami",
+    "username": "nami.watches"
+   }
+  },
+  {
+   "at": "2026-10-30T13:41:00.000Z",
+   "inCommon": 5,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b62-S7oAeA9WInjV.png",
+    "name": "Jun",
+    "username": "jun.k"
+   }
+  }
+ ],
+ "sent": [
+  {
+   "at": "2026-11-01T14:41:00.000Z",
+   "inCommon": 7,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b28968-fUKdmdflOwcv.png",
+    "name": "Ren",
+    "username": "ren_reads"
+   }
+  }
+ ]
+}

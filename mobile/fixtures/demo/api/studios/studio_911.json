@@ -1,0 +1,57 @@
+{
+ "id": "studio:911",
+ "kind": "Animation studio",
+ "name": "Passione",
+ "titles": [
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/191656-JQILdzh3FQxN.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Ecchi",
+    "Slice of Life"
+   ],
+   "id": "anime:191656",
+   "media": "anime",
+   "name": "Even the Student Council Has Its Holes!",
+   "next": {
+    "at": "2026-11-07T15:30:00.000Z",
+    "episode": 6
+   },
+   "runtime": "24 min",
+   "score": 7.3,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "Passione",
+   "subtitle": "Seitokai ni mo Ana wa Aru! · 生徒会にも穴はある！",
+   "total": 12,
+   "year": 2026
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206401-sKPZQks8FxNL.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206401-8cAebkI0i8BA.png",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Slice of Life"
+   ],
+   "id": "anime:206401",
+   "media": "anime",
+   "name": "FX Fighter Kurumi-chan",
+   "next": {
+    "at": "2026-11-05T12:30:00.000Z",
+    "episode": 6
+   },
+   "runtime": "24 min",
+   "score": 6.7,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "Passione",
+   "subtitle": "FX Senshi Kurumi-chan · FX戦士くるみちゃん",
+   "total": 12,
+   "year": 2026
+  }
+ ],
+ "total": 2
+}

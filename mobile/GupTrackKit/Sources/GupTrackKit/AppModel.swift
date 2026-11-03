@@ -53,6 +53,8 @@ final class AppModel {
 
     /// unread messages, the Social tab's badge (Social › Messages sets it when it loads)
     var unreadMessages = 0
+    /// the red dot on Home's bell: from the home feed, cleared by Notifications
+    var unreadNotifications = 0
 
     /// page loads under way (the screen tests wait for 0)
     private(set) var loading = 0

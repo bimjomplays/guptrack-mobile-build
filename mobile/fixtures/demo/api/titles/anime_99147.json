@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "WIT STUDIO",
+  "ref": "studio:858"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/99147"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/35760"
+  }
+ ],
+ "members": 698441,
+ "startDate": "2018-07-23",
+ "studios": [
+  {
+   "name": "WIT STUDIO",
+   "ref": "studio:858"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/99147-HACsFVrynFf5.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99147-AiPDD8cwlCfi.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Fantasy",
+   "Mystery"
+  ],
+  "id": "anime:99147",
+  "media": "anime",
+  "name": "Attack on Titan Season 3",
+  "runtime": "24 min",
+  "score": 8.6,
+  "season": "Summer 2018",
+  "state": "Finished",
+  "studio": "WIT STUDIO",
+  "subtitle": "Shingeki no Kyojin Season 3 · 進撃の巨人 Season３",
+  "total": 12,
+  "year": 2018
+ }
+}

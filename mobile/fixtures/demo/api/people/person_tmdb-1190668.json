@@ -1,0 +1,199 @@
+{
+ "bio": "Timothée Hal Chalamet (born December 27, 1995) is an American actor. He began his career in television, appearing in the series Homeland. In 2014, he made his film debut in Men, Women & Children and appeared in Interstellar. In 2017, he had a leading role in Call Me by Your Name. He later appeared in Lady Bird (2017), Beautiful Boy (2018), and Little Women (2019). He has since taken on leading roles in Dune (2021–2026) and Wonka (2023), and appeared in A Complete Unknown (2024) and Marty Supreme (2025).",
+ "birthplace": "New York City",
+ "born": {
+  "day": 27,
+  "month": 12,
+  "year": 1995
+ },
+ "creditCount": 66,
+ "credits": [
+  {
+   "role": "Marty Mauser",
+   "title": {
+    "cover": "https://image.tmdb.org/t/p/w342/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
+    "format": "Movie",
+    "id": "movie:1317288",
+    "media": "movie",
+    "name": "Marty Supreme",
+    "year": 2025
+   }
+  },
+  {
+   "role": "Paul Atreides",
+   "title": {
+    "banner": "https://image.tmdb.org/t/p/w1280/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+    "cover": "https://image.tmdb.org/t/p/w500/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+    "format": "Movie",
+    "genres": [
+     "Science Fiction",
+     "Adventure"
+    ],
+    "id": "movie:693134",
+    "media": "movie",
+    "name": "Dune: Part Two",
+    "runtime": "2h 47m",
+    "score": 8.1,
+    "year": 2024
+   }
+  },
+  {
+   "role": "Willy Wonka",
+   "title": {
+    "cover": "https://image.tmdb.org/t/p/w342/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
+    "format": "Movie",
+    "id": "movie:787699",
+    "media": "movie",
+    "name": "Wonka",
+    "score": 7.1,
+    "year": 2023
+   }
+  },
+  {
+   "role": "Paul Atreides",
+   "title": {
+    "cover": "https://image.tmdb.org/t/p/w342/v1tRXZ4JtD2Iv6fjkPvT4GiwslV.jpg",
+    "format": "Movie",
+    "id": "movie:438631",
+    "media": "movie",
+    "name": "Dune",
+    "score": 7.8,
+    "year": 2021
+   }
+  },
+  {
+   "role": "King Henry V",
+   "title": {
+    "cover": "https://image.tmdb.org/t/p/w342/8u0QBGUbZcBW59VEAdmeFl9g98N.jpg",
+    "format": "Movie",
+    "id": "movie:505026",
+    "media": "movie",
+    "name": "The King",
+    "score": 7.1,
+    "year": 2019
+   }
+  },
+  {
+   "role": "Gatsby Welles",
+   "title": {
+    "cover": "https://image.tmdb.org/t/p/w342/z4A6mFOLTMZAhCSPRyrtzG0SPbd.jpg",
+    "format": "Movie",
+    "id": "movie:449563",
+    "media": "movie",
+    "name": "A Rainy Day in New York",
+    "score": 6.6,
+    "year": 2019
+   }
+  },
+  {
+   "role": "Elio Perlman",
+   "title": {
+    "cover": "https://image.tmdb.org/t/p/w342/gXiE0WveDnT0n5J4sW9TMxXF4oT.jpg",
+    "format": "Movie",
+    "id": "movie:398818",
+    "media": "movie",
+    "name": "Call Me by Your Name",
+    "score": 8.0,
+    "year": 2017
+   }
+  },
+  {
+   "role": "Tom Cooper (young)",
+   "title": {
+    "banner": "https://image.tmdb.org/t/p/w1280/8sNiAPPYU14PUepFNeSNGUTiHW.jpg",
+    "cover": "https://image.tmdb.org/t/p/w500/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+    "format": "Movie",
+    "genres": [
+     "Adventure",
+     "Drama",
+     "Science Fiction"
+    ],
+    "id": "movie:157336",
+    "media": "movie",
+    "name": "Interstellar",
+    "runtime": "2h 49m",
+    "score": 8.5,
+    "year": 2014
+   }
+  },
+  {
+   "role": "Finn Walden",
+   "title": {
+    "format": "TV",
+    "id": "tv:1407",
+    "media": "tv",
+    "name": "Homeland",
+    "score": 7.7,
+    "year": 2012
+   }
+  }
+ ],
+ "id": "person:tmdb-1190668",
+ "image": "https://image.tmdb.org/t/p/h632/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
+ "knownFor": [
+  {
+   "cover": "https://image.tmdb.org/t/p/w342/v1tRXZ4JtD2Iv6fjkPvT4GiwslV.jpg",
+   "format": "Movie",
+   "id": "movie:438631",
+   "media": "movie",
+   "name": "Dune",
+   "score": 7.8,
+   "year": 2021
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+   "format": "Movie",
+   "genres": [
+    "Science Fiction",
+    "Adventure"
+   ],
+   "id": "movie:693134",
+   "media": "movie",
+   "name": "Dune: Part Two",
+   "runtime": "2h 47m",
+   "score": 8.1,
+   "year": 2024
+  },
+  {
+   "cover": "https://image.tmdb.org/t/p/w342/gXiE0WveDnT0n5J4sW9TMxXF4oT.jpg",
+   "format": "Movie",
+   "id": "movie:398818",
+   "media": "movie",
+   "name": "Call Me by Your Name",
+   "score": 8.0,
+   "year": 2017
+  },
+  {
+   "cover": "https://image.tmdb.org/t/p/w342/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
+   "format": "Movie",
+   "id": "movie:787699",
+   "media": "movie",
+   "name": "Wonka",
+   "score": 7.1,
+   "year": 2023
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/8sNiAPPYU14PUepFNeSNGUTiHW.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+   "format": "Movie",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Science Fiction"
+   ],
+   "id": "movie:157336",
+   "media": "movie",
+   "name": "Interstellar",
+   "runtime": "2h 49m",
+   "score": 8.5,
+   "year": 2014
+  }
+ ],
+ "name": "Timothée Chalamet",
+ "occupation": "Actor",
+ "totals": {
+  "movie": 52,
+  "tv": 14
+ }
+}

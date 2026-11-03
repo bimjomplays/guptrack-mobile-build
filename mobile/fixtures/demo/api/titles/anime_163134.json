@@ -1,0 +1,49 @@
+{
+ "creator": {
+  "name": "WHITE FOX",
+  "ref": "studio:314"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/163134"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/54857"
+  }
+ ],
+ "members": 204629,
+ "startDate": "2024-10-02",
+ "studios": [
+  {
+   "name": "WHITE FOX",
+   "ref": "studio:314"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/163134-CqaXjXVivwJ5.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163134-yieRFbvUOH9a.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Fantasy",
+   "Psychological",
+   "Romance",
+   "Thriller"
+  ],
+  "id": "anime:163134",
+  "media": "anime",
+  "name": "Re:ZERO -Starting Life in Another World- Season 3",
+  "runtime": "24 min",
+  "score": 8.4,
+  "season": "Fall 2024",
+  "state": "Finished",
+  "studio": "WHITE FOX",
+  "subtitle": "Re:Zero kara Hajimeru Isekai Seikatsu 3rd Season · Re:ゼロから始める異世界生活 3rd season",
+  "total": 16,
+  "year": 2024
+ }
+}

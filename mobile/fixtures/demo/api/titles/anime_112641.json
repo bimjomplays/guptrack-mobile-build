@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "A-1 Pictures",
+  "ref": "studio:561"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/112641"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/40591"
+  }
+ ],
+ "members": 441189,
+ "startDate": "2020-04-11",
+ "studios": [
+  {
+   "name": "A-1 Pictures",
+   "ref": "studio:561"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/112641-mKZe0zng0ndV.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112641-zoGC8d6FaPXU.jpg",
+  "format": "TV",
+  "genres": [
+   "Comedy",
+   "Psychological",
+   "Romance",
+   "Slice of Life"
+  ],
+  "id": "anime:112641",
+  "media": "anime",
+  "name": "Kaguya-sama: Love is War?",
+  "runtime": "25 min",
+  "score": 8.5,
+  "season": "Spring 2020",
+  "state": "Finished",
+  "studio": "A-1 Pictures",
+  "subtitle": "Kaguya-sama wa Kokurasetai?: Tensaitachi no Renai Zunousen · かぐや様は告らせたい？～天才たちの恋愛頭脳戦～",
+  "total": 12,
+  "year": 2020
+ }
+}

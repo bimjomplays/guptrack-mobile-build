@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "WHITE FOX",
+  "ref": "studio:314"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/11577"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/11577"
+  }
+ ],
+ "members": 142126,
+ "startDate": "2013-04-20",
+ "studios": [
+  {
+   "name": "WHITE FOX",
+   "ref": "studio:314"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11577.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11577-rhqsxLOAge4f.png",
+  "format": "Movie",
+  "genres": [
+   "Drama",
+   "Romance",
+   "Sci-Fi",
+   "Thriller"
+  ],
+  "id": "anime:11577",
+  "media": "anime",
+  "name": "Steins;Gate The Movie – Load Region of Déjà Vu",
+  "runtime": "90 min",
+  "score": 8.2,
+  "season": "Spring 2013",
+  "state": "Finished",
+  "studio": "WHITE FOX",
+  "subtitle": "Steins;Gate: Fuka Ryouiki no Déjà vu · 劇場版 シュタインズゲート 負荷領域のデジャヴ",
+  "total": 1,
+  "year": 2013
+ }
+}

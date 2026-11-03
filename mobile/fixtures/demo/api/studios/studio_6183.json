@@ -1,0 +1,35 @@
+{
+ "id": "studio:6183",
+ "kind": "Animation studio",
+ "name": "studio A-CAT",
+ "titles": [
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186541-caYpLsLmbCh7.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Mecha",
+    "Romance",
+    "Sci-Fi"
+   ],
+   "id": "anime:186541",
+   "media": "anime",
+   "name": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
+   "next": {
+    "at": "2026-11-08T12:30:00.000Z",
+    "episode": 6
+   },
+   "runtime": "24 min",
+   "score": 6.9,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "studio A-CAT",
+   "subtitle": "Mezametara Saikyou Soubi to Uchuusen-mochi datta node, Ikkodate Mezashite Youhei to shite Jiyuu ni Ikitai · 目覚めたら最強装備と宇宙船持ちだったので、一戸建て目指して傭兵として自由に生きたい",
+   "total": 13,
+   "year": 2026
+  }
+ ],
+ "total": 1
+}

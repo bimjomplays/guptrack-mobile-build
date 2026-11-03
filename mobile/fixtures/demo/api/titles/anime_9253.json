@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "WHITE FOX",
+  "ref": "studio:314"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/9253"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/9253"
+  }
+ ],
+ "members": 605144,
+ "startDate": "2011-04-06",
+ "studios": [
+  {
+   "name": "WHITE FOX",
+   "ref": "studio:314"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n9253-JIhmKgBKsWUN.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9253-tIUXF2gfU8Sg.jpg",
+  "format": "TV",
+  "genres": [
+   "Drama",
+   "Psychological",
+   "Sci-Fi",
+   "Thriller"
+  ],
+  "id": "anime:9253",
+  "media": "anime",
+  "name": "Steins;Gate",
+  "runtime": "24 min",
+  "score": 8.9,
+  "season": "Spring 2011",
+  "state": "Finished",
+  "studio": "WHITE FOX",
+  "subtitle": "シュタインズ・ゲート",
+  "total": 24,
+  "year": 2011
+ }
+}

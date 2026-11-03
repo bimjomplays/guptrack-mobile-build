@@ -1,0 +1,241 @@
+{
+ "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/154587-ivXNJ23SM1xB.jpg",
+ "bannerFade": 0.7,
+ "bio": "Seasonal anime, slow manga, one book a month.",
+ "commentCount": 2,
+ "comments": [
+  {
+   "at": "2026-11-03T13:41:00.000Z",
+   "id": "c1",
+   "text": "One book a month?? We need to talk",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+    "name": "Noor",
+    "username": "noor.reads"
+   }
+  },
+  {
+   "at": "2026-11-01T11:41:00.000Z",
+   "id": "c2",
+   "text": "Your Frieren score is the right one",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+    "name": "Tobi",
+    "username": "tobiwan"
+   }
+  }
+ ],
+ "favourites": [
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1575.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1575-hsmWM2ydNm1m.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Mecha",
+    "Sci-Fi",
+    "Thriller"
+   ],
+   "id": "anime:1575",
+   "media": "anime",
+   "name": "Code Geass: Lelouch of the Rebellion",
+   "runtime": "24 min",
+   "score": 8.5,
+   "season": "Fall 2006",
+   "state": "Finished",
+   "studio": "Sunrise",
+   "subtitle": "Code Geass: Hangyaku no Lelouch · コードギアス 反逆のルルーシュ",
+   "total": 25,
+   "year": 2006
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n9253-JIhmKgBKsWUN.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9253-tIUXF2gfU8Sg.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Psychological",
+    "Sci-Fi",
+    "Thriller"
+   ],
+   "id": "anime:9253",
+   "media": "anime",
+   "name": "Steins;Gate",
+   "runtime": "24 min",
+   "score": 8.9,
+   "season": "Spring 2011",
+   "state": "Finished",
+   "studio": "WHITE FOX",
+   "subtitle": "シュタインズ・ゲート",
+   "total": 24,
+   "year": 2011
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/154587-ivXNJ23SM1xB.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Fantasy"
+   ],
+   "id": "anime:154587",
+   "media": "anime",
+   "name": "Frieren: Beyond Journey’s End",
+   "runtime": "24 min",
+   "score": 9.1,
+   "season": "Fall 2023",
+   "state": "Finished",
+   "studio": "MADHOUSE",
+   "subtitle": "Sousou no Frieren · 葬送のフリーレン",
+   "total": 28,
+   "year": 2023
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+   "format": "Movie",
+   "genres": [
+    "Science Fiction",
+    "Adventure"
+   ],
+   "id": "movie:693134",
+   "media": "movie",
+   "name": "Dune: Part Two",
+   "runtime": "2h 47m",
+   "score": 8.1,
+   "year": 2024
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21355-f9SjOfEJMk5P.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21355-wRVUrGxpvIQQ.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Psychological",
+    "Romance",
+    "Thriller"
+   ],
+   "id": "anime:21355",
+   "media": "anime",
+   "name": "Re:ZERO -Starting Life in Another World-",
+   "runtime": "25 min",
+   "score": 8.1,
+   "season": "Spring 2016",
+   "state": "Finished",
+   "studio": "WHITE FOX",
+   "subtitle": "Re:Zero kara Hajimeru Isekai Seikatsu · Re:ゼロから始める異世界生活",
+   "total": 25,
+   "year": 2016
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11061-8WkkTZ6duKpq.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11061-y5gsT1hoHuHw.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+   ],
+   "id": "anime:11061",
+   "media": "anime",
+   "name": "Hunter x Hunter (2011)",
+   "runtime": "24 min",
+   "score": 8.9,
+   "season": "Fall 2011",
+   "state": "Finished",
+   "studio": "MADHOUSE",
+   "subtitle": "HUNTER×HUNTER (2011) · HUNTER×HUNTER (2011)",
+   "total": 148,
+   "year": 2011
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/19-kJhwsB0Z97tL.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19-gtMC64182sm4.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Psychological",
+    "Thriller"
+   ],
+   "id": "anime:19",
+   "media": "anime",
+   "name": "Monster",
+   "runtime": "24 min",
+   "score": 8.8,
+   "season": "Spring 2004",
+   "state": "Finished",
+   "studio": "MADHOUSE",
+   "subtitle": "MONSTER · MONSTER",
+   "total": 74,
+   "year": 2004
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/16498-8jpFCOcDmneX.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-buvcRTBx4NSm.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Fantasy",
+    "Mystery"
+   ],
+   "id": "anime:16498",
+   "media": "anime",
+   "name": "Attack on Titan",
+   "runtime": "24 min",
+   "score": 8.5,
+   "season": "Spring 2013",
+   "state": "Finished",
+   "studio": "WIT STUDIO",
+   "subtitle": "Shingeki no Kyojin · 進撃の巨人",
+   "total": 25,
+   "year": 2013
+  }
+ ],
+ "friends": 6,
+ "joined": "2025-03-02T17:00:00.000Z",
+ "reviewCount": 1,
+ "reviews": [
+  {
+   "at": "2026-10-30T09:41:00.000Z",
+   "body": "It takes its time with every goodbye, and by the end the small moments are the ones that stay. The best thing I watched this year.",
+   "headline": "Quiet in the best way",
+   "id": "mika-anime-154587",
+   "likes": 3,
+   "score": 90,
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/154587-ivXNJ23SM1xB.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+    "format": "TV",
+    "genres": [
+     "Adventure",
+     "Drama",
+     "Fantasy"
+    ],
+    "id": "anime:154587",
+    "media": "anime",
+    "name": "Frieren: Beyond Journey’s End",
+    "runtime": "24 min",
+    "score": 9.1,
+    "season": "Fall 2023",
+    "state": "Finished",
+    "studio": "MADHOUSE",
+    "subtitle": "Sousou no Frieren · 葬送のフリーレン",
+    "total": 28,
+    "year": 2023
+   }
+  }
+ ],
+ "user": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+  "name": "Mika",
+  "username": "mika"
+ }
+}

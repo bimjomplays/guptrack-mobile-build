@@ -1,0 +1,264 @@
+{
+ "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/16498-8jpFCOcDmneX.jpg",
+ "bannerFade": 0.7,
+ "bio": "Watching every season so you don't have to.",
+ "friendsSince": "2026-04-02T15:00:00.000Z",
+ "friendship": "friends",
+ "inCommon": {
+  "anime": 29,
+  "book": 4,
+  "manga": 9,
+  "movie": 7,
+  "tv": 9
+ },
+ "joined": "2025-08-30T15:00:00.000Z",
+ "lastUpdates": [
+  {
+   "at": "2026-11-03T11:41:00.000Z",
+   "caption": "Completed · ★9",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195539-lO5SUdp4SOrq.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png",
+    "format": "ONA",
+    "genres": [
+     "Action",
+     "Drama",
+     "Sci-Fi"
+    ],
+    "id": "anime:195539",
+    "media": "anime",
+    "name": "Cyberpunk: Edgerunners 2",
+    "runtime": "28 min",
+    "score": 8.3,
+    "season": "Fall 2026",
+    "state": "Finished",
+    "studio": "TRIGGER",
+    "subtitle": "サイバーパンク: エッジランナーズ2",
+    "total": 10,
+    "year": 2026
+   }
+  },
+  {
+   "at": "2026-11-02T16:41:00.000Z",
+   "caption": "Ep 19 of 74",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/19-kJhwsB0Z97tL.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19-gtMC64182sm4.jpg",
+    "format": "TV",
+    "genres": [
+     "Drama",
+     "Horror",
+     "Mystery",
+     "Psychological",
+     "Thriller"
+    ],
+    "id": "anime:19",
+    "media": "anime",
+    "name": "Monster",
+    "runtime": "24 min",
+    "score": 8.8,
+    "season": "Spring 2004",
+    "state": "Finished",
+    "studio": "MADHOUSE",
+    "subtitle": "MONSTER · MONSTER",
+    "total": 74,
+    "year": 2004
+   }
+  },
+  {
+   "at": "2026-11-01T21:41:00.000Z",
+   "caption": "Rewatching · Ep 26",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1-OquNCNB6srGe.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1-GCsPm7waJ4kS.png",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Drama",
+     "Sci-Fi"
+    ],
+    "id": "anime:1",
+    "media": "anime",
+    "name": "Cowboy Bebop",
+    "runtime": "24 min",
+    "score": 8.6,
+    "season": "Spring 1998",
+    "state": "Finished",
+    "studio": "Sunrise",
+    "subtitle": "カウボーイビバップ",
+    "total": 26,
+    "year": 1998
+   }
+  },
+  {
+   "at": "2026-11-01T02:41:00.000Z",
+   "caption": "Ep 10 of 25",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/16498-8jpFCOcDmneX.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-buvcRTBx4NSm.jpg",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Drama",
+     "Fantasy",
+     "Mystery"
+    ],
+    "id": "anime:16498",
+    "media": "anime",
+    "name": "Attack on Titan",
+    "runtime": "24 min",
+    "score": 8.5,
+    "season": "Spring 2013",
+    "state": "Finished",
+    "studio": "WIT STUDIO",
+    "subtitle": "Shingeki no Kyojin · 進撃の巨人",
+    "total": 25,
+    "year": 2013
+   }
+  },
+  {
+   "at": "2026-10-31T07:41:00.000Z",
+   "caption": "Completed · ★7",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n9253-JIhmKgBKsWUN.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9253-tIUXF2gfU8Sg.jpg",
+    "format": "TV",
+    "genres": [
+     "Drama",
+     "Psychological",
+     "Sci-Fi",
+     "Thriller"
+    ],
+    "id": "anime:9253",
+    "media": "anime",
+    "name": "Steins;Gate",
+    "runtime": "24 min",
+    "score": 8.9,
+    "season": "Spring 2011",
+    "state": "Finished",
+    "studio": "WHITE FOX",
+    "subtitle": "シュタインズ・ゲート",
+    "total": 24,
+    "year": 2011
+   }
+  },
+  {
+   "at": "2026-10-30T12:41:00.000Z",
+   "caption": "Ep 25 of 148",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11061-8WkkTZ6duKpq.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11061-y5gsT1hoHuHw.png",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Fantasy"
+    ],
+    "id": "anime:11061",
+    "media": "anime",
+    "name": "Hunter x Hunter (2011)",
+    "runtime": "24 min",
+    "score": 8.9,
+    "season": "Fall 2011",
+    "state": "Finished",
+    "studio": "MADHOUSE",
+    "subtitle": "HUNTER×HUNTER (2011) · HUNTER×HUNTER (2011)",
+    "total": 148,
+    "year": 2011
+   }
+  }
+ ],
+ "summaries": [
+  {
+   "completed": 83,
+   "counts": {
+    "completed": 83,
+    "current": 4,
+    "dropped": 7,
+    "hold": 4,
+    "planned": 55
+   },
+   "entries": 153,
+   "mean": 7.4,
+   "media": "anime",
+   "minutes": 37872,
+   "rewatched": 2,
+   "scored": 69,
+   "units": 1578
+  },
+  {
+   "completed": 37,
+   "counts": {
+    "completed": 37,
+    "current": 2,
+    "dropped": 2,
+    "hold": 1,
+    "planned": 15
+   },
+   "entries": 57,
+   "mean": 7.75,
+   "media": "manga",
+   "minutes": 0,
+   "rewatched": 3,
+   "scored": 26,
+   "units": 2290
+  },
+  {
+   "completed": 25,
+   "counts": {
+    "completed": 25,
+    "current": 1,
+    "dropped": 2,
+    "hold": 1,
+    "planned": 16
+   },
+   "entries": 45,
+   "mean": 8.18,
+   "media": "tv",
+   "minutes": 33744,
+   "rewatched": 3,
+   "scored": 16,
+   "units": 703
+  },
+  {
+   "completed": 62,
+   "counts": {
+    "completed": 62,
+    "current": 4,
+    "dropped": 3,
+    "hold": 3,
+    "planned": 40
+   },
+   "entries": 112,
+   "mean": 7.31,
+   "media": "movie",
+   "minutes": 7316,
+   "rewatched": 0,
+   "scored": 37,
+   "units": 62
+  },
+  {
+   "completed": 23,
+   "counts": {
+    "completed": 23,
+    "current": 0,
+    "dropped": 1,
+    "hold": 0,
+    "planned": 10
+   },
+   "entries": 34,
+   "mean": 7.33,
+   "media": "book",
+   "minutes": 0,
+   "rewatched": 1,
+   "scored": 14,
+   "units": 8105
+  }
+ ],
+ "user": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+  "name": "Sora",
+  "username": "sorawatches"
+ }
+}

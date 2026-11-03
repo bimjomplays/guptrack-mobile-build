@@ -1,0 +1,32 @@
+{
+ "id": "studio:6137",
+ "kind": "Animation studio",
+ "name": "Studio M2",
+ "titles": [
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/99088-KFYEoH7jCF0b.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99088-LTJskMD1wbbQ.png",
+   "format": "ONA",
+   "genres": [
+    "Action",
+    "Drama",
+    "Mecha",
+    "Mystery",
+    "Psychological",
+    "Sci-Fi",
+    "Thriller"
+   ],
+   "id": "anime:99088",
+   "media": "anime",
+   "name": "PLUTO",
+   "runtime": "60 min",
+   "score": 8.4,
+   "season": "Fall 2023",
+   "state": "Finished",
+   "studio": "Studio M2",
+   "total": 8,
+   "year": 2023
+  }
+ ],
+ "total": 1
+}

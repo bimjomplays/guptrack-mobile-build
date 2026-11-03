@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "WIT STUDIO",
+  "ref": "studio:858"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/104578"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/38524"
+  }
+ ],
+ "members": 621924,
+ "startDate": "2019-04-29",
+ "studios": [
+  {
+   "name": "WIT STUDIO",
+   "ref": "studio:858"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/104578-z7SadpYEuAsy.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104578-k61nx3LPjvgd.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Fantasy",
+   "Mystery"
+  ],
+  "id": "anime:104578",
+  "media": "anime",
+  "name": "Attack on Titan Season 3 Part 2",
+  "runtime": "24 min",
+  "score": 8.9,
+  "season": "Spring 2019",
+  "state": "Finished",
+  "studio": "WIT STUDIO",
+  "subtitle": "Shingeki no Kyojin Season 3 Part 2 · 進撃の巨人 Season３ Part.2",
+  "total": 10,
+  "year": 2019
+ }
+}

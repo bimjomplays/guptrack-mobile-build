@@ -1,0 +1,68 @@
+{
+ "credits": [
+  {
+   "character": {
+    "id": "character:61",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b61-ywXUyyocEEqt.png",
+    "name": "Robin Nico"
+   },
+   "main": true,
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21-wf37VakJmZqs.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Comedy",
+     "Drama",
+     "Fantasy"
+    ],
+    "id": "anime:21",
+    "media": "anime",
+    "name": "ONE PIECE",
+    "next": {
+     "at": "2027-01-03T14:16:00.000Z",
+     "episode": 1181
+    },
+    "runtime": "24 min",
+    "score": 8.7,
+    "season": "Fall 1999",
+    "state": "Releasing",
+    "studio": "Toei Animation",
+    "year": 1999
+   }
+  }
+ ],
+ "id": "person:111463",
+ "image": "https://s4.anilist.co/file/anilistcdn/staff/large/16463.jpg",
+ "knownFor": [
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21-wf37VakJmZqs.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy"
+   ],
+   "id": "anime:21",
+   "media": "anime",
+   "name": "ONE PIECE",
+   "next": {
+    "at": "2027-01-03T14:16:00.000Z",
+    "episode": 1181
+   },
+   "runtime": "24 min",
+   "score": 8.7,
+   "season": "Fall 1999",
+   "state": "Releasing",
+   "studio": "Toei Animation",
+   "year": 1999
+  }
+ ],
+ "name": "Anzu Nagai",
+ "occupation": "Voice actor"
+}

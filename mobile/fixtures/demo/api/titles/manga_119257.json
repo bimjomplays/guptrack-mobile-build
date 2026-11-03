@@ -1,0 +1,31 @@
+{
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/manga/119257"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/manga/132214"
+  }
+ ],
+ "members": 134656,
+ "startDate": "2020-05-26",
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/119257-RtxJMRCunHXc.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx119257-Pi21aq3ey9GG.jpg",
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "id": "manga:119257",
+  "media": "manga",
+  "name": "Omniscient Reader",
+  "score": 8.6,
+  "state": "Releasing",
+  "subtitle": "Jeonjijeok Dokja Sijeom · 전지적 독자 시점",
+  "year": 2020
+ }
+}

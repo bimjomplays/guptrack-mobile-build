@@ -1,0 +1,48 @@
+{
+ "id": "studio:6148",
+ "kind": "Animation studio",
+ "name": "NUT",
+ "titles": [
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/135865-Ws3e7BhBkFxd.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135865-T7XIPMAbqcxN.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Fantasy"
+   ],
+   "id": "anime:135865",
+   "media": "anime",
+   "name": "Saga of Tanya the Evil Season 2",
+   "runtime": "24 min",
+   "score": 8.0,
+   "season": "Summer 2026",
+   "state": "Finished",
+   "studio": "NUT",
+   "subtitle": "Youjo Senki II · 幼女戦記Ⅱ",
+   "total": 12,
+   "year": 2026
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/100878-Lslq3VqoNanU.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100878-npKVJvggmK6a.jpg",
+   "format": "Movie",
+   "genres": [
+    "Action",
+    "Fantasy"
+   ],
+   "id": "anime:100878",
+   "media": "anime",
+   "name": "Saga of Tanya the Evil - the Movie -",
+   "runtime": "98 min",
+   "score": 8.1,
+   "season": "Winter 2019",
+   "state": "Finished",
+   "studio": "NUT",
+   "subtitle": "Youjo Senki Movie · 劇場版 幼女戦記",
+   "total": 1,
+   "year": 2019
+  }
+ ],
+ "total": 2
+}

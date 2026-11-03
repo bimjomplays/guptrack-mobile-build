@@ -1,0 +1,192 @@
+{
+ "creator": {
+  "name": "Kazuo Ishiguro",
+  "ref": "author:OL28493A",
+  "role": "Author"
+ },
+ "links": [
+  {
+   "label": "Open Library",
+   "url": "https://openlibrary.org/works/OL59048W"
+  }
+ ],
+ "recommendations": [
+  {
+   "cover": "https://covers.openlibrary.org/b/id/11200092-L.jpg",
+   "format": "Book",
+   "genres": [
+    "hard science-fiction",
+    "science-fiction",
+    "sci-fi",
+    "hard sci-fi"
+   ],
+   "id": "book:OL21745884W",
+   "media": "book",
+   "name": "Project Hail Mary",
+   "score": 9.1,
+   "studio": "Andy Weir",
+   "subtitle": "Andy Weir",
+   "total": 496,
+   "year": 2021
+  },
+  {
+   "cover": "https://covers.openlibrary.org/b/id/11447888-L.jpg",
+   "format": "Book",
+   "genres": [
+    "Science-Fiction",
+    "Science Fiction & Fantasy",
+    "Suspense & Thriller",
+    "Science fiction"
+   ],
+   "id": "book:OL17091839W",
+   "media": "book",
+   "name": "The Martian",
+   "score": 8.8,
+   "studio": "Andy Weir",
+   "subtitle": "Andy Weir",
+   "total": 407,
+   "year": 2011
+  },
+  {
+   "cover": "https://covers.openlibrary.org/b/id/11481354-L.jpg",
+   "format": "Book",
+   "genres": [
+    "Dune (Imaginary place)",
+    "Fiction",
+    "Fiction, science fiction, general",
+    "Dune (imaginary place), fiction"
+   ],
+   "id": "book:OL893414W",
+   "media": "book",
+   "name": "Dune",
+   "score": 8.6,
+   "studio": "Frank Herbert",
+   "subtitle": "Frank Herbert",
+   "total": 608,
+   "year": 1965
+  },
+  {
+   "cover": "https://covers.openlibrary.org/b/id/10226290-L.jpg",
+   "format": "Book",
+   "genres": [
+    "English literature",
+    "Labyrinths",
+    "Fiction",
+    "Curiosities and wonders"
+   ],
+   "id": "book:OL20893680W",
+   "media": "book",
+   "name": "Piranesi",
+   "score": 8.7,
+   "studio": "Susanna Clarke",
+   "subtitle": "Susanna Clarke",
+   "total": 272,
+   "year": 2020
+  },
+  {
+   "cover": "https://covers.openlibrary.org/b/id/12859975-L.jpg",
+   "format": "Book",
+   "genres": [
+    "American literature",
+    "Modern fiction",
+    "Fiction"
+   ],
+   "id": "book:OL26004554W",
+   "media": "book",
+   "name": "Tomorrow, and Tomorrow, and Tomorrow",
+   "score": 8.5,
+   "studio": "Gabrielle Zevin",
+   "subtitle": "Gabrielle Zevin",
+   "total": 460,
+   "year": 2022
+  },
+  {
+   "cover": "https://covers.openlibrary.org/b/id/11480483-L.jpg",
+   "format": "Book",
+   "genres": [
+    "orphans",
+    "American fantasy fiction",
+    "Adult books for young adults",
+    "epic fiction"
+   ],
+   "id": "book:OL8479867W",
+   "media": "book",
+   "name": "The Name of the Wind",
+   "score": 8.7,
+   "studio": "Patrick Rothfuss",
+   "subtitle": "Patrick Rothfuss",
+   "total": 736,
+   "year": 2007
+  },
+  {
+   "cover": "https://covers.openlibrary.org/b/id/10648686-L.jpg",
+   "format": "Book",
+   "genres": [
+    "Fiction, science fiction, general",
+    "speculative fiction",
+    "Fiction, dystopian",
+    "British and irish fiction (fictional works by one author)"
+   ],
+   "id": "book:OL20883297W",
+   "media": "book",
+   "name": "Klara and the Sun",
+   "score": 7.6,
+   "studio": "Kazuo Ishiguro",
+   "subtitle": "Kazuo Ishiguro",
+   "total": 334,
+   "year": 2019
+  },
+  {
+   "cover": "https://covers.openlibrary.org/b/id/12468631-L.jpg",
+   "format": "Book",
+   "genres": [
+    "Translators",
+    "Fiction",
+    "Chinese",
+    "Imperialism"
+   ],
+   "id": "book:OL26443093W",
+   "media": "book",
+   "name": "Babel",
+   "score": 8.1,
+   "studio": "R. F. Kuang",
+   "subtitle": "R. F. Kuang",
+   "total": 577,
+   "year": 2022
+  }
+ ],
+ "staff": [
+  {
+   "name": "Kazuo Ishiguro",
+   "ref": "author:OL28493A",
+   "role": "Author"
+  }
+ ],
+ "subjects": [
+  "Man Booker Prize Winner",
+  "Literature",
+  "Household employees",
+  "Butlers",
+  "Country homes",
+  "Domestics",
+  "Fiction"
+ ],
+ "title": {
+  "cover": "https://covers.openlibrary.org/b/id/95742-L.jpg",
+  "format": "Novel",
+  "genres": [
+   "Man Booker Prize Winner",
+   "Literature",
+   "Household employees",
+   "Butlers"
+  ],
+  "id": "book:OL59048W",
+  "media": "book",
+  "name": "The Remains of the Day",
+  "score": 8.4,
+  "studio": "Kazuo Ishiguro",
+  "subtitle": "Kazuo Ishiguro",
+  "total": 254,
+  "year": 1989
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "likedBy": [
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+   "name": "Tobi",
+   "username": "tobiwan"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+   "name": "Lena",
+   "username": "lena"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+   "name": "Hal",
+   "username": "hal"
+  }
+ ],
+ "replies": [
+  {
+   "at": "2026-11-03T08:01:00.000Z",
+   "id": "sev-sora-1",
+   "liked": false,
+   "likes": 2,
+   "text": "This is exactly how I felt, especially the ending.",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "name": "Lena",
+    "username": "lena"
+   }
+  },
+  {
+   "at": "2026-11-03T13:11:00.000Z",
+   "id": "sev-sora-2",
+   "liked": false,
+   "likes": 1,
+   "text": "Fair, but I liked it more than you did.",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+    "name": "Tobi",
+    "username": "tobiwan"
+   }
+  }
+ ],
+ "review": {
+  "at": "2026-11-02T09:41:00.000Z",
+  "body": "The goats. That’s the review. Also the finale.",
+  "friend": true,
+  "headline": "Season 2 is weirder and better",
+  "id": "sev-sora",
+  "liked": false,
+  "likes": 15,
+  "replies": 4,
+  "score": 90,
+  "spoiler": true,
+  "user": {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+   "name": "Sora",
+   "username": "sorawatches"
+  }
+ },
+ "title": {
+  "banner": "https://image.tmdb.org/t/p/w1280/ixgFmf1X59PUZam2qbAfskx2gQr.jpg",
+  "cover": "https://image.tmdb.org/t/p/w500/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+  "format": "TV",
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Sci-Fi & Fantasy"
+  ],
+  "id": "tv:95396",
+  "media": "tv",
+  "name": "Severance",
+  "score": 8.4,
+  "year": 2022
+ }
+}

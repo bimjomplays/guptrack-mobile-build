@@ -1,0 +1,148 @@
+{
+ "media": "movie",
+ "rows": [
+  {
+   "mine": 90,
+   "theirs": 90,
+   "title": {
+    "banner": "https://image.tmdb.org/t/p/w1280/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+    "cover": "https://image.tmdb.org/t/p/w500/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+    "format": "Movie",
+    "genres": [
+     "Science Fiction",
+     "Adventure"
+    ],
+    "id": "movie:693134",
+    "media": "movie",
+    "name": "Dune: Part Two",
+    "runtime": "2h 47m",
+    "score": 8.1,
+    "year": 2024
+   }
+  },
+  {
+   "mine": 85,
+   "theirs": 75,
+   "title": {
+    "banner": "https://image.tmdb.org/t/p/w1280/neeNHeXjMF5fXoCJRsOmkNGC7q.jpg",
+    "cover": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+    "format": "Movie",
+    "genres": [
+     "Drama",
+     "History",
+     "War"
+    ],
+    "id": "movie:872585",
+    "media": "movie",
+    "name": "Oppenheimer",
+    "runtime": "3h 1m",
+    "score": 8.0,
+    "year": 2023
+   }
+  },
+  {
+   "mine": 90,
+   "theirs": 90,
+   "title": {
+    "banner": "https://image.tmdb.org/t/p/w1280/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
+    "cover": "https://image.tmdb.org/t/p/w500/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+    "format": "Movie",
+    "genres": [
+     "Horror",
+     "Action",
+     "Thriller"
+    ],
+    "id": "movie:1233413",
+    "media": "movie",
+    "name": "Sinners",
+    "runtime": "2h 18m",
+    "score": 7.5,
+    "year": 2025
+   }
+  },
+  {
+   "mine": 95,
+   "theirs": 75,
+   "title": {
+    "banner": "https://image.tmdb.org/t/p/w1280/fIwiFha3WPu5nHkBeMQ4GzEk0Hv.jpg",
+    "cover": "https://image.tmdb.org/t/p/w500/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+    "format": "Movie",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Science Fiction"
+    ],
+    "id": "movie:545611",
+    "media": "movie",
+    "name": "Everything Everywhere All at Once",
+    "runtime": "2h 20m",
+    "score": 7.7,
+    "year": 2022
+   }
+  },
+  {
+   "mine": 80,
+   "theirs": 70,
+   "title": {
+    "banner": "https://image.tmdb.org/t/p/w1280/rvtdN5XkWAfGX6xDuPL6yYS2seK.jpg",
+    "cover": "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+    "format": "Movie",
+    "genres": [
+     "Crime",
+     "Mystery",
+     "Thriller"
+    ],
+    "id": "movie:414906",
+    "media": "movie",
+    "name": "The Batman",
+    "runtime": "2h 57m",
+    "score": 7.7,
+    "year": 2022
+   }
+  },
+  {
+   "mine": 95,
+   "title": {
+    "banner": "https://image.tmdb.org/t/p/w1280/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg",
+    "cover": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+    "format": "Movie",
+    "genres": [
+     "Comedy",
+     "Thriller",
+     "Drama"
+    ],
+    "id": "movie:496243",
+    "media": "movie",
+    "name": "Parasite",
+    "runtime": "2h 13m",
+    "score": 8.5,
+    "year": 2019
+   }
+  },
+  {
+   "mine": 85,
+   "theirs": 100,
+   "title": {
+    "banner": "https://image.tmdb.org/t/p/w1280/nlPCdZlHtRNcF6C9hzUH4ebmV1w.jpg",
+    "cover": "https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+    "format": "Movie",
+    "genres": [
+     "Comedy",
+     "Drama",
+     "Romance"
+    ],
+    "id": "movie:313369",
+    "media": "movie",
+    "name": "La La Land",
+    "runtime": "2h 9m",
+    "score": 7.9,
+    "year": 2016
+   }
+  }
+ ],
+ "user": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+  "name": "Noor",
+  "username": "noor.reads"
+ }
+}

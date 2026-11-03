@@ -1,0 +1,33 @@
+{
+ "id": "studio:7799",
+ "kind": "Animation studio",
+ "name": "Electric Circus",
+ "titles": [
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189123-aGJ7pIDUo2Xs.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189123-0secXELIhkIW.jpg",
+   "format": "TV",
+   "genres": [
+    "Romance",
+    "Slice of Life",
+    "Sports"
+   ],
+   "id": "anime:189123",
+   "media": "anime",
+   "name": "Blue Box Season 2",
+   "next": {
+    "at": "2026-11-08T07:30:00.000Z",
+    "episode": 5
+   },
+   "runtime": "24 min",
+   "score": 8.1,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "Electric Circus",
+   "subtitle": "Ao no Hako Season 2 · アオのハコ Season２",
+   "total": 12,
+   "year": 2026
+  }
+ ],
+ "total": 1
+}

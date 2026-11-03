@@ -1,0 +1,48 @@
+{
+ "creator": {
+  "name": "Shaft",
+  "ref": "studio:44"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/9756"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/9756"
+  }
+ ],
+ "members": 332575,
+ "startDate": "2011-01-07",
+ "studios": [
+  {
+   "name": "Shaft",
+   "ref": "studio:44"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/9756-d5M8NffgJJHB.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9756-QnUGwlwwnsuN.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Fantasy",
+   "Mahou Shoujo",
+   "Psychological",
+   "Thriller"
+  ],
+  "id": "anime:9756",
+  "media": "anime",
+  "name": "Puella Magi Madoka Magica",
+  "runtime": "24 min",
+  "score": 8.3,
+  "season": "Winter 2011",
+  "state": "Finished",
+  "studio": "Shaft",
+  "subtitle": "Mahou Shoujo Madoka☆Magica · 魔法少女まどか☆マギカ",
+  "total": 12,
+  "year": 2011
+ }
+}

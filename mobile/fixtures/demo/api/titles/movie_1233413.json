@@ -1,0 +1,201 @@
+{
+ "cast": [
+  {
+   "image": "https://image.tmdb.org/t/p/w185/sMBpav8cK7t7Nk0yf4tuNOqNUyW.jpg",
+   "name": "Michael B. Jordan",
+   "role": "Smoke / Stack"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/qDInsG0cxWNxS1X4t59TBZ5S6x5.jpg",
+   "name": "Hailee Steinfeld",
+   "role": "Mary"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/yff2DK1Sc2baRGHbSfcmwMwX8HW.jpg",
+   "name": "Miles Caton",
+   "role": "Sammie Moore"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/tCzR4clrIkbkijuJBYsNoEuwRDa.jpg",
+   "name": "Jack O&#39;Connell",
+   "role": "Remmick"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/vp7qDA7cYZj0MDYk1k4wysmznnN.jpg",
+   "name": "Wunmi Mosaku",
+   "role": "Annie"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/1PQmquJ3LRnTnUnut0UZBLZuBuO.jpg",
+   "name": "Jayme Lawson",
+   "role": "Pearline"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/adlrkEpxDIcpxF7bpzMGErLxeHP.jpg",
+   "name": "Omar Benson Miller",
+   "role": "Cornbread"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/fmnE0pLaQPrWFlRHsHWehq2L8fq.jpg",
+   "name": "Delroy Lindo",
+   "role": "Delta Slim"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/9glGNxymt1vHxyMPesTreJTpD7n.jpg",
+   "name": "Li Jun Li",
+   "role": "Grace Chow"
+  }
+ ],
+ "description": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
+ "links": [
+  {
+   "label": "TMDB",
+   "url": "https://www.themoviedb.org/movie/1233413"
+  }
+ ],
+ "recommendations": [
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+   "format": "Movie",
+   "genres": [
+    "Science Fiction",
+    "Adventure"
+   ],
+   "id": "movie:693134",
+   "media": "movie",
+   "name": "Dune: Part Two",
+   "runtime": "2h 47m",
+   "score": 8.1,
+   "year": 2024
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/neeNHeXjMF5fXoCJRsOmkNGC7q.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+   "format": "Movie",
+   "genres": [
+    "Drama",
+    "History",
+    "War"
+   ],
+   "id": "movie:872585",
+   "media": "movie",
+   "name": "Oppenheimer",
+   "runtime": "3h 1m",
+   "score": 8.0,
+   "year": 2023
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/7HR38hMBl23lf38MAN63y4pKsHz.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+   "format": "Movie",
+   "genres": [
+    "Drama",
+    "Romance"
+   ],
+   "id": "movie:666277",
+   "media": "movie",
+   "name": "Past Lives",
+   "runtime": "1h 46m",
+   "score": 7.7,
+   "year": 2023
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/fIwiFha3WPu5nHkBeMQ4GzEk0Hv.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+   "format": "Movie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Science Fiction"
+   ],
+   "id": "movie:545611",
+   "media": "movie",
+   "name": "Everything Everywhere All at Once",
+   "runtime": "2h 20m",
+   "score": 7.7,
+   "year": 2022
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/rvtdN5XkWAfGX6xDuPL6yYS2seK.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+   "format": "Movie",
+   "genres": [
+    "Crime",
+    "Mystery",
+    "Thriller"
+   ],
+   "id": "movie:414906",
+   "media": "movie",
+   "name": "The Batman",
+   "runtime": "2h 57m",
+   "score": 7.7,
+   "year": 2022
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/8VyTWJrNEyV2MTWvniDVp0MpOAe.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+   "format": "Movie",
+   "genres": [
+    "Horror",
+    "Mystery"
+   ],
+   "id": "movie:1078605",
+   "media": "movie",
+   "name": "Weapons",
+   "runtime": "2h 8m",
+   "score": 7.3,
+   "year": 2025
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/hiazLNa1UXuX35OTnMQRKOx3eTk.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+   "format": "Movie",
+   "genres": [
+    "Thriller",
+    "Crime",
+    "Comedy"
+   ],
+   "id": "movie:1054867",
+   "media": "movie",
+   "name": "One Battle After Another",
+   "runtime": "2h 42m",
+   "score": 7.3,
+   "year": 2025
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/8sNiAPPYU14PUepFNeSNGUTiHW.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+   "format": "Movie",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Science Fiction"
+   ],
+   "id": "movie:157336",
+   "media": "movie",
+   "name": "Interstellar",
+   "runtime": "2h 49m",
+   "score": 8.5,
+   "year": 2014
+  }
+ ],
+ "tagline": "Dance with the devil.",
+ "title": {
+  "banner": "https://image.tmdb.org/t/p/w1280/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
+  "cover": "https://image.tmdb.org/t/p/w500/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+  "format": "Movie",
+  "genres": [
+   "Horror",
+   "Action",
+   "Thriller"
+  ],
+  "id": "movie:1233413",
+  "media": "movie",
+  "name": "Sinners",
+  "runtime": "2h 18m",
+  "score": 7.5,
+  "year": 2025
+ },
+ "trailer": "https://www.youtube.com/results?search_query=Sinners+trailer"
+}

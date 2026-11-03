@@ -1,0 +1,47 @@
+{
+ "creator": {
+  "name": "TMS Entertainment",
+  "ref": "studio:73"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/191788"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/61603"
+  }
+ ],
+ "members": 26936,
+ "startDate": "2026-10-04",
+ "studios": [
+  {
+   "name": "TMS Entertainment",
+   "ref": "studio:73"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/191788-tyhsHpXeF26X.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191788-XC6F24LdX6a4.jpg",
+  "format": "TV",
+  "genres": [
+   "Sports"
+  ],
+  "id": "anime:191788",
+  "media": "anime",
+  "name": "Aoashi Season 2",
+  "next": {
+   "at": "2026-11-08T08:00:00.000Z",
+   "episode": 6
+  },
+  "runtime": "24 min",
+  "score": 8.0,
+  "season": "Fall 2026",
+  "state": "Releasing",
+  "studio": "TMS Entertainment",
+  "subtitle": "Aoashi 2nd Season · アオアシ 第2期",
+  "total": 24,
+  "year": 2026
+ }
+}

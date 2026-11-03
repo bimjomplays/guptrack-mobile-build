@@ -1,0 +1,32 @@
+{
+ "id": "studio:7385",
+ "kind": "Animation studio",
+ "name": "100studio",
+ "titles": [
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195571-UkdB06UpyL8k.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195571-fvj7u5GI7BRT.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Supernatural"
+   ],
+   "id": "anime:195571",
+   "media": "anime",
+   "name": "The Vermilion Mask",
+   "next": {
+    "at": "2026-11-07T08:30:00.000Z",
+    "episode": 5
+   },
+   "runtime": "24 min",
+   "score": 6.8,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "100studio",
+   "subtitle": "Shuiro no Kamen · 朱色の仮面",
+   "year": 2026
+  }
+ ],
+ "total": 1
+}

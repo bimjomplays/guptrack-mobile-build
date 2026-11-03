@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "Tatsunoko Production",
+  "ref": "studio:103"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/20513"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/23281"
+  }
+ ],
+ "members": 140466,
+ "startDate": "2014-10-10",
+ "studios": [
+  {
+   "name": "Tatsunoko Production",
+   "ref": "studio:103"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20513-dpjLwKrlNnJf.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20513-pVQqYhMwBGoh.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Psychological",
+   "Sci-Fi",
+   "Thriller"
+  ],
+  "id": "anime:20513",
+  "media": "anime",
+  "name": "PSYCHO-PASS 2",
+  "runtime": "23 min",
+  "score": 7.1,
+  "season": "Fall 2014",
+  "state": "Finished",
+  "studio": "Tatsunoko Production",
+  "subtitle": "PSYCHO-PASS サイコパス2",
+  "total": 11,
+  "year": 2014
+ }
+}

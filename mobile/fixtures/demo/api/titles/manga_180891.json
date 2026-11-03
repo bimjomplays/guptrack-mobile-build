@@ -1,0 +1,30 @@
+{
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/manga/180891"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/manga/172750"
+  }
+ ],
+ "members": 20075,
+ "startDate": "2024-07-29",
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/180891-q5sLZRnEzqih.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx180891-ZBbyOWSYI41R.jpg",
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Fantasy"
+  ],
+  "id": "manga:180891",
+  "media": "manga",
+  "name": "Absolute Regression",
+  "score": 8.2,
+  "state": "Releasing",
+  "subtitle": "Jeoldaehoegwi · 절대회귀",
+  "year": 2024
+ }
+}

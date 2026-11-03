@@ -1,0 +1,82 @@
+{
+ "item": {
+  "at": "2026-11-03T14:29:00.000Z",
+  "id": "a1",
+  "liked": true,
+  "likes": 5,
+  "media": "anime",
+  "object": "Frieren: Beyond Journey’s End",
+  "replies": 2,
+  "score": 90,
+  "title": {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/154587-ivXNJ23SM1xB.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Fantasy"
+   ],
+   "id": "anime:154587",
+   "media": "anime",
+   "name": "Frieren: Beyond Journey’s End",
+   "runtime": "24 min",
+   "score": 9.1,
+   "season": "Fall 2023",
+   "state": "Finished",
+   "studio": "MADHOUSE",
+   "subtitle": "Sousou no Frieren · 葬送のフリーレン",
+   "total": 28,
+   "year": 2023
+  },
+  "user": {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+   "name": "Kenji",
+   "username": "kenji"
+  },
+  "verb": "completed"
+ },
+ "likedBy": [
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+   "name": "Tobi",
+   "username": "tobiwan"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+   "name": "Noor",
+   "username": "noor.reads"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+   "name": "Lena",
+   "username": "lena"
+  }
+ ],
+ "replies": [
+  {
+   "at": "2026-11-03T14:33:00.000Z",
+   "id": "r1",
+   "liked": false,
+   "likes": 3,
+   "text": "About time!! That exam stretch is some of the best fantasy TV in years.",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+    "name": "Tobi",
+    "username": "tobiwan"
+   }
+  },
+  {
+   "at": "2026-11-03T14:39:00.000Z",
+   "id": "r2",
+   "liked": false,
+   "likes": 1,
+   "text": "Told you the exam arc would get you. Now read the manga, it keeps going.",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+    "name": "Mika",
+    "username": "mika"
+   }
+  }
+ ]
+}

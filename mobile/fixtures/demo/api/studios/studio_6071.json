@@ -1,0 +1,29 @@
+{
+ "id": "studio:6071",
+ "kind": "Animation studio",
+ "name": "Shuka",
+ "titles": [
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21711-iJuWzyf6U50p.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21711-EQN4sCIXRhKf.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Psychological"
+   ],
+   "id": "anime:21711",
+   "media": "anime",
+   "name": "91 Days",
+   "runtime": "24 min",
+   "score": 7.6,
+   "season": "Summer 2016",
+   "state": "Finished",
+   "studio": "Shuka",
+   "subtitle": "91Days · 91Days",
+   "total": 12,
+   "year": 2016
+  }
+ ],
+ "total": 1
+}

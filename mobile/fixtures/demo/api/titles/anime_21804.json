@@ -1,0 +1,49 @@
+{
+ "creator": {
+  "name": "J.C.STAFF",
+  "ref": "studio:7"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/21804"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/33255"
+  }
+ ],
+ "members": 365667,
+ "startDate": "2016-07-04",
+ "studios": [
+  {
+   "name": "J.C.STAFF",
+   "ref": "studio:7"
+  },
+  {
+   "name": "EGG FIRM",
+   "ref": "studio:6127"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21804-K0xl0PE1PfHt.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21804-As6tDLAvEvNY.jpg",
+  "format": "TV Short",
+  "genres": [
+   "Comedy",
+   "Slice of Life",
+   "Supernatural"
+  ],
+  "id": "anime:21804",
+  "media": "anime",
+  "name": "The Disastrous Life of Saiki K.",
+  "runtime": "5 min",
+  "score": 8.3,
+  "season": "Summer 2016",
+  "state": "Finished",
+  "studio": "J.C.STAFF",
+  "subtitle": "Saiki Kusuo no Ψ-nan · 斉木楠雄のΨ難",
+  "total": 120,
+  "year": 2016
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "Bandai Namco Pictures",
+  "ref": "studio:6116"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/114129"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/39486"
+  }
+ ],
+ "members": 56743,
+ "startDate": "2021-01-08",
+ "studios": [
+  {
+   "name": "Bandai Namco Pictures",
+   "ref": "studio:6116"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/114129-ZsLDkdwaYeJY.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx114129-RLgSuh6YbeYx.jpg",
+  "format": "Movie",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Drama",
+   "Sci-Fi"
+  ],
+  "id": "anime:114129",
+  "media": "anime",
+  "name": "Gintama: THE VERY FINAL",
+  "runtime": "104 min",
+  "score": 9.0,
+  "season": "Winter 2021",
+  "state": "Finished",
+  "studio": "Bandai Namco Pictures",
+  "subtitle": "Gintama: THE FINAL · 銀魂 THE FINAL",
+  "total": 1,
+  "year": 2021
+ }
+}

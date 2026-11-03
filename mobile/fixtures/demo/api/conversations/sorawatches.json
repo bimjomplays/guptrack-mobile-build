@@ -1,0 +1,25 @@
+{
+ "messages": [
+  {
+   "at": "2026-10-30T13:21:00.000Z",
+   "fromMe": false,
+   "id": "s1",
+   "text": "started Severance s2 finally"
+  },
+  {
+   "at": "2026-10-30T13:41:00.000Z",
+   "fromMe": true,
+   "id": "s2",
+   "read": "2026-10-30T14:41:00.000Z",
+   "text": "tell me when you’re done with Shōgun"
+  }
+ ],
+ "status": "Watching Severance",
+ "typing": false,
+ "unread": 0,
+ "user": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+  "name": "Sora",
+  "username": "sorawatches"
+ }
+}

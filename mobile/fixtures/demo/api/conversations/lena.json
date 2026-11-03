@@ -1,0 +1,20 @@
+{
+ "messages": [
+  {
+   "at": "2026-11-01T11:36:00.000Z",
+   "fromMe": true,
+   "id": "l1",
+   "reaction": "❤️",
+   "read": "2026-11-01T11:41:00.000Z",
+   "text": "Severance is back and so good"
+  }
+ ],
+ "status": "Active yesterday",
+ "typing": false,
+ "unread": 0,
+ "user": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+  "name": "Lena",
+  "username": "lena"
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "MADHOUSE",
+  "ref": "studio:11"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/154587"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/52991"
+  }
+ ],
+ "members": 496054,
+ "reviews": 52,
+ "startDate": "2023-09-29",
+ "studios": [
+  {
+   "name": "MADHOUSE",
+   "ref": "studio:11"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/154587-ivXNJ23SM1xB.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+  "format": "TV",
+  "genres": [
+   "Adventure",
+   "Drama",
+   "Fantasy"
+  ],
+  "id": "anime:154587",
+  "media": "anime",
+  "name": "Frieren: Beyond Journey’s End",
+  "runtime": "24 min",
+  "score": 9.1,
+  "season": "Fall 2023",
+  "state": "Finished",
+  "studio": "MADHOUSE",
+  "subtitle": "Sousou no Frieren · 葬送のフリーレン",
+  "total": 28,
+  "year": 2023
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "creator": {
+  "name": "GONZO",
+  "ref": "studio:3"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/1210"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/1210"
+  }
+ ],
+ "members": 207386,
+ "startDate": "2006-07-10",
+ "studios": [
+  {
+   "name": "GONZO",
+   "ref": "studio:3"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1210-M5oFyKfKm2zT.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1210-2XotjcgqdcaX.jpg",
+  "format": "TV",
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Psychological",
+   "Romance",
+   "Slice of Life"
+  ],
+  "id": "anime:1210",
+  "media": "anime",
+  "name": "Welcome to the N-H-K",
+  "runtime": "24 min",
+  "score": 8.2,
+  "season": "Summer 2006",
+  "state": "Finished",
+  "studio": "GONZO",
+  "subtitle": "NHK ni Youkoso! · N・H・Kにようこそ！",
+  "total": 24,
+  "year": 2006
+ }
+}

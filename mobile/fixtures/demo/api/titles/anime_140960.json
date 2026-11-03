@@ -1,0 +1,50 @@
+{
+ "creator": {
+  "name": "CloverWorks",
+  "ref": "studio:6222"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/140960"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/50265"
+  }
+ ],
+ "members": 581435,
+ "startDate": "2022-04-09",
+ "studios": [
+  {
+   "name": "CloverWorks",
+   "ref": "studio:6222"
+  },
+  {
+   "name": "WIT STUDIO",
+   "ref": "studio:858"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/140960-Z7xSvkRxHKfj.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx140960-Kb6R5nYQfjmP.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Slice of Life",
+   "Supernatural"
+  ],
+  "id": "anime:140960",
+  "media": "anime",
+  "name": "SPY x FAMILY",
+  "runtime": "24 min",
+  "score": 8.3,
+  "season": "Spring 2022",
+  "state": "Finished",
+  "studio": "CloverWorks",
+  "subtitle": "SPY×FAMILY · SPY×FAMILY",
+  "total": 12,
+  "year": 2022
+ }
+}

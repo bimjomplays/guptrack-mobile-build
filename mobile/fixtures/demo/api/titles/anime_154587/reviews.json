@@ -1,0 +1,129 @@
+{
+ "average": 8.7,
+ "count": 52,
+ "reviews": [
+  {
+   "at": "2026-11-03T14:29:00.000Z",
+   "body": "It never hurries, and that is the point. An elf who outlives everyone slowly learns what the short years meant, and the quiet episodes build to the exam, which pays all of them off.\n\nFern and Stark grow up in the gaps between scenes, and by the end you notice how much they’ve changed without anyone saying it.",
+   "friend": true,
+   "headline": "Patient, sad and warm",
+   "id": "frieren-kenji",
+   "liked": true,
+   "likes": 17,
+   "replies": 2,
+   "score": 90,
+   "spoiler": false,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "name": "Kenji",
+    "username": "kenji"
+   }
+  },
+  {
+   "at": "2026-10-28T14:41:00.000Z",
+   "body": "Madhouse gives a gentle story big-budget animation. The young pair carry the middle stretch, the fight with Aura lands perfectly, and the music never tells you what to feel.",
+   "friend": false,
+   "headline": "A fantasy made for grown-ups",
+   "id": "frieren-makima",
+   "liked": false,
+   "likes": 188,
+   "replies": 27,
+   "score": 100,
+   "spoiler": false,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137080-UHcynYNjb5ZU.png",
+    "name": "Makima Fan",
+    "username": "makima.fan"
+   }
+  },
+  {
+   "at": "2026-10-19T14:41:00.000Z",
+   "body": "It is gorgeous and I see why people love it, yet early on nothing much is at risk. Expect a stroll with companions more than a quest.",
+   "friend": false,
+   "headline": "Lovely, but slow going",
+   "id": "frieren-power",
+   "liked": false,
+   "likes": 41,
+   "replies": 16,
+   "score": 60,
+   "spoiler": false,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b28967-ShW5sAxzZDny.png",
+    "name": "Power",
+    "username": "powerpower"
+   }
+  },
+  {
+   "at": "2026-10-13T14:41:00.000Z",
+   "body": "The adaptation adds so much air to the panels. The flashbacks to Himmel hit harder with music.",
+   "friend": true,
+   "headline": "Read the manga, then watch this",
+   "id": "frieren-noor",
+   "liked": false,
+   "likes": 36,
+   "replies": 4,
+   "score": 95,
+   "spoiler": false,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+    "name": "Noor",
+    "username": "noor.reads"
+   }
+  },
+  {
+   "at": "2026-10-04T14:41:00.000Z",
+   "body": "Serie’s test at the end is the whole show in one scene: who you are matters more than what you can do. Big spoilers below for the last episodes.",
+   "friend": true,
+   "headline": "The exam arc ending, discussed",
+   "id": "frieren-hal",
+   "liked": false,
+   "likes": 9,
+   "replies": 3,
+   "score": 80,
+   "spoiler": true,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+    "name": "Hal",
+    "username": "hal"
+   }
+  },
+  {
+   "at": "2026-09-20T14:41:00.000Z",
+   "body": "Lovely to look at, a little too pleased with its own quiet. Episode 10 is a standout.",
+   "friend": false,
+   "headline": "Good, not the masterpiece people say",
+   "id": "frieren-yuki",
+   "liked": false,
+   "likes": 22,
+   "replies": 8,
+   "score": 70,
+   "spoiler": false,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b61-ywXUyyocEEqt.png",
+    "name": "Yuki",
+    "username": "yuki.tv"
+   }
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/154587-ivXNJ23SM1xB.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+  "format": "TV",
+  "genres": [
+   "Adventure",
+   "Drama",
+   "Fantasy"
+  ],
+  "id": "anime:154587",
+  "media": "anime",
+  "name": "Frieren: Beyond Journey’s End",
+  "runtime": "24 min",
+  "score": 9.1,
+  "season": "Fall 2023",
+  "state": "Finished",
+  "studio": "MADHOUSE",
+  "subtitle": "Sousou no Frieren · 葬送のフリーレン",
+  "total": 28,
+  "year": 2023
+ }
+}

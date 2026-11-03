@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "Bandai Namco Pictures",
+  "ref": "studio:6116"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/20996"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/28977"
+  }
+ ],
+ "members": 121111,
+ "startDate": "2015-04-08",
+ "studios": [
+  {
+   "name": "Bandai Namco Pictures",
+   "ref": "studio:6116"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20996-gaNJKtjmy3Pf.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20996-kBEGEGdeK1r7.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Drama",
+   "Sci-Fi"
+  ],
+  "id": "anime:20996",
+  "media": "anime",
+  "name": "Gintama Season 3",
+  "runtime": "24 min",
+  "score": 9.0,
+  "season": "Spring 2015",
+  "state": "Finished",
+  "studio": "Bandai Namco Pictures",
+  "subtitle": "Gintama° · 銀魂゜",
+  "total": 51,
+  "year": 2015
+ }
+}

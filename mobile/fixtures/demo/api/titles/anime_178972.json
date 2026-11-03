@@ -1,0 +1,49 @@
+{
+ "creator": {
+  "name": "CloverWorks",
+  "ref": "studio:6222"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/178972"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/59217"
+  }
+ ],
+ "members": 15010,
+ "startDate": "2026-11-06",
+ "studios": [
+  {
+   "name": "CloverWorks",
+   "ref": "studio:6222"
+  }
+ ],
+ "title": {
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178972-THp4trZ9uR9b.jpg",
+  "format": "Movie",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Drama",
+   "Sci-Fi",
+   "Slice of Life",
+   "Supernatural"
+  ],
+  "id": "anime:178972",
+  "media": "anime",
+  "name": "GROTESQQQUE",
+  "next": {
+   "at": "2026-11-05T15:00:00.000Z",
+   "episode": 1
+  },
+  "season": "Fall 2026",
+  "state": "Not yet released",
+  "studio": "CloverWorks",
+  "subtitle": "GROTESQQQUE-グロテスク-",
+  "total": 3,
+  "year": 2026
+ }
+}

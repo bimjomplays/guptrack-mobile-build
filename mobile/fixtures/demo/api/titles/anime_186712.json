@@ -1,0 +1,38 @@
+{
+ "creator": {
+  "name": "CloverWorks",
+  "ref": "studio:6222"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/186712"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/61006"
+  }
+ ],
+ "members": 42604,
+ "studios": [
+  {
+   "name": "CloverWorks",
+   "ref": "studio:6222"
+  }
+ ],
+ "title": {
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186712-d5I2TjUQcHuI.jpg",
+  "format": "TV",
+  "genres": [
+   "Comedy",
+   "Music",
+   "Slice of Life"
+  ],
+  "id": "anime:186712",
+  "media": "anime",
+  "name": "Bocchi the Rock! 2nd Season",
+  "state": "Not yet released",
+  "studio": "CloverWorks",
+  "subtitle": "ぼっち・ざ・ろっく！ 2期"
+ }
+}

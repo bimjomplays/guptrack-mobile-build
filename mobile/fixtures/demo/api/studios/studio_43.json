@@ -1,0 +1,206 @@
+{
+ "id": "studio:43",
+ "kind": "Animation studio",
+ "name": "ufotable",
+ "titles": [
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/143103-KwDRPfPl4OwL.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx143103-vvsaIpZPpIuE.png",
+   "format": "Movie",
+   "genres": [
+    "Action",
+    "Drama",
+    "Fantasy"
+   ],
+   "id": "anime:143103",
+   "media": "anime",
+   "name": "Witch on the Holy Night",
+   "next": {
+    "at": "2026-11-19T15:00:00.000Z",
+    "episode": 1
+   },
+   "season": "Fall 2026",
+   "state": "Not yet released",
+   "studio": "ufotable",
+   "subtitle": "Mahoutsukai no Yoru · 魔法使いの夜",
+   "total": 1,
+   "year": 2026
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/166240-YdxoEhrfwNk0.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166240-PBV7zukIHW7V.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Supernatural"
+   ],
+   "id": "anime:166240",
+   "media": "anime",
+   "name": "Demon Slayer: Kimetsu no Yaiba Hashira Training Arc",
+   "runtime": "30 min",
+   "score": 7.9,
+   "season": "Spring 2024",
+   "state": "Finished",
+   "studio": "ufotable",
+   "subtitle": "Kimetsu no Yaiba: Hashira Geiko-hen · 鬼滅の刃 柱稽古編",
+   "total": 8,
+   "year": 2024
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/145139-V01Prh6UzfRk.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145139-rRimpHGWLhym.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Supernatural"
+   ],
+   "id": "anime:145139",
+   "media": "anime",
+   "name": "Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc",
+   "runtime": "24 min",
+   "score": 8.0,
+   "season": "Spring 2023",
+   "state": "Finished",
+   "studio": "ufotable",
+   "subtitle": "Kimetsu no Yaiba: Katanakaji no Sato-hen · 鬼滅の刃 刀鍛冶の里編",
+   "total": 11,
+   "year": 2023
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/142329-i413SzLmToZN.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx142329-kET1PIXJv2eW.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Supernatural"
+   ],
+   "id": "anime:142329",
+   "media": "anime",
+   "name": "Demon Slayer: Kimetsu no Yaiba Entertainment District Arc",
+   "runtime": "24 min",
+   "score": 8.5,
+   "season": "Winter 2022",
+   "state": "Finished",
+   "studio": "ufotable",
+   "subtitle": "Kimetsu no Yaiba: Yuukaku-hen · 鬼滅の刃 遊郭編",
+   "total": 11,
+   "year": 2022
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/129874-3ipZzS50i9Ta.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx129874-g6ZKXB94Hui1.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Mystery",
+    "Supernatural"
+   ],
+   "id": "anime:129874",
+   "media": "anime",
+   "name": "Demon Slayer: Kimetsu no Yaiba Mugen Train Arc",
+   "runtime": "23 min",
+   "score": 8.2,
+   "season": "Fall 2021",
+   "state": "Finished",
+   "studio": "ufotable",
+   "subtitle": "Kimetsu no Yaiba: Mugen Ressha-hen (TV) · 鬼滅の刃 無限列車編 (TV)",
+   "total": 7,
+   "year": 2021
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/101922-33MtJGsUSxga.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101922-WBsBl0ClmgYL.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Supernatural"
+   ],
+   "id": "anime:101922",
+   "media": "anime",
+   "name": "Demon Slayer: Kimetsu no Yaiba",
+   "runtime": "24 min",
+   "score": 8.2,
+   "season": "Spring 2019",
+   "state": "Finished",
+   "studio": "ufotable",
+   "subtitle": "Kimetsu no Yaiba · 鬼滅の刃",
+   "total": 26,
+   "year": 2019
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11741-TWwZCgsK5aXh.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11741-oEy1fJHYm2zJ.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Fantasy",
+    "Supernatural"
+   ],
+   "id": "anime:11741",
+   "media": "anime",
+   "name": "Fate/Zero Season 2",
+   "runtime": "24 min",
+   "score": 8.4,
+   "season": "Spring 2012",
+   "state": "Finished",
+   "studio": "ufotable",
+   "subtitle": "Fate/Zero 2nd Season · Fate/Zero 2ndシーズン",
+   "total": 12,
+   "year": 2012
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/10087-32MFY9VnJQ7I.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10087-M4Hd9qrHGrXk.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Fantasy",
+    "Supernatural"
+   ],
+   "id": "anime:10087",
+   "media": "anime",
+   "name": "Fate/Zero",
+   "runtime": "24 min",
+   "score": 8.1,
+   "season": "Fall 2011",
+   "state": "Finished",
+   "studio": "ufotable",
+   "total": 13,
+   "year": 2011
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195200-wJaLJ4mDDKGc.png",
+   "format": "Movie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Supernatural"
+   ],
+   "id": "anime:195200",
+   "media": "anime",
+   "name": "Demon Slayer: Kimetsu no Yaiba Infinity Castle Part 2",
+   "state": "Not yet released",
+   "studio": "ufotable",
+   "subtitle": "Kimetsu no Yaiba: Mugenjou-hen Movie 2 · 劇場版「鬼滅の刃」無限城編 第二章",
+   "total": 1
+  }
+ ],
+ "total": 9
+}

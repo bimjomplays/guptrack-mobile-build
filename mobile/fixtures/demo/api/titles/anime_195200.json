@@ -1,0 +1,40 @@
+{
+ "creator": {
+  "name": "ufotable",
+  "ref": "studio:43"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/195200"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/62546"
+  }
+ ],
+ "members": 35923,
+ "studios": [
+  {
+   "name": "ufotable",
+   "ref": "studio:43"
+  }
+ ],
+ "title": {
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195200-wJaLJ4mDDKGc.png",
+  "format": "Movie",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Supernatural"
+  ],
+  "id": "anime:195200",
+  "media": "anime",
+  "name": "Demon Slayer: Kimetsu no Yaiba Infinity Castle Part 2",
+  "state": "Not yet released",
+  "studio": "ufotable",
+  "subtitle": "Kimetsu no Yaiba: Mugenjou-hen Movie 2 · 劇場版「鬼滅の刃」無限城編 第二章",
+  "total": 1
+ }
+}

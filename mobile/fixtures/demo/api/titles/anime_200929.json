@@ -1,0 +1,45 @@
+{
+ "creator": {
+  "name": "TOHO animation STUDIO",
+  "ref": "studio:7368"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/200929"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/62844"
+  }
+ ],
+ "members": 32495,
+ "startDate": "2026-12-11",
+ "studios": [
+  {
+   "name": "TOHO animation STUDIO",
+   "ref": "studio:7368"
+  }
+ ],
+ "title": {
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx200929-dx3hnftE7K7C.jpg",
+  "format": "Movie",
+  "genres": [
+   "Drama",
+   "Mystery"
+  ],
+  "id": "anime:200929",
+  "media": "anime",
+  "name": "The Apothecary Diaries: The Late Lady’s Treasure",
+  "next": {
+   "at": "2026-12-10T15:00:00.000Z",
+   "episode": 1
+  },
+  "season": "Fall 2026",
+  "state": "Not yet released",
+  "studio": "TOHO animation STUDIO",
+  "subtitle": "Kusuriya no Hitorigoto: Bouhi no Hihou · 薬屋のひとりごと 亡妃の秘宝",
+  "total": 1,
+  "year": 2026
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "creator": {
+  "name": "MADHOUSE",
+  "ref": "studio:11"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/20623"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/22535"
+  }
+ ],
+ "members": 507998,
+ "startDate": "2014-10-09",
+ "studios": [
+  {
+   "name": "MADHOUSE",
+   "ref": "studio:11"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20623-xb9PPf8rGOsG.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20623-dUARfggnNDOe.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Horror",
+   "Psychological",
+   "Sci-Fi"
+  ],
+  "id": "anime:20623",
+  "media": "anime",
+  "name": "Parasyte -the maxim-",
+  "runtime": "24 min",
+  "score": 8.1,
+  "season": "Fall 2014",
+  "state": "Finished",
+  "studio": "MADHOUSE",
+  "subtitle": "Kiseijuu: Sei no Kakuritsu · 寄生獣 セイの格率",
+  "total": 24,
+  "year": 2014
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "creator": {
+  "name": "OLM",
+  "ref": "studio:28"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/129201"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/47194"
+  }
+ ],
+ "members": 230907,
+ "startDate": "2022-04-15",
+ "studios": [
+  {
+   "name": "OLM",
+   "ref": "studio:28"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/129201-eeCsKFrCSQPS.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx129201-HJBauga2be8I.png",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Mystery",
+   "Supernatural",
+   "Thriller"
+  ],
+  "id": "anime:129201",
+  "media": "anime",
+  "name": "Summer Time Rendering",
+  "runtime": "24 min",
+  "score": 8.3,
+  "season": "Spring 2022",
+  "state": "Finished",
+  "studio": "OLM",
+  "subtitle": "Summer Time Render · サマータイムレンダ",
+  "total": 25,
+  "year": 2022
+ }
+}

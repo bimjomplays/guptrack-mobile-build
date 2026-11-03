@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "A-1 Pictures",
+  "ref": "studio:561"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/194884"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/61903"
+  }
+ ],
+ "members": 53967,
+ "startDate": "2025-12-31",
+ "studios": [
+  {
+   "name": "A-1 Pictures",
+   "ref": "studio:561"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/194884-PwYRWyOUEwZI.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194884-rHgGAzKSCEWz.jpg",
+  "format": "Special",
+  "genres": [
+   "Comedy",
+   "Psychological",
+   "Romance",
+   "Slice of Life"
+  ],
+  "id": "anime:194884",
+  "media": "anime",
+  "name": "Kaguya-sama: Love Is War -Stairway to Adulthood-",
+  "runtime": "26 min",
+  "score": 8.4,
+  "season": "Fall 2025",
+  "state": "Finished",
+  "studio": "A-1 Pictures",
+  "subtitle": "Kaguya-sama wa Kokurasetai: Otona e no Kaidan · かぐや様は告らせたい 大人への階段",
+  "total": 2,
+  "year": 2025
+ }
+}

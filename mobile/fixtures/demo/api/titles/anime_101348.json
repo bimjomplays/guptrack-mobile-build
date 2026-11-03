@@ -1,0 +1,45 @@
+{
+ "creator": {
+  "name": "WIT STUDIO",
+  "ref": "studio:858"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/101348"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/37521"
+  }
+ ],
+ "members": 558038,
+ "startDate": "2019-07-08",
+ "studios": [
+  {
+   "name": "WIT STUDIO",
+   "ref": "studio:858"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/101348-pivKKffCAwAY.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101348-2fhDFPCuMNiz.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama"
+  ],
+  "id": "anime:101348",
+  "media": "anime",
+  "name": "Vinland Saga",
+  "runtime": "24 min",
+  "score": 8.7,
+  "season": "Summer 2019",
+  "state": "Finished",
+  "studio": "WIT STUDIO",
+  "subtitle": "VINLAND SAGA · ヴィンランド・サガ",
+  "total": 24,
+  "year": 2019
+ }
+}

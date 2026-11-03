@@ -1,0 +1,67 @@
+{
+ "credits": [
+  {
+   "role": "Sound Effects",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210482-pYAD0IbzNbgS.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+    "format": "ONA",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Drama",
+     "Mystery",
+     "Supernatural"
+    ],
+    "id": "anime:210482",
+    "media": "anime",
+    "name": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+    "next": {
+     "at": "2026-11-06T08:00:00.000Z",
+     "episode": 7
+    },
+    "runtime": "23 min",
+    "score": 8.6,
+    "season": "Fall 2026",
+    "state": "Releasing",
+    "studio": "david production",
+    "subtitle": "JoJo no Kimyou na Bouken: Steel Ball Run - 2nd & 3rd STAGE · ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE",
+    "total": 11,
+    "year": 2026
+   }
+  }
+ ],
+ "id": "person:111053",
+ "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n111053-JqHbuORNk3e5.png",
+ "knownFor": [
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210482-pYAD0IbzNbgS.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+   "format": "ONA",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Mystery",
+    "Supernatural"
+   ],
+   "id": "anime:210482",
+   "media": "anime",
+   "name": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+   "next": {
+    "at": "2026-11-06T08:00:00.000Z",
+    "episode": 7
+   },
+   "runtime": "23 min",
+   "score": 8.6,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "david production",
+   "subtitle": "JoJo no Kimyou na Bouken: Steel Ball Run - 2nd & 3rd STAGE · ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE",
+   "total": 11,
+   "year": 2026
+  }
+ ],
+ "name": "Yasumasa Koyama",
+ "occupation": "Sound Effects"
+}

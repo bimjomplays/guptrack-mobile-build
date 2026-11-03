@@ -1,0 +1,30 @@
+{
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/manga/182139"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/manga/174687"
+  }
+ ],
+ "members": 6433,
+ "startDate": "2024-09-24",
+ "title": {
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx182139-2skHo9YMWUk0.jpg",
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "id": "manga:182139",
+  "media": "manga",
+  "name": "My Avatars’ Path to Greatness",
+  "score": 7.5,
+  "state": "Releasing",
+  "subtitle": "Nae Bunsini Geomuri Doeeoganda · 내 분신이 거물이 되어간다",
+  "year": 2024
+ }
+}

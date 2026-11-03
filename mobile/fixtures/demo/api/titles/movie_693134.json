@@ -1,0 +1,230 @@
+{
+ "cast": [
+  {
+   "image": "https://image.tmdb.org/t/p/w185/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
+   "name": "Timothée Chalamet",
+   "ref": "person:tmdb-1190668",
+   "role": "Paul Atreides"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/qGkBlyn1AwQpuFnRARMRwj0iHZp.jpg",
+   "name": "Zendaya",
+   "role": "Chani"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/ty8ZPzaCBBlqIr5qzpOXI24iC8j.jpg",
+   "name": "Rebecca Ferguson",
+   "role": "Jessica"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/zfRID0jx8DKBluPGU9xtk9sZWUt.jpg",
+   "name": "Javier Bardem",
+   "role": "Stilgar"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/7QpneI3HoZCCDVPyWx3p3t7yeo7.jpg",
+   "name": "Josh Brolin",
+   "role": "Gurney Halleck"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/atdAs4pFGjUQ4m2W8kJYly7N6cC.jpg",
+   "name": "Austin Butler",
+   "role": "Feyd-Rautha"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/1QfiLnofJFlOJOLCWaxyDpIN03v.jpg",
+   "name": "Florence Pugh",
+   "role": "Princess Irulan"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg",
+   "name": "Dave Bautista",
+   "role": "Beast Rabban"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/ApgDL7nudR9T2GpjCG4vESgymO2.jpg",
+   "name": "Christopher Walken",
+   "role": "Emperor"
+  }
+ ],
+ "creator": {
+  "name": "Denis Villeneuve",
+  "role": "Director"
+ },
+ "crew": [
+  {
+   "name": "Denis Villeneuve",
+   "role": "Director"
+  },
+  {
+   "name": "Jon Spaihts, Denis Villeneuve",
+   "role": "Screenplay"
+  },
+  {
+   "name": "Frank Herbert",
+   "role": "Novel"
+  },
+  {
+   "name": "Hans Zimmer",
+   "role": "Original Music"
+  },
+  {
+   "name": "Greig Fraser",
+   "role": "Cinematography"
+  }
+ ],
+ "description": "Follow the mythic journey of Paul Atreides as he unites with Chani and the Fremen while on a path of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, Paul endeavors to prevent a terrible future only he can foresee.",
+ "links": [
+  {
+   "label": "TMDB",
+   "url": "https://www.themoviedb.org/movie/693134"
+  }
+ ],
+ "recommendations": [
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/neeNHeXjMF5fXoCJRsOmkNGC7q.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+   "format": "Movie",
+   "genres": [
+    "Drama",
+    "History",
+    "War"
+   ],
+   "id": "movie:872585",
+   "media": "movie",
+   "name": "Oppenheimer",
+   "runtime": "3h 1m",
+   "score": 8.0,
+   "year": 2023
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+   "format": "Movie",
+   "genres": [
+    "Horror",
+    "Action",
+    "Thriller"
+   ],
+   "id": "movie:1233413",
+   "media": "movie",
+   "name": "Sinners",
+   "runtime": "2h 18m",
+   "score": 7.5,
+   "year": 2025
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/7HR38hMBl23lf38MAN63y4pKsHz.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+   "format": "Movie",
+   "genres": [
+    "Drama",
+    "Romance"
+   ],
+   "id": "movie:666277",
+   "media": "movie",
+   "name": "Past Lives",
+   "runtime": "1h 46m",
+   "score": 7.7,
+   "year": 2023
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/fIwiFha3WPu5nHkBeMQ4GzEk0Hv.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+   "format": "Movie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Science Fiction"
+   ],
+   "id": "movie:545611",
+   "media": "movie",
+   "name": "Everything Everywhere All at Once",
+   "runtime": "2h 20m",
+   "score": 7.7,
+   "year": 2022
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/rvtdN5XkWAfGX6xDuPL6yYS2seK.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+   "format": "Movie",
+   "genres": [
+    "Crime",
+    "Mystery",
+    "Thriller"
+   ],
+   "id": "movie:414906",
+   "media": "movie",
+   "name": "The Batman",
+   "runtime": "2h 57m",
+   "score": 7.7,
+   "year": 2022
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/8VyTWJrNEyV2MTWvniDVp0MpOAe.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+   "format": "Movie",
+   "genres": [
+    "Horror",
+    "Mystery"
+   ],
+   "id": "movie:1078605",
+   "media": "movie",
+   "name": "Weapons",
+   "runtime": "2h 8m",
+   "score": 7.3,
+   "year": 2025
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/hiazLNa1UXuX35OTnMQRKOx3eTk.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+   "format": "Movie",
+   "genres": [
+    "Thriller",
+    "Crime",
+    "Comedy"
+   ],
+   "id": "movie:1054867",
+   "media": "movie",
+   "name": "One Battle After Another",
+   "runtime": "2h 42m",
+   "score": 7.3,
+   "year": 2025
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/8sNiAPPYU14PUepFNeSNGUTiHW.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+   "format": "Movie",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Science Fiction"
+   ],
+   "id": "movie:157336",
+   "media": "movie",
+   "name": "Interstellar",
+   "runtime": "2h 49m",
+   "score": 8.5,
+   "year": 2014
+  }
+ ],
+ "reviews": 128,
+ "startDate": "2024-03-01",
+ "tagline": "Long live the fighters.",
+ "title": {
+  "banner": "https://image.tmdb.org/t/p/w1280/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+  "cover": "https://image.tmdb.org/t/p/w500/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+  "format": "Movie",
+  "genres": [
+   "Science Fiction",
+   "Adventure"
+  ],
+  "id": "movie:693134",
+  "media": "movie",
+  "name": "Dune: Part Two",
+  "runtime": "2h 47m",
+  "score": 8.1,
+  "year": 2024
+ },
+ "trailer": "https://www.youtube.com/results?search_query=Dune+Part+Two+trailer"
+}

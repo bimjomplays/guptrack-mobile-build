@@ -1,0 +1,19 @@
+{
+ "deviceId": "demo-device",
+ "recoveryCodes": [
+  "h3tm-8qwe",
+  "z6pa-2nvc",
+  "r9kd-4fyu",
+  "c2xw-7gbj",
+  "v5ns-3ktr",
+  "e8jb-6mzq",
+  "y4uf-9dla",
+  "s7gh-5wnp"
+ ],
+ "token": "demo-token",
+ "user": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+  "name": "Mika",
+  "username": "mika"
+ }
+}

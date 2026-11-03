@@ -1,0 +1,78 @@
+{
+ "bio": "Andy Weir built a career as a software engineer until the success of his first published novel, THE MARTIAN, allowed him to live out his dream of writing fulltime. He is a lifelong space nerd and a devoted hobbyist of subjects such as relativistic physics, orbital mechanics, and the history of manned spaceflight. He also mixes a mean cocktail. He lives in California.",
+ "birthplace": "Davis, California",
+ "books": [
+  {
+   "rating": 4.53,
+   "title": {
+    "cover": "https://covers.openlibrary.org/b/id/11200092-L.jpg",
+    "format": "Book",
+    "genres": [
+     "hard science-fiction",
+     "science-fiction",
+     "sci-fi",
+     "hard sci-fi"
+    ],
+    "id": "book:OL21745884W",
+    "media": "book",
+    "name": "Project Hail Mary",
+    "score": 9.1,
+    "studio": "Andy Weir",
+    "subtitle": "Andy Weir",
+    "total": 496,
+    "year": 2021
+   }
+  },
+  {
+   "rating": 4.4,
+   "title": {
+    "cover": "https://covers.openlibrary.org/b/id/11447888-L.jpg",
+    "format": "Book",
+    "genres": [
+     "Science-Fiction",
+     "Science Fiction & Fantasy",
+     "Suspense & Thriller",
+     "Science fiction"
+    ],
+    "id": "book:OL17091839W",
+    "media": "book",
+    "name": "The Martian",
+    "score": 8.8,
+    "studio": "Andy Weir",
+    "subtitle": "Andy Weir",
+    "total": 407,
+    "year": 2011
+   }
+  },
+  {
+   "rating": 3.68,
+   "title": {
+    "cover": "https://covers.openlibrary.org/b/id/8235551-L.jpg",
+    "format": "Book",
+    "genres": [
+     "Fiction",
+     "Science fiction",
+     "Smuggling",
+     "Conspiracies"
+    ],
+    "id": "book:OL17837968W",
+    "media": "book",
+    "name": "Artemis",
+    "score": 7.4,
+    "studio": "Andy Weir",
+    "subtitle": "Andy Weir",
+    "total": 322,
+    "year": 2017
+   }
+  }
+ ],
+ "born": {
+  "day": 16,
+  "month": 6,
+  "year": 1972
+ },
+ "genre": "Science fiction",
+ "id": "author:OL7234434A",
+ "name": "Andy Weir",
+ "photo": "https://covers.openlibrary.org/b/id/8137363-L.jpg"
+}

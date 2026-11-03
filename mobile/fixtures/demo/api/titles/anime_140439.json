@@ -1,0 +1,48 @@
+{
+ "creator": {
+  "name": "bones",
+  "ref": "studio:4"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/140439"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/50172"
+  }
+ ],
+ "members": 270347,
+ "startDate": "2022-10-06",
+ "studios": [
+  {
+   "name": "bones",
+   "ref": "studio:4"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/140439-r9SRh0q0UgX1.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx140439-bPKmhe1wNxc9.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Drama",
+   "Psychological",
+   "Slice of Life",
+   "Supernatural"
+  ],
+  "id": "anime:140439",
+  "media": "anime",
+  "name": "Mob Psycho 100 III",
+  "runtime": "24 min",
+  "score": 8.7,
+  "season": "Fall 2022",
+  "state": "Finished",
+  "studio": "bones",
+  "subtitle": "モブサイコ100 Ⅲ",
+  "total": 12,
+  "year": 2022
+ }
+}

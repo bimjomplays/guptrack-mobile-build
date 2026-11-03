@@ -1,0 +1,201 @@
+{
+ "cast": [
+  {
+   "image": "https://image.tmdb.org/t/p/w185/2JHzTzO6G9ELyOBpDv3otAFzWlG.jpg",
+   "name": "Julia Garner",
+   "role": "Justine"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/7QpneI3HoZCCDVPyWx3p3t7yeo7.jpg",
+   "name": "Josh Brolin",
+   "role": "Archer"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/vOLiUSDT8rubu0J2YKwBkOL0K6V.jpg",
+   "name": "Alden Ehrenreich",
+   "role": "Paul"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/nvbJNwyhIICUFcS4lhxj9mGvL5z.jpg",
+   "name": "Austin Abrams",
+   "role": "James"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/yYfLyrC2CE6vBWSJfkpuVKL2POM.jpg",
+   "name": "Benedict Wong",
+   "role": "Marcus"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/h2jErDWMDFFJth4Y9GiVNmwZf65.jpg",
+   "name": "Amy Madigan",
+   "role": "Gladys"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/3ATVXSp6iPM9SaKUvQhI9tfGA5M.jpg",
+   "name": "Cary Christopher",
+   "role": "Alex"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/dUqygHlDDnOBZLnE51MPJHkHWvQ.jpg",
+   "name": "Toby Huss",
+   "role": "Captain Ed"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/ivz8rehM5WFKsUpDSULUFgPYyze.jpg",
+   "name": "Whitmer Thomas",
+   "role": "Alex's Dad"
+  }
+ ],
+ "description": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
+ "links": [
+  {
+   "label": "TMDB",
+   "url": "https://www.themoviedb.org/movie/1078605"
+  }
+ ],
+ "recommendations": [
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+   "format": "Movie",
+   "genres": [
+    "Science Fiction",
+    "Adventure"
+   ],
+   "id": "movie:693134",
+   "media": "movie",
+   "name": "Dune: Part Two",
+   "runtime": "2h 47m",
+   "score": 8.1,
+   "year": 2024
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/neeNHeXjMF5fXoCJRsOmkNGC7q.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+   "format": "Movie",
+   "genres": [
+    "Drama",
+    "History",
+    "War"
+   ],
+   "id": "movie:872585",
+   "media": "movie",
+   "name": "Oppenheimer",
+   "runtime": "3h 1m",
+   "score": 8.0,
+   "year": 2023
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+   "format": "Movie",
+   "genres": [
+    "Horror",
+    "Action",
+    "Thriller"
+   ],
+   "id": "movie:1233413",
+   "media": "movie",
+   "name": "Sinners",
+   "runtime": "2h 18m",
+   "score": 7.5,
+   "year": 2025
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/7HR38hMBl23lf38MAN63y4pKsHz.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+   "format": "Movie",
+   "genres": [
+    "Drama",
+    "Romance"
+   ],
+   "id": "movie:666277",
+   "media": "movie",
+   "name": "Past Lives",
+   "runtime": "1h 46m",
+   "score": 7.7,
+   "year": 2023
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/fIwiFha3WPu5nHkBeMQ4GzEk0Hv.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+   "format": "Movie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Science Fiction"
+   ],
+   "id": "movie:545611",
+   "media": "movie",
+   "name": "Everything Everywhere All at Once",
+   "runtime": "2h 20m",
+   "score": 7.7,
+   "year": 2022
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/rvtdN5XkWAfGX6xDuPL6yYS2seK.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+   "format": "Movie",
+   "genres": [
+    "Crime",
+    "Mystery",
+    "Thriller"
+   ],
+   "id": "movie:414906",
+   "media": "movie",
+   "name": "The Batman",
+   "runtime": "2h 57m",
+   "score": 7.7,
+   "year": 2022
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/hiazLNa1UXuX35OTnMQRKOx3eTk.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+   "format": "Movie",
+   "genres": [
+    "Thriller",
+    "Crime",
+    "Comedy"
+   ],
+   "id": "movie:1054867",
+   "media": "movie",
+   "name": "One Battle After Another",
+   "runtime": "2h 42m",
+   "score": 7.3,
+   "year": 2025
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/8sNiAPPYU14PUepFNeSNGUTiHW.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+   "format": "Movie",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Science Fiction"
+   ],
+   "id": "movie:157336",
+   "media": "movie",
+   "name": "Interstellar",
+   "runtime": "2h 49m",
+   "score": 8.5,
+   "year": 2014
+  }
+ ],
+ "tagline": "Last night at 2:17 AM, every child from Mrs. Gandy's class woke up, got out of bed, went downstairs, opened the front door, walked into the dark ...and they never came back.",
+ "title": {
+  "banner": "https://image.tmdb.org/t/p/w1280/8VyTWJrNEyV2MTWvniDVp0MpOAe.jpg",
+  "cover": "https://image.tmdb.org/t/p/w500/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+  "format": "Movie",
+  "genres": [
+   "Horror",
+   "Mystery"
+  ],
+  "id": "movie:1078605",
+  "media": "movie",
+  "name": "Weapons",
+  "runtime": "2h 8m",
+  "score": 7.3,
+  "year": 2025
+ },
+ "trailer": "https://www.youtube.com/results?search_query=Weapons+trailer"
+}

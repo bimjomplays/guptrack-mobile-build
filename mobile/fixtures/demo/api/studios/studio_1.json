@@ -1,0 +1,191 @@
+{
+ "id": "studio:1",
+ "kind": "Animation studio",
+ "name": "Studio Pierrot",
+ "titles": [
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195604-lQpCzTziSA17.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tSZcfKbVqSEG.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+   ],
+   "id": "anime:195604",
+   "media": "anime",
+   "name": "Black Clover Season 2",
+   "next": {
+    "at": "2026-11-07T14:00:00.000Z",
+    "episode": 6
+   },
+   "runtime": "24 min",
+   "score": 8.7,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "Studio Pierrot",
+   "subtitle": "Black Clover 2nd Season · ブラッククローバー 第2期",
+   "year": 2026
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/97940-1URQdQ4U1a0b.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97940-fyh8o7gNbha0.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+   ],
+   "id": "anime:97940",
+   "media": "anime",
+   "name": "Black Clover",
+   "runtime": "24 min",
+   "score": 7.9,
+   "season": "Fall 2017",
+   "state": "Finished",
+   "studio": "Studio Pierrot",
+   "subtitle": "ブラッククローバー",
+   "total": 170,
+   "year": 2017
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20605-RCJ7M71zLmrh.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b20605-k665mVkSug8D.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Psychological",
+    "Supernatural"
+   ],
+   "id": "anime:20605",
+   "media": "anime",
+   "name": "Tokyo Ghoul",
+   "runtime": "24 min",
+   "score": 7.6,
+   "season": "Summer 2014",
+   "state": "Finished",
+   "studio": "Studio Pierrot",
+   "subtitle": "東京喰種 トーキョーグール",
+   "total": 12,
+   "year": 2014
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1735.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1735-kGfVm0YqCPcu.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Supernatural"
+   ],
+   "id": "anime:1735",
+   "media": "anime",
+   "name": "Naruto: Shippuden",
+   "runtime": "23 min",
+   "score": 8.2,
+   "season": "Winter 2007",
+   "state": "Finished",
+   "studio": "Studio Pierrot",
+   "subtitle": "NARUTO: Shippuuden · NARUTO -ナルト- 疾風伝",
+   "total": 500,
+   "year": 2007
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Supernatural"
+   ],
+   "id": "anime:269",
+   "media": "anime",
+   "name": "Bleach",
+   "runtime": "24 min",
+   "score": 7.9,
+   "season": "Fall 2004",
+   "state": "Finished",
+   "studio": "Studio Pierrot",
+   "subtitle": "BLEACH · BLEACH",
+   "total": 366,
+   "year": 2004
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20-HHxhPj5JD13a.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20-dE6UHbFFg1A5.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Supernatural"
+   ],
+   "id": "anime:20",
+   "media": "anime",
+   "name": "Naruto",
+   "runtime": "23 min",
+   "score": 8.0,
+   "season": "Fall 2002",
+   "state": "Finished",
+   "studio": "Studio Pierrot",
+   "subtitle": "NARUTO · NARUTO -ナルト-",
+   "total": 220,
+   "year": 2002
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1281-QjxPqVZpNYDs.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1281-1D6fuMnHwor0.png",
+   "format": "TV",
+   "genres": [
+    "Horror",
+    "Mystery",
+    "Supernatural"
+   ],
+   "id": "anime:1281",
+   "media": "anime",
+   "name": "Ghost Stories",
+   "runtime": "25 min",
+   "score": 7.4,
+   "season": "Fall 2000",
+   "state": "Finished",
+   "studio": "Studio Pierrot",
+   "subtitle": "Gakkou no Kaidan · 学校の怪談",
+   "total": 19,
+   "year": 2000
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/392-nbB6cBnhHOFb.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx392-z90299zIvYmx.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Supernatural"
+   ],
+   "id": "anime:392",
+   "media": "anime",
+   "name": "Yu Yu Hakusho: Ghostfiles",
+   "runtime": "24 min",
+   "score": 8.3,
+   "season": "Fall 1992",
+   "state": "Finished",
+   "studio": "Studio Pierrot",
+   "subtitle": "Yuu☆Yuu☆Hakusho · 幽☆遊☆白書",
+   "total": 112,
+   "year": 1992
+  }
+ ],
+ "total": 8
+}

@@ -1,0 +1,135 @@
+{
+ "id": "studio:6309",
+ "kind": "Animation studio",
+ "name": "Studio Bind",
+ "titles": [
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx217434-xqZNBp5U3hgY.jpg",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Ecchi",
+    "Fantasy"
+   ],
+   "id": "anime:217434",
+   "media": "anime",
+   "name": "Mushoku Tensei III: Isekai Ittara Honki Dasu Part 2",
+   "state": "Not yet released",
+   "studio": "Studio Bind",
+   "subtitle": "無職転生Ⅲ ～異世界行ったら本気だす～ 第2クール",
+   "year": 2027
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178789-9nHWmoRLlcLu.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Ecchi",
+    "Fantasy"
+   ],
+   "id": "anime:178789",
+   "media": "anime",
+   "name": "Mushoku Tensei: Jobless Reincarnation Season 3",
+   "runtime": "24 min",
+   "score": 8.6,
+   "season": "Summer 2026",
+   "state": "Finished",
+   "studio": "Studio Bind",
+   "subtitle": "Mushoku Tensei III: Isekai Ittara Honki Dasu · 無職転生Ⅲ ～異世界行ったら本気だす～",
+   "total": 14,
+   "year": 2026
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/166873-GTi5imE5skM2.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166873-xO0BRPkmwFll.png",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Ecchi",
+    "Fantasy"
+   ],
+   "id": "anime:166873",
+   "media": "anime",
+   "name": "Mushoku Tensei: Jobless Reincarnation Season 2 Part 2",
+   "runtime": "24 min",
+   "score": 8.3,
+   "season": "Spring 2024",
+   "state": "Finished",
+   "studio": "Studio Bind",
+   "subtitle": "Mushoku Tensei II: Isekai Ittara Honki Dasu Part 2 · 無職転生Ⅱ ～異世界行ったら本気だす～ 第2クール",
+   "total": 12,
+   "year": 2024
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/146065-33RDijfuxLLk.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146065-IjirxRK26O03.png",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Ecchi",
+    "Fantasy"
+   ],
+   "id": "anime:146065",
+   "media": "anime",
+   "name": "Mushoku Tensei: Jobless Reincarnation Season 2",
+   "runtime": "24 min",
+   "score": 8.1,
+   "season": "Summer 2023",
+   "state": "Finished",
+   "studio": "Studio Bind",
+   "subtitle": "Mushoku Tensei II: Isekai Ittara Honki Dasu · 無職転生Ⅱ ～異世界行ったら本気だす～",
+   "total": 13,
+   "year": 2023
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/108465-RgsRpTMhP9Sv.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108465-1ANspF1EWyFx.jpg",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Ecchi",
+    "Fantasy"
+   ],
+   "id": "anime:108465",
+   "media": "anime",
+   "name": "Mushoku Tensei: Jobless Reincarnation",
+   "runtime": "24 min",
+   "score": 8.1,
+   "season": "Winter 2021",
+   "state": "Finished",
+   "studio": "Studio Bind",
+   "subtitle": "Mushoku Tensei: Isekai Ittara Honki Dasu · 無職転生 ～異世界行ったら本気だす～",
+   "total": 11,
+   "year": 2021
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/127720-oBpHiMWQhFVN.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127720-ADJgIrUVMdU9.jpg",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Ecchi",
+    "Fantasy"
+   ],
+   "id": "anime:127720",
+   "media": "anime",
+   "name": "Mushoku Tensei: Jobless Reincarnation Cour 2",
+   "runtime": "24 min",
+   "score": 8.5,
+   "season": "Fall 2021",
+   "state": "Finished",
+   "studio": "Studio Bind",
+   "subtitle": "Mushoku Tensei: Isekai Ittara Honki Dasu Part 2 · 無職転生 ～異世界行ったら本気だす～ 第2クール",
+   "total": 12,
+   "year": 2021
+  }
+ ],
+ "total": 6
+}

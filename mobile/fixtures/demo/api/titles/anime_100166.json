@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "bones",
+  "ref": "studio:4"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/100166"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/36456"
+  }
+ ],
+ "members": 609056,
+ "startDate": "2018-04-07",
+ "studios": [
+  {
+   "name": "bones",
+   "ref": "studio:4"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/100166-k7RXwN5vZg0r.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100166-jUCZYbzn2XLw.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Drama"
+  ],
+  "id": "anime:100166",
+  "media": "anime",
+  "name": "My Hero Academia Season 3",
+  "runtime": "24 min",
+  "score": 7.9,
+  "season": "Spring 2018",
+  "state": "Finished",
+  "studio": "bones",
+  "subtitle": "Boku no Hero Academia 3 · 僕のヒーローアカデミア３",
+  "total": 25,
+  "year": 2018
+ }
+}

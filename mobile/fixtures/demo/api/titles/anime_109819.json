@@ -1,0 +1,45 @@
+{
+ "creator": {
+  "name": "bones",
+  "ref": "studio:4"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/109819"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/39651"
+  }
+ ],
+ "members": 46484,
+ "startDate": "2019-09-25",
+ "studios": [
+  {
+   "name": "bones",
+   "ref": "studio:4"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/109819-x6X6TbHlXyBr.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx109819-71ZeBjJuU3da.png",
+  "format": "OVA",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Supernatural"
+  ],
+  "id": "anime:109819",
+  "media": "anime",
+  "name": "Mob Psycho 100 II: The First Spirits and Such Company Trip ~A Journey that Mends the Heart and Heals the Soul~",
+  "runtime": "24 min",
+  "score": 7.6,
+  "season": "Summer 2019",
+  "state": "Finished",
+  "studio": "bones",
+  "subtitle": "Mob Psycho 100: Daiikkai Rei toka Soudansho Ian Ryokou - Kokoro Mitasu Iyashi no Tabi · モブサイコ100 第一回霊とか相談所慰安旅行~ココロ満たす癒やしの旅~",
+  "total": 1,
+  "year": 2019
+ }
+}

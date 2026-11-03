@@ -1,0 +1,28 @@
+{
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/178467"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/59139"
+  }
+ ],
+ "members": 30484,
+ "title": {
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178467-mw0zYp9gVfiO.png",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Fantasy"
+  ],
+  "id": "anime:178467",
+  "media": "anime",
+  "name": "Tsuki ga Michibiku Isekai Douchuu 3rd Season",
+  "state": "Not yet released",
+  "subtitle": "月が導く異世界道中 第三幕"
+ }
+}

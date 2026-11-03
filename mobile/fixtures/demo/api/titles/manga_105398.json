@@ -1,0 +1,33 @@
+{
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/manga/105398"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/manga/121496"
+  }
+ ],
+ "members": 288493,
+ "startDate": "2018-03-04",
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/105398-4UrEhdqZukrg.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105398-b673Vt5ZSuz3.jpg",
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "id": "manga:105398",
+  "media": "manga",
+  "name": "Solo Leveling",
+  "score": 8.4,
+  "state": "Finished",
+  "subtitle": "Na Honjaman Level Up · 나 혼자만 레벨업",
+  "total": 201,
+  "volumes": 15,
+  "year": 2018
+ }
+}

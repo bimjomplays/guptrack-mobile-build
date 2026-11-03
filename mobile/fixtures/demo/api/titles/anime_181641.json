@@ -1,0 +1,40 @@
+{
+ "creator": {
+  "name": "Doga Kobo",
+  "ref": "studio:95"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/181641"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/59873"
+  }
+ ],
+ "members": 51918,
+ "startDate": "2027",
+ "studios": [
+  {
+   "name": "Doga Kobo",
+   "ref": "studio:95"
+  }
+ ],
+ "title": {
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181641-4BnzXGnA7CJL.jpg",
+  "format": "TV",
+  "genres": [
+   "Comedy",
+   "Romance",
+   "Slice of Life"
+  ],
+  "id": "anime:181641",
+  "media": "anime",
+  "name": "Tokidoki Bosotto Rossiya-go de Dereru Tonari no Alya-san Season 2",
+  "state": "Not yet released",
+  "studio": "Doga Kobo",
+  "subtitle": "時々ボソッとロシア語でデレる隣のアーリャさん Season 2",
+  "year": 2027
+ }
+}

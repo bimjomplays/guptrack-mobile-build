@@ -1,0 +1,53 @@
+{
+ "id": "studio:300",
+ "kind": "Animation studio",
+ "name": "SILVER LINK.",
+ "titles": [
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169579-KxMH0iq7jlPr.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Mystery",
+    "Romance"
+   ],
+   "id": "anime:169579",
+   "media": "anime",
+   "name": "Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru 2nd Season",
+   "season": "Winter 2027",
+   "state": "Not yet released",
+   "studio": "SILVER LINK.",
+   "subtitle": "世界最高の暗殺者、異世界貴族に転生する 2ndシーズン",
+   "year": 2027
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/176314-nj2hmqbGQ9HJ.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176314-lpvca6vjmkeO.jpg",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Fantasy",
+    "Mahou Shoujo"
+   ],
+   "id": "anime:176314",
+   "media": "anime",
+   "name": "Sasaki and Peeps Season 2",
+   "next": {
+    "at": "2026-11-04T13:00:00.000Z",
+    "episode": 5
+   },
+   "runtime": "24 min",
+   "score": 7.0,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "SILVER LINK.",
+   "subtitle": "Sasaki to Pii-chan Season 2 · 佐々木とピーちゃん シーズン２",
+   "total": 12,
+   "year": 2026
+  }
+ ],
+ "total": 2
+}

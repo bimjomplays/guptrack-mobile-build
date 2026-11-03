@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "8-bit",
+  "ref": "studio:4418"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/182205"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/59970"
+  }
+ ],
+ "members": 147239,
+ "startDate": "2026-04-03",
+ "studios": [
+  {
+   "name": "8-bit",
+   "ref": "studio:4418"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/182205-fRUoKv6f2JAq.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182205-q2AeO1owuQbO.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Fantasy"
+  ],
+  "id": "anime:182205",
+  "media": "anime",
+  "name": "That Time I Got Reincarnated as a Slime Season 4",
+  "runtime": "24 min",
+  "score": 8.3,
+  "season": "Spring 2026",
+  "state": "Finished",
+  "studio": "8-bit",
+  "subtitle": "Tensei Shitara Slime Datta Ken 4th Season Part 1 & 2 · 転生したらスライムだった件 第4期 第1&2クール",
+  "total": 24,
+  "year": 2026
+ }
+}

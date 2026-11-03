@@ -1,0 +1,29 @@
+{
+ "id": "studio:291",
+ "kind": "Animation studio",
+ "name": "CoMix Wave",
+ "titles": [
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21519-1ayMXgNlmByb.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21519-SUo3ZQuCbYhJ.png",
+   "format": "Movie",
+   "genres": [
+    "Drama",
+    "Romance",
+    "Supernatural"
+   ],
+   "id": "anime:21519",
+   "media": "anime",
+   "name": "Your Name.",
+   "runtime": "107 min",
+   "score": 8.5,
+   "season": "Summer 2016",
+   "state": "Finished",
+   "studio": "CoMix Wave",
+   "subtitle": "Kimi no Na wa. · 君の名は。",
+   "total": 1,
+   "year": 2016
+  }
+ ],
+ "total": 1
+}

@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "LIDENFILMS",
+  "ref": "studio:839"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/142853"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/50608"
+  }
+ ],
+ "members": 146747,
+ "startDate": "2023-01-08",
+ "studios": [
+  {
+   "name": "LIDENFILMS",
+   "ref": "studio:839"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/142853-AOOaCQdUHScH.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx142853-nxEZDE9oDRLG.png",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Romance",
+   "Supernatural"
+  ],
+  "id": "anime:142853",
+  "media": "anime",
+  "name": "Tokyo Revengers Season 2",
+  "runtime": "24 min",
+  "score": 7.5,
+  "season": "Winter 2023",
+  "state": "Finished",
+  "studio": "LIDENFILMS",
+  "subtitle": "Tokyo Revengers: Seiya Kessen-hen · 東京リベンジャーズ 聖夜決戦編",
+  "total": 13,
+  "year": 2023
+ }
+}

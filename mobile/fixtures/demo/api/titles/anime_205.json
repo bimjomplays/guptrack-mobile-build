@@ -1,0 +1,45 @@
+{
+ "creator": {
+  "name": "Manglobe",
+  "ref": "studio:32"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/205"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/205"
+  }
+ ],
+ "members": 284875,
+ "startDate": "2004-05-20",
+ "studios": [
+  {
+   "name": "Manglobe",
+   "ref": "studio:32"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/205-L7WpOOWUmVjh.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205-7tHVFu6dPBm9.png",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy"
+  ],
+  "id": "anime:205",
+  "media": "anime",
+  "name": "Samurai Champloo",
+  "runtime": "24 min",
+  "score": 8.4,
+  "season": "Spring 2004",
+  "state": "Finished",
+  "studio": "Manglobe",
+  "subtitle": "サムライチャンプルー",
+  "total": 26,
+  "year": 2004
+ }
+}

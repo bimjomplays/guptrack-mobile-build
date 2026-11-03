@@ -1,0 +1,23 @@
+{
+ "inCommon": 16,
+ "messages": [
+  {
+   "at": "2026-11-03T13:02:00.000Z",
+   "fromMe": false,
+   "id": "ak1",
+   "text": "hi! read your Chainsaw Man review and agreed with all of it, esp. Katana Man"
+  },
+  {
+   "at": "2026-11-03T13:03:00.000Z",
+   "fromMe": false,
+   "id": "ak2",
+   "text": "going to see the Reze movie this weekend?"
+  }
+ ],
+ "titles": 287,
+ "user": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
+  "name": "Aki",
+  "username": "aki.h"
+ }
+}

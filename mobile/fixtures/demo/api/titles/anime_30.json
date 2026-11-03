@@ -1,0 +1,52 @@
+{
+ "creator": {
+  "name": "GAINAX",
+  "ref": "studio:6"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/30"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/30"
+  }
+ ],
+ "members": 504255,
+ "startDate": "1995-10-03",
+ "studios": [
+  {
+   "name": "GAINAX",
+   "ref": "studio:6"
+  },
+  {
+   "name": "Tatsunoko Production",
+   "ref": "studio:103"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/30-gEMoHHIqxDgN.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx30-AI1zr74Dh4ye.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Mecha",
+   "Mystery",
+   "Psychological",
+   "Sci-Fi"
+  ],
+  "id": "anime:30",
+  "media": "anime",
+  "name": "Neon Genesis Evangelion",
+  "runtime": "24 min",
+  "score": 8.3,
+  "season": "Fall 1995",
+  "state": "Finished",
+  "studio": "GAINAX",
+  "subtitle": "Shin Seiki Evangelion · 新世紀エヴァンゲリオン",
+  "total": 26,
+  "year": 1995
+ }
+}

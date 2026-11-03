@@ -1,0 +1,29 @@
+{
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/179068"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/59230"
+  }
+ ],
+ "members": 28851,
+ "startDate": "2027",
+ "title": {
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179068-wlmOf8c4HnXf.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "id": "anime:179068",
+  "media": "anime",
+  "name": "Omniscient Reader",
+  "state": "Not yet released",
+  "subtitle": "Zenchiteki na Dokusha no Shiten kara · 全知的な読者の視点から",
+  "year": 2027
+ }
+}

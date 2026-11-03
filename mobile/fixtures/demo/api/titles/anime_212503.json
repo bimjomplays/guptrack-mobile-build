@@ -1,0 +1,47 @@
+{
+ "creator": {
+  "name": "Zero-G",
+  "ref": "studio:6117"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/212503"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/64254"
+  }
+ ],
+ "members": 22212,
+ "startDate": "2026-10-09",
+ "studios": [
+  {
+   "name": "Zero-G",
+   "ref": "studio:6117"
+  }
+ ],
+ "title": {
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212503-sXBpRZr96c4e.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "id": "anime:212503",
+  "media": "anime",
+  "name": "The Iceblade Sorcerer Shall Rule the World II",
+  "next": {
+   "at": "2026-11-05T16:28:00.000Z",
+   "episode": 5
+  },
+  "runtime": "24 min",
+  "score": 6.6,
+  "season": "Fall 2026",
+  "state": "Releasing",
+  "studio": "Zero-G",
+  "subtitle": "Hyouken no Majutsushi ga Sekai wo Suberu II · 冰剣の魔術師が世界を統べるⅡ",
+  "year": 2026
+ }
+}

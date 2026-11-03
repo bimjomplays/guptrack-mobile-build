@@ -1,0 +1,76 @@
+{
+ "id": "studio:839",
+ "kind": "Animation studio",
+ "name": "LIDENFILMS",
+ "titles": [
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178083-bg7pg6TCHwtG.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Romance",
+    "Supernatural"
+   ],
+   "id": "anime:178083",
+   "media": "anime",
+   "name": "Tokyo Revengers: War of the Three Titans Arc",
+   "next": {
+    "at": "2026-11-06T16:53:00.000Z",
+    "episode": 6
+   },
+   "score": 7.7,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "LIDENFILMS",
+   "subtitle": "Tokyo Revengers: Santen Sensou-hen · 東京リベンジャーズ 三天戦争編",
+   "total": 13,
+   "year": 2026
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/142853-AOOaCQdUHScH.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx142853-nxEZDE9oDRLG.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Romance",
+    "Supernatural"
+   ],
+   "id": "anime:142853",
+   "media": "anime",
+   "name": "Tokyo Revengers Season 2",
+   "runtime": "24 min",
+   "score": 7.5,
+   "season": "Winter 2023",
+   "state": "Finished",
+   "studio": "LIDENFILMS",
+   "subtitle": "Tokyo Revengers: Seiya Kessen-hen · 東京リベンジャーズ 聖夜決戦編",
+   "total": 13,
+   "year": 2023
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/120120-UDYgoHA69peT.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx120120-cWDmnmeEntSe.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Romance",
+    "Supernatural"
+   ],
+   "id": "anime:120120",
+   "media": "anime",
+   "name": "Tokyo Revengers",
+   "runtime": "24 min",
+   "score": 7.7,
+   "season": "Spring 2021",
+   "state": "Finished",
+   "studio": "LIDENFILMS",
+   "subtitle": "東京リベンジャーズ",
+   "total": 24,
+   "year": 2021
+  }
+ ],
+ "total": 3
+}

@@ -1,0 +1,31 @@
+{
+ "id": "studio:6239",
+ "kind": "Animation studio",
+ "name": "Arvo Animation",
+ "titles": [
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/172192-jibcmb7wdbzk.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172192-W7P5xEUaxF3y.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+   ],
+   "id": "anime:172192",
+   "media": "anime",
+   "name": "A Returner's Magic Should be Special Season 2",
+   "next": {
+    "at": "2026-11-04T15:45:00.000Z",
+    "episode": 5
+   },
+   "score": 6.9,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "Arvo Animation",
+   "subtitle": "Kikansha no Mahou wa Tokubetsu desu 2nd Season · 帰還者の魔法は特別です 第2期",
+   "year": 2026
+  }
+ ],
+ "total": 1
+}

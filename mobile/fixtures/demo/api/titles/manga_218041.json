@@ -1,0 +1,28 @@
+{
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/manga/218041"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/manga/197040"
+  }
+ ],
+ "members": 911,
+ "startDate": "2026-10-08",
+ "title": {
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx218041-GHsg9eaTZmEB.jpg",
+  "format": "Manga",
+  "genres": [
+   "Supernatural"
+  ],
+  "id": "manga:218041",
+  "media": "manga",
+  "name": "Michin Billeoni Jeongsineul Doechajeum",
+  "score": 6.7,
+  "state": "Releasing",
+  "subtitle": "미친 빌런이 정신을 되찾음",
+  "year": 2026
+ }
+}

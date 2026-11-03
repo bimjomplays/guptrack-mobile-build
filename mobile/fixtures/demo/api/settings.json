@@ -1,0 +1,58 @@
+{
+ "account": {
+  "joined": "2025-03-14T23:05:00.000Z",
+  "role": "owner",
+  "username": "mika"
+ },
+ "notifications": {
+  "friendRequests": true,
+  "likesAndReplies": false,
+  "messages": true,
+  "newEpisodes": true,
+  "newSeasons": true,
+  "plannedReleases": true,
+  "profileComments": true
+ },
+ "preferences": {
+  "adult": false,
+  "autoDates": true,
+  "dateFormat": "medium",
+  "hideSpoilers": true,
+  "scoreFormat": "point10",
+  "smartProgress": true,
+  "titleLanguage": "english",
+  "weekStart": "monday"
+ },
+ "privacy": {
+  "comments": "friends",
+  "lists": {
+   "anime": "public",
+   "book": "public",
+   "manga": "public",
+   "movie": "friends",
+   "tv": "public"
+  },
+  "messages": "everyone",
+  "profile": "public"
+ },
+ "profile": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/154587-ivXNJ23SM1xB.jpg",
+  "bannerName": "Frieren: Beyond Journey’s End",
+  "bannerText": "auto",
+  "bio": "# Seasonal anime, slow manga\n\nWatching **Frieren** every Friday.\nComfort rewatch: *Code Geass*.\n\n## Top five\n{{list:favourites:anime|covers}}\n\n> ask me about the long-running ones",
+  "bioPreset": "editorial",
+  "displayName": "Mika",
+  "fade": 70,
+  "fadeColour": "dark"
+ },
+ "summary": {
+  "accounts": 5,
+  "connectedApps": [
+   "Harbor"
+  ],
+  "lastBackup": "2026-11-03T08:30:00.000Z",
+  "sourcesOn": 3
+ },
+ "theme": "Midnight"
+}

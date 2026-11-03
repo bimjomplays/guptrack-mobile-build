@@ -1,0 +1,35 @@
+{
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/manga/31706"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/manga/1706"
+  }
+ ],
+ "members": 106532,
+ "startDate": "2004-01-19",
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/31706-W4G3BFn56DOs.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx31706-lRncu9VbcBB7.png",
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Mystery",
+   "Supernatural"
+  ],
+  "id": "manga:31706",
+  "media": "manga",
+  "name": "JoJo's Bizarre Adventure: Part 7–Steel Ball Run",
+  "score": 9.2,
+  "state": "Finished",
+  "subtitle": "JoJo no Kimyou na Bouken: Steel Ball Run · ジョジョの奇妙な冒険 スティール・ボール・ラン",
+  "total": 95,
+  "volumes": 24,
+  "year": 2004
+ }
+}

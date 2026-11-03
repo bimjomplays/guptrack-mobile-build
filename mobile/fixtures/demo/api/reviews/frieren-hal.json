@@ -1,0 +1,83 @@
+{
+ "likedBy": [
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+   "name": "Tobi",
+   "username": "tobiwan"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+   "name": "Lena",
+   "username": "lena"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+   "name": "Kenji",
+   "username": "kenji"
+  }
+ ],
+ "replies": [
+  {
+   "at": "2026-11-03T08:01:00.000Z",
+   "id": "frieren-hal-1",
+   "liked": false,
+   "likes": 2,
+   "text": "This is exactly how I felt, especially the ending.",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "name": "Lena",
+    "username": "lena"
+   }
+  },
+  {
+   "at": "2026-11-03T13:11:00.000Z",
+   "id": "frieren-hal-2",
+   "liked": false,
+   "likes": 1,
+   "text": "Fair, but I liked it more than you did.",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+    "name": "Tobi",
+    "username": "tobiwan"
+   }
+  }
+ ],
+ "review": {
+  "at": "2026-10-04T14:41:00.000Z",
+  "body": "Serie’s test at the end is the whole show in one scene: who you are matters more than what you can do. Big spoilers below for the last episodes.",
+  "friend": true,
+  "headline": "The exam arc ending, discussed",
+  "id": "frieren-hal",
+  "liked": false,
+  "likes": 9,
+  "replies": 3,
+  "score": 80,
+  "spoiler": true,
+  "user": {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+   "name": "Hal",
+   "username": "hal"
+  }
+ },
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/154587-ivXNJ23SM1xB.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+  "format": "TV",
+  "genres": [
+   "Adventure",
+   "Drama",
+   "Fantasy"
+  ],
+  "id": "anime:154587",
+  "media": "anime",
+  "name": "Frieren: Beyond Journey’s End",
+  "runtime": "24 min",
+  "score": 9.1,
+  "season": "Fall 2023",
+  "state": "Finished",
+  "studio": "MADHOUSE",
+  "subtitle": "Sousou no Frieren · 葬送のフリーレン",
+  "total": 28,
+  "year": 2023
+ }
+}

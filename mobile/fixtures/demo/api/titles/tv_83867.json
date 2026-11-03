@@ -1,0 +1,188 @@
+{
+ "cast": [
+  {
+   "image": "https://image.tmdb.org/t/p/w185/qwbjcyDN37OHiln4a6P4LP31o7F.jpg",
+   "name": "Diego Luna",
+   "role": "Cassian Andor"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/x0lmqgkmphvOCSTHk2oxsaxA9Ra.jpg",
+   "name": "Anton Lesser",
+   "role": "Major Partagaz"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/5hn7WeXi6wguwxTPTSmcmzHAs9.jpg",
+   "name": "Muhannad Bhaier",
+   "role": "Wilmon"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/mW7xmtGV4y79kQGn0zkKVGDMAmw.jpg",
+   "name": "Stellan Skarsgård",
+   "role": "Luthen Rael"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/wWcby4ARYqr8d92ZdjyQcfaiJBW.jpg",
+   "name": "Denise Gough",
+   "role": "Dedra Meero"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/rLzduQpYJnZJKkXv3jRc7MDHwoI.jpg",
+   "name": "Kyle Soller",
+   "role": "Syril Karn"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/hzu7OqTmNCT1xdCdmwBSf2yJvaO.jpg",
+   "name": "Adria Arjona",
+   "role": "Bix Caleen"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/4eOoW1PNBZfxRW0g8RmYH8bL6mq.jpg",
+   "name": "Genevieve O&#39;Reilly",
+   "role": "Mon Mothma"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/63vFGISlg0mD1c0tAjxlMMPgWVj.jpg",
+   "name": "Faye Marsay",
+   "role": "Vel Sartha"
+  }
+ ],
+ "description": "In an era filled with danger, deception and intrigue, Cassian Andor will discover the difference he can make in the struggle against the tyrannical Galactic Empire. He embarks on a path that is destined to turn him into a rebel hero.",
+ "links": [
+  {
+   "label": "TMDB",
+   "url": "https://www.themoviedb.org/tv/83867"
+  }
+ ],
+ "recommendations": [
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/ixgFmf1X59PUZam2qbAfskx2gQr.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Mystery",
+    "Sci-Fi & Fantasy"
+   ],
+   "id": "tv:95396",
+   "media": "tv",
+   "name": "Severance",
+   "score": 8.4,
+   "year": 2022
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Comedy"
+   ],
+   "id": "tv:136315",
+   "media": "tv",
+   "name": "The Bear",
+   "score": 8.2,
+   "year": 2022
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/bwSmgmd90hCWwqOKQYTEraeOZhJ.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "War & Politics"
+   ],
+   "id": "tv:126308",
+   "media": "tv",
+   "name": "Shōgun",
+   "score": 8.4,
+   "year": 2024
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/lY2DhbA7Hy44fAKddr06UrXWWaQ.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama"
+   ],
+   "id": "tv:100088",
+   "media": "tv",
+   "name": "The Last of Us",
+   "score": 8.4,
+   "year": 2023
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/tsRy63Mu5cu8etL1X7ZLyf7UP1M.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Crime"
+   ],
+   "id": "tv:1396",
+   "media": "tv",
+   "name": "Breaking Bad",
+   "score": 9.0,
+   "year": 2008
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/gPQppUnLx9vqPDLz3WwZ2HJsNbt.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+   "format": "TV",
+   "genres": [
+    "Crime",
+    "Drama",
+    "Mystery"
+   ],
+   "id": "tv:95480",
+   "media": "tv",
+   "name": "Slow Horses",
+   "score": 8.1,
+   "year": 2022
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/ulm1ex4JFYJByyaPyqTr47MFyEQ.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Sci-Fi & Fantasy"
+   ],
+   "id": "tv:225171",
+   "media": "tv",
+   "name": "Pluribus",
+   "score": 7.9,
+   "year": 2025
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+   "format": "TV",
+   "genres": [
+    "Sci-Fi & Fantasy",
+    "Action & Adventure"
+   ],
+   "id": "tv:76479",
+   "media": "tv",
+   "name": "The Boys",
+   "score": 8.4,
+   "year": 2019
+  }
+ ],
+ "tagline": "The Rebellion begins.",
+ "title": {
+  "banner": "https://image.tmdb.org/t/p/w1280/quCeAmVQHfsdcYkicbxZWVauCVb.jpg",
+  "cover": "https://image.tmdb.org/t/p/w500/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+  "format": "TV",
+  "genres": [
+   "Sci-Fi & Fantasy",
+   "Action & Adventure",
+   "Drama",
+   "War & Politics"
+  ],
+  "id": "tv:83867",
+  "media": "tv",
+  "name": "Andor",
+  "score": 8.3,
+  "year": 2022
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "creator": {
+  "name": "WIT STUDIO",
+  "ref": "studio:858"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/158927"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/53887"
+  }
+ ],
+ "members": 243627,
+ "startDate": "2023-10-07",
+ "studios": [
+  {
+   "name": "WIT STUDIO",
+   "ref": "studio:858"
+  },
+  {
+   "name": "CloverWorks",
+   "ref": "studio:6222"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/158927-zXtbXUO5iKzX.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b158927-lfO85WVguYgc.png",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Slice of Life",
+   "Supernatural"
+  ],
+  "id": "anime:158927",
+  "media": "anime",
+  "name": "SPY x FAMILY Season 2",
+  "runtime": "24 min",
+  "score": 8.0,
+  "season": "Fall 2023",
+  "state": "Finished",
+  "studio": "WIT STUDIO",
+  "subtitle": "SPY×FAMILY Season 2 · SPY×FAMILY Season 2",
+  "total": 12,
+  "year": 2023
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "creator": {
+  "name": "GAINAX",
+  "ref": "studio:6"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/32"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/32"
+  }
+ ],
+ "members": 258034,
+ "startDate": "1997-07-19",
+ "studios": [
+  {
+   "name": "GAINAX",
+   "ref": "studio:6"
+  },
+  {
+   "name": "Production I.G",
+   "ref": "studio:10"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n32-BH9yHJBQqeOa.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx32-5JYsv0wc122I.jpg",
+  "format": "Movie",
+  "genres": [
+   "Action",
+   "Drama",
+   "Mecha",
+   "Psychological",
+   "Sci-Fi"
+  ],
+  "id": "anime:32",
+  "media": "anime",
+  "name": "Neon Genesis Evangelion: The End of Evangelion",
+  "runtime": "87 min",
+  "score": 8.6,
+  "season": "Summer 1997",
+  "state": "Finished",
+  "studio": "GAINAX",
+  "subtitle": "Shin Seiki Evangelion Movie: Air / Magokoro wo, Kimi ni · 新世紀エヴァンゲリオン劇場版 Air/まごころを、君に",
+  "total": 1,
+  "year": 1997
+ }
+}

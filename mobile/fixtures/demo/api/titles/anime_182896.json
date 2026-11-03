@@ -1,0 +1,44 @@
+{
+ "creator": {
+  "name": "bones film",
+  "ref": "studio:7585"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/182896"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/60098"
+  }
+ ],
+ "members": 139646,
+ "startDate": "2025-10-04",
+ "studios": [
+  {
+   "name": "bones film",
+   "ref": "studio:7585"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/182896-iJt79hYTpv8w.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182896-mvxTVHGdDB4q.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure"
+  ],
+  "id": "anime:182896",
+  "media": "anime",
+  "name": "My Hero Academia FINAL SEASON",
+  "runtime": "23 min",
+  "score": 8.7,
+  "season": "Fall 2025",
+  "state": "Finished",
+  "studio": "bones film",
+  "subtitle": "Boku no Hero Academia FINAL SEASON · 僕のヒーローアカデミア FINAL SEASON",
+  "total": 11,
+  "year": 2025
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "likedBy": [
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+   "name": "Lena",
+   "username": "lena"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+   "name": "Hal",
+   "username": "hal"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+   "name": "Kenji",
+   "username": "kenji"
+  }
+ ],
+ "replies": [
+  {
+   "at": "2026-11-03T08:01:00.000Z",
+   "id": "dune-tobi-1",
+   "liked": false,
+   "likes": 2,
+   "text": "This is exactly how I felt, especially the ending.",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "name": "Lena",
+    "username": "lena"
+   }
+  },
+  {
+   "at": "2026-11-03T13:11:00.000Z",
+   "id": "dune-tobi-2",
+   "liked": false,
+   "likes": 1,
+   "text": "Fair, but I liked it more than you did.",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+    "name": "Tobi",
+    "username": "tobiwan"
+   }
+  }
+ ],
+ "review": {
+  "at": "2026-11-03T11:31:00.000Z",
+  "body": "Every sandworm shot made the seats shake. The arena sequence is unforgettable, and Feyd-Rautha steals every scene he’s in.",
+  "friend": true,
+  "headline": "Scale you can feel",
+  "id": "dune-tobi",
+  "liked": false,
+  "likes": 12,
+  "replies": 5,
+  "score": 85,
+  "spoiler": false,
+  "user": {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+   "name": "Tobi",
+   "username": "tobiwan"
+  }
+ },
+ "title": {
+  "banner": "https://image.tmdb.org/t/p/w1280/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+  "cover": "https://image.tmdb.org/t/p/w500/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+  "format": "Movie",
+  "genres": [
+   "Science Fiction",
+   "Adventure"
+  ],
+  "id": "movie:693134",
+  "media": "movie",
+  "name": "Dune: Part Two",
+  "runtime": "2h 47m",
+  "score": 8.1,
+  "year": 2024
+ }
+}

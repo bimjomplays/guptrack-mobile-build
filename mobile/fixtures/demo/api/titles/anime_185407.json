@@ -1,0 +1,45 @@
+{
+ "creator": {
+  "name": "ENISHIYA",
+  "ref": "studio:6306"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/185407"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/60489"
+  }
+ ],
+ "members": 148485,
+ "startDate": "2025-06-28",
+ "studios": [
+  {
+   "name": "ENISHIYA",
+   "ref": "studio:6306"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185407-WOKgyadY4Pr1.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185407-7uzY4fA3hokP.jpg",
+  "format": "ONA",
+  "genres": [
+   "Drama",
+   "Psychological",
+   "Sci-Fi"
+  ],
+  "id": "anime:185407",
+  "media": "anime",
+  "name": "Takopi's Original Sin",
+  "runtime": "23 min",
+  "score": 8.6,
+  "season": "Summer 2025",
+  "state": "Finished",
+  "studio": "ENISHIYA",
+  "subtitle": "Takopii no Genzai · タコピーの原罪",
+  "total": 6,
+  "year": 2025
+ }
+}

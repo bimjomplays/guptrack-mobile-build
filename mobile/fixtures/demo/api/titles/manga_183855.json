@@ -1,0 +1,30 @@
+{
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/manga/183855"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/manga/175209"
+  }
+ ],
+ "members": 13656,
+ "startDate": "2024-10-08",
+ "title": {
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx183855-BbnSsUPiOVrM.jpg",
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "id": "manga:183855",
+  "media": "manga",
+  "name": "The Bastard of Swordborne",
+  "score": 7.5,
+  "state": "Releasing",
+  "subtitle": "Hoegwigeomgaui Seojaga Saneun Beop · 회귀검가의 서자가 사는 법",
+  "year": 2024
+ }
+}

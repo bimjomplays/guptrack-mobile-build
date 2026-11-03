@@ -1,0 +1,46 @@
+{
+ "messages": [
+  {
+   "at": "2026-11-03T00:02:00.000Z",
+   "fromMe": false,
+   "id": "t1",
+   "text": "what should I watch next, something with a heist"
+  },
+  {
+   "at": "2026-11-03T13:40:00.000Z",
+   "fromMe": true,
+   "id": "t2",
+   "read": "2026-11-03T13:50:00.000Z",
+   "text": "Sent you Andor"
+  },
+  {
+   "at": "2026-11-03T13:41:00.000Z",
+   "fromMe": true,
+   "id": "t3",
+   "title": {
+    "banner": "https://image.tmdb.org/t/p/w1280/quCeAmVQHfsdcYkicbxZWVauCVb.jpg",
+    "cover": "https://image.tmdb.org/t/p/w500/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+    "format": "TV",
+    "genres": [
+     "Sci-Fi & Fantasy",
+     "Action & Adventure",
+     "Drama",
+     "War & Politics"
+    ],
+    "id": "tv:83867",
+    "media": "tv",
+    "name": "Andor",
+    "score": 8.3,
+    "year": 2022
+   }
+  }
+ ],
+ "status": "Active 1h ago",
+ "typing": false,
+ "unread": 0,
+ "user": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+  "name": "Tobi",
+  "username": "tobiwan"
+ }
+}

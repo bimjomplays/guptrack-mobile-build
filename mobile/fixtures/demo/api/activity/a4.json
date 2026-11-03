@@ -1,0 +1,91 @@
+{
+ "item": {
+  "at": "2026-11-02T12:41:00.000Z",
+  "id": "a4",
+  "liked": false,
+  "likes": 2,
+  "media": "tv",
+  "object": "Plan to Watch",
+  "replies": 0,
+  "titles": [
+   {
+    "banner": "https://image.tmdb.org/t/p/w1280/ixgFmf1X59PUZam2qbAfskx2gQr.jpg",
+    "cover": "https://image.tmdb.org/t/p/w500/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+    "format": "TV",
+    "genres": [
+     "Drama",
+     "Mystery",
+     "Sci-Fi & Fantasy"
+    ],
+    "id": "tv:95396",
+    "media": "tv",
+    "name": "Severance",
+    "score": 8.4,
+    "year": 2022
+   },
+   {
+    "banner": "https://image.tmdb.org/t/p/w1280/bwSmgmd90hCWwqOKQYTEraeOZhJ.jpg",
+    "cover": "https://image.tmdb.org/t/p/w500/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+    "format": "TV",
+    "genres": [
+     "Drama",
+     "War & Politics"
+    ],
+    "id": "tv:126308",
+    "media": "tv",
+    "name": "Shōgun",
+    "score": 8.4,
+    "year": 2024
+   },
+   {
+    "banner": "https://image.tmdb.org/t/p/w1280/quCeAmVQHfsdcYkicbxZWVauCVb.jpg",
+    "cover": "https://image.tmdb.org/t/p/w500/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+    "format": "TV",
+    "genres": [
+     "Sci-Fi & Fantasy",
+     "Action & Adventure",
+     "Drama",
+     "War & Politics"
+    ],
+    "id": "tv:83867",
+    "media": "tv",
+    "name": "Andor",
+    "score": 8.3,
+    "year": 2022
+   },
+   {
+    "banner": "https://image.tmdb.org/t/p/w1280/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
+    "cover": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+    "format": "TV",
+    "genres": [
+     "Drama",
+     "Comedy"
+    ],
+    "id": "tv:136315",
+    "media": "tv",
+    "name": "The Bear",
+    "score": 8.2,
+    "year": 2022
+   }
+  ],
+  "user": {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+   "name": "Lena",
+   "username": "lena"
+  },
+  "verb": "added 4 shows to"
+ },
+ "likedBy": [
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+   "name": "Kenji",
+   "username": "kenji"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+   "name": "Sora",
+   "username": "sorawatches"
+  }
+ ],
+ "replies": []
+}

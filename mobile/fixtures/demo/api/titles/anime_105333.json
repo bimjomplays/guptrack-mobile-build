@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "TMS Entertainment",
+  "ref": "studio:73"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/105333"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/38691"
+  }
+ ],
+ "members": 564136,
+ "startDate": "2019-07-05",
+ "studios": [
+  {
+   "name": "TMS Entertainment",
+   "ref": "studio:73"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/105333-KWKGvBM8Hyga.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx105333-GybuoSoOZfpH.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Sci-Fi"
+  ],
+  "id": "anime:105333",
+  "media": "anime",
+  "name": "Dr. STONE",
+  "runtime": "24 min",
+  "score": 8.1,
+  "season": "Summer 2019",
+  "state": "Finished",
+  "studio": "TMS Entertainment",
+  "subtitle": "Dr.STONE",
+  "total": 24,
+  "year": 2019
+ }
+}

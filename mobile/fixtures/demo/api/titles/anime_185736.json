@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "bones film",
+  "ref": "studio:7585"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/185736"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/60593"
+  }
+ ],
+ "members": 75775,
+ "startDate": "2025-04-07",
+ "studios": [
+  {
+   "name": "bones film",
+   "ref": "studio:7585"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185736-Ick7OABzBWoi.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185736-Ci6AiGwjKKtp.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Fantasy"
+  ],
+  "id": "anime:185736",
+  "media": "anime",
+  "name": "My Hero Academia: Vigilantes",
+  "runtime": "24 min",
+  "score": 7.5,
+  "season": "Spring 2025",
+  "state": "Finished",
+  "studio": "bones film",
+  "subtitle": "Vigilante: Boku no Hero Academia ILLEGALS · ヴィジランテ -僕のヒーローアカデミア ILLEGALS-",
+  "total": 13,
+  "year": 2025
+ }
+}

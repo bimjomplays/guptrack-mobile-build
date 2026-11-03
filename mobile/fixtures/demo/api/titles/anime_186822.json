@@ -1,0 +1,44 @@
+{
+ "creator": {
+  "name": "CloverWorks",
+  "ref": "studio:6222"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/186822"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/61035"
+  }
+ ],
+ "members": 33725,
+ "startDate": "2027-01-08",
+ "studios": [
+  {
+   "name": "CloverWorks",
+   "ref": "studio:6222"
+  }
+ ],
+ "title": {
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186822-9zsR5NtOP0yJ.jpg",
+  "format": "TV",
+  "genres": [
+   "Music",
+   "Romance"
+  ],
+  "id": "anime:186822",
+  "media": "anime",
+  "name": "The Guy She Was Interested In Wasn't a Guy At All",
+  "next": {
+   "at": "2027-01-08T14:00:00.000Z",
+   "episode": 1
+  },
+  "season": "Winter 2027",
+  "state": "Not yet released",
+  "studio": "CloverWorks",
+  "subtitle": "Ki ni Natteru Hito ga Otoko ja Nakatta · 気になってる人が男じゃなかった",
+  "year": 2027
+ }
+}

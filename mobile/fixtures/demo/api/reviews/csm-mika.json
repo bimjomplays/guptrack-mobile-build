@@ -1,0 +1,83 @@
+{
+ "likedBy": [
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+   "name": "Tobi",
+   "username": "tobiwan"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+   "name": "Lena",
+   "username": "lena"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+   "name": "Hal",
+   "username": "hal"
+  }
+ ],
+ "replies": [
+  {
+   "at": "2026-11-03T08:01:00.000Z",
+   "id": "csm-mika-1",
+   "liked": false,
+   "likes": 2,
+   "text": "This is exactly how I felt, especially the ending.",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "name": "Lena",
+    "username": "lena"
+   }
+  },
+  {
+   "at": "2026-11-03T13:11:00.000Z",
+   "id": "csm-mika-2",
+   "liked": false,
+   "likes": 1,
+   "text": "Fair, but I liked it more than you did.",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+    "name": "Tobi",
+    "username": "tobiwan"
+   }
+  }
+ ],
+ "review": {
+  "at": "2026-09-24T14:41:00.000Z",
+  "body": "The first part never lets up. The Katana Man stretch is where it turns from gore into grief.",
+  "friend": false,
+  "headline": "Katana Man broke my heart",
+  "id": "csm-mika",
+  "liked": false,
+  "likes": 57,
+  "replies": 12,
+  "score": 90,
+  "spoiler": false,
+  "user": {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+   "name": "Mika",
+   "username": "mika"
+  }
+ },
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/105778-ppHaMwown6c9.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-euxXZEIfDY2u.png",
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Drama",
+   "Horror",
+   "Supernatural"
+  ],
+  "id": "manga:105778",
+  "media": "manga",
+  "name": "Chainsaw Man",
+  "score": 8.4,
+  "state": "Finished",
+  "subtitle": "チェンソーマン",
+  "total": 232,
+  "volumes": 24,
+  "year": 2018
+ }
+}

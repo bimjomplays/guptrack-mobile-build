@@ -1,0 +1,54 @@
+{
+ "creator": {
+  "name": "AtoriE",
+  "ref": "studio:7700"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/208025"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/63509"
+  }
+ ],
+ "members": 28719,
+ "startDate": "2026-10-05",
+ "studios": [
+  {
+   "name": "AtoriE",
+   "ref": "studio:7700"
+  },
+  {
+   "name": "Nyan Pollution-ω-",
+   "ref": "studio:7721"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/208025-s7hcRQO7kwmH.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208025-JKvqWNr8rz8l.jpg",
+  "format": "TV Short",
+  "genres": [
+   "Comedy",
+   "Ecchi",
+   "Fantasy",
+   "Romance"
+  ],
+  "id": "anime:208025",
+  "media": "anime",
+  "name": "I'm Dating a Dark Summoner",
+  "next": {
+   "at": "2026-11-08T16:20:00.000Z",
+   "episode": 6
+  },
+  "runtime": "12 min",
+  "score": 6.7,
+  "season": "Fall 2026",
+  "state": "Releasing",
+  "studio": "AtoriE",
+  "subtitle": "Dark Summoner to Dekiteiru · ダークサモナーとデキている",
+  "total": 12,
+  "year": 2026
+ }
+}

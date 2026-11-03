@@ -1,0 +1,50 @@
+{
+ "appearances": [
+  {
+   "role": "main",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21-wf37VakJmZqs.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Comedy",
+     "Drama",
+     "Fantasy"
+    ],
+    "id": "anime:21",
+    "media": "anime",
+    "name": "ONE PIECE",
+    "next": {
+     "at": "2027-01-03T14:16:00.000Z",
+     "episode": 1181
+    },
+    "runtime": "24 min",
+    "score": 8.7,
+    "season": "Fall 1999",
+    "state": "Releasing",
+    "studio": "Toei Animation",
+    "year": 1999
+   }
+  }
+ ],
+ "id": "character:18938",
+ "image": "https://s4.anilist.co/file/anilistcdn/character/large/b18938-yZANEfjsVhW4.png",
+ "name": "Jinbe",
+ "native": "ジンベエ",
+ "voices": [
+  {
+   "id": "person:95744",
+   "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95744-Iu1p0eNvShfN.jpg",
+   "language": "Japanese",
+   "name": "Daisuke Gouri"
+  },
+  {
+   "id": "person:100317",
+   "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n100317-8qR7ph0AKfXu.png",
+   "language": "Japanese",
+   "name": "Katsuhisa Houki"
+  }
+ ]
+}

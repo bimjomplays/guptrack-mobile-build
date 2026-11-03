@@ -1,0 +1,48 @@
+{
+ "creator": {
+  "name": "Studio Pierrot",
+  "ref": "studio:1"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/20"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/20"
+  }
+ ],
+ "members": 738968,
+ "startDate": "2002-10-03",
+ "studios": [
+  {
+   "name": "Studio Pierrot",
+   "ref": "studio:1"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20-HHxhPj5JD13a.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20-dE6UHbFFg1A5.jpg",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Drama",
+   "Fantasy",
+   "Supernatural"
+  ],
+  "id": "anime:20",
+  "media": "anime",
+  "name": "Naruto",
+  "runtime": "23 min",
+  "score": 8.0,
+  "season": "Fall 2002",
+  "state": "Finished",
+  "studio": "Studio Pierrot",
+  "subtitle": "NARUTO · NARUTO -ナルト-",
+  "total": 220,
+  "year": 2002
+ }
+}

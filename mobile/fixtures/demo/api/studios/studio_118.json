@@ -1,0 +1,31 @@
+{
+ "id": "studio:118",
+ "kind": "Animation studio",
+ "name": "SynergySP",
+ "titles": [
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202250-mpm2cvr92Au2.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+   ],
+   "id": "anime:202250",
+   "media": "anime",
+   "name": "Magic Repo Man: Dumped by My Party, I’ll Cash In With a Cute Support Fairy to Become the Strongest!",
+   "next": {
+    "at": "2026-11-07T16:30:00.000Z",
+    "episode": 6
+   },
+   "runtime": "23 min",
+   "score": 6.1,
+   "season": "Fall 2026",
+   "state": "Releasing",
+   "studio": "SynergySP",
+   "subtitle": "Kashita Maryoku wa [Revo Barai] de Kyousei Choushuu · 貸した魔力は【リボ払い】で強制徴収",
+   "year": 2026
+  }
+ ],
+ "total": 1
+}

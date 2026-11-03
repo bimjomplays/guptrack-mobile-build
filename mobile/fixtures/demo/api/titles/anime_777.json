@@ -1,0 +1,53 @@
+{
+ "creator": {
+  "name": "MADHOUSE",
+  "ref": "studio:11"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/777"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/777"
+  }
+ ],
+ "members": 189377,
+ "startDate": "2006-02-10",
+ "studios": [
+  {
+   "name": "MADHOUSE",
+   "ref": "studio:11"
+  },
+  {
+   "name": "Satelight",
+   "ref": "studio:41"
+  },
+  {
+   "name": "Graphinica",
+   "ref": "studio:894"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/777-XzPjBZdSRtDT.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx777-F6547pSAR2Zd.jpg",
+  "format": "OVA",
+  "genres": [
+   "Action",
+   "Horror",
+   "Supernatural"
+  ],
+  "id": "anime:777",
+  "media": "anime",
+  "name": "Hellsing Ultimate",
+  "runtime": "50 min",
+  "score": 8.1,
+  "season": "Winter 2006",
+  "state": "Finished",
+  "studio": "MADHOUSE",
+  "subtitle": "HELLSING OVA · HELLSING OVA",
+  "total": 10,
+  "year": 2006
+ }
+}

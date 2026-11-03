@@ -1,0 +1,28 @@
+{
+ "books": [
+  {
+   "rating": 4.31,
+   "title": {
+    "cover": "https://covers.openlibrary.org/b/id/11481354-L.jpg",
+    "format": "Book",
+    "genres": [
+     "Dune (Imaginary place)",
+     "Fiction",
+     "Fiction, science fiction, general",
+     "Dune (imaginary place), fiction"
+    ],
+    "id": "book:OL893414W",
+    "media": "book",
+    "name": "Dune",
+    "score": 8.6,
+    "studio": "Frank Herbert",
+    "subtitle": "Frank Herbert",
+    "total": 608,
+    "year": 1965
+   }
+  }
+ ],
+ "id": "author:OL79034A",
+ "name": "Frank Herbert",
+ "photo": "https://covers.openlibrary.org/a/olid/OL79034A-L.jpg"
+}

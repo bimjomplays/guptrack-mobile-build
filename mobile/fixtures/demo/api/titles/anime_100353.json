@@ -1,0 +1,45 @@
+{
+ "creator": {
+  "name": "bones",
+  "ref": "studio:4"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/100353"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/36616"
+  }
+ ],
+ "members": 37791,
+ "startDate": "2018-03-18",
+ "studios": [
+  {
+   "name": "bones",
+   "ref": "studio:4"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/100353-4rbNdk54kkHu.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100353-6dM62JCho2Yg.png",
+  "format": "OVA",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Supernatural"
+  ],
+  "id": "anime:100353",
+  "media": "anime",
+  "name": "Mob Psycho 100 REIGEN The Miraculous Unknown Psychic",
+  "runtime": "60 min",
+  "score": 7.3,
+  "season": "Winter 2018",
+  "state": "Finished",
+  "studio": "bones",
+  "subtitle": "Mob Psycho 100 REIGEN: Shirarezaru Kiseki Reinouryokusha · モブサイコ100 REIGEN ～知られざる奇跡の霊能力者～",
+  "total": 1,
+  "year": 2018
+ }
+}

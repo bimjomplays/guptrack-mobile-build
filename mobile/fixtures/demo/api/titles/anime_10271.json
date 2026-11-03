@@ -1,0 +1,44 @@
+{
+ "creator": {
+  "name": "MADHOUSE",
+  "ref": "studio:11"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/10271"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/10271"
+  }
+ ],
+ "members": 54718,
+ "startDate": "2011-04-06",
+ "studios": [
+  {
+   "name": "MADHOUSE",
+   "ref": "studio:11"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/10271-ecaOzC2DntBL.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx10271-Aep4woDDbXdU.jpg",
+  "format": "TV",
+  "genres": [
+   "Psychological",
+   "Thriller"
+  ],
+  "id": "anime:10271",
+  "media": "anime",
+  "name": "Kaiji - Against All Rules",
+  "runtime": "24 min",
+  "score": 8.2,
+  "season": "Spring 2011",
+  "state": "Finished",
+  "studio": "MADHOUSE",
+  "subtitle": "Gyakkyou Burai Kaiji: Hakairoku-hen · 逆境無頼カイジ 破戒録篇",
+  "total": 26,
+  "year": 2011
+ }
+}

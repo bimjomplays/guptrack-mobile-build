@@ -1,0 +1,264 @@
+{
+ "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11061-8WkkTZ6duKpq.jpg",
+ "bannerFade": 0.7,
+ "bio": "Films on Fridays, anime the rest of the week.",
+ "friendsSince": "2026-06-01T15:00:00.000Z",
+ "friendship": "friends",
+ "inCommon": {
+  "anime": 37,
+  "book": 5,
+  "manga": 8,
+  "movie": 6,
+  "tv": 9
+ },
+ "joined": "2026-05-09T15:00:00.000Z",
+ "lastUpdates": [
+  {
+   "at": "2026-11-03T11:41:00.000Z",
+   "caption": "Ep 2 of 10",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195539-lO5SUdp4SOrq.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png",
+    "format": "ONA",
+    "genres": [
+     "Action",
+     "Drama",
+     "Sci-Fi"
+    ],
+    "id": "anime:195539",
+    "media": "anime",
+    "name": "Cyberpunk: Edgerunners 2",
+    "runtime": "28 min",
+    "score": 8.3,
+    "season": "Fall 2026",
+    "state": "Finished",
+    "studio": "TRIGGER",
+    "subtitle": "サイバーパンク: エッジランナーズ2",
+    "total": 10,
+    "year": 2026
+   }
+  },
+  {
+   "at": "2026-11-02T16:41:00.000Z",
+   "caption": "Ep 15 of 24",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n9253-JIhmKgBKsWUN.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9253-tIUXF2gfU8Sg.jpg",
+    "format": "TV",
+    "genres": [
+     "Drama",
+     "Psychological",
+     "Sci-Fi",
+     "Thriller"
+    ],
+    "id": "anime:9253",
+    "media": "anime",
+    "name": "Steins;Gate",
+    "runtime": "24 min",
+    "score": 8.9,
+    "season": "Spring 2011",
+    "state": "Finished",
+    "studio": "WHITE FOX",
+    "subtitle": "シュタインズ・ゲート",
+    "total": 24,
+    "year": 2011
+   }
+  },
+  {
+   "at": "2026-11-01T21:41:00.000Z",
+   "caption": "Ep 70 of 74",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/19-kJhwsB0Z97tL.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19-gtMC64182sm4.jpg",
+    "format": "TV",
+    "genres": [
+     "Drama",
+     "Horror",
+     "Mystery",
+     "Psychological",
+     "Thriller"
+    ],
+    "id": "anime:19",
+    "media": "anime",
+    "name": "Monster",
+    "runtime": "24 min",
+    "score": 8.8,
+    "season": "Spring 2004",
+    "state": "Finished",
+    "studio": "MADHOUSE",
+    "subtitle": "MONSTER · MONSTER",
+    "total": 74,
+    "year": 2004
+   }
+  },
+  {
+   "at": "2026-11-01T02:41:00.000Z",
+   "caption": "Rewatching · Ep 14",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11061-8WkkTZ6duKpq.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11061-y5gsT1hoHuHw.png",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Fantasy"
+    ],
+    "id": "anime:11061",
+    "media": "anime",
+    "name": "Hunter x Hunter (2011)",
+    "runtime": "24 min",
+    "score": 8.9,
+    "season": "Fall 2011",
+    "state": "Finished",
+    "studio": "MADHOUSE",
+    "subtitle": "HUNTER×HUNTER (2011) · HUNTER×HUNTER (2011)",
+    "total": 148,
+    "year": 2011
+   }
+  },
+  {
+   "at": "2026-10-31T07:41:00.000Z",
+   "caption": "Ep 8 of 25",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/2904-X71fcvE83n3s.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2904-Fet9Q33suC7G.jpg",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Drama",
+     "Mecha",
+     "Sci-Fi",
+     "Thriller"
+    ],
+    "id": "anime:2904",
+    "media": "anime",
+    "name": "Code Geass: Lelouch of the Rebellion R2",
+    "runtime": "24 min",
+    "score": 8.7,
+    "season": "Spring 2008",
+    "state": "Finished",
+    "studio": "Sunrise",
+    "subtitle": "Code Geass: Hangyaku no Lelouch R2 · コードギアス 反逆のルルーシュ R2",
+    "total": 25,
+    "year": 2008
+   }
+  },
+  {
+   "at": "2026-10-30T12:41:00.000Z",
+   "caption": "Ep 5 of 28",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/154587-ivXNJ23SM1xB.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+    "format": "TV",
+    "genres": [
+     "Adventure",
+     "Drama",
+     "Fantasy"
+    ],
+    "id": "anime:154587",
+    "media": "anime",
+    "name": "Frieren: Beyond Journey’s End",
+    "runtime": "24 min",
+    "score": 9.1,
+    "season": "Fall 2023",
+    "state": "Finished",
+    "studio": "MADHOUSE",
+    "subtitle": "Sousou no Frieren · 葬送のフリーレン",
+    "total": 28,
+    "year": 2023
+   }
+  }
+ ],
+ "summaries": [
+  {
+   "completed": 118,
+   "counts": {
+    "completed": 118,
+    "current": 4,
+    "dropped": 7,
+    "hold": 6,
+    "planned": 40
+   },
+   "entries": 175,
+   "mean": 7.67,
+   "media": "anime",
+   "minutes": 53928,
+   "rewatched": 1,
+   "scored": 86,
+   "units": 2247
+  },
+  {
+   "completed": 54,
+   "counts": {
+    "completed": 54,
+    "current": 1,
+    "dropped": 4,
+    "hold": 3,
+    "planned": 26
+   },
+   "entries": 88,
+   "mean": 8.05,
+   "media": "manga",
+   "minutes": 0,
+   "rewatched": 5,
+   "scored": 42,
+   "units": 4387
+  },
+  {
+   "completed": 44,
+   "counts": {
+    "completed": 44,
+    "current": 2,
+    "dropped": 1,
+    "hold": 2,
+    "planned": 21
+   },
+   "entries": 70,
+   "mean": 7.21,
+   "media": "tv",
+   "minutes": 47520,
+   "rewatched": 0,
+   "scored": 30,
+   "units": 990
+  },
+  {
+   "completed": 110,
+   "counts": {
+    "completed": 110,
+    "current": 6,
+    "dropped": 5,
+    "hold": 4,
+    "planned": 44
+   },
+   "entries": 169,
+   "mean": 7.54,
+   "media": "movie",
+   "minutes": 12980,
+   "rewatched": 4,
+   "scored": 67,
+   "units": 110
+  },
+  {
+   "completed": 40,
+   "counts": {
+    "completed": 40,
+    "current": 2,
+    "dropped": 2,
+    "hold": 2,
+    "planned": 26
+   },
+   "entries": 72,
+   "mean": 7.35,
+   "media": "book",
+   "minutes": 0,
+   "rewatched": 6,
+   "scored": 29,
+   "units": 13369
+  }
+ ],
+ "user": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+  "name": "Hal",
+  "username": "hal"
+ }
+}

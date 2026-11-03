@@ -1,0 +1,47 @@
+{
+ "creator": {
+  "name": "A-1 Pictures",
+  "ref": "studio:561"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/21234"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/31043"
+  }
+ ],
+ "members": 614766,
+ "startDate": "2016-01-08",
+ "studios": [
+  {
+   "name": "A-1 Pictures",
+   "ref": "studio:561"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21234-7lfSSPoMmwr2.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21234-XmqW39aQ9o7O.jpg",
+  "format": "TV",
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Psychological",
+   "Supernatural",
+   "Thriller"
+  ],
+  "id": "anime:21234",
+  "media": "anime",
+  "name": "ERASED",
+  "runtime": "23 min",
+  "score": 8.1,
+  "season": "Winter 2016",
+  "state": "Finished",
+  "studio": "A-1 Pictures",
+  "subtitle": "Boku dake ga Inai Machi · 僕だけがいない街",
+  "total": 12,
+  "year": 2016
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "creator": {
+  "name": "david production",
+  "ref": "studio:287"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/205909"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/63293"
+  }
+ ],
+ "members": 49801,
+ "startDate": "2026-10-09",
+ "studios": [
+  {
+   "name": "david production",
+   "ref": "studio:287"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/205909-hGeuFYrdhf9S.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205909-DM0fAzNQulod.jpg",
+  "format": "TV",
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "id": "anime:205909",
+  "media": "anime",
+  "name": "Firefly Wedding",
+  "next": {
+   "at": "2026-11-06T14:30:00.000Z",
+   "episode": 5
+  },
+  "runtime": "23 min",
+  "score": 7.5,
+  "season": "Fall 2026",
+  "state": "Releasing",
+  "studio": "david production",
+  "subtitle": "Hotaru no Yomeiri · ホタルの嫁入り",
+  "total": 12,
+  "year": 2026
+ }
+}

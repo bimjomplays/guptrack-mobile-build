@@ -1,0 +1,288 @@
+{
+ "id": "studio:561",
+ "kind": "Animation studio",
+ "name": "A-1 Pictures",
+ "titles": [
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177704-y10Nw7MUXCHD.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Comedy",
+    "Fantasy"
+   ],
+   "id": "anime:177704",
+   "media": "anime",
+   "name": "MASHLE: MAGIC AND MUSCLES The Tri-Magicathlon Divine Visionary Final Exam Arc",
+   "season": "Winter 2027",
+   "state": "Not yet released",
+   "studio": "A-1 Pictures",
+   "subtitle": "MASHLE: Sanma Taisou Shinkakusha Saishuu Shiken-hen · マッシュル-MASHLE- 三魔対争神覚者最終試験編",
+   "year": 2027
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/176496-5oY4k2NRqlYs.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176496-9BDMjAZGEbq4.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+   ],
+   "id": "anime:176496",
+   "media": "anime",
+   "name": "Solo Leveling Season 2 -Arise from the Shadow-",
+   "runtime": "24 min",
+   "score": 8.4,
+   "season": "Winter 2025",
+   "state": "Finished",
+   "studio": "A-1 Pictures",
+   "subtitle": "Ore dake Level Up na Ken: Season 2 - Arise from the Shadow · 俺だけレベルアップな件 Season 2 -Arise from the Shadow-",
+   "total": 13,
+   "year": 2025
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/194884-PwYRWyOUEwZI.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194884-rHgGAzKSCEWz.jpg",
+   "format": "Special",
+   "genres": [
+    "Comedy",
+    "Psychological",
+    "Romance",
+    "Slice of Life"
+   ],
+   "id": "anime:194884",
+   "media": "anime",
+   "name": "Kaguya-sama: Love Is War -Stairway to Adulthood-",
+   "runtime": "26 min",
+   "score": 8.4,
+   "season": "Fall 2025",
+   "state": "Finished",
+   "studio": "A-1 Pictures",
+   "subtitle": "Kaguya-sama wa Kokurasetai: Otona e no Kaidan · かぐや様は告らせたい 大人への階段",
+   "total": 2,
+   "year": 2025
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/151807-37yfQA3ym8PA.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151807-it355ZgzquUd.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+   ],
+   "id": "anime:151807",
+   "media": "anime",
+   "name": "Solo Leveling",
+   "runtime": "24 min",
+   "score": 8.0,
+   "season": "Winter 2024",
+   "state": "Finished",
+   "studio": "A-1 Pictures",
+   "subtitle": "Ore dake Level Up na Ken · 俺だけレベルアップな件",
+   "total": 12,
+   "year": 2024
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/151384-JybfIpHr2gx6.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151384-gv0q8wOE6D58.jpg",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Psychological",
+    "Romance",
+    "Slice of Life"
+   ],
+   "id": "anime:151384",
+   "media": "anime",
+   "name": "Kaguya-sama: Love is War -The First Kiss That Never Ends-",
+   "runtime": "25 min",
+   "score": 8.7,
+   "season": "Spring 2023",
+   "state": "Finished",
+   "studio": "A-1 Pictures",
+   "subtitle": "Kaguya-sama wa Kokurasetai: First Kiss wa Owaranai · かぐや様は告らせたい -ファーストキッスは終わらない-",
+   "total": 4,
+   "year": 2023
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/125367-hGPJLSNfprO3.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125367-1yuq9NFcQuLI.png",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Psychological",
+    "Romance",
+    "Slice of Life"
+   ],
+   "id": "anime:125367",
+   "media": "anime",
+   "name": "Kaguya-sama: Love is War -Ultra Romantic-",
+   "runtime": "24 min",
+   "score": 8.9,
+   "season": "Spring 2022",
+   "state": "Finished",
+   "studio": "A-1 Pictures",
+   "subtitle": "Kaguya-sama wa Kokurasetai: Ultra Romantic · かぐや様は告らせたい-ウルトラロマンティック-",
+   "total": 13,
+   "year": 2022
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/116589-SqwYWzaZCdD5.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx116589-KawXHB6sApFt.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Mecha",
+    "Sci-Fi"
+   ],
+   "id": "anime:116589",
+   "media": "anime",
+   "name": "86 EIGHTY-SIX",
+   "runtime": "24 min",
+   "score": 8.3,
+   "season": "Spring 2021",
+   "state": "Finished",
+   "studio": "A-1 Pictures",
+   "subtitle": "86: Eighty Six · 86－エイティシックス－",
+   "total": 11,
+   "year": 2021
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/131586-TQED17cUhGnT.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131586-JhC0wcBi09EZ.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Drama",
+    "Mecha",
+    "Sci-Fi"
+   ],
+   "id": "anime:131586",
+   "media": "anime",
+   "name": "86 EIGHTY-SIX Part 2",
+   "runtime": "24 min",
+   "score": 8.7,
+   "season": "Fall 2021",
+   "state": "Finished",
+   "studio": "A-1 Pictures",
+   "subtitle": "86: Eighty Six Part 2 · 86－エイティシックス－ 第2クール",
+   "total": 12,
+   "year": 2021
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/112641-mKZe0zng0ndV.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112641-zoGC8d6FaPXU.jpg",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Psychological",
+    "Romance",
+    "Slice of Life"
+   ],
+   "id": "anime:112641",
+   "media": "anime",
+   "name": "Kaguya-sama: Love is War?",
+   "runtime": "25 min",
+   "score": 8.5,
+   "season": "Spring 2020",
+   "state": "Finished",
+   "studio": "A-1 Pictures",
+   "subtitle": "Kaguya-sama wa Kokurasetai?: Tensaitachi no Renai Zunousen · かぐや様は告らせたい？～天才たちの恋愛頭脳戦～",
+   "total": 12,
+   "year": 2020
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/101921-GgvvFhlNhzlF.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101921-ufrjLzhSz7L1.jpg",
+   "format": "TV",
+   "genres": [
+    "Comedy",
+    "Psychological",
+    "Romance",
+    "Slice of Life"
+   ],
+   "id": "anime:101921",
+   "media": "anime",
+   "name": "Kaguya-sama: Love is War",
+   "runtime": "24 min",
+   "score": 8.3,
+   "season": "Winter 2019",
+   "state": "Finished",
+   "studio": "A-1 Pictures",
+   "subtitle": "Kaguya-sama wa Kokurasetai: Tensaitachi no Renai Zunousen · かぐや様は告らせたい～天才たちの恋愛頭脳戦～",
+   "total": 12,
+   "year": 2019
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21234-7lfSSPoMmwr2.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21234-XmqW39aQ9o7O.jpg",
+   "format": "TV",
+   "genres": [
+    "Drama",
+    "Mystery",
+    "Psychological",
+    "Supernatural",
+    "Thriller"
+   ],
+   "id": "anime:21234",
+   "media": "anime",
+   "name": "ERASED",
+   "runtime": "23 min",
+   "score": 8.1,
+   "season": "Winter 2016",
+   "state": "Finished",
+   "studio": "A-1 Pictures",
+   "subtitle": "Boku dake ga Inai Machi · 僕だけがいない街",
+   "total": 12,
+   "year": 2016
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11757-TlEEV9weG4Ag.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11757-SxYDUzdr9rh2.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Romance"
+   ],
+   "id": "anime:11757",
+   "media": "anime",
+   "name": "Sword Art Online",
+   "runtime": "23 min",
+   "score": 7.0,
+   "season": "Summer 2012",
+   "state": "Finished",
+   "studio": "A-1 Pictures",
+   "subtitle": "ソードアート・オンライン",
+   "total": 25,
+   "year": 2012
+  },
+  {
+   "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/6702-VSHyctSAeUBS.jpg",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b6702-KI4qgSMyI8Pm.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+   ],
+   "id": "anime:6702",
+   "media": "anime",
+   "name": "Fairy Tail",
+   "runtime": "24 min",
+   "score": 7.2,
+   "season": "Fall 2009",
+   "state": "Finished",
+   "studio": "Satelight",
+   "subtitle": "FAIRY TAIL · FAIRY TAIL",
+   "total": 175,
+   "year": 2009
+  }
+ ],
+ "total": 13
+}

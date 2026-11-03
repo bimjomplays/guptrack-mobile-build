@@ -1,0 +1,45 @@
+{
+ "creator": {
+  "name": "Manglobe",
+  "ref": "studio:32"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/790"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/790"
+  }
+ ],
+ "members": 160306,
+ "startDate": "2006-02-25",
+ "studios": [
+  {
+   "name": "Manglobe",
+   "ref": "studio:32"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/790.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx790-YTUCvBKX8ZWK.jpg",
+  "format": "TV",
+  "genres": [
+   "Adventure",
+   "Mystery",
+   "Psychological",
+   "Sci-Fi"
+  ],
+  "id": "anime:790",
+  "media": "anime",
+  "name": "Ergo Proxy",
+  "runtime": "25 min",
+  "score": 7.6,
+  "season": "Winter 2006",
+  "state": "Finished",
+  "studio": "Manglobe",
+  "total": 23,
+  "year": 2006
+ }
+}

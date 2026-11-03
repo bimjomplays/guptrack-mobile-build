@@ -1,0 +1,47 @@
+{
+ "creator": {
+  "name": "MADHOUSE",
+  "ref": "studio:11"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/19"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/19"
+  }
+ ],
+ "members": 350051,
+ "startDate": "2004-04-07",
+ "studios": [
+  {
+   "name": "MADHOUSE",
+   "ref": "studio:11"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/19-kJhwsB0Z97tL.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19-gtMC64182sm4.jpg",
+  "format": "TV",
+  "genres": [
+   "Drama",
+   "Horror",
+   "Mystery",
+   "Psychological",
+   "Thriller"
+  ],
+  "id": "anime:19",
+  "media": "anime",
+  "name": "Monster",
+  "runtime": "24 min",
+  "score": 8.8,
+  "season": "Spring 2004",
+  "state": "Finished",
+  "studio": "MADHOUSE",
+  "subtitle": "MONSTER · MONSTER",
+  "total": 74,
+  "year": 2004
+ }
+}

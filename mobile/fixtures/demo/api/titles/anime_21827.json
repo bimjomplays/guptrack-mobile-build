@@ -1,0 +1,45 @@
+{
+ "creator": {
+  "name": "Kyoto Animation",
+  "ref": "studio:2"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/21827"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/33352"
+  }
+ ],
+ "members": 556237,
+ "startDate": "2018-01-11",
+ "studios": [
+  {
+   "name": "Kyoto Animation",
+   "ref": "studio:2"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21827-ROucgYiiiSpR.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21827-ubzq619ZA2E9.png",
+  "format": "TV",
+  "genres": [
+   "Drama",
+   "Fantasy",
+   "Slice of Life"
+  ],
+  "id": "anime:21827",
+  "media": "anime",
+  "name": "Violet Evergarden",
+  "runtime": "24 min",
+  "score": 8.5,
+  "season": "Winter 2018",
+  "state": "Finished",
+  "studio": "Kyoto Animation",
+  "subtitle": "ヴァイオレット・エヴァーガーデン",
+  "total": 13,
+  "year": 2018
+ }
+}

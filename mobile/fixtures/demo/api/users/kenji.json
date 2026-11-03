@@ -1,0 +1,270 @@
+{
+ "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/101348-pivKKffCAwAY.jpg",
+ "bannerFade": 0.7,
+ "bio": "Long seinen runs, short sports shows, and whatever Mika recommends.",
+ "friendsSince": "2026-10-08T15:00:00.000Z",
+ "friendship": "friends",
+ "inCommon": {
+  "anime": 31,
+  "book": 5,
+  "manga": 11,
+  "movie": 6,
+  "tv": 9
+ },
+ "joined": "2026-03-12T15:00:00.000Z",
+ "lastUpdates": [
+  {
+   "at": "2026-11-03T11:41:00.000Z",
+   "caption": "Ep 3 of 11",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210482-pYAD0IbzNbgS.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+    "format": "ONA",
+    "genres": [
+     "Action",
+     "Adventure",
+     "Drama",
+     "Mystery",
+     "Supernatural"
+    ],
+    "id": "anime:210482",
+    "media": "anime",
+    "name": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+    "next": {
+     "at": "2026-11-06T08:00:00.000Z",
+     "episode": 7
+    },
+    "runtime": "23 min",
+    "score": 8.6,
+    "season": "Fall 2026",
+    "state": "Releasing",
+    "studio": "david production",
+    "subtitle": "JoJo no Kimyou na Bouken: Steel Ball Run - 2nd & 3rd STAGE · ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE",
+    "total": 11,
+    "year": 2026
+   }
+  },
+  {
+   "at": "2026-11-02T16:41:00.000Z",
+   "caption": "Rewatching · Ep 3",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/154587-ivXNJ23SM1xB.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+    "format": "TV",
+    "genres": [
+     "Adventure",
+     "Drama",
+     "Fantasy"
+    ],
+    "id": "anime:154587",
+    "media": "anime",
+    "name": "Frieren: Beyond Journey’s End",
+    "runtime": "24 min",
+    "score": 9.1,
+    "season": "Fall 2023",
+    "state": "Finished",
+    "studio": "MADHOUSE",
+    "subtitle": "Sousou no Frieren · 葬送のフリーレン",
+    "total": 28,
+    "year": 2023
+   }
+  },
+  {
+   "at": "2026-11-01T21:41:00.000Z",
+   "caption": "Ep 1 of 10",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195539-lO5SUdp4SOrq.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png",
+    "format": "ONA",
+    "genres": [
+     "Action",
+     "Drama",
+     "Sci-Fi"
+    ],
+    "id": "anime:195539",
+    "media": "anime",
+    "name": "Cyberpunk: Edgerunners 2",
+    "runtime": "28 min",
+    "score": 8.3,
+    "season": "Fall 2026",
+    "state": "Finished",
+    "studio": "TRIGGER",
+    "subtitle": "サイバーパンク: エッジランナーズ2",
+    "total": 10,
+    "year": 2026
+   }
+  },
+  {
+   "at": "2026-11-01T02:41:00.000Z",
+   "caption": "Ep 28 of 74",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/19-kJhwsB0Z97tL.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19-gtMC64182sm4.jpg",
+    "format": "TV",
+    "genres": [
+     "Drama",
+     "Horror",
+     "Mystery",
+     "Psychological",
+     "Thriller"
+    ],
+    "id": "anime:19",
+    "media": "anime",
+    "name": "Monster",
+    "runtime": "24 min",
+    "score": 8.8,
+    "season": "Spring 2004",
+    "state": "Finished",
+    "studio": "MADHOUSE",
+    "subtitle": "MONSTER · MONSTER",
+    "total": 74,
+    "year": 2004
+   }
+  },
+  {
+   "at": "2026-10-31T07:41:00.000Z",
+   "caption": "Completed · ★10",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1575.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1575-hsmWM2ydNm1m.jpg",
+    "format": "TV",
+    "genres": [
+     "Action",
+     "Drama",
+     "Mecha",
+     "Sci-Fi",
+     "Thriller"
+    ],
+    "id": "anime:1575",
+    "media": "anime",
+    "name": "Code Geass: Lelouch of the Rebellion",
+    "runtime": "24 min",
+    "score": 8.5,
+    "season": "Fall 2006",
+    "state": "Finished",
+    "studio": "Sunrise",
+    "subtitle": "Code Geass: Hangyaku no Lelouch · コードギアス 反逆のルルーシュ",
+    "total": 25,
+    "year": 2006
+   }
+  },
+  {
+   "at": "2026-10-30T12:41:00.000Z",
+   "caption": "Rewatching · Ep 13",
+   "title": {
+    "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n9253-JIhmKgBKsWUN.jpg",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9253-tIUXF2gfU8Sg.jpg",
+    "format": "TV",
+    "genres": [
+     "Drama",
+     "Psychological",
+     "Sci-Fi",
+     "Thriller"
+    ],
+    "id": "anime:9253",
+    "media": "anime",
+    "name": "Steins;Gate",
+    "runtime": "24 min",
+    "score": 8.9,
+    "season": "Spring 2011",
+    "state": "Finished",
+    "studio": "WHITE FOX",
+    "subtitle": "シュタインズ・ゲート",
+    "total": 24,
+    "year": 2011
+   }
+  }
+ ],
+ "summaries": [
+  {
+   "completed": 124,
+   "counts": {
+    "completed": 124,
+    "current": 7,
+    "dropped": 9,
+    "hold": 4,
+    "planned": 65
+   },
+   "entries": 209,
+   "mean": 8.28,
+   "media": "anime",
+   "minutes": 55608,
+   "rewatched": 3,
+   "scored": 109,
+   "units": 2317
+  },
+  {
+   "completed": 63,
+   "counts": {
+    "completed": 63,
+    "current": 2,
+    "dropped": 2,
+    "hold": 3,
+    "planned": 22
+   },
+   "entries": 92,
+   "mean": 7.62,
+   "media": "manga",
+   "minutes": 0,
+   "rewatched": 2,
+   "scored": 52,
+   "units": 4181
+  },
+  {
+   "completed": 38,
+   "counts": {
+    "completed": 38,
+    "current": 1,
+    "dropped": 1,
+    "hold": 1,
+    "planned": 19
+   },
+   "entries": 60,
+   "mean": 7.45,
+   "media": "tv",
+   "minutes": 39840,
+   "rewatched": 0,
+   "scored": 34,
+   "units": 830
+  },
+  {
+   "completed": 79,
+   "counts": {
+    "completed": 79,
+    "current": 3,
+    "dropped": 4,
+    "hold": 3,
+    "planned": 28
+   },
+   "entries": 117,
+   "mean": 7.72,
+   "media": "movie",
+   "minutes": 10502,
+   "rewatched": 2,
+   "scored": 64,
+   "units": 89
+  },
+  {
+   "completed": 35,
+   "counts": {
+    "completed": 35,
+    "current": 3,
+    "dropped": 2,
+    "hold": 1,
+    "planned": 29
+   },
+   "entries": 70,
+   "mean": 8.08,
+   "media": "book",
+   "minutes": 0,
+   "rewatched": 1,
+   "scored": 21,
+   "units": 11421
+  }
+ ],
+ "user": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+  "name": "Kenji",
+  "username": "kenji"
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "Sunrise",
+  "ref": "studio:14"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/1"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/1"
+  }
+ ],
+ "members": 475157,
+ "startDate": "1998-04-03",
+ "studios": [
+  {
+   "name": "Sunrise",
+   "ref": "studio:14"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1-OquNCNB6srGe.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1-GCsPm7waJ4kS.png",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Sci-Fi"
+  ],
+  "id": "anime:1",
+  "media": "anime",
+  "name": "Cowboy Bebop",
+  "runtime": "24 min",
+  "score": 8.6,
+  "season": "Spring 1998",
+  "state": "Finished",
+  "studio": "Sunrise",
+  "subtitle": "カウボーイビバップ",
+  "total": 26,
+  "year": 1998
+ }
+}

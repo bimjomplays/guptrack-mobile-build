@@ -1,0 +1,31 @@
+{
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/manga/30656"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/manga/656"
+  }
+ ],
+ "members": 165422,
+ "startDate": "1998-09-03",
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30656-XYzvRlsc3iK4.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30656-9mW113O7rDnA.png",
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama"
+  ],
+  "id": "manga:30656",
+  "media": "manga",
+  "name": "Vagabond",
+  "score": 9.1,
+  "state": "Releasing",
+  "subtitle": "バガボンド",
+  "year": 1998
+ }
+}

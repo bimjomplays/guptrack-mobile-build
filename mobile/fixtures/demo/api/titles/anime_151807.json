@@ -1,0 +1,45 @@
+{
+ "creator": {
+  "name": "A-1 Pictures",
+  "ref": "studio:561"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/151807"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/52299"
+  }
+ ],
+ "members": 460209,
+ "startDate": "2024-01-07",
+ "studios": [
+  {
+   "name": "A-1 Pictures",
+   "ref": "studio:561"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/151807-37yfQA3ym8PA.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151807-it355ZgzquUd.png",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "id": "anime:151807",
+  "media": "anime",
+  "name": "Solo Leveling",
+  "runtime": "24 min",
+  "score": 8.0,
+  "season": "Winter 2024",
+  "state": "Finished",
+  "studio": "A-1 Pictures",
+  "subtitle": "Ore dake Level Up na Ken · 俺だけレベルアップな件",
+  "total": 12,
+  "year": 2024
+ }
+}

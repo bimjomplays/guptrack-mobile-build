@@ -1,0 +1,201 @@
+{
+ "cast": [
+  {
+   "image": "https://image.tmdb.org/t/p/w185/kBM9UTPYXUA2RNk210DXhztLFns.jpg",
+   "name": "Song Kang-ho",
+   "role": "Kim Ki-taek"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/nHFBbSFohzOUOvMxPVwe3Es2nJw.jpg",
+   "name": "Lee Sun-kyun",
+   "role": "Park Dong-ik"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/5MgWM8pkUiYkj9MEaEpO0Ir1FD9.jpg",
+   "name": "Cho Yeo-jeong",
+   "role": "Yeon-kyo"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/9mZ9DNopxpCLUjXd0rLd42TLamw.jpg",
+   "name": "Choi Woo-shik",
+   "role": "Ki-woo"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/fGVOikpvivopeATDy6ZzLdKYXDu.jpg",
+   "name": "Park So-dam",
+   "role": "Ki-jung"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/4r3K47UpSmzZ5t9cyTRRqRl9rdz.jpg",
+   "name": "Lee Jung-eun",
+   "role": "Moon-gwang"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/pZiQXSWwo9F4gncHfa1yw0CQjxk.jpg",
+   "name": "Jang Hye-jin",
+   "role": "Chung-sook"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/5SucrxkigHss7UuJKrkfAZX5MXz.jpg",
+   "name": "Park Myung-hoon",
+   "role": "Geun-se"
+  },
+  {
+   "image": "https://image.tmdb.org/t/p/w185/jsUPFmY1HlML92ubVtSE8L8ovz6.jpg",
+   "name": "Jung Zi-so",
+   "role": "Da-hye"
+  }
+ ],
+ "description": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
+ "links": [
+  {
+   "label": "TMDB",
+   "url": "https://www.themoviedb.org/movie/496243"
+  }
+ ],
+ "recommendations": [
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+   "format": "Movie",
+   "genres": [
+    "Science Fiction",
+    "Adventure"
+   ],
+   "id": "movie:693134",
+   "media": "movie",
+   "name": "Dune: Part Two",
+   "runtime": "2h 47m",
+   "score": 8.1,
+   "year": 2024
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/neeNHeXjMF5fXoCJRsOmkNGC7q.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+   "format": "Movie",
+   "genres": [
+    "Drama",
+    "History",
+    "War"
+   ],
+   "id": "movie:872585",
+   "media": "movie",
+   "name": "Oppenheimer",
+   "runtime": "3h 1m",
+   "score": 8.0,
+   "year": 2023
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+   "format": "Movie",
+   "genres": [
+    "Horror",
+    "Action",
+    "Thriller"
+   ],
+   "id": "movie:1233413",
+   "media": "movie",
+   "name": "Sinners",
+   "runtime": "2h 18m",
+   "score": 7.5,
+   "year": 2025
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/7HR38hMBl23lf38MAN63y4pKsHz.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+   "format": "Movie",
+   "genres": [
+    "Drama",
+    "Romance"
+   ],
+   "id": "movie:666277",
+   "media": "movie",
+   "name": "Past Lives",
+   "runtime": "1h 46m",
+   "score": 7.7,
+   "year": 2023
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/fIwiFha3WPu5nHkBeMQ4GzEk0Hv.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+   "format": "Movie",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Science Fiction"
+   ],
+   "id": "movie:545611",
+   "media": "movie",
+   "name": "Everything Everywhere All at Once",
+   "runtime": "2h 20m",
+   "score": 7.7,
+   "year": 2022
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/rvtdN5XkWAfGX6xDuPL6yYS2seK.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+   "format": "Movie",
+   "genres": [
+    "Crime",
+    "Mystery",
+    "Thriller"
+   ],
+   "id": "movie:414906",
+   "media": "movie",
+   "name": "The Batman",
+   "runtime": "2h 57m",
+   "score": 7.7,
+   "year": 2022
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/8VyTWJrNEyV2MTWvniDVp0MpOAe.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+   "format": "Movie",
+   "genres": [
+    "Horror",
+    "Mystery"
+   ],
+   "id": "movie:1078605",
+   "media": "movie",
+   "name": "Weapons",
+   "runtime": "2h 8m",
+   "score": 7.3,
+   "year": 2025
+  },
+  {
+   "banner": "https://image.tmdb.org/t/p/w1280/hiazLNa1UXuX35OTnMQRKOx3eTk.jpg",
+   "cover": "https://image.tmdb.org/t/p/w500/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+   "format": "Movie",
+   "genres": [
+    "Thriller",
+    "Crime",
+    "Comedy"
+   ],
+   "id": "movie:1054867",
+   "media": "movie",
+   "name": "One Battle After Another",
+   "runtime": "2h 42m",
+   "score": 7.3,
+   "year": 2025
+  }
+ ],
+ "tagline": "Act like you own the place.",
+ "title": {
+  "banner": "https://image.tmdb.org/t/p/w1280/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg",
+  "cover": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+  "format": "Movie",
+  "genres": [
+   "Comedy",
+   "Thriller",
+   "Drama"
+  ],
+  "id": "movie:496243",
+  "media": "movie",
+  "name": "Parasite",
+  "runtime": "2h 13m",
+  "score": 8.5,
+  "year": 2019
+ },
+ "trailer": "https://www.youtube.com/results?search_query=Parasite+trailer"
+}

@@ -1,0 +1,46 @@
+{
+ "creator": {
+  "name": "A-1 Pictures",
+  "ref": "studio:561"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/125367"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/43608"
+  }
+ ],
+ "members": 297824,
+ "startDate": "2022-04-09",
+ "studios": [
+  {
+   "name": "A-1 Pictures",
+   "ref": "studio:561"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/125367-hGPJLSNfprO3.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125367-1yuq9NFcQuLI.png",
+  "format": "TV",
+  "genres": [
+   "Comedy",
+   "Psychological",
+   "Romance",
+   "Slice of Life"
+  ],
+  "id": "anime:125367",
+  "media": "anime",
+  "name": "Kaguya-sama: Love is War -Ultra Romantic-",
+  "runtime": "24 min",
+  "score": 8.9,
+  "season": "Spring 2022",
+  "state": "Finished",
+  "studio": "A-1 Pictures",
+  "subtitle": "Kaguya-sama wa Kokurasetai: Ultra Romantic · かぐや様は告らせたい-ウルトラロマンティック-",
+  "total": 13,
+  "year": 2022
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "creator": {
+  "name": "Toei Animation",
+  "ref": "studio:18"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/813"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/813"
+  }
+ ],
+ "members": 263945,
+ "startDate": "1989-04-26",
+ "studios": [
+  {
+   "name": "Toei Animation",
+   "ref": "studio:18"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/813-03ZLvWJgR6Wd.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx813-ZhnFNOeCU5dQ.png",
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Fantasy",
+   "Supernatural"
+  ],
+  "id": "anime:813",
+  "media": "anime",
+  "name": "Dragon Ball Z",
+  "runtime": "24 min",
+  "score": 8.1,
+  "season": "Spring 1989",
+  "state": "Finished",
+  "studio": "Toei Animation",
+  "subtitle": "ドラゴンボールZ",
+  "total": 291,
+  "year": 1989
+ }
+}

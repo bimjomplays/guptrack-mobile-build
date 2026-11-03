@@ -1,0 +1,45 @@
+{
+ "creator": {
+  "name": "MAPPA",
+  "ref": "studio:569"
+ },
+ "links": [
+  {
+   "label": "AniList",
+   "url": "https://anilist.co/anime/100876"
+  },
+  {
+   "label": "MyAnimeList",
+   "url": "https://myanimelist.net/anime/37086"
+  }
+ ],
+ "members": 239922,
+ "startDate": "2019-01-09",
+ "studios": [
+  {
+   "name": "MAPPA",
+   "ref": "studio:569"
+  }
+ ],
+ "title": {
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n100876-gqt1fZKTubPm.jpg",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100876-RfvmpW1B8bDQ.png",
+  "format": "TV",
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Psychological"
+  ],
+  "id": "anime:100876",
+  "media": "anime",
+  "name": "Kakegurui xx",
+  "runtime": "24 min",
+  "score": 7.0,
+  "season": "Winter 2019",
+  "state": "Finished",
+  "studio": "MAPPA",
+  "subtitle": "Kakegurui ×× · 賭ケグルイ××",
+  "total": 12,
+  "year": 2019
+ }
+}

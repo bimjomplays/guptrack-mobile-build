@@ -1,0 +1,96 @@
+{
+ "media": "book",
+ "rows": [
+  {
+   "theirs": 70,
+   "title": {
+    "cover": "https://covers.openlibrary.org/b/id/11200092-L.jpg",
+    "format": "Book",
+    "genres": [
+     "hard science-fiction",
+     "science-fiction",
+     "sci-fi",
+     "hard sci-fi"
+    ],
+    "id": "book:OL21745884W",
+    "media": "book",
+    "name": "Project Hail Mary",
+    "score": 9.1,
+    "studio": "Andy Weir",
+    "subtitle": "Andy Weir",
+    "total": 496,
+    "year": 2021
+   }
+  },
+  {
+   "mine": 85,
+   "theirs": 85,
+   "title": {
+    "cover": "https://covers.openlibrary.org/b/id/11481354-L.jpg",
+    "format": "Book",
+    "genres": [
+     "Dune (Imaginary place)",
+     "Fiction",
+     "Fiction, science fiction, general",
+     "Dune (imaginary place), fiction"
+    ],
+    "id": "book:OL893414W",
+    "media": "book",
+    "name": "Dune",
+    "score": 8.6,
+    "studio": "Frank Herbert",
+    "subtitle": "Frank Herbert",
+    "total": 608,
+    "year": 1965
+   }
+  },
+  {
+   "mine": 80,
+   "title": {
+    "cover": "https://covers.openlibrary.org/b/id/10648686-L.jpg",
+    "format": "Book",
+    "genres": [
+     "Fiction, science fiction, general",
+     "speculative fiction",
+     "Fiction, dystopian",
+     "British and irish fiction (fictional works by one author)"
+    ],
+    "id": "book:OL20883297W",
+    "media": "book",
+    "name": "Klara and the Sun",
+    "score": 7.6,
+    "studio": "Kazuo Ishiguro",
+    "subtitle": "Kazuo Ishiguro",
+    "total": 334,
+    "year": 2019
+   }
+  },
+  {
+   "mine": 85,
+   "theirs": 55,
+   "title": {
+    "cover": "https://covers.openlibrary.org/b/id/1047334-L.jpg",
+    "format": "Book",
+    "genres": [
+     "Fiction",
+     "Organ donors",
+     "Cloning",
+     "Donation of organs, tissues"
+    ],
+    "id": "book:OL59038W",
+    "media": "book",
+    "name": "Never Let Me Go",
+    "score": 7.7,
+    "studio": "Kazuo Ishiguro",
+    "subtitle": "Kazuo Ishiguro",
+    "total": 319,
+    "year": 2005
+   }
+  }
+ ],
+ "user": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+  "name": "Sora",
+  "username": "sorawatches"
+ }
+}
