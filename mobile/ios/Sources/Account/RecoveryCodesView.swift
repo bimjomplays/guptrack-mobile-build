@@ -17,9 +17,9 @@ struct RecoveryCodesView: View {
                 if flow.codes.isEmpty {
                     ProgressView().frame(maxWidth: .infinity).padding(.top, 60)
                 } else {
-                    codeGrid.padding(.top, 26)
-                    buttons.padding(.top, 26)
-                    savedCheck.padding(.top, 32)
+                    codeGrid.padding(.top, 22)
+                    buttons.padding(.top, 18)
+                    savedCheck.padding(.top, 22)
                 }
             }
             .padding(.horizontal, Theme.pad)
@@ -52,7 +52,7 @@ struct RecoveryCodesView: View {
                 .fixedSize(horizontal: false, vertical: true)
                 .padding(.top, 8)
         }
-        .padding(.top, 56)
+        .padding(.top, 40)
     }
 
     private var codeGrid: some View {
@@ -153,17 +153,18 @@ private struct CodeCell: View {
             Text("\(number)")
                 .font(.system(size: 12, weight: .medium))
                 .foregroundStyle(Theme.inkFaint)
-                .frame(width: 10, alignment: .leading)
+                .frame(width: 16, alignment: .leading)
             Text(code)
-                .font(.system(size: big ? 18 : 15, weight: .medium, design: .monospaced))
+                .font(.system(size: big ? 18 : 14, weight: .medium, design: .monospaced))
                 .foregroundStyle(Theme.ink)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
                 .textSelection(.enabled)
             Spacer(minLength: 0)
         }
-        .padding(.horizontal, 20)
-        .padding(.vertical, 14)
+        .padding(.horizontal, big ? 20 : 16)
+        // the long codes go one to a line, close together so all ten, Copy and the tick fit on the screen (04)
+        .padding(.vertical, big ? 14 : 6)
         .overlay(alignment: .trailing) {
             if divider { Rectangle().fill(Theme.sep).frame(width: 0.5) }
         }

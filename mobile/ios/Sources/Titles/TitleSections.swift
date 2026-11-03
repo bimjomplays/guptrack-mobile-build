@@ -53,13 +53,17 @@ struct TitleInfoLine: View {
     }
 }
 
-/// Everything under the top: story, tags, makers, seasons, characters, cast, crew, related, scores, details,
+/// Everything under the top: seasons, story, tags, makers, characters, cast, crew, related, scores, details,
 /// reviews, more like this. Each shows only when the page has it.
 struct TitleSections: View {
     let page: TitlePage
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
+            // seasons come first, right under "Up next"
+            if !page.seasons.isEmpty {
+                TitleSeasons(page: page, seasons: page.seasons).sectionGap(26)
+            }
             if let story = page.story() {
                 TitleHeading(page.storyHeading).sectionGap(26)
                 MoreText(text: story, lines: 4)
@@ -70,9 +74,6 @@ struct TitleSections: View {
             // a manga's or book's makers sit under the story; everyone else's staff is a list further down
             if makersOnTop, !page.staff.isEmpty {
                 TitleMakers(people: page.staff).padding(.top, 18)
-            }
-            if !page.seasons.isEmpty {
-                TitleSeasons(page: page, seasons: page.seasons).sectionGap()
             }
             if !page.characters.isEmpty {
                 TitleCharacters(characters: page.characters).sectionGap()

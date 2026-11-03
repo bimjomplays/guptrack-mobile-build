@@ -23,9 +23,6 @@ struct BrowseFiltersSheet: View {
                 VStack(alignment: .leading, spacing: 28) {
                     sortSection
                     picks("Genres", facets?.genres ?? draft.genres, draft.genres) { draft.toggleGenre($0) }
-                    if let tags = facets?.tags, !tags.isEmpty {
-                        picks("Tags", Array(tags.prefix(30)), draft.tags) { draft.toggleTag($0) }
-                    }
                     yearSection
                     if BrowseFilters.hasSeason(media) { seasonSection }
                     single("Format", Catalog.formats(media), $draft.format) { $0 }
@@ -33,6 +30,9 @@ struct BrowseFiltersSheet: View {
                         single("Status", Catalog.statuses(media), $draft.status) { s in
                             Catalog.statusLabel(s, media)
                         }
+                    }
+                    if let tags = facets?.tags, !tags.isEmpty {
+                        picks("Tags", Array(tags.prefix(30)), draft.tags) { draft.toggleTag($0) }
                     }
                     scoreSection
                 }

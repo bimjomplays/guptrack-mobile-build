@@ -117,6 +117,10 @@ jobs:
           # a pending permission prompt would cover the screenshots (harmless when the app never asks)
           xcrun simctl privacy "$udid" grant camera app.guptrack.phone || true
           xcrun simctl privacy "$udid" grant photos app.guptrack.phone || true
+          # the keyboard's first-run "slide to type" card would cover the typing pictures (27)
+          for k in DidShowContinuousPathIntroduction DidShowGestureKeyboardIntroduction; do
+            xcrun simctl spawn "$udid" defaults write com.apple.keyboard.preferences "$k" -bool true || true
+          done
       - name: Unit tests
         id: unit
         env:

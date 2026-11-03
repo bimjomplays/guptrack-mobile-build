@@ -211,14 +211,21 @@ struct CharacterPage: Hashable, Sendable {
         return "\(first.role) character · \(first.title.title)"
     }
 
+    /// "17-" (no end) reads "17"; "17-18" keeps its range
+    private static func age(_ v: String) -> String {
+        var a = v.trimmingCharacters(in: .whitespaces)
+        while a.hasSuffix("-") || a.hasSuffix("–") { a.removeLast() }
+        return a.replacingOccurrences(of: "-", with: "–")
+    }
+
     /// the columns under the head: Height, Birthday, Age, Gender first, at most four, short values only
     var facts: [Fact] {
         let order = ["Height", "Birthday", "Age", "Gender"]
-        let short = detail.facts.filter { $0.value.count <= 16 }
+        let short = detail.facts.filter { !$0.value.isEmpty && $0.value.count <= 16 }
         let known = order.compactMap { l in short.first { $0.label == l } }
         let rest = short.filter { !order.contains($0.label) }
         return Array((known + rest).prefix(4)).map {
-            Fact(label: $0.label, value: $0.label == "Age" ? $0.value.replacingOccurrences(of: "-", with: "–") : $0.value)
+            Fact(label: $0.label, value: $0.label == "Age" ? Self.age($0.value) : $0.value)
         }
     }
 }

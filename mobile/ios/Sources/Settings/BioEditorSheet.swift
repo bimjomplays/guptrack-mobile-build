@@ -160,7 +160,7 @@ struct BioEditorSheet: View {
                 }
             }
         } label: {
-            Label("Insert list", systemImage: "text.badge.plus")
+            Label("Insert list", systemImage: "text.badge.plus").labelStyle(.titleAndIcon)
         }
         .buttonStyle(.borderedProminent)
         .tint(Theme.brand)

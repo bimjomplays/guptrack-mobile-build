@@ -339,6 +339,13 @@ final class SettingsTests: XCTestCase {
         XCTAssertEqual(store.saved?.privacy.comments, "friends")
     }
 
+    /// the demo's pairing code is live when it's made (it ran out on screen when it kept the file's time)
+    func testDemoPairingCodeIsLive() async throws {
+        let p = try await demo().startPairing(for: .harbor)
+        XCTAssertGreaterThan(p.expiresAt, Millis.of(Clock.now))
+        XCTAssertEqual(p.code, "7KQ4-M2XD")
+    }
+
     @MainActor
     func testDemoKeepsPrivacyWrites() async throws {
         let api = APIClient(transport: DemoTransport(), token: "demo")
@@ -479,7 +486,7 @@ final class SettingsTests: XCTestCase {
     // MARK: text helpers
 
     func testScoreFormatExamples() {
-        XCTAssertEqual(ScoreFormat.allCases.map(\.example), ["85", "8.5", "8", "★★★★☆", "🙂"])
+        XCTAssertEqual(ScoreFormat.allCases.map(\.example), ["8", "8.5", "85", "★★★★☆", "🙂"])
         XCTAssertEqual(ScoreFormat.point10Decimal.show(70), "7")
         XCTAssertEqual(ScoreFormat.stars5.show(100), "★★★★★")
         XCTAssertEqual(ScoreFormat.stars5.show(0), "☆☆☆☆☆")

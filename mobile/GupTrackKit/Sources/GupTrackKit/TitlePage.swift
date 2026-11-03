@@ -55,13 +55,15 @@ typealias Rich = [[RichSpan]]
 
 /// Rich text as the app shows it: plain paragraphs, spoilers left out until asked for.
 enum RichText {
-    /// the paragraphs joined by a blank line; `spoilers` false leaves spoiler spans out (and paragraphs left empty)
+    /// the paragraphs joined by a blank line; `spoilers` false leaves spoiler spans out (and paragraphs left empty,
+    /// or left as only a label such as "Bounty:" once its value was a spoiler)
     static func plain(_ r: Rich, spoilers: Bool = false) -> String {
-        r.map { p in
-            p.filter { spoilers || $0.spoiler != true }.map(\.text).joined()
-                .trimmingCharacters(in: .whitespacesAndNewlines)
+        r.compactMap { p in
+            let kept = p.filter { spoilers || $0.spoiler != true }
+            let text = kept.map(\.text).joined().trimmingCharacters(in: .whitespacesAndNewlines)
+            if kept.count < p.count, text.hasSuffix(":"), !text.contains("\n") { return nil }
+            return text.isEmpty ? nil : text
         }
-        .filter { !$0.isEmpty }
         .joined(separator: "\n\n")
     }
 

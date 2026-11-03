@@ -20,6 +20,7 @@ private struct PersonPageBody: View {
     let page: PersonPage
 
     @State private var group: String?
+    @State private var kind: MediaKind = .movie
 
     var body: some View {
         ScrollView {
@@ -65,14 +66,27 @@ private struct PersonPageBody: View {
     private var credits: some View {
         let groups = page.groups
         let chosen = group ?? groups.first
-        let list = page.credits(groups.count > 1 ? chosen : nil)
+        let all = page.credits(groups.count > 1 ? chosen : nil)
+        // an actor's or director's films and shows split into Movies and TV (anime and books keep their groups)
+        let films = groups.count == 1 && !all.isEmpty && all.allSatisfy { $0.title.media == .movie || $0.title.media == .tv }
+        let movies = all.filter { $0.title.media == .movie }, shows = all.filter { $0.title.media == .tv }
+        let both = films && !movies.isEmpty && !shows.isEmpty
+        let list = both ? (kind == .tv ? shows : movies) : all
         return VStack(alignment: .leading, spacing: 0) {
             HStack {
-                Text(groups.count == 1 ? groups[0] : "Credits").font(.system(size: 20, weight: .bold)).tracking(-0.5)
+                Text(films ? "Filmography" : groups.count == 1 ? groups[0] : "Credits")
+                    .font(.system(size: 20, weight: .bold)).tracking(-0.5)
                     .foregroundStyle(Theme.ink)
                     .accessibilityAddTraits(.isHeader)
                 Spacer(minLength: 12)
-                if groups.count > 1 {
+                if both {
+                    Picker("Filmography", selection: $kind) {
+                        Text("Movies \(movies.count)").tag(MediaKind.movie)
+                        Text("TV \(shows.count)").tag(MediaKind.tv)
+                    }
+                    .pickerStyle(.segmented)
+                    .frame(width: 190)
+                } else if groups.count > 1 {
                     Picker("Credits", selection: Binding(get: { chosen ?? "" }, set: { group = $0 })) {
                         ForEach(groups, id: \.self) { g in Text(g).tag(g) }
                     }

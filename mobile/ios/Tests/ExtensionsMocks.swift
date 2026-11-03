@@ -2,8 +2,8 @@ import SwiftUI
 @testable import GupTrack
 
 // Test-only stand-ins for the system's Home Screen and Lock Screen, to draw the widgets' faces where the mockups
-// have them (65, 65b), and the page a link was shared from (66). Flat colours and plain grey tiles: nothing that
-// copies the system's own icons. The widgets read the app's library, so a +1 here goes through AppModel.step.
+// have them (65, 65b), and the page a link was shared from (66). Flat coloured tiles with a plain symbol, no
+// gradients and nothing that copies the system's own icons. The widgets read the app's library, so a +1 here goes through AppModel.step.
 
 /// the demo catalogue the extensions bundle (api/extensions.json)
 @MainActor
@@ -13,22 +13,44 @@ enum ExtensionsDemo {
     }
 }
 
-/// a grey app tile with its name under it
+/// an app tile: a flat colour with a plain symbol, its name under it
 private struct MockAppTile: View {
     let name: String
+    var symbol: String = ""
+    var color: Color = Color(white: 0.27)
     var size: CGFloat = 62
 
     var body: some View {
         VStack(spacing: 6) {
             RoundedRectangle(cornerRadius: size * 0.235, style: .continuous)
-                .fill(Color(white: 0.27))
+                .fill(color)
                 .frame(width: size, height: size)
+                .overlay {
+                    if !symbol.isEmpty {
+                        Image(systemName: symbol).font(.system(size: size * 0.42, weight: .regular))
+                            .foregroundStyle(.white)
+                    }
+                }
             if !name.isEmpty {
                 Text(name).font(.system(size: 12, weight: .medium)).foregroundStyle(.white)
             }
         }
         .frame(width: 82)
     }
+}
+
+/// the made-up apps round the widgets: name, symbol, colour
+private enum MockApps {
+    static func rgb(_ r: Double, _ g: Double, _ b: Double) -> Color { Color(red: r / 255, green: g / 255, blue: b / 255) }
+    static let harbor = ("Harbor", "anchor", rgb(26, 42, 74))
+    static let gupworks = ("GupWorks", "sparkles", rgb(52, 36, 92))
+    static let camera = ("Camera", "camera.aperture", rgb(52, 54, 60))
+    static let row1 = [("Gallery", "photo.on.rectangle", rgb(178, 66, 66)), ("Music", "waveform", rgb(196, 44, 92)),
+                       ("Notes", "square.and.pencil", rgb(196, 140, 34)), ("Weather", "cloud.sun", rgb(44, 102, 196))]
+    static let row2 = [("Maps", "map", rgb(34, 128, 84)), ("Bank", "building.columns", rgb(26, 90, 94)),
+                       ("Fitness", "waveform.path.ecg", rgb(214, 88, 36)), ("Files", "folder", rgb(52, 96, 196))]
+    static let dock = [("", "phone", rgb(40, 160, 72)), ("", "bubble.left", rgb(52, 112, 230)),
+                       ("", "globe", rgb(56, 132, 214)), ("", "envelope", rgb(84, 90, 102))]
 }
 
 /// GupTrack's own tile: a dark square with a blue progress arc round a G
@@ -107,15 +129,19 @@ struct MockHomeScreen: View {
 
     @ViewBuilder private var apps: some View {
         MockGupTrackTile().offset(x: Self.cols[2] - 10, y: 262)
-        MockAppTile(name: "Harbor").offset(x: Self.cols[3] - 10, y: 262)
-        MockAppTile(name: "GupWorks").offset(x: Self.cols[2] - 10, y: 358)
-        MockAppTile(name: "Camera").offset(x: Self.cols[3] - 10, y: 358)
-        ForEach(Array(["Gallery", "Music", "Notes", "Weather"].enumerated()), id: \.offset) { i, name in
-            MockAppTile(name: name).offset(x: Self.cols[i] - 10, y: 466)
+        tile(MockApps.harbor).offset(x: Self.cols[3] - 10, y: 262)
+        tile(MockApps.gupworks).offset(x: Self.cols[2] - 10, y: 358)
+        tile(MockApps.camera).offset(x: Self.cols[3] - 10, y: 358)
+        ForEach(Array(MockApps.row1.enumerated()), id: \.offset) { i, app in
+            tile(app).offset(x: Self.cols[i] - 10, y: 466)
         }
-        ForEach(Array(["Maps", "Bank", "Fitness", "Files"].enumerated()), id: \.offset) { i, name in
-            MockAppTile(name: name).offset(x: Self.cols[i] - 10, y: 562)
+        ForEach(Array(MockApps.row2.enumerated()), id: \.offset) { i, app in
+            tile(app).offset(x: Self.cols[i] - 10, y: 562)
         }
+    }
+
+    private func tile(_ app: (String, String, Color)) -> MockAppTile {
+        MockAppTile(name: app.0, symbol: app.1, color: app.2)
     }
 
     private var searchPill: some View {
@@ -129,7 +155,7 @@ struct MockHomeScreen: View {
 
     private var dock: some View {
         HStack {
-            ForEach(0..<4, id: \.self) { _ in MockAppTile(name: "").frame(width: 62) }
+            ForEach(Array(MockApps.dock.enumerated()), id: \.offset) { _, app in tile(app).frame(width: 62) }
         }
         .frame(maxWidth: .infinity)
         .padding(.horizontal, 18)
@@ -184,6 +210,7 @@ struct MockLockScreen: View {
                 }
                 .padding(.top, 22)
                 Spacer()
+                if let n = message { notification(n).padding(.horizontal, 10).padding(.bottom, 20) }
                 HStack {
                     lockButton("flashlight.off.fill")
                     Spacer()
@@ -194,6 +221,43 @@ struct MockLockScreen: View {
             }
         }
         .ignoresSafeArea()
+    }
+
+    /// the newest message from the demo bell, as its notification
+    private var message: BellNotice? {
+        ((try? Demo.load([BellNotice].self, "api/notices.json")) ?? []).first { $0.kind == .message }
+    }
+
+    private func notification(_ n: BellNotice) -> some View {
+        HStack(alignment: .top, spacing: 12) {
+            RoundedRectangle(cornerRadius: 9, style: .continuous)
+                .fill(Color(white: 0.09))
+                .frame(width: 38, height: 38)
+                .overlay {
+                    ZStack {
+                        Circle().stroke(.white.opacity(0.12), lineWidth: 3).frame(width: 19, height: 19)
+                        Circle().trim(from: 0, to: 0.8)
+                            .stroke(WidgetInk.brand, style: StrokeStyle(lineWidth: 3, lineCap: .round))
+                            .rotationEffect(.degrees(-90)).frame(width: 19, height: 19)
+                        Text("G").font(.system(size: 8, weight: .heavy)).foregroundStyle(.white)
+                    }
+                }
+                .padding(.top, 2)
+            VStack(alignment: .leading, spacing: 2) {
+                HStack(alignment: .firstTextBaseline) {
+                    Text(n.user ?? n.title).font(.system(size: 15, weight: .semibold))
+                    Spacer(minLength: 8)
+                    Text(Format.agoLong(n.date)).font(.system(size: 13)).foregroundStyle(.white.opacity(0.55))
+                }
+                Text(n.text).font(.system(size: 15)).lineLimit(2)
+            }
+            .foregroundStyle(.white)
+            Artwork(url: n.cover)
+                .frame(width: 38, height: 38)
+                .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+        }
+        .padding(14)
+        .background(Color(white: 0.13).opacity(0.92), in: RoundedRectangle(cornerRadius: 24, style: .continuous))
     }
 
     private func lockButton(_ symbol: String) -> some View {

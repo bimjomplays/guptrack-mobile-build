@@ -178,9 +178,9 @@ struct LibraryListView: View {
             }
     }
 
-    /// what the swipes do, shown on Watching until you've used one (37)
+    /// what the swipes do, shown until you've used one (37)
     @ViewBuilder private var hint: some View {
-        if status == .current && !hintSeen && !shown.isEmpty {
+        if !hintSeen && !shown.isEmpty {
             Button {
                 hintSeen = true
             } label: {
@@ -238,7 +238,9 @@ struct LibraryListView: View {
 
     /// the title's menu (35): media, your lists, rows or covers
     @ViewBuilder private var titleMenu: some View {
-        Section("Show") {
+        // an inline Picker drops its Section's title, so the header is a row of its own
+        Section {
+            Text("Show")
             Picker("Show", selection: Binding(get: { media }, set: { switchTo($0) })) {
                 ForEach(MediaKind.allCases) { m in
                     Label(m.plural, systemImage: LibraryLists.symbol(m)).tag(m)
@@ -259,7 +261,8 @@ struct LibraryListView: View {
                 Image(systemName: "list.bullet")
             }
         }
-        Section("View") {
+        Section {
+            Text("View")
             Picker("View", selection: $viewRaw) {
                 Label("Rows", systemImage: "rectangle.grid.1x2").tag(LibraryViewMode.rows.rawValue)
                 Label("Covers", systemImage: "square.grid.2x2").tag(LibraryViewMode.covers.rawValue)
@@ -305,7 +308,8 @@ struct LibraryListView: View {
 
     /// sort and format (36)
     @ViewBuilder private var sortMenu: some View {
-        Section("Sort by") {
+        Section {
+            Text("Sort by")
             Picker("Sort by", selection: $sortRaw) {
                 ForEach(LibrarySort.allCases) { s in
                     Label(s.label, systemImage: s.symbol).tag(s.rawValue)
@@ -314,7 +318,8 @@ struct LibraryListView: View {
             .pickerStyle(.inline)
         }
         if formats.count > 1 {
-            Section("Format") {
+            Section {
+                Text("Format")
                 Picker("Format", selection: $formatId) {
                     ForEach(formats) { f in
                         Text(f.label).tag(f.id)

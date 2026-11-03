@@ -86,11 +86,27 @@ struct BrowseSearchList: View {
 
     private func group(_ g: SearchGroup) -> some View {
         VStack(alignment: .leading, spacing: 0) {
-            Text(g.title).font(.system(size: 15, weight: .semibold)).foregroundStyle(Theme.inkSoft)
-                .accessibilityAddTraits(.isHeader)
-                .padding(.horizontal, Theme.pad)
-                .padding(.bottom, 4)
-            ForEach(g.hits, id: \.self) { h in
+            HStack {
+                Text(g.title).font(.system(size: 15, weight: .semibold)).foregroundStyle(Theme.inkSoft)
+                    .accessibilityAddTraits(.isHeader)
+                Spacer()
+                // under All a group shows its first two; See all opens its chip
+                if scope == "All", let n = results.groups.first(where: { $0.title == g.title })?.hits.count,
+                   n > min(2, g.hits.count) {
+                    Button { scope = g.title } label: {
+                        HStack(spacing: 3) {
+                            Text("See all \(n)")
+                            Image(systemName: "chevron.right").font(.system(size: 11, weight: .semibold))
+                        }
+                        .font(.system(size: 14))
+                        .foregroundStyle(Theme.brandSoft)
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+            .padding(.horizontal, Theme.pad)
+            .padding(.bottom, 4)
+            ForEach(scope == "All" ? Array(g.hits.prefix(2)) : g.hits, id: \.self) { h in
                 if let t = h.title {
                     BrowseSearchRow(hit: h, title: t)
                 } else {
@@ -119,8 +135,6 @@ struct BrowseTopHit: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
-            .padding(14)
-            .background(Theme.panel, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
             .padding(.horizontal, Theme.pad)
             .contentShape(Rectangle())
             .onTapGesture { model.open(.title(t.id)) }
@@ -149,6 +163,9 @@ struct BrowseSearchRow: View {
                         .numbers()
                 }
                 Spacer(minLength: 8)
+                if let s = t.score {
+                    ScoreLabel(value: Format.trim(s), size: 14)
+                }
                 if let e = model.entry(t.id) {
                     StatusDot(status: e.status)
                         .accessibilityLabel(e.status.label(e.media))

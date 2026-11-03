@@ -122,6 +122,10 @@ final class ScreensSheetsTests: ScreenTestCase {
         expect(app, "lena").tap()
         find(app, "Add a message").typeText("first three episodes, trust me")
         expect(app, "Send 2")
+        // the mockup has the sheet at its height with the page above it, not raised over the keyboard
+        app.window.endEditing(true)
+        spin(0.8)
+        idle()
         shot("53-send-to-sheet")
     }
 

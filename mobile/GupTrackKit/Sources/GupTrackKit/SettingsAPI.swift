@@ -27,7 +27,7 @@ enum SettingsChoices {
 
 /// How scores show (Prefs.scoreFormat; the website keeps 0-100).
 enum ScoreFormat: String, CaseIterable, Identifiable, Sendable {
-    case point100 = "100", point10Decimal = "10.0", point10 = "10", stars5 = "5", smiley3 = "3"
+    case point10 = "10", point10Decimal = "10.0", point100 = "100", stars5 = "5", smiley3 = "3"
     var id: String { rawValue }
 
     var label: String {

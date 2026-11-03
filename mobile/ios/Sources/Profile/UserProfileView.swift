@@ -115,7 +115,7 @@ private struct UserProfileContent: View {
                         Label("Unfriend", systemImage: "person.badge.minus")
                     }
                 } label: {
-                    UserActionLabel(title: "Friends", symbol: "person.crop.circle.badge.checkmark", chevron: true)
+                    UserActionLabel(title: "Friends", symbol: "person", chevron: false)
                 }
                 .accessibilityLabel("Friends")
             case .outgoing:
@@ -189,12 +189,12 @@ private struct UserActionLabel: View {
     var body: some View {
         HStack(spacing: 6) {
             Image(systemName: symbol)
-            Text(title).lineLimit(1)
+            Text(title).lineLimit(1).minimumScaleFactor(0.85)
             if chevron { Image(systemName: "chevron.down").font(.system(size: 11, weight: .bold)).opacity(0.6) }
         }
         .font(.system(size: 16, weight: .semibold))
         .foregroundStyle(Theme.ink)
-        .padding(.horizontal, 10)
+        .padding(.horizontal, 8)
         .frame(maxWidth: .infinity)
         .frame(height: 44)
         .background(Theme.fill, in: Capsule())

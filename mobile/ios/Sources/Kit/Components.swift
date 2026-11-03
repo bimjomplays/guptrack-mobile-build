@@ -160,22 +160,28 @@ struct SectionHeader<Trailing: View>: View {
     var action: (() -> Void)?
     @ViewBuilder var trailing: () -> Trailing
 
+    private var titleRow: some View {
+        HStack(spacing: 3) {
+            Text(title).font(.section).foregroundStyle(Theme.ink)
+            if chevron && action != nil {
+                Image(systemName: "chevron.right").font(.system(size: 17, weight: .bold))
+                    .foregroundStyle(Theme.inkMuted)
+            }
+        }
+    }
+
     var body: some View {
         HStack(alignment: .lastTextBaseline) {
             VStack(alignment: .leading, spacing: 1) {
-                Button {
-                    action?()
-                } label: {
-                    HStack(spacing: 3) {
-                        Text(title).font(.section).foregroundStyle(Theme.ink)
-                        if chevron && action != nil {
-                            Image(systemName: "chevron.right").font(.system(size: 17, weight: .bold))
-                                .foregroundStyle(Theme.inkMuted)
-                        }
+                // a disabled Button would grey the title, so a title without an action is plain text
+                Group {
+                    if let action {
+                        Button(action: action) { titleRow }
+                            .buttonStyle(.plain)
+                    } else {
+                        titleRow
                     }
                 }
-                .buttonStyle(.plain)
-                .disabled(action == nil)
                 .accessibilityAddTraits(.isHeader)
                 if let sub {
                     Text(sub).font(.system(size: 14)).foregroundStyle(Theme.inkMuted)
@@ -453,8 +459,10 @@ struct CapsuleButtonStyle: ButtonStyle {
             .font(.system(size: fs, weight: .semibold))
             .labelStyle(TightLabelStyle())
             .lineLimit(1)
+            .minimumScaleFactor(0.85)
             .foregroundStyle(foreground)
-            .padding(.horizontal, size == .small ? 13 : 18)
+            // full-width buttons share a row, so they keep less to the side
+            .padding(.horizontal, full ? 8 : size == .small ? 13 : 18)
             .frame(maxWidth: full ? .infinity : nil)
             .frame(height: h)
             .background(background, in: Capsule())

@@ -271,6 +271,13 @@ final class DemoTransport: Transport, @unchecked Sendable {
         }
         handle("GET", "settings/privacy") { _ in settings.privacy().map(Self.json) }
         handle("GET", "settings/messages") { _ in settings.written("PUT", "settings/messages").map(Self.json) }
+        // a pairing code is new when it's made: it runs out ttl seconds from now, not from when the file was written
+        handle("POST", "devices/pairing") { r in
+            guard let d = Demo.data(Demo.file(r.path, method: r.method)),
+                  var p = try? APIClient.decoder.decode(Pairing.self, from: d) else { return nil }
+            p.expiresAt = Millis.of(Clock.now) + Int64(p.ttl) * 1000
+            return Self.json(p)
+        }
     }
 
     /// answer one call yourself (tests, special cases)

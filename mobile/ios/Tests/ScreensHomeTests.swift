@@ -17,7 +17,7 @@ final class ScreensHomeTests: ScreenTestCase {
     func test06HomeScrolled() {
         let app = launch()
         expect(app, "Continue")
-        scroll(app, until: "Stalled", top: 120)
+        jump(app, until: "Stalled", top: 120)
         expect(app, "Ep 52 of 220")
         expect(app, "Start something")
         expect(app, "Trending anime")
@@ -32,6 +32,7 @@ final class ScreensHomeTests: ScreenTestCase {
         expect(app, "Watched episode \(next)")
         expect(app, "Open in Harbor")
         expect(app, "Send to a friend")
+        spin(1) // the lifted row and the dimmed page come in after the menu
         shot("07-home-context-menu")
     }
 
