@@ -17,7 +17,7 @@ struct ConversationView: View {
     var body: some View {
         Group {
             if let c = chat.value {
-                ChatPage(chat: Binding(get: { c }, set: { chat = .loaded($0) }), typing: typing)
+                ChatPage(chat: $chat.current(c), typing: typing)
             } else {
                 ScrollView { SocialLoading(error: chat.error) { Task { await load() } } }
             }

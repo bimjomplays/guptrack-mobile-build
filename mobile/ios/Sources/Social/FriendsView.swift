@@ -9,7 +9,7 @@ struct FriendsView: View {
         ScrollView {
             Group {
                 if let p = page.value {
-                    FriendsContent(state: Binding(get: { p }, set: { page = .loaded($0) }))
+                    FriendsContent(state: $page.current(p))
                 } else {
                     SocialLoading(error: page.error) { Task { await load() } }
                 }

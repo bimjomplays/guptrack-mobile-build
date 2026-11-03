@@ -1,5 +1,13 @@
 import SwiftUI
 
+extension Binding {
+    /// the loaded value of a page's `Load` state, to edit in place. It reads the state each time (not the copy the
+    /// page was drawn with), so two edits in one action both stick.
+    func current<T>(_ drawn: T) -> Binding<T> where Value == Load<T> {
+        Binding<T>(get: { wrappedValue.value ?? drawn }, set: { wrappedValue = .loaded($0) })
+    }
+}
+
 // GupTrack's own parts, as drawn in design/iphone/kit/kit.mjs: the status pill, the stepper, section headers,
 // progress bars, scores, chips, plain hairline rows. Every screen builds from these so they look the same everywhere.
 // The design no-list holds for all of them: no boxes inside boxes, no ALL-CAPS labels, no KPI tiles, no gradients, no

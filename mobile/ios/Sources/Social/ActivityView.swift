@@ -12,7 +12,7 @@ struct ActivityView: View {
     var body: some View {
         Group {
             if let t = thread.value {
-                ActivityThreadPage(thread: Binding(get: { t }, set: { thread = .loaded($0) }))
+                ActivityThreadPage(thread: $thread.current(t))
             } else {
                 ScrollView { SocialLoading(error: thread.error) { Task { await load() } } }
             }

@@ -35,14 +35,20 @@ struct BrowseFiltersSheet: View {
                         }
                     }
                     scoreSection
-                    Button(draft.isEmpty ? "Show results" : (preview?.showText ?? "Show results")) { keep() }
-                        .buttonStyle(.capsule(.tint, .large, full: true))
-                        .numbers()
-                        .padding(.top, 4)
                 }
                 .padding(.horizontal, Theme.pad)
                 .padding(.top, 12)
-                .padding(.bottom, 30)
+                .padding(.bottom, 16)
+            }
+            // "Show N results" stays at the foot while the choices scroll (13)
+            .safeAreaInset(edge: .bottom, spacing: 0) {
+                Button(draft.isEmpty ? "Show results" : (preview?.showText ?? "Show results")) { keep() }
+                    .buttonStyle(.capsule(.tint, .large, full: true))
+                    .numbers()
+                    .padding(.horizontal, Theme.pad)
+                    .padding(.top, 10)
+                    .padding(.bottom, 8)
+                    .background(Theme.sheet)
             }
             .pageBackground()
             .navigationTitle("Filters")

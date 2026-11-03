@@ -11,7 +11,7 @@ struct ReviewsView: View {
     var body: some View {
         Group {
             if let p = page.value {
-                ReviewsList(titleId: titleId, page: Binding(get: { p }, set: { page = .loaded($0) }))
+                ReviewsList(titleId: titleId, page: $page.current(p))
             } else {
                 ScrollView { SocialLoading(error: page.error) { Task { await load() } } }
             }
@@ -223,7 +223,7 @@ struct ReviewView: View {
     var body: some View {
         Group {
             if let t = thread.value {
-                ReviewThreadPage(thread: Binding(get: { t }, set: { thread = .loaded($0) }))
+                ReviewThreadPage(thread: $thread.current(t))
             } else {
                 ScrollView { SocialLoading(error: thread.error) { Task { await load() } } }
             }

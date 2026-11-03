@@ -44,13 +44,13 @@ struct SocialView: View {
         switch segment {
         case .activity:
             if let f = feed.value {
-                SocialFeedList(feed: Binding(get: { f }, set: { feed = .loaded($0) }))
+                SocialFeedList(feed: $feed.current(f))
             } else {
                 SocialLoading(error: feed.error) { Task { await reload(.activity) } }
             }
         case .friends:
             if let p = friends.value {
-                FriendsContent(state: Binding(get: { p }, set: { friends = .loaded($0) }))
+                FriendsContent(state: $friends.current(p))
             } else {
                 SocialLoading(error: friends.error) { Task { await reload(.friends) } }
             }

@@ -61,8 +61,10 @@ class ScreenTestCase: XCTestCase {
         var left = abs(points)
         while left > 0 {
             let step = min(left, f.height * 0.5)
-            let from = CGPoint(x: f.midX, y: f.midY + sign * step / 2)
-            let to = CGPoint(x: f.midX, y: f.midY - sign * step / 2)
+            // in the left margin: a drag that rests on a card at the end opens its context menu
+            let x = f.minX + 10
+            let from = CGPoint(x: x, y: f.midY + sign * step / 2)
+            let to = CGPoint(x: x, y: f.midY - sign * step / 2)
             settle()
             Finger.press(from, seconds: 0, thenDragTo: to, speed: 500, hold: 0.4)
             idle()

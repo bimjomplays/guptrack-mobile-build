@@ -31,27 +31,28 @@ struct RootView: View {
     }
 
     private var tabs: some View {
+        // the labels keep outline symbols, as in the mockups (the bar fills them by default)
         TabView(selection: Binding(get: { model.tab }, set: { picked in
             // tapping the tab you're on goes back to its first page
             if picked == model.tab { model.popToRoot(picked) }
             model.tab = picked
         })) {
-            Tab("Home", systemImage: "house", value: AppTab.home) {
+            Tab(value: AppTab.home) {
                 TabStack(tab: .home) { HomeView() }
-            }
-            Tab("Browse", systemImage: "safari", value: AppTab.browse) {
+            } label: { Label("Home", systemImage: "house").environment(\.symbolVariants, .none) }
+            Tab(value: AppTab.browse) {
                 TabStack(tab: .browse) { BrowseView() }
-            }
-            Tab("Library", systemImage: "books.vertical", value: AppTab.library) {
+            } label: { Label("Browse", systemImage: "safari").environment(\.symbolVariants, .none) }
+            Tab(value: AppTab.library) {
                 TabStack(tab: .library) { LibraryView() }
-            }
-            Tab("Social", systemImage: "person.2", value: AppTab.social) {
+            } label: { Label("Library", systemImage: "books.vertical").environment(\.symbolVariants, .none) }
+            Tab(value: AppTab.social) {
                 TabStack(tab: .social) { SocialView() }
-            }
+            } label: { Label("Social", systemImage: "person.2").environment(\.symbolVariants, .none) }
             .badge(model.unreadMessages)
-            Tab("Profile", systemImage: "person.crop.circle", value: AppTab.profile) {
+            Tab(value: AppTab.profile) {
                 TabStack(tab: .profile) { ProfileView() }
-            }
+            } label: { Label("Profile", systemImage: "person.crop.circle").environment(\.symbolVariants, .none) }
         }
     }
 }

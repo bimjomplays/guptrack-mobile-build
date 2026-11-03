@@ -154,6 +154,7 @@ private struct LibraryMediaRow: View {
     var body: some View {
         HStack(spacing: 14) {
             Image(systemName: LibraryLists.symbol(media))
+                .environment(\.symbolVariants, .none)
                 .font(.system(size: 22, weight: .regular))
                 .foregroundStyle(Color(hex: LibraryLists.colorHex(media)))
                 .frame(width: 32)
