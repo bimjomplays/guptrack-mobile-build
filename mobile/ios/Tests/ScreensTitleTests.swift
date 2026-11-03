@@ -26,7 +26,11 @@ final class ScreensTitleTests: ScreenTestCase {
     func test20TitleMoreMenu() {
         let app = open("anime:210482")
         expect(app, "Your list")
-        app.buttons["More"].tap()
+        // the bar's menu can miss the first touch while the page's hero settles under the bar: tap again then
+        for _ in 0..<3 where !find(app, "Write a review").exists {
+            app.buttons["More"].tap()
+            _ = find(app, "Write a review").waitForExistence(timeout: 2)
+        }
         expect(app, "Write a review")
         expect(app, "Open on AniList")
         expect(app, "Remove from list")

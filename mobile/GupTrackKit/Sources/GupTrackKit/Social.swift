@@ -984,6 +984,12 @@ enum SocialSession {
     static func applied(_ list: MessageList) -> MessageList {
         list.markingRead(read).answering(answered)
     }
+
+    /// a new session (a new AppModel, signing out, a screen test's launch) starts with nothing read or answered
+    static func reset() {
+        read = []
+        answered = []
+    }
 }
 
 // MARK: the app API (§10, §11)

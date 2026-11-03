@@ -561,7 +561,7 @@ enum Tree {
         if let all = cache { return kind == .any ? all : all.filter { matches($0, kind) } }
         let t0 = Date()
         defer { Timing.walks += 1; Timing.walk += Date().timeIntervalSince(t0) }
-        var out: [Node] = [], seen = Set<ObjectIdentifier>()
+        var out: [Node] = [], seen = Set<ObjectIdentifier>(covered())
         func walk(_ o: NSObject, _ depth: Int) {
             guard depth < 80, seen.insert(ObjectIdentifier(o)).inserted else { return }
             if let v = o as? UIView, v.isHidden || v.alpha < 0.01 { return }
@@ -581,6 +581,21 @@ enum Tree {
         for w in windows { walk(w, 0) }
         cache = out
         return kind == .any ? out : out.filter { matches($0, kind) }
+    }
+
+    /// the pages under a sheet or full-screen cover: out of reach, as for XCUITest (a find for a name the sheet and
+    /// the page under it both show found the hidden one, and the tap landed on the sheet's row in its place)
+    static func covered() -> [ObjectIdentifier] {
+        var out: [ObjectIdentifier] = []
+        for w in windows {
+            var vc = w.rootViewController
+            while let v = vc, let next = v.presentedViewController, !next.isBeingDismissed {
+                if next is UIAlertController || next.modalPresentationStyle == .popover { break }
+                if let view = v.viewIfLoaded { out.append(ObjectIdentifier(view)) }
+                vc = next
+            }
+        }
+        return out
     }
 
     static func matches(_ n: Node, _ kind: Kind) -> Bool {

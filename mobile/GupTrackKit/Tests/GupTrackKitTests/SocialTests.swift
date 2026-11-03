@@ -244,6 +244,17 @@ final class SocialTests: XCTestCase {
         XCTAssertEqual(t.sent.last?.query, [URLQueryItem(name: "before", value: "99")])
     }
 
+    /// the demo answers a reply on the threads the screen tests open (activity 119, review 12)
+    func testDemoTakesReplies() async throws {
+        let api = APIClient(transport: DemoTransport(), token: "demo")
+        for target in [Reactions.Target(on: "activity", id: 119), Reactions.Target(on: "review", id: 12)] {
+            let thread = try await api.replies(target)
+            XCTAssertFalse(thread.replies.isEmpty)
+            let mine = try await api.reply(target, "same here")
+            XCTAssertEqual(mine.author.relation, .me)
+        }
+    }
+
     // MARK: reviews
 
     private func review(_ id: Int, _ user: String, relation: String = "none", score: String = "80", likes: Int = 0,

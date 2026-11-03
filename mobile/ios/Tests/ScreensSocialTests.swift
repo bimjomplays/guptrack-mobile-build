@@ -163,8 +163,12 @@ final class ScreensSocialTests: ScreenTestCase {
     func testReplyToActivity() {
         let app = launch(["-open", "activity/119"])
         expect(app, "2 replies")
-        app.textFields["Reply to kenji"].typeText("same here")
+        let field = app.textFields["Reply to kenji"]
+        field.typeText("same here")
+        XCTAssertEqual(field.value as? String, "same here", "the reply bar didn't take the typing")
+        XCTAssertTrue(app.buttons["Send"].isEnabled)
         app.buttons["Send"].tap()
+        XCTAssertTrue(poll(5) { self.requests(app).contains("POST replies/activity/119") }, "\(requests(app))")
         expect(app, "3 replies")
     }
 

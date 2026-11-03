@@ -39,6 +39,19 @@ struct FriendsView: View {
     }
 }
 
+/// A person's row ids, one per section: a lazy stack needs ids unique across all of it, and an accepted request
+/// moves the same person from Requests to Friends (with one id, the friend row kept the request's Accept button).
+struct PersonRowKey {
+    let username: String
+    var incoming: String { "in:" + username }
+    var friend: String { "friend:" + username }
+    var outgoing: String { "out:" + username }
+}
+
+extension Person {
+    var rowKey: PersonRowKey { PersonRowKey(username: username) }
+}
+
 /// Requests (Accept, ✕) then friends (since when, Compare). Sent and Blocked switch the list in place: there's no
 /// page of their own for them.
 struct FriendsContent: View {
@@ -55,7 +68,7 @@ struct FriendsContent: View {
         LazyVStack(spacing: 0) {
             if !page.incoming.isEmpty {
                 SocialListHeader(label: "Requests", count: page.incoming.count) { EmptyView() }
-                ForEach(Array(page.incoming.enumerated()), id: \.element.id) { i, r in
+                ForEach(Array(page.incoming.enumerated()), id: \.element.rowKey.incoming) { i, r in
                     requestRow(r, separator: i < page.incoming.count - 1)
                 }
             }
@@ -135,7 +148,7 @@ struct FriendsContent: View {
                                    description: Text("Find someone by their username with the button above."))
                 .padding(.top, 20)
         }
-        ForEach(Array(page.friends.enumerated()), id: \.element.id) { i, f in
+        ForEach(Array(page.friends.enumerated()), id: \.element.rowKey.friend) { i, f in
             SocialPersonRow(user: f.user, line: FriendsState.line(f), separator: i < page.friends.count - 1) {
                 Button { model.open(.compare(f.id)) } label: {
                     Image(systemName: "arrow.left.arrow.right").font(.system(size: 15, weight: .semibold))
@@ -159,7 +172,7 @@ struct FriendsContent: View {
         if page.outgoing.isEmpty {
             empty("No requests waiting")
         }
-        ForEach(Array(page.outgoing.enumerated()), id: \.element.id) { i, r in
+        ForEach(Array(page.outgoing.enumerated()), id: \.element.rowKey.outgoing) { i, r in
             SocialPersonRow(user: r.user, line: FriendsState.line(r), separator: i < page.outgoing.count - 1) {
                 Button("Cancel") {
                     state = page.cancelling(r.id)

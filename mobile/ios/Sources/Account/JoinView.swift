@@ -56,8 +56,9 @@ struct JoinView: View {
         }
         .onAppear {
             // the demo fills in an invented new account
-            // (field by field: the username may already be there from an earlier sign-in)
-            if flow.model.isDemo && flow.password.isEmpty {
+            // (the sign-in page under it shares the flow and has filled its own password; a new account is the
+            // form without a display name yet)
+            if flow.model.isDemo && flow.displayName.isEmpty {
                 if flow.username.isEmpty { flow.username = "mika" }
                 if flow.displayName.isEmpty { flow.displayName = "Mika" }
                 flow.password = "demo-Paper-lantern"

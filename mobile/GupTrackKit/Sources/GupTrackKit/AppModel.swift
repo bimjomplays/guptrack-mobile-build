@@ -69,6 +69,7 @@ final class AppModel {
         self.store = store
         self.tokens = tokens
         self.isDemo = demo
+        SocialSession.reset()
         account = tokens.load()
         Pictures.signedIn = account.map { ($0.baseURL, $0.token) }
         reload()
@@ -276,6 +277,7 @@ final class AppModel {
         sheet = nil
         tab = .home
         accountScreen = "welcome"
+        SocialSession.reset()
         reload()
     }
 }

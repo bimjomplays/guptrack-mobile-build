@@ -38,8 +38,10 @@ final class ScreensLibraryTests: ScreenTestCase {
     func test35SwitchMedia() {
         let app = rows()
         expect(app, "STEEL BALL RUN")
+        // the header is a whole List row: tap the word "Anime" at its left, not the row's empty middle
         let title = app.buttons.matching(NSPredicate(format: "label == %@", "Anime")).firstMatch
-        if title.exists { title.tap() } else { find(app, "Anime").tap() }
+        let header = title.exists ? title : find(app, "Anime")
+        header.coordinate(withNormalizedOffset: CGVector(dx: min(0.5, 70 / max(1, header.frame.width)), dy: 0.5)).tap()
         expect(app, "Your lists")
         expect(app, "Covers")
         shot("35-library-switch-media")
