@@ -1,12 +1,12 @@
 import SwiftUI
 
-/// Someone else's profile (48), in the same banner layout as yours: Friends ⌄ · Message · Compare, their numbers
-/// per media (from the server), how many titles you share, their last updates.
+/// Someone else's profile (48, GET users/:username), in the same banner layout as yours: Friends ⌄ · Message ·
+/// Compare, their numbers per media, how many titles you share, their last updates from the lists they let you see.
 struct UserProfileView: View {
     let username: String
 
     var body: some View {
-        PageLoader(id: username, load: { try await $0.userPage(username) }) { page in
+        PageLoader(id: username, load: { try await $0.userProfile(username) }) { page in
             UserProfileContent(page: page)
         }
         .pageBackground()
@@ -14,39 +14,58 @@ struct UserProfileView: View {
 }
 
 private struct UserProfileContent: View {
-    let page: UserPage
+    let page: UserProfile
 
     @Environment(AppModel.self) private var model
-    @State private var media: MediaKind = .anime
-    @State private var friendship: String?
+    @State private var media: MediaKind
+    @State private var relation: Relation
     @State private var scrolled = false
 
-    private var name: String { page.user.username }
-    private var friends: Bool { (friendship ?? page.friendship) == "friends" }
+    init(page: UserProfile) {
+        self.page = page
+        _media = State(initialValue: page.firstMedia ?? .anime)
+        _relation = State(initialValue: page.person.relation)
+    }
+
+    private var name: String { page.person.username }
 
     var body: some View {
+        let bio = page.bio
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
-                ProfileBanner(banner: page.banner, avatar: page.user.avatar, name: name, fade: page.fade) {
-                    Text(page.joinedLine).font(.system(size: 14)).foregroundStyle(.white.opacity(0.78))
-                        .lineLimit(1).minimumScaleFactor(0.85)
-                }
-                if !page.bio.isEmpty {
-                    Text(page.bio).font(.system(size: 15)).foregroundStyle(Theme.inkSoft).lineSpacing(3)
-                        .padding(.horizontal, Theme.pad).padding(.top, 6)
-                }
-                actions.padding(.horizontal, Theme.pad).padding(.top, 14)
-                SectionHeader("Statistics", chevron: false).padding(.top, 28)
-                ProfileMediaPicker(media: $media)
-                ProfileStatsBlock(summary: page.summary(media)) {
-                    HStack(spacing: 4) {
-                        Text(Format.grouped(page.inCommon(media))).fontWeight(.semibold).foregroundStyle(Theme.ink)
-                        Text("in common with you").foregroundStyle(Theme.inkMuted)
+                ProfileBanner(banner: bio.banner, avatar: page.person.avatar, name: name, fade: bio.fade) {
+                    let line = page.joinedLine()
+                    if !line.isEmpty {
+                        Text(line).font(.system(size: 14)).foregroundStyle(.white.opacity(0.78))
+                            .lineLimit(1).minimumScaleFactor(0.85)
                     }
                 }
-                if !page.lastUpdates.isEmpty {
-                    SectionHeader("Last updates", chevron: false).sectionGap(26)
-                    LastUpdatesShelf(updates: page.lastUpdates)
+                if !bio.text.isEmpty {
+                    Text(bio.text).font(.system(size: 15)).foregroundStyle(Theme.inkSoft).lineSpacing(3)
+                        .padding(.horizontal, Theme.pad).padding(.top, 6)
+                }
+                if relation != .me {
+                    actions.padding(.horizontal, Theme.pad).padding(.top, 14)
+                }
+                if page.person.open {
+                    SectionHeader("Statistics", chevron: false).padding(.top, 28)
+                    ProfileMediaPicker(media: $media)
+                    ProfileStatsBlock(stats: page.stats(media)) {
+                        HStack(spacing: 4) {
+                            Text(Format.grouped(page.inCommon(media, mine: model.library))).fontWeight(.semibold)
+                                .foregroundStyle(Theme.ink)
+                            Text("in common with you").foregroundStyle(Theme.inkMuted)
+                        }
+                    }
+                    let updates = page.lastUpdates()
+                    if !updates.isEmpty {
+                        SectionHeader("Last updates", chevron: false).sectionGap(26)
+                        LastUpdatesShelf(updates: updates)
+                    }
+                } else {
+                    ContentUnavailableView("\(name)'s profile is hidden", systemImage: "lock",
+                                           description: Text("Only the people \(name) chooses can see it."))
+                        .padding(.top, 40)
                 }
             }
             .padding(.bottom, 40)
@@ -67,29 +86,31 @@ private struct UserProfileContent: View {
             ToolbarItemGroup(placement: .topBarTrailing) {
                 ShareLink(item: Route.user(name).url) { Image(systemName: "square.and.arrow.up") }
                     .accessibilityLabel("Share profile")
-                Menu {
-                    Button { model.open(.compare(name)) } label: {
-                        Label("Compare lists", systemImage: "arrow.left.arrow.right")
+                if relation != .me {
+                    Menu {
+                        Button { model.open(.compare(name)) } label: {
+                            Label("Compare lists", systemImage: "arrow.left.arrow.right")
+                        }
+                        Button(role: .destructive) { block() } label: {
+                            Label("Block \(name)", systemImage: "hand.raised")
+                        }
+                    } label: {
+                        Image(systemName: "ellipsis")
                     }
-                    Button(role: .destructive) { post("users/\(name)/block", done: "You blocked \(name).") } label: {
-                        Label("Block \(name)", systemImage: "hand.raised")
-                    }
-                } label: {
-                    Image(systemName: "ellipsis")
+                    .accessibilityLabel("More")
                 }
-                .accessibilityLabel("More")
             }
         }
     }
 
-    /// Friends ⌄ · Message · Compare
+    /// Friends ⌄ · Message · Compare (Add friend, Requested ⌄ or Accept when you aren't friends yet)
     private var actions: some View {
         HStack(spacing: 8) {
-            if friends {
+            switch relation {
+            case .friend:
                 Menu {
                     Button(role: .destructive) {
-                        friendship = "none"
-                        post("friends/\(name)/remove", done: nil)
+                        change(.none) { _ = try await $0.unfriend(name) }
                     } label: {
                         Label("Unfriend", systemImage: "person.badge.minus")
                     }
@@ -97,16 +118,31 @@ private struct UserProfileContent: View {
                     UserActionLabel(title: "Friends", symbol: "person.crop.circle.badge.checkmark", chevron: true)
                 }
                 .accessibilityLabel("Friends")
-            } else {
-                Button {
-                    friendship = "requested"
-                    post("friends/\(name)/request", done: nil)
+            case .outgoing:
+                Menu {
+                    Button(role: .destructive) {
+                        change(.none) { _ = try await $0.cancelFriendRequest(name) }
+                    } label: {
+                        Label("Cancel request", systemImage: "xmark")
+                    }
                 } label: {
-                    UserActionLabel(title: (friendship ?? page.friendship) == "requested" ? "Requested" : "Add friend",
-                                    symbol: "person.badge.plus", chevron: false)
+                    UserActionLabel(title: "Requested", symbol: "clock", chevron: true)
+                }
+                .accessibilityLabel("Requested")
+            case .incoming:
+                Button {
+                    change(.friend) { _ = try await $0.answerFriend(name, accept: true) }
+                } label: {
+                    UserActionLabel(title: "Accept", symbol: "person.badge.plus", chevron: false)
                 }
                 .buttonStyle(.plain)
-                .disabled((friendship ?? page.friendship) == "requested")
+            case .none, .me:
+                Button {
+                    change(.outgoing) { _ = try await $0.requestFriend(name) }
+                } label: {
+                    UserActionLabel(title: "Add friend", symbol: "person.badge.plus", chevron: false)
+                }
+                .buttonStyle(.plain)
             }
             Button {
                 model.open(.conversation(name))
@@ -123,10 +159,23 @@ private struct UserProfileContent: View {
         }
     }
 
-    private func post(_ path: String, done: String?) {
+    /// shows the new relation at once and puts the old one back if the call fails
+    private func change(_ to: Relation, _ call: @escaping (APIClient) async throws -> Void) {
+        let was = relation
+        relation = to
         Task {
-            let r = await model.fetch { api -> OKReply in try await api.send("POST", path) }
-            if r.value != nil, let done { model.notice = done }
+            let r = await model.fetch { api -> Bool in try await call(api); return true }
+            if r.value == nil { relation = was }
+        }
+    }
+
+    private func block() {
+        Task {
+            let r = await model.fetch { try await $0.block(name) }
+            if r.value != nil {
+                relation = .none
+                model.notice = "You blocked \(name)."
+            }
         }
     }
 }

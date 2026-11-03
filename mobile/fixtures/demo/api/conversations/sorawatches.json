@@ -1,25 +1,46 @@
 {
+ "box": "inbox",
+ "canSend": true,
  "messages": [
   {
-   "at": "2026-10-30T13:21:00.000Z",
-   "fromMe": false,
-   "id": "s1",
-   "text": "started Severance s2 finally"
+   "at": 1793366460000,
+   "body": "started Severance s2 finally",
+   "card": null,
+   "deleted": false,
+   "edited": null,
+   "id": 1014,
+   "mine": false,
+   "photos": [],
+   "reactions": []
   },
   {
-   "at": "2026-10-30T13:41:00.000Z",
-   "fromMe": true,
-   "id": "s2",
-   "read": "2026-10-30T14:41:00.000Z",
-   "text": "tell me when you’re done with Shōgun"
+   "at": 1793367660000,
+   "body": "tell me when you’re done with Shōgun",
+   "card": null,
+   "deleted": false,
+   "edited": null,
+   "id": 1015,
+   "mine": true,
+   "photos": [],
+   "reactions": []
   }
  ],
- "status": "Watching Severance",
- "typing": false,
- "unread": 0,
- "user": {
+ "more": false,
+ "muted": true,
+ "person": {
   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+  "lists": [
+   "anime",
+   "manga",
+   "tv",
+   "movies",
+   "books"
+  ],
   "name": "Sora",
+  "open": true,
+  "relation": "friend",
+  "since": 1775142000000,
   "username": "sorawatches"
- }
+ },
+ "seen": 1015
 }

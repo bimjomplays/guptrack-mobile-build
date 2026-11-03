@@ -1,0 +1,30 @@
+{
+ "reactions": {
+  "canLike": true,
+  "liked": false,
+  "likers": [
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Sora",
+    "open": true,
+    "relation": "friend",
+    "since": 1775142000000,
+    "username": "sorawatches"
+   }
+  ],
+  "likes": 1,
+  "replies": 0,
+  "target": {
+   "id": 51,
+   "on": "review"
+  }
+ },
+ "replies": []
+}

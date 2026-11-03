@@ -1,0 +1,700 @@
+{
+ "activity": [
+  {
+   "after": 90,
+   "at": 1793716260000,
+   "before": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+   "entry": "154587",
+   "id": 120,
+   "media": "anime",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [],
+    "likes": 0,
+    "replies": 0,
+    "target": {
+     "id": 120,
+     "on": "activity"
+    }
+   },
+   "title": "Frieren: Beyond Journey’s End",
+   "type": "score",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Kenji",
+    "open": true,
+    "relation": "friend",
+    "since": 1791471600000,
+    "username": "kenji"
+   }
+  },
+  {
+   "after": "completed",
+   "at": 1793716140000,
+   "before": "current",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+   "entry": "154587",
+   "id": 119,
+   "media": "anime",
+   "social": {
+    "canLike": true,
+    "liked": true,
+    "likers": [
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Mika",
+      "open": true,
+      "relation": "self",
+      "username": "mika"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Tobi",
+      "open": true,
+      "relation": "friend",
+      "since": 1756738800000,
+      "username": "tobiwan"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Noor",
+      "open": true,
+      "relation": "friend",
+      "since": 1768921200000,
+      "username": "noor.reads"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Lena",
+      "open": true,
+      "relation": "friend",
+      "since": 1771081200000,
+      "username": "lena"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Hal",
+      "open": true,
+      "relation": "friend",
+      "since": 1780326000000,
+      "username": "hal"
+     }
+    ],
+    "likes": 5,
+    "replies": 2,
+    "target": {
+     "id": 119,
+     "on": "activity"
+    }
+   },
+   "title": "Frieren: Beyond Journey’s End",
+   "type": "status",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Kenji",
+    "open": true,
+    "relation": "friend",
+    "since": 1791471600000,
+    "username": "kenji"
+   }
+  },
+  {
+   "after": 28,
+   "at": 1793716139200,
+   "before": 27,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+   "entry": "154587",
+   "id": 118,
+   "media": "anime",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [],
+    "likes": 0,
+    "replies": 0,
+    "target": {
+     "id": 118,
+     "on": "activity"
+    }
+   },
+   "title": "Frieren: Beyond Journey’s End",
+   "type": "progress",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Kenji",
+    "open": true,
+    "relation": "friend",
+    "since": 1791471600000,
+    "username": "kenji"
+   }
+  },
+  {
+   "after": 46,
+   "at": 1793713020000,
+   "before": 40,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30656-9mW113O7rDnA.png",
+   "entry": "30656",
+   "id": 117,
+   "media": "manga",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Kenji",
+      "open": true,
+      "relation": "friend",
+      "since": 1791471600000,
+      "username": "kenji"
+     }
+    ],
+    "likes": 1,
+    "replies": 0,
+    "target": {
+     "id": 117,
+     "on": "activity"
+    }
+   },
+   "title": "Vagabond",
+   "type": "progress",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Noor",
+    "open": true,
+    "relation": "friend",
+    "since": 1768921200000,
+    "username": "noor.reads"
+   }
+  },
+  {
+   "after": null,
+   "at": 1793705460000,
+   "before": null,
+   "cover": "https://image.tmdb.org/t/p/w500/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+   "entry": "693134",
+   "id": 116,
+   "media": "movies",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Kenji",
+      "open": true,
+      "relation": "friend",
+      "since": 1791471600000,
+      "username": "kenji"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Lena",
+      "open": true,
+      "relation": "friend",
+      "since": 1771081200000,
+      "username": "lena"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Hal",
+      "open": true,
+      "relation": "friend",
+      "since": 1780326000000,
+      "username": "hal"
+     }
+    ],
+    "likes": 3,
+    "replies": 3,
+    "target": {
+     "id": 41,
+     "on": "review"
+    }
+   },
+   "title": "Dune: Part Two",
+   "type": "review",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Tobi",
+    "open": true,
+    "relation": "friend",
+    "since": 1756738800000,
+    "username": "tobiwan"
+   }
+  },
+  {
+   "after": "planned",
+   "at": 1793623260000,
+   "before": null,
+   "cover": "https://image.tmdb.org/t/p/w500/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+   "entry": "95396",
+   "id": 115,
+   "media": "tv",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Sora",
+      "open": true,
+      "relation": "friend",
+      "since": 1775142000000,
+      "username": "sorawatches"
+     }
+    ],
+    "likes": 1,
+    "replies": 0,
+    "target": {
+     "id": 115,
+     "on": "activity"
+    }
+   },
+   "title": "Severance",
+   "type": "added",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Lena",
+    "open": true,
+    "relation": "friend",
+    "since": 1771081200000,
+    "username": "lena"
+   }
+  },
+  {
+   "after": "planned",
+   "at": 1793623220000,
+   "before": null,
+   "cover": "https://image.tmdb.org/t/p/w500/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+   "entry": "126308",
+   "id": 114,
+   "media": "tv",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [],
+    "likes": 0,
+    "replies": 0,
+    "target": {
+     "id": 114,
+     "on": "activity"
+    }
+   },
+   "title": "Shōgun",
+   "type": "added",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Lena",
+    "open": true,
+    "relation": "friend",
+    "since": 1771081200000,
+    "username": "lena"
+   }
+  },
+  {
+   "after": "planned",
+   "at": 1793623180000,
+   "before": null,
+   "cover": "https://image.tmdb.org/t/p/w500/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+   "entry": "83867",
+   "id": 113,
+   "media": "tv",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [],
+    "likes": 0,
+    "replies": 0,
+    "target": {
+     "id": 113,
+     "on": "activity"
+    }
+   },
+   "title": "Andor",
+   "type": "added",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Lena",
+    "open": true,
+    "relation": "friend",
+    "since": 1771081200000,
+    "username": "lena"
+   }
+  },
+  {
+   "after": "planned",
+   "at": 1793623140000,
+   "before": null,
+   "cover": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+   "entry": "136315",
+   "id": 112,
+   "media": "tv",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [],
+    "likes": 0,
+    "replies": 0,
+    "target": {
+     "id": 112,
+     "on": "activity"
+    }
+   },
+   "title": "The Bear",
+   "type": "added",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Lena",
+    "open": true,
+    "relation": "friend",
+    "since": 1771081200000,
+    "username": "lena"
+   }
+  },
+  {
+   "after": "current",
+   "at": 1793612460000,
+   "before": "planned",
+   "cover": "https://image.tmdb.org/t/p/w500/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+   "entry": "95396",
+   "id": 111,
+   "media": "tv",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [],
+    "likes": 0,
+    "replies": 0,
+    "target": {
+     "id": 111,
+     "on": "activity"
+    }
+   },
+   "title": "Severance",
+   "type": "status",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Sora",
+    "open": true,
+    "relation": "friend",
+    "since": 1775142000000,
+    "username": "sorawatches"
+   }
+  },
+  {
+   "after": 85,
+   "at": 1793533260000,
+   "before": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+   "entry": "210482",
+   "id": 110,
+   "media": "anime",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Kenji",
+      "open": true,
+      "relation": "friend",
+      "since": 1791471600000,
+      "username": "kenji"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Tobi",
+      "open": true,
+      "relation": "friend",
+      "since": 1756738800000,
+      "username": "tobiwan"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Noor",
+      "open": true,
+      "relation": "friend",
+      "since": 1768921200000,
+      "username": "noor.reads"
+     }
+    ],
+    "likes": 3,
+    "replies": 1,
+    "target": {
+     "id": 110,
+     "on": "activity"
+    }
+   },
+   "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+   "type": "score",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Hal",
+    "open": true,
+    "relation": "friend",
+    "since": 1780326000000,
+    "username": "hal"
+   }
+  },
+  {
+   "after": "hold",
+   "at": 1793436060000,
+   "before": "current",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-euxXZEIfDY2u.png",
+   "entry": "105778",
+   "id": 109,
+   "media": "manga",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [],
+    "likes": 0,
+    "replies": 0,
+    "target": {
+     "id": 109,
+     "on": "activity"
+    }
+   },
+   "title": "Chainsaw Man",
+   "type": "status",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Noor",
+    "open": true,
+    "relation": "friend",
+    "since": 1768921200000,
+    "username": "noor.reads"
+   }
+  },
+  {
+   "after": 6,
+   "at": 1793364060000,
+   "before": 5,
+   "cover": "https://image.tmdb.org/t/p/w500/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+   "entry": "83867",
+   "id": 108,
+   "media": "tv",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Lena",
+      "open": true,
+      "relation": "friend",
+      "since": 1771081200000,
+      "username": "lena"
+     }
+    ],
+    "likes": 1,
+    "replies": 0,
+    "target": {
+     "id": 108,
+     "on": "activity"
+    }
+   },
+   "title": "Andor",
+   "type": "progress",
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Tobi",
+    "open": true,
+    "relation": "friend",
+    "since": 1756738800000,
+    "username": "tobiwan"
+   }
+  }
+ ]
+}

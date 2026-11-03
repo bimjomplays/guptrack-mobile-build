@@ -1,0 +1,39 @@
+{
+ "item": {
+  "after": "planned",
+  "at": 1793623220000,
+  "before": null,
+  "cover": "https://image.tmdb.org/t/p/w500/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+  "entry": "126308",
+  "id": 114,
+  "media": "tv",
+  "social": {
+   "canLike": true,
+   "liked": false,
+   "likers": [],
+   "likes": 0,
+   "replies": 0,
+   "target": {
+    "id": 114,
+    "on": "activity"
+   }
+  },
+  "title": "Shōgun",
+  "type": "added",
+  "user": {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+   "lists": [
+    "anime",
+    "manga",
+    "tv",
+    "movies",
+    "books"
+   ],
+   "name": "Lena",
+   "open": true,
+   "relation": "friend",
+   "since": 1771081200000,
+   "username": "lena"
+  }
+ }
+}

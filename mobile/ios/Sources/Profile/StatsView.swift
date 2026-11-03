@@ -1,10 +1,13 @@
 import SwiftUI
 
-/// Statistics (43, 43b): one media at a time, all from the offline library. Time spent, the plain columns, the
-/// score histogram, formats, release years, then genres and studios with how many titles and your mean score.
+/// Statistics (43, 43b): one media at a time, from GET stats (the website's statistics answer). Time spent, the
+/// plain columns, the score histogram, formats, release years, then genres and studios with how many titles and
+/// your mean score.
 struct StatsView: View {
     @Environment(AppModel.self) private var model
     @AppStorage(MediaKind.profileKey) private var mediaRaw = MediaKind.anime.rawValue
+    @State private var page: StatsPage?
+    @State private var failed: String?
     @State private var allGenres = false
     @State private var allStudios = false
 
@@ -13,18 +16,29 @@ struct StatsView: View {
     }
 
     var body: some View {
-        let stats = LibraryStats(model.library, media: media.wrappedValue)
+        let m = media.wrappedValue
+        let stats = page?.kind(m)
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
                 ProfileMediaPicker(media: media)
-                if stats.summary.entries == 0 {
-                    ContentUnavailableView("No \(media.wrappedValue.plural.lowercased()) yet",
-                                           systemImage: media.wrappedValue.symbol,
-                                           description: Text("Titles you add show up here."))
-                        .padding(.top, 60)
-                } else {
+                if let stats, stats.entries > 0 {
                     StatsHeadline(stats: stats)
                     sections(stats)
+                } else if page != nil {
+                    ContentUnavailableView("No \(m.plural.lowercased()) yet", systemImage: m.symbol,
+                                           description: Text("Titles you add show up here."))
+                        .padding(.top, 60)
+                } else if let failed {
+                    ContentUnavailableView {
+                        Label("Couldn't load your statistics", systemImage: "wifi.exclamationmark")
+                    } description: {
+                        Text(failed)
+                    } actions: {
+                        Button("Try again") { Task { await load() } }.buttonStyle(.capsule(.tone, .small))
+                    }
+                    .padding(.top, 60)
+                } else {
+                    ProgressView().frame(maxWidth: .infinity).padding(.top, 120)
                 }
             }
             .padding(.top, 8)
@@ -35,61 +49,77 @@ struct StatsView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                ShareLink(item: stats.shareText(name: model.account?.user.name ?? "My")) {
-                    Image(systemName: "square.and.arrow.up")
+                if let stats {
+                    ShareLink(item: stats.shareText(name: model.account?.user.name ?? "My")) {
+                        Image(systemName: "square.and.arrow.up")
+                    }
+                    .accessibilityLabel("Share statistics")
                 }
-                .accessibilityLabel("Share statistics")
             }
+        }
+        .task { if page == nil { await load() } }
+        .refreshable { await load() }
+    }
+
+    private func load() async {
+        switch await model.fetch({ try await $0.stats() }) {
+        case .loaded(let p): page = p; failed = nil
+        case .failed(let why): if page == nil { failed = why }
+        case .loading: break
         }
     }
 
     @ViewBuilder
-    private func sections(_ stats: LibraryStats) -> some View {
+    private func sections(_ stats: KindStats) -> some View {
         SectionHeader(title: "Scores", chevron: false) {
-            Text("\(Format.grouped(stats.summary.scored)) scored").font(.system(size: 14))
+            Text("\(Format.grouped(stats.scored)) scored").font(.system(size: 14))
                 .foregroundStyle(Theme.inkMuted).numbers()
         }
         .sectionGap(18)
         StatsBars(values: stats.histogram, labels: (1...10).map(String.init), height: 92, maxBar: 64, spacing: 6,
                   color: Theme.brand, emptyAsTrack: true)
-        if !stats.formats.isEmpty {
+        let formats = stats.formatSlices
+        if !formats.isEmpty {
             SectionHeader("Formats", chevron: false).sectionGap(20)
-            FormatsBar(formats: stats.formats)
+            FormatsBar(formats: formats)
         }
-        if !stats.years.isEmpty {
+        let years = stats.yearSlices
+        if !years.isEmpty {
             SectionHeader("Release years", chevron: false).sectionGap(20)
-            StatsBars(values: stats.years.map(\.count), labels: stats.years.map(\.label), height: 80, maxBar: 56,
+            StatsBars(values: years.map(\.count), labels: years.map(\.label), height: 80, maxBar: 56,
                       spacing: 10, color: Theme.brand.opacity(0.7), emptyAsTrack: false)
         }
-        if !stats.genres.isEmpty {
+        let genres = stats.genreGroups
+        if !genres.isEmpty {
             SectionHeader(title: "Genres", chevron: false) {
-                if stats.genres.count > 7 {
+                if genres.count > 7 {
                     Button { allGenres.toggle() } label: { ProfileSeeAll(text: allGenres ? "Less" : "See all") }
                         .buttonStyle(.plain)
                 }
             }
             .sectionGap(26)
-            GroupBars(groups: Array(stats.genres.prefix(allGenres ? 50 : 7)), top: stats.genres[0].count)
+            GroupBars(groups: Array(genres.prefix(allGenres ? 50 : 7)), top: genres[0].count)
         }
-        if !stats.studios.isEmpty {
-            SectionHeader(title: stats.peopleLabel, chevron: false) {
-                if stats.studios.count > 6 {
+        let makers = stats.makerGroups
+        if !makers.isEmpty {
+            SectionHeader(title: stats.makersLabel, chevron: false) {
+                if makers.count > 6 {
                     Button { allStudios.toggle() } label: { ProfileSeeAll(text: allStudios ? "Less" : "See all") }
                         .buttonStyle(.plain)
                 }
             }
             .sectionGap(24)
-            GroupBars(groups: Array(stats.studios.prefix(allStudios ? 50 : 6)), top: stats.studios[0].count)
+            GroupBars(groups: Array(makers.prefix(allStudios ? 50 : 6)), top: makers[0].count)
         }
     }
 }
 
 /// "Time watched / 20 days 4 hours / 1,234 episodes · …" and the columns under it, a hairline below
 private struct StatsHeadline: View {
-    let stats: LibraryStats
+    let stats: KindStats
 
     var body: some View {
-        let s = stats.summary
+        let s = stats
         let head = s.timeHeadline
         VStack(alignment: .leading, spacing: 0) {
             VStack(alignment: .leading, spacing: 2) {
@@ -109,7 +139,7 @@ private struct StatsHeadline: View {
                 StatColumn(value: s.meanText, label: "Mean score")
                 StatColumn(value: stats.medianText, label: "Median")
                 StatColumn(value: Format.grouped(stats.perfect), label: "Perfect 10s")
-                StatColumn(value: Format.grouped(s.rewatched), label: s.media.isReading ? "Reread" : "Rewatched")
+                StatColumn(value: Format.grouped(s.repeats), label: s.kind.isReading ? "Reread" : "Rewatched")
             }
             .padding(.top, 14)
             .padding(.bottom, 16)
@@ -160,7 +190,7 @@ private struct StatsBars: View {
 
 /// the formats as one bar of coloured parts and a legend
 private struct FormatsBar: View {
-    let formats: [LibraryStats.Slice]
+    let formats: [KindStats.Slice]
 
     var body: some View {
         let total = max(1, formats.reduce(0) { $0 + $1.count })
@@ -195,12 +225,12 @@ private struct FormatsBar: View {
 
 /// genres or studios: name, "12 titles", your mean score, a thin bar; hairlines between
 private struct GroupBars: View {
-    let groups: [LibraryStats.Group]
+    let groups: [KindStats.Group]
     let top: Int
 
     var body: some View {
         VStack(spacing: 0) {
-            ForEach(Array(groups.enumerated()), id: \.element.id) { i, g in
+            ForEach(Array(groups.enumerated()), id: \.element.key) { i, g in
                 VStack(spacing: 7) {
                     HStack(alignment: .firstTextBaseline, spacing: 8) {
                         Text(g.name).font(.system(size: 15, weight: .medium)).foregroundStyle(Theme.ink).lineLimit(1)

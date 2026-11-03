@@ -1,0 +1,55 @@
+{
+ "item": {
+  "after": "planned",
+  "at": 1793623260000,
+  "before": null,
+  "cover": "https://image.tmdb.org/t/p/w500/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+  "entry": "95396",
+  "id": 115,
+  "media": "tv",
+  "social": {
+   "canLike": true,
+   "liked": false,
+   "likers": [
+    {
+     "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+     "lists": [
+      "anime",
+      "manga",
+      "tv",
+      "movies",
+      "books"
+     ],
+     "name": "Sora",
+     "open": true,
+     "relation": "friend",
+     "since": 1775142000000,
+     "username": "sorawatches"
+    }
+   ],
+   "likes": 1,
+   "replies": 0,
+   "target": {
+    "id": 115,
+    "on": "activity"
+   }
+  },
+  "title": "Severance",
+  "type": "added",
+  "user": {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+   "lists": [
+    "anime",
+    "manga",
+    "tv",
+    "movies",
+    "books"
+   ],
+   "name": "Lena",
+   "open": true,
+   "relation": "friend",
+   "since": 1771081200000,
+   "username": "lena"
+  }
+ }
+}

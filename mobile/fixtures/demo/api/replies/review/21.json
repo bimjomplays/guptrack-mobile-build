@@ -1,0 +1,70 @@
+{
+ "reactions": {
+  "canLike": true,
+  "liked": false,
+  "likers": [
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Hal",
+    "open": true,
+    "relation": "friend",
+    "since": 1780326000000,
+    "username": "hal"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Tobi",
+    "open": true,
+    "relation": "friend",
+    "since": 1756738800000,
+    "username": "tobiwan"
+   }
+  ],
+  "likes": 2,
+  "replies": 1,
+  "target": {
+   "id": 21,
+   "on": "review"
+  }
+ },
+ "replies": [
+  {
+   "at": 1793632860000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Hal",
+    "open": true,
+    "relation": "friend",
+    "since": 1780326000000,
+    "username": "hal"
+   },
+   "body": "Gyro carries it.",
+   "canDelete": false,
+   "canEdit": false,
+   "edited": null,
+   "id": 708,
+   "parent": null
+  }
+ ]
+}

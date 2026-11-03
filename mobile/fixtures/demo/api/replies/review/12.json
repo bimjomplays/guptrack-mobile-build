@@ -1,0 +1,122 @@
+{
+ "reactions": {
+  "canLike": true,
+  "liked": true,
+  "likers": [
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Mika",
+    "open": true,
+    "relation": "self",
+    "username": "mika"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Tobi",
+    "open": true,
+    "relation": "friend",
+    "since": 1756738800000,
+    "username": "tobiwan"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Lena",
+    "open": true,
+    "relation": "friend",
+    "since": 1771081200000,
+    "username": "lena"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Hal",
+    "open": true,
+    "relation": "friend",
+    "since": 1780326000000,
+    "username": "hal"
+   }
+  ],
+  "likes": 4,
+  "replies": 2,
+  "target": {
+   "id": 12,
+   "on": "review"
+  }
+ },
+ "replies": [
+  {
+   "at": 1793716320000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Lena",
+    "open": true,
+    "relation": "friend",
+    "since": 1771081200000,
+    "username": "lena"
+   },
+   "body": "This is exactly how I felt, especially the ending.",
+   "canDelete": false,
+   "canEdit": false,
+   "edited": null,
+   "id": 702,
+   "parent": null
+  },
+  {
+   "at": 1793716620000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Mika",
+    "open": true,
+    "relation": "self",
+    "username": "mika"
+   },
+   "body": "Fern’s birthday episode!!",
+   "canDelete": true,
+   "canEdit": true,
+   "edited": null,
+   "id": 703,
+   "parent": null
+  }
+ ]
+}

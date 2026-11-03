@@ -1,12 +1,13 @@
 import SwiftUI
 
 /// One activity with its replies (45): who did what, the title card with your own status, who liked it, the
-/// replies, and a reply bar at the foot.
+/// replies, and a reply bar at the foot. GET activity/:id for the line, GET replies/activity/:id for the replies and
+/// the likes.
 struct ActivityView: View {
     let id: String
 
     @Environment(AppModel.self) private var model
-    @State private var thread: Load<ActivityThread> = .loading
+    @State private var thread: Load<ActivityThreadState> = .loading
 
     var body: some View {
         Group {
@@ -23,7 +24,7 @@ struct ActivityView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Menu {
-                    if let item = thread.value?.item {
+                    if let item = thread.value?.line {
                         Button { model.open(.user(item.user.username)) } label: {
                             Label("View \(item.user.username)", systemImage: "person")
                         }
@@ -41,37 +42,57 @@ struct ActivityView: View {
     }
 
     private func load() async {
-        thread = await model.fetch { try await $0.activityThread(id) }
+        guard let n = Int(id) else {
+            thread = .failed("This activity doesn't exist.")
+            return
+        }
+        thread = await model.fetch { try await ActivityThreadState.load(n, $0) }
+    }
+}
+
+/// the line, its likes and its replies
+struct ActivityThreadState: Hashable, Sendable {
+    var line: FeedLine
+    var reactions: Reactions
+    var replies: [Reply]
+
+    static func load(_ id: Int, _ api: APIClient) async throws -> ActivityThreadState {
+        let item = try await api.activity(id)
+        guard let line = Feed.lines([item]).first else { throw APIError.server(404, "not_found", "This activity is gone.") }
+        let target = line.social?.target ?? Reactions.Target(on: "activity", id: id)
+        let r = try await api.replies(target)
+        return ActivityThreadState(line: line, reactions: r.reactions, replies: r.replies)
     }
 }
 
 private struct ActivityThreadPage: View {
-    @Binding var thread: ActivityThread
+    @Binding var thread: ActivityThreadState
 
     @Environment(AppModel.self) private var model
     @State private var draft = ""
+    @State private var parent: Int?
     @FocusState private var focused: Bool
 
-    private var item: ActivityFeed.Item { thread.item }
+    private var item: FeedLine { thread.line }
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
                 header
-                SocialSentence(user: item.user.username, verb: item.verb, object: item.object, size: 17,
-                               score: item.ratedInThread ? item.score10 : nil)
+                SocialSentence(user: item.user.username, verb: item.verb, object: item.object, tail: item.tail,
+                               size: 17, score: item.score10)
                     .padding(.horizontal, Theme.pad)
                     .padding(.top, 12)
-                if let q = item.quote {
-                    Text(q).font(.system(size: 16)).foregroundStyle(Theme.inkSoft).lineSpacing(3)
-                        .padding(.horizontal, Theme.pad).padding(.top, 10)
-                }
                 if let t = item.title {
                     SocialTitleCard(title: t).padding(.top, 14)
                 }
-                if let ts = item.titles, !ts.isEmpty { strip(ts) }
-                SocialLikedBy(users: thread.likedBy, likes: item.likes, liked: item.liked, like: like)
-                SocialReplies(replies: $thread.replies, kind: .activity) { draft = "@\($0) "; focused = true }
+                if item.titles.count > 1 { strip(item.titles) }
+                SocialLikedBy(reactions: thread.reactions, like: like)
+                SocialReplies(replies: $thread.replies) { name, id in
+                    draft = "@\(name) "
+                    parent = id
+                    focused = true
+                }
             }
             .padding(.top, 8)
             .padding(.bottom, 24)
@@ -83,7 +104,7 @@ private struct ActivityThreadPage: View {
             }
         }
         .refreshable {
-            if let t = await model.fetch({ try await $0.activityThread(thread.item.id) }).value { thread = t }
+            if let t = await model.fetch({ try await ActivityThreadState.load(item.id, $0) }).value { thread = t }
         }
     }
 
@@ -116,35 +137,42 @@ private struct ActivityThreadPage: View {
     }
 
     private func like() {
-        thread.item = item.toggledLike()
-        let me = model.socialMe
-        if thread.item.liked { thread.likedBy.insert(me, at: 0) } else { thread.likedBy.removeAll { $0 == me } }
-        let id = item.id, on = thread.item.liked
-        Task { _ = await model.fetch { try await $0.likeActivity(id, on) } }
+        let before = thread.reactions
+        guard before.canLike else { return }
+        thread.reactions = before.toggledLike(me: model.socialMe)
+        let target = before.target, on = thread.reactions.liked
+        Task {
+            let r = await model.fetch { try await $0.like(target, on) }
+            thread.reactions = r.value ?? before
+        }
     }
 
     private func send() {
         let text = draft.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !text.isEmpty else { return }
         draft = ""
-        thread.replies.append(SocialReplies.mine(text, model.socialMe))
-        thread.item.replies += 1
-        let id = item.id
-        Task { _ = await model.fetch { try await $0.replyToActivity(id, text) } }
+        let local = SocialReplies.mine(text, parent: parent, model.socialMe)
+        let answering = parent
+        parent = nil
+        thread.replies.append(local)
+        thread.reactions.replies += 1
+        let target = thread.reactions.target
+        Task {
+            if await model.fetch({ try await $0.reply(target, text, parent: answering) }).value == nil {
+                thread.replies.removeAll { $0.id == local.id }
+                thread.reactions.replies = max(0, thread.reactions.replies - 1)
+            }
+        }
     }
 }
 
 // MARK: shared by activity and review threads
 
-/// "2 replies" and the replies under it; Reply puts @name in the bar
+/// "2 replies" and the replies under it; Reply puts @name in the bar and answers that reply's thread
 struct SocialReplies: View {
-    @Binding var replies: [ActivityThread.Reply]
-    let kind: Kind
-    var answer: (String) -> Void
-
-    enum Kind { case activity, review }
-
-    @Environment(AppModel.self) private var model
+    @Binding var replies: [Reply]
+    /// the username and the top-level reply the answer belongs to
+    var answer: (String, Int) -> Void
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -155,18 +183,15 @@ struct SocialReplies: View {
                 .padding(.bottom, 2)
                 .accessibilityAddTraits(.isHeader)
             ForEach(Array(replies.enumerated()), id: \.element.id) { i, r in
-                SocialReplyRow(reply: r, separator: i < replies.count - 1, like: { like(i) }, answer: { answer(r.user.username) })
+                SocialReplyRow(reply: r, separator: i < replies.count - 1) { answer(r.author.username, r.parent ?? r.id) }
             }
         }
     }
 
-    private func like(_ i: Int) {
-        replies[i] = replies[i].toggledLike()
-    }
-
-    /// a reply you just wrote
-    static func mine(_ text: String, _ me: UserRef) -> ActivityThread.Reply {
-        ActivityThread.Reply(id: "new-" + UUID().uuidString, user: me, text: text, at: Clock.now, likes: 0, liked: false)
+    /// a reply you just wrote, shown at once (a negative id until the page reloads)
+    static func mine(_ text: String, parent: Int? = nil, _ me: Person) -> Reply {
+        Reply(id: -Int.random(in: 1...Int(Int32.max)), parent: parent, author: me, body: text,
+              at: Int64(Clock.now.timeIntervalSince1970 * 1000), edited: nil, canEdit: true, canDelete: true)
     }
 }
 

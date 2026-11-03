@@ -70,20 +70,25 @@ struct LibraryListView: View {
     // MARK: the header (title menu, summary and chips)
 
     /// the big title is the menu (35): a plain Menu in the page, so it opens on a tap and its items are buttons
+    /// (the Menu keeps its own size, so a tap on the empty space to its right doesn't count as opening it)
     private var header: some View {
-        Menu { titleMenu } label: {
-            HStack(spacing: 10) {
-                Text(media.plural).font(.system(size: 34, weight: .bold)).foregroundStyle(Theme.ink)
-                Image(systemName: "chevron.down")
-                    .font(.system(size: 13, weight: .bold)).foregroundStyle(Theme.inkSoft)
-                    .frame(width: 28, height: 28)
-                    .background(Theme.raised, in: Circle())
+        HStack(spacing: 0) {
+            Menu { titleMenu } label: {
+                HStack(spacing: 10) {
+                    Text(media.plural).font(.system(size: 34, weight: .bold)).foregroundStyle(Theme.ink)
+                    Image(systemName: "chevron.down")
+                        .font(.system(size: 13, weight: .bold)).foregroundStyle(Theme.inkSoft)
+                        .frame(width: 28, height: 28)
+                        .background(Theme.raised, in: Circle())
+                }
+                .contentShape(Rectangle())
             }
+            .buttonStyle(.plain)
+            .accessibilityLabel(media.plural)
+            .accessibilityAddTraits(.isButton)
+            .accessibilityHint("Switch media, your lists and the view")
+            Spacer(minLength: 0)
         }
-        .buttonStyle(.plain)
-        .accessibilityLabel(media.plural)
-        .accessibilityHint("Switch media, your lists and the view")
-        .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.horizontal, Theme.pad)
         .padding(.top, 4)
         .padding(.bottom, 6)

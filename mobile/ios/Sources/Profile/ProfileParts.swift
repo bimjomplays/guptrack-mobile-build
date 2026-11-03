@@ -83,19 +83,19 @@ struct ProfileMediaPicker: View {
 
 /// Statistics on a profile (41, 48): the four columns, entries, the status bar and its legend.
 struct ProfileStatsBlock<Right: View>: View {
-    let summary: LibraryStats.Summary
+    let stats: MediaStats
     @ViewBuilder var right: () -> Right
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             HStack(alignment: .top, spacing: 10) {
-                ForEach(summary.columns, id: \.label) { c in StatColumn(value: c.value, label: c.label) }
+                ForEach(stats.columns, id: \.label) { c in StatColumn(value: c.value, label: c.label) }
             }
             .padding(.top, 16)
             HStack(alignment: .firstTextBaseline) {
                 HStack(spacing: 4) {
                     Text("Entries").foregroundStyle(Theme.inkMuted)
-                    Text(Format.grouped(summary.entries)).fontWeight(.semibold).foregroundStyle(Theme.ink)
+                    Text(Format.grouped(stats.entries)).fontWeight(.semibold).foregroundStyle(Theme.ink)
                 }
                 Spacer()
                 right()
@@ -104,9 +104,9 @@ struct ProfileStatsBlock<Right: View>: View {
             .numbers()
             .padding(.top, 18)
             .padding(.bottom, 8)
-            if summary.entries > 0 {
-                StatusBar5(counts: summary.statusCounts)
-                StatusLegend(summary: summary).padding(.top, 10)
+            if stats.entries > 0 {
+                StatusBar5(counts: stats.statusCounts)
+                StatusLegend(stats: stats).padding(.top, 10)
             } else {
                 Text("Nothing on this list yet").font(.system(size: 14)).foregroundStyle(Theme.inkMuted)
             }
@@ -117,16 +117,16 @@ struct ProfileStatsBlock<Right: View>: View {
 
 /// "● Watching 7 4%" for each status, wrapping
 struct StatusLegend: View {
-    let summary: LibraryStats.Summary
+    let stats: MediaStats
 
     var body: some View {
         ProfileFlow(spacing: 16, lineSpacing: 6) {
             ForEach(ListStatus.ordered) { s in
                 HStack(spacing: 6) {
                     StatusDot(status: s)
-                    Text(s.label(summary.media)).foregroundStyle(Theme.inkMuted)
-                    Text(Format.grouped(summary.count(s))).fontWeight(.semibold).foregroundStyle(Theme.ink)
-                    Text(summary.percent(s)).foregroundStyle(Theme.inkMuted.opacity(0.7))
+                    Text(s.label(stats.kind)).foregroundStyle(Theme.inkMuted)
+                    Text(Format.grouped(stats.count(s))).fontWeight(.semibold).foregroundStyle(Theme.ink)
+                    Text(stats.percent(s)).foregroundStyle(Theme.inkMuted.opacity(0.7))
                 }
                 .font(.system(size: 13))
                 .numbers()
@@ -138,7 +138,7 @@ struct StatusLegend: View {
 
 /// Last updates (41, 48): posters with what changed under them.
 struct LastUpdatesShelf: View {
-    let updates: [UserPage.Update]
+    let updates: [ProfileUpdate]
 
     @Environment(AppModel.self) private var model
 

@@ -1,0 +1,20 @@
+{
+ "recipient": {
+  "canSend": true,
+  "person": {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+   "lists": [
+    "anime",
+    "manga",
+    "tv",
+    "movies",
+    "books"
+   ],
+   "name": "Lena",
+   "open": true,
+   "relation": "friend",
+   "since": 1771081200000,
+   "username": "lena"
+  }
+ }
+}

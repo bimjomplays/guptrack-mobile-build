@@ -1,13 +1,14 @@
 import SwiftUI
 
 /// The Social tab (44, 46, 51): the large title "Social" with Activity · Friends · Messages under it. Activity is the
-/// friends' feed, Friends the same list as FriendsView, Messages the conversations. The red count on Messages (and on
-/// the tab) is the unread messages, read when the tab first appears.
+/// friends' feed (GET feed), Friends the same list as FriendsView (GET friends), Messages the conversations (GET
+/// messages). The red count on Messages (and on the tab) is the conversations with something unread, read when the
+/// tab first appears.
 struct SocialView: View {
     @Environment(AppModel.self) private var model
     @State private var segment: SocialSegment = .activity
-    @State private var feed: Load<ActivityFeed> = .loading
-    @State private var friends: Load<FriendsPage> = .loading
+    @State private var feed: Load<[FeedLine]> = .loading
+    @State private var friends: Load<FriendsState> = .loading
     @State private var messages: Load<MessageList> = .loading
 
     var body: some View {
@@ -49,7 +50,7 @@ struct SocialView: View {
             }
         case .friends:
             if let p = friends.value {
-                FriendsContent(page: Binding(get: { p }, set: { friends = .loaded($0) }))
+                FriendsContent(state: Binding(get: { p }, set: { friends = .loaded($0) }))
             } else {
                 SocialLoading(error: friends.error) { Task { await reload(.friends) } }
             }
@@ -92,8 +93,8 @@ struct SocialView: View {
 
     private func reload(_ s: SocialSegment) async {
         switch s {
-        case .activity: feed = await model.fetch { try await $0.activityFeed() }
-        case .friends: friends = await model.fetch { try await $0.friendsPage() }
+        case .activity: feed = await model.fetch { Feed.lines(try await $0.feed()) }
+        case .friends: friends = await model.fetch { try await $0.friends() }
         case .messages: await loadMessages()
         }
     }
@@ -113,29 +114,29 @@ struct SocialView: View {
 
 /// the friends' feed: one row per thing a friend did; a row opens its thread (45)
 struct SocialFeedList: View {
-    @Binding var feed: ActivityFeed
+    @Binding var feed: [FeedLine]
 
     var body: some View {
-        if feed.items.isEmpty {
+        if feed.isEmpty {
             ContentUnavailableView("No activity yet", systemImage: "person.2",
                                    description: Text("What your friends watch and read shows up here."))
                 .padding(.top, 40)
         } else {
             LazyVStack(spacing: 0) {
-                ForEach(Array(feed.items.enumerated()), id: \.element.id) { i, item in
-                    SocialFeedRow(item: item, separator: i < feed.items.count - 1) { feed.items[i] = $0 }
+                ForEach(Array(feed.enumerated()), id: \.element.id) { i, item in
+                    SocialFeedRow(item: item, separator: i < feed.count - 1) { feed[i] = $0 }
                 }
             }
         }
     }
 }
 
-/// One activity: the friend's picture, "kenji completed Frieren", Anime · ★ 9 · 12m, a quote or a strip of posters,
-/// likes and replies; the cover on the right.
+/// One activity: the friend's picture, "kenji completed Frieren", Anime · ★ 9 · 12m, a strip of posters when
+/// several titles were added at once, likes and replies; the cover on the right.
 struct SocialFeedRow: View {
-    let item: ActivityFeed.Item
+    let item: FeedLine
     var separator = true
-    var changed: (ActivityFeed.Item) -> Void
+    var changed: (FeedLine) -> Void
 
     @Environment(AppModel.self) private var model
 
@@ -149,11 +150,14 @@ struct SocialFeedRow: View {
             .padding(.top, 14)
             HStack(alignment: .top, spacing: 12) {
                 VStack(alignment: .leading, spacing: 0) {
-                    SocialSentence(user: item.user.username, verb: item.verb, object: item.object, size: 15)
+                    SocialSentence(user: item.user.username, verb: item.verb, object: item.object, tail: item.tail,
+                                   size: 15)
                     meta.padding(.top, 3)
                     extra
-                    SocialCounts(likes: item.likes, replies: item.replies, liked: item.liked, like: like)
-                        .padding(.top, 10)
+                    if let r = item.social {
+                        SocialCounts(likes: r.likes, replies: r.replies, liked: r.liked, canLike: r.canLike, like: like)
+                            .padding(.top, 10)
+                    }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 if let t = item.title {
@@ -165,14 +169,14 @@ struct SocialFeedRow: View {
         }
         .padding(.horizontal, Theme.pad)
         .contentShape(Rectangle())
-        .onTapGesture { model.open(.activity(item.id)) }
-        .accessibilityAction(named: "Open") { model.open(.activity(item.id)) }
+        .onTapGesture { model.open(.activity(String(item.id))) }
+        .accessibilityAction(named: "Open") { model.open(.activity(String(item.id))) }
         .contextMenu { menu }
     }
 
     private var meta: some View {
         HStack(spacing: 5) {
-            Text(item.metaBefore)
+            Text(item.mediaWord)
             if let s = item.score10 {
                 Text("·").opacity(0.6)
                 ScoreLabel(value: s, size: 13, muted: true)
@@ -186,14 +190,8 @@ struct SocialFeedRow: View {
     }
 
     @ViewBuilder private var extra: some View {
-        if let q = item.quote {
-            Text(q).font(.system(size: 15)).foregroundStyle(Theme.inkSoft)
-                .lineSpacing(2).lineLimit(2)
-                .padding(.leading, 11)
-                .overlay(alignment: .leading) { Rectangle().fill(Theme.inkFaint.opacity(0.6)).frame(width: 2) }
-                .padding(.top, 8)
-        }
-        if let ts = item.titles, !ts.isEmpty {
+        let ts = item.titles
+        if ts.count > 1 {
             HStack(spacing: 8) {
                 ForEach(ts.prefix(5)) { t in
                     Poster(url: t.cover, width: 50, radius: 6, flat: true)
@@ -206,7 +204,7 @@ struct SocialFeedRow: View {
     }
 
     @ViewBuilder private var menu: some View {
-        Button { model.open(.activity(item.id)) } label: { Label("Open", systemImage: "bubble.left") }
+        Button { model.open(.activity(String(item.id))) } label: { Label("Open", systemImage: "bubble.left") }
         if let t = item.title {
             Button { model.open(.title(t.id)) } label: { Label("Open \(t.media.singular)", systemImage: "film") }
         }
@@ -214,18 +212,30 @@ struct SocialFeedRow: View {
     }
 
     private func like() {
-        let next = item.toggledLike()
+        guard let r = item.social, r.canLike else { return }
+        let before = item
+        let next = item.toggledLike(me: model.socialMe)
         changed(next)
-        let id = item.id, on = next.liked
-        Task { _ = await model.fetch { try await $0.likeActivity(id, on) } }
+        let on = next.social?.liked ?? false
+        Task {
+            let answer = await model.fetch { try await $0.like(r.target, on) }
+            if let fresh = answer.value {
+                var l = next
+                l.social = fresh
+                changed(l)
+            } else {
+                changed(before)
+            }
+        }
     }
 }
 
-/// "kenji completed Frieren", the name and the title in bold
+/// "kenji completed Frieren", "lena added 4 shows to Plan to Watch": the name and the object in bold
 struct SocialSentence: View {
     let user: String
     let verb: String
     let object: String
+    var tail = ""
     var size: CGFloat = 15
     var score: String?
 
@@ -241,10 +251,10 @@ struct SocialSentence: View {
     private var sentence: Text {
         let who = Text(user).fontWeight(.semibold).foregroundStyle(Theme.ink)
         let what = Text(object).fontWeight(.semibold).foregroundStyle(Theme.ink)
-        guard let score else { return Text("\(who) \(verb) \(what)") }
+        guard let score else { return Text("\(who) \(verb) \(what)\(tail)") }
         let star = Text(Image(systemName: "star.fill")).font(.system(size: size - 3)).foregroundStyle(Theme.star)
         let n = Text(score).fontWeight(.semibold).foregroundStyle(Theme.ink)
-        return Text("\(who) \(verb) \(what) and rated it \(star) \(n)")
+        return Text("\(who) \(verb) \(what)\(tail) and rated it \(star) \(n)")
     }
 }
 
@@ -258,18 +268,18 @@ struct MessagesContent: View {
 
     var body: some View {
         LazyVStack(spacing: 0) {
-            if let line = list.requestLine, let first = list.requests.first {
+            if let line = list.requestLine, let first = list.requestLines.first {
                 Button { model.open(.messageRequest(first.id)) } label: { requests(line) }
                     .buttonStyle(.plain)
             }
-            if list.conversations.isEmpty {
+            if list.lines.isEmpty {
                 ContentUnavailableView("No messages", systemImage: "bubble.left.and.bubble.right",
                                        description: Text("Start one with the pencil above."))
                     .padding(.top, 30)
             }
-            ForEach(Array(list.conversations.enumerated()), id: \.element.id) { i, row in
+            ForEach(Array(list.lines.enumerated()), id: \.element.id) { i, row in
                 Button { model.open(.conversation(row.id)) } label: {
-                    MessageRow(row: row, separator: i < list.conversations.count - 1)
+                    MessageRow(row: row, separator: i < list.lines.count - 1)
                 }
                 .buttonStyle(.plain)
             }
@@ -287,7 +297,7 @@ struct MessagesContent: View {
                 Text(line).font(.system(size: 14)).foregroundStyle(Theme.inkMuted).lineLimit(1)
             }
             Spacer(minLength: 8)
-            Text("\(list.requests.count)").font(.system(size: 15)).foregroundStyle(Theme.inkMuted).numbers()
+            Text("\(max(list.requests, list.requestLines.count))").font(.system(size: 15)).foregroundStyle(Theme.inkMuted).numbers()
             Image(systemName: "chevron.right").font(.system(size: 14, weight: .semibold)).foregroundStyle(Theme.inkMuted)
         }
         .padding(.horizontal, Theme.pad)
@@ -298,25 +308,19 @@ struct MessagesContent: View {
     }
 }
 
-/// one conversation in the list: picture, name, time, the last message, the unread count
+/// one conversation in the list: picture, name, time, the last message, the unread count (a muted one shows a
+/// bell-slash and no count)
 struct MessageRow: View {
-    let row: MessageList.Row
+    let row: ConversationLine
     var separator = true
 
     var body: some View {
-        let unread = row.unread > 0
+        let unread = row.unread > 0 && !row.muted
         HStack(spacing: 14) {
-            Avatar(url: row.user.avatar, size: 52)
-                .overlay(alignment: .bottomTrailing) {
-                    if row.online {
-                        Circle().fill(Theme.color(.current)).frame(width: 14, height: 14)
-                            .overlay(Circle().stroke(Theme.sheet, lineWidth: 2.5))
-                            .offset(x: 2, y: 2)
-                    }
-                }
+            Avatar(url: row.person.avatar, size: 52)
             VStack(alignment: .leading, spacing: 2) {
                 HStack(alignment: .firstTextBaseline, spacing: 8) {
-                    Text(row.user.username).font(.system(size: 16, weight: unread ? .bold : .semibold))
+                    Text(row.person.username).font(.system(size: 16, weight: unread ? .bold : .semibold))
                         .foregroundStyle(Theme.ink).lineLimit(1)
                     Spacer(minLength: 4)
                     Text(row.time).font(.system(size: 13)).numbers()
@@ -326,7 +330,10 @@ struct MessageRow: View {
                     Text(row.preview).font(.system(size: 14)).lineLimit(1)
                         .foregroundStyle(unread ? Theme.inkSoft : Theme.inkMuted)
                     Spacer(minLength: 0)
-                    if unread {
+                    if row.muted {
+                        Image(systemName: "bell.slash").font(.system(size: 13)).foregroundStyle(Theme.inkMuted)
+                            .accessibilityLabel("Muted")
+                    } else if unread {
                         Text("\(row.unread)").font(.system(size: 12, weight: .bold)).numbers().foregroundStyle(.white)
                             .padding(.horizontal, 6).frame(minWidth: 20, minHeight: 20)
                             .background(Theme.brand, in: Capsule())

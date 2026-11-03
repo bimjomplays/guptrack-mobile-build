@@ -54,13 +54,15 @@ class ScreenTestCase: XCTestCase {
     }
 
     /// a slow drag up by `points` that stops where it lets go (no fling), for the "scrolled" pictures
+    /// (a negative `points` drags down, back towards the top)
     func scroll(_ app: App, by points: CGFloat) {
         let f = app.frame
-        var left = points
+        let sign: CGFloat = points < 0 ? -1 : 1
+        var left = abs(points)
         while left > 0 {
             let step = min(left, f.height * 0.5)
-            let from = CGPoint(x: f.midX, y: f.midY + step / 2)
-            let to = CGPoint(x: f.midX, y: f.midY - step / 2)
+            let from = CGPoint(x: f.midX, y: f.midY + sign * step / 2)
+            let to = CGPoint(x: f.midX, y: f.midY - sign * step / 2)
             settle()
             Finger.press(from, seconds: 0, thenDragTo: to, speed: 500, hold: 0.4)
             idle()
@@ -68,13 +70,18 @@ class ScreenTestCase: XCTestCase {
         }
     }
 
-    /// drags up until the element with `text` has its top at `y` or above (at most 12 drags)
+    /// drags up until the element with `text` has its top at `y` or above (at most 12 drags); if a drag carried it
+    /// up under the navigation bar, it drags back down so the element can be tapped
     func scroll(_ app: App, until text: String, top y: CGFloat = 140) {
         let e = find(app, text)
         for _ in 0..<12 {
             if e.exists, e.frame.minY <= y { break }
             let dy = e.exists ? max(40, e.frame.minY - y) : app.frame.height * 0.5
             scroll(app, by: dy)
+        }
+        let bar: CGFloat = 100
+        if e.exists, e.frame.minY < bar {
+            scroll(app, by: -(min(y, app.frame.height * 0.5) - e.frame.minY))
         }
     }
 }

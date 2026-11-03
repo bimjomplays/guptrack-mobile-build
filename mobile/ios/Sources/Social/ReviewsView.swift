@@ -1,17 +1,17 @@
 import SwiftUI
 
-/// A title's reviews (50): the average on top, the sort and filter chips, then each review (score, headline, a few
-/// lines, likes) with Read review. Write a review from the toolbar.
+/// A title's reviews (50, GET titles/:kind/:id/reviews): the average on top, the sort and filter chips, then each
+/// review (score, a few lines, likes) with Read review. Yours comes first. Write a review from the toolbar.
 struct ReviewsView: View {
     let titleId: String
 
     @Environment(AppModel.self) private var model
-    @State private var page: Load<ReviewsPage> = .loading
+    @State private var page: Load<TitleReviews> = .loading
 
     var body: some View {
         Group {
             if let p = page.value {
-                ReviewsList(page: Binding(get: { p }, set: { page = .loaded($0) }))
+                ReviewsList(titleId: titleId, page: Binding(get: { p }, set: { page = .loaded($0) }))
             } else {
                 ScrollView { SocialLoading(error: page.error) { Task { await load() } } }
             }
@@ -34,36 +34,41 @@ struct ReviewsView: View {
     }
 
     private func load() async {
-        page = await model.fetch { try await $0.reviewsPage(titleId) }
+        page = await model.fetch { try await $0.titleReviews(titleId) }
     }
 }
 
 private struct ReviewsList: View {
-    @Binding var page: ReviewsPage
+    let titleId: String
+    @Binding var page: TitleReviews
 
     @Environment(AppModel.self) private var model
-    @State private var sort: ReviewsPage.Sort = .liked
+    @State private var sort: TitleReviews.Sort = .liked
     @State private var friendsOnly = false
     @State private var nearMine = false
     @State private var spoilers = false
 
-    private var myScore: Int? { model.entry(page.title.id)?.score }
+    private var myScore: Int? { model.entry(titleId)?.score }
+
+    /// the title: from the reviews themselves, else from your library
+    private var title: Title? { page.title?.card ?? model.entry(titleId)?.title }
 
     var body: some View {
-        let shown = ReviewsPage.shown(page.reviews, sort: sort, friendsOnly: friendsOnly,
-                                      nearScore: nearMine ? myScore : nil, spoilers: spoilers)
+        let others = TitleReviews.shown(page.reviews, sort: sort, friendsOnly: friendsOnly,
+                                        nearScore: nearMine ? myScore : nil, spoilers: spoilers)
+        let shown = (page.mine.map { [$0] } ?? []) + others
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 0) {
                 header
                 chips
                 Hairline().padding(.top, 8)
                 if shown.isEmpty {
-                    Text(page.reviews.isEmpty ? "No reviews yet. Be the first." : "No reviews match these filters.")
+                    Text(page.all.isEmpty ? "No reviews yet. Be the first." : "No reviews match these filters.")
                         .font(.system(size: 15)).foregroundStyle(Theme.inkMuted)
                         .frame(maxWidth: .infinity).padding(.vertical, 40)
                 }
                 ForEach(Array(shown.enumerated()), id: \.element.id) { i, r in
-                    ReviewRow(review: r, separator: i < shown.count - 1) { like(r.id) }
+                    ReviewRow(review: r, separator: i < shown.count - 1) { like(r) }
                 }
             }
             .padding(.bottom, 40)
@@ -72,11 +77,12 @@ private struct ReviewsList: View {
 
     private var header: some View {
         HStack(spacing: 14) {
-            Poster(url: page.title.cover, width: 52, radius: 7)
+            Poster(url: title?.cover, width: 52, radius: 7)
             VStack(alignment: .leading, spacing: 4) {
-                Text(page.title.name).font(.system(size: 17, weight: .bold)).foregroundStyle(Theme.ink).lineLimit(1)
+                Text(title?.name ?? "Reviews").font(.system(size: 17, weight: .bold)).foregroundStyle(Theme.ink)
+                    .lineLimit(1)
                 HStack(spacing: 8) {
-                    ScoreLabel(value: Format.average(page.average), size: 15)
+                    if let a = page.average { ScoreLabel(value: Format.average(a), size: 15) }
                     Text(page.averageLine).font(.system(size: 14)).foregroundStyle(Theme.inkMuted).numbers()
                 }
             }
@@ -86,7 +92,7 @@ private struct ReviewsList: View {
         .padding(.top, 4)
         .padding(.bottom, 16)
         .contentShape(Rectangle())
-        .onTapGesture { model.open(.title(page.title.id)) }
+        .onTapGesture { model.open(.title(titleId)) }
     }
 
     private var chips: some View {
@@ -94,7 +100,7 @@ private struct ReviewsList: View {
             HStack(spacing: 8) {
                 Menu {
                     Picker("Sort", selection: $sort) {
-                        ForEach(ReviewsPage.Sort.allCases) { s in Text(s.label).tag(s) }
+                        ForEach(TitleReviews.Sort.allCases) { s in Text(s.label).tag(s) }
                     }
                 } label: {
                     ChipLabel(text: sort.label, on: true, menu: true)
@@ -120,17 +126,23 @@ private struct ReviewsList: View {
         .padding(.bottom, 6)
     }
 
-    private func like(_ id: String) {
-        guard let i = page.reviews.firstIndex(where: { $0.id == id }) else { return }
-        page.reviews[i] = page.reviews[i].toggledLike()
-        let on = page.reviews[i].liked
-        Task { _ = await model.fetch { try await $0.likeReview(id, on) } }
+    private func like(_ r: Review) {
+        guard let social = r.social, social.canLike else { return }
+        let next = r.toggledLike(me: model.socialMe)
+        page = page.replacing(next)
+        let on = next.social?.liked ?? false
+        Task {
+            let answer = await model.fetch { try await $0.like(social.target, on) }
+            var done = next
+            done.social = answer.value ?? social
+            page = page.replacing(done)
+        }
     }
 }
 
-/// one review in the list: who, when, the score, the headline, three lines, likes, Read review
+/// one review in the list: who, when, the score, three lines, likes, Read review
 struct ReviewRow: View {
-    let review: ReviewsPage.Review
+    let review: Review
     var separator = true
     var like: () -> Void
 
@@ -139,18 +151,18 @@ struct ReviewRow: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             ReviewByline(review: review, size: 34)
-            Text(review.headline).font(.system(size: 16, weight: .semibold)).foregroundStyle(Theme.ink)
-                .padding(.top, 11)
             Text(review.body).font(.system(size: 15)).foregroundStyle(Theme.inkSoft)
                 .lineSpacing(2).lineLimit(3)
-                .padding(.top, 3)
+                .padding(.top, 11)
             HStack(spacing: 0) {
-                SocialCounts(likes: review.likes, replies: review.replies, liked: review.liked, like: like)
+                if let r = review.social {
+                    SocialCounts(likes: r.likes, replies: r.replies, liked: r.liked, canLike: r.canLike, like: like)
+                }
                 Spacer()
-                Button("Read review") { model.open(.review(review.id)) }
+                Button("Read review") { model.open(.review(review.key)) }
                     .font(.system(size: 14, weight: .semibold)).foregroundStyle(Theme.brandSoft)
                     .buttonStyle(.plain)
-                    .accessibilityLabel("Read \(review.user.username)’s review")
+                    .accessibilityLabel("Read \(review.author.username)’s review")
             }
             .padding(.top, 10)
         }
@@ -158,27 +170,27 @@ struct ReviewRow: View {
         .padding(.vertical, 16)
         .overlay(alignment: .bottom) { if separator { Hairline() } }
         .contentShape(Rectangle())
-        .onTapGesture { model.open(.review(review.id)) }
+        .onTapGesture { model.open(.review(review.key)) }
     }
 }
 
 /// [avatar] kenji (Friend) / 12 minutes ago ............ ★ 9
 struct ReviewByline: View {
-    let review: ReviewsPage.Review
+    let review: Review
     var size: CGFloat = 34
 
     @Environment(AppModel.self) private var model
 
     var body: some View {
         HStack(spacing: 10) {
-            Button { model.open(.user(review.user.username)) } label: { Avatar(url: review.user.avatar, size: size) }
+            Button { model.open(.user(review.author.username)) } label: { Avatar(url: review.author.avatar, size: size) }
                 .buttonStyle(.plain)
-                .accessibilityLabel(review.user.username)
+                .accessibilityLabel(review.author.username)
             VStack(alignment: .leading, spacing: 1) {
                 HStack(spacing: 6) {
-                    Text(review.user.username).font(.system(size: size > 40 ? 16 : 15, weight: .semibold))
+                    Text(review.author.username).font(.system(size: size > 40 ? 16 : 15, weight: .semibold))
                         .foregroundStyle(Theme.ink)
-                    if review.friend {
+                    if review.author.isFriend {
                         Text("Friend").font(.system(size: 11, weight: .semibold)).foregroundStyle(Theme.brandSoft)
                             .padding(.horizontal, 7).padding(.vertical, 2)
                             .background(Theme.brand.opacity(0.16), in: Capsule())
@@ -189,23 +201,24 @@ struct ReviewByline: View {
                             .background(Theme.danger.opacity(0.16), in: Capsule())
                     }
                 }
-                Text(SocialText.agoWords(review.at)).font(.system(size: size > 40 ? 13 : 12)).foregroundStyle(Theme.inkMuted)
+                Text(SocialText.agoWords(review.date)).font(.system(size: size > 40 ? 13 : 12)).foregroundStyle(Theme.inkMuted)
             }
             Spacer(minLength: 8)
-            ScoreLabel(value: review.score10, size: 16)
+            if let s = review.score10 { ScoreLabel(value: s, size: 16) }
         }
     }
 }
 
 // MARK: one review (laid out like 45)
 
-/// One review with its replies: the byline, the headline and the whole text (hidden behind a tap when it has
-/// spoilers), the title card, who liked it, the replies and a reply bar.
+/// One review with its replies (GET users/:username/reviews/:kind/:id, then GET replies/review/:id): the byline,
+/// the whole text (hidden behind a tap when it has spoilers), the title card, who liked it, the replies and a reply
+/// bar. `id` is the review's key, "anime:154587@kenji".
 struct ReviewView: View {
     let id: String
 
     @Environment(AppModel.self) private var model
-    @State private var thread: Load<ReviewThread> = .loading
+    @State private var thread: Load<ReviewThreadState> = .loading
 
     var body: some View {
         Group {
@@ -223,10 +236,10 @@ struct ReviewView: View {
             ToolbarItem(placement: .topBarTrailing) {
                 Menu {
                     if let t = thread.value {
-                        Button { model.open(.user(t.review.user.username)) } label: {
-                            Label("View \(t.review.user.username)", systemImage: "person")
+                        Button { model.open(.user(t.review.author.username)) } label: {
+                            Label("View \(t.review.author.username)", systemImage: "person")
                         }
-                        Button { model.open(.reviews(t.title.id)) } label: {
+                        Button { model.open(.reviews(t.review.title.titleId)) } label: {
                             Label("All reviews", systemImage: "text.bubble")
                         }
                     }
@@ -240,37 +253,58 @@ struct ReviewView: View {
     }
 
     private func load() async {
-        thread = await model.fetch { try await $0.reviewThread(id) }
+        guard let key = ReviewKey(id) else {
+            thread = .failed("This review doesn't exist.")
+            return
+        }
+        thread = await model.fetch { try await ReviewThreadState.load(key, $0) }
+    }
+}
+
+/// a review, its likes and its replies
+struct ReviewThreadState: Hashable, Sendable {
+    var review: Review
+    var reactions: Reactions
+    var replies: [Reply]
+
+    static func load(_ key: ReviewKey, _ api: APIClient) async throws -> ReviewThreadState {
+        let review = try await api.review(key)
+        let r = try await api.replies(review.social?.target ?? Reactions.Target(on: "review", id: review.id))
+        return ReviewThreadState(review: review, reactions: r.reactions, replies: r.replies)
     }
 }
 
 private struct ReviewThreadPage: View {
-    @Binding var thread: ReviewThread
+    @Binding var thread: ReviewThreadState
 
     @Environment(AppModel.self) private var model
     @State private var draft = ""
+    @State private var parent: Int?
     @State private var reveal = false
     @FocusState private var focused: Bool
 
-    private var review: ReviewsPage.Review { thread.review }
+    private var review: Review { thread.review }
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
                 ReviewByline(review: review, size: 44).padding(.horizontal, Theme.pad)
-                Text(review.headline).font(.system(size: 20, weight: .bold)).foregroundStyle(Theme.ink)
-                    .padding(.horizontal, Theme.pad).padding(.top, 14)
-                text.padding(.top, 8)
-                SocialTitleCard(title: thread.title).padding(.top, 16)
-                SocialLikedBy(users: thread.likedBy, likes: review.likes, liked: review.liked, like: like)
-                SocialReplies(replies: $thread.replies, kind: .review) { draft = "@\($0) "; focused = true }
+                text.padding(.top, 14)
+                SocialTitleCard(title: model.entry(review.title.titleId)?.title ?? review.title.card).padding(.top, 16)
+                SocialLikedBy(reactions: thread.reactions, like: like)
+                SocialReplies(replies: $thread.replies) { name, id in
+                    draft = "@\(name) "
+                    parent = id
+                    focused = true
+                }
             }
             .padding(.top, 8)
             .padding(.bottom, 24)
         }
         .scrollDismissesKeyboard(.interactively)
         .safeAreaInset(edge: .bottom) {
-            SocialComposer(placeholder: "Reply to \(review.user.username)", text: $draft, focused: $focused, send: send) {
+            SocialComposer(placeholder: "Reply to \(review.author.username)", text: $draft, focused: $focused,
+                           send: send) {
                 SocialMentionMenu(text: $draft)
             }
         }
@@ -292,20 +326,31 @@ private struct ReviewThreadPage: View {
     }
 
     private func like() {
-        thread.review = review.toggledLike()
-        let me = model.socialMe
-        if thread.review.liked { thread.likedBy.insert(me, at: 0) } else { thread.likedBy.removeAll { $0 == me } }
-        let id = review.id, on = thread.review.liked
-        Task { _ = await model.fetch { try await $0.likeReview(id, on) } }
+        let before = thread.reactions
+        guard before.canLike else { return }
+        thread.reactions = before.toggledLike(me: model.socialMe)
+        let target = before.target, on = thread.reactions.liked
+        Task {
+            let r = await model.fetch { try await $0.like(target, on) }
+            thread.reactions = r.value ?? before
+        }
     }
 
     private func send() {
         let text = draft.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !text.isEmpty else { return }
         draft = ""
-        thread.replies.append(SocialReplies.mine(text, model.socialMe))
-        thread.review.replies += 1
-        let id = review.id
-        Task { _ = await model.fetch { try await $0.replyToReview(id, text) } }
+        let local = SocialReplies.mine(text, parent: parent, model.socialMe)
+        let answering = parent
+        parent = nil
+        thread.replies.append(local)
+        thread.reactions.replies += 1
+        let target = thread.reactions.target
+        Task {
+            if await model.fetch({ try await $0.reply(target, text, parent: answering) }).value == nil {
+                thread.replies.removeAll { $0.id == local.id }
+                thread.reactions.replies = max(0, thread.reactions.replies - 1)
+            }
+        }
     }
 }

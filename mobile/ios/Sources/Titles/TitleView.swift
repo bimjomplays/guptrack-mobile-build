@@ -82,12 +82,15 @@ private struct TitlePageBody: View {
                     .opacity(scrolled ? 1 : 0)
                     .accessibilityHidden(!scrolled)
             }
-            ToolbarItemGroup(placement: .topBarTrailing) {
+            // two items, not a group: each is its own bar button (the bar still draws them in one capsule), so
+            // the More menu opens on its own tap
+            ToolbarItem(placement: .topBarTrailing) {
                 ShareLink(item: Route.title(page.title.id).url, subject: Text(page.title.name)) {
                     Image(systemName: "square.and.arrow.up")
                 }
                 .accessibilityLabel("Share")
-                // the Menu sits in the toolbar itself (a view wrapping it isn't hosted as a bar button)
+            }
+            ToolbarItem(placement: .topBarTrailing) {
                 Menu {
                     TitleMoreItems(page: page, confirmRemove: $confirmRemove)
                 } label: {

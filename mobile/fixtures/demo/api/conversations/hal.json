@@ -1,37 +1,55 @@
 {
+ "box": "inbox",
+ "canSend": true,
  "messages": [
   {
-   "at": "2026-10-27T12:40:00.000Z",
-   "fromMe": false,
-   "id": "h1",
-   "text": "you’d like this, it’s stressful in a good way"
+   "at": 1793104800000,
+   "body": "you’d like this, it’s stressful in a good way",
+   "card": null,
+   "deleted": false,
+   "edited": null,
+   "id": 1016,
+   "mine": false,
+   "photos": [],
+   "reactions": []
   },
   {
-   "at": "2026-10-27T12:41:00.000Z",
-   "fromMe": false,
-   "id": "h2",
-   "title": {
-    "banner": "https://image.tmdb.org/t/p/w1280/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
+   "at": 1793104860000,
+   "body": "",
+   "card": {
     "cover": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
     "format": "TV",
-    "genres": [
-     "Drama",
-     "Comedy"
-    ],
-    "id": "tv:136315",
-    "media": "tv",
-    "name": "The Bear",
-    "score": 8.2,
+    "id": "136315",
+    "kind": "tv",
+    "score": 90,
+    "status": "completed",
+    "title": "The Bear",
     "year": 2022
-   }
+   },
+   "deleted": false,
+   "edited": null,
+   "id": 1017,
+   "mine": false,
+   "photos": [],
+   "reactions": []
   }
  ],
- "status": "3 days ago",
- "typing": false,
- "unread": 0,
- "user": {
+ "more": false,
+ "muted": false,
+ "person": {
   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+  "lists": [
+   "anime",
+   "manga",
+   "tv",
+   "movies",
+   "books"
+  ],
   "name": "Hal",
+  "open": true,
+  "relation": "friend",
+  "since": 1780326000000,
   "username": "hal"
- }
+ },
+ "seen": null
 }

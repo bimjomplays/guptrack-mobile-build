@@ -82,7 +82,7 @@ struct NotificationsView: View {
         return FriendAnswer(state: answered[u]) { accept in
             answered[u] = accept
             markRead(item.id)
-            Task { _ = await model.fetch { try await $0.answerFriendRequest(u, accept: accept) } }
+            Task { _ = await model.fetch { try await $0.answerFriend(u, accept: accept) } }
         }
     }
 

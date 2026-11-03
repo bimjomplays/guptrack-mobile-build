@@ -1,0 +1,87 @@
+{
+ "reactions": {
+  "canLike": true,
+  "liked": true,
+  "likers": [
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Mika",
+    "open": true,
+    "relation": "self",
+    "username": "mika"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Kenji",
+    "open": true,
+    "relation": "friend",
+    "since": 1791471600000,
+    "username": "kenji"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Noor",
+    "open": true,
+    "relation": "friend",
+    "since": 1768921200000,
+    "username": "noor.reads"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b28967-ShW5sAxzZDny.png",
+    "lists": [
+     "anime"
+    ],
+    "name": "Power",
+    "open": false,
+    "relation": "none",
+    "username": "powerpower"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
+    "lists": [
+     "anime",
+     "manga"
+    ],
+    "name": "Aki",
+    "open": true,
+    "relation": "none",
+    "username": "aki.h"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b61-ywXUyyocEEqt.png",
+    "lists": [],
+    "name": "Yuki",
+    "open": false,
+    "relation": "none",
+    "username": "yuki.tv"
+   }
+  ],
+  "likes": 6,
+  "replies": 2,
+  "target": {
+   "id": 15,
+   "on": "review"
+  }
+ }
+}

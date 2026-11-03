@@ -174,6 +174,62 @@ final class DemoLibrary: @unchecked Sendable {
     }
 }
 
+/// The demo server's settings: each write's answer starts as its recorded fixture and keeps what was sent, so
+/// "Private" stays private after the save (the settings pages compare the answer with what they sent).
+final class DemoSettings: @unchecked Sendable {
+    static let writes = [("PATCH", "settings/prefs"), ("PATCH", "settings/profile"),
+                         ("PUT", "settings/privacy/visibility"), ("PUT", "settings/privacy/comments"),
+                         ("PUT", "settings/messages")]
+
+    private let lock = NSLock()
+    private var answers: [String: JSONValue] = [:]
+
+    /// what the last write of this kind answered (nil before any)
+    func written(_ method: String, _ path: String) -> JSONValue? {
+        lock.lock(); defer { lock.unlock() }
+        return answers[method + " " + path]
+    }
+
+    private func current(_ method: String, _ path: String) -> JSONValue? {
+        if let a = answers[method + " " + path] { return a }
+        return Demo.data(Demo.file(path, method: method)).flatMap { try? APIClient.decoder.decode(JSONValue.self, from: $0) }
+    }
+
+    /// GET settings/privacy: the visibility and comments answers together
+    func privacy() -> JSONValue? {
+        lock.lock(); defer { lock.unlock() }
+        guard answers["PUT settings/privacy/visibility"] != nil || answers["PUT settings/privacy/comments"] != nil,
+              let base = Demo.data(Demo.file("settings/privacy")).flatMap({ try? APIClient.decoder.decode(JSONValue.self, from: $0) })
+        else { return nil }
+        var out = base.merged(with: answers["PUT settings/privacy/visibility"])
+        if let c = answers["PUT settings/privacy/comments"]?["setting"] { out = out.merged(with: .object(["comments": c])) }
+        return out
+    }
+
+    /// a write: the body laid over the current answer (prefs and profile sit under their own key)
+    func write(_ method: String, _ path: String, _ body: Data?) -> JSONValue? {
+        guard let body, let sent = try? APIClient.decoder.decode(JSONValue.self, from: body) else { return nil }
+        lock.lock(); defer { lock.unlock() }
+        guard let now = current(method, path) else { return nil }
+        let next: JSONValue
+        switch path {
+        case "settings/prefs": next = now.merged(with: .object(["prefs": sent]))
+        case "settings/profile": next = now.merged(with: .object(["profile": sent]))
+        case "settings/privacy/visibility":
+            // {visibility, media?}: the profile's, or one list's
+            guard let v = sent["visibility"] else { return nil }
+            if case .string(let media)? = sent["media"] {
+                next = now.merged(with: .object(["lists": .object([media: v])]))
+            } else {
+                next = now.merged(with: .object(["visibility": v]))
+            }
+        default: next = now.merged(with: sent)
+        }
+        answers[method + " " + path] = next
+        return next
+    }
+}
+
 /// Answers app API calls from the fixtures in mobile/fixtures/demo/api, so the demo runs the app's real decoding:
 ///   GET  <path>?<k>=<v>   api/<path>/<v>.json, else api/<path>.json
 ///   POST <path>           api/<path>.post.json, else {"ok":true}
@@ -208,6 +264,13 @@ final class DemoTransport: Transport, @unchecked Sendable {
             }
             return Self.json(library.write(batch))
         }
+        // settings keep what's written, so an edit sticks for the session like on a server
+        let settings = DemoSettings()
+        for (method, path) in DemoSettings.writes {
+            handle(method, path) { r in settings.write(method, path, r.body).map(Self.json) }
+        }
+        handle("GET", "settings/privacy") { _ in settings.privacy().map(Self.json) }
+        handle("GET", "settings/messages") { _ in settings.written("PUT", "settings/messages").map(Self.json) }
     }
 
     /// answer one call yourself (tests, special cases)

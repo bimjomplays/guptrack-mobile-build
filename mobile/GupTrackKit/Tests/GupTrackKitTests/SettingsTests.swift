@@ -319,10 +319,40 @@ final class SettingsTests: XCTestCase {
         let sent = transport.requests.dropFirst(before)
         XCTAssertEqual(sent.map { "\($0.method) \($0.path)" }, ["PATCH settings/prefs", "PUT settings/privacy/comments"])
         XCTAssertEqual(body(sent.first), #"{"adult":true}"#)
-        // the demo's server answers with what it has: the store takes the answer
-        XCTAssertEqual(store.settings?.prefs.adult, false)
+        // the demo's server keeps what was written, and the store takes its answers
+        XCTAssertEqual(store.settings?.prefs.adult, true)
+        XCTAssertEqual(store.saved?.prefs.adult, true)
+        XCTAssertEqual(store.saved?.privacy.comments, "nobody")
+        XCTAssertTrue(store.pendingChanges.isEmpty)
+    }
+
+    @MainActor
+    func testStoreAdoptsAnAnswerThatDiffers() async throws {
+        let transport = DemoTransport()
+        transport.handle("PUT", "settings/privacy/comments") { _ in DemoTransport.json(CommentSettingBody(setting: "friends")) }
+        let api = APIClient(transport: transport, token: "demo")
+        let store = AccountSettingsStore()
+        store.loaded(try await api.accountSettings(), for: "mika")
+        store.edit { $0.privacy.comments = "nobody" }
+        try await store.save(using: api)
         XCTAssertEqual(store.settings?.privacy.comments, "nobody", "the shown copy keeps an edit the answer didn't touch")
         XCTAssertEqual(store.saved?.privacy.comments, "friends")
+    }
+
+    @MainActor
+    func testDemoKeepsPrivacyWrites() async throws {
+        let api = APIClient(transport: DemoTransport(), token: "demo")
+        let store = AccountSettingsStore()
+        store.loaded(try await api.accountSettings(), for: "mika")
+        store.edit { $0.privacy.visibility = .private; $0.privacy.lists["tv"] = .public; $0.messages = "nobody" }
+        try await store.save(using: api)
+        XCTAssertTrue(store.pendingChanges.isEmpty)
+        XCTAssertEqual(store.saved?.privacy.visibility, .private)
+        XCTAssertEqual(store.saved?.privacy.lists["tv"], .public)
+        let again = try await api.accountSettings()
+        XCTAssertEqual(again.privacy.visibility, .private)
+        XCTAssertEqual(again.privacy.lists["tv"], .public)
+        XCTAssertEqual(again.messages, "nobody")
     }
 
     // MARK: the bio

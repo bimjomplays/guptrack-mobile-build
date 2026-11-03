@@ -1,0 +1,85 @@
+{
+ "reactions": {
+  "canLike": true,
+  "liked": false,
+  "likers": [
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Kenji",
+    "open": true,
+    "relation": "friend",
+    "since": 1791471600000,
+    "username": "kenji"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Tobi",
+    "open": true,
+    "relation": "friend",
+    "since": 1756738800000,
+    "username": "tobiwan"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Noor",
+    "open": true,
+    "relation": "friend",
+    "since": 1768921200000,
+    "username": "noor.reads"
+   }
+  ],
+  "likes": 3,
+  "replies": 1,
+  "target": {
+   "id": 110,
+   "on": "activity"
+  }
+ },
+ "replies": [
+  {
+   "at": 1793596860000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Kenji",
+    "open": true,
+    "relation": "friend",
+    "since": 1791471600000,
+    "username": "kenji"
+   },
+   "body": "Gyro is carrying this season.",
+   "canDelete": false,
+   "canEdit": false,
+   "edited": null,
+   "id": 503,
+   "parent": null
+  }
+ ]
+}

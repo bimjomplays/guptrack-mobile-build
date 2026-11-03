@@ -1,0 +1,805 @@
+{
+ "counts": {
+  "anime": {
+   "mine": 57,
+   "shared": 25,
+   "theirs": 41
+  },
+  "manga": {
+   "mine": 19,
+   "shared": 13,
+   "theirs": 13
+  }
+ },
+ "person": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
+  "lists": [
+   "anime",
+   "manga"
+  ],
+  "name": "Aki",
+  "open": true,
+  "relation": "none",
+  "username": "aki.h"
+ },
+ "shared": [
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png",
+   "format": "ONA",
+   "id": "195539",
+   "media": "anime",
+   "mine": {
+    "progress": 3,
+    "score": null,
+    "status": "current"
+   },
+   "theirs": {
+    "progress": 7,
+    "score": 90,
+    "status": "dropped"
+   },
+   "title": "Cyberpunk: Edgerunners 2"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166240-PBV7zukIHW7V.png",
+   "format": "TV",
+   "id": "166240",
+   "media": "anime",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "current"
+   },
+   "theirs": {
+    "progress": 8,
+    "score": 70,
+    "status": "completed"
+   },
+   "title": "Demon Slayer: Kimetsu no Yaiba Hashira Training Arc"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx147105-rwOX8qyUy8gV.jpg",
+   "format": "ONA",
+   "id": "147105",
+   "media": "anime",
+   "mine": {
+    "progress": 3,
+    "score": null,
+    "status": "current"
+   },
+   "theirs": {
+    "progress": 12,
+    "score": 60,
+    "status": "dropped"
+   },
+   "title": "Witch Hat Atelier"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg",
+   "format": "TV",
+   "id": "21",
+   "media": "anime",
+   "mine": {
+    "progress": 1150,
+    "score": 90,
+    "status": "current"
+   },
+   "theirs": {
+    "progress": 13,
+    "score": null,
+    "status": "current"
+   },
+   "title": "ONE PIECE"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1575-hsmWM2ydNm1m.jpg",
+   "format": "TV",
+   "id": "1575",
+   "media": "anime",
+   "mine": {
+    "progress": 25,
+    "score": 75,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 10,
+    "score": 85,
+    "status": "dropped"
+   },
+   "title": "Code Geass: Lelouch of the Rebellion"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2904-Fet9Q33suC7G.jpg",
+   "format": "TV",
+   "id": "2904",
+   "media": "anime",
+   "mine": {
+    "progress": 25,
+    "score": 90,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 12,
+    "score": 95,
+    "status": "dropped"
+   },
+   "title": "Code Geass: Lelouch of the Rebellion R2"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-buvcRTBx4NSm.jpg",
+   "format": "TV",
+   "id": "16498",
+   "media": "anime",
+   "mine": {
+    "progress": 25,
+    "score": 85,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "title": "Attack on Titan"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-hSNRJM03pvv1.jpg",
+   "format": "TV",
+   "id": "145064",
+   "media": "anime",
+   "mine": {
+    "progress": 23,
+    "score": 80,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 1,
+    "score": 95,
+    "status": "dropped"
+   },
+   "title": "JUJUTSU KAISEN Season 2"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127230-DdP4vAdssLoz.png",
+   "format": "TV",
+   "id": "127230",
+   "media": "anime",
+   "mine": {
+    "progress": 12,
+    "score": 90,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 12,
+    "score": 70,
+    "status": "completed"
+   },
+   "title": "Chainsaw Man"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125367-1yuq9NFcQuLI.png",
+   "format": "TV",
+   "id": "125367",
+   "media": "anime",
+   "mine": {
+    "progress": 13,
+    "score": 85,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 13,
+    "score": 85,
+    "status": "completed"
+   },
+   "title": "Kaguya-sama: Love is War -Ultra Romantic-"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108632-lQWnmw7XaNOK.jpg",
+   "format": "TV",
+   "id": "108632",
+   "media": "anime",
+   "mine": {
+    "progress": 13,
+    "score": 90,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 9,
+    "score": null,
+    "status": "dropped"
+   },
+   "title": "Re:ZERO -Starting Life in Another World- Season 2"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx119661-GDbUZxrZMz01.png",
+   "format": "TV",
+   "id": "119661",
+   "media": "anime",
+   "mine": {
+    "progress": 12,
+    "score": 95,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 12,
+    "score": 70,
+    "status": "completed"
+   },
+   "title": "Re:ZERO -Starting Life in Another World- Season 2 Part 2"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104276-SnEowMvesWIE.png",
+   "format": "TV",
+   "id": "104276",
+   "media": "anime",
+   "mine": {
+    "progress": 25,
+    "score": 100,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 25,
+    "score": 80,
+    "status": "completed"
+   },
+   "title": "My Hero Academia Season 4"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19-gtMC64182sm4.jpg",
+   "format": "TV",
+   "id": "19",
+   "media": "anime",
+   "mine": {
+    "progress": 74,
+    "score": 80,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 27,
+    "score": null,
+    "status": "dropped"
+   },
+   "title": "Monster"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20755-dWrhs569YGUO.jpg",
+   "format": "TV",
+   "id": "20755",
+   "media": "anime",
+   "mine": {
+    "progress": 22,
+    "score": 90,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "title": "Assassination Classroom"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131573-rpl82vDEDRm6.jpg",
+   "format": "Movie",
+   "id": "131573",
+   "media": "anime",
+   "mine": {
+    "progress": 1,
+    "score": 70,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 1,
+    "score": 70,
+    "status": "dropped"
+   },
+   "title": "JUJUTSU KAISEN 0"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1735-kGfVm0YqCPcu.png",
+   "format": "TV",
+   "id": "1735",
+   "media": "anime",
+   "mine": {
+    "progress": 112,
+    "score": 55,
+    "status": "dropped"
+   },
+   "theirs": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "title": "Naruto: Shippuden"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png",
+   "format": "TV",
+   "id": "269",
+   "media": "anime",
+   "mine": {
+    "progress": 41,
+    "score": 55,
+    "status": "dropped"
+   },
+   "theirs": {
+    "progress": 90,
+    "score": 80,
+    "status": "current"
+   },
+   "title": "Bleach"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg",
+   "format": "TV",
+   "id": "195516",
+   "media": "anime",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "theirs": {
+    "progress": 12,
+    "score": 75,
+    "status": "completed"
+   },
+   "title": "The Apothecary Diaries Season 3"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198966-9Ji1GwIyRiiu.jpg",
+   "format": "TV",
+   "id": "198966",
+   "media": "anime",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "theirs": {
+    "progress": 59,
+    "score": 100,
+    "status": "completed"
+   },
+   "title": "Dandadan 3rd Season"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186712-d5I2TjUQcHuI.jpg",
+   "format": "TV",
+   "id": "186712",
+   "media": "anime",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "theirs": {
+    "progress": 14,
+    "score": null,
+    "status": "current"
+   },
+   "title": "Bocchi the Rock! 2nd Season"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209827-uHqVlWylCpTT.jpg",
+   "format": "TV",
+   "id": "209827",
+   "media": "anime",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "theirs": {
+    "progress": 59,
+    "score": 60,
+    "status": "completed"
+   },
+   "title": "[Oshi no Ko] Final Season"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204429-9scYA2ab3Zz3.jpg",
+   "format": "",
+   "id": "204429",
+   "media": "anime",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "theirs": {
+    "progress": 14,
+    "score": 75,
+    "status": "current"
+   },
+   "title": "Chainsaw Man: Shikaku-hen"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png",
+   "format": "TV",
+   "id": "206949",
+   "media": "anime",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "theirs": {
+    "progress": 23,
+    "score": 75,
+    "status": "current"
+   },
+   "title": "Nia Liston: The Merciless Maiden"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg",
+   "format": "ONA",
+   "id": "212888",
+   "media": "anime",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "theirs": {
+    "progress": 10,
+    "score": 60,
+    "status": "hold"
+   },
+   "title": "Overgeared"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-euxXZEIfDY2u.png",
+   "format": "Manga",
+   "id": "105778",
+   "media": "manga",
+   "mine": {
+    "progress": 88,
+    "score": 80,
+    "status": "current"
+   },
+   "theirs": {
+    "progress": 232,
+    "score": null,
+    "status": "completed"
+   },
+   "title": "Chainsaw Man"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30002-Cul4OeN7bYtn.jpg",
+   "format": "Manga",
+   "id": "30002",
+   "media": "manga",
+   "mine": {
+    "progress": 290,
+    "score": 95,
+    "status": "hold"
+   },
+   "theirs": {
+    "progress": 19,
+    "score": 100,
+    "status": "completed"
+   },
+   "title": "Berserk"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx132029-prGF4gePdSKv.jpg",
+   "format": "Manga",
+   "id": "132029",
+   "media": "manga",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "theirs": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "title": "Dandadan"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx169355-5pqzh1Wb4NOQ.png",
+   "format": "Manga",
+   "id": "169355",
+   "media": "manga",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "theirs": {
+    "progress": 51,
+    "score": 100,
+    "status": "completed"
+   },
+   "title": "Kagurabachi"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx118586-CXKgWikBFQgS.jpg",
+   "format": "Manga",
+   "id": "118586",
+   "media": "manga",
+   "mine": {
+    "progress": 140,
+    "score": 90,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 59,
+    "score": 90,
+    "status": "completed"
+   },
+   "title": "Frieren: Beyond Journey’s End"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx98263-kIeaTXrAbGkj.jpg",
+   "format": "Manga",
+   "id": "98263",
+   "media": "manga",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "theirs": {
+    "progress": 20,
+    "score": 95,
+    "status": "completed"
+   },
+   "title": "Witch Hat Atelier"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105398-b673Vt5ZSuz3.jpg",
+   "format": "Manga",
+   "id": "105398",
+   "media": "manga",
+   "mine": {
+    "progress": 201,
+    "score": 70,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 133,
+    "score": 70,
+    "status": "hold"
+   },
+   "title": "Solo Leveling"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30001-Knby7l1jevE7.jpg",
+   "format": "Manga",
+   "id": "30001",
+   "media": "manga",
+   "mine": {
+    "progress": 162,
+    "score": 95,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 104,
+    "score": 70,
+    "status": "hold"
+   },
+   "title": "Monster"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx101517-H3TdM3g5ZUe9.jpg",
+   "format": "Manga",
+   "id": "101517",
+   "media": "manga",
+   "mine": {
+    "progress": 272,
+    "score": 75,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 64,
+    "score": null,
+    "status": "current"
+   },
+   "title": "Jujutsu Kaisen"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx125828-p78Z8SflkfmO.jpg",
+   "format": "Manga",
+   "id": "125828",
+   "media": "manga",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "theirs": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "title": "Sakamoto Days"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30003-E84fwIh22LAQ.jpg",
+   "format": "Manga",
+   "id": "30003",
+   "media": "manga",
+   "mine": {
+    "progress": 249,
+    "score": 90,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 159,
+    "score": 70,
+    "status": "dropped"
+   },
+   "title": "20th Century Boys"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30013-BeslEMqiPhlk.jpg",
+   "format": "Manga",
+   "id": "30013",
+   "media": "manga",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 48,
+    "score": 85,
+    "status": "completed"
+   },
+   "title": "One Piece"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx87216-c9bSNVD10UuD.png",
+   "format": "Manga",
+   "id": "87216",
+   "media": "manga",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 139,
+    "score": 95,
+    "status": "dropped"
+   },
+   "title": "Demon Slayer: Kimetsu no Yaiba"
+  }
+ ],
+ "theirsOnly": [
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2001-XwRnjzGeFWRQ.png",
+   "format": "TV",
+   "id": "2001",
+   "media": "anime",
+   "mine": null,
+   "theirs": {
+    "progress": 27,
+    "score": 100,
+    "status": "completed"
+   },
+   "title": "Gurren Lagann"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx47-4CR68arv452h.jpg",
+   "format": "Movie",
+   "id": "47",
+   "media": "anime",
+   "mine": null,
+   "theirs": {
+    "progress": 1,
+    "score": 75,
+    "status": "current"
+   },
+   "title": "Akira"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx578-vU6XcOlb1XFU.jpg",
+   "format": "Movie",
+   "id": "578",
+   "media": "anime",
+   "mine": null,
+   "theirs": {
+    "progress": 1,
+    "score": 70,
+    "status": "completed"
+   },
+   "title": "Grave of the Fireflies"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx813-ZhnFNOeCU5dQ.png",
+   "format": "TV",
+   "id": "813",
+   "media": "anime",
+   "mine": null,
+   "theirs": {
+    "progress": 291,
+    "score": 70,
+    "status": "completed"
+   },
+   "title": "Dragon Ball Z"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205-7tHVFu6dPBm9.png",
+   "format": "TV",
+   "id": "205",
+   "media": "anime",
+   "mine": null,
+   "theirs": {
+    "progress": 26,
+    "score": 60,
+    "status": "completed"
+   },
+   "title": "Samurai Champloo"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx339-xF2wp1NQuQ4r.png",
+   "format": "TV",
+   "id": "339",
+   "media": "anime",
+   "mine": null,
+   "theirs": {
+    "progress": 13,
+    "score": 60,
+    "status": "completed"
+   },
+   "title": "Serial Experiments Lain"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx457-l6cTtNgI9Bi6.png",
+   "format": "TV",
+   "id": "457",
+   "media": "anime",
+   "mine": null,
+   "theirs": {
+    "progress": 3,
+    "score": 60,
+    "status": "current"
+   },
+   "title": "MUSHI-SHI"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1943-jMCEYL1Ixmgc.png",
+   "format": "Movie",
+   "id": "1943",
+   "media": "anime",
+   "mine": null,
+   "theirs": {
+    "progress": 1,
+    "score": 60,
+    "status": "completed"
+   },
+   "title": "Paprika"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx32-5JYsv0wc122I.jpg",
+   "format": "Movie",
+   "id": "32",
+   "media": "anime",
+   "mine": null,
+   "theirs": {
+    "progress": 1,
+    "score": null,
+    "status": "current"
+   },
+   "title": "Neon Genesis Evangelion: The End of Evangelion"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b185-GvXiR8AKTmdn.jpg",
+   "format": "TV",
+   "id": "185",
+   "media": "anime",
+   "mine": null,
+   "theirs": {
+    "progress": 26,
+    "score": null,
+    "status": "completed"
+   },
+   "title": "Initial D 1st Stage"
+  }
+ ]
+}

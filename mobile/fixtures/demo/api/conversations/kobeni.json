@@ -1,0 +1,23 @@
+{
+ "box": "new",
+ "canSend": false,
+ "messages": [],
+ "more": false,
+ "muted": false,
+ "person": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b144594-0dbO1NSYeZ12.png",
+  "lists": [
+   "anime",
+   "manga",
+   "tv",
+   "movies",
+   "books"
+  ],
+  "name": "Kobeni",
+  "open": true,
+  "relation": "none",
+  "username": "kobeni"
+ },
+ "seen": null,
+ "why": "kobeni only takes messages from friends."
+}

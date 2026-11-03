@@ -7,7 +7,7 @@ final class ScreensProfileTests: ScreenTestCase {
         let app = launch(["-tab", "profile"])
         expect(app, "Mika")
         expect(app, "6 friends")
-        expect(app, "Seasonal anime")
+        expect(app, "Rainy Sundays")
         expect(app, "Statistics")
         expect(app, "Entries")
         expect(app, "Last updates")
@@ -21,7 +21,7 @@ final class ScreensProfileTests: ScreenTestCase {
         scroll(app, until: "Lists", top: 120)
         expect(app, "Favourites")
         expect(app, "Reviews")
-        expect(app, "Quiet in the best way")
+        expect(app, "It takes its time with every goodbye")
         shot("42-profile-scrolled")
     }
 

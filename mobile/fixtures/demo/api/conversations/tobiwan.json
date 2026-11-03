@@ -1,46 +1,64 @@
 {
+ "box": "inbox",
+ "canSend": true,
  "messages": [
   {
-   "at": "2026-11-03T00:02:00.000Z",
-   "fromMe": false,
-   "id": "t1",
-   "text": "what should I watch next, something with a heist"
+   "at": 1793664120000,
+   "body": "what should I watch next, something with a heist",
+   "card": null,
+   "deleted": false,
+   "edited": null,
+   "id": 1007,
+   "mine": false,
+   "photos": [],
+   "reactions": []
   },
   {
-   "at": "2026-11-03T13:40:00.000Z",
-   "fromMe": true,
-   "id": "t2",
-   "read": "2026-11-03T13:50:00.000Z",
-   "text": "Sent you Andor"
+   "at": 1793713200000,
+   "body": "you want a heist? this one",
+   "card": null,
+   "deleted": false,
+   "edited": null,
+   "id": 1008,
+   "mine": true,
+   "photos": [],
+   "reactions": []
   },
   {
-   "at": "2026-11-03T13:41:00.000Z",
-   "fromMe": true,
-   "id": "t3",
-   "title": {
-    "banner": "https://image.tmdb.org/t/p/w1280/quCeAmVQHfsdcYkicbxZWVauCVb.jpg",
+   "at": 1793713260000,
+   "body": "",
+   "card": {
     "cover": "https://image.tmdb.org/t/p/w500/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
     "format": "TV",
-    "genres": [
-     "Sci-Fi & Fantasy",
-     "Action & Adventure",
-     "Drama",
-     "War & Politics"
-    ],
-    "id": "tv:83867",
-    "media": "tv",
-    "name": "Andor",
-    "score": 8.3,
+    "id": "83867",
+    "kind": "tv",
+    "title": "Andor",
     "year": 2022
-   }
+   },
+   "deleted": false,
+   "edited": null,
+   "id": 1009,
+   "mine": true,
+   "photos": [],
+   "reactions": []
   }
  ],
- "status": "Active 1h ago",
- "typing": false,
- "unread": 0,
- "user": {
+ "more": false,
+ "muted": false,
+ "person": {
   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+  "lists": [
+   "anime",
+   "manga",
+   "tv",
+   "movies",
+   "books"
+  ],
   "name": "Tobi",
+  "open": true,
+  "relation": "friend",
+  "since": 1756738800000,
   "username": "tobiwan"
- }
+ },
+ "seen": 1009
 }

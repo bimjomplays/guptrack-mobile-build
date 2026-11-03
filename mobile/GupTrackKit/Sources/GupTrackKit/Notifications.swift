@@ -3,7 +3,7 @@ import Foundation
 // docs/app-api.md §6: the bell. `GET notices` → `BellNotice[]` (src/home/notices.server.ts: `Notice` from
 // src/home/types.ts plus `seenAt` and `unseen`), newest first; `POST notices/seen` when the bell is opened. The
 // server writes each notice's words: `title` is the person (their display name) or the title, `text` the rest.
-// Friend requests are answered inline with answerFriendRequest(_:accept:) (Social.swift).
+// Friend requests are answered inline with answerFriend(_:accept:) (Social.swift).
 
 /// What a like or a reply is on (src/social/reactions.ts `ItemLink`): an activity line or a review.
 enum ItemLink: Codable, Hashable, Sendable {

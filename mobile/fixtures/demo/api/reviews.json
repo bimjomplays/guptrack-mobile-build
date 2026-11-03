@@ -1,0 +1,174 @@
+{
+ "person": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+  "lists": [
+   "anime",
+   "manga",
+   "tv",
+   "movies",
+   "books"
+  ],
+  "name": "Mika",
+  "open": true,
+  "relation": "self",
+  "username": "mika"
+ },
+ "reviews": [
+  {
+   "at": 1793353260000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Mika",
+    "open": true,
+    "relation": "self",
+    "username": "mika"
+   },
+   "body": "It takes its time with every goodbye, and by the end the small moments are the ones that stay. The best thing I watched this year.",
+   "cut": false,
+   "edited": null,
+   "id": 11,
+   "score": 90,
+   "social": {
+    "canLike": false,
+    "liked": false,
+    "likers": [
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Tobi",
+      "open": true,
+      "relation": "friend",
+      "since": 1756738800000,
+      "username": "tobiwan"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Noor",
+      "open": true,
+      "relation": "friend",
+      "since": 1768921200000,
+      "username": "noor.reads"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Kenji",
+      "open": true,
+      "relation": "friend",
+      "since": 1791471600000,
+      "username": "kenji"
+     }
+    ],
+    "likes": 3,
+    "replies": 1,
+    "target": {
+     "id": 11,
+     "on": "review"
+    }
+   },
+   "spoiler": false,
+   "title": {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+    "format": "TV",
+    "id": "154587",
+    "media": "anime",
+    "title": "Frieren: Beyond Journey’s End"
+   }
+  },
+  {
+   "at": 1790260860000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Mika",
+    "open": true,
+    "relation": "self",
+    "username": "mika"
+   },
+   "body": "The first part never lets up. The Katana Man stretch is where it turns from gore into grief.",
+   "cut": false,
+   "edited": null,
+   "id": 31,
+   "score": 80,
+   "social": {
+    "canLike": false,
+    "liked": false,
+    "likers": [
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Kenji",
+      "open": true,
+      "relation": "friend",
+      "since": 1791471600000,
+      "username": "kenji"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
+      "lists": [
+       "anime",
+       "manga"
+      ],
+      "name": "Aki",
+      "open": true,
+      "relation": "none",
+      "username": "aki.h"
+     }
+    ],
+    "likes": 2,
+    "replies": 0,
+    "target": {
+     "id": 31,
+     "on": "review"
+    }
+   },
+   "spoiler": false,
+   "title": {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-euxXZEIfDY2u.png",
+    "format": "Manga",
+    "id": "105778",
+    "media": "manga",
+    "title": "Chainsaw Man"
+   }
+  }
+ ],
+ "total": 2
+}

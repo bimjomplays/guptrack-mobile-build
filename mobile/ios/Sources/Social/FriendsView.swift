@@ -1,15 +1,15 @@
 import SwiftUI
 
-/// Friends (46) on its own page: the same list as Social › Friends.
+/// Friends (46) on its own page: the same list as Social › Friends (GET friends).
 struct FriendsView: View {
     @Environment(AppModel.self) private var model
-    @State private var page: Load<FriendsPage> = .loading
+    @State private var page: Load<FriendsState> = .loading
 
     var body: some View {
         ScrollView {
             Group {
                 if let p = page.value {
-                    FriendsContent(page: Binding(get: { p }, set: { page = .loaded($0) }))
+                    FriendsContent(state: Binding(get: { p }, set: { page = .loaded($0) }))
                 } else {
                     SocialLoading(error: page.error) { Task { await load() } }
                 }
@@ -35,14 +35,16 @@ struct FriendsView: View {
     }
 
     private func load() async {
-        page = await model.fetch { try await $0.friendsPage() }
+        page = await model.fetch { try await $0.friends() }
     }
 }
 
-/// Requests (Accept, ✕) then friends (titles in common, when they were last about, Compare). Sent and Blocked
-/// switch the list in place: there's no page of their own for them.
+/// Requests (Accept, ✕) then friends (since when, Compare). Sent and Blocked switch the list in place: there's no
+/// page of their own for them.
 struct FriendsContent: View {
-    @Binding var page: FriendsPage
+    @Binding var state: FriendsState
+
+    private var page: FriendsState { state }
 
     enum Shown { case friends, sent, blocked }
 
@@ -51,14 +53,14 @@ struct FriendsContent: View {
 
     var body: some View {
         LazyVStack(spacing: 0) {
-            if !page.requests.isEmpty {
-                SocialListHeader(label: "Requests", count: page.requests.count) { EmptyView() }
-                ForEach(Array(page.requests.enumerated()), id: \.element.id) { i, r in
-                    requestRow(r, separator: i < page.requests.count - 1)
+            if !page.incoming.isEmpty {
+                SocialListHeader(label: "Requests", count: page.incoming.count) { EmptyView() }
+                ForEach(Array(page.incoming.enumerated()), id: \.element.id) { i, r in
+                    requestRow(r, separator: i < page.incoming.count - 1)
                 }
             }
             SocialListHeader(label: heading, count: count) { links }
-                .padding(.top, page.requests.isEmpty ? 0 : 22)
+                .padding(.top, page.incoming.isEmpty ? 0 : 22)
             switch shown {
             case .friends: friendRows
             case .sent: sentRows
@@ -79,7 +81,7 @@ struct FriendsContent: View {
     private var count: Int? {
         switch shown {
         case .friends: return page.friends.count
-        case .sent: return page.sent.count
+        case .sent: return page.outgoing.count
         case .blocked: return nil
         }
     }
@@ -93,10 +95,10 @@ struct FriendsContent: View {
                 Button { shown = .sent } label: {
                     HStack(spacing: 4) {
                         Text("Sent")
-                        Text("\(page.sent.count)").numbers()
+                        Text("\(page.outgoing.count)").numbers()
                     }
                 }
-                .accessibilityLabel("Sent \(page.sent.count)")
+                .accessibilityLabel("Sent \(page.outgoing.count)")
             }
             if shown != .blocked {
                 Button("Blocked") { shown = .blocked }
@@ -109,8 +111,8 @@ struct FriendsContent: View {
 
     // MARK: rows
 
-    private func requestRow(_ r: FriendsPage.Request, separator: Bool) -> some View {
-        SocialPersonRow(user: r.user, line: r.line, separator: separator) {
+    private func requestRow(_ r: Person, separator: Bool) -> some View {
+        SocialPersonRow(user: r.user, line: FriendsState.line(r), separator: separator) {
             HStack(spacing: 6) {
                 Button("Accept") { answer(r.id, accept: true) }
                     .buttonStyle(.capsule(.tint, .small))
@@ -134,7 +136,7 @@ struct FriendsContent: View {
                 .padding(.top, 20)
         }
         ForEach(Array(page.friends.enumerated()), id: \.element.id) { i, f in
-            SocialPersonRow(user: f.user, line: f.line, online: f.online, separator: i < page.friends.count - 1) {
+            SocialPersonRow(user: f.user, line: FriendsState.line(f), separator: i < page.friends.count - 1) {
                 Button { model.open(.compare(f.id)) } label: {
                     Image(systemName: "arrow.left.arrow.right").font(.system(size: 15, weight: .semibold))
                         .foregroundStyle(Theme.brandSoft)
@@ -154,13 +156,13 @@ struct FriendsContent: View {
     }
 
     @ViewBuilder private var sentRows: some View {
-        if page.sent.isEmpty {
+        if page.outgoing.isEmpty {
             empty("No requests waiting")
         }
-        ForEach(Array(page.sent.enumerated()), id: \.element.id) { i, r in
-            SocialPersonRow(user: r.user, line: "Sent \(Format.ago(r.at)) ago", separator: i < page.sent.count - 1) {
+        ForEach(Array(page.outgoing.enumerated()), id: \.element.id) { i, r in
+            SocialPersonRow(user: r.user, line: FriendsState.line(r), separator: i < page.outgoing.count - 1) {
                 Button("Cancel") {
-                    page = page.cancelling(r.id)
+                    state = page.cancelling(r.id)
                     send { try await $0.cancelFriendRequest(r.id) }
                 }
                 .buttonStyle(.capsule(.tone, .small))
@@ -174,14 +176,15 @@ struct FriendsContent: View {
         if page.blocked.isEmpty {
             empty("Nobody blocked")
         }
-        ForEach(Array(page.blocked.enumerated()), id: \.element.id) { i, u in
-            SocialPersonRow(user: u, line: "Can't message you or see your lists", separator: i < page.blocked.count - 1) {
+        ForEach(Array(page.blocked.enumerated()), id: \.element) { i, name in
+            SocialPersonRow(user: UserRef(username: name, name: name, avatar: nil),
+                            line: "Can't message you or see your lists", separator: i < page.blocked.count - 1) {
                 Button("Unblock") {
-                    page = page.unblocking(u.username)
-                    send { try await $0.unblock(u.username) }
+                    state = page.unblocking(name)
+                    send { try await $0.unblock(name) }
                 }
                 .buttonStyle(.capsule(.tone, .small))
-                .accessibilityLabel("Unblock \(u.username)")
+                .accessibilityLabel("Unblock \(name)")
             }
         }
     }
@@ -194,8 +197,8 @@ struct FriendsContent: View {
     // MARK: changes
 
     private func answer(_ username: String, accept: Bool) {
-        page = accept ? page.accepting(username) : page.declining(username)
-        send { try await $0.answerFriendRequest(username, accept: accept) }
+        state = accept ? page.accepting(username) : page.declining(username)
+        Task { _ = await model.fetch { try await $0.answerFriend(username, accept: accept) } }
     }
 
     private func send(_ work: @escaping (APIClient) async throws -> OKReply) {
@@ -205,12 +208,13 @@ struct FriendsContent: View {
 
 // MARK: Find someone (47)
 
-/// Add a friend by their exact username: one result with Add Friend.
+/// Add a friend by their exact username (GET users/:username/person): one result with Add Friend.
 struct AddFriendSheet: View {
     @Environment(AppModel.self) private var model
     @Environment(\.dismiss) private var dismiss
     @State private var text = ""
-    @State private var result: Load<FriendSearch>?
+    @State private var result: Load<Person?>?
+    @State private var answered: [String: Relation] = [:]
     @State private var asked: Set<String> = []
     @FocusState private var focused: Bool
 
@@ -267,7 +271,7 @@ struct AddFriendSheet: View {
         if q.isEmpty {
             EmptyView()
         } else if let r = result {
-            if let f = r.value?.user {
+            if let found = r.value, let f = found {
                 row(f)
             } else if let why = r.error {
                 Text(why).font(.system(size: 15)).foregroundStyle(Theme.inkMuted)
@@ -277,12 +281,12 @@ struct AddFriendSheet: View {
         }
     }
 
-    private func row(_ f: FriendSearch.Found) -> some View {
+    private func row(_ f: Person) -> some View {
         HStack(spacing: 14) {
-            Avatar(url: f.user.avatar, size: 52)
+            Avatar(url: f.avatar, size: 52)
             VStack(alignment: .leading, spacing: 1) {
-                Text(f.user.username).font(.system(size: 17, weight: .semibold)).foregroundStyle(Theme.ink)
-                Text(f.line).font(.system(size: 13)).foregroundStyle(Theme.inkMuted)
+                Text(f.username).font(.system(size: 17, weight: .semibold)).foregroundStyle(Theme.ink)
+                Text(FriendSearch.line(f)).font(.system(size: 13)).foregroundStyle(Theme.inkMuted)
             }
             Spacer(minLength: 8)
             action(f)
@@ -292,23 +296,39 @@ struct AddFriendSheet: View {
         .overlay(alignment: .bottom) { Hairline() }
     }
 
-    @ViewBuilder private func action(_ f: FriendSearch.Found) -> some View {
-        let name = f.user.username
-        if f.friend {
+    @ViewBuilder private func action(_ f: Person) -> some View {
+        let name = f.username
+        let relation = answered[name] ?? f.relation
+        if relation == .me {
+            Text("That's you").font(.system(size: 14, weight: .semibold)).foregroundStyle(Theme.inkMuted)
+        } else if relation == .friend {
             Button("Message") {
                 model.sheet = nil
                 model.tab = .social
                 model.open(.conversation(name))
             }
             .buttonStyle(.capsule(.tone, .small))
-        } else if f.requested || asked.contains(name) {
+        } else if relation == .outgoing || asked.contains(name) {
             Label("Requested", systemImage: "checkmark")
                 .font(.system(size: 14, weight: .semibold)).foregroundStyle(Theme.inkMuted)
                 .labelStyle(TightLabelStyle())
+        } else if relation == .incoming {
+            Button("Accept") {
+                answered[name] = .friend
+                Task {
+                    let r = await model.fetch { try await $0.answerFriend(name, accept: true) }
+                    answered[name] = r.value ?? .incoming
+                }
+            }
+            .buttonStyle(.capsule(.tint, .small))
+            .accessibilityLabel("Accept \(name)")
         } else {
             Button {
                 asked.insert(name)
-                Task { _ = await model.fetch { try await $0.requestFriend(name) } }
+                Task {
+                    let r = await model.fetch { try await $0.requestFriend(name) }
+                    if let now = r.value { answered[name] = now } else { asked.remove(name) }
+                }
             } label: {
                 Label("Add Friend", systemImage: "person.badge.plus")
             }
@@ -322,6 +342,6 @@ struct AddFriendSheet: View {
         // a short wait so each key doesn't ask the server
         try? await Task.sleep(for: .milliseconds(250))
         guard !Task.isCancelled else { return }
-        result = await model.fetch { try await $0.findUser(q) }
+        result = await model.fetch { try await $0.findPerson(q) }
     }
 }

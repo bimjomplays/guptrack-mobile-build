@@ -9,8 +9,11 @@ extension Theme {
 }
 
 extension AppModel {
-    /// you, as replies and messages show you
-    var socialMe: UserRef { account?.user ?? UserRef(username: "you", name: "You", avatar: nil) }
+    /// you, as likes, replies and messages show you
+    var socialMe: Person {
+        let u = account?.user ?? UserRef(username: "you", name: "You", avatar: nil)
+        return Person(username: u.username, name: u.name, avatar: u.avatar, relation: .me)
+    }
 }
 
 // MARK: the switch under the large title
@@ -111,6 +114,8 @@ struct SocialCounts: View {
     let likes: Int
     let replies: Int
     let liked: Bool
+    /// someone else's: yours can't be liked, so the heart only counts
+    var canLike = true
     var like: () -> Void
 
     var body: some View {
@@ -124,7 +129,8 @@ struct SocialCounts: View {
                 .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
-            .accessibilityLabel(liked ? "Unlike" : "Like")
+            .disabled(!canLike)
+            .accessibilityLabel(canLike ? (liked ? "Unlike" : "Like") : "Likes")
             .accessibilityValue("\(likes)")
             HStack(spacing: 6) {
                 Image(systemName: "bubble.left").font(.system(size: 16, weight: .medium))
@@ -139,34 +145,46 @@ struct SocialCounts: View {
     }
 }
 
-/// [avatars] Liked by tobiwan and 3 others ............ ♥ 4
+/// [avatars] Liked by tobiwan and 3 others ............ ♥ 4 (no heart button on your own: canLike is false)
 struct SocialLikedBy: View {
-    let users: [UserRef]
-    let likes: Int
-    let liked: Bool
+    let reactions: Reactions
     var like: () -> Void
+
+    private var likes: Int { reactions.likes }
+    private var liked: Bool { reactions.liked }
 
     var body: some View {
         HStack(spacing: 10) {
             HStack(spacing: -7) {
-                ForEach(users.prefix(3)) { u in
+                ForEach(reactions.likers.prefix(3)) { u in
                     Avatar(url: u.avatar, size: 24)
                         .overlay(RoundedRectangle(cornerRadius: 8, style: .continuous).stroke(Theme.sheet, lineWidth: 2))
                 }
             }
             line.font(.system(size: 14)).foregroundStyle(Theme.inkMuted).lineLimit(1)
             Spacer(minLength: 8)
-            Button(action: like) {
+            if reactions.canLike {
+                Button(action: like) {
+                    HStack(spacing: 6) {
+                        Image(systemName: liked ? "heart.fill" : "heart").font(.system(size: 18, weight: .medium))
+                        Text("\(likes)").numbers()
+                    }
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(liked ? Theme.socialLike : Theme.inkMuted)
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel(liked ? "Unlike" : "Like")
+                .accessibilityValue("\(likes)")
+            } else {
                 HStack(spacing: 6) {
-                    Image(systemName: liked ? "heart.fill" : "heart").font(.system(size: 18, weight: .medium))
+                    Image(systemName: "heart").font(.system(size: 18, weight: .medium))
                     Text("\(likes)").numbers()
                 }
                 .font(.system(size: 14, weight: .semibold))
-                .foregroundStyle(liked ? Theme.socialLike : Theme.inkMuted)
+                .foregroundStyle(Theme.inkMuted)
+                .accessibilityElement(children: .ignore)
+                .accessibilityLabel("\(likes) likes")
             }
-            .buttonStyle(.plain)
-            .accessibilityLabel(liked ? "Unlike" : "Like")
-            .accessibilityValue("\(likes)")
         }
         .padding(.horizontal, Theme.pad)
         .padding(.vertical, 14)
@@ -174,56 +192,44 @@ struct SocialLikedBy: View {
     }
 
     private var line: Text {
-        guard let l = SocialText.likedBy(users, likes: likes) else { return Text("No likes yet") }
+        guard let l = reactions.likedBy else { return Text("No likes yet") }
         let name = Text(l.name).fontWeight(.semibold).foregroundStyle(Theme.ink)
         return l.rest.isEmpty ? Text("Liked by \(name)") : Text("Liked by \(name) \(l.rest)")
     }
 }
 
-/// one reply: avatar, name and time, the text, Reply; the heart and its count on the right
+/// one reply: avatar, name and time, the text, Reply (replies carry no likes in the contract, so no heart)
 struct SocialReplyRow: View {
-    let reply: ActivityThread.Reply
+    let reply: Reply
     var separator = true
-    var like: () -> Void
     var answer: () -> Void
 
     @Environment(AppModel.self) private var model
 
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
-            Button { model.open(.user(reply.user.username)) } label: {
-                Avatar(url: reply.user.avatar, size: 32)
+            Button { model.open(.user(reply.author.username)) } label: {
+                Avatar(url: reply.author.avatar, size: 32)
             }
             .buttonStyle(.plain)
-            .accessibilityLabel(reply.user.username)
+            .accessibilityLabel(reply.author.username)
             .padding(.top, 12)
             HStack(alignment: .top, spacing: 10) {
                 VStack(alignment: .leading, spacing: 0) {
                     HStack(alignment: .firstTextBaseline, spacing: 6) {
-                        Text(reply.user.username).font(.system(size: 14, weight: .semibold)).foregroundStyle(Theme.ink)
-                        Text(Format.ago(reply.at)).font(.system(size: 14)).foregroundStyle(Theme.inkMuted)
+                        Text(reply.author.username).font(.system(size: 14, weight: .semibold)).foregroundStyle(Theme.ink)
+                        Text(Format.ago(reply.date)).font(.system(size: 14)).foregroundStyle(Theme.inkMuted)
                     }
-                    Text(reply.text).font(.system(size: 15)).foregroundStyle(Theme.inkSoft)
+                    Text(reply.body).font(.system(size: 15)).foregroundStyle(Theme.inkSoft)
                         .lineSpacing(2).padding(.top, 2)
                         .fixedSize(horizontal: false, vertical: true)
                     Button("Reply", action: answer)
                         .font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.inkMuted)
                         .buttonStyle(.plain)
                         .padding(.top, 7)
-                        .accessibilityLabel("Reply to \(reply.user.username)")
+                        .accessibilityLabel("Reply to \(reply.author.username)")
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
-                Button(action: like) {
-                    VStack(spacing: 2) {
-                        Image(systemName: reply.liked ? "heart.fill" : "heart").font(.system(size: 15, weight: .medium))
-                        if reply.likes > 0 { Text("\(reply.likes)").font(.system(size: 12)).numbers() }
-                    }
-                    .foregroundStyle(reply.liked ? Theme.socialLike : Theme.inkMuted)
-                    .frame(minWidth: 24)
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel(reply.liked ? "Unlike reply" : "Like reply")
-                .padding(.top, 4)
             }
             .padding(.vertical, 12)
             .overlay(alignment: .bottom) { if separator { Hairline() } }
@@ -288,11 +294,10 @@ struct SocialTitleCard: View {
 
 // MARK: people
 
-/// A person in a list: the avatar (a green dot when online), the name, a line, something on the right.
+/// A person in a list: the avatar, the name, a line, something on the right. (The contract has no online status.)
 struct SocialPersonRow<Trailing: View>: View {
     let user: UserRef
     let line: String
-    var online = false
     var separator = true
     var size: CGFloat = 44
     @ViewBuilder var trailing: () -> Trailing
@@ -300,14 +305,6 @@ struct SocialPersonRow<Trailing: View>: View {
     var body: some View {
         HStack(spacing: 14) {
             Avatar(url: user.avatar, size: size)
-                .overlay(alignment: .bottomTrailing) {
-                    if online {
-                        Circle().fill(Theme.color(.current)).frame(width: 13, height: 13)
-                            .overlay(Circle().stroke(Theme.sheet, lineWidth: 2.5))
-                            .offset(x: 2, y: 2)
-                            .accessibilityLabel("Online")
-                    }
-                }
             HStack(spacing: 10) {
                 VStack(alignment: .leading, spacing: 1) {
                     Text(user.username).font(.system(size: 16, weight: .semibold)).foregroundStyle(Theme.ink)
@@ -378,6 +375,7 @@ struct SocialComposer<PlusMenu: View>: View {
                     .font(.system(size: 17))
                     .lineLimit(1...5)
                     .focused(focused)
+                    .accessibilityLabel(placeholder)
                     .padding(.vertical, 11)
                 Image(systemName: "face.smiling").font(.system(size: 20)).foregroundStyle(Theme.inkMuted)
                     .padding(.bottom, 11)

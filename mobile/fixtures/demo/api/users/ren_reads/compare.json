@@ -1,0 +1,267 @@
+{
+ "counts": {
+  "books": {
+   "mine": 9,
+   "shared": 5,
+   "theirs": 5
+  },
+  "manga": {
+   "mine": 19,
+   "shared": 9,
+   "theirs": 9
+  }
+ },
+ "person": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b28968-fUKdmdflOwcv.png",
+  "lists": [
+   "manga",
+   "books"
+  ],
+  "name": "Ren",
+  "open": true,
+  "relation": "outgoing",
+  "since": 1793544060000,
+  "username": "ren_reads"
+ },
+ "shared": [
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-euxXZEIfDY2u.png",
+   "format": "Manga",
+   "id": "105778",
+   "media": "manga",
+   "mine": {
+    "progress": 88,
+    "score": 80,
+    "status": "current"
+   },
+   "theirs": {
+    "progress": 232,
+    "score": 95,
+    "status": "completed"
+   },
+   "title": "Chainsaw Man"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30656-9mW113O7rDnA.png",
+   "format": "Manga",
+   "id": "30656",
+   "media": "manga",
+   "mine": {
+    "progress": 97,
+    "score": 95,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "title": "Vagabond"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx98263-kIeaTXrAbGkj.jpg",
+   "format": "Manga",
+   "id": "98263",
+   "media": "manga",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "theirs": {
+    "progress": 42,
+    "score": 80,
+    "status": "completed"
+   },
+   "title": "Witch Hat Atelier"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx106130-yPNeuSu75ey1.jpg",
+   "format": "Manga",
+   "id": "106130",
+   "media": "manga",
+   "mine": {
+    "progress": 88,
+    "score": 60,
+    "status": "dropped"
+   },
+   "theirs": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "title": "Blue Lock"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx101517-H3TdM3g5ZUe9.jpg",
+   "format": "Manga",
+   "id": "101517",
+   "media": "manga",
+   "mine": {
+    "progress": 272,
+    "score": 75,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 272,
+    "score": 95,
+    "status": "completed"
+   },
+   "title": "Jujutsu Kaisen"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx125828-p78Z8SflkfmO.jpg",
+   "format": "Manga",
+   "id": "125828",
+   "media": "manga",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "theirs": {
+    "progress": 55,
+    "score": 75,
+    "status": "completed"
+   },
+   "title": "Sakamoto Days"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30013-BeslEMqiPhlk.jpg",
+   "format": "Manga",
+   "id": "30013",
+   "media": "manga",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 32,
+    "score": 95,
+    "status": "current"
+   },
+   "title": "One Piece"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx53390-1RsuABC34P9D.jpg",
+   "format": "Manga",
+   "id": "53390",
+   "media": "manga",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 141,
+    "score": 100,
+    "status": "completed"
+   },
+   "title": "Attack on Titan"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx63327-glC9cDxYBja9.png",
+   "format": "Manga",
+   "id": "63327",
+   "media": "manga",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "theirs": {
+    "progress": 26,
+    "score": 95,
+    "status": "current"
+   },
+   "title": "Tokyo Ghoul"
+  },
+  {
+   "cover": "https://covers.openlibrary.org/b/id/11481354-L.jpg",
+   "format": "Book",
+   "id": "OL893414W",
+   "media": "books",
+   "mine": {
+    "progress": 608,
+    "score": 85,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 608,
+    "score": 95,
+    "status": "completed"
+   },
+   "title": "Dune"
+  },
+  {
+   "cover": "https://covers.openlibrary.org/b/id/10226290-L.jpg",
+   "format": "Book",
+   "id": "OL20893680W",
+   "media": "books",
+   "mine": {
+    "progress": 272,
+    "score": 95,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 272,
+    "score": 100,
+    "status": "completed"
+   },
+   "title": "Piranesi"
+  },
+  {
+   "cover": "https://covers.openlibrary.org/b/id/12859975-L.jpg",
+   "format": "Book",
+   "id": "OL26004554W",
+   "media": "books",
+   "mine": {
+    "progress": 0,
+    "score": null,
+    "status": "planned"
+   },
+   "theirs": {
+    "progress": 169,
+    "score": 60,
+    "status": "hold"
+   },
+   "title": "Tomorrow, and Tomorrow, and Tomorrow"
+  },
+  {
+   "cover": "https://covers.openlibrary.org/b/id/10648686-L.jpg",
+   "format": "Book",
+   "id": "OL20883297W",
+   "media": "books",
+   "mine": {
+    "progress": 334,
+    "score": 80,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 334,
+    "score": null,
+    "status": "completed"
+   },
+   "title": "Klara and the Sun"
+  },
+  {
+   "cover": "https://covers.openlibrary.org/b/id/14627509-L.jpg",
+   "format": "Book",
+   "id": "OL27482W",
+   "media": "books",
+   "mine": {
+    "progress": 310,
+    "score": 90,
+    "status": "completed"
+   },
+   "theirs": {
+    "progress": 256,
+    "score": 60,
+    "status": "hold"
+   },
+   "title": "The Hobbit"
+  }
+ ],
+ "theirsOnly": []
+}

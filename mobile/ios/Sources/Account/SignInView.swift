@@ -23,8 +23,8 @@ struct SignInView: View {
         .task { await flow.loadServer() }
         .onAppear {
             // the demo fills in the demo user so it signs in with one tap
-            if flow.model.isDemo && flow.username.isEmpty {
-                flow.username = "mika"
+            if flow.model.isDemo && flow.password.isEmpty {
+                if flow.username.isEmpty { flow.username = "mika" }
                 flow.password = "demo-password"
             }
         }

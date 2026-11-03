@@ -1,0 +1,13 @@
+{
+ "reactions": {
+  "canLike": true,
+  "liked": false,
+  "likers": [],
+  "likes": 0,
+  "replies": 0,
+  "target": {
+   "id": 32,
+   "on": "review"
+  }
+ }
+}

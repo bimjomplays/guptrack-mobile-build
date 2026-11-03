@@ -1,0 +1,54 @@
+{
+ "reactions": {
+  "canLike": false,
+  "liked": true,
+  "likers": [
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Mika",
+    "open": true,
+    "relation": "self",
+    "username": "mika"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Kenji",
+    "open": true,
+    "relation": "friend",
+    "since": 1791471600000,
+    "username": "kenji"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
+    "lists": [
+     "anime",
+     "manga"
+    ],
+    "name": "Aki",
+    "open": true,
+    "relation": "none",
+    "username": "aki.h"
+   }
+  ],
+  "likes": 3,
+  "replies": 0,
+  "target": {
+   "id": 31,
+   "on": "review"
+  }
+ }
+}

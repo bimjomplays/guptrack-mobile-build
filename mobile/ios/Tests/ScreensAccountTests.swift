@@ -40,9 +40,11 @@ final class ScreensAccountTests: ScreenTestCase {
         expect(app, "92qhv-1fkpj-86nmg-egagw-6txnh-s")
         expect(app, "a3k2m-e19xb-wc4g2-sr386-vqv4h-8")
         expect(app, "Save to Files")
+        shot("04-recovery-codes")
+        // ten codes in one column push the checkbox below the fold
+        scroll(app, until: "I've saved these", top: 400)
         expect(app, "I've saved these").tap()
         XCTAssertTrue(app.buttons["Open GupTrack"].isEnabled)
-        shot("04-recovery-codes")
     }
 
     // MARK: behaviour
@@ -96,6 +98,7 @@ final class ScreensAccountTests: ScreenTestCase {
         expect(app, "Save your recovery codes")
         XCTAssertFalse(app.model.isSignedIn)
         XCTAssertFalse(app.buttons["Open GupTrack"].isEnabled)
+        scroll(app, until: "I've saved these", top: 400)
         expect(app, "I've saved these").tap()
         app.buttons["Open GupTrack"].tap()
         expect(app, "Upcoming")

@@ -49,14 +49,19 @@ struct JoinView: View {
         .pageBackground()
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
-        .task { await flow.loadServer() }
+        .task {
+            await flow.loadServer()
+            // the server's answer says whether joining needs an invite
+            if flow.model.isDemo && flow.needsInvite && flow.invite.isEmpty { flow.invite = "demo-invite" }
+        }
         .onAppear {
             // the demo fills in an invented new account
-            if flow.model.isDemo && flow.username.isEmpty {
-                flow.username = "mika"
-                flow.displayName = "Mika"
+            // (field by field: the username may already be there from an earlier sign-in)
+            if flow.model.isDemo && flow.password.isEmpty {
+                if flow.username.isEmpty { flow.username = "mika" }
+                if flow.displayName.isEmpty { flow.displayName = "Mika" }
                 flow.password = "demo-Paper-lantern"
-                if flow.needsInvite { flow.invite = "demo-invite" }
+                if flow.needsInvite && flow.invite.isEmpty { flow.invite = "demo-invite" }
             }
         }
     }
