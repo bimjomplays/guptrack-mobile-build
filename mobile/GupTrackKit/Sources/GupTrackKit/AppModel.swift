@@ -71,6 +71,8 @@ final class AppModel {
     let store: LibraryStore
     let tokens: TokenStore
     let isDemo: Bool
+    /// how a server is reached once signed in (the live test puts a plug in between)
+    var connect: @Sendable (URL) -> Transport = { LiveTransport(base: $0) }
     /// the App Group's files the widgets and the share extension read (nil without the App Group, and in tests)
     let shared: SharedBox?
     private var lastShared: SharedState?
@@ -305,7 +307,7 @@ final class AppModel {
         var a = ServerAccount(baseURL: server, token: answer.token, deviceId: answer.device.id,
                               user: UserRef(username: answer.user.username, name: answer.user.username, avatar: nil),
                               role: answer.user.role, signedInAt: Clock.now)
-        api = APIClient(transport: isDemo ? api.transport : LiveTransport(base: server), token: answer.token)
+        api = APIClient(transport: isDemo ? api.transport : connect(server), token: answer.token)
         Pictures.signedIn = (server, answer.token)
         if let me = try? await api.me() { a.user = me.user(on: server) }
         tokens.save(a)
@@ -316,7 +318,7 @@ final class AppModel {
 
     /// a client for a server before signing in (hello, pair, sign-in, join)
     func client(for server: URL) -> APIClient {
-        APIClient(transport: isDemo ? api.transport : LiveTransport(base: server))
+        APIClient(transport: isDemo ? api.transport : connect(server))
     }
 
     func signOut() async {
