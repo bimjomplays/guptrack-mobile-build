@@ -1,0 +1,342 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://image.tmdb.org/t/p/w1280/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
+  "cast": [
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/sMBpav8cK7t7Nk0yf4tuNOqNUyW.jpg",
+     "name": "Michael B. Jordan",
+     "ref": {
+      "id": "98074134",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Smoke / Stack"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/qDInsG0cxWNxS1X4t59TBZ5S6x5.jpg",
+     "name": "Hailee Steinfeld",
+     "ref": {
+      "id": "90388174",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Mary"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/yff2DK1Sc2baRGHbSfcmwMwX8HW.jpg",
+     "name": "Miles Caton",
+     "ref": {
+      "id": "90864021",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Sammie Moore"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/tCzR4clrIkbkijuJBYsNoEuwRDa.jpg",
+     "name": "Jack O&#39;Connell",
+     "ref": {
+      "id": "91824370",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Remmick"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/vp7qDA7cYZj0MDYk1k4wysmznnN.jpg",
+     "name": "Wunmi Mosaku",
+     "ref": {
+      "id": "95439413",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Annie"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/1PQmquJ3LRnTnUnut0UZBLZuBuO.jpg",
+     "name": "Jayme Lawson",
+     "ref": {
+      "id": "94676629",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Pearline"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/adlrkEpxDIcpxF7bpzMGErLxeHP.jpg",
+     "name": "Omar Benson Miller",
+     "ref": {
+      "id": "97512660",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Cornbread"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/fmnE0pLaQPrWFlRHsHWehq2L8fq.jpg",
+     "name": "Delroy Lindo",
+     "ref": {
+      "id": "98411119",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Delta Slim"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/9glGNxymt1vHxyMPesTreJTpD7n.jpg",
+     "name": "Li Jun Li",
+     "ref": {
+      "id": "91322209",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Grace Chow"
+   }
+  ],
+  "characters": [],
+  "count": 1,
+  "cover": "https://image.tmdb.org/t/p/w500/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "2h 18m"
+   },
+   {
+    "label": "Status",
+    "value": "Released"
+   },
+   {
+    "label": "Released",
+    "value": "Apr 16, 2025"
+   },
+   {
+    "label": "Director",
+    "links": [
+     {
+      "ref": {
+       "id": "97765407",
+       "source": "tmdb",
+       "to": "person"
+      },
+      "text": "Ryan Coogler"
+     }
+    ],
+    "value": "Ryan Coogler"
+   },
+   {
+    "label": "Rated",
+    "value": "R"
+   },
+   {
+    "label": "Language",
+    "value": "English"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Horror",
+   "Action",
+   "Thriller"
+  ],
+  "headline": [
+   "Film",
+   "2025",
+   "2h 18m",
+   "R"
+  ],
+  "makers": [
+   {
+    "ref": {
+     "id": "97765407",
+     "source": "tmdb",
+     "to": "person"
+    },
+    "text": "Ryan Coogler"
+   }
+  ],
+  "media": "movies",
+  "minutes": 138,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "693134",
+     "kind": "movie"
+    },
+    "score": 81,
+    "title": "Dune: Part Two",
+    "year": 2024
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "872585",
+     "kind": "movie"
+    },
+    "score": 80,
+    "title": "Oppenheimer",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "666277",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Past Lives",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "545611",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Everything Everywhere All at Once",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "414906",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "The Batman",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1078605",
+     "kind": "movie"
+    },
+    "score": 73,
+    "title": "Weapons",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1054867",
+     "kind": "movie"
+    },
+    "score": 73,
+    "title": "One Battle After Another",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "157336",
+     "kind": "movie"
+    },
+    "score": 85,
+    "title": "Interstellar",
+    "year": 2014
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "496243",
+     "kind": "movie"
+    },
+    "score": 85,
+    "title": "Parasite",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "313369",
+     "kind": "movie"
+    },
+    "score": 79,
+    "title": "La La Land",
+    "year": 2016
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1084242",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Zootopia 2",
+    "year": 2025
+   }
+  ],
+  "ref": {
+   "id": "1233413",
+   "kind": "movie"
+  },
+  "relations": [],
+  "score": 75,
+  "scoreNote": "23,469 votes",
+  "seasons": [],
+  "staff": [
+   {
+    "person": {
+     "image": null,
+     "name": "Ryan Coogler",
+     "ref": {
+      "id": "97765407",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Director"
+   }
+  ],
+  "status": "finished",
+  "statusText": "Released",
+  "synopsis": [
+   [
+    {
+     "text": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back."
+    }
+   ]
+  ],
+  "tags": [],
+  "title": "Sinners",
+  "trailer": null,
+  "year": 2025
+ }
+}

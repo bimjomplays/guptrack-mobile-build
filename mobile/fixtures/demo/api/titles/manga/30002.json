@@ -1,0 +1,66 @@
+{
+ "title": {
+  "alt": [
+   "ベルセルク"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30002-3TuoSMl20fUX.jpg",
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30002-Cul4OeN7bYtn.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Status",
+    "value": "Releasing"
+   },
+   {
+    "label": "Published",
+    "value": "Aug 25, 1989"
+   },
+   {
+    "label": "Members",
+    "value": "248,509"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Fantasy",
+   "Horror",
+   "Psychological"
+  ],
+  "headline": [
+   "Manga",
+   "1989"
+  ],
+  "idMal": 2,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "30002",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 92,
+  "scoreNote": "248,509 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Releasing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Berserk",
+  "trailer": null,
+  "volumes": null,
+  "year": 1989
+ }
+}

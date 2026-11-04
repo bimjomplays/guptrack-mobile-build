@@ -1,0 +1,63 @@
+{
+ "title": {
+  "alt": [
+   "バガボンド"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30656-XYzvRlsc3iK4.jpg",
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30656-9mW113O7rDnA.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Status",
+    "value": "Releasing"
+   },
+   {
+    "label": "Published",
+    "value": "Sep 3, 1998"
+   },
+   {
+    "label": "Members",
+    "value": "165,422"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama"
+  ],
+  "headline": [
+   "Manga",
+   "1998"
+  ],
+  "idMal": 656,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "30656",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 91,
+  "scoreNote": "165,422 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Releasing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Vagabond",
+  "trailer": null,
+  "volumes": null,
+  "year": 1998
+ }
+}

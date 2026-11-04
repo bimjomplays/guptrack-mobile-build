@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Directing"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1084242",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "Zootopia 2",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1084242",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "Zootopia 2",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Directing"
+   }
+  ],
+  "image": null,
+  "known": "Directing",
+  "name": "Jared Bush",
+  "native": null,
+  "ref": {
+   "id": "90203661",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

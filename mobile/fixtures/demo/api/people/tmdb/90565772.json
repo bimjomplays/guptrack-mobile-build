@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Arthur",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "666277",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "Past Lives",
+       "year": 2023
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Arthur",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "666277",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "Past Lives",
+       "year": 2023
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/ah4Jm4Lmrgab9xdHwRId80S4REd.jpg",
+  "known": "Acting",
+  "name": "John Magaro",
+  "native": null,
+  "ref": {
+   "id": "90565772",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "title": {
+  "alt": [
+   "魔法騎士レイアース (2026)"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178868-l7VyM7j7LRtH.jpg",
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178868-mfp0HIHNJNAm.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Status",
+    "value": "Airing"
+   },
+   {
+    "label": "Next episode",
+    "value": "Ep 5, Nov 4, 2026"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 7, 2026"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2026"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "7229",
+       "to": "studio"
+      },
+      "text": "E&H Production"
+     }
+    ],
+    "value": "E&H Production"
+   },
+   {
+    "label": "Members",
+    "value": "11,977"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Adventure",
+   "Fantasy",
+   "Mahou Shoujo",
+   "Mecha"
+  ],
+  "headline": [
+   "TV",
+   "Fall 2026"
+  ],
+  "idMal": 59204,
+  "makers": [
+   {
+    "ref": {
+     "id": "7229",
+     "to": "studio"
+    },
+    "text": "E&H Production"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "178868",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 69,
+  "scoreNote": "11,977 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Airing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Magic Knight Rayearth (2026)",
+  "trailer": null,
+  "volumes": null,
+  "year": 2026
+ }
+}

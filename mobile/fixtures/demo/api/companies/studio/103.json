@@ -1,0 +1,42 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20513-pVQqYhMwBGoh.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "20513",
+       "kind": "anime"
+      },
+      "score": 71,
+      "title": "PSYCHO-PASS 2",
+      "year": 2014
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx30-AI1zr74Dh4ye.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "30",
+       "kind": "anime"
+      },
+      "score": 83,
+      "title": "Neon Genesis Evangelion",
+      "year": 1995
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Tatsunoko Production",
+  "ref": {
+   "id": "103",
+   "to": "studio"
+  }
+ }
+}

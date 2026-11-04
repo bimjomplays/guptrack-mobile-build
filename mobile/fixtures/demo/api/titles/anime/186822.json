@@ -1,0 +1,92 @@
+{
+ "title": {
+  "alt": [
+   "Ki ni Natteru Hito ga Otoko ja Nakatta",
+   "気になってる人が男じゃなかった"
+  ],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186822-9zsR5NtOP0yJ.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Status",
+    "value": "Not yet aired"
+   },
+   {
+    "label": "Next episode",
+    "value": "Ep 1, Jan 8, 2027"
+   },
+   {
+    "label": "Aired",
+    "value": "Jan 8, 2027"
+   },
+   {
+    "label": "Season",
+    "value": "Winter 2027"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "6222",
+       "to": "studio"
+      },
+      "text": "CloverWorks"
+     }
+    ],
+    "value": "CloverWorks"
+   },
+   {
+    "label": "Members",
+    "value": "33,725"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Music",
+   "Romance"
+  ],
+  "headline": [
+   "TV",
+   "Winter 2027"
+  ],
+  "idMal": 61035,
+  "makers": [
+   {
+    "ref": {
+     "id": "6222",
+     "to": "studio"
+    },
+    "text": "CloverWorks"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "186822",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": null,
+  "scoreNote": "33,725 members",
+  "seasons": [],
+  "staff": [],
+  "status": "upcoming",
+  "statusText": "Not yet aired",
+  "synopsis": [],
+  "tags": [],
+  "title": "The Guy She Was Interested In Wasn't a Guy At All",
+  "trailer": null,
+  "volumes": null,
+  "year": 2027
+ }
+}

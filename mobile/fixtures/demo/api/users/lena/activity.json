@@ -1,0 +1,108 @@
+{
+ "activity": [
+  {
+   "after": "planned",
+   "at": 1793623260000,
+   "before": null,
+   "cover": "https://image.tmdb.org/t/p/w500/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+   "entry": "95396",
+   "id": 115,
+   "media": "tv",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Sora",
+      "open": true,
+      "relation": "friend",
+      "since": 1775142000000,
+      "username": "sorawatches"
+     }
+    ],
+    "likes": 1,
+    "replies": 0,
+    "target": {
+     "id": 115,
+     "on": "activity"
+    }
+   },
+   "title": "Severance",
+   "type": "added"
+  },
+  {
+   "after": "planned",
+   "at": 1793623220000,
+   "before": null,
+   "cover": "https://image.tmdb.org/t/p/w500/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+   "entry": "126308",
+   "id": 114,
+   "media": "tv",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [],
+    "likes": 0,
+    "replies": 0,
+    "target": {
+     "id": 114,
+     "on": "activity"
+    }
+   },
+   "title": "Shōgun",
+   "type": "added"
+  },
+  {
+   "after": "planned",
+   "at": 1793623180000,
+   "before": null,
+   "cover": "https://image.tmdb.org/t/p/w500/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+   "entry": "83867",
+   "id": 113,
+   "media": "tv",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [],
+    "likes": 0,
+    "replies": 0,
+    "target": {
+     "id": 113,
+     "on": "activity"
+    }
+   },
+   "title": "Andor",
+   "type": "added"
+  },
+  {
+   "after": "planned",
+   "at": 1793623140000,
+   "before": null,
+   "cover": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+   "entry": "136315",
+   "id": 112,
+   "media": "tv",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [],
+    "likes": 0,
+    "replies": 0,
+    "target": {
+     "id": 112,
+     "on": "activity"
+    }
+   },
+   "title": "The Bear",
+   "type": "added"
+  }
+ ]
+}

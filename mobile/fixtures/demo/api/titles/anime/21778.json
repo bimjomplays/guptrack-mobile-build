@@ -1,0 +1,98 @@
+{
+ "title": {
+  "alt": [
+   "Kishibe Rohan wa Ugokanai",
+   "岸辺露伴は動かない"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21778-wWSVohWUg76m.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 4,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21778-pCUJjJuP7Pmd.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "OVA"
+   },
+   {
+    "label": "Episodes",
+    "value": "4"
+   },
+   {
+    "label": "Episode length",
+    "value": "23 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Sep 20, 2017"
+   },
+   {
+    "label": "Season",
+    "value": "Summer 2017"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "287",
+       "to": "studio"
+      },
+      "text": "david production"
+     }
+    ],
+    "value": "david production"
+   },
+   {
+    "label": "Members",
+    "value": "58,119"
+   }
+  ],
+  "format": "OVA",
+  "genres": [
+   "Horror",
+   "Mystery",
+   "Supernatural"
+  ],
+  "headline": [
+   "OVA",
+   "Summer 2017",
+   "4 episodes"
+  ],
+  "idMal": 33191,
+  "makers": [
+   {
+    "ref": {
+     "id": "287",
+     "to": "studio"
+    },
+    "text": "david production"
+   }
+  ],
+  "media": "anime",
+  "minutes": 23,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "21778",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 76,
+  "scoreNote": "58,119 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Thus Spoke Rohan Kishibe",
+  "trailer": null,
+  "volumes": null,
+  "year": 2017
+ }
+}

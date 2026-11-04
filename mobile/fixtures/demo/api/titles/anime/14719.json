@@ -1,0 +1,98 @@
+{
+ "title": {
+  "alt": [
+   "JoJo no Kimyou na Bouken (TV)",
+   "ジョジョの奇妙な冒険 (TV)"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/14719-m7Hv2AxcNNjM.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 26,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx14719-VT5dRzTBSZ0w.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "26"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 6, 2012"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2012"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "287",
+       "to": "studio"
+      },
+      "text": "david production"
+     }
+    ],
+    "value": "david production"
+   },
+   {
+    "label": "Members",
+    "value": "487,721"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Supernatural"
+  ],
+  "headline": [
+   "TV",
+   "Fall 2012",
+   "26 episodes"
+  ],
+  "idMal": 14719,
+  "makers": [
+   {
+    "ref": {
+     "id": "287",
+     "to": "studio"
+    },
+    "text": "david production"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "14719",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 77,
+  "scoreNote": "487,721 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "JoJo's Bizarre Adventure (TV)",
+  "trailer": null,
+  "volumes": null,
+  "year": 2012
+ }
+}

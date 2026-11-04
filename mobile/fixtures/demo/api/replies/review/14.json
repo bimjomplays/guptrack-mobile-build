@@ -1,0 +1,55 @@
+{
+ "reactions": {
+  "canLike": true,
+  "liked": false,
+  "likers": [
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Kenji",
+    "open": true,
+    "relation": "friend",
+    "since": 1791471600000,
+    "username": "kenji"
+   }
+  ],
+  "likes": 1,
+  "replies": 1,
+  "target": {
+   "id": 14,
+   "on": "review"
+  }
+ },
+ "replies": [
+  {
+   "at": 1791316860000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Kenji",
+    "open": true,
+    "relation": "friend",
+    "since": 1791471600000,
+    "username": "kenji"
+   },
+   "body": "That last test got me too.",
+   "canDelete": false,
+   "canEdit": false,
+   "edited": null,
+   "id": 704,
+   "parent": null
+  }
+ ]
+}

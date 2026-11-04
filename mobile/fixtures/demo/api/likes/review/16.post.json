@@ -1,0 +1,36 @@
+{
+ "reactions": {
+  "canLike": true,
+  "liked": true,
+  "likers": [
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Mika",
+    "open": true,
+    "relation": "self",
+    "username": "mika"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b61-ywXUyyocEEqt.png",
+    "lists": [],
+    "name": "Yuki",
+    "open": false,
+    "relation": "none",
+    "username": "yuki.tv"
+   }
+  ],
+  "likes": 2,
+  "replies": 1,
+  "target": {
+   "id": 16,
+   "on": "review"
+  }
+ }
+}

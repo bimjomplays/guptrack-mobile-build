@@ -1,0 +1,25 @@
+{
+ "lists": [
+  {
+   "has": true,
+   "id": 1,
+   "name": "Rainy Sundays"
+  },
+  {
+   "has": false,
+   "id": 2,
+   "name": "This year's highlights"
+  },
+  {
+   "has": false,
+   "id": 3,
+   "name": "Shonen marathon"
+  },
+  {
+   "has": false,
+   "id": 4,
+   "name": "Start here"
+  }
+ ],
+ "profile": "public"
+}

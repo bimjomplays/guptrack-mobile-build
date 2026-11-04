@@ -1,0 +1,128 @@
+[
+ {
+  "at": 1793716140000,
+  "cover": "https://s4.anilist.co/file/anilistcdn/character/large/b723-vp5hPptgnNEC.png",
+  "key": "friend-request:aoi_reads:1793716140000",
+  "kind": "friend-request",
+  "ref": null,
+  "seenAt": 1793716140000,
+  "text": "Wants to be friends",
+  "title": "Aoi",
+  "unseen": true,
+  "user": "aoi_reads"
+ },
+ {
+  "at": 1793715120000,
+  "cover": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+  "key": "message:kenji:4182",
+  "kind": "message",
+  "ref": null,
+  "seenAt": 1793715120000,
+  "text": "Gyro’s steel ball bit is my whole personality now",
+  "title": "Kenji",
+  "unseen": true,
+  "user": "kenji"
+ },
+ {
+  "at": 1793713020000,
+  "cover": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+  "key": "comment:311",
+  "kind": "comment",
+  "ref": null,
+  "seenAt": 1793713020000,
+  "text": "Commented on your profile: “Rezero solos?? we need to talk”",
+  "title": "Noor",
+  "unseen": true,
+  "user": "noor.reads"
+ },
+ {
+  "at": 1793705460000,
+  "cover": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+  "item": {
+   "id": "154587",
+   "kind": "anime",
+   "to": "review",
+   "username": "mika"
+  },
+  "key": "like:review:154587:3",
+  "kind": "like",
+  "ref": null,
+  "seenAt": 1793705460000,
+  "text": "Liked your review of Frieren: Beyond Journey’s End",
+  "title": "Tobi and 2 others",
+  "unseen": true,
+  "user": "tobiwan"
+ },
+ {
+  "at": 1793668440000,
+  "cover": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+  "item": {
+   "id": 8811,
+   "to": "activity"
+  },
+  "key": "reply:activity:8811:2",
+  "kind": "reply",
+  "ref": null,
+  "seenAt": 1793668500000,
+  "text": "Replied to your update on ONE PIECE: “1150 episodes in and still crying”",
+  "title": "Hal",
+  "unseen": false,
+  "user": "hal"
+ },
+ {
+  "at": 0,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+  "key": "episode:anime:210482:6",
+  "kind": "episode",
+  "ref": {
+   "id": "210482",
+   "kind": "anime"
+  },
+  "seenAt": 1793347320000,
+  "text": "Episode 6 is out",
+  "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+  "unseen": false
+ },
+ {
+  "at": 0,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181641-4BnzXGnA7CJL.jpg",
+  "key": "sequel:anime:181641:announced",
+  "kind": "sequel",
+  "ref": {
+   "id": "181641",
+   "kind": "anime"
+  },
+  "seenAt": 1793287200000,
+  "text": "Sequel to Alya Sometimes Hides Her Feelings in Russian announced · 2027",
+  "title": "Tokidoki Bosotto Rossiya-go de Dereru Tonari no Alya-san Season 2",
+  "unseen": false
+ },
+ {
+  "at": 1792879320000,
+  "cover": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+  "item": {
+   "id": 8790,
+   "to": "activity"
+  },
+  "key": "like:activity:8790:1",
+  "kind": "like",
+  "ref": null,
+  "seenAt": 1792879320000,
+  "text": "Liked your update on Cyberpunk: Edgerunners 2",
+  "title": "Lena",
+  "unseen": false,
+  "user": "lena"
+ },
+ {
+  "at": 1792636800000,
+  "cover": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+  "key": "friend-accepted:sorawatches:1",
+  "kind": "friend-accepted",
+  "ref": null,
+  "seenAt": 1792636800000,
+  "text": "Accepted your friend request",
+  "title": "Sora",
+  "unseen": false,
+  "user": "sorawatches"
+ }
+]

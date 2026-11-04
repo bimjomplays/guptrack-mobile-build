@@ -1,0 +1,48 @@
+{
+ "title": {
+  "alt": [],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx96427-XiDc44cTlf29.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Light Novel"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   }
+  ],
+  "format": "Light Novel",
+  "genres": [],
+  "headline": [
+   "Light Novel",
+   "TBA"
+  ],
+  "idMal": null,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "96427",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": null,
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "ONE PIECE: Loguetown-hen",
+  "trailer": null,
+  "volumes": null,
+  "year": null
+ }
+}

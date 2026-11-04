@@ -1,0 +1,72 @@
+{
+ "title": {
+  "alt": [
+   "Kaijuu 8-gou",
+   "怪獣８号"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/120760-f81MiocMQK03.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 129,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx120760-MtXvMgujLBpe.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Chapters",
+    "value": "129"
+   },
+   {
+    "label": "Volumes",
+    "value": "16"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Published",
+    "value": "Jul 3, 2020"
+   },
+   {
+    "label": "Members",
+    "value": "107,671"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Sci-Fi"
+  ],
+  "headline": [
+   "Manga",
+   "2020",
+   "129 chapters"
+  ],
+  "idMal": 127907,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "120760",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 75,
+  "scoreNote": "107,671 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Kaiju No.8",
+  "trailer": null,
+  "volumes": 16,
+  "year": 2020
+ }
+}

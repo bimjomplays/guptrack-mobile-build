@@ -1,0 +1,95 @@
+{
+ "title": {
+  "alt": [
+   "Sen to Chihiro no Kamikakushi",
+   "千と千尋の神隠し"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/199-Sm2RU5PSqw7T.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199-sWefXJvXkDOb.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "2h 5m"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Released",
+    "value": "Jul 20, 2001"
+   },
+   {
+    "label": "Season",
+    "value": "Summer 2001"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "21",
+       "to": "studio"
+      },
+      "text": "Studio Ghibli"
+     }
+    ],
+    "value": "Studio Ghibli"
+   },
+   {
+    "label": "Members",
+    "value": "488,369"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Adventure",
+   "Drama",
+   "Fantasy",
+   "Supernatural"
+  ],
+  "headline": [
+   "Film",
+   "Summer 2001",
+   "2h 5m"
+  ],
+  "idMal": 199,
+  "makers": [
+   {
+    "ref": {
+     "id": "21",
+     "to": "studio"
+    },
+    "text": "Studio Ghibli"
+   }
+  ],
+  "media": "anime",
+  "minutes": 125,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "199",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 86,
+  "scoreNote": "488,369 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Spirited Away",
+  "trailer": null,
+  "volumes": null,
+  "year": 2001
+ }
+}

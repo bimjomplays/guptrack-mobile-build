@@ -1,0 +1,101 @@
+{
+ "groups": [
+  {
+   "hits": [
+    {
+     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127230-DdP4vAdssLoz.png",
+     "name": "Chainsaw Man",
+     "note": "Anime · TV · 2022",
+     "ref": {
+      "id": "127230",
+      "kind": "anime",
+      "to": "title"
+     }
+    },
+    {
+     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171627-ZN9D7P46yHnw.png",
+     "name": "Chainsaw Man – The Movie: Reze Arc",
+     "note": "Anime · Film · 2025",
+     "ref": {
+      "id": "171627",
+      "kind": "anime",
+      "to": "title"
+     }
+    },
+    {
+     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204429-9scYA2ab3Zz3.jpg",
+     "name": "Chainsaw Man: Shikaku-hen",
+     "note": "Anime · Special",
+     "ref": {
+      "id": "204429",
+      "kind": "anime",
+      "to": "title"
+     }
+    }
+   ],
+   "title": "Anime"
+  },
+  {
+   "hits": [
+    {
+     "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-euxXZEIfDY2u.png",
+     "name": "Chainsaw Man",
+     "note": "Manga · 2018",
+     "ref": {
+      "id": "105778",
+      "kind": "manga",
+      "to": "title"
+     }
+    }
+   ],
+   "title": "Manga"
+  },
+  {
+   "hits": [
+    {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b130102-FO1VHNnEnLlB.png",
+     "name": "Denji",
+     "note": "Character · Chainsaw Man",
+     "ref": {
+      "id": "130102",
+      "to": "character"
+     }
+    },
+    {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+     "name": "Power",
+     "note": "Character · Chainsaw Man",
+     "ref": {
+      "id": "137079",
+      "to": "character"
+     }
+    },
+    {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137080-UHcynYNjb5ZU.png",
+     "name": "Makima",
+     "note": "Character · Chainsaw Man",
+     "ref": {
+      "id": "137080",
+      "to": "character"
+     }
+    }
+   ],
+   "title": "Characters"
+  },
+  {
+   "hits": [
+    {
+     "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n119917-xrVbuHyr6y1I.jpg",
+     "name": "Tatsuki Fujimoto",
+     "note": "Mangaka",
+     "ref": {
+      "id": "119917",
+      "source": "anilist",
+      "to": "person"
+     }
+    }
+   ],
+   "title": "People"
+  }
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "title": {
+  "alt": [
+   "GHOST IN THE SHELL: Koukaku Kidoutai",
+   "GHOST IN THE SHELL / 攻殻機動隊"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/43-uDbk1jrG9yod.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx43-Y6EjeEMM14dj.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "1h 23m"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Released",
+    "value": "Nov 18, 1995"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 1995"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "10",
+       "to": "studio"
+      },
+      "text": "Production I.G"
+     }
+    ],
+    "value": "Production I.G"
+   },
+   {
+    "label": "Members",
+    "value": "180,157"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Action",
+   "Psychological",
+   "Sci-Fi"
+  ],
+  "headline": [
+   "Film",
+   "Fall 1995",
+   "1h 23m"
+  ],
+  "idMal": 43,
+  "makers": [
+   {
+    "ref": {
+     "id": "10",
+     "to": "studio"
+    },
+    "text": "Production I.G"
+   }
+  ],
+  "media": "anime",
+  "minutes": 83,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "43",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 80,
+  "scoreNote": "180,157 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Ghost in the Shell",
+  "trailer": null,
+  "volumes": null,
+  "year": 1995
+ }
+}

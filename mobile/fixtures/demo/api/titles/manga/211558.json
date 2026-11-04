@@ -1,0 +1,63 @@
+{
+ "title": {
+  "alt": [
+   "잊혀진 들판"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/211558-nyxK1SSJMBHv.jpg",
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx211558-Xu6aFRcACqlq.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Status",
+    "value": "Releasing"
+   },
+   {
+    "label": "Published",
+    "value": "May 4, 2026"
+   },
+   {
+    "label": "Members",
+    "value": "2,828"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Drama",
+   "Fantasy",
+   "Romance"
+  ],
+  "headline": [
+   "Manga",
+   "2026"
+  ],
+  "idMal": 193185,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "211558",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 76,
+  "scoreNote": "2,828 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Releasing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Ichyeojin Deulpan",
+  "trailer": null,
+  "volumes": null,
+  "year": 2026
+ }
+}

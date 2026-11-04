@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Richard &#39;Richie&#39; Jerimovich",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "136315",
+        "kind": "tv"
+       },
+       "score": 82,
+       "title": "The Bear",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Richard &#39;Richie&#39; Jerimovich",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "136315",
+        "kind": "tv"
+       },
+       "score": 82,
+       "title": "The Bear",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/xD8GVNayMpiTZxLfahy2DseYcQq.jpg",
+  "known": "Acting",
+  "name": "Ebon Moss-Bachrach",
+  "native": null,
+  "ref": {
+   "id": "92190710",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

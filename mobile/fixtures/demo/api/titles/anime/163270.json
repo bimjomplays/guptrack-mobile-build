@@ -1,0 +1,95 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/163270-fcjrqp3iKWdb.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 13,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163270-wboZJp0ybwVK.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "13"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Apr 5, 2024"
+   },
+   {
+    "label": "Season",
+    "value": "Spring 2024"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "6222",
+       "to": "studio"
+      },
+      "text": "CloverWorks"
+     }
+    ],
+    "value": "CloverWorks"
+   },
+   {
+    "label": "Members",
+    "value": "196,284"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Drama"
+  ],
+  "headline": [
+   "TV",
+   "Spring 2024",
+   "13 episodes"
+  ],
+  "idMal": 54900,
+  "makers": [
+   {
+    "ref": {
+     "id": "6222",
+     "to": "studio"
+    },
+    "text": "CloverWorks"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "163270",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 77,
+  "scoreNote": "196,284 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "WIND BREAKER",
+  "trailer": null,
+  "volumes": null,
+  "year": 2024
+ }
+}

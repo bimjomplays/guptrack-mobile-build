@@ -1,0 +1,93 @@
+{
+ "title": {
+  "alt": [],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": 7,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171630-2U7Y5OIWwXJJ.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Special"
+   },
+   {
+    "label": "Episodes",
+    "value": "7"
+   },
+   {
+    "label": "Episode length",
+    "value": "43 min"
+   },
+   {
+    "label": "Status",
+    "value": "Not yet aired"
+   },
+   {
+    "label": "Aired",
+    "value": "Feb 2027"
+   },
+   {
+    "label": "Season",
+    "value": "Winter 2027"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "858",
+       "to": "studio"
+      },
+      "text": "WIT STUDIO"
+     }
+    ],
+    "value": "WIT STUDIO"
+   },
+   {
+    "label": "Members",
+    "value": "30,151"
+   }
+  ],
+  "format": "Special",
+  "genres": [
+   "Adventure"
+  ],
+  "headline": [
+   "Special",
+   "Winter 2027",
+   "7 episodes"
+  ],
+  "idMal": 57557,
+  "makers": [
+   {
+    "ref": {
+     "id": "858",
+     "to": "studio"
+    },
+    "text": "WIT STUDIO"
+   }
+  ],
+  "media": "anime",
+  "minutes": 43,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "171630",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": null,
+  "scoreNote": "30,151 members",
+  "seasons": [],
+  "staff": [],
+  "status": "upcoming",
+  "statusText": "Not yet aired",
+  "synopsis": [],
+  "tags": [],
+  "title": "THE ONE PIECE",
+  "trailer": null,
+  "volumes": null,
+  "year": 2027
+ }
+}

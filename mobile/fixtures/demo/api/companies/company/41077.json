@@ -1,0 +1,51 @@
+{
+ "company": {
+  "description": [],
+  "facts": [
+   {
+    "label": "Headquarters",
+    "value": "New York City, New York"
+   },
+   {
+    "label": "Country",
+    "value": "United States"
+   }
+  ],
+  "groups": [
+   {
+    "title": "Movies",
+    "titles": [
+     {
+      "cover": "https://image.tmdb.org/t/p/w342/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "545611",
+       "kind": "movie"
+      },
+      "score": 77,
+      "title": "Everything Everywhere All at Once",
+      "year": 2022
+     },
+     {
+      "cover": "https://image.tmdb.org/t/p/w342/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "666277",
+       "kind": "movie"
+      },
+      "score": 77,
+      "title": "Past Lives",
+      "year": 2023
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Production company",
+  "name": "A24",
+  "ref": {
+   "id": "41077",
+   "to": "company"
+  }
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "title": {
+  "alt": [
+   "Yakusoku no Neverland",
+   "約束のネバーランド"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/n87423-n5n0LZu9Gs5H.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 181,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx87423-gPNtu8QbGped.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Chapters",
+    "value": "181"
+   },
+   {
+    "label": "Volumes",
+    "value": "20"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Published",
+    "value": "Aug 1, 2016"
+   },
+   {
+    "label": "Members",
+    "value": "134,810"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Drama",
+   "Fantasy",
+   "Horror",
+   "Mystery",
+   "Psychological",
+   "Thriller"
+  ],
+  "headline": [
+   "Manga",
+   "2016",
+   "181 chapters"
+  ],
+  "idMal": 100128,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "87423",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 79,
+  "scoreNote": "134,810 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "The Promised Neverland",
+  "trailer": null,
+  "volumes": 20,
+  "year": 2016
+ }
+}

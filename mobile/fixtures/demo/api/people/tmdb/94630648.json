@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Serge / Frenchie",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "76479",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "The Boys",
+       "year": 2019
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Serge / Frenchie",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "76479",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "The Boys",
+       "year": 2019
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/r6s7dkYZUJpd00C7p9itT6Gp8XB.jpg",
+  "known": "Acting",
+  "name": "Tomer Capone",
+  "native": null,
+  "ref": {
+   "id": "94630648",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

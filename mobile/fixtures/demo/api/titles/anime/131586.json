@@ -1,0 +1,99 @@
+{
+ "title": {
+  "alt": [
+   "86: Eighty Six Part 2",
+   "86－エイティシックス－ 第2クール"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/131586-TQED17cUhGnT.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 12,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131586-JhC0wcBi09EZ.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "12"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 3, 2021"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2021"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "561",
+       "to": "studio"
+      },
+      "text": "A-1 Pictures"
+     }
+    ],
+    "value": "A-1 Pictures"
+   },
+   {
+    "label": "Members",
+    "value": "202,036"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Mecha",
+   "Sci-Fi"
+  ],
+  "headline": [
+   "TV",
+   "Fall 2021",
+   "12 episodes"
+  ],
+  "idMal": 48569,
+  "makers": [
+   {
+    "ref": {
+     "id": "561",
+     "to": "studio"
+    },
+    "text": "A-1 Pictures"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "131586",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 87,
+  "scoreNote": "202,036 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "86 EIGHTY-SIX Part 2",
+  "trailer": null,
+  "volumes": null,
+  "year": 2021
+ }
+}

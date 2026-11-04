@@ -1,0 +1,71 @@
+{
+ "title": {
+  "alt": [
+   "BEAT&MOTION"
+  ],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169102-KICGasKLwtiQ.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "ONA"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "569",
+       "to": "studio"
+      },
+      "text": "MAPPA"
+     }
+    ],
+    "value": "MAPPA"
+   }
+  ],
+  "format": "ONA",
+  "genres": [],
+  "headline": [
+   "ONA",
+   "TBA"
+  ],
+  "idMal": null,
+  "makers": [
+   {
+    "ref": {
+     "id": "569",
+     "to": "studio"
+    },
+    "text": "MAPPA"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "169102",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": null,
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "BEAT & MOTION",
+  "trailer": null,
+  "volumes": null,
+  "year": null
+ }
+}

@@ -1,0 +1,421 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://image.tmdb.org/t/p/w1280/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+  "cast": [
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
+     "name": "Timothée Chalamet",
+     "ref": {
+      "id": "1190668",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Paul Atreides"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/qGkBlyn1AwQpuFnRARMRwj0iHZp.jpg",
+     "name": "Zendaya",
+     "ref": {
+      "id": "90709808",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Chani"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/ty8ZPzaCBBlqIr5qzpOXI24iC8j.jpg",
+     "name": "Rebecca Ferguson",
+     "ref": {
+      "id": "94089072",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Jessica"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/zfRID0jx8DKBluPGU9xtk9sZWUt.jpg",
+     "name": "Javier Bardem",
+     "ref": {
+      "id": "94376398",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Stilgar"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/7QpneI3HoZCCDVPyWx3p3t7yeo7.jpg",
+     "name": "Josh Brolin",
+     "ref": {
+      "id": "98972496",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Gurney Halleck"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/atdAs4pFGjUQ4m2W8kJYly7N6cC.jpg",
+     "name": "Austin Butler",
+     "ref": {
+      "id": "92924823",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Feyd-Rautha"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/1QfiLnofJFlOJOLCWaxyDpIN03v.jpg",
+     "name": "Florence Pugh",
+     "ref": {
+      "id": "91224770",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Princess Irulan"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg",
+     "name": "Dave Bautista",
+     "ref": {
+      "id": "96775679",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Beast Rabban"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/ApgDL7nudR9T2GpjCG4vESgymO2.jpg",
+     "name": "Christopher Walken",
+     "ref": {
+      "id": "98209092",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Emperor"
+   }
+  ],
+  "characters": [],
+  "count": 1,
+  "cover": "https://image.tmdb.org/t/p/w500/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "2h 47m"
+   },
+   {
+    "label": "Status",
+    "value": "Released"
+   },
+   {
+    "label": "Released",
+    "value": "Feb 27, 2024"
+   },
+   {
+    "label": "Director",
+    "links": [
+     {
+      "ref": {
+       "id": "92694449",
+       "source": "tmdb",
+       "to": "person"
+      },
+      "text": "Denis Villeneuve"
+     }
+    ],
+    "value": "Denis Villeneuve"
+   },
+   {
+    "label": "Writing",
+    "links": [
+     {
+      "ref": {
+       "id": "92694449",
+       "source": "tmdb",
+       "to": "person"
+      },
+      "text": "Denis Villeneuve"
+     },
+     {
+      "ref": {
+       "id": "90692265",
+       "source": "tmdb",
+       "to": "person"
+      },
+      "text": "Jon Spaihts"
+     },
+     {
+      "ref": {
+       "id": "94575681",
+       "source": "tmdb",
+       "to": "person"
+      },
+      "text": "Frank Herbert"
+     }
+    ],
+    "value": "Denis Villeneuve, Jon Spaihts, Frank Herbert"
+   },
+   {
+    "label": "Rated",
+    "value": "PG-13"
+   },
+   {
+    "label": "Language",
+    "value": "English"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Sci-Fi",
+   "Adventure"
+  ],
+  "headline": [
+   "Film",
+   "2024",
+   "2h 47m",
+   "PG-13"
+  ],
+  "makers": [
+   {
+    "ref": {
+     "id": "92694449",
+     "source": "tmdb",
+     "to": "person"
+    },
+    "text": "Denis Villeneuve"
+   }
+  ],
+  "media": "movies",
+  "minutes": 167,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "872585",
+     "kind": "movie"
+    },
+    "score": 80,
+    "title": "Oppenheimer",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1233413",
+     "kind": "movie"
+    },
+    "score": 75,
+    "title": "Sinners",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "666277",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Past Lives",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "545611",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Everything Everywhere All at Once",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "414906",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "The Batman",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1078605",
+     "kind": "movie"
+    },
+    "score": 73,
+    "title": "Weapons",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1054867",
+     "kind": "movie"
+    },
+    "score": 73,
+    "title": "One Battle After Another",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "157336",
+     "kind": "movie"
+    },
+    "score": 85,
+    "title": "Interstellar",
+    "year": 2014
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "496243",
+     "kind": "movie"
+    },
+    "score": 85,
+    "title": "Parasite",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "313369",
+     "kind": "movie"
+    },
+    "score": 79,
+    "title": "La La Land",
+    "year": 2016
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1084242",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Zootopia 2",
+    "year": 2025
+   }
+  ],
+  "ref": {
+   "id": "693134",
+   "kind": "movie"
+  },
+  "relations": [],
+  "score": 81,
+  "scoreNote": "26,354 votes",
+  "seasons": [],
+  "staff": [
+   {
+    "person": {
+     "image": null,
+     "name": "Denis Villeneuve",
+     "ref": {
+      "id": "92694449",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Director, Screenplay"
+   },
+   {
+    "person": {
+     "image": null,
+     "name": "Jon Spaihts",
+     "ref": {
+      "id": "90692265",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Screenplay"
+   },
+   {
+    "person": {
+     "image": null,
+     "name": "Frank Herbert",
+     "ref": {
+      "id": "94575681",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Novel"
+   },
+   {
+    "person": {
+     "image": null,
+     "name": "Hans Zimmer",
+     "ref": {
+      "id": "94877603",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Original Music Composer"
+   },
+   {
+    "person": {
+     "image": null,
+     "name": "Greig Fraser",
+     "ref": {
+      "id": "91527508",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Director of Photography"
+   }
+  ],
+  "status": "finished",
+  "statusText": "Released",
+  "synopsis": [
+   [
+    {
+     "text": "Follow the mythic journey of Paul Atreides as he unites with Chani and the Fremen while on a path of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, Paul endeavors to prevent a terrible future only he can foresee."
+    }
+   ]
+  ],
+  "tags": [],
+  "title": "Dune: Part Two",
+  "trailer": {
+   "youtube": "Way9Dexny3w"
+  },
+  "year": 2024
+ }
+}

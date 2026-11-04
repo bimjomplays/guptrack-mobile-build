@@ -1,0 +1,101 @@
+{
+ "title": {
+  "alt": [
+   "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season",
+   "Re:ゼロから始める異世界生活 2nd Season"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/108632-yeLbrgPN4Oni.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 13,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108632-lQWnmw7XaNOK.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "13"
+   },
+   {
+    "label": "Episode length",
+    "value": "26 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Jul 8, 2020"
+   },
+   {
+    "label": "Season",
+    "value": "Summer 2020"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "314",
+       "to": "studio"
+      },
+      "text": "WHITE FOX"
+     }
+    ],
+    "value": "WHITE FOX"
+   },
+   {
+    "label": "Members",
+    "value": "389,155"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Fantasy",
+   "Psychological",
+   "Thriller"
+  ],
+  "headline": [
+   "TV",
+   "Summer 2020",
+   "13 episodes"
+  ],
+  "idMal": 39587,
+  "makers": [
+   {
+    "ref": {
+     "id": "314",
+     "to": "studio"
+    },
+    "text": "WHITE FOX"
+   }
+  ],
+  "media": "anime",
+  "minutes": 26,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "108632",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 83,
+  "scoreNote": "389,155 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Re:ZERO -Starting Life in Another World- Season 2",
+  "trailer": null,
+  "volumes": null,
+  "year": 2020
+ }
+}

@@ -1,0 +1,372 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://image.tmdb.org/t/p/w1280/lgotja3xMoJZbynwHfcQcJAEMWH.jpg",
+  "cast": [
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/eByMpalFhQxUYuzA0srCN8rnfOZ.jpg",
+     "name": "Ginnifer Goodwin",
+     "ref": {
+      "id": "94647510",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Judy Hopps (voice)"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/8e6mt0vGjPo6eW52gqRuXy5YnfN.jpg",
+     "name": "Jason Bateman",
+     "ref": {
+      "id": "91004188",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Nick Wilde (voice)"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/iestHyn7PLuVowj5Jaa1SGPboQ4.jpg",
+     "name": "Ke Huy Quan",
+     "ref": {
+      "id": "98463692",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Gary De'Snake (voice)"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/9f2p2T61K4pIvKQMLRlow8znkXU.jpg",
+     "name": "Fortune Feimster",
+     "ref": {
+      "id": "97793864",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Nibbles Maplestick (voice)"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/jMXU5oG3i93SH1yhkpbBGskFiJl.jpg",
+     "name": "Andy Samberg",
+     "ref": {
+      "id": "91960057",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Pawbert Lynxley (voice)"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/w5YM2cGefPnkoyIXCi2UrCQW53r.jpg",
+     "name": "David Strathairn",
+     "ref": {
+      "id": "94151441",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Milton Lynxley (voice)"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/be1bVF7qGX91a6c5WeRPs5pKXln.jpg",
+     "name": "Idris Elba",
+     "ref": {
+      "id": "92867620",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Chief Bogo (voice)"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/20k7YtDH2iU3KdAysdDPlZz7uhf.jpg",
+     "name": "Shakira",
+     "ref": {
+      "id": "92822729",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Gazelle (voice)"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/nDoOii5HaGwPxYa28xFC2sDkF8y.jpg",
+     "name": "Patrick Warburton",
+     "ref": {
+      "id": "90221309",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Mayor Winddancer (voice)"
+   }
+  ],
+  "characters": [],
+  "count": 1,
+  "cover": "https://image.tmdb.org/t/p/w500/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "1h 48m"
+   },
+   {
+    "label": "Status",
+    "value": "Released"
+   },
+   {
+    "label": "Released",
+    "value": "Nov 26, 2025"
+   },
+   {
+    "label": "Directors",
+    "links": [
+     {
+      "ref": {
+       "id": "90203661",
+       "source": "tmdb",
+       "to": "person"
+      },
+      "text": "Jared Bush"
+     },
+     {
+      "ref": {
+       "id": "92505257",
+       "source": "tmdb",
+       "to": "person"
+      },
+      "text": "Byron Howard"
+     }
+    ],
+    "value": "Jared Bush, Byron Howard"
+   },
+   {
+    "label": "Rated",
+    "value": "PG"
+   },
+   {
+    "label": "Language",
+    "value": "English"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Animation",
+   "Adventure",
+   "Comedy",
+   "Mystery",
+   "Family"
+  ],
+  "headline": [
+   "Film",
+   "2025",
+   "1h 48m",
+   "PG"
+  ],
+  "makers": [
+   {
+    "ref": {
+     "id": "90203661",
+     "source": "tmdb",
+     "to": "person"
+    },
+    "text": "Jared Bush"
+   },
+   {
+    "ref": {
+     "id": "92505257",
+     "source": "tmdb",
+     "to": "person"
+    },
+    "text": "Byron Howard"
+   }
+  ],
+  "media": "movies",
+  "minutes": 108,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "693134",
+     "kind": "movie"
+    },
+    "score": 81,
+    "title": "Dune: Part Two",
+    "year": 2024
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "872585",
+     "kind": "movie"
+    },
+    "score": 80,
+    "title": "Oppenheimer",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1233413",
+     "kind": "movie"
+    },
+    "score": 75,
+    "title": "Sinners",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "666277",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Past Lives",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "545611",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Everything Everywhere All at Once",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "414906",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "The Batman",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1078605",
+     "kind": "movie"
+    },
+    "score": 73,
+    "title": "Weapons",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1054867",
+     "kind": "movie"
+    },
+    "score": 73,
+    "title": "One Battle After Another",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "157336",
+     "kind": "movie"
+    },
+    "score": 85,
+    "title": "Interstellar",
+    "year": 2014
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "496243",
+     "kind": "movie"
+    },
+    "score": 85,
+    "title": "Parasite",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "313369",
+     "kind": "movie"
+    },
+    "score": 79,
+    "title": "La La Land",
+    "year": 2016
+   }
+  ],
+  "ref": {
+   "id": "1084242",
+   "kind": "movie"
+  },
+  "relations": [],
+  "score": 77,
+  "scoreNote": "11,208 votes",
+  "seasons": [],
+  "staff": [
+   {
+    "person": {
+     "image": null,
+     "name": "Jared Bush",
+     "ref": {
+      "id": "90203661",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Director"
+   },
+   {
+    "person": {
+     "image": null,
+     "name": "Byron Howard",
+     "ref": {
+      "id": "92505257",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Director"
+   }
+  ],
+  "status": "finished",
+  "statusText": "Released",
+  "synopsis": [
+   [
+    {
+     "text": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before."
+    }
+   ]
+  ],
+  "tags": [],
+  "title": "Zootopia 2",
+  "trailer": null,
+  "year": 2025
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "person": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b28967-ShW5sAxzZDny.png",
+  "lists": [
+   "anime"
+  ],
+  "name": "Power",
+  "open": false,
+  "relation": "none",
+  "username": "powerpower"
+ },
+ "reviews": [
+  {
+   "at": 1792420860000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b28967-ShW5sAxzZDny.png",
+    "lists": [
+     "anime"
+    ],
+    "name": "Power",
+    "open": false,
+    "relation": "none",
+    "username": "powerpower"
+   },
+   "body": "It is gorgeous and I see why people love it, yet early on nothing much is at risk. Expect a stroll with companions more than a quest.",
+   "cut": false,
+   "edited": null,
+   "id": 16,
+   "score": 60,
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b61-ywXUyyocEEqt.png",
+      "lists": [],
+      "name": "Yuki",
+      "open": false,
+      "relation": "none",
+      "username": "yuki.tv"
+     }
+    ],
+    "likes": 1,
+    "replies": 1,
+    "target": {
+     "id": 16,
+     "on": "review"
+    }
+   },
+   "spoiler": false,
+   "title": {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+    "format": "TV",
+    "id": "154587",
+    "media": "anime",
+    "title": "Frieren: Beyond Journey’s End"
+   }
+  }
+ ],
+ "total": 1
+}

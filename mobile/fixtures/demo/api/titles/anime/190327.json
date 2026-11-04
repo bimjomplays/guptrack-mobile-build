@@ -1,0 +1,101 @@
+{
+ "title": {
+  "alt": [
+   "JoJo no Kimyou na Bouken: Steel Ball Run - 1st STAGE",
+   "ジョジョの奇妙な冒険 スティール・ボール・ラン 1st STAGE"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/190327-bXr8tFZUdxOw.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190327-riJNCFL7w9y4.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "ONA"
+   },
+   {
+    "label": "Episodes",
+    "value": "1"
+   },
+   {
+    "label": "Episode length",
+    "value": "47 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Mar 19, 2026"
+   },
+   {
+    "label": "Season",
+    "value": "Winter 2026"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "287",
+       "to": "studio"
+      },
+      "text": "david production"
+     }
+    ],
+    "value": "david production"
+   },
+   {
+    "label": "Members",
+    "value": "85,323"
+   }
+  ],
+  "format": "ONA",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Mystery",
+   "Sports",
+   "Supernatural"
+  ],
+  "headline": [
+   "ONA",
+   "Winter 2026",
+   "1 episode"
+  ],
+  "idMal": 61469,
+  "makers": [
+   {
+    "ref": {
+     "id": "287",
+     "to": "studio"
+    },
+    "text": "david production"
+   }
+  ],
+  "media": "anime",
+  "minutes": 47,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "190327",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 87,
+  "scoreNote": "85,323 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "STEEL BALL RUN JoJo's Bizarre Adventure 1st STAGE",
+  "trailer": null,
+  "volumes": null,
+  "year": 2026
+ }
+}

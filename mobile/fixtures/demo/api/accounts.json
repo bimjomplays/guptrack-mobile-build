@@ -1,0 +1,55 @@
+{
+ "accounts": [
+  {
+   "createdAt": 1757428860000,
+   "id": 1,
+   "role": "owner",
+   "sessions": 1,
+   "username": "mika"
+  },
+  {
+   "createdAt": 1767796860000,
+   "id": 2,
+   "role": "member",
+   "sessions": 1,
+   "username": "kenji"
+  },
+  {
+   "createdAt": 1775572860000,
+   "id": 3,
+   "role": "member",
+   "sessions": 1,
+   "username": "noor.reads"
+  },
+  {
+   "createdAt": 1783348860000,
+   "id": 4,
+   "role": "member",
+   "sessions": 0,
+   "username": "tobiwan"
+  },
+  {
+   "createdAt": 1793198460000,
+   "id": 5,
+   "role": "member",
+   "sessions": 0,
+   "username": "lena"
+  }
+ ],
+ "invites": [
+  {
+   "createdAt": 1793630460000,
+   "expiresAt": 1794235260000,
+   "id": 4,
+   "usedAt": null,
+   "usedBy": null
+  },
+  {
+   "createdAt": 1793025660000,
+   "expiresAt": 1793630460000,
+   "id": 3,
+   "usedAt": 1793198460000,
+   "usedBy": "lena"
+  }
+ ]
+}

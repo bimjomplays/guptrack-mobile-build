@@ -1,0 +1,141 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx169581-UlAviVH36Hxi.png",
+      "format": "ONA",
+      "ref": {
+       "id": "169581",
+       "kind": "anime"
+      },
+      "score": 69,
+      "title": "Magical Explorer",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189046-yaHWtS5FII46.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "189046",
+       "kind": "anime"
+      },
+      "score": 90,
+      "title": "Re:ZERO -Starting Life in Another World- Season 4",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx163134-yieRFbvUOH9a.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "163134",
+       "kind": "anime"
+      },
+      "score": 84,
+      "title": "Re:ZERO -Starting Life in Another World- Season 3",
+      "year": 2024
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx119661-GDbUZxrZMz01.png",
+      "format": "TV",
+      "ref": {
+       "id": "119661",
+       "kind": "anime"
+      },
+      "score": 84,
+      "title": "Re:ZERO -Starting Life in Another World- Season 2 Part 2",
+      "year": 2021
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108632-lQWnmw7XaNOK.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "108632",
+       "kind": "anime"
+      },
+      "score": 83,
+      "title": "Re:ZERO -Starting Life in Another World- Season 2",
+      "year": 2020
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21127-7ARWZkDXKiiD.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "21127",
+       "kind": "anime"
+      },
+      "score": 84,
+      "title": "Steins;Gate 0",
+      "year": 2018
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100049-mgvPLctBJprp.jpg",
+      "format": "OVA",
+      "ref": {
+       "id": "100049",
+       "kind": "anime"
+      },
+      "score": 76,
+      "title": "Re:ZERO -Starting Life in Another World- OVAs",
+      "year": 2018
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21355-wRVUrGxpvIQQ.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "21355",
+       "kind": "anime"
+      },
+      "score": 81,
+      "title": "Re:ZERO -Starting Life in Another World-",
+      "year": 2016
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20613-HXHpec4bemk5.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "20613",
+       "kind": "anime"
+      },
+      "score": 73,
+      "title": "Akame ga Kill!",
+      "year": 2014
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx11577-rhqsxLOAge4f.png",
+      "format": "Film",
+      "ref": {
+       "id": "11577",
+       "kind": "anime"
+      },
+      "score": 82,
+      "title": "Steins;Gate The Movie – Load Region of Déjà Vu",
+      "year": 2013
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx9253-tIUXF2gfU8Sg.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "9253",
+       "kind": "anime"
+      },
+      "score": 89,
+      "title": "Steins;Gate",
+      "year": 2011
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "WHITE FOX",
+  "ref": {
+   "id": "314",
+   "to": "studio"
+  }
+ }
+}

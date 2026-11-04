@@ -1,0 +1,93 @@
+{
+ "season": "summer",
+ "titles": [
+  {
+   "alt": [
+    "Mushoku Tensei III: Isekai Ittara Honki Dasu",
+    "無職転生Ⅲ ～異世界行ったら本気だす～"
+   ],
+   "by": "Studio Bind",
+   "carried": false,
+   "count": 14,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg",
+   "format": "TV",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Ecchi",
+    "Fantasy"
+   ],
+   "id": "anilist:178789",
+   "next": null,
+   "popularity": 176077,
+   "score": 86,
+   "season": "summer",
+   "source": "anilist",
+   "sourceId": "178789",
+   "start": "2026-07-04",
+   "status": "finished",
+   "tags": [],
+   "title": "Mushoku Tensei: Jobless Reincarnation Season 3",
+   "trending": 1760,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "Youjo Senki II",
+    "幼女戦記Ⅱ"
+   ],
+   "by": "NUT",
+   "carried": false,
+   "count": 12,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135865-T7XIPMAbqcxN.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Fantasy"
+   ],
+   "id": "anilist:135865",
+   "next": null,
+   "popularity": 99819,
+   "score": 80,
+   "season": "summer",
+   "source": "anilist",
+   "sourceId": "135865",
+   "start": "2026-07-08",
+   "status": "finished",
+   "tags": [],
+   "title": "Saga of Tanya the Evil Season 2",
+   "trending": 998,
+   "year": 2026
+  },
+  {
+   "alt": [
+    "BLEACH: Sennen Kessen-hen - Kashin-tan",
+    "BLEACH 千年血戦篇-禍進譚-"
+   ],
+   "by": "PIERROT FILMS",
+   "carried": false,
+   "count": 10,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185874-aU3e6tBT6wwA.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Supernatural"
+   ],
+   "id": "anilist:185874",
+   "next": null,
+   "popularity": 99539,
+   "score": 88,
+   "season": "summer",
+   "source": "anilist",
+   "sourceId": "185874",
+   "start": "2026-07-25",
+   "status": "finished",
+   "tags": [],
+   "title": "BLEACH: Thousand-Year Blood War - The Calamity",
+   "trending": 2300,
+   "year": 2026
+  }
+ ],
+ "year": 2026
+}

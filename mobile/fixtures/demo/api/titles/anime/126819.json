@@ -1,0 +1,96 @@
+{
+ "title": {
+  "alt": [
+   "銀魂 THE SEMI-FINAL"
+  ],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": 2,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126819-KlcARzqDMjvf.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Special"
+   },
+   {
+    "label": "Episodes",
+    "value": "2"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Jan 15, 2021"
+   },
+   {
+    "label": "Season",
+    "value": "Winter 2021"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "6116",
+       "to": "studio"
+      },
+      "text": "Bandai Namco Pictures"
+     }
+    ],
+    "value": "Bandai Namco Pictures"
+   },
+   {
+    "label": "Members",
+    "value": "32,322"
+   }
+  ],
+  "format": "Special",
+  "genres": [
+   "Action",
+   "Comedy"
+  ],
+  "headline": [
+   "Special",
+   "Winter 2021",
+   "2 episodes"
+  ],
+  "idMal": 44087,
+  "makers": [
+   {
+    "ref": {
+     "id": "6116",
+     "to": "studio"
+    },
+    "text": "Bandai Namco Pictures"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "126819",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 83,
+  "scoreNote": "32,322 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Gintama: THE SEMI-FINAL",
+  "trailer": null,
+  "volumes": null,
+  "year": 2021
+ }
+}

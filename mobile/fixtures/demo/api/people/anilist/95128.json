@@ -1,0 +1,72 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Occupation",
+    "value": "Voice Actor"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "character": {
+       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b305-6lisPmHtCnLT.png",
+       "name": "Sanji",
+       "ref": {
+        "id": "305",
+        "to": "character"
+       }
+      },
+      "role": "Main",
+      "title": {
+       "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21-ELSYx3yMPcKM.jpg",
+       "format": "TV",
+       "ref": {
+        "id": "21",
+        "kind": "anime"
+       },
+       "score": 87,
+       "title": "ONE PIECE",
+       "year": 1999
+      }
+     },
+     {
+      "character": {
+       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b309-H64NhbJ2ywIQ.jpg",
+       "name": "Chopper Tony Tony",
+       "ref": {
+        "id": "309",
+        "to": "character"
+       }
+      },
+      "role": "Main",
+      "title": {
+       "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21-ELSYx3yMPcKM.jpg",
+       "format": "TV",
+       "ref": {
+        "id": "21",
+        "kind": "anime"
+       },
+       "score": 87,
+       "title": "ONE PIECE",
+       "year": 1999
+      }
+     }
+    ],
+    "title": "Voice roles"
+   }
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95128-9YWpE1d2U8Sj.png",
+  "known": "Voice Actor",
+  "name": "Ikue Ootani",
+  "native": null,
+  "ref": {
+   "id": "95128",
+   "source": "anilist",
+   "to": "person"
+  }
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Theme Song Performance (English; OP1, OP3, ED11)",
+      "title": {
+       "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21-ELSYx3yMPcKM.jpg",
+       "format": "TV",
+       "ref": {
+        "id": "21",
+        "kind": "anime"
+       },
+       "score": 87,
+       "title": "ONE PIECE",
+       "year": 1999
+      }
+     }
+    ],
+    "title": "Anime staff"
+   }
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95043-cgQunZolvkPW.png",
+  "known": "",
+  "name": "Vic Mignogna",
+  "native": null,
+  "ref": {
+   "id": "95043",
+   "source": "anilist",
+   "to": "person"
+  }
+ }
+}

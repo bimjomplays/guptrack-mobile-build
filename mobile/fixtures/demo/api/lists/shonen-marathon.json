@@ -1,0 +1,89 @@
+{
+ "count": 6,
+ "covers": [
+  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127230-DdP4vAdssLoz.png",
+  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg",
+  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166240-PBV7zukIHW7V.png"
+ ],
+ "description": "",
+ "id": 3,
+ "items": [
+  {
+   "added": 1792507260000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+   "format": "ONA",
+   "id": "210482",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+   "year": 2026
+  },
+  {
+   "added": 1792503660000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127230-DdP4vAdssLoz.png",
+   "format": "TV",
+   "id": "127230",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Chainsaw Man",
+   "year": 2022
+  },
+  {
+   "added": 1792500060000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg",
+   "format": "TV",
+   "id": "21",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "ONE PIECE",
+   "year": 1999
+  },
+  {
+   "added": 1792496460000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166240-PBV7zukIHW7V.png",
+   "format": "TV",
+   "id": "166240",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Demon Slayer: Kimetsu no Yaiba Hashira Training Arc",
+   "year": 2024
+  },
+  {
+   "added": 1792492860000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113415-LHBAeoZDIsnF.jpg",
+   "format": "TV",
+   "id": "113415",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "JUJUTSU KAISEN",
+   "year": 2020
+  },
+  {
+   "added": 1792489260000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20-dE6UHbFFg1A5.jpg",
+   "format": "TV",
+   "id": "20",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Naruto",
+   "year": 2002
+  }
+ ],
+ "level": {
+  "list": "friends",
+  "profile": "public"
+ },
+ "media": [
+  "anime"
+ ],
+ "name": "Shonen marathon",
+ "slug": "shonen-marathon",
+ "updated": 1792507260000
+}

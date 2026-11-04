@@ -1,0 +1,104 @@
+{
+ "box": "inbox",
+ "canSend": true,
+ "messages": [
+  {
+   "at": 1793680800000,
+   "body": "the new JoJo is out, you watching?",
+   "card": null,
+   "deleted": false,
+   "edited": null,
+   "id": 1001,
+   "mine": false,
+   "photos": [],
+   "reactions": []
+  },
+  {
+   "at": 1793680860000,
+   "body": "SBR part two finally dropped and the opening is wild",
+   "card": null,
+   "deleted": false,
+   "edited": null,
+   "id": 1002,
+   "mine": false,
+   "photos": [],
+   "reactions": []
+  },
+  {
+   "at": 1793681880000,
+   "body": "binged it last night!! up to ep 5",
+   "card": null,
+   "deleted": false,
+   "edited": null,
+   "id": 1003,
+   "mine": true,
+   "photos": [],
+   "reactions": []
+  },
+  {
+   "at": 1793681880000,
+   "body": "",
+   "card": {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+    "format": "ONA",
+    "id": "210482",
+    "kind": "anime",
+    "score": null,
+    "status": "current",
+    "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+    "year": 2026
+   },
+   "deleted": false,
+   "edited": null,
+   "id": 1004,
+   "mine": true,
+   "photos": [],
+   "reactions": []
+  },
+  {
+   "at": 1793715000000,
+   "body": "that race start though 😭",
+   "card": null,
+   "deleted": false,
+   "edited": null,
+   "id": 1005,
+   "mine": false,
+   "photos": [],
+   "reactions": []
+  },
+  {
+   "at": 1793715120000,
+   "body": "Gyro spinning those steel balls is all I think about now",
+   "card": null,
+   "deleted": false,
+   "edited": null,
+   "id": 1006,
+   "mine": false,
+   "photos": [],
+   "reactions": [
+    {
+     "emoji": "❤️",
+     "mine": true
+    }
+   ]
+  }
+ ],
+ "more": false,
+ "muted": false,
+ "person": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+  "lists": [
+   "anime",
+   "manga",
+   "tv",
+   "movies",
+   "books"
+  ],
+  "name": "Kenji",
+  "open": true,
+  "relation": "friend",
+  "since": 1791471600000,
+  "username": "kenji"
+ },
+ "seen": 1004
+}

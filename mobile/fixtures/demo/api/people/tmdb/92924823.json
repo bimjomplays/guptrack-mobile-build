@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Feyd-Rautha",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "693134",
+        "kind": "movie"
+       },
+       "score": 81,
+       "title": "Dune: Part Two",
+       "year": 2024
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Feyd-Rautha",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "693134",
+        "kind": "movie"
+       },
+       "score": 81,
+       "title": "Dune: Part Two",
+       "year": 2024
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/atdAs4pFGjUQ4m2W8kJYly7N6cC.jpg",
+  "known": "Acting",
+  "name": "Austin Butler",
+  "native": null,
+  "ref": {
+   "id": "92924823",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

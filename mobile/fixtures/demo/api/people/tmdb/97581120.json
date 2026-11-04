@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Helen",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "225171",
+        "kind": "tv"
+       },
+       "score": 79,
+       "title": "Pluribus",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Helen",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "225171",
+        "kind": "tv"
+       },
+       "score": 79,
+       "title": "Pluribus",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/n6hpEZqCpxxb4yln76mfDvuz5lh.jpg",
+  "known": "Acting",
+  "name": "Miriam Shor",
+  "native": null,
+  "ref": {
+   "id": "97581120",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

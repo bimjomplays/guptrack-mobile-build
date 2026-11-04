@@ -1,0 +1,48 @@
+{
+ "title": {
+  "alt": [],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx136807-KNfQQTRD4HUK.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "One-shot"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   }
+  ],
+  "format": "One-shot",
+  "genres": [],
+  "headline": [
+   "One-shot",
+   "TBA"
+  ],
+  "idMal": null,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "136807",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 83,
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Look Back",
+  "trailer": null,
+  "volumes": null,
+  "year": null
+ }
+}

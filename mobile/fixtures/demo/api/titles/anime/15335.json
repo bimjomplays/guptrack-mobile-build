@@ -1,0 +1,94 @@
+{
+ "title": {
+  "alt": [
+   "Gintama: Kanketsu-hen - Yorozuya yo Eien Nare",
+   "劇場版 銀魂 完結篇 万事屋よ永遠なれ"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/15335-uARkRgyx8adp.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15335-QjijwChGTBs0.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "1h 50m"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Released",
+    "value": "Jul 6, 2013"
+   },
+   {
+    "label": "Season",
+    "value": "Summer 2013"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "14",
+       "to": "studio"
+      },
+      "text": "Sunrise"
+     }
+    ],
+    "value": "Sunrise"
+   },
+   {
+    "label": "Members",
+    "value": "56,258"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Sci-Fi"
+  ],
+  "headline": [
+   "Film",
+   "Summer 2013",
+   "1h 50m"
+  ],
+  "idMal": 15335,
+  "makers": [
+   {
+    "ref": {
+     "id": "14",
+     "to": "studio"
+    },
+    "text": "Sunrise"
+   }
+  ],
+  "media": "anime",
+  "minutes": 110,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "15335",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 87,
+  "scoreNote": "56,258 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Gintama: The Final Chapter - Be Forever Yorozuya",
+  "trailer": null,
+  "volumes": null,
+  "year": 2013
+ }
+}

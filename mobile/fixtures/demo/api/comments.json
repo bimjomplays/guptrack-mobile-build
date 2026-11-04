@@ -1,0 +1,52 @@
+{
+ "canPost": true,
+ "comments": [
+  {
+   "at": 1793713260000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Noor",
+    "open": true,
+    "relation": "friend",
+    "since": 1768921200000,
+    "username": "noor.reads"
+   },
+   "body": "One book a month?? We need to talk",
+   "canDelete": true,
+   "canEdit": false,
+   "edited": null,
+   "id": 901
+  },
+  {
+   "at": 1793533260000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Tobi",
+    "open": true,
+    "relation": "friend",
+    "since": 1756738800000,
+    "username": "tobiwan"
+   },
+   "body": "Your Frieren score is the right one",
+   "canDelete": true,
+   "canEdit": false,
+   "edited": null,
+   "id": 900
+  }
+ ],
+ "setting": "friends"
+}

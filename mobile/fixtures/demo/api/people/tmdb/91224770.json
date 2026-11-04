@@ -1,0 +1,93 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "2"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Princess Irulan",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "693134",
+        "kind": "movie"
+       },
+       "score": 81,
+       "title": "Dune: Part Two",
+       "year": 2024
+      }
+     },
+     {
+      "role": "Jean Tatlock",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "872585",
+        "kind": "movie"
+       },
+       "score": 80,
+       "title": "Oppenheimer",
+       "year": 2023
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Princess Irulan",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "693134",
+        "kind": "movie"
+       },
+       "score": 81,
+       "title": "Dune: Part Two",
+       "year": 2024
+      }
+     },
+     {
+      "role": "Jean Tatlock",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "872585",
+        "kind": "movie"
+       },
+       "score": 80,
+       "title": "Oppenheimer",
+       "year": 2023
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/1QfiLnofJFlOJOLCWaxyDpIN03v.jpg",
+  "known": "Acting",
+  "name": "Florence Pugh",
+  "native": null,
+  "ref": {
+   "id": "91224770",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

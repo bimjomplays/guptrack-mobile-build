@@ -1,0 +1,163 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx219282-GGsicK5XZMBy.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "219282",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "Bocchi the Rock!: Hoshi no Ashiato",
+      "year": 2027
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx186822-9zsR5NtOP0yJ.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "186822",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "The Guy She Was Interested In Wasn't a Guy At All",
+      "year": 2027
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199340-YQlmzvmcJzyt.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "199340",
+       "kind": "anime"
+      },
+      "score": 84,
+      "title": "Rascal Does Not Dream of a Dear Friend",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178972-THp4trZ9uR9b.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "178972",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "GROTESQQQUE",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177937-Tzgg6rAdhCoH.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "177937",
+       "kind": "anime"
+      },
+      "score": 82,
+      "title": "SPY x FAMILY Season 3",
+      "year": 2025
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx163270-wboZJp0ybwVK.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "163270",
+       "kind": "anime"
+      },
+      "score": 77,
+      "title": "WIND BREAKER",
+      "year": 2024
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b158927-lfO85WVguYgc.png",
+      "format": "TV",
+      "ref": {
+       "id": "158927",
+       "kind": "anime"
+      },
+      "score": 80,
+      "title": "SPY x FAMILY Season 2",
+      "year": 2023
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx158928-xqE0euKlQMnY.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "158928",
+       "kind": "anime"
+      },
+      "score": 81,
+      "title": "SPY x FAMILY CODE: White",
+      "year": 2023
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx140960-Kb6R5nYQfjmP.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "140960",
+       "kind": "anime"
+      },
+      "score": 83,
+      "title": "SPY x FAMILY",
+      "year": 2022
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx142838-26JrqcFU1ljB.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "142838",
+       "kind": "anime"
+      },
+      "score": 81,
+      "title": "SPY x FAMILY Cour 2",
+      "year": 2022
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101759-8UR7r9MNVpz2.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "101759",
+       "kind": "anime"
+      },
+      "score": 83,
+      "title": "The Promised Neverland",
+      "year": 2019
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101291-wfEdgPqtfU0l.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "101291",
+       "kind": "anime"
+      },
+      "score": 81,
+      "title": "Rascal Does Not Dream of Bunny Girl Senpai",
+      "year": 2018
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx186712-d5I2TjUQcHuI.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "186712",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "Bocchi the Rock! 2nd Season",
+      "year": null
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "CloverWorks",
+  "ref": {
+   "id": "6222",
+   "to": "studio"
+  }
+ }
+}

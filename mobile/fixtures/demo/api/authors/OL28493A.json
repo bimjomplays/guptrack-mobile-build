@@ -1,0 +1,116 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Works",
+    "value": "3"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Novel · 2019",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/10648686-M.jpg",
+       "format": "Novel",
+       "ref": {
+        "id": "OL20883297W",
+        "kind": "book"
+       },
+       "score": 76,
+       "title": "Klara and the Sun",
+       "year": 2019
+      }
+     },
+     {
+      "role": "Novel · 2005",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/1047334-M.jpg",
+       "format": "Novel",
+       "ref": {
+        "id": "OL59038W",
+        "kind": "book"
+       },
+       "score": 77,
+       "title": "Never Let Me Go",
+       "year": 2005
+      }
+     },
+     {
+      "role": "Novel · 1989",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/95742-M.jpg",
+       "format": "Novel",
+       "ref": {
+        "id": "OL59048W",
+        "kind": "book"
+       },
+       "score": 84,
+       "title": "The Remains of the Day",
+       "year": 1989
+      }
+     }
+    ],
+    "title": "Most read"
+   },
+   {
+    "items": [
+     {
+      "role": "Novel · 2019",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/10648686-M.jpg",
+       "format": "Novel",
+       "ref": {
+        "id": "OL20883297W",
+        "kind": "book"
+       },
+       "score": 76,
+       "title": "Klara and the Sun",
+       "year": 2019
+      }
+     },
+     {
+      "role": "Novel · 2005",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/1047334-M.jpg",
+       "format": "Novel",
+       "ref": {
+        "id": "OL59038W",
+        "kind": "book"
+       },
+       "score": 77,
+       "title": "Never Let Me Go",
+       "year": 2005
+      }
+     },
+     {
+      "role": "Novel · 1989",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/95742-M.jpg",
+       "format": "Novel",
+       "ref": {
+        "id": "OL59048W",
+        "kind": "book"
+       },
+       "score": 84,
+       "title": "The Remains of the Day",
+       "year": 1989
+      }
+     }
+    ],
+    "title": "Books"
+   }
+  ],
+  "image": null,
+  "known": "Author",
+  "name": "Kazuo Ishiguro",
+  "native": null,
+  "ref": {
+   "id": "OL28493A",
+   "to": "author"
+  }
+ }
+}

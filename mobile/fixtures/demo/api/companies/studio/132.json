@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b207329-6VPeZIDfF4Sr.png",
+      "format": "TV",
+      "ref": {
+       "id": "207329",
+       "kind": "anime"
+      },
+      "score": 73,
+      "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
+      "year": 2026
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "P.A.WORKS",
+  "ref": {
+   "id": "132",
+   "to": "studio"
+  }
+ }
+}

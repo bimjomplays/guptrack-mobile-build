@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx152677-gtJbgjE94lCN.png",
+      "format": "TV",
+      "ref": {
+       "id": "152677",
+       "kind": "anime"
+      },
+      "score": 71,
+      "title": "The Detective Is Already Dead Season 2",
+      "year": 2026
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "ENGI",
+  "ref": {
+   "id": "6292",
+   "to": "studio"
+  }
+ }
+}

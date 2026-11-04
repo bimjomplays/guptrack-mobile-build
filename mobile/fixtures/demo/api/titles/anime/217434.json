@@ -1,0 +1,85 @@
+{
+ "title": {
+  "alt": [
+   "無職転生Ⅲ ～異世界行ったら本気だす～ 第2クール"
+  ],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx217434-xqZNBp5U3hgY.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Status",
+    "value": "Not yet aired"
+   },
+   {
+    "label": "Aired",
+    "value": "2027"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "6309",
+       "to": "studio"
+      },
+      "text": "Studio Bind"
+     }
+    ],
+    "value": "Studio Bind"
+   },
+   {
+    "label": "Members",
+    "value": "30,879"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Adventure",
+   "Drama",
+   "Ecchi",
+   "Fantasy"
+  ],
+  "headline": [
+   "TV",
+   "2027"
+  ],
+  "idMal": 65077,
+  "makers": [
+   {
+    "ref": {
+     "id": "6309",
+     "to": "studio"
+    },
+    "text": "Studio Bind"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "217434",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": null,
+  "scoreNote": "30,879 members",
+  "seasons": [],
+  "staff": [],
+  "status": "upcoming",
+  "statusText": "Not yet aired",
+  "synopsis": [],
+  "tags": [],
+  "title": "Mushoku Tensei III: Isekai Ittara Honki Dasu Part 2",
+  "trailer": null,
+  "volumes": null,
+  "year": 2027
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "title": {
+  "alt": [],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx143293-1ngwckHDsK95.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "ONA"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   }
+  ],
+  "format": "ONA",
+  "genres": [],
+  "headline": [
+   "ONA",
+   "TBA"
+  ],
+  "idMal": null,
+  "makers": [],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "143293",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": null,
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "One Piece: Annecy Festival 60th Anniversary",
+  "trailer": null,
+  "volumes": null,
+  "year": null
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b185-GvXiR8AKTmdn.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "185",
+       "kind": "anime"
+      },
+      "score": 82,
+      "title": "Initial D 1st Stage",
+      "year": 1998
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Studio Comet",
+  "ref": {
+   "id": "126",
+   "to": "studio"
+  }
+ }
+}

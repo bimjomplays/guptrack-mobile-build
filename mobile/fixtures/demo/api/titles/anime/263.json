@@ -1,0 +1,98 @@
+{
+ "title": {
+  "alt": [
+   "Hajime no Ippo: THE FIGHTING!",
+   "はじめの一歩 THE FIGHTING!"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/263-8Zejtdb3r2bI.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 75,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx263-ivVyn9xAgwSZ.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "75"
+   },
+   {
+    "label": "Episode length",
+    "value": "23 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 4, 2000"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2000"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "11",
+       "to": "studio"
+      },
+      "text": "MADHOUSE"
+     }
+    ],
+    "value": "MADHOUSE"
+   },
+   {
+    "label": "Members",
+    "value": "148,222"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Sports"
+  ],
+  "headline": [
+   "TV",
+   "Fall 2000",
+   "75 episodes"
+  ],
+  "idMal": 263,
+  "makers": [
+   {
+    "ref": {
+     "id": "11",
+     "to": "studio"
+    },
+    "text": "MADHOUSE"
+   }
+  ],
+  "media": "anime",
+  "minutes": 23,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "263",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 87,
+  "scoreNote": "148,222 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Hajime no Ippo: The Fighting!",
+  "trailer": null,
+  "volumes": null,
+  "year": 2000
+ }
+}

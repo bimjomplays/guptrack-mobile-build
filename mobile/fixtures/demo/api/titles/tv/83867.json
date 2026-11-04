@@ -1,0 +1,338 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://image.tmdb.org/t/p/w1280/quCeAmVQHfsdcYkicbxZWVauCVb.jpg",
+  "cast": [
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/qwbjcyDN37OHiln4a6P4LP31o7F.jpg",
+     "name": "Diego Luna",
+     "ref": {
+      "id": "91457653",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Cassian Andor"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/x0lmqgkmphvOCSTHk2oxsaxA9Ra.jpg",
+     "name": "Anton Lesser",
+     "ref": {
+      "id": "90855727",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Major Partagaz"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/5hn7WeXi6wguwxTPTSmcmzHAs9.jpg",
+     "name": "Muhannad Bhaier",
+     "ref": {
+      "id": "90003133",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Wilmon"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/mW7xmtGV4y79kQGn0zkKVGDMAmw.jpg",
+     "name": "Stellan Skarsgård",
+     "ref": {
+      "id": "92691986",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Luthen Rael"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/wWcby4ARYqr8d92ZdjyQcfaiJBW.jpg",
+     "name": "Denise Gough",
+     "ref": {
+      "id": "93509980",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Dedra Meero"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/rLzduQpYJnZJKkXv3jRc7MDHwoI.jpg",
+     "name": "Kyle Soller",
+     "ref": {
+      "id": "98828014",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Syril Karn"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/hzu7OqTmNCT1xdCdmwBSf2yJvaO.jpg",
+     "name": "Adria Arjona",
+     "ref": {
+      "id": "93538194",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Bix Caleen"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/4eOoW1PNBZfxRW0g8RmYH8bL6mq.jpg",
+     "name": "Genevieve O&#39;Reilly",
+     "ref": {
+      "id": "95745831",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Mon Mothma"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/63vFGISlg0mD1c0tAjxlMMPgWVj.jpg",
+     "name": "Faye Marsay",
+     "ref": {
+      "id": "97489900",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Vel Sartha"
+   }
+  ],
+  "characters": [],
+  "count": null,
+  "cover": "https://image.tmdb.org/t/p/w500/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Series"
+   },
+   {
+    "label": "Status",
+    "value": "Ended"
+   },
+   {
+    "label": "Aired",
+    "value": "Sep 21, 2022 – May 13, 2025"
+   },
+   {
+    "label": "Creator",
+    "links": [
+     {
+      "ref": {
+       "id": "94836411",
+       "source": "tmdb",
+       "to": "person"
+      },
+      "text": "Tony Gilroy"
+     }
+    ],
+    "value": "Tony Gilroy"
+   },
+   {
+    "label": "Rated",
+    "value": "TV-14"
+   },
+   {
+    "label": "Language",
+    "value": "English"
+   }
+  ],
+  "format": "Series",
+  "genres": [
+   "Sci-Fi & Fantasy",
+   "Action & Adventure",
+   "Drama",
+   "War & Politics"
+  ],
+  "headline": [
+   "Series",
+   "2022–2025",
+   "TV-14"
+  ],
+  "makers": [
+   {
+    "ref": {
+     "id": "94836411",
+     "source": "tmdb",
+     "to": "person"
+    },
+    "text": "Tony Gilroy"
+   }
+  ],
+  "media": "tv",
+  "minutes": 45,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "95396",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "Severance",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "136315",
+     "kind": "tv"
+    },
+    "score": 82,
+    "title": "The Bear",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "126308",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "Shōgun",
+    "year": 2024
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "100088",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "The Last of Us",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "1396",
+     "kind": "tv"
+    },
+    "score": 90,
+    "title": "Breaking Bad",
+    "year": 2008
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "95480",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Slow Horses",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "225171",
+     "kind": "tv"
+    },
+    "score": 79,
+    "title": "Pluribus",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "76479",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "The Boys",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "87108",
+     "kind": "tv"
+    },
+    "score": 87,
+    "title": "Chernobyl",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "108978",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Reacher",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "110316",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Alice in Borderland",
+    "year": 2020
+   }
+  ],
+  "ref": {
+   "id": "83867",
+   "kind": "tv"
+  },
+  "relations": [],
+  "score": 83,
+  "scoreNote": "21,057 votes",
+  "seasons": [],
+  "staff": [
+   {
+    "person": {
+     "image": null,
+     "name": "Tony Gilroy",
+     "ref": {
+      "id": "94836411",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Creator"
+   }
+  ],
+  "status": "finished",
+  "statusText": "Ended",
+  "synopsis": [
+   [
+    {
+     "text": "In an era filled with danger, deception and intrigue, Cassian Andor will discover the difference he can make in the struggle against the tyrannical Galactic Empire. He embarks on a path that is destined to turn him into a rebel hero."
+    }
+   ]
+  ],
+  "tags": [],
+  "title": "Andor",
+  "trailer": null,
+  "year": 2022
+ }
+}

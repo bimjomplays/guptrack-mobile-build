@@ -1,0 +1,99 @@
+{
+ "title": {
+  "alt": [
+   "BLACK LAGOON: Roberta's Blood Trail",
+   "BLACK LAGOON Roberta's Blood Trail"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/4901-F5KERZpTwS3T.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 5,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx4901-evMxxc1A8pCF.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "OVA"
+   },
+   {
+    "label": "Episodes",
+    "value": "5"
+   },
+   {
+    "label": "Episode length",
+    "value": "33 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Jun 27, 2010"
+   },
+   {
+    "label": "Season",
+    "value": "Summer 2010"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "11",
+       "to": "studio"
+      },
+      "text": "MADHOUSE"
+     }
+    ],
+    "value": "MADHOUSE"
+   },
+   {
+    "label": "Members",
+    "value": "67,477"
+   }
+  ],
+  "format": "OVA",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Thriller"
+  ],
+  "headline": [
+   "OVA",
+   "Summer 2010",
+   "5 episodes"
+  ],
+  "idMal": 4901,
+  "makers": [
+   {
+    "ref": {
+     "id": "11",
+     "to": "studio"
+    },
+    "text": "MADHOUSE"
+   }
+  ],
+  "media": "anime",
+  "minutes": 33,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "4901",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 79,
+  "scoreNote": "67,477 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Black Lagoon: Roberta's Blood Trail",
+  "trailer": null,
+  "volumes": null,
+  "year": 2010
+ }
+}

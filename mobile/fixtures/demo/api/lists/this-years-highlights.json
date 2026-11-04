@@ -1,0 +1,122 @@
+{
+ "count": 9,
+ "covers": [
+  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163134-yieRFbvUOH9a.jpg",
+  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172463-LnXqHzt74SJL.jpg",
+  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182896-mvxTVHGdDB4q.jpg",
+  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194884-rHgGAzKSCEWz.jpg"
+ ],
+ "description": "The year's standouts, in the order I'd recommend them.",
+ "id": 2,
+ "items": [
+  {
+   "added": 1793198460000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163134-yieRFbvUOH9a.jpg",
+   "format": "TV",
+   "id": "163134",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Re:ZERO -Starting Life in Another World- Season 3",
+   "year": 2024
+  },
+  {
+   "added": 1793194860000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172463-LnXqHzt74SJL.jpg",
+   "format": "TV",
+   "id": "172463",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "JUJUTSU KAISEN Season 3: The Culling Game Part 1",
+   "year": 2026
+  },
+  {
+   "added": 1793191260000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182896-mvxTVHGdDB4q.jpg",
+   "format": "TV",
+   "id": "182896",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "My Hero Academia FINAL SEASON",
+   "year": 2025
+  },
+  {
+   "added": 1793187660000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194884-rHgGAzKSCEWz.jpg",
+   "format": "Special",
+   "id": "194884",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Kaguya-sama: Love Is War -Stairway to Adulthood-",
+   "year": 2025
+  },
+  {
+   "added": 1793184060000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+   "format": "ONA",
+   "id": "210482",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+   "year": 2026
+  },
+  {
+   "added": 1793180460000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png",
+   "format": "ONA",
+   "id": "195539",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Cyberpunk: Edgerunners 2",
+   "year": 2026
+  },
+  {
+   "added": 1793176860000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg",
+   "format": "TV",
+   "id": "178789",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Mushoku Tensei: Jobless Reincarnation Season 3",
+   "year": 2026
+  },
+  {
+   "added": 1793173260000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx147105-rwOX8qyUy8gV.jpg",
+   "format": "ONA",
+   "id": "147105",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Witch Hat Atelier",
+   "year": 2026
+  },
+  {
+   "added": 1793169660000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166240-PBV7zukIHW7V.png",
+   "format": "TV",
+   "id": "166240",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Demon Slayer: Kimetsu no Yaiba Hashira Training Arc",
+   "year": 2024
+  }
+ ],
+ "level": {
+  "list": "public",
+  "profile": "public"
+ },
+ "media": [
+  "anime"
+ ],
+ "name": "This year's highlights",
+ "slug": "this-years-highlights",
+ "updated": 1793198460000
+}

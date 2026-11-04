@@ -1,0 +1,64 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206814-PVVzRbf1IQpe.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "206814",
+       "kind": "anime"
+      },
+      "score": 81,
+      "title": "Dragon Ball Super: Beerus",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21-ELSYx3yMPcKM.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "21",
+       "kind": "anime"
+      },
+      "score": 87,
+      "title": "ONE PIECE",
+      "year": 1999
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx813-ZhnFNOeCU5dQ.png",
+      "format": "TV",
+      "ref": {
+       "id": "813",
+       "kind": "anime"
+      },
+      "score": 81,
+      "title": "Dragon Ball Z",
+      "year": 1989
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx223-scE5uJfXqqj8.png",
+      "format": "TV",
+      "ref": {
+       "id": "223",
+       "kind": "anime"
+      },
+      "score": 78,
+      "title": "Dragon Ball",
+      "year": 1986
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Toei Animation",
+  "ref": {
+   "id": "18",
+   "to": "studio"
+  }
+ }
+}

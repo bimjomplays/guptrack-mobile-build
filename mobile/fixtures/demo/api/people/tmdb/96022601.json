@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Karube Daikichi, Daikichi Karube",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "110316",
+        "kind": "tv"
+       },
+       "score": 81,
+       "title": "Alice in Borderland",
+       "year": 2020
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Karube Daikichi, Daikichi Karube",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "110316",
+        "kind": "tv"
+       },
+       "score": 81,
+       "title": "Alice in Borderland",
+       "year": 2020
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/a4aTIpAFyXXzmhDMZ56kV29s8kU.jpg",
+  "known": "Acting",
+  "name": "Keita Machida",
+  "native": null,
+  "ref": {
+   "id": "96022601",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

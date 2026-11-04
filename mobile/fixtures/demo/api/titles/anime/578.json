@@ -1,0 +1,92 @@
+{
+ "title": {
+  "alt": [
+   "Hotaru no Haka",
+   "火垂るの墓"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/578.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx578-vU6XcOlb1XFU.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "1h 28m"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Released",
+    "value": "Apr 15, 1988"
+   },
+   {
+    "label": "Season",
+    "value": "Spring 1988"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "21",
+       "to": "studio"
+      },
+      "text": "Studio Ghibli"
+     }
+    ],
+    "value": "Studio Ghibli"
+   },
+   {
+    "label": "Members",
+    "value": "206,353"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Drama"
+  ],
+  "headline": [
+   "Film",
+   "Spring 1988",
+   "1h 28m"
+  ],
+  "idMal": 578,
+  "makers": [
+   {
+    "ref": {
+     "id": "21",
+     "to": "studio"
+    },
+    "text": "Studio Ghibli"
+   }
+  ],
+  "media": "anime",
+  "minutes": 88,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "578",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 83,
+  "scoreNote": "206,353 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Grave of the Fireflies",
+  "trailer": null,
+  "volumes": null,
+  "year": 1988
+ }
+}

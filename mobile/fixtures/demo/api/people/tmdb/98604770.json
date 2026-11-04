@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Col. Steven J. Lockjaw",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1054867",
+        "kind": "movie"
+       },
+       "score": 73,
+       "title": "One Battle After Another",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Col. Steven J. Lockjaw",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1054867",
+        "kind": "movie"
+       },
+       "score": 73,
+       "title": "One Battle After Another",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/9glqNTVpFpdN1nFklKaHPUyCwR6.jpg",
+  "known": "Acting",
+  "name": "Sean Penn",
+  "native": null,
+  "ref": {
+   "id": "98604770",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

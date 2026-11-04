@@ -1,0 +1,63 @@
+{
+ "title": {
+  "alt": [
+   "Jeoldaehoegwi",
+   "절대회귀"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/180891-q5sLZRnEzqih.jpg",
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx180891-ZBbyOWSYI41R.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Status",
+    "value": "Releasing"
+   },
+   {
+    "label": "Published",
+    "value": "Jul 29, 2024"
+   },
+   {
+    "label": "Members",
+    "value": "20,075"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Fantasy"
+  ],
+  "headline": [
+   "Manga",
+   "2024"
+  ],
+  "idMal": 172750,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "180891",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 82,
+  "scoreNote": "20,075 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Releasing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Absolute Regression",
+  "trailer": null,
+  "volumes": null,
+  "year": 2024
+ }
+}

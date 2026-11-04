@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Pearline",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1233413",
+        "kind": "movie"
+       },
+       "score": 75,
+       "title": "Sinners",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Pearline",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1233413",
+        "kind": "movie"
+       },
+       "score": 75,
+       "title": "Sinners",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/1PQmquJ3LRnTnUnut0UZBLZuBuO.jpg",
+  "known": "Acting",
+  "name": "Jayme Lawson",
+  "native": null,
+  "ref": {
+   "id": "94676629",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

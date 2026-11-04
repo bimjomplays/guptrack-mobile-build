@@ -1,0 +1,50 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Occupation",
+    "value": "Voice Actor"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "character": {
+       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b20147-paS2fNaB3yOv.png",
+       "name": "Funny Valentine",
+       "ref": {
+        "id": "20147",
+        "to": "character"
+       }
+      },
+      "role": "Supporting",
+      "title": {
+       "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210482-P1VNKbqdJ6Zj.jpg",
+       "format": "ONA",
+       "ref": {
+        "id": "210482",
+        "kind": "anime"
+       },
+       "score": 86,
+       "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+       "year": 2026
+      }
+     }
+    ],
+    "title": "Voice roles"
+   }
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95002-nDIvHaynicEg.png",
+  "known": "Voice Actor",
+  "name": "Tomokazu Sugita",
+  "native": null,
+  "ref": {
+   "id": "95002",
+   "source": "anilist",
+   "to": "person"
+  }
+ }
+}

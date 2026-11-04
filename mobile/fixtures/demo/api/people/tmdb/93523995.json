@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "District Attorney Gil Colson",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "414906",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "The Batman",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "District Attorney Gil Colson",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "414906",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "The Batman",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/5UANyM4co2nwYPgSEmGeNlZRm7V.jpg",
+  "known": "Acting",
+  "name": "Peter Sarsgaard",
+  "native": null,
+  "ref": {
+   "id": "93523995",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

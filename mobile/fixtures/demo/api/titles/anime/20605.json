@@ -1,0 +1,100 @@
+{
+ "title": {
+  "alt": [
+   "東京喰種 トーキョーグール"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20605-RCJ7M71zLmrh.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 12,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b20605-k665mVkSug8D.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "12"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Jul 4, 2014"
+   },
+   {
+    "label": "Season",
+    "value": "Summer 2014"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "1",
+       "to": "studio"
+      },
+      "text": "Studio Pierrot"
+     }
+    ],
+    "value": "Studio Pierrot"
+   },
+   {
+    "label": "Members",
+    "value": "752,342"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Horror",
+   "Mystery",
+   "Psychological",
+   "Supernatural"
+  ],
+  "headline": [
+   "TV",
+   "Summer 2014",
+   "12 episodes"
+  ],
+  "idMal": 22319,
+  "makers": [
+   {
+    "ref": {
+     "id": "1",
+     "to": "studio"
+    },
+    "text": "Studio Pierrot"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "20605",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 76,
+  "scoreNote": "752,342 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Tokyo Ghoul",
+  "trailer": null,
+  "volumes": null,
+  "year": 2014
+ }
+}

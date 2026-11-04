@@ -1,0 +1,100 @@
+{
+ "title": {
+  "alt": [
+   "Shingeki no Kyojin: The Final Season - Kanketsu-hen Zenpen",
+   "進撃の巨人 The Final Season完結編 前編"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/146984-yAkTtW2AExVj.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146984-GXrLeT6vQqyP.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Special"
+   },
+   {
+    "label": "Episodes",
+    "value": "1"
+   },
+   {
+    "label": "Episode length",
+    "value": "61 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Mar 4, 2023"
+   },
+   {
+    "label": "Season",
+    "value": "Winter 2023"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "569",
+       "to": "studio"
+      },
+      "text": "MAPPA"
+     }
+    ],
+    "value": "MAPPA"
+   },
+   {
+    "label": "Members",
+    "value": "256,777"
+   }
+  ],
+  "format": "Special",
+  "genres": [
+   "Action",
+   "Drama",
+   "Fantasy",
+   "Mystery",
+   "Psychological"
+  ],
+  "headline": [
+   "Special",
+   "Winter 2023",
+   "1 episode"
+  ],
+  "idMal": 51535,
+  "makers": [
+   {
+    "ref": {
+     "id": "569",
+     "to": "studio"
+    },
+    "text": "MAPPA"
+   }
+  ],
+  "media": "anime",
+  "minutes": 61,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "146984",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 87,
+  "scoreNote": "256,777 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Attack on Titan Final Season THE FINAL CHAPTERS Special 1",
+  "trailer": null,
+  "volumes": null,
+  "year": 2023
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "box": "new",
+ "canSend": true,
+ "messages": [],
+ "more": false,
+ "muted": false,
+ "person": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b723-vp5hPptgnNEC.png",
+  "lists": [
+   "anime",
+   "manga",
+   "tv",
+   "movies",
+   "books"
+  ],
+  "name": "Nami",
+  "open": true,
+  "relation": "incoming",
+  "since": 1793716140000,
+  "username": "nami.watches"
+ },
+ "seen": null
+}

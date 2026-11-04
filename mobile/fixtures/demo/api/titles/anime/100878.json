@@ -1,0 +1,93 @@
+{
+ "title": {
+  "alt": [
+   "Youjo Senki Movie",
+   "劇場版 幼女戦記"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/100878-Lslq3VqoNanU.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100878-npKVJvggmK6a.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "1h 38m"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Released",
+    "value": "Feb 8, 2019"
+   },
+   {
+    "label": "Season",
+    "value": "Winter 2019"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "6148",
+       "to": "studio"
+      },
+      "text": "NUT"
+     }
+    ],
+    "value": "NUT"
+   },
+   {
+    "label": "Members",
+    "value": "105,504"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Action",
+   "Fantasy"
+  ],
+  "headline": [
+   "Film",
+   "Winter 2019",
+   "1h 38m"
+  ],
+  "idMal": 37055,
+  "makers": [
+   {
+    "ref": {
+     "id": "6148",
+     "to": "studio"
+    },
+    "text": "NUT"
+   }
+  ],
+  "media": "anime",
+  "minutes": 98,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "100878",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 81,
+  "scoreNote": "105,504 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Saga of Tanya the Evil - the Movie -",
+  "trailer": null,
+  "volumes": null,
+  "year": 2019
+ }
+}

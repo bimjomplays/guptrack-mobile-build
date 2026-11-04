@@ -1,0 +1,99 @@
+{
+ "title": {
+  "alt": [
+   "Boku no Hero Academia 3",
+   "僕のヒーローアカデミア３"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/100166-k7RXwN5vZg0r.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 25,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100166-jUCZYbzn2XLw.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "25"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Apr 7, 2018"
+   },
+   {
+    "label": "Season",
+    "value": "Spring 2018"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "4",
+       "to": "studio"
+      },
+      "text": "bones"
+     }
+    ],
+    "value": "bones"
+   },
+   {
+    "label": "Members",
+    "value": "609,056"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Drama"
+  ],
+  "headline": [
+   "TV",
+   "Spring 2018",
+   "25 episodes"
+  ],
+  "idMal": 36456,
+  "makers": [
+   {
+    "ref": {
+     "id": "4",
+     "to": "studio"
+    },
+    "text": "bones"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "100166",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 79,
+  "scoreNote": "609,056 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "My Hero Academia Season 3",
+  "trailer": null,
+  "volumes": null,
+  "year": 2018
+ }
+}

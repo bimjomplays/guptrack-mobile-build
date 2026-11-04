@@ -1,0 +1,1001 @@
+{
+ "shelves": [
+  {
+   "spec": {
+    "filter": {
+     "sort": "trending"
+    },
+    "fresh": true,
+    "min": 1,
+    "title": "Trending now"
+   },
+   "titles": [
+    {
+     "by": "Andy Weir",
+     "count": 496,
+     "cover": "https://covers.openlibrary.org/b/id/11200092-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL21745884W",
+     "popularity": 61329,
+     "score": 91,
+     "source": "openlibrary",
+     "sourceId": "OL21745884W",
+     "start": "2021",
+     "status": "finished",
+     "tags": [],
+     "title": "Project Hail Mary",
+     "trending": 0,
+     "year": 2021
+    },
+    {
+     "by": "Andy Weir",
+     "count": 407,
+     "cover": "https://covers.openlibrary.org/b/id/11447888-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL17091839W",
+     "popularity": 58192,
+     "score": 88,
+     "source": "openlibrary",
+     "sourceId": "OL17091839W",
+     "start": "2011",
+     "status": "finished",
+     "tags": [
+      "Survival"
+     ],
+     "title": "The Martian",
+     "trending": 0,
+     "year": 2011
+    },
+    {
+     "by": "Frank Herbert",
+     "count": 608,
+     "cover": "https://covers.openlibrary.org/b/id/11481354-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL893414W",
+     "popularity": 53082,
+     "score": 86,
+     "source": "openlibrary",
+     "sourceId": "OL893414W",
+     "start": "1965",
+     "status": "finished",
+     "tags": [],
+     "title": "Dune",
+     "trending": 0,
+     "year": 1965
+    },
+    {
+     "by": "Susanna Clarke",
+     "count": 272,
+     "cover": "https://covers.openlibrary.org/b/id/10226290-L.jpg",
+     "format": "Novel",
+     "genres": [],
+     "id": "ol:OL20893680W",
+     "popularity": 50914,
+     "score": 87,
+     "source": "openlibrary",
+     "sourceId": "OL20893680W",
+     "start": "2020",
+     "status": "finished",
+     "tags": [],
+     "title": "Piranesi",
+     "trending": 0,
+     "year": 2020
+    },
+    {
+     "by": "Gabrielle Zevin",
+     "count": 460,
+     "cover": "https://covers.openlibrary.org/b/id/12859975-L.jpg",
+     "format": "Novel",
+     "genres": [],
+     "id": "ol:OL26004554W",
+     "popularity": 46419,
+     "score": 85,
+     "source": "openlibrary",
+     "sourceId": "OL26004554W",
+     "start": "2022",
+     "status": "finished",
+     "tags": [],
+     "title": "Tomorrow, and Tomorrow, and Tomorrow",
+     "trending": 0,
+     "year": 2022
+    },
+    {
+     "by": "Patrick Rothfuss",
+     "count": 736,
+     "cover": "https://covers.openlibrary.org/b/id/11480483-L.jpg",
+     "format": "Novel",
+     "genres": [],
+     "id": "ol:OL8479867W",
+     "popularity": 43559,
+     "score": 87,
+     "source": "openlibrary",
+     "sourceId": "OL8479867W",
+     "start": "2007",
+     "status": "finished",
+     "tags": [],
+     "title": "The Name of the Wind",
+     "trending": 0,
+     "year": 2007
+    },
+    {
+     "by": "Kazuo Ishiguro",
+     "count": 334,
+     "cover": "https://covers.openlibrary.org/b/id/10648686-L.jpg",
+     "format": "Novel",
+     "genres": [],
+     "id": "ol:OL20883297W",
+     "popularity": 39868,
+     "score": 76,
+     "source": "openlibrary",
+     "sourceId": "OL20883297W",
+     "start": "2019",
+     "status": "finished",
+     "tags": [],
+     "title": "Klara and the Sun",
+     "trending": 0,
+     "year": 2019
+    },
+    {
+     "by": "R. F. Kuang",
+     "count": 577,
+     "cover": "https://covers.openlibrary.org/b/id/12468631-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "History"
+     ],
+     "id": "ol:OL26443093W",
+     "popularity": 35559,
+     "score": 81,
+     "source": "openlibrary",
+     "sourceId": "OL26443093W",
+     "start": "2022",
+     "status": "finished",
+     "tags": [
+      "Magic"
+     ],
+     "title": "Babel",
+     "trending": 0,
+     "year": 2022
+    },
+    {
+     "by": "刘慈欣",
+     "count": 562,
+     "cover": "https://covers.openlibrary.org/b/id/10526598-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL16314245W",
+     "popularity": 33421,
+     "score": 89,
+     "source": "openlibrary",
+     "sourceId": "OL16314245W",
+     "start": "2008",
+     "status": "finished",
+     "tags": [],
+     "title": "The Dark Forest (The Three-Body Problem Series Book 2)",
+     "trending": 0,
+     "year": 2008
+    },
+    {
+     "by": "Brandon Sanderson",
+     "count": 1712,
+     "cover": "https://covers.openlibrary.org/b/id/11329782-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi",
+      "Fantasy"
+     ],
+     "id": "ol:OL16044142W",
+     "popularity": 29632,
+     "score": 98,
+     "source": "openlibrary",
+     "sourceId": "OL16044142W",
+     "start": "2001",
+     "status": "finished",
+     "tags": [
+      "Magic"
+     ],
+     "title": "Mistborn",
+     "trending": 0,
+     "year": 2001
+    },
+    {
+     "by": "J.R.R. Tolkien",
+     "count": 310,
+     "cover": "https://covers.openlibrary.org/b/id/14627509-L.jpg",
+     "format": "Book",
+     "genres": [
+      "Fantasy"
+     ],
+     "id": "ol:OL27482W",
+     "popularity": 26940,
+     "score": 86,
+     "source": "openlibrary",
+     "sourceId": "OL27482W",
+     "start": "1937",
+     "status": "finished",
+     "tags": [],
+     "title": "The Hobbit",
+     "trending": 0,
+     "year": 1937
+    },
+    {
+     "by": "Kazuo Ishiguro",
+     "count": 319,
+     "cover": "https://covers.openlibrary.org/b/id/1047334-L.jpg",
+     "format": "Novel",
+     "genres": [],
+     "id": "ol:OL59038W",
+     "popularity": 21723,
+     "score": 77,
+     "source": "openlibrary",
+     "sourceId": "OL59038W",
+     "start": "2005",
+     "status": "finished",
+     "tags": [],
+     "title": "Never Let Me Go",
+     "trending": 0,
+     "year": 2005
+    },
+    {
+     "by": "Andy Weir",
+     "count": 322,
+     "cover": "https://covers.openlibrary.org/b/id/8235551-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL17837968W",
+     "popularity": 18722,
+     "score": 74,
+     "source": "openlibrary",
+     "sourceId": "OL17837968W",
+     "start": "2017",
+     "status": "finished",
+     "tags": [],
+     "title": "Artemis",
+     "trending": 0,
+     "year": 2017
+    },
+    {
+     "by": "Kazuo Ishiguro",
+     "count": 254,
+     "cover": "https://covers.openlibrary.org/b/id/95742-L.jpg",
+     "format": "Novel",
+     "genres": [],
+     "id": "ol:OL59048W",
+     "popularity": 16046,
+     "score": 84,
+     "source": "openlibrary",
+     "sourceId": "OL59048W",
+     "start": "1989",
+     "status": "finished",
+     "tags": [],
+     "title": "The Remains of the Day",
+     "trending": 0,
+     "year": 1989
+    }
+   ]
+  },
+  {
+   "spec": {
+    "filter": {
+     "sort": "popular"
+    },
+    "min": 1,
+    "note": "All time",
+    "title": "Popular"
+   },
+   "titles": [
+    {
+     "by": "Andy Weir",
+     "count": 496,
+     "cover": "https://covers.openlibrary.org/b/id/11200092-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL21745884W",
+     "popularity": 61329,
+     "score": 91,
+     "source": "openlibrary",
+     "sourceId": "OL21745884W",
+     "start": "2021",
+     "status": "finished",
+     "tags": [],
+     "title": "Project Hail Mary",
+     "trending": 0,
+     "year": 2021
+    },
+    {
+     "by": "Andy Weir",
+     "count": 407,
+     "cover": "https://covers.openlibrary.org/b/id/11447888-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL17091839W",
+     "popularity": 58192,
+     "score": 88,
+     "source": "openlibrary",
+     "sourceId": "OL17091839W",
+     "start": "2011",
+     "status": "finished",
+     "tags": [
+      "Survival"
+     ],
+     "title": "The Martian",
+     "trending": 0,
+     "year": 2011
+    },
+    {
+     "by": "Frank Herbert",
+     "count": 608,
+     "cover": "https://covers.openlibrary.org/b/id/11481354-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL893414W",
+     "popularity": 53082,
+     "score": 86,
+     "source": "openlibrary",
+     "sourceId": "OL893414W",
+     "start": "1965",
+     "status": "finished",
+     "tags": [],
+     "title": "Dune",
+     "trending": 0,
+     "year": 1965
+    },
+    {
+     "by": "Susanna Clarke",
+     "count": 272,
+     "cover": "https://covers.openlibrary.org/b/id/10226290-L.jpg",
+     "format": "Novel",
+     "genres": [],
+     "id": "ol:OL20893680W",
+     "popularity": 50914,
+     "score": 87,
+     "source": "openlibrary",
+     "sourceId": "OL20893680W",
+     "start": "2020",
+     "status": "finished",
+     "tags": [],
+     "title": "Piranesi",
+     "trending": 0,
+     "year": 2020
+    },
+    {
+     "by": "Gabrielle Zevin",
+     "count": 460,
+     "cover": "https://covers.openlibrary.org/b/id/12859975-L.jpg",
+     "format": "Novel",
+     "genres": [],
+     "id": "ol:OL26004554W",
+     "popularity": 46419,
+     "score": 85,
+     "source": "openlibrary",
+     "sourceId": "OL26004554W",
+     "start": "2022",
+     "status": "finished",
+     "tags": [],
+     "title": "Tomorrow, and Tomorrow, and Tomorrow",
+     "trending": 0,
+     "year": 2022
+    },
+    {
+     "by": "Patrick Rothfuss",
+     "count": 736,
+     "cover": "https://covers.openlibrary.org/b/id/11480483-L.jpg",
+     "format": "Novel",
+     "genres": [],
+     "id": "ol:OL8479867W",
+     "popularity": 43559,
+     "score": 87,
+     "source": "openlibrary",
+     "sourceId": "OL8479867W",
+     "start": "2007",
+     "status": "finished",
+     "tags": [],
+     "title": "The Name of the Wind",
+     "trending": 0,
+     "year": 2007
+    },
+    {
+     "by": "Kazuo Ishiguro",
+     "count": 334,
+     "cover": "https://covers.openlibrary.org/b/id/10648686-L.jpg",
+     "format": "Novel",
+     "genres": [],
+     "id": "ol:OL20883297W",
+     "popularity": 39868,
+     "score": 76,
+     "source": "openlibrary",
+     "sourceId": "OL20883297W",
+     "start": "2019",
+     "status": "finished",
+     "tags": [],
+     "title": "Klara and the Sun",
+     "trending": 0,
+     "year": 2019
+    },
+    {
+     "by": "R. F. Kuang",
+     "count": 577,
+     "cover": "https://covers.openlibrary.org/b/id/12468631-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "History"
+     ],
+     "id": "ol:OL26443093W",
+     "popularity": 35559,
+     "score": 81,
+     "source": "openlibrary",
+     "sourceId": "OL26443093W",
+     "start": "2022",
+     "status": "finished",
+     "tags": [
+      "Magic"
+     ],
+     "title": "Babel",
+     "trending": 0,
+     "year": 2022
+    },
+    {
+     "by": "刘慈欣",
+     "count": 562,
+     "cover": "https://covers.openlibrary.org/b/id/10526598-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL16314245W",
+     "popularity": 33421,
+     "score": 89,
+     "source": "openlibrary",
+     "sourceId": "OL16314245W",
+     "start": "2008",
+     "status": "finished",
+     "tags": [],
+     "title": "The Dark Forest (The Three-Body Problem Series Book 2)",
+     "trending": 0,
+     "year": 2008
+    },
+    {
+     "by": "Brandon Sanderson",
+     "count": 1712,
+     "cover": "https://covers.openlibrary.org/b/id/11329782-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi",
+      "Fantasy"
+     ],
+     "id": "ol:OL16044142W",
+     "popularity": 29632,
+     "score": 98,
+     "source": "openlibrary",
+     "sourceId": "OL16044142W",
+     "start": "2001",
+     "status": "finished",
+     "tags": [
+      "Magic"
+     ],
+     "title": "Mistborn",
+     "trending": 0,
+     "year": 2001
+    },
+    {
+     "by": "J.R.R. Tolkien",
+     "count": 310,
+     "cover": "https://covers.openlibrary.org/b/id/14627509-L.jpg",
+     "format": "Book",
+     "genres": [
+      "Fantasy"
+     ],
+     "id": "ol:OL27482W",
+     "popularity": 26940,
+     "score": 86,
+     "source": "openlibrary",
+     "sourceId": "OL27482W",
+     "start": "1937",
+     "status": "finished",
+     "tags": [],
+     "title": "The Hobbit",
+     "trending": 0,
+     "year": 1937
+    },
+    {
+     "by": "Kazuo Ishiguro",
+     "count": 319,
+     "cover": "https://covers.openlibrary.org/b/id/1047334-L.jpg",
+     "format": "Novel",
+     "genres": [],
+     "id": "ol:OL59038W",
+     "popularity": 21723,
+     "score": 77,
+     "source": "openlibrary",
+     "sourceId": "OL59038W",
+     "start": "2005",
+     "status": "finished",
+     "tags": [],
+     "title": "Never Let Me Go",
+     "trending": 0,
+     "year": 2005
+    },
+    {
+     "by": "Andy Weir",
+     "count": 322,
+     "cover": "https://covers.openlibrary.org/b/id/8235551-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL17837968W",
+     "popularity": 18722,
+     "score": 74,
+     "source": "openlibrary",
+     "sourceId": "OL17837968W",
+     "start": "2017",
+     "status": "finished",
+     "tags": [],
+     "title": "Artemis",
+     "trending": 0,
+     "year": 2017
+    },
+    {
+     "by": "Kazuo Ishiguro",
+     "count": 254,
+     "cover": "https://covers.openlibrary.org/b/id/95742-L.jpg",
+     "format": "Novel",
+     "genres": [],
+     "id": "ol:OL59048W",
+     "popularity": 16046,
+     "score": 84,
+     "source": "openlibrary",
+     "sourceId": "OL59048W",
+     "start": "1989",
+     "status": "finished",
+     "tags": [],
+     "title": "The Remains of the Day",
+     "trending": 0,
+     "year": 1989
+    }
+   ]
+  },
+  {
+   "spec": {
+    "filter": {
+     "sort": "top"
+    },
+    "min": 1,
+    "title": "Top rated"
+   },
+   "titles": [
+    {
+     "by": "Brandon Sanderson",
+     "count": 1712,
+     "cover": "https://covers.openlibrary.org/b/id/11329782-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi",
+      "Fantasy"
+     ],
+     "id": "ol:OL16044142W",
+     "popularity": 29632,
+     "score": 98,
+     "source": "openlibrary",
+     "sourceId": "OL16044142W",
+     "start": "2001",
+     "status": "finished",
+     "tags": [
+      "Magic"
+     ],
+     "title": "Mistborn",
+     "trending": 0,
+     "year": 2001
+    },
+    {
+     "by": "Andy Weir",
+     "count": 496,
+     "cover": "https://covers.openlibrary.org/b/id/11200092-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL21745884W",
+     "popularity": 61329,
+     "score": 91,
+     "source": "openlibrary",
+     "sourceId": "OL21745884W",
+     "start": "2021",
+     "status": "finished",
+     "tags": [],
+     "title": "Project Hail Mary",
+     "trending": 0,
+     "year": 2021
+    },
+    {
+     "by": "刘慈欣",
+     "count": 562,
+     "cover": "https://covers.openlibrary.org/b/id/10526598-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL16314245W",
+     "popularity": 33421,
+     "score": 89,
+     "source": "openlibrary",
+     "sourceId": "OL16314245W",
+     "start": "2008",
+     "status": "finished",
+     "tags": [],
+     "title": "The Dark Forest (The Three-Body Problem Series Book 2)",
+     "trending": 0,
+     "year": 2008
+    },
+    {
+     "by": "Andy Weir",
+     "count": 407,
+     "cover": "https://covers.openlibrary.org/b/id/11447888-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL17091839W",
+     "popularity": 58192,
+     "score": 88,
+     "source": "openlibrary",
+     "sourceId": "OL17091839W",
+     "start": "2011",
+     "status": "finished",
+     "tags": [
+      "Survival"
+     ],
+     "title": "The Martian",
+     "trending": 0,
+     "year": 2011
+    },
+    {
+     "by": "Susanna Clarke",
+     "count": 272,
+     "cover": "https://covers.openlibrary.org/b/id/10226290-L.jpg",
+     "format": "Novel",
+     "genres": [],
+     "id": "ol:OL20893680W",
+     "popularity": 50914,
+     "score": 87,
+     "source": "openlibrary",
+     "sourceId": "OL20893680W",
+     "start": "2020",
+     "status": "finished",
+     "tags": [],
+     "title": "Piranesi",
+     "trending": 0,
+     "year": 2020
+    },
+    {
+     "by": "Patrick Rothfuss",
+     "count": 736,
+     "cover": "https://covers.openlibrary.org/b/id/11480483-L.jpg",
+     "format": "Novel",
+     "genres": [],
+     "id": "ol:OL8479867W",
+     "popularity": 43559,
+     "score": 87,
+     "source": "openlibrary",
+     "sourceId": "OL8479867W",
+     "start": "2007",
+     "status": "finished",
+     "tags": [],
+     "title": "The Name of the Wind",
+     "trending": 0,
+     "year": 2007
+    },
+    {
+     "by": "Frank Herbert",
+     "count": 608,
+     "cover": "https://covers.openlibrary.org/b/id/11481354-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL893414W",
+     "popularity": 53082,
+     "score": 86,
+     "source": "openlibrary",
+     "sourceId": "OL893414W",
+     "start": "1965",
+     "status": "finished",
+     "tags": [],
+     "title": "Dune",
+     "trending": 0,
+     "year": 1965
+    },
+    {
+     "by": "J.R.R. Tolkien",
+     "count": 310,
+     "cover": "https://covers.openlibrary.org/b/id/14627509-L.jpg",
+     "format": "Book",
+     "genres": [
+      "Fantasy"
+     ],
+     "id": "ol:OL27482W",
+     "popularity": 26940,
+     "score": 86,
+     "source": "openlibrary",
+     "sourceId": "OL27482W",
+     "start": "1937",
+     "status": "finished",
+     "tags": [],
+     "title": "The Hobbit",
+     "trending": 0,
+     "year": 1937
+    },
+    {
+     "by": "Gabrielle Zevin",
+     "count": 460,
+     "cover": "https://covers.openlibrary.org/b/id/12859975-L.jpg",
+     "format": "Novel",
+     "genres": [],
+     "id": "ol:OL26004554W",
+     "popularity": 46419,
+     "score": 85,
+     "source": "openlibrary",
+     "sourceId": "OL26004554W",
+     "start": "2022",
+     "status": "finished",
+     "tags": [],
+     "title": "Tomorrow, and Tomorrow, and Tomorrow",
+     "trending": 0,
+     "year": 2022
+    },
+    {
+     "by": "Kazuo Ishiguro",
+     "count": 254,
+     "cover": "https://covers.openlibrary.org/b/id/95742-L.jpg",
+     "format": "Novel",
+     "genres": [],
+     "id": "ol:OL59048W",
+     "popularity": 16046,
+     "score": 84,
+     "source": "openlibrary",
+     "sourceId": "OL59048W",
+     "start": "1989",
+     "status": "finished",
+     "tags": [],
+     "title": "The Remains of the Day",
+     "trending": 0,
+     "year": 1989
+    },
+    {
+     "by": "R. F. Kuang",
+     "count": 577,
+     "cover": "https://covers.openlibrary.org/b/id/12468631-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "History"
+     ],
+     "id": "ol:OL26443093W",
+     "popularity": 35559,
+     "score": 81,
+     "source": "openlibrary",
+     "sourceId": "OL26443093W",
+     "start": "2022",
+     "status": "finished",
+     "tags": [
+      "Magic"
+     ],
+     "title": "Babel",
+     "trending": 0,
+     "year": 2022
+    },
+    {
+     "by": "Kazuo Ishiguro",
+     "count": 319,
+     "cover": "https://covers.openlibrary.org/b/id/1047334-L.jpg",
+     "format": "Novel",
+     "genres": [],
+     "id": "ol:OL59038W",
+     "popularity": 21723,
+     "score": 77,
+     "source": "openlibrary",
+     "sourceId": "OL59038W",
+     "start": "2005",
+     "status": "finished",
+     "tags": [],
+     "title": "Never Let Me Go",
+     "trending": 0,
+     "year": 2005
+    },
+    {
+     "by": "Kazuo Ishiguro",
+     "count": 334,
+     "cover": "https://covers.openlibrary.org/b/id/10648686-L.jpg",
+     "format": "Novel",
+     "genres": [],
+     "id": "ol:OL20883297W",
+     "popularity": 39868,
+     "score": 76,
+     "source": "openlibrary",
+     "sourceId": "OL20883297W",
+     "start": "2019",
+     "status": "finished",
+     "tags": [],
+     "title": "Klara and the Sun",
+     "trending": 0,
+     "year": 2019
+    },
+    {
+     "by": "Andy Weir",
+     "count": 322,
+     "cover": "https://covers.openlibrary.org/b/id/8235551-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL17837968W",
+     "popularity": 18722,
+     "score": 74,
+     "source": "openlibrary",
+     "sourceId": "OL17837968W",
+     "start": "2017",
+     "status": "finished",
+     "tags": [],
+     "title": "Artemis",
+     "trending": 0,
+     "year": 2017
+    }
+   ]
+  },
+  {
+   "spec": {
+    "filter": {
+     "genres": "Sci-Fi"
+    },
+    "fresh": true,
+    "min": 6,
+    "title": "Sci-Fi"
+   },
+   "titles": [
+    {
+     "by": "Andy Weir",
+     "count": 496,
+     "cover": "https://covers.openlibrary.org/b/id/11200092-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL21745884W",
+     "popularity": 61329,
+     "score": 91,
+     "source": "openlibrary",
+     "sourceId": "OL21745884W",
+     "start": "2021",
+     "status": "finished",
+     "tags": [],
+     "title": "Project Hail Mary",
+     "trending": 0,
+     "year": 2021
+    },
+    {
+     "by": "Andy Weir",
+     "count": 407,
+     "cover": "https://covers.openlibrary.org/b/id/11447888-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL17091839W",
+     "popularity": 58192,
+     "score": 88,
+     "source": "openlibrary",
+     "sourceId": "OL17091839W",
+     "start": "2011",
+     "status": "finished",
+     "tags": [
+      "Survival"
+     ],
+     "title": "The Martian",
+     "trending": 0,
+     "year": 2011
+    },
+    {
+     "by": "Frank Herbert",
+     "count": 608,
+     "cover": "https://covers.openlibrary.org/b/id/11481354-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL893414W",
+     "popularity": 53082,
+     "score": 86,
+     "source": "openlibrary",
+     "sourceId": "OL893414W",
+     "start": "1965",
+     "status": "finished",
+     "tags": [],
+     "title": "Dune",
+     "trending": 0,
+     "year": 1965
+    },
+    {
+     "by": "刘慈欣",
+     "count": 562,
+     "cover": "https://covers.openlibrary.org/b/id/10526598-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL16314245W",
+     "popularity": 33421,
+     "score": 89,
+     "source": "openlibrary",
+     "sourceId": "OL16314245W",
+     "start": "2008",
+     "status": "finished",
+     "tags": [],
+     "title": "The Dark Forest (The Three-Body Problem Series Book 2)",
+     "trending": 0,
+     "year": 2008
+    },
+    {
+     "by": "Brandon Sanderson",
+     "count": 1712,
+     "cover": "https://covers.openlibrary.org/b/id/11329782-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi",
+      "Fantasy"
+     ],
+     "id": "ol:OL16044142W",
+     "popularity": 29632,
+     "score": 98,
+     "source": "openlibrary",
+     "sourceId": "OL16044142W",
+     "start": "2001",
+     "status": "finished",
+     "tags": [
+      "Magic"
+     ],
+     "title": "Mistborn",
+     "trending": 0,
+     "year": 2001
+    },
+    {
+     "by": "Andy Weir",
+     "count": 322,
+     "cover": "https://covers.openlibrary.org/b/id/8235551-L.jpg",
+     "format": "Novel",
+     "genres": [
+      "Sci-Fi"
+     ],
+     "id": "ol:OL17837968W",
+     "popularity": 18722,
+     "score": 74,
+     "source": "openlibrary",
+     "sourceId": "OL17837968W",
+     "start": "2017",
+     "status": "finished",
+     "tags": [],
+     "title": "Artemis",
+     "trending": 0,
+     "year": 2017
+    }
+   ]
+  }
+ ]
+}

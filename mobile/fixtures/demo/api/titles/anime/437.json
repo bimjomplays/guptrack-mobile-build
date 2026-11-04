@@ -1,0 +1,94 @@
+{
+ "title": {
+  "alt": [
+   "PERFECT BLUE"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/437-3yMVTyN7gl2A.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx437-69NMlXKFeuse.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "1h 22m"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Released",
+    "value": "Feb 28, 1998"
+   },
+   {
+    "label": "Season",
+    "value": "Winter 1998"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "11",
+       "to": "studio"
+      },
+      "text": "MADHOUSE"
+     }
+    ],
+    "value": "MADHOUSE"
+   },
+   {
+    "label": "Members",
+    "value": "249,930"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Drama",
+   "Horror",
+   "Psychological",
+   "Thriller"
+  ],
+  "headline": [
+   "Film",
+   "Winter 1998",
+   "1h 22m"
+  ],
+  "idMal": 437,
+  "makers": [
+   {
+    "ref": {
+     "id": "11",
+     "to": "studio"
+    },
+    "text": "MADHOUSE"
+   }
+  ],
+  "media": "anime",
+  "minutes": 82,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "437",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 85,
+  "scoreNote": "249,930 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Perfect Blue",
+  "trailer": null,
+  "volumes": null,
+  "year": 1998
+ }
+}

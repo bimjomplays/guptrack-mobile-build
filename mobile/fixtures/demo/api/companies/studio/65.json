@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx47-4CR68arv452h.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "47",
+       "kind": "anime"
+      },
+      "score": 79,
+      "title": "Akira",
+      "year": 1988
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Tokyo Movie Shinsha",
+  "ref": {
+   "id": "65",
+   "to": "studio"
+  }
+ }
+}

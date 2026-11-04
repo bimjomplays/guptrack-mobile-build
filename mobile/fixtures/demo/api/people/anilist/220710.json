@@ -1,0 +1,42 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Occupation",
+    "value": "Mangaka"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Translator (Portuguese)",
+      "title": {
+       "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx105778-euxXZEIfDY2u.png",
+       "format": "Manga",
+       "ref": {
+        "id": "105778",
+        "kind": "manga"
+       },
+       "score": 84,
+       "title": "Chainsaw Man",
+       "year": 2018
+      }
+     }
+    ],
+    "title": "Manga staff"
+   }
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n220710-5T0XmGNeS5xq.png",
+  "known": "Mangaka",
+  "name": "Felipe Monte",
+  "native": null,
+  "ref": {
+   "id": "220710",
+   "source": "anilist",
+   "to": "person"
+  }
+ }
+}

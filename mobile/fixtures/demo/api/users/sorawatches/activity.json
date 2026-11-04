@@ -1,0 +1,26 @@
+{
+ "activity": [
+  {
+   "after": "current",
+   "at": 1793612460000,
+   "before": "planned",
+   "cover": "https://image.tmdb.org/t/p/w500/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+   "entry": "95396",
+   "id": 111,
+   "media": "tv",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [],
+    "likes": 0,
+    "replies": 0,
+    "target": {
+     "id": 111,
+     "on": "activity"
+    }
+   },
+   "title": "Severance",
+   "type": "status"
+  }
+ ]
+}

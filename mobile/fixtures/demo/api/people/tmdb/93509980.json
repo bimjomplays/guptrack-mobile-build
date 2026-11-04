@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Dedra Meero",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "83867",
+        "kind": "tv"
+       },
+       "score": 83,
+       "title": "Andor",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Dedra Meero",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "83867",
+        "kind": "tv"
+       },
+       "score": 83,
+       "title": "Andor",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/wWcby4ARYqr8d92ZdjyQcfaiJBW.jpg",
+  "known": "Acting",
+  "name": "Denise Gough",
+  "native": null,
+  "ref": {
+   "id": "93509980",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Directing"
+   },
+   {
+    "label": "Credits",
+    "value": "2"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "693134",
+        "kind": "movie"
+       },
+       "score": 81,
+       "title": "Dune: Part Two",
+       "year": 2024
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "693134",
+        "kind": "movie"
+       },
+       "score": 81,
+       "title": "Dune: Part Two",
+       "year": 2024
+      }
+     }
+    ],
+    "title": "Directing"
+   },
+   {
+    "items": [
+     {
+      "role": "Screenplay",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "693134",
+        "kind": "movie"
+       },
+       "score": 81,
+       "title": "Dune: Part Two",
+       "year": 2024
+      }
+     }
+    ],
+    "title": "Writing"
+   }
+  ],
+  "image": null,
+  "known": "Directing",
+  "name": "Denis Villeneuve",
+  "native": null,
+  "ref": {
+   "id": "92694449",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Captain Ed",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1078605",
+        "kind": "movie"
+       },
+       "score": 73,
+       "title": "Weapons",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Captain Ed",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1078605",
+        "kind": "movie"
+       },
+       "score": 73,
+       "title": "Weapons",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/dUqygHlDDnOBZLnE51MPJHkHWvQ.jpg",
+  "known": "Acting",
+  "name": "Toby Huss",
+  "native": null,
+  "ref": {
+   "id": "97548184",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

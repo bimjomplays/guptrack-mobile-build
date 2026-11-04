@@ -1,0 +1,289 @@
+{
+ "company": {
+  "description": [],
+  "facts": [
+   {
+    "label": "Favourites",
+    "value": "18,645"
+   }
+  ],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209872-RBeVPqwejHFp.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "209872",
+       "kind": "anime"
+      },
+      "score": 78,
+      "title": "Ranma1/2 (2024) Season 3",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b213343-vT9cjnigEViy.png",
+      "format": "Special",
+      "ref": {
+       "id": "213343",
+       "kind": "anime"
+      },
+      "score": 55,
+      "title": "MAPPA 15th Anniversary Movie",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx173172-404XnuOS0DhR.jpg",
+      "format": "ONA",
+      "ref": {
+       "id": "173172",
+       "kind": "anime"
+      },
+      "score": 83,
+      "title": "Dorohedoro Season 2",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx166613-uHB8q3D4qbon.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "166613",
+       "kind": "anime"
+      },
+      "score": 82,
+      "title": "Hell’s Paradise Season 2",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx172463-LnXqHzt74SJL.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "172463",
+       "kind": "anime"
+      },
+      "score": 86,
+      "title": "JUJUTSU KAISEN Season 3: The Culling Game Part 1",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b204080-VRTTOykaiNRV.png",
+      "format": "ONA",
+      "ref": {
+       "id": "204080",
+       "kind": "anime"
+      },
+      "score": 83,
+      "title": "IRIS OUT",
+      "year": 2025
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx204066-Gb5k7j6Cpbng.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "204066",
+       "kind": "anime"
+      },
+      "score": 77,
+      "title": "JUJUTSU KAISEN: Execution -Shibuya Incident x The Culling Game Begins-",
+      "year": 2025
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx140337-8EtbiPurofcC.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "140337",
+       "kind": "anime"
+      },
+      "score": 82,
+      "title": "Zombie Land Saga: Yumeginga Paradise",
+      "year": 2025
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx170577-ocYSFAcry7ty.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "170577",
+       "kind": "anime"
+      },
+      "score": 77,
+      "title": "Campfire Cooking in Another World with my Absurd Skill Season 2",
+      "year": 2025
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185731-PJ6WKcFDUI4B.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "185731",
+       "kind": "anime"
+      },
+      "score": 77,
+      "title": "Ranma1/2 (2024) Season 2",
+      "year": 2025
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx171627-ZN9D7P46yHnw.png",
+      "format": "Film",
+      "ref": {
+       "id": "171627",
+       "kind": "anime"
+      },
+      "score": 90,
+      "title": "Chainsaw Man – The Movie: Reze Arc",
+      "year": 2025
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx198726-ys3lfvQfwBTM.png",
+      "format": "ONA",
+      "ref": {
+       "id": "198726",
+       "kind": "anime"
+      },
+      "score": 73,
+      "title": "Chainsaw Days",
+      "year": 2025
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx192810-hQ9HxiiIXyfI.jpg",
+      "format": "Special",
+      "ref": {
+       "id": "192810",
+       "kind": "anime"
+      },
+      "score": 71,
+      "title": "Juju Sanpo: Gekijouban",
+      "year": 2025
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx192809-wRlqABGsx2Qs.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "192809",
+       "kind": "anime"
+      },
+      "score": 84,
+      "title": "JUJUTSU KAISEN: Hidden Inventory / Premature Death – The Movie",
+      "year": 2025
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx213338-0FDrGJy80s0W.jpg",
+      "format": "ONA",
+      "ref": {
+       "id": "213338",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "Jimoto Saikou!",
+      "year": null
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx212618-8qxOOnGuaVXV.jpg",
+      "format": "Special",
+      "ref": {
+       "id": "212618",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "Dorohedoro Season 3",
+      "year": null
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx204429-9scYA2ab3Zz3.jpg",
+      "format": "Special",
+      "ref": {
+       "id": "204429",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "Chainsaw Man: Shikaku-hen",
+      "year": null
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx98656-HRsD7skIzzGq.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "98656",
+       "kind": "anime"
+      },
+      "score": 79,
+      "title": "Yuuri!!! on ICE The Movie: ICE ADOLESCENCE",
+      "year": null
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209895-vTRv4YqkdAbX.jpg",
+      "format": "Special",
+      "ref": {
+       "id": "209895",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Kouhen",
+      "year": null
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx213131-8Kksqofy66fL.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "213131",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "Koiseyo Mayakashi Tenshi-domo",
+      "year": null
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx184141-nJr4zaAVefgS.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "184141",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "Boukyaku Battery (TV) 2nd Season",
+      "year": null
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx169102-KICGasKLwtiQ.png",
+      "format": "ONA",
+      "ref": {
+       "id": "169102",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "BEAT & MOTION",
+      "year": null
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx211607-GYqNsXoE70Fy.png",
+      "format": "Special",
+      "ref": {
+       "id": "211607",
+       "kind": "anime"
+      },
+      "score": 79,
+      "title": "Jujutsu Kaisen Modulo PV",
+      "year": null
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx207082-uneOJ8muoj8x.png",
+      "format": "Special",
+      "ref": {
+       "id": "207082",
+       "kind": "anime"
+      },
+      "score": 61,
+      "title": "Cardfight!! Vanguard 15 Shuunen Kinen PV",
+      "year": null
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "MAPPA",
+  "ref": {
+   "id": "569",
+   "to": "studio"
+  }
+ }
+}

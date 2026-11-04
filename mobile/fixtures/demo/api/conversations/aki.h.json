@@ -1,0 +1,42 @@
+{
+ "box": "request",
+ "canSend": true,
+ "messages": [
+  {
+   "at": 1793710920000,
+   "body": "hi! read your Chainsaw Man review and agreed with all of it, esp. Katana Man",
+   "card": null,
+   "deleted": false,
+   "edited": null,
+   "id": 1018,
+   "mine": false,
+   "photos": [],
+   "reactions": []
+  },
+  {
+   "at": 1793710980000,
+   "body": "going to see the Reze movie this weekend?",
+   "card": null,
+   "deleted": false,
+   "edited": null,
+   "id": 1019,
+   "mine": false,
+   "photos": [],
+   "reactions": []
+  }
+ ],
+ "more": false,
+ "muted": false,
+ "person": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
+  "lists": [
+   "anime",
+   "manga"
+  ],
+  "name": "Aki",
+  "open": true,
+  "relation": "none",
+  "username": "aki.h"
+ },
+ "seen": null
+}

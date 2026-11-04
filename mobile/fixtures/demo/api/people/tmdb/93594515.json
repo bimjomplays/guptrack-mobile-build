@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Directing"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "414906",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "The Batman",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "414906",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "The Batman",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Directing"
+   }
+  ],
+  "image": null,
+  "known": "Directing",
+  "name": "Matt Reeves",
+  "native": null,
+  "ref": {
+   "id": "93594515",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

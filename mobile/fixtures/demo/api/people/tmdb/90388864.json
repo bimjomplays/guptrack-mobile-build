@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Others&#39; Phone Answering Service (voice) (uncredited)",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "225171",
+        "kind": "tv"
+       },
+       "score": 79,
+       "title": "Pluribus",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Others&#39; Phone Answering Service (voice) (uncredited)",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "225171",
+        "kind": "tv"
+       },
+       "score": 79,
+       "title": "Pluribus",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/bbsYGlnvGUTTExcabKL1OIhcKyZ.jpg",
+  "known": "Acting",
+  "name": "Patrick Fabian",
+  "native": null,
+  "ref": {
+   "id": "90388864",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

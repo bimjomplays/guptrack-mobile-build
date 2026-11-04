@@ -1,0 +1,78 @@
+{
+ "person": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+  "lists": [
+   "anime",
+   "manga",
+   "tv",
+   "movies",
+   "books"
+  ],
+  "name": "Hal",
+  "open": true,
+  "relation": "friend",
+  "since": 1780326000000,
+  "username": "hal"
+ },
+ "reviews": [
+  {
+   "at": 1791124860000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Hal",
+    "open": true,
+    "relation": "friend",
+    "since": 1780326000000,
+    "username": "hal"
+   },
+   "body": "Serie’s test at the end is the whole show in one scene: who you are matters more than what you can do.",
+   "cut": false,
+   "edited": null,
+   "id": 14,
+   "score": 80,
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Kenji",
+      "open": true,
+      "relation": "friend",
+      "since": 1791471600000,
+      "username": "kenji"
+     }
+    ],
+    "likes": 1,
+    "replies": 1,
+    "target": {
+     "id": 14,
+     "on": "review"
+    }
+   },
+   "spoiler": true,
+   "title": {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+    "format": "TV",
+    "id": "154587",
+    "media": "anime",
+    "title": "Frieren: Beyond Journey’s End"
+   }
+  }
+ ],
+ "total": 1
+}

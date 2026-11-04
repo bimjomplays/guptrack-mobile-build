@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx204650-cAQOzQ84Lwk8.png",
+      "format": "TV",
+      "ref": {
+       "id": "204650",
+       "kind": "anime"
+      },
+      "score": 72,
+      "title": "TOUGEN ANKI: Nikko Kegon Falls Arc",
+      "year": 2026
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Studio Hibari",
+  "ref": {
+   "id": "101",
+   "to": "studio"
+  }
+ }
+}

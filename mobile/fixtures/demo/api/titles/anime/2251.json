@@ -1,0 +1,97 @@
+{
+ "title": {
+  "alt": [
+   "バッカーノ！"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/2251-FVSbYyJhQPj2.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 13,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2251-tTQoWxVy4472.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "13"
+   },
+   {
+    "label": "Episode length",
+    "value": "25 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Jul 27, 2007"
+   },
+   {
+    "label": "Season",
+    "value": "Summer 2007"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "112",
+       "to": "studio"
+      },
+      "text": "Brain's Base"
+     }
+    ],
+    "value": "Brain's Base"
+   },
+   {
+    "label": "Members",
+    "value": "192,235"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Mystery",
+   "Supernatural"
+  ],
+  "headline": [
+   "TV",
+   "Summer 2007",
+   "13 episodes"
+  ],
+  "idMal": 2251,
+  "makers": [
+   {
+    "ref": {
+     "id": "112",
+     "to": "studio"
+    },
+    "text": "Brain's Base"
+   }
+  ],
+  "media": "anime",
+  "minutes": 25,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "2251",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 81,
+  "scoreNote": "192,235 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Baccano!",
+  "trailer": null,
+  "volumes": null,
+  "year": 2007
+ }
+}

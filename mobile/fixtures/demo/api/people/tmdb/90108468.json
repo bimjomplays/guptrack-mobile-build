@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Louisa Guy",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "95480",
+        "kind": "tv"
+       },
+       "score": 81,
+       "title": "Slow Horses",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Louisa Guy",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "95480",
+        "kind": "tv"
+       },
+       "score": 81,
+       "title": "Slow Horses",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/9Tb1rLSnyCfnZXYixfjWJuQJig9.jpg",
+  "known": "Acting",
+  "name": "Rosalind Eleazar",
+  "native": null,
+  "ref": {
+   "id": "90108468",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

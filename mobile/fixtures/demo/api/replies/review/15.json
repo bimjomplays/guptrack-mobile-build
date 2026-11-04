@@ -1,0 +1,123 @@
+{
+ "reactions": {
+  "canLike": true,
+  "liked": false,
+  "likers": [
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Kenji",
+    "open": true,
+    "relation": "friend",
+    "since": 1791471600000,
+    "username": "kenji"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Noor",
+    "open": true,
+    "relation": "friend",
+    "since": 1768921200000,
+    "username": "noor.reads"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b28967-ShW5sAxzZDny.png",
+    "lists": [
+     "anime"
+    ],
+    "name": "Power",
+    "open": false,
+    "relation": "none",
+    "username": "powerpower"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
+    "lists": [
+     "anime",
+     "manga"
+    ],
+    "name": "Aki",
+    "open": true,
+    "relation": "none",
+    "username": "aki.h"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b61-ywXUyyocEEqt.png",
+    "lists": [],
+    "name": "Yuki",
+    "open": false,
+    "relation": "none",
+    "username": "yuki.tv"
+   }
+  ],
+  "likes": 5,
+  "replies": 2,
+  "target": {
+   "id": 15,
+   "on": "review"
+  }
+ },
+ "replies": [
+  {
+   "at": 1793296860000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Kenji",
+    "open": true,
+    "relation": "friend",
+    "since": 1791471600000,
+    "username": "kenji"
+   },
+   "body": "The Aura fight is perfect, agreed.",
+   "canDelete": false,
+   "canEdit": false,
+   "edited": null,
+   "id": 705,
+   "parent": null
+  },
+  {
+   "at": 1793326860000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Noor",
+    "open": true,
+    "relation": "friend",
+    "since": 1768921200000,
+    "username": "noor.reads"
+   },
+   "body": "The music carries so much of it.",
+   "canDelete": false,
+   "canEdit": false,
+   "edited": null,
+   "id": 706,
+   "parent": null
+  }
+ ]
+}

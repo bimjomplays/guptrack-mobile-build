@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx211877-yWQ2r7XmWvG6.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "211877",
+       "kind": "anime"
+      },
+      "score": 49,
+      "title": "My Girlfriend's Friend",
+      "year": 2026
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Quad",
+  "ref": {
+   "id": "7002",
+   "to": "studio"
+  }
+ }
+}

@@ -1,0 +1,97 @@
+{
+ "title": {
+  "alt": [
+   "Kashita Maryoku wa [Revo Barai] de Kyousei Choushuu",
+   "貸した魔力は【リボ払い】で強制徴収"
+  ],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202250-mpm2cvr92Au2.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episode length",
+    "value": "23 min"
+   },
+   {
+    "label": "Status",
+    "value": "Airing"
+   },
+   {
+    "label": "Next episode",
+    "value": "Ep 6, Nov 7, 2026"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 4, 2026"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2026"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "118",
+       "to": "studio"
+      },
+      "text": "SynergySP"
+     }
+    ],
+    "value": "SynergySP"
+   },
+   {
+    "label": "Members",
+    "value": "24,636"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "headline": [
+   "TV",
+   "Fall 2026"
+  ],
+  "idMal": 62922,
+  "makers": [
+   {
+    "ref": {
+     "id": "118",
+     "to": "studio"
+    },
+    "text": "SynergySP"
+   }
+  ],
+  "media": "anime",
+  "minutes": 23,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "202250",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 61,
+  "scoreNote": "24,636 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Airing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Magic Repo Man: Dumped by My Party, I’ll Cash In With a Cute Support Fairy to Become the Strongest!",
+  "trailer": null,
+  "volumes": null,
+  "year": 2026
+ }
+}

@@ -1,0 +1,222 @@
+{
+ "announced": [],
+ "comingSoon": [],
+ "recommended": [],
+ "trending": [
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png",
+   "note": "Ep 5 out",
+   "ref": {
+    "id": "206949",
+    "kind": "anime"
+   },
+   "title": "Nia Liston: The Merciless Maiden"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg",
+   "note": "Ep 1180 out",
+   "ref": {
+    "id": "21",
+    "kind": "anime"
+   },
+   "title": "ONE PIECE"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209502-C81oN8M4Smlo.jpg",
+   "note": "Ep 5 out",
+   "ref": {
+    "id": "209502",
+    "kind": "anime"
+   },
+   "title": "The Cold Sato-san is Only Sweet to Me"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg",
+   "note": "Ep 6 out",
+   "ref": {
+    "id": "212888",
+    "kind": "anime"
+   },
+   "title": "Overgeared"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97940-fyh8o7gNbha0.png",
+   "note": "All 170 eps out",
+   "ref": {
+    "id": "97940",
+    "kind": "anime"
+   },
+   "title": "Black Clover"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tSZcfKbVqSEG.jpg",
+   "note": "Ep 5 out",
+   "ref": {
+    "id": "195604",
+    "kind": "anime"
+   },
+   "title": "Black Clover Season 2"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png",
+   "note": "All 10 eps out",
+   "ref": {
+    "id": "195539",
+    "kind": "anime"
+   },
+   "title": "Cyberpunk: Edgerunners 2"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png",
+   "note": "All 366 eps out",
+   "ref": {
+    "id": "269",
+    "kind": "anime"
+   },
+   "title": "Bleach"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209219-3yhKlRx0LX3p.jpg",
+   "note": "Ep 6 out",
+   "ref": {
+    "id": "209219",
+    "kind": "anime"
+   },
+   "title": "So What's Wrong with Getting Reborn as a Goblin?"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207191-VgkIzfH92WoZ.jpg",
+   "note": "Ep 5 out",
+   "ref": {
+    "id": "207191",
+    "kind": "anime"
+   },
+   "title": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg",
+   "note": "Ep 5 out",
+   "ref": {
+    "id": "195516",
+    "kind": "anime"
+   },
+   "title": "The Apothecary Diaries Season 3"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1735-kGfVm0YqCPcu.png",
+   "note": "All 500 eps out",
+   "ref": {
+    "id": "1735",
+    "kind": "anime"
+   },
+   "title": "Naruto: Shippuden"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205896-ElrV8oVAsuax.jpg",
+   "note": "Ep 4 out",
+   "ref": {
+    "id": "205896",
+    "kind": "anime"
+   },
+   "title": "Full Clearing Another World under a Goddess with Zero Believers"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png",
+   "note": "Ep 5 out",
+   "ref": {
+    "id": "191656",
+    "kind": "anime"
+   },
+   "title": "Even the Student Council Has Its Holes!"
+  },
+  {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182205-q2AeO1owuQbO.jpg",
+   "note": "All 24 eps out",
+   "ref": {
+    "id": "182205",
+    "kind": "anime"
+   },
+   "title": "That Time I Got Reincarnated as a Slime Season 4"
+  }
+ ],
+ "upcoming": [
+  {
+   "at": 1793768400000,
+   "cover": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+   "dateOnly": true,
+   "id": "95480",
+   "media": "tv",
+   "number": 34,
+   "ref": {
+    "id": "95480",
+    "kind": "tv"
+   },
+   "title": "Slow Horses"
+  },
+  {
+   "at": 1793952000000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+   "dateOnly": false,
+   "id": "210482",
+   "media": "anime",
+   "number": 7,
+   "ref": {
+    "id": "210482",
+    "kind": "anime"
+   },
+   "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE"
+  },
+  {
+   "at": 1793973600000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg",
+   "dateOnly": false,
+   "id": "195516",
+   "media": "anime",
+   "number": 6,
+   "ref": {
+    "id": "195516",
+    "kind": "anime"
+   },
+   "title": "The Apothecary Diaries Season 3"
+  },
+  {
+   "at": 1794065400000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png",
+   "dateOnly": false,
+   "id": "191656",
+   "media": "anime",
+   "number": 6,
+   "ref": {
+    "id": "191656",
+    "kind": "anime"
+   },
+   "title": "Even the Student Council Has Its Holes!"
+  },
+  {
+   "at": 1794148200000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg",
+   "dateOnly": false,
+   "id": "212888",
+   "media": "anime",
+   "number": 7,
+   "ref": {
+    "id": "212888",
+    "kind": "anime"
+   },
+   "title": "Overgeared"
+  },
+  {
+   "at": 1794313560000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png",
+   "dateOnly": false,
+   "id": "206949",
+   "media": "anime",
+   "number": 6,
+   "ref": {
+    "id": "206949",
+    "kind": "anime"
+   },
+   "title": "Nia Liston: The Merciless Maiden"
+  }
+ ]
+}

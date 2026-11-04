@@ -1,0 +1,11 @@
+{
+ "comments": "friends",
+ "lists": {
+  "anime": "public",
+  "books": "private",
+  "manga": "public",
+  "movies": "public",
+  "tv": "friends"
+ },
+ "visibility": "public"
+}

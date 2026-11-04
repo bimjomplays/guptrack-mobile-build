@@ -1,0 +1,74 @@
+{
+ "title": {
+  "alt": [
+   "Kimetsu no Yaiba",
+   "鬼滅の刃"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/87216-TVKEGfSxAqKs.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 207,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx87216-c9bSNVD10UuD.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Chapters",
+    "value": "207"
+   },
+   {
+    "label": "Volumes",
+    "value": "23"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Published",
+    "value": "Feb 15, 2016"
+   },
+   {
+    "label": "Members",
+    "value": "212,300"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Supernatural"
+  ],
+  "headline": [
+   "Manga",
+   "2016",
+   "207 chapters"
+  ],
+  "idMal": 96792,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "87216",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 79,
+  "scoreNote": "212,300 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Demon Slayer: Kimetsu no Yaiba",
+  "trailer": null,
+  "volumes": 23,
+  "year": 2016
+ }
+}

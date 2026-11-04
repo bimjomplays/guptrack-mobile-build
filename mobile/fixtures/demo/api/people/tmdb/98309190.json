@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Helly Riggs",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "95396",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "Severance",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Helly Riggs",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "95396",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "Severance",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/5XIcTMDSyj7hRICQAcnY9U83ujF.jpg",
+  "known": "Acting",
+  "name": "Britt Lower",
+  "native": null,
+  "ref": {
+   "id": "98309190",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "character": {
+  "alt": [],
+  "altSpoiler": [],
+  "appearances": [
+   {
+    "role": "Supporting",
+    "title": {
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx105778-euxXZEIfDY2u.png",
+     "format": "Manga",
+     "ref": {
+      "id": "105778",
+      "kind": "manga"
+     },
+     "score": 84,
+     "title": "Chainsaw Man",
+     "year": 2018
+    }
+   }
+  ],
+  "description": [],
+  "facts": [],
+  "favourites": 0,
+  "id": "144593",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b144593-hdCTT9t54z0s.png",
+  "name": "Kishibe",
+  "native": "岸辺",
+  "voices": []
+ }
+}

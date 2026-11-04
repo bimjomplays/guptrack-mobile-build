@@ -1,0 +1,489 @@
+{
+ "kinds": [
+  {
+   "added": [
+    {
+     "at": "2026-03",
+     "count": 5
+    },
+    {
+     "at": "2026-04",
+     "count": 5
+    },
+    {
+     "at": "2026-05",
+     "count": 5
+    },
+    {
+     "at": "2026-06",
+     "count": 4
+    },
+    {
+     "at": "2026-07",
+     "count": 8
+    },
+    {
+     "at": "2026-08",
+     "count": 1
+    },
+    {
+     "at": "2026-09",
+     "count": 5
+    },
+    {
+     "at": "2026-10",
+     "count": 8
+    }
+   ],
+   "again": 379,
+   "againSeconds": 519480,
+   "counts": {
+    "completed": 23,
+    "current": 5,
+    "dropped": 0,
+    "hold": 3,
+    "planned": 10
+   },
+   "entries": 41,
+   "favourites": 3,
+   "finished": [
+    {
+     "at": "2026-03",
+     "count": 1
+    },
+    {
+     "at": "2026-04",
+     "count": 2
+    },
+    {
+     "at": "2026-05",
+     "count": 3
+    },
+    {
+     "at": "2026-06",
+     "count": 2
+    },
+    {
+     "at": "2026-07",
+     "count": 6
+    },
+    {
+     "at": "2026-09",
+     "count": 3
+    },
+    {
+     "at": "2026-10",
+     "count": 6
+    }
+   ],
+   "formats": [
+    {
+     "count": 22,
+     "mean": 78.33,
+     "name": "TV",
+     "scored": 15
+    },
+    {
+     "count": 4,
+     "mean": 88.33,
+     "name": "Movie",
+     "scored": 3
+    },
+    {
+     "count": 3,
+     "mean": 80.0,
+     "name": "ONA",
+     "scored": 2
+    },
+    {
+     "count": 1,
+     "mean": 95.0,
+     "name": "Special",
+     "scored": 1
+    }
+   ],
+   "genres": [
+    {
+     "count": 22,
+     "mean": 80.29,
+     "name": "Drama",
+     "scored": 17
+    },
+    {
+     "count": 15,
+     "mean": 78.33,
+     "name": "Adventure",
+     "scored": 9
+    },
+    {
+     "count": 15,
+     "mean": 81.5,
+     "name": "Fantasy",
+     "scored": 10
+    },
+    {
+     "count": 14,
+     "mean": 84.44,
+     "name": "Action",
+     "scored": 9
+    },
+    {
+     "count": 13,
+     "mean": 84.29,
+     "name": "Comedy",
+     "scored": 7
+    },
+    {
+     "count": 11,
+     "mean": 78.33,
+     "name": "Psychological",
+     "scored": 9
+    },
+    {
+     "count": 8,
+     "mean": 76.67,
+     "name": "Sci-Fi",
+     "scored": 6
+    },
+    {
+     "count": 8,
+     "mean": 80.83,
+     "name": "Thriller",
+     "scored": 6
+    },
+    {
+     "count": 7,
+     "mean": 76.25,
+     "name": "Romance",
+     "scored": 4
+    },
+    {
+     "count": 6,
+     "mean": 84.17,
+     "name": "Mystery",
+     "scored": 6
+    },
+    {
+     "count": 6,
+     "mean": 84.0,
+     "name": "Supernatural",
+     "scored": 5
+    },
+    {
+     "count": 4,
+     "mean": 75.0,
+     "name": "Slice of Life",
+     "scored": 3
+    },
+    {
+     "count": 3,
+     "mean": 85.0,
+     "name": "Horror",
+     "scored": 2
+    },
+    {
+     "count": 2,
+     "mean": 75.0,
+     "name": "Mecha",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 0,
+     "name": "Ecchi",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "mean": 95.0,
+     "name": "Sports",
+     "scored": 1
+    }
+   ],
+   "makers": [
+    {
+     "count": 6,
+     "id": "11",
+     "mean": 85.0,
+     "name": "MADHOUSE",
+     "scored": 5
+    },
+    {
+     "count": 3,
+     "id": "14",
+     "mean": 78.33,
+     "name": "Sunrise",
+     "scored": 3
+    },
+    {
+     "count": 3,
+     "id": "314",
+     "mean": 70.0,
+     "name": "WHITE FOX",
+     "scored": 2
+    },
+    {
+     "count": 2,
+     "id": "21",
+     "mean": 85.0,
+     "name": "Studio Ghibli",
+     "scored": 2
+    },
+    {
+     "count": 2,
+     "id": "1",
+     "mean": 80.0,
+     "name": "Studio Pierrot",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "561",
+     "mean": 80.0,
+     "name": "A-1 Pictures",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "8",
+     "mean": 75.0,
+     "name": "Artland",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "7348",
+     "mean": 80.0,
+     "name": "BUG FILMS",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "6052",
+     "mean": 0,
+     "name": "C2C",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "id": "6",
+     "mean": 0,
+     "name": "GAINAX",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "id": "3",
+     "mean": 70.0,
+     "name": "GONZO",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "7",
+     "mean": 80.0,
+     "name": "J.C.STAFF",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "2",
+     "mean": 0,
+     "name": "Kyoto Animation",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "id": "569",
+     "mean": 95.0,
+     "name": "MAPPA",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "32",
+     "mean": 0,
+     "name": "Manglobe",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "id": "6309",
+     "mean": 0,
+     "name": "Studio Bind",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "id": "803",
+     "mean": 0,
+     "name": "TRIGGER",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "id": "18",
+     "mean": 100.0,
+     "name": "Toei Animation",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "110",
+     "mean": 70.0,
+     "name": "Triangle Staff",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "858",
+     "mean": 90.0,
+     "name": "WIT STUDIO",
+     "scored": 1
+    }
+   ],
+   "meanScore": 81.36,
+   "media": "anime",
+   "pending": 0,
+   "progress": 1024,
+   "repeats": 6,
+   "scored": 22,
+   "scores": [
+    [
+     60,
+     2
+    ],
+    [
+     70,
+     2
+    ],
+    [
+     75,
+     5
+    ],
+    [
+     80,
+     5
+    ],
+    [
+     85,
+     1
+    ],
+    [
+     90,
+     1
+    ],
+    [
+     95,
+     4
+    ],
+    [
+     100,
+     2
+    ]
+   ],
+   "seconds": 1496220,
+   "volumes": 0,
+   "years": [
+    {
+     "count": 2,
+     "year": 1988
+    },
+    {
+     "count": 1,
+     "year": 1989
+    },
+    {
+     "count": 3,
+     "year": 1998
+    },
+    {
+     "count": 1,
+     "year": 1999
+    },
+    {
+     "count": 1,
+     "year": 2002
+    },
+    {
+     "count": 1,
+     "year": 2003
+    },
+    {
+     "count": 4,
+     "year": 2004
+    },
+    {
+     "count": 1,
+     "year": 2005
+    },
+    {
+     "count": 3,
+     "year": 2006
+    },
+    {
+     "count": 4,
+     "year": 2007
+    },
+    {
+     "count": 1,
+     "year": 2008
+    },
+    {
+     "count": 1,
+     "year": 2011
+    },
+    {
+     "count": 2,
+     "year": 2016
+    },
+    {
+     "count": 2,
+     "year": 2017
+    },
+    {
+     "count": 1,
+     "year": 2018
+    },
+    {
+     "count": 1,
+     "year": 2019
+    },
+    {
+     "count": 1,
+     "year": 2020
+    },
+    {
+     "count": 1,
+     "year": 2021
+    },
+    {
+     "count": 1,
+     "year": 2023
+    },
+    {
+     "count": 1,
+     "year": 2024
+    },
+    {
+     "count": 3,
+     "year": 2026
+    },
+    {
+     "count": 3,
+     "year": 2027
+    }
+   ]
+  }
+ ],
+ "person": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b28967-ShW5sAxzZDny.png",
+  "lists": [
+   "anime"
+  ],
+  "name": "Power",
+  "open": false,
+  "relation": "none",
+  "username": "powerpower"
+ }
+}

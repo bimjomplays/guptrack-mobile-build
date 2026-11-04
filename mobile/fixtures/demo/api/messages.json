@@ -1,0 +1,149 @@
+{
+ "lines": [
+  {
+   "last": {
+    "at": 1793715120000,
+    "mine": false,
+    "text": "Gyro spinning those steel balls is all I think about now"
+   },
+   "muted": false,
+   "person": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Kenji",
+    "open": true,
+    "relation": "friend",
+    "since": 1791471600000,
+    "username": "kenji"
+   },
+   "unread": 2
+  },
+  {
+   "last": {
+    "at": 1793713260000,
+    "mine": true,
+    "text": "Shared Andor"
+   },
+   "muted": false,
+   "person": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Tobi",
+    "open": true,
+    "relation": "friend",
+    "since": 1756738800000,
+    "username": "tobiwan"
+   },
+   "unread": 0
+  },
+  {
+   "last": {
+    "at": 1793672100000,
+    "mine": false,
+    "text": "Vagabond ch 46 wrecked me"
+   },
+   "muted": false,
+   "person": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Noor",
+    "open": true,
+    "relation": "friend",
+    "since": 1768921200000,
+    "username": "noor.reads"
+   },
+   "unread": 0
+  },
+  {
+   "last": {
+    "at": 1793532960000,
+    "mine": true,
+    "text": "Severance is back and so good"
+   },
+   "muted": false,
+   "person": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Lena",
+    "open": true,
+    "relation": "friend",
+    "since": 1771081200000,
+    "username": "lena"
+   },
+   "unread": 0
+  },
+  {
+   "last": {
+    "at": 1793367660000,
+    "mine": true,
+    "text": "tell me when you’re done with Shōgun"
+   },
+   "muted": true,
+   "person": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Sora",
+    "open": true,
+    "relation": "friend",
+    "since": 1775142000000,
+    "username": "sorawatches"
+   },
+   "unread": 0
+  },
+  {
+   "last": {
+    "at": 1793104860000,
+    "mine": false,
+    "text": "Shared The Bear"
+   },
+   "muted": false,
+   "person": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Hal",
+    "open": true,
+    "relation": "friend",
+    "since": 1780326000000,
+    "username": "hal"
+   },
+   "unread": 0
+  }
+ ],
+ "requests": 1
+}

@@ -1,0 +1,289 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [
+   [
+    {
+     "text": "Timothée Hal Chalamet (born December 27, 1995) is an American actor. He began his career in television, appearing in the series Homeland. In 2014, he made his film debut in Men, Women & Children and appeared in Interstellar. In 2017, he had a leading role in Call Me by Your Name. He later appeared in Lady Bird (2017), Beautiful Boy (2018), and Little Women (2019). He has since taken on leading roles in Dune (2021–2026) and Wonka (2023), and appeared in A Complete Unknown (2024) and Marty Supreme (2025)."
+    }
+   ]
+  ],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Born",
+    "value": "Dec 27, 1995 (age 30)"
+   },
+   {
+    "label": "Birthplace",
+    "value": "New York City, New York, USA"
+   },
+   {
+    "label": "Credits",
+    "value": "66"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Paul Atreides",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/v1tRXZ4JtD2Iv6fjkPvT4GiwslV.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "438631",
+        "kind": "movie"
+       },
+       "score": 78,
+       "title": "Dune",
+       "year": 2021
+      }
+     },
+     {
+      "role": "Paul Atreides",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "693134",
+        "kind": "movie"
+       },
+       "score": 81,
+       "title": "Dune: Part Two",
+       "year": 2024
+      }
+     },
+     {
+      "role": "Elio Perlman",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/gXiE0WveDnT0n5J4sW9TMxXF4oT.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "398818",
+        "kind": "movie"
+       },
+       "score": 80,
+       "title": "Call Me by Your Name",
+       "year": 2017
+      }
+     },
+     {
+      "role": "Willy Wonka",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "787699",
+        "kind": "movie"
+       },
+       "score": 71,
+       "title": "Wonka",
+       "year": 2023
+      }
+     },
+     {
+      "role": "Tom Cooper (young)",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "157336",
+        "kind": "movie"
+       },
+       "score": 85,
+       "title": "Interstellar",
+       "year": 2014
+      }
+     },
+     {
+      "role": "Finn Walden",
+      "title": {
+       "cover": null,
+       "format": "Series",
+       "ref": {
+        "id": "1407",
+        "kind": "tv"
+       },
+       "score": 77,
+       "title": "Homeland",
+       "year": 2011
+      }
+     },
+     {
+      "role": "Gatsby Welles",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/z4A6mFOLTMZAhCSPRyrtzG0SPbd.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "449563",
+        "kind": "movie"
+       },
+       "score": 66,
+       "title": "A Rainy Day in New York",
+       "year": 2019
+      }
+     },
+     {
+      "role": "Marty Mauser",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1317288",
+        "kind": "movie"
+       },
+       "score": null,
+       "title": "Marty Supreme",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Marty Mauser",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1317288",
+        "kind": "movie"
+       },
+       "score": null,
+       "title": "Marty Supreme",
+       "year": 2025
+      }
+     },
+     {
+      "role": "Paul Atreides",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "693134",
+        "kind": "movie"
+       },
+       "score": 81,
+       "title": "Dune: Part Two",
+       "year": 2024
+      }
+     },
+     {
+      "role": "Willy Wonka",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "787699",
+        "kind": "movie"
+       },
+       "score": 71,
+       "title": "Wonka",
+       "year": 2023
+      }
+     },
+     {
+      "role": "Paul Atreides",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/v1tRXZ4JtD2Iv6fjkPvT4GiwslV.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "438631",
+        "kind": "movie"
+       },
+       "score": 78,
+       "title": "Dune",
+       "year": 2021
+      }
+     },
+     {
+      "role": "King Henry V",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/8u0QBGUbZcBW59VEAdmeFl9g98N.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "505026",
+        "kind": "movie"
+       },
+       "score": 71,
+       "title": "The King",
+       "year": 2019
+      }
+     },
+     {
+      "role": "Gatsby Welles",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/z4A6mFOLTMZAhCSPRyrtzG0SPbd.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "449563",
+        "kind": "movie"
+       },
+       "score": 66,
+       "title": "A Rainy Day in New York",
+       "year": 2019
+      }
+     },
+     {
+      "role": "Elio Perlman",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/gXiE0WveDnT0n5J4sW9TMxXF4oT.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "398818",
+        "kind": "movie"
+       },
+       "score": 80,
+       "title": "Call Me by Your Name",
+       "year": 2017
+      }
+     },
+     {
+      "role": "Tom Cooper (young)",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "157336",
+        "kind": "movie"
+       },
+       "score": 85,
+       "title": "Interstellar",
+       "year": 2014
+      }
+     },
+     {
+      "role": "Finn Walden",
+      "title": {
+       "cover": null,
+       "format": "Series",
+       "ref": {
+        "id": "1407",
+        "kind": "tv"
+       },
+       "score": 77,
+       "title": "Homeland",
+       "year": 2011
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/h632/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
+  "known": "Acting",
+  "name": "Timothée Chalamet",
+  "native": null,
+  "ref": {
+   "id": "1190668",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

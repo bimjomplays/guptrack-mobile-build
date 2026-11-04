@@ -1,0 +1,7 @@
+{
+ "code": "7KQ4-M2XD",
+ "expiresAt": 1793717460000,
+ "link": "nuvio://auth/guptrack?server=https%3A%2F%2Fguptrack.example&code=7KQ4-M2XD",
+ "server": "https://guptrack.example",
+ "ttl": 600
+}

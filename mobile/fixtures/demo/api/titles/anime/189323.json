@@ -1,0 +1,95 @@
+{
+ "title": {
+  "alt": [
+   "Shangri-La Frontier 3rd Season",
+   "シャングリラ・フロンティア 3rd season"
+  ],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189323-gHXhqIOBUY8F.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Status",
+    "value": "Not yet aired"
+   },
+   {
+    "label": "Next episode",
+    "value": "Ep 1, Jan 17, 2027"
+   },
+   {
+    "label": "Aired",
+    "value": "Jan 10, 2027"
+   },
+   {
+    "label": "Season",
+    "value": "Winter 2027"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "6052",
+       "to": "studio"
+      },
+      "text": "C2C"
+     }
+    ],
+    "value": "C2C"
+   },
+   {
+    "label": "Members",
+    "value": "39,562"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Fantasy",
+   "Sci-Fi"
+  ],
+  "headline": [
+   "TV",
+   "Winter 2027"
+  ],
+  "idMal": 61338,
+  "makers": [
+   {
+    "ref": {
+     "id": "6052",
+     "to": "studio"
+    },
+    "text": "C2C"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "189323",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": null,
+  "scoreNote": "39,562 members",
+  "seasons": [],
+  "staff": [],
+  "status": "upcoming",
+  "statusText": "Not yet aired",
+  "synopsis": [],
+  "tags": [],
+  "title": "Shangri-La Frontier Season 3",
+  "trailer": null,
+  "volumes": null,
+  "year": 2027
+ }
+}

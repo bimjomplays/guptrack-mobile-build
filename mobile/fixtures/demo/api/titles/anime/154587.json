@@ -1,0 +1,98 @@
+{
+ "title": {
+  "alt": [
+   "Sousou no Frieren",
+   "葬送のフリーレン"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/154587-ivXNJ23SM1xB.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 28,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "28"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Sep 29, 2023"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2023"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "11",
+       "to": "studio"
+      },
+      "text": "MADHOUSE"
+     }
+    ],
+    "value": "MADHOUSE"
+   },
+   {
+    "label": "Members",
+    "value": "496,054"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Adventure",
+   "Drama",
+   "Fantasy"
+  ],
+  "headline": [
+   "TV",
+   "Fall 2023",
+   "28 episodes"
+  ],
+  "idMal": 52991,
+  "makers": [
+   {
+    "ref": {
+     "id": "11",
+     "to": "studio"
+    },
+    "text": "MADHOUSE"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "154587",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 91,
+  "scoreNote": "496,054 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Frieren: Beyond Journey’s End",
+  "trailer": null,
+  "volumes": null,
+  "year": 2023
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Mike Ehrmantraut",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "1396",
+        "kind": "tv"
+       },
+       "score": 90,
+       "title": "Breaking Bad",
+       "year": 2008
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Mike Ehrmantraut",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "1396",
+        "kind": "tv"
+       },
+       "score": 90,
+       "title": "Breaking Bad",
+       "year": 2008
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/bswk26L13PvY4iMTwUTAsepXCLv.jpg",
+  "known": "Acting",
+  "name": "Jonathan Banks",
+  "native": null,
+  "ref": {
+   "id": "93962258",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

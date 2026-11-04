@@ -1,0 +1,469 @@
+{
+ "mine": {
+  "at": 1793353260000,
+  "author": {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+   "lists": [
+    "anime",
+    "manga",
+    "tv",
+    "movies",
+    "books"
+   ],
+   "name": "Mika",
+   "open": true,
+   "relation": "self",
+   "username": "mika"
+  },
+  "body": "It takes its time with every goodbye, and by the end the small moments are the ones that stay. The best thing I watched this year.",
+  "cut": false,
+  "edited": null,
+  "id": 11,
+  "score": 90,
+  "social": {
+   "canLike": false,
+   "liked": false,
+   "likers": [
+    {
+     "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+     "lists": [
+      "anime",
+      "manga",
+      "tv",
+      "movies",
+      "books"
+     ],
+     "name": "Tobi",
+     "open": true,
+     "relation": "friend",
+     "since": 1756738800000,
+     "username": "tobiwan"
+    },
+    {
+     "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+     "lists": [
+      "anime",
+      "manga",
+      "tv",
+      "movies",
+      "books"
+     ],
+     "name": "Noor",
+     "open": true,
+     "relation": "friend",
+     "since": 1768921200000,
+     "username": "noor.reads"
+    },
+    {
+     "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+     "lists": [
+      "anime",
+      "manga",
+      "tv",
+      "movies",
+      "books"
+     ],
+     "name": "Kenji",
+     "open": true,
+     "relation": "friend",
+     "since": 1791471600000,
+     "username": "kenji"
+    }
+   ],
+   "likes": 3,
+   "replies": 1,
+   "target": {
+    "id": 11,
+    "on": "review"
+   }
+  },
+  "spoiler": false,
+  "title": {
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+   "format": "TV",
+   "id": "154587",
+   "media": "anime",
+   "title": "Frieren: Beyond Journey’s End"
+  }
+ },
+ "reviews": [
+  {
+   "at": 1793716200000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Kenji",
+    "open": true,
+    "relation": "friend",
+    "since": 1791471600000,
+    "username": "kenji"
+   },
+   "body": "It never hurries, and that is the point. An elf who outlives everyone slowly learns what the short years meant, and the quiet episodes build to the exam, which pays all of them off.\n\nFern and Stark grow up in the gaps between scenes, and by the end you notice how much they’ve changed without anyone saying it.",
+   "cut": false,
+   "edited": null,
+   "id": 12,
+   "score": 90,
+   "social": {
+    "canLike": true,
+    "liked": true,
+    "likers": [
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Mika",
+      "open": true,
+      "relation": "self",
+      "username": "mika"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Tobi",
+      "open": true,
+      "relation": "friend",
+      "since": 1756738800000,
+      "username": "tobiwan"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Lena",
+      "open": true,
+      "relation": "friend",
+      "since": 1771081200000,
+      "username": "lena"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Hal",
+      "open": true,
+      "relation": "friend",
+      "since": 1780326000000,
+      "username": "hal"
+     }
+    ],
+    "likes": 4,
+    "replies": 2,
+    "target": {
+     "id": 12,
+     "on": "review"
+    }
+   },
+   "spoiler": false,
+   "title": {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+    "format": "TV",
+    "id": "154587",
+    "media": "anime",
+    "title": "Frieren: Beyond Journey’s End"
+   }
+  },
+  {
+   "at": 1791902460000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Noor",
+    "open": true,
+    "relation": "friend",
+    "since": 1768921200000,
+    "username": "noor.reads"
+   },
+   "body": "Read the manga first, then watch this. The adaptation adds so much air to the panels, and the flashbacks to Himmel hit harder with music.",
+   "cut": false,
+   "edited": null,
+   "id": 13,
+   "score": 95,
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Lena",
+      "open": true,
+      "relation": "friend",
+      "since": 1771081200000,
+      "username": "lena"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Kenji",
+      "open": true,
+      "relation": "friend",
+      "since": 1791471600000,
+      "username": "kenji"
+     }
+    ],
+    "likes": 2,
+    "replies": 0,
+    "target": {
+     "id": 13,
+     "on": "review"
+    }
+   },
+   "spoiler": false,
+   "title": {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+    "format": "TV",
+    "id": "154587",
+    "media": "anime",
+    "title": "Frieren: Beyond Journey’s End"
+   }
+  },
+  {
+   "at": 1791124860000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Hal",
+    "open": true,
+    "relation": "friend",
+    "since": 1780326000000,
+    "username": "hal"
+   },
+   "body": "Serie’s test at the end is the whole show in one scene: who you are matters more than what you can do.",
+   "cut": false,
+   "edited": null,
+   "id": 14,
+   "score": 80,
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Kenji",
+      "open": true,
+      "relation": "friend",
+      "since": 1791471600000,
+      "username": "kenji"
+     }
+    ],
+    "likes": 1,
+    "replies": 1,
+    "target": {
+     "id": 14,
+     "on": "review"
+    }
+   },
+   "spoiler": true,
+   "title": {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+    "format": "TV",
+    "id": "154587",
+    "media": "anime",
+    "title": "Frieren: Beyond Journey’s End"
+   }
+  },
+  {
+   "at": 1793198460000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137080-UHcynYNjb5ZU.png",
+    "lists": [
+     "anime",
+     "manga"
+    ],
+    "name": "Makima Fan",
+    "open": true,
+    "relation": "none",
+    "username": "makima.fan"
+   },
+   "body": "Madhouse gives a gentle story big-budget animation. The young pair carry the middle stretch, the fight with Aura lands perfectly, and the music never tells you what to feel.",
+   "cut": false,
+   "edited": null,
+   "id": 15,
+   "score": 100,
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Kenji",
+      "open": true,
+      "relation": "friend",
+      "since": 1791471600000,
+      "username": "kenji"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Noor",
+      "open": true,
+      "relation": "friend",
+      "since": 1768921200000,
+      "username": "noor.reads"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b28967-ShW5sAxzZDny.png",
+      "lists": [
+       "anime"
+      ],
+      "name": "Power",
+      "open": false,
+      "relation": "none",
+      "username": "powerpower"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
+      "lists": [
+       "anime",
+       "manga"
+      ],
+      "name": "Aki",
+      "open": true,
+      "relation": "none",
+      "username": "aki.h"
+     },
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b61-ywXUyyocEEqt.png",
+      "lists": [],
+      "name": "Yuki",
+      "open": false,
+      "relation": "none",
+      "username": "yuki.tv"
+     }
+    ],
+    "likes": 5,
+    "replies": 2,
+    "target": {
+     "id": 15,
+     "on": "review"
+    }
+   },
+   "spoiler": false,
+   "title": {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+    "format": "TV",
+    "id": "154587",
+    "media": "anime",
+    "title": "Frieren: Beyond Journey’s End"
+   }
+  },
+  {
+   "at": 1792420860000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b28967-ShW5sAxzZDny.png",
+    "lists": [
+     "anime"
+    ],
+    "name": "Power",
+    "open": false,
+    "relation": "none",
+    "username": "powerpower"
+   },
+   "body": "It is gorgeous and I see why people love it, yet early on nothing much is at risk. Expect a stroll with companions more than a quest.",
+   "cut": false,
+   "edited": null,
+   "id": 16,
+   "score": 60,
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b61-ywXUyyocEEqt.png",
+      "lists": [],
+      "name": "Yuki",
+      "open": false,
+      "relation": "none",
+      "username": "yuki.tv"
+     }
+    ],
+    "likes": 1,
+    "replies": 1,
+    "target": {
+     "id": 16,
+     "on": "review"
+    }
+   },
+   "spoiler": false,
+   "title": {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+    "format": "TV",
+    "id": "154587",
+    "media": "anime",
+    "title": "Frieren: Beyond Journey’s End"
+   }
+  }
+ ],
+ "visibility": "public"
+}

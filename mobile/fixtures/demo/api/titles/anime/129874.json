@@ -1,0 +1,101 @@
+{
+ "title": {
+  "alt": [
+   "Kimetsu no Yaiba: Mugen Ressha-hen (TV)",
+   "鬼滅の刃 無限列車編 (TV)"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/129874-3ipZzS50i9Ta.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 7,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx129874-g6ZKXB94Hui1.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "7"
+   },
+   {
+    "label": "Episode length",
+    "value": "23 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 10, 2021"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2021"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "43",
+       "to": "studio"
+      },
+      "text": "ufotable"
+     }
+    ],
+    "value": "ufotable"
+   },
+   {
+    "label": "Members",
+    "value": "368,730"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Fantasy",
+   "Mystery",
+   "Supernatural"
+  ],
+  "headline": [
+   "TV",
+   "Fall 2021",
+   "7 episodes"
+  ],
+  "idMal": 49926,
+  "makers": [
+   {
+    "ref": {
+     "id": "43",
+     "to": "studio"
+    },
+    "text": "ufotable"
+   }
+  ],
+  "media": "anime",
+  "minutes": 23,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "129874",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 82,
+  "scoreNote": "368,730 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Demon Slayer: Kimetsu no Yaiba Mugen Train Arc",
+  "trailer": null,
+  "volumes": null,
+  "year": 2021
+ }
+}

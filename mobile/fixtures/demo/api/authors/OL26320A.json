@@ -1,0 +1,60 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Works",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Book · 1937",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/14627509-M.jpg",
+       "format": "Book",
+       "ref": {
+        "id": "OL27482W",
+        "kind": "book"
+       },
+       "score": 86,
+       "title": "The Hobbit",
+       "year": 1937
+      }
+     }
+    ],
+    "title": "Most read"
+   },
+   {
+    "items": [
+     {
+      "role": "Book · 1937",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/14627509-M.jpg",
+       "format": "Book",
+       "ref": {
+        "id": "OL27482W",
+        "kind": "book"
+       },
+       "score": 86,
+       "title": "The Hobbit",
+       "year": 1937
+      }
+     }
+    ],
+    "title": "Books"
+   }
+  ],
+  "image": null,
+  "known": "Author",
+  "name": "J.R.R. Tolkien",
+  "native": null,
+  "ref": {
+   "id": "OL26320A",
+   "to": "author"
+  }
+ }
+}

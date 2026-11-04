@@ -1,0 +1,98 @@
+{
+ "title": {
+  "alt": [
+   "Takopii no Genzai",
+   "タコピーの原罪"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185407-WOKgyadY4Pr1.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 6,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185407-7uzY4fA3hokP.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "ONA"
+   },
+   {
+    "label": "Episodes",
+    "value": "6"
+   },
+   {
+    "label": "Episode length",
+    "value": "23 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Jun 28, 2025"
+   },
+   {
+    "label": "Season",
+    "value": "Summer 2025"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "6306",
+       "to": "studio"
+      },
+      "text": "ENISHIYA"
+     }
+    ],
+    "value": "ENISHIYA"
+   },
+   {
+    "label": "Members",
+    "value": "148,485"
+   }
+  ],
+  "format": "ONA",
+  "genres": [
+   "Drama",
+   "Psychological",
+   "Sci-Fi"
+  ],
+  "headline": [
+   "ONA",
+   "Summer 2025",
+   "6 episodes"
+  ],
+  "idMal": 60489,
+  "makers": [
+   {
+    "ref": {
+     "id": "6306",
+     "to": "studio"
+    },
+    "text": "ENISHIYA"
+   }
+  ],
+  "media": "anime",
+  "minutes": 23,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "185407",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 86,
+  "scoreNote": "148,485 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Takopi's Original Sin",
+  "trailer": null,
+  "volumes": null,
+  "year": 2025
+ }
+}

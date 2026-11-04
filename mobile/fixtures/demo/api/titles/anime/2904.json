@@ -1,0 +1,100 @@
+{
+ "title": {
+  "alt": [
+   "Code Geass: Hangyaku no Lelouch R2",
+   "コードギアス 反逆のルルーシュ R2"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/2904-X71fcvE83n3s.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 25,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2904-Fet9Q33suC7G.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "25"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Apr 6, 2008"
+   },
+   {
+    "label": "Season",
+    "value": "Spring 2008"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "14",
+       "to": "studio"
+      },
+      "text": "Sunrise"
+     }
+    ],
+    "value": "Sunrise"
+   },
+   {
+    "label": "Members",
+    "value": "369,657"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Mecha",
+   "Sci-Fi",
+   "Thriller"
+  ],
+  "headline": [
+   "TV",
+   "Spring 2008",
+   "25 episodes"
+  ],
+  "idMal": 2904,
+  "makers": [
+   {
+    "ref": {
+     "id": "14",
+     "to": "studio"
+    },
+    "text": "Sunrise"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "2904",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 87,
+  "scoreNote": "369,657 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Code Geass: Lelouch of the Rebellion R2",
+  "trailer": null,
+  "volumes": null,
+  "year": 2008
+ }
+}

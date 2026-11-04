@@ -1,0 +1,99 @@
+{
+ "title": {
+  "alt": [
+   "Mushoku Tensei III: Isekai Ittara Honki Dasu",
+   "無職転生Ⅲ ～異世界行ったら本気だす～"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178789-9nHWmoRLlcLu.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 14,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "14"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Jul 4, 2026"
+   },
+   {
+    "label": "Season",
+    "value": "Summer 2026"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "6309",
+       "to": "studio"
+      },
+      "text": "Studio Bind"
+     }
+    ],
+    "value": "Studio Bind"
+   },
+   {
+    "label": "Members",
+    "value": "176,077"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Adventure",
+   "Drama",
+   "Ecchi",
+   "Fantasy"
+  ],
+  "headline": [
+   "TV",
+   "Summer 2026",
+   "14 episodes"
+  ],
+  "idMal": 59193,
+  "makers": [
+   {
+    "ref": {
+     "id": "6309",
+     "to": "studio"
+    },
+    "text": "Studio Bind"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "178789",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 86,
+  "scoreNote": "176,077 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Mushoku Tensei: Jobless Reincarnation Season 3",
+  "trailer": null,
+  "volumes": null,
+  "year": 2026
+ }
+}

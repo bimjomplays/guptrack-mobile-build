@@ -1,0 +1,74 @@
+{
+ "title": {
+  "alt": [
+   "東京喰種 トーキョーグール"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/63327-uaFaG1HAJ0tK.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 144,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx63327-glC9cDxYBja9.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Chapters",
+    "value": "144"
+   },
+   {
+    "label": "Volumes",
+    "value": "14"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Published",
+    "value": "Sep 22, 2011"
+   },
+   {
+    "label": "Members",
+    "value": "199,490"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Horror",
+   "Mystery",
+   "Psychological",
+   "Supernatural"
+  ],
+  "headline": [
+   "Manga",
+   "2011",
+   "144 chapters"
+  ],
+  "idMal": 33327,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "63327",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 85,
+  "scoreNote": "199,490 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Tokyo Ghoul",
+  "trailer": null,
+  "volumes": 14,
+  "year": 2011
+ }
+}

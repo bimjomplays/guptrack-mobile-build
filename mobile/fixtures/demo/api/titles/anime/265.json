@@ -1,0 +1,97 @@
+{
+ "title": {
+  "alt": [
+   "Hajime no Ippo: Mashiba vs Kimura - Shikei Shikkou",
+   "はじめの一歩 間柴vs木村 死刑執行"
+  ],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx265-6H1q2JBs7tB7.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "OVA"
+   },
+   {
+    "label": "Episodes",
+    "value": "1"
+   },
+   {
+    "label": "Episode length",
+    "value": "61 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Sep 5, 2003"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2003"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "11",
+       "to": "studio"
+      },
+      "text": "MADHOUSE"
+     }
+    ],
+    "value": "MADHOUSE"
+   },
+   {
+    "label": "Members",
+    "value": "30,303"
+   }
+  ],
+  "format": "OVA",
+  "genres": [
+   "Comedy",
+   "Sports"
+  ],
+  "headline": [
+   "OVA",
+   "Fall 2003",
+   "1 episode"
+  ],
+  "idMal": 265,
+  "makers": [
+   {
+    "ref": {
+     "id": "11",
+     "to": "studio"
+    },
+    "text": "MADHOUSE"
+   }
+  ],
+  "media": "anime",
+  "minutes": 61,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "265",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 81,
+  "scoreNote": "30,303 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Hajime no Ippo: The Fighting! - Mashiba vs Kimura",
+  "trailer": null,
+  "volumes": null,
+  "year": 2003
+ }
+}

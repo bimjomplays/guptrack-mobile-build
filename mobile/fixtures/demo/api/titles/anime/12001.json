@@ -1,0 +1,48 @@
+{
+ "title": {
+  "alt": [],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx12001-XX0NNNfaKZ3e.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   }
+  ],
+  "format": "Film",
+  "genres": [],
+  "headline": [
+   "Film",
+   "2011"
+  ],
+  "idMal": null,
+  "makers": [],
+  "media": "anime",
+  "minutes": 100,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "12001",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": null,
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "ONE PIECE 3D: Gekisou! Trap Coaster",
+  "trailer": null,
+  "volumes": null,
+  "year": 2011
+ }
+}

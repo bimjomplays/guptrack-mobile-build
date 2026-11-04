@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Mira Kano, Kano Mira",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "110316",
+        "kind": "tv"
+       },
+       "score": 81,
+       "title": "Alice in Borderland",
+       "year": 2020
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Mira Kano, Kano Mira",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "110316",
+        "kind": "tv"
+       },
+       "score": 81,
+       "title": "Alice in Borderland",
+       "year": 2020
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/tqFHQiJUycuob3ytvilaAWDlbQ8.jpg",
+  "known": "Acting",
+  "name": "Riisa Naka",
+  "native": null,
+  "ref": {
+   "id": "94016154",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

@@ -1,0 +1,376 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://image.tmdb.org/t/p/w1280/lY2DhbA7Hy44fAKddr06UrXWWaQ.jpg",
+  "cast": [
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/vDbgxc7RYawpB1wK7JDEj62j06H.jpg",
+     "name": "Bella Ramsey",
+     "ref": {
+      "id": "93018273",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Ellie Williams"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/oKcMbVn0NJTNzQt0ClKKvVXkm60.jpg",
+     "name": "Pedro Pascal",
+     "ref": {
+      "id": "95456671",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Joel Miller, Joel Miller (uncredited)"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/bIPORtYxTJPEUJIThbZrpqf4A11.jpg",
+     "name": "Gabriel Luna",
+     "ref": {
+      "id": "97919576",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Tommy Miller"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/7O5GWIH8IHwU4kGZIhC3JkGDiZr.jpg",
+     "name": "Isabela Merced",
+     "ref": {
+      "id": "97451933",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Dina"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/cRuVRx1DMe2hBkz5pssVqdpCtaQ.jpg",
+     "name": "Young Mazino",
+     "ref": {
+      "id": "92044064",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Jesse"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/ujpdNAKxlv6TRI2mm0k3eSSZJkB.jpg",
+     "name": "Rutina Wesley",
+     "ref": {
+      "id": "96626022",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Maria"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/6TEscmA3aFBkdWX2DuozcUhHkBK.jpg",
+     "name": "Samuel Hoeksema",
+     "ref": {
+      "id": "91826220",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Museum Clicker, Clicker"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/7ZvcfWA5O5ULiupbHZtGGEPwnpI.jpg",
+     "name": "Danny Ramirez",
+     "ref": {
+      "id": "92488407",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Manny Alvarez"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/uWEaY5gypb6cp1bdUYG4uCKw4sK.jpg",
+     "name": "Robert John Burke",
+     "ref": {
+      "id": "90691509",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Seth"
+   }
+  ],
+  "characters": [],
+  "count": null,
+  "cover": "https://image.tmdb.org/t/p/w500/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Series"
+   },
+   {
+    "label": "Status",
+    "value": "Returning series"
+   },
+   {
+    "label": "Aired",
+    "value": "Jan 15, 2023"
+   },
+   {
+    "label": "Creators",
+    "links": [
+     {
+      "ref": {
+       "id": "91556452",
+       "source": "tmdb",
+       "to": "person"
+      },
+      "text": "Craig Mazin"
+     },
+     {
+      "ref": {
+       "id": "97503536",
+       "source": "tmdb",
+       "to": "person"
+      },
+      "text": "Neil Druckmann"
+     }
+    ],
+    "value": "Craig Mazin, Neil Druckmann"
+   },
+   {
+    "label": "Network",
+    "links": [
+     {
+      "ref": {
+       "id": "49",
+       "to": "network"
+      },
+      "text": "HBO"
+     }
+    ],
+    "value": "HBO"
+   },
+   {
+    "label": "Rated",
+    "value": "TV-MA"
+   },
+   {
+    "label": "Language",
+    "value": "English"
+   }
+  ],
+  "format": "Series",
+  "genres": [
+   "Drama"
+  ],
+  "headline": [
+   "Series",
+   "2023–",
+   "TV-MA"
+  ],
+  "makers": [
+   {
+    "ref": {
+     "id": "91556452",
+     "source": "tmdb",
+     "to": "person"
+    },
+    "text": "Craig Mazin"
+   },
+   {
+    "ref": {
+     "id": "97503536",
+     "source": "tmdb",
+     "to": "person"
+    },
+    "text": "Neil Druckmann"
+   }
+  ],
+  "media": "tv",
+  "minutes": 45,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "95396",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "Severance",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "136315",
+     "kind": "tv"
+    },
+    "score": 82,
+    "title": "The Bear",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "126308",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "Shōgun",
+    "year": 2024
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "83867",
+     "kind": "tv"
+    },
+    "score": 83,
+    "title": "Andor",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "1396",
+     "kind": "tv"
+    },
+    "score": 90,
+    "title": "Breaking Bad",
+    "year": 2008
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "95480",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Slow Horses",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "225171",
+     "kind": "tv"
+    },
+    "score": 79,
+    "title": "Pluribus",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "76479",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "The Boys",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "87108",
+     "kind": "tv"
+    },
+    "score": 87,
+    "title": "Chernobyl",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "108978",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Reacher",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "110316",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Alice in Borderland",
+    "year": 2020
+   }
+  ],
+  "ref": {
+   "id": "100088",
+   "kind": "tv"
+  },
+  "relations": [],
+  "score": 84,
+  "scoreNote": "22,382 votes",
+  "seasons": [],
+  "staff": [
+   {
+    "person": {
+     "image": null,
+     "name": "Craig Mazin",
+     "ref": {
+      "id": "91556452",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Creator"
+   },
+   {
+    "person": {
+     "image": null,
+     "name": "Neil Druckmann",
+     "ref": {
+      "id": "97503536",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Creator"
+   }
+  ],
+  "status": "releasing",
+  "statusText": "Returning series",
+  "synopsis": [
+   [
+    {
+     "text": "Twenty years after modern civilization has been destroyed, Joel, a hardened survivor, is hired to smuggle Ellie, a 14-year-old girl, out of an oppressive quarantine zone. What starts as a small job soon becomes a brutal, heartbreaking journey, as they both must traverse the United States and depend on each other for survival."
+    }
+   ]
+  ],
+  "tags": [],
+  "title": "The Last of Us",
+  "trailer": null,
+  "year": 2023
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "done": 486,
+ "id": "demo-import-1",
+ "name": "mika_watches",
+ "phase": "ready",
+ "plan": [
+  {
+   "decisions": {
+    "added": 18,
+    "kept": 2,
+    "unchanged": 386,
+    "updated": 6
+   },
+   "entries": 412,
+   "media": "anime",
+   "statuses": {
+    "completed": 318,
+    "current": 9,
+    "dropped": 21,
+    "hold": 12,
+    "planned": 52
+   }
+  },
+  {
+   "decisions": {
+    "added": 3,
+    "kept": 0,
+    "unchanged": 70,
+    "updated": 1
+   },
+   "entries": 74,
+   "media": "manga",
+   "statuses": {
+    "completed": 41,
+    "current": 7,
+    "dropped": 3,
+    "hold": 5,
+    "planned": 18
+   }
+  }
+ ],
+ "source": "anilist",
+ "started": 1793716800000,
+ "total": 486,
+ "unmatched": [
+  {
+   "key": "anime:9001",
+   "media": "anime",
+   "reason": "Not in the catalogue",
+   "skipped": true,
+   "title": "Kaiju Office Hours (2001 OVA)",
+   "year": 2001
+  },
+  {
+   "key": "manga:9002",
+   "media": "manga",
+   "reason": "Not in the catalogue",
+   "title": "Moonlit Bakery Oneshot",
+   "year": null
+  }
+ ]
+}

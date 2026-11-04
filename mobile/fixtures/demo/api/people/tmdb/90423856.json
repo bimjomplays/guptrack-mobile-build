@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Chung-sook",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "496243",
+        "kind": "movie"
+       },
+       "score": 85,
+       "title": "Parasite",
+       "year": 2019
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Chung-sook",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "496243",
+        "kind": "movie"
+       },
+       "score": 85,
+       "title": "Parasite",
+       "year": 2019
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/pZiQXSWwo9F4gncHfa1yw0CQjxk.jpg",
+  "known": "Acting",
+  "name": "Jang Hye-jin",
+  "native": null,
+  "ref": {
+   "id": "90423856",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

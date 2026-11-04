@@ -1,0 +1,51 @@
+{
+ "company": {
+  "description": [],
+  "facts": [
+   {
+    "label": "Headquarters",
+    "value": "New York City, New York"
+   },
+   {
+    "label": "Country",
+    "value": "United States"
+   }
+  ],
+  "groups": [
+   {
+    "title": "Shows",
+    "titles": [
+     {
+      "cover": "https://image.tmdb.org/t/p/w342/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+      "format": "Series",
+      "ref": {
+       "id": "100088",
+       "kind": "tv"
+      },
+      "score": 84,
+      "title": "The Last of Us",
+      "year": 2023
+     },
+     {
+      "cover": "https://image.tmdb.org/t/p/w342/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+      "format": "Series",
+      "ref": {
+       "id": "87108",
+       "kind": "tv"
+      },
+      "score": 87,
+      "title": "Chernobyl",
+      "year": 2019
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "TV network",
+  "name": "HBO",
+  "ref": {
+   "id": "49",
+   "to": "network"
+  }
+ }
+}

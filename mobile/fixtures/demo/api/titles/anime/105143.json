@@ -1,0 +1,50 @@
+{
+ "title": {
+  "alt": [
+   "ONE PIECE STAMPEDE"
+  ],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx105143-5uBDmhvMr6At.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   }
+  ],
+  "format": "Film",
+  "genres": [],
+  "headline": [
+   "Film",
+   "2019"
+  ],
+  "idMal": null,
+  "makers": [],
+  "media": "anime",
+  "minutes": 100,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "105143",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": null,
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "One Piece: Stampede",
+  "trailer": null,
+  "volumes": null,
+  "year": 2019
+ }
+}

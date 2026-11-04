@@ -1,0 +1,131 @@
+{
+ "season": "winter",
+ "titles": [
+  {
+   "alt": [
+    "MASHLE: Sanma Taisou Shinkakusha Saishuu Shiken-hen",
+    "マッシュル-MASHLE- 三魔対争神覚者最終試験編"
+   ],
+   "by": "A-1 Pictures",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177704-y10Nw7MUXCHD.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Comedy",
+    "Fantasy"
+   ],
+   "id": "anilist:177704",
+   "next": null,
+   "popularity": 41725,
+   "score": null,
+   "season": "winter",
+   "source": "anilist",
+   "sourceId": "177704",
+   "start": "2027-01",
+   "status": "upcoming",
+   "tags": [],
+   "title": "MASHLE: MAGIC AND MUSCLES The Tri-Magicathlon Divine Visionary Final Exam Arc",
+   "trending": 417,
+   "year": 2027
+  },
+  {
+   "alt": [
+    "Shangri-La Frontier 3rd Season",
+    "シャングリラ・フロンティア 3rd season"
+   ],
+   "by": "C2C",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189323-gHXhqIOBUY8F.jpg",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Sci-Fi"
+   ],
+   "id": "anilist:189323",
+   "next": {
+    "at": 1800172800,
+    "episode": 1
+   },
+   "popularity": 39562,
+   "score": null,
+   "season": "winter",
+   "source": "anilist",
+   "sourceId": "189323",
+   "start": "2027-01-10",
+   "status": "upcoming",
+   "tags": [],
+   "title": "Shangri-La Frontier Season 3",
+   "trending": 395,
+   "year": 2027
+  },
+  {
+   "alt": [
+    "Ki ni Natteru Hito ga Otoko ja Nakatta",
+    "気になってる人が男じゃなかった"
+   ],
+   "by": "CloverWorks",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186822-9zsR5NtOP0yJ.jpg",
+   "format": "TV",
+   "genres": [
+    "Music",
+    "Romance"
+   ],
+   "id": "anilist:186822",
+   "next": {
+    "at": 1799416800,
+    "episode": 1
+   },
+   "popularity": 33725,
+   "score": null,
+   "season": "winter",
+   "source": "anilist",
+   "sourceId": "186822",
+   "start": "2027-01-08",
+   "status": "upcoming",
+   "tags": [],
+   "title": "The Guy She Was Interested In Wasn't a Guy At All",
+   "trending": 337,
+   "year": 2027
+  },
+  {
+   "alt": [
+    "世界最高の暗殺者、異世界貴族に転生する 2ndシーズン"
+   ],
+   "by": "SILVER LINK.",
+   "carried": false,
+   "count": null,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169579-KxMH0iq7jlPr.png",
+   "format": "TV",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Mystery",
+    "Romance"
+   ],
+   "id": "anilist:169579",
+   "next": null,
+   "popularity": 30470,
+   "score": null,
+   "season": "winter",
+   "source": "anilist",
+   "sourceId": "169579",
+   "start": "2027-01",
+   "status": "upcoming",
+   "tags": [],
+   "title": "Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru 2nd Season",
+   "trending": 304,
+   "year": 2027
+  }
+ ],
+ "year": 2027
+}

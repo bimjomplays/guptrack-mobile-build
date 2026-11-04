@@ -1,0 +1,60 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Works",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Novel · 2008",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/10526598-M.jpg",
+       "format": "Novel",
+       "ref": {
+        "id": "OL16314245W",
+        "kind": "book"
+       },
+       "score": 89,
+       "title": "The Dark Forest (The Three-Body Problem Series Book 2)",
+       "year": 2008
+      }
+     }
+    ],
+    "title": "Most read"
+   },
+   {
+    "items": [
+     {
+      "role": "Novel · 2008",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/10526598-M.jpg",
+       "format": "Novel",
+       "ref": {
+        "id": "OL16314245W",
+        "kind": "book"
+       },
+       "score": 89,
+       "title": "The Dark Forest (The Three-Body Problem Series Book 2)",
+       "year": 2008
+      }
+     }
+    ],
+    "title": "Books"
+   }
+  ],
+  "image": null,
+  "known": "Author",
+  "name": "刘慈欣",
+  "native": null,
+  "ref": {
+   "id": "OL7044246A",
+   "to": "author"
+  }
+ }
+}

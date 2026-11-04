@@ -1,0 +1,71 @@
+{
+ "title": {
+  "alt": [
+   "Jujutsu Kaisen: Kaigyoku・Gyokusetsu"
+  ],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192809-wRlqABGsx2Qs.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "569",
+       "to": "studio"
+      },
+      "text": "MAPPA"
+     }
+    ],
+    "value": "MAPPA"
+   }
+  ],
+  "format": "Film",
+  "genres": [],
+  "headline": [
+   "Film",
+   "2025"
+  ],
+  "idMal": null,
+  "makers": [
+   {
+    "ref": {
+     "id": "569",
+     "to": "studio"
+    },
+    "text": "MAPPA"
+   }
+  ],
+  "media": "anime",
+  "minutes": 100,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "192809",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 84,
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "JUJUTSU KAISEN: Hidden Inventory / Premature Death – The Movie",
+  "trailer": null,
+  "volumes": null,
+  "year": 2025
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "title": {
+  "alt": [
+   "ONE PIECE FILM: STRONG WORLD"
+  ],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx4155-P5TDf6t6qFwX.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   }
+  ],
+  "format": "Film",
+  "genres": [],
+  "headline": [
+   "Film",
+   "2009"
+  ],
+  "idMal": null,
+  "makers": [],
+  "media": "anime",
+  "minutes": 100,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "4155",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": null,
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "One Piece Film: Strong World",
+  "trailer": null,
+  "volumes": null,
+  "year": 2009
+ }
+}

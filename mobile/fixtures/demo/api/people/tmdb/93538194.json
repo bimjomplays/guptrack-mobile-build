@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Bix Caleen",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "83867",
+        "kind": "tv"
+       },
+       "score": 83,
+       "title": "Andor",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Bix Caleen",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "83867",
+        "kind": "tv"
+       },
+       "score": 83,
+       "title": "Andor",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/hzu7OqTmNCT1xdCdmwBSf2yJvaO.jpg",
+  "known": "Acting",
+  "name": "Adria Arjona",
+  "native": null,
+  "ref": {
+   "id": "93538194",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

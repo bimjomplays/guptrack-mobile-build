@@ -1,0 +1,97 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx114129-RLgSuh6YbeYx.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "114129",
+       "kind": "anime"
+      },
+      "score": 90,
+      "title": "Gintama: THE VERY FINAL",
+      "year": 2021
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx126819-KlcARzqDMjvf.jpg",
+      "format": "Special",
+      "ref": {
+       "id": "126819",
+       "kind": "anime"
+      },
+      "score": 83,
+      "title": "Gintama: THE SEMI-FINAL",
+      "year": 2021
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx100784-7fWdiduBFr95.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "100784",
+       "kind": "anime"
+      },
+      "score": 86,
+      "title": "Gintama.: Silver Soul Arc",
+      "year": 2018
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101925-gcA84dgcSj2w.png",
+      "format": "TV",
+      "ref": {
+       "id": "101925",
+       "kind": "anime"
+      },
+      "score": 87,
+      "title": "Gintama.: Silver Soul Arc - Second Half War",
+      "year": 2018
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97889-ytqHdmus9wQi.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "97889",
+       "kind": "anime"
+      },
+      "score": 89,
+      "title": "Gintama Season 4",
+      "year": 2017
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx99714-0pCKHe4XYIz7.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "99714",
+       "kind": "anime"
+      },
+      "score": 82,
+      "title": "Gintama.: Slip Arc",
+      "year": 2017
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20996-kBEGEGdeK1r7.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "20996",
+       "kind": "anime"
+      },
+      "score": 90,
+      "title": "Gintama Season 3",
+      "year": 2015
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Bandai Namco Pictures",
+  "ref": {
+   "id": "6116",
+   "to": "studio"
+  }
+ }
+}

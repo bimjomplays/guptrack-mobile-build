@@ -1,0 +1,74 @@
+{
+ "title": {
+  "alt": [
+   "Tokyo卍Revengers",
+   "東京卍リベンジャーズ"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/102988-T9bMDQxSyGpv.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 279,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx102988-OoVJxQCH6fbR.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Chapters",
+    "value": "279"
+   },
+   {
+    "label": "Volumes",
+    "value": "31"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Published",
+    "value": "Mar 1, 2017"
+   },
+   {
+    "label": "Members",
+    "value": "118,820"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Drama",
+   "Romance",
+   "Supernatural"
+  ],
+  "headline": [
+   "Manga",
+   "2017",
+   "279 chapters"
+  ],
+  "idMal": 104565,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "102988",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 74,
+  "scoreNote": "118,820 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Tokyo Revengers",
+  "trailer": null,
+  "volumes": 31,
+  "year": 2017
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "title": {
+  "alt": [
+   "Jujutsu Kaisen 0",
+   "呪術廻戦 0"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/131573-3veuVz5p0z2I.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131573-rpl82vDEDRm6.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "1h 45m"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Released",
+    "value": "Dec 24, 2021"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2021"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "569",
+       "to": "studio"
+      },
+      "text": "MAPPA"
+     }
+    ],
+    "value": "MAPPA"
+   },
+   {
+    "label": "Members",
+    "value": "446,787"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Action",
+   "Supernatural"
+  ],
+  "headline": [
+   "Film",
+   "Fall 2021",
+   "1h 45m"
+  ],
+  "idMal": 48561,
+  "makers": [
+   {
+    "ref": {
+     "id": "569",
+     "to": "studio"
+    },
+    "text": "MAPPA"
+   }
+  ],
+  "media": "anime",
+  "minutes": 105,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "131573",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 83,
+  "scoreNote": "446,787 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "JUJUTSU KAISEN 0",
+  "trailer": null,
+  "volumes": null,
+  "year": 2021
+ }
+}

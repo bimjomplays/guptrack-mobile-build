@@ -1,0 +1,554 @@
+{
+ "title": {
+  "alt": [
+   "チェンソーマン",
+   "CSM",
+   "رجل المنشار",
+   "Человек-бензопила",
+   "체인소 맨"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/105778-ppHaMwown6c9.jpg",
+  "cast": [],
+  "characters": [
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b130102-FO1VHNnEnLlB.png",
+     "name": "Denji",
+     "ref": {
+      "id": "130102",
+      "to": "character"
+     }
+    },
+    "role": "Main",
+    "voices": []
+   },
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+     "name": "Power",
+     "ref": {
+      "id": "137079",
+      "to": "character"
+     }
+    },
+    "role": "Main",
+    "voices": []
+   },
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137080-UHcynYNjb5ZU.png",
+     "name": "Makima",
+     "ref": {
+      "id": "137080",
+      "to": "character"
+     }
+    },
+    "role": "Main",
+    "voices": []
+   },
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
+     "name": "Aki Hayakawa",
+     "ref": {
+      "id": "137081",
+      "to": "character"
+     }
+    },
+    "role": "Main",
+    "voices": []
+   },
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b282389-Mr4vAa8Du2Jx.jpg",
+     "name": "Asa Mitaka",
+     "ref": {
+      "id": "282389",
+      "to": "character"
+     }
+    },
+    "role": "Main",
+    "voices": []
+   },
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b282872-taoHfD0JGiZG.jpg",
+     "name": "Yoru",
+     "ref": {
+      "id": "282872",
+      "to": "character"
+     }
+    },
+    "role": "Main",
+    "voices": []
+   },
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b144592-pUY67nacCeud.png",
+     "name": "Yuutarou Kurose",
+     "ref": {
+      "id": "144592",
+      "to": "character"
+     }
+    },
+    "role": "Supporting",
+    "voices": []
+   },
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b144593-hdCTT9t54z0s.png",
+     "name": "Kishibe",
+     "ref": {
+      "id": "144593",
+      "to": "character"
+     }
+    },
+    "role": "Supporting",
+    "voices": []
+   },
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b144594-0dbO1NSYeZ12.png",
+     "name": "Kobeni Higashiyama",
+     "ref": {
+      "id": "144594",
+      "to": "character"
+     }
+    },
+    "role": "Supporting",
+    "voices": []
+   },
+   {
+    "character": {
+     "image": "https://s4.anilist.co/file/anilistcdn/character/large/b144595-R8Lfn0egUR3q.png",
+     "name": "Michiko Tendou",
+     "ref": {
+      "id": "144595",
+      "to": "character"
+     }
+    },
+    "role": "Supporting",
+    "voices": []
+   }
+  ],
+  "count": 232,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-euxXZEIfDY2u.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Chapters",
+    "value": "232"
+   },
+   {
+    "label": "Volumes",
+    "value": "24"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Published",
+    "value": "Dec 3, 2018"
+   },
+   {
+    "label": "Author",
+    "links": [
+     {
+      "ref": {
+       "id": "119917",
+       "source": "anilist",
+       "to": "person"
+      },
+      "text": "Tatsuki Fujimoto"
+     }
+    ],
+    "value": "Tatsuki Fujimoto"
+   },
+   {
+    "label": "Source",
+    "value": "Original"
+   },
+   {
+    "label": "Members",
+    "value": "336,577"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Drama",
+   "Horror",
+   "Supernatural"
+  ],
+  "headline": [
+   "Manga",
+   "2018",
+   "232 chapters"
+  ],
+  "idMal": 116778,
+  "makers": [
+   {
+    "ref": {
+     "id": "119917",
+     "source": "anilist",
+     "to": "person"
+    },
+    "text": "Tatsuki Fujimoto"
+   }
+  ],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx101517-H3TdM3g5ZUe9.jpg",
+    "format": "Manga",
+    "ref": {
+     "id": "101517",
+     "kind": "manga"
+    },
+    "score": 80,
+    "title": "Jujutsu Kaisen",
+    "year": 2018
+   },
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx87170-nyuwcN7rU4pc.jpg",
+    "format": "Manga",
+    "ref": {
+     "id": "87170",
+     "kind": "manga"
+    },
+    "score": 79,
+    "title": "Fire Punch",
+    "year": null
+   },
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx31133-Jx6map3Oidz1.png",
+    "format": "Manga",
+    "ref": {
+     "id": "31133",
+     "kind": "manga"
+    },
+    "score": 86,
+    "title": "Dorohedoro",
+    "year": null
+   },
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx132029-prGF4gePdSKv.jpg",
+    "format": "Manga",
+    "ref": {
+     "id": "132029",
+     "kind": "manga"
+    },
+    "score": 82,
+    "title": "Dandadan",
+    "year": 2021
+   },
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx100994-f6CMjiQQNVeS.png",
+    "format": "Manga",
+    "ref": {
+     "id": "100994",
+     "kind": "manga"
+    },
+    "score": 81,
+    "title": "Hell’s Paradise: Jigokuraku",
+    "year": null
+   },
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx120760-MtXvMgujLBpe.jpg",
+    "format": "Manga",
+    "ref": {
+     "id": "120760",
+     "kind": "manga"
+    },
+    "score": 75,
+    "title": "Kaiju No.8",
+    "year": 2020
+   },
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx146983-pLf4apCkFwKL.jpg",
+    "format": "One-shot",
+    "ref": {
+     "id": "146983",
+     "kind": "manga"
+    },
+    "score": 85,
+    "title": "Goodbye, Eri",
+    "year": null
+   },
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx31474-R4x7qkjUfBw6.jpg",
+    "format": "Manga",
+    "ref": {
+     "id": "31474",
+     "kind": "manga"
+    },
+    "score": 80,
+    "title": "Devilman",
+    "year": null
+   },
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx63327-glC9cDxYBja9.png",
+    "format": "Manga",
+    "ref": {
+     "id": "63327",
+     "kind": "manga"
+    },
+    "score": 85,
+    "title": "Tokyo Ghoul",
+    "year": 2011
+   },
+   {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx136807-KNfQQTRD4HUK.jpg",
+    "format": "One-shot",
+    "ref": {
+     "id": "136807",
+     "kind": "manga"
+    },
+    "score": 83,
+    "title": "Look Back",
+    "year": null
+   }
+  ],
+  "ref": {
+   "id": "105778",
+   "kind": "manga"
+  },
+  "relations": [
+   {
+    "relation": "Side story",
+    "title": {
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx138829-NthKwJR53d9O.jpg",
+     "format": "Light Novel",
+     "ref": {
+      "id": "138829",
+      "kind": "manga"
+     },
+     "score": null,
+     "title": "Chainsaw Man: Buddy Stories",
+     "year": null
+    }
+   },
+   {
+    "relation": "Adaptation",
+    "title": {
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx127230-DdP4vAdssLoz.png",
+     "format": "TV",
+     "ref": {
+      "id": "127230",
+      "kind": "anime"
+     },
+     "score": 83,
+     "title": "Chainsaw Man",
+     "year": 2022
+    }
+   },
+   {
+    "relation": "Adaptation",
+    "title": {
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx171627-ZN9D7P46yHnw.png",
+     "format": "Film",
+     "ref": {
+      "id": "171627",
+      "kind": "anime"
+     },
+     "score": 90,
+     "title": "Chainsaw Man – The Movie: Reze Arc",
+     "year": 2025
+    }
+   },
+   {
+    "relation": "Adaptation",
+    "title": {
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx198726-ys3lfvQfwBTM.png",
+     "format": "ONA",
+     "ref": {
+      "id": "198726",
+      "kind": "anime"
+     },
+     "score": 73,
+     "title": "Chainsaw Days",
+     "year": 2025
+    }
+   },
+   {
+    "relation": "Adaptation",
+    "title": {
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx204429-9scYA2ab3Zz3.jpg",
+     "format": "Special",
+     "ref": {
+      "id": "204429",
+      "kind": "anime"
+     },
+     "score": null,
+     "title": "Chainsaw Man: Shikaku-hen",
+     "year": null
+    }
+   }
+  ],
+  "score": 84,
+  "scoreNote": "336,577 members",
+  "seasons": [],
+  "staff": [
+   {
+    "person": {
+     "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n119917-xrVbuHyr6y1I.jpg",
+     "name": "Tatsuki Fujimoto",
+     "ref": {
+      "id": "119917",
+      "source": "anilist",
+      "to": "person"
+     }
+    },
+    "role": "Story & Art"
+   },
+   {
+    "person": {
+     "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n183882-U1ohHHs6VuK5.jpg",
+     "name": "Hanachika Toyama",
+     "ref": {
+      "id": "183882",
+      "source": "anilist",
+      "to": "person"
+     }
+    },
+    "role": "Assistant"
+   },
+   {
+    "person": {
+     "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n185558-SC8No48Sv6LW.jpg",
+     "name": "Norihito Sasaki",
+     "ref": {
+      "id": "185558",
+      "source": "anilist",
+      "to": "person"
+     }
+    },
+    "role": "Assistant"
+   },
+   {
+    "person": {
+     "image": null,
+     "name": "Sabrina Heep",
+     "ref": {
+      "id": "214044",
+      "source": "anilist",
+      "to": "person"
+     }
+    },
+    "role": "Lettering (English)"
+   },
+   {
+    "person": {
+     "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n216878-qJ0xkwUz8XmM.png",
+     "name": "Yukinobu Tatsu",
+     "ref": {
+      "id": "216878",
+      "source": "anilist",
+      "to": "person"
+     }
+    },
+    "role": "Assistant"
+   },
+   {
+    "person": {
+     "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n218855-Ts55hveBN7uD.png",
+     "name": "Sébastien Ludmann",
+     "ref": {
+      "id": "218855",
+      "source": "anilist",
+      "to": "person"
+     }
+    },
+    "role": "Translator (French)"
+   },
+   {
+    "person": {
+     "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n219063-rkAzyjaS9H9P.jpg",
+     "name": "Amanda Haley",
+     "ref": {
+      "id": "219063",
+      "source": "anilist",
+      "to": "person"
+     }
+    },
+    "role": "Translator (English)"
+   },
+   {
+    "person": {
+     "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n220710-5T0XmGNeS5xq.png",
+     "name": "Felipe Monte",
+     "ref": {
+      "id": "220710",
+      "source": "anilist",
+      "to": "person"
+     }
+    },
+    "role": "Translator (Portuguese)"
+   }
+  ],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [
+   [
+    {
+     "text": "The name says it all! Denji's life of poverty is changed forever when he merges with his pet chainsaw dog, Pochita! Now he's living in the big city and an official Devil Hunter. But he's got a lot to learn about his new job and chainsaw powers!"
+    }
+   ],
+   [
+    {
+     "text": "_Notes:"
+    }
+   ],
+   [
+    {
+     "text": "- Nominated for the 2020 Manga Taisho Award."
+    }
+   ],
+   [
+    {
+     "text": "- Winner of the 2021 Kono Manga ga Sugoi Award."
+    }
+   ],
+   [
+    {
+     "text": "- Winner of the 66th Shogakukan Manga Award in the shounen category."
+    }
+   ],
+   [
+    {
+     "text": "- Winner of the 2021 and 2022 Harvey Award for Best Manga."
+    }
+   ],
+   [
+    {
+     "text": "- Chapters 1-97 were released in Weekly Shounen Jump from Dec 3, 2018 to Dec 13, 2020. The series resumed from Ch. 98 in Shounen Jump+ on July 12, 2022_"
+    }
+   ]
+  ],
+  "tags": [
+   "Demons",
+   "Coming of Age",
+   "Urban Fantasy",
+   "Psychosexual",
+   "Male Protagonist",
+   "Gore",
+   "Body Horror",
+   "Henshin",
+   "Urban",
+   "Monster Boy",
+   "Found Family",
+   "Survival"
+  ],
+  "title": "Chainsaw Man",
+  "trailer": null,
+  "volumes": 24,
+  "year": 2018
+ }
+}

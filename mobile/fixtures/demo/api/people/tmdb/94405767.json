@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Directing"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1054867",
+        "kind": "movie"
+       },
+       "score": 73,
+       "title": "One Battle After Another",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1054867",
+        "kind": "movie"
+       },
+       "score": 73,
+       "title": "One Battle After Another",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Directing"
+   }
+  ],
+  "image": null,
+  "known": "Directing",
+  "name": "Paul Thomas Anderson",
+  "native": null,
+  "ref": {
+   "id": "94405767",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

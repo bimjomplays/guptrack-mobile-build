@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx99088-LTJskMD1wbbQ.png",
+      "format": "ONA",
+      "ref": {
+       "id": "99088",
+       "kind": "anime"
+      },
+      "score": 84,
+      "title": "PLUTO",
+      "year": 2023
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Studio M2",
+  "ref": {
+   "id": "6137",
+   "to": "studio"
+  }
+ }
+}

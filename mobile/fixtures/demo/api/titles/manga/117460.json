@@ -1,0 +1,65 @@
+{
+ "title": {
+  "alt": [
+   "Temppal",
+   "템빨"
+  ],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117460-46JbftfHSXoc.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Status",
+    "value": "Releasing"
+   },
+   {
+    "label": "Published",
+    "value": "Apr 1, 2020"
+   },
+   {
+    "label": "Members",
+    "value": "40,504"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Fantasy"
+  ],
+  "headline": [
+   "Manga",
+   "2020"
+  ],
+  "idMal": 147727,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "117460",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 77,
+  "scoreNote": "40,504 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Releasing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Overgeared",
+  "trailer": null,
+  "volumes": null,
+  "year": 2020
+ }
+}

@@ -1,0 +1,163 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx171630-2U7Y5OIWwXJJ.jpg",
+      "format": "Special",
+      "ref": {
+       "id": "171630",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "THE ONE PIECE",
+      "year": 2027
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177937-Tzgg6rAdhCoH.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "177937",
+       "kind": "anime"
+      },
+      "score": 82,
+      "title": "SPY x FAMILY Season 3",
+      "year": 2025
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx175977-kNNpCt8Z72uK.jpg",
+      "format": "ONA",
+      "ref": {
+       "id": "175977",
+       "kind": "anime"
+      },
+      "score": 67,
+      "title": "My Deer Friend Nokotan",
+      "year": 2024
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b158927-lfO85WVguYgc.png",
+      "format": "TV",
+      "ref": {
+       "id": "158927",
+       "kind": "anime"
+      },
+      "score": 80,
+      "title": "SPY x FAMILY Season 2",
+      "year": 2023
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx158928-xqE0euKlQMnY.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "158928",
+       "kind": "anime"
+      },
+      "score": 81,
+      "title": "SPY x FAMILY CODE: White",
+      "year": 2023
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx140960-Kb6R5nYQfjmP.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "140960",
+       "kind": "anime"
+      },
+      "score": 83,
+      "title": "SPY x FAMILY",
+      "year": 2022
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx142838-26JrqcFU1ljB.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "142838",
+       "kind": "anime"
+      },
+      "score": 81,
+      "title": "SPY x FAMILY Cour 2",
+      "year": 2022
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx128546-UIwyhuhjxmL0.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "128546",
+       "kind": "anime"
+      },
+      "score": 82,
+      "title": "Vivy -Fluorite Eye's Song-",
+      "year": 2021
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101348-2fhDFPCuMNiz.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "101348",
+       "kind": "anime"
+      },
+      "score": 87,
+      "title": "Vinland Saga",
+      "year": 2019
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx104578-k61nx3LPjvgd.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "104578",
+       "kind": "anime"
+      },
+      "score": 89,
+      "title": "Attack on Titan Season 3 Part 2",
+      "year": 2019
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx99147-AiPDD8cwlCfi.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "99147",
+       "kind": "anime"
+      },
+      "score": 86,
+      "title": "Attack on Titan Season 3",
+      "year": 2018
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20958-HuFJyr54Mmir.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "20958",
+       "kind": "anime"
+      },
+      "score": 85,
+      "title": "Attack on Titan Season 2",
+      "year": 2017
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx16498-buvcRTBx4NSm.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "16498",
+       "kind": "anime"
+      },
+      "score": 85,
+      "title": "Attack on Titan",
+      "year": 2013
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "WIT STUDIO",
+  "ref": {
+   "id": "858",
+   "to": "studio"
+  }
+ }
+}

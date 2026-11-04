@@ -1,0 +1,74 @@
+{
+ "title": {
+  "alt": [
+   "Shingeki no Kyojin",
+   "進撃の巨人"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/53390-6Uru5rrjh8zv.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 141,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx53390-1RsuABC34P9D.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Chapters",
+    "value": "141"
+   },
+   {
+    "label": "Volumes",
+    "value": "34"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Published",
+    "value": "Sep 9, 2009"
+   },
+   {
+    "label": "Members",
+    "value": "228,651"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Drama",
+   "Fantasy",
+   "Mystery"
+  ],
+  "headline": [
+   "Manga",
+   "2009",
+   "141 chapters"
+  ],
+  "idMal": 23390,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "53390",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 84,
+  "scoreNote": "228,651 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Attack on Titan",
+  "trailer": null,
+  "volumes": 34,
+  "year": 2009
+ }
+}
