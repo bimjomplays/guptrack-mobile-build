@@ -1,0 +1,341 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://image.tmdb.org/t/p/w1280/8VyTWJrNEyV2MTWvniDVp0MpOAe.jpg",
+  "cast": [
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/2JHzTzO6G9ELyOBpDv3otAFzWlG.jpg",
+     "name": "Julia Garner",
+     "ref": {
+      "id": "90892945",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Justine"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/7QpneI3HoZCCDVPyWx3p3t7yeo7.jpg",
+     "name": "Josh Brolin",
+     "ref": {
+      "id": "98972496",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Archer"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/vOLiUSDT8rubu0J2YKwBkOL0K6V.jpg",
+     "name": "Alden Ehrenreich",
+     "ref": {
+      "id": "92429477",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Paul"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/nvbJNwyhIICUFcS4lhxj9mGvL5z.jpg",
+     "name": "Austin Abrams",
+     "ref": {
+      "id": "97933178",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "James"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/yYfLyrC2CE6vBWSJfkpuVKL2POM.jpg",
+     "name": "Benedict Wong",
+     "ref": {
+      "id": "96400567",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Marcus"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/h2jErDWMDFFJth4Y9GiVNmwZf65.jpg",
+     "name": "Amy Madigan",
+     "ref": {
+      "id": "91826309",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Gladys"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/3ATVXSp6iPM9SaKUvQhI9tfGA5M.jpg",
+     "name": "Cary Christopher",
+     "ref": {
+      "id": "92990856",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Alex"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/dUqygHlDDnOBZLnE51MPJHkHWvQ.jpg",
+     "name": "Toby Huss",
+     "ref": {
+      "id": "97548184",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Captain Ed"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/ivz8rehM5WFKsUpDSULUFgPYyze.jpg",
+     "name": "Whitmer Thomas",
+     "ref": {
+      "id": "92507312",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Alex's Dad"
+   }
+  ],
+  "characters": [],
+  "count": 1,
+  "cover": "https://image.tmdb.org/t/p/w500/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "2h 8m"
+   },
+   {
+    "label": "Status",
+    "value": "Released"
+   },
+   {
+    "label": "Released",
+    "value": "Aug 4, 2025"
+   },
+   {
+    "label": "Director",
+    "links": [
+     {
+      "ref": {
+       "id": "92304925",
+       "source": "tmdb",
+       "to": "person"
+      },
+      "text": "Zach Cregger"
+     }
+    ],
+    "value": "Zach Cregger"
+   },
+   {
+    "label": "Rated",
+    "value": "R"
+   },
+   {
+    "label": "Language",
+    "value": "English"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Horror",
+   "Mystery"
+  ],
+  "headline": [
+   "Film",
+   "2025",
+   "2h 8m",
+   "R"
+  ],
+  "makers": [
+   {
+    "ref": {
+     "id": "92304925",
+     "source": "tmdb",
+     "to": "person"
+    },
+    "text": "Zach Cregger"
+   }
+  ],
+  "media": "movies",
+  "minutes": 128,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "693134",
+     "kind": "movie"
+    },
+    "score": 81,
+    "title": "Dune: Part Two",
+    "year": 2024
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "872585",
+     "kind": "movie"
+    },
+    "score": 80,
+    "title": "Oppenheimer",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1233413",
+     "kind": "movie"
+    },
+    "score": 75,
+    "title": "Sinners",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "666277",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Past Lives",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "545611",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Everything Everywhere All at Once",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "414906",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "The Batman",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1054867",
+     "kind": "movie"
+    },
+    "score": 73,
+    "title": "One Battle After Another",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "157336",
+     "kind": "movie"
+    },
+    "score": 85,
+    "title": "Interstellar",
+    "year": 2014
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "496243",
+     "kind": "movie"
+    },
+    "score": 85,
+    "title": "Parasite",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "313369",
+     "kind": "movie"
+    },
+    "score": 79,
+    "title": "La La Land",
+    "year": 2016
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1084242",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Zootopia 2",
+    "year": 2025
+   }
+  ],
+  "ref": {
+   "id": "1078605",
+   "kind": "movie"
+  },
+  "relations": [],
+  "score": 73,
+  "scoreNote": "18,405 votes",
+  "seasons": [],
+  "staff": [
+   {
+    "person": {
+     "image": null,
+     "name": "Zach Cregger",
+     "ref": {
+      "id": "92304925",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Director"
+   }
+  ],
+  "status": "finished",
+  "statusText": "Released",
+  "synopsis": [
+   [
+    {
+     "text": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance."
+    }
+   ]
+  ],
+  "tags": [],
+  "title": "Weapons",
+  "trailer": null,
+  "year": 2025
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Occupation",
+    "value": "Voice Actor"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "character": {
+       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b28967-ShW5sAxzZDny.png",
+       "name": "Sandman",
+       "ref": {
+        "id": "28967",
+        "to": "character"
+       }
+      },
+      "role": "Supporting",
+      "title": {
+       "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210482-P1VNKbqdJ6Zj.jpg",
+       "format": "ONA",
+       "ref": {
+        "id": "210482",
+        "kind": "anime"
+       },
+       "score": 86,
+       "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+       "year": 2026
+      }
+     }
+    ],
+    "title": "Voice roles"
+   }
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n126794-tZzYeLEQbsrj.png",
+  "known": "Voice Actor",
+  "name": "Masaaki Mizunaka",
+  "native": null,
+  "ref": {
+   "id": "126794",
+   "source": "anilist",
+   "to": "person"
+  }
+ }
+}

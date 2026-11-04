@@ -1,0 +1,96 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/10087-32MFY9VnJQ7I.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 13,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10087-M4Hd9qrHGrXk.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "13"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 2, 2011"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2011"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "43",
+       "to": "studio"
+      },
+      "text": "ufotable"
+     }
+    ],
+    "value": "ufotable"
+   },
+   {
+    "label": "Members",
+    "value": "352,637"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Fantasy",
+   "Supernatural"
+  ],
+  "headline": [
+   "TV",
+   "Fall 2011",
+   "13 episodes"
+  ],
+  "idMal": 10087,
+  "makers": [
+   {
+    "ref": {
+     "id": "43",
+     "to": "studio"
+    },
+    "text": "ufotable"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "10087",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 81,
+  "scoreNote": "352,637 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Fate/Zero",
+  "trailer": null,
+  "volumes": null,
+  "year": 2011
+ }
+}

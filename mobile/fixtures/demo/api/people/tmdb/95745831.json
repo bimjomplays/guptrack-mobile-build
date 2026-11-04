@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Mon Mothma",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "83867",
+        "kind": "tv"
+       },
+       "score": 83,
+       "title": "Andor",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Mon Mothma",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "83867",
+        "kind": "tv"
+       },
+       "score": 83,
+       "title": "Andor",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/4eOoW1PNBZfxRW0g8RmYH8bL6mq.jpg",
+  "known": "Acting",
+  "name": "Genevieve O&#39;Reilly",
+  "native": null,
+  "ref": {
+   "id": "95745831",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

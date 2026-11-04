@@ -1,0 +1,25 @@
+{
+ "reply": {
+  "at": 1793716860000,
+  "author": {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+   "lists": [
+    "anime",
+    "manga",
+    "tv",
+    "movies",
+    "books"
+   ],
+   "name": "Mika",
+   "open": true,
+   "relation": "self",
+   "username": "mika"
+  },
+  "body": "So good.",
+  "canDelete": true,
+  "canEdit": true,
+  "edited": null,
+  "id": 799,
+  "parent": null
+ }
+}

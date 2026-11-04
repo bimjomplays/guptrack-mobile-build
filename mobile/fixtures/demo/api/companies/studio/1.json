@@ -1,0 +1,108 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195604-tSZcfKbVqSEG.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "195604",
+       "kind": "anime"
+      },
+      "score": 87,
+      "title": "Black Clover Season 2",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97940-fyh8o7gNbha0.png",
+      "format": "TV",
+      "ref": {
+       "id": "97940",
+       "kind": "anime"
+      },
+      "score": 79,
+      "title": "Black Clover",
+      "year": 2017
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b20605-k665mVkSug8D.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "20605",
+       "kind": "anime"
+      },
+      "score": 76,
+      "title": "Tokyo Ghoul",
+      "year": 2014
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1735-kGfVm0YqCPcu.png",
+      "format": "TV",
+      "ref": {
+       "id": "1735",
+       "kind": "anime"
+      },
+      "score": 82,
+      "title": "Naruto: Shippuden",
+      "year": 2007
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
+      "format": "TV",
+      "ref": {
+       "id": "269",
+       "kind": "anime"
+      },
+      "score": 79,
+      "title": "Bleach",
+      "year": 2004
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20-dE6UHbFFg1A5.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "20",
+       "kind": "anime"
+      },
+      "score": 80,
+      "title": "Naruto",
+      "year": 2002
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1281-1D6fuMnHwor0.png",
+      "format": "TV",
+      "ref": {
+       "id": "1281",
+       "kind": "anime"
+      },
+      "score": 74,
+      "title": "Ghost Stories",
+      "year": 2000
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx392-z90299zIvYmx.png",
+      "format": "TV",
+      "ref": {
+       "id": "392",
+       "kind": "anime"
+      },
+      "score": 83,
+      "title": "Yu Yu Hakusho: Ghostfiles",
+      "year": 1992
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Studio Pierrot",
+  "ref": {
+   "id": "1",
+   "to": "studio"
+  }
+ }
+}

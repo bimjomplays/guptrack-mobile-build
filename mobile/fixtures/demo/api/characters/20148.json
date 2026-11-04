@@ -1,0 +1,45 @@
+{
+ "character": {
+  "alt": [],
+  "altSpoiler": [],
+  "appearances": [
+   {
+    "role": "Supporting",
+    "title": {
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210482-P1VNKbqdJ6Zj.jpg",
+     "format": "ONA",
+     "ref": {
+      "id": "210482",
+      "kind": "anime"
+     },
+     "score": 86,
+     "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+     "year": 2026
+    }
+   }
+  ],
+  "description": [],
+  "facts": [],
+  "favourites": 0,
+  "id": "20148",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+  "name": "Diego Brando",
+  "native": "ディエゴ・ブランドー",
+  "voices": [
+   {
+    "language": "Japanese",
+    "people": [
+     {
+      "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n115156-ngYfqBazlxYQ.png",
+      "name": "Kaito Ishikawa",
+      "ref": {
+       "id": "115156",
+       "source": "anilist",
+       "to": "person"
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

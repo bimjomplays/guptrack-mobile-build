@@ -1,0 +1,241 @@
+{
+ "title": {
+  "alt": [],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": 310,
+  "cover": "https://covers.openlibrary.org/b/id/14627509-L.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Book"
+   },
+   {
+    "label": "Pages",
+    "value": "310"
+   },
+   {
+    "label": "First published",
+    "value": "1937"
+   },
+   {
+    "label": "Author",
+    "links": [
+     {
+      "ref": {
+       "id": "OL26320A",
+       "to": "author"
+      },
+      "text": "J.R.R. Tolkien"
+     }
+    ],
+    "value": "J.R.R. Tolkien"
+   },
+   {
+    "label": "Readers",
+    "value": "26,940"
+   }
+  ],
+  "format": "Book",
+  "genres": [
+   "Fantasy"
+  ],
+  "headline": [
+   "Book",
+   "1937",
+   "310 pages"
+  ],
+  "makers": [
+   {
+    "ref": {
+     "id": "OL26320A",
+     "to": "author"
+    },
+    "text": "J.R.R. Tolkien"
+   }
+  ],
+  "media": "books",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://covers.openlibrary.org/b/id/11200092-M.jpg",
+    "format": "Novel",
+    "ref": {
+     "id": "OL21745884W",
+     "kind": "book"
+    },
+    "score": 91,
+    "title": "Project Hail Mary",
+    "year": 2021
+   },
+   {
+    "cover": "https://covers.openlibrary.org/b/id/11447888-M.jpg",
+    "format": "Novel",
+    "ref": {
+     "id": "OL17091839W",
+     "kind": "book"
+    },
+    "score": 88,
+    "title": "The Martian",
+    "year": 2011
+   },
+   {
+    "cover": "https://covers.openlibrary.org/b/id/11481354-M.jpg",
+    "format": "Novel",
+    "ref": {
+     "id": "OL893414W",
+     "kind": "book"
+    },
+    "score": 86,
+    "title": "Dune",
+    "year": 1965
+   },
+   {
+    "cover": "https://covers.openlibrary.org/b/id/10226290-M.jpg",
+    "format": "Novel",
+    "ref": {
+     "id": "OL20893680W",
+     "kind": "book"
+    },
+    "score": 87,
+    "title": "Piranesi",
+    "year": 2020
+   },
+   {
+    "cover": "https://covers.openlibrary.org/b/id/12859975-M.jpg",
+    "format": "Novel",
+    "ref": {
+     "id": "OL26004554W",
+     "kind": "book"
+    },
+    "score": 85,
+    "title": "Tomorrow, and Tomorrow, and Tomorrow",
+    "year": 2022
+   },
+   {
+    "cover": "https://covers.openlibrary.org/b/id/11480483-M.jpg",
+    "format": "Novel",
+    "ref": {
+     "id": "OL8479867W",
+     "kind": "book"
+    },
+    "score": 87,
+    "title": "The Name of the Wind",
+    "year": 2007
+   },
+   {
+    "cover": "https://covers.openlibrary.org/b/id/10648686-M.jpg",
+    "format": "Novel",
+    "ref": {
+     "id": "OL20883297W",
+     "kind": "book"
+    },
+    "score": 76,
+    "title": "Klara and the Sun",
+    "year": 2019
+   },
+   {
+    "cover": "https://covers.openlibrary.org/b/id/12468631-M.jpg",
+    "format": "Novel",
+    "ref": {
+     "id": "OL26443093W",
+     "kind": "book"
+    },
+    "score": 81,
+    "title": "Babel",
+    "year": 2022
+   },
+   {
+    "cover": "https://covers.openlibrary.org/b/id/10526598-M.jpg",
+    "format": "Novel",
+    "ref": {
+     "id": "OL16314245W",
+     "kind": "book"
+    },
+    "score": 89,
+    "title": "The Dark Forest (The Three-Body Problem Series Book 2)",
+    "year": 2008
+   },
+   {
+    "cover": "https://covers.openlibrary.org/b/id/11329782-M.jpg",
+    "format": "Novel",
+    "ref": {
+     "id": "OL16044142W",
+     "kind": "book"
+    },
+    "score": 98,
+    "title": "Mistborn",
+    "year": 2001
+   },
+   {
+    "cover": "https://covers.openlibrary.org/b/id/1047334-M.jpg",
+    "format": "Novel",
+    "ref": {
+     "id": "OL59038W",
+     "kind": "book"
+    },
+    "score": 77,
+    "title": "Never Let Me Go",
+    "year": 2005
+   },
+   {
+    "cover": "https://covers.openlibrary.org/b/id/8235551-M.jpg",
+    "format": "Novel",
+    "ref": {
+     "id": "OL17837968W",
+     "kind": "book"
+    },
+    "score": 74,
+    "title": "Artemis",
+    "year": 2017
+   },
+   {
+    "cover": "https://covers.openlibrary.org/b/id/95742-M.jpg",
+    "format": "Novel",
+    "ref": {
+     "id": "OL59048W",
+     "kind": "book"
+    },
+    "score": 84,
+    "title": "The Remains of the Day",
+    "year": 1989
+   }
+  ],
+  "ref": {
+   "id": "OL27482W",
+   "kind": "book"
+  },
+  "relations": [],
+  "score": 86,
+  "seasons": [],
+  "staff": [
+   {
+    "person": {
+     "image": null,
+     "name": "J.R.R. Tolkien",
+     "ref": {
+      "id": "OL26320A",
+      "to": "author"
+     }
+    },
+    "role": "Author"
+   }
+  ],
+  "status": "finished",
+  "statusText": "Published",
+  "synopsis": [],
+  "tags": [
+   "Arkenstone",
+   "Battle of Five Armies",
+   "Invisibility",
+   "Thrushes",
+   "Eagles",
+   "Hobbits",
+   "Wizards"
+  ],
+  "title": "The Hobbit",
+  "year": 1937
+ }
+}

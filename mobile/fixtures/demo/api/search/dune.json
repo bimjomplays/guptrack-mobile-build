@@ -1,0 +1,59 @@
+{
+ "groups": [
+  {
+   "hits": [
+    {
+     "image": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+     "name": "Dune: Part Two",
+     "note": "Movie · Film · 2024",
+     "ref": {
+      "id": "693134",
+      "kind": "movie",
+      "to": "title"
+     }
+    },
+    {
+     "image": "https://image.tmdb.org/t/p/w342/v1tRXZ4JtD2Iv6fjkPvT4GiwslV.jpg",
+     "name": "Dune",
+     "note": "Movie · Film · 2021",
+     "ref": {
+      "id": "438631",
+      "kind": "movie",
+      "to": "title"
+     }
+    }
+   ],
+   "title": "Movies"
+  },
+  {
+   "hits": [
+    {
+     "image": "https://covers.openlibrary.org/b/id/11481354-L.jpg",
+     "name": "Dune",
+     "note": "Book · Frank Herbert · 1965",
+     "ref": {
+      "id": "OL893414W",
+      "kind": "book",
+      "to": "title"
+     }
+    }
+   ],
+   "title": "Books"
+  },
+  {
+   "hits": [
+    {
+     "image": "https://image.tmdb.org/t/p/h632/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
+     "name": "Timothée Chalamet",
+     "note": "Acting",
+     "ref": {
+      "id": "1190668",
+      "source": "tmdb",
+      "to": "person"
+     }
+    }
+   ],
+   "title": "People"
+  }
+ ]
+}

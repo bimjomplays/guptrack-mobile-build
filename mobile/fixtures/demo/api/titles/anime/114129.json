@@ -1,0 +1,95 @@
+{
+ "title": {
+  "alt": [
+   "Gintama: THE FINAL",
+   "銀魂 THE FINAL"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/114129-ZsLDkdwaYeJY.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx114129-RLgSuh6YbeYx.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "1h 44m"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Released",
+    "value": "Jan 8, 2021"
+   },
+   {
+    "label": "Season",
+    "value": "Winter 2021"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "6116",
+       "to": "studio"
+      },
+      "text": "Bandai Namco Pictures"
+     }
+    ],
+    "value": "Bandai Namco Pictures"
+   },
+   {
+    "label": "Members",
+    "value": "56,743"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Drama",
+   "Sci-Fi"
+  ],
+  "headline": [
+   "Film",
+   "Winter 2021",
+   "1h 44m"
+  ],
+  "idMal": 39486,
+  "makers": [
+   {
+    "ref": {
+     "id": "6116",
+     "to": "studio"
+    },
+    "text": "Bandai Namco Pictures"
+   }
+  ],
+  "media": "anime",
+  "minutes": 104,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "114129",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 90,
+  "scoreNote": "56,743 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Gintama: THE VERY FINAL",
+  "trailer": null,
+  "volumes": null,
+  "year": 2021
+ }
+}

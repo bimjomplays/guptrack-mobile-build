@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Diana Taverner",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "95480",
+        "kind": "tv"
+       },
+       "score": 81,
+       "title": "Slow Horses",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Diana Taverner",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "95480",
+        "kind": "tv"
+       },
+       "score": 81,
+       "title": "Slow Horses",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/axksw0vAjBPSW02ZqpcC0V8rPD7.jpg",
+  "known": "Acting",
+  "name": "Kristin Scott Thomas",
+  "native": null,
+  "ref": {
+   "id": "97090204",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

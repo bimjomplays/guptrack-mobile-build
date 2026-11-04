@@ -1,0 +1,348 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://image.tmdb.org/t/p/w1280/900tHlUYUkp7Ol04XFSoAaEIXcT.jpg",
+  "cast": [
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/r9nIq0jPz1oBm4WwtlZhqlsX8p0.jpg",
+     "name": "Jared Harris",
+     "ref": {
+      "id": "93316264",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Valery Legasov"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/mW7xmtGV4y79kQGn0zkKVGDMAmw.jpg",
+     "name": "Stellan Skarsgård",
+     "ref": {
+      "id": "92691986",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Boris Shcherbina"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/bd0qiJXHoLNpkCqABsh67AKRtjC.jpg",
+     "name": "Emily Watson",
+     "ref": {
+      "id": "90377306",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Ulana Khomyuk"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/hYRSjC5vxrIFZ5sx1rM6V4ZEI8G.jpg",
+     "name": "Paul Ritter",
+     "ref": {
+      "id": "93540033",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Anatoly Dyatlov"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/qbz9175DERSqsCQeYWGJWwqb38z.jpg",
+     "name": "Jessie Buckley",
+     "ref": {
+      "id": "97212946",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Lyudmilla Ignatenko"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/e05YxtScfLCI723ZFU6WOzLiJ6u.jpg",
+     "name": "Adam Nagaitis",
+     "ref": {
+      "id": "97003324",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Vasily Ignatenko"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/daT0NIIeYxCsxjJ0200wAfJGfEE.jpg",
+     "name": "Sam Troughton",
+     "ref": {
+      "id": "97682646",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Alexandr Akimov"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/gAUB9R1MnGBgg2UbI2LOYWikCyr.jpg",
+     "name": "Robert Emms",
+     "ref": {
+      "id": "95788168",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Leonid Toptunov"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/7Fnj1dB9kStTuy29eEVK4IuOxWO.jpg",
+     "name": "Con O&#39;Neill",
+     "ref": {
+      "id": "96928621",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Viktor Bryukhanov"
+   }
+  ],
+  "characters": [],
+  "count": null,
+  "cover": "https://image.tmdb.org/t/p/w500/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Miniseries"
+   },
+   {
+    "label": "Status",
+    "value": "Ended"
+   },
+   {
+    "label": "Aired",
+    "value": "May 6, 2019 – Jun 3, 2019"
+   },
+   {
+    "label": "Creator",
+    "links": [
+     {
+      "ref": {
+       "id": "91556452",
+       "source": "tmdb",
+       "to": "person"
+      },
+      "text": "Craig Mazin"
+     }
+    ],
+    "value": "Craig Mazin"
+   },
+   {
+    "label": "Network",
+    "links": [
+     {
+      "ref": {
+       "id": "49",
+       "to": "network"
+      },
+      "text": "HBO"
+     }
+    ],
+    "value": "HBO"
+   },
+   {
+    "label": "Rated",
+    "value": "TV-MA"
+   },
+   {
+    "label": "Language",
+    "value": "English"
+   }
+  ],
+  "format": "Miniseries",
+  "genres": [
+   "Drama"
+  ],
+  "headline": [
+   "Miniseries",
+   "2019",
+   "TV-MA"
+  ],
+  "makers": [
+   {
+    "ref": {
+     "id": "91556452",
+     "source": "tmdb",
+     "to": "person"
+    },
+    "text": "Craig Mazin"
+   }
+  ],
+  "media": "tv",
+  "minutes": 45,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "95396",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "Severance",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "136315",
+     "kind": "tv"
+    },
+    "score": 82,
+    "title": "The Bear",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "126308",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "Shōgun",
+    "year": 2024
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "100088",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "The Last of Us",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "83867",
+     "kind": "tv"
+    },
+    "score": 83,
+    "title": "Andor",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "1396",
+     "kind": "tv"
+    },
+    "score": 90,
+    "title": "Breaking Bad",
+    "year": 2008
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "95480",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Slow Horses",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "225171",
+     "kind": "tv"
+    },
+    "score": 79,
+    "title": "Pluribus",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "76479",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "The Boys",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "108978",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Reacher",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "110316",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Alice in Borderland",
+    "year": 2020
+   }
+  ],
+  "ref": {
+   "id": "87108",
+   "kind": "tv"
+  },
+  "relations": [],
+  "score": 87,
+  "scoreNote": "14,238 votes",
+  "seasons": [],
+  "staff": [
+   {
+    "person": {
+     "image": null,
+     "name": "Craig Mazin",
+     "ref": {
+      "id": "91556452",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Creator"
+   }
+  ],
+  "status": "finished",
+  "statusText": "Ended",
+  "synopsis": [
+   [
+    {
+     "text": "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster."
+    }
+   ]
+  ],
+  "tags": [],
+  "title": "Chernobyl",
+  "trailer": null,
+  "year": 2019
+ }
+}

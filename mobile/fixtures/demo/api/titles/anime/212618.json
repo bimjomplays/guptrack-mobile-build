@@ -1,0 +1,69 @@
+{
+ "title": {
+  "alt": [],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212618-8qxOOnGuaVXV.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Special"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "569",
+       "to": "studio"
+      },
+      "text": "MAPPA"
+     }
+    ],
+    "value": "MAPPA"
+   }
+  ],
+  "format": "Special",
+  "genres": [],
+  "headline": [
+   "Special",
+   "TBA"
+  ],
+  "idMal": null,
+  "makers": [
+   {
+    "ref": {
+     "id": "569",
+     "to": "studio"
+    },
+    "text": "MAPPA"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "212618",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": null,
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Dorohedoro Season 3",
+  "trailer": null,
+  "volumes": null,
+  "year": null
+ }
+}

@@ -1,0 +1,112 @@
+{
+ "title": {
+  "alt": [
+   "Saiki Kusuo no Ψ-nan",
+   "斉木楠雄のΨ難"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21804-K0xl0PE1PfHt.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 120,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21804-As6tDLAvEvNY.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "120"
+   },
+   {
+    "label": "Episode length",
+    "value": "5 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Jul 4, 2016"
+   },
+   {
+    "label": "Season",
+    "value": "Summer 2016"
+   },
+   {
+    "label": "Studios",
+    "links": [
+     {
+      "ref": {
+       "id": "7",
+       "to": "studio"
+      },
+      "text": "J.C.STAFF"
+     },
+     {
+      "ref": {
+       "id": "6127",
+       "to": "studio"
+      },
+      "text": "EGG FIRM"
+     }
+    ],
+    "value": "J.C.STAFF, EGG FIRM"
+   },
+   {
+    "label": "Members",
+    "value": "365,667"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Comedy",
+   "Slice of Life",
+   "Supernatural"
+  ],
+  "headline": [
+   "TV",
+   "Summer 2016",
+   "120 episodes"
+  ],
+  "idMal": 33255,
+  "makers": [
+   {
+    "ref": {
+     "id": "7",
+     "to": "studio"
+    },
+    "text": "J.C.STAFF"
+   },
+   {
+    "ref": {
+     "id": "6127",
+     "to": "studio"
+    },
+    "text": "EGG FIRM"
+   }
+  ],
+  "media": "anime",
+  "minutes": 5,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "21804",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 83,
+  "scoreNote": "365,667 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "The Disastrous Life of Saiki K.",
+  "trailer": null,
+  "volumes": null,
+  "year": 2016
+ }
+}

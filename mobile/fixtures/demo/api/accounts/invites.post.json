@@ -1,0 +1,10 @@
+{
+ "code": "demo-invite-5",
+ "invite": {
+  "createdAt": 1793716860000,
+  "expiresAt": 1794321660000,
+  "id": 5,
+  "usedAt": null,
+  "usedBy": null
+ }
+}

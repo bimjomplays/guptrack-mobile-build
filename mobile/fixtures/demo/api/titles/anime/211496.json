@@ -1,0 +1,88 @@
+{
+ "title": {
+  "alt": [
+   "カグラバチ"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/211496-UkDSO0ZXnGHu.jpg",
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211496-zBucCHCPFFgy.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Status",
+    "value": "Not yet aired"
+   },
+   {
+    "label": "Aired",
+    "value": "Apr 2027"
+   },
+   {
+    "label": "Season",
+    "value": "Spring 2027"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "7805",
+       "to": "studio"
+      },
+      "text": "Cypic"
+     }
+    ],
+    "value": "Cypic"
+   },
+   {
+    "label": "Members",
+    "value": "32,324"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Drama",
+   "Fantasy"
+  ],
+  "headline": [
+   "TV",
+   "Spring 2027"
+  ],
+  "idMal": 64058,
+  "makers": [
+   {
+    "ref": {
+     "id": "7805",
+     "to": "studio"
+    },
+    "text": "Cypic"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "211496",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": null,
+  "scoreNote": "32,324 members",
+  "seasons": [],
+  "staff": [],
+  "status": "upcoming",
+  "statusText": "Not yet aired",
+  "synopsis": [],
+  "tags": [],
+  "title": "Kagurabachi",
+  "trailer": null,
+  "volumes": null,
+  "year": 2027
+ }
+}

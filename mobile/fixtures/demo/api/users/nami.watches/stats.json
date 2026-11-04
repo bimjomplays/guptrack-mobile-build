@@ -1,0 +1,1075 @@
+{
+ "kinds": [
+  {
+   "added": [
+    {
+     "at": "2026-03",
+     "count": 5
+    },
+    {
+     "at": "2026-04",
+     "count": 11
+    },
+    {
+     "at": "2026-05",
+     "count": 7
+    },
+    {
+     "at": "2026-06",
+     "count": 5
+    },
+    {
+     "at": "2026-07",
+     "count": 4
+    },
+    {
+     "at": "2026-08",
+     "count": 6
+    },
+    {
+     "at": "2026-09",
+     "count": 4
+    },
+    {
+     "at": "2026-10",
+     "count": 3
+    }
+   ],
+   "again": 241,
+   "againSeconds": 365400,
+   "counts": {
+    "completed": 25,
+    "current": 4,
+    "dropped": 2,
+    "hold": 0,
+    "planned": 14
+   },
+   "entries": 45,
+   "favourites": 7,
+   "finished": [
+    {
+     "at": "2026-03",
+     "count": 3
+    },
+    {
+     "at": "2026-04",
+     "count": 7
+    },
+    {
+     "at": "2026-05",
+     "count": 4
+    },
+    {
+     "at": "2026-06",
+     "count": 2
+    },
+    {
+     "at": "2026-07",
+     "count": 3
+    },
+    {
+     "at": "2026-08",
+     "count": 2
+    },
+    {
+     "at": "2026-09",
+     "count": 2
+    },
+    {
+     "at": "2026-10",
+     "count": 2
+    }
+   ],
+   "formats": [
+    {
+     "count": 24,
+     "mean": 83.33,
+     "name": "TV",
+     "scored": 18
+    },
+    {
+     "count": 3,
+     "mean": 81.67,
+     "name": "Movie",
+     "scored": 3
+    },
+    {
+     "count": 1,
+     "mean": 0,
+     "name": "ONA",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "mean": 60.0,
+     "name": "OVA",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 60.0,
+     "name": "Special",
+     "scored": 1
+    }
+   ],
+   "genres": [
+    {
+     "count": 17,
+     "mean": 76.79,
+     "name": "Action",
+     "scored": 14
+    },
+    {
+     "count": 16,
+     "mean": 80.38,
+     "name": "Drama",
+     "scored": 13
+    },
+    {
+     "count": 12,
+     "mean": 80.91,
+     "name": "Supernatural",
+     "scored": 11
+    },
+    {
+     "count": 11,
+     "mean": 82.22,
+     "name": "Psychological",
+     "scored": 9
+    },
+    {
+     "count": 10,
+     "mean": 84.38,
+     "name": "Fantasy",
+     "scored": 8
+    },
+    {
+     "count": 10,
+     "mean": 86.25,
+     "name": "Mystery",
+     "scored": 8
+    },
+    {
+     "count": 9,
+     "mean": 82.5,
+     "name": "Adventure",
+     "scored": 6
+    },
+    {
+     "count": 9,
+     "mean": 78.33,
+     "name": "Comedy",
+     "scored": 6
+    },
+    {
+     "count": 6,
+     "mean": 82.5,
+     "name": "Sci-Fi",
+     "scored": 6
+    },
+    {
+     "count": 5,
+     "mean": 76.25,
+     "name": "Horror",
+     "scored": 4
+    },
+    {
+     "count": 5,
+     "mean": 88.33,
+     "name": "Slice of Life",
+     "scored": 3
+    },
+    {
+     "count": 4,
+     "mean": 65.0,
+     "name": "Romance",
+     "scored": 2
+    },
+    {
+     "count": 4,
+     "mean": 93.33,
+     "name": "Thriller",
+     "scored": 3
+    },
+    {
+     "count": 1,
+     "mean": 60.0,
+     "name": "Mecha",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 60.0,
+     "name": "Sports",
+     "scored": 1
+    }
+   ],
+   "makers": [
+    {
+     "count": 7,
+     "id": "11",
+     "mean": 81.67,
+     "name": "MADHOUSE",
+     "scored": 6
+    },
+    {
+     "count": 3,
+     "id": "561",
+     "mean": 70.0,
+     "name": "A-1 Pictures",
+     "scored": 1
+    },
+    {
+     "count": 3,
+     "id": "569",
+     "mean": 83.33,
+     "name": "MAPPA",
+     "scored": 3
+    },
+    {
+     "count": 2,
+     "id": "7348",
+     "mean": 80.0,
+     "name": "BUG FILMS",
+     "scored": 1
+    },
+    {
+     "count": 2,
+     "id": "18",
+     "mean": 75.0,
+     "name": "Toei Animation",
+     "scored": 2
+    },
+    {
+     "count": 2,
+     "id": "858",
+     "mean": 75.0,
+     "name": "WIT STUDIO",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "8",
+     "mean": 100.0,
+     "name": "Artland",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "112",
+     "mean": 100.0,
+     "name": "Brain's Base",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "95",
+     "mean": 70.0,
+     "name": "Doga Kobo",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "6",
+     "mean": 60.0,
+     "name": "GAINAX",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "7",
+     "mean": 95.0,
+     "name": "J.C.STAFF",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "839",
+     "mean": 60.0,
+     "name": "LIDENFILMS",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "32",
+     "mean": 0,
+     "name": "Manglobe",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "id": "1",
+     "mean": 0,
+     "name": "Studio Pierrot",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "id": "14",
+     "mean": 95.0,
+     "name": "Sunrise",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "65",
+     "mean": 70.0,
+     "name": "Tokyo Movie Shinsha",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "110",
+     "mean": 90.0,
+     "name": "Triangle Staff",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "id": "314",
+     "mean": 85.0,
+     "name": "WHITE FOX",
+     "scored": 1
+    }
+   ],
+   "meanScore": 80.83,
+   "media": "anime",
+   "pending": 0,
+   "progress": 1084,
+   "repeats": 4,
+   "scored": 24,
+   "scores": [
+    [
+     60,
+     5
+    ],
+    [
+     70,
+     3
+    ],
+    [
+     75,
+     3
+    ],
+    [
+     80,
+     2
+    ],
+    [
+     85,
+     1
+    ],
+    [
+     90,
+     2
+    ],
+    [
+     95,
+     4
+    ],
+    [
+     100,
+     4
+    ]
+   ],
+   "seconds": 1610880,
+   "volumes": 0,
+   "years": [
+    {
+     "count": 1,
+     "year": 1988
+    },
+    {
+     "count": 1,
+     "year": 1989
+    },
+    {
+     "count": 1,
+     "year": 1995
+    },
+    {
+     "count": 1,
+     "year": 1997
+    },
+    {
+     "count": 2,
+     "year": 1998
+    },
+    {
+     "count": 1,
+     "year": 1999
+    },
+    {
+     "count": 1,
+     "year": 2000
+    },
+    {
+     "count": 1,
+     "year": 2002
+    },
+    {
+     "count": 2,
+     "year": 2003
+    },
+    {
+     "count": 4,
+     "year": 2004
+    },
+    {
+     "count": 1,
+     "year": 2005
+    },
+    {
+     "count": 4,
+     "year": 2006
+    },
+    {
+     "count": 2,
+     "year": 2007
+    },
+    {
+     "count": 1,
+     "year": 2011
+    },
+    {
+     "count": 1,
+     "year": 2013
+    },
+    {
+     "count": 2,
+     "year": 2018
+    },
+    {
+     "count": 1,
+     "year": 2019
+    },
+    {
+     "count": 1,
+     "year": 2020
+    },
+    {
+     "count": 2,
+     "year": 2021
+    },
+    {
+     "count": 2,
+     "year": 2022
+    },
+    {
+     "count": 3,
+     "year": 2023
+    },
+    {
+     "count": 5,
+     "year": 2026
+    },
+    {
+     "count": 2,
+     "year": 2027
+    }
+   ]
+  },
+  {
+   "added": [
+    {
+     "at": "2026-04",
+     "count": 2
+    },
+    {
+     "at": "2026-05",
+     "count": 4
+    },
+    {
+     "at": "2026-06",
+     "count": 1
+    },
+    {
+     "at": "2026-07",
+     "count": 1
+    },
+    {
+     "at": "2026-08",
+     "count": 2
+    },
+    {
+     "at": "2026-09",
+     "count": 1
+    }
+   ],
+   "again": 98,
+   "againSeconds": 0,
+   "counts": {
+    "completed": 4,
+    "current": 0,
+    "dropped": 3,
+    "hold": 1,
+    "planned": 3
+   },
+   "entries": 11,
+   "favourites": 1,
+   "finished": [
+    {
+     "at": "2026-04",
+     "count": 2
+    },
+    {
+     "at": "2026-05",
+     "count": 2
+    }
+   ],
+   "formats": [
+    {
+     "count": 8,
+     "mean": 78.0,
+     "name": "Manga",
+     "scored": 5
+    }
+   ],
+   "genres": [
+    {
+     "count": 6,
+     "mean": 82.5,
+     "name": "Drama",
+     "scored": 4
+    },
+    {
+     "count": 5,
+     "mean": 70.0,
+     "name": "Action",
+     "scored": 3
+    },
+    {
+     "count": 5,
+     "mean": 77.5,
+     "name": "Adventure",
+     "scored": 2
+    },
+    {
+     "count": 5,
+     "mean": 76.67,
+     "name": "Fantasy",
+     "scored": 3
+    },
+    {
+     "count": 1,
+     "mean": 0,
+     "name": "Comedy",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "mean": 85.0,
+     "name": "Mystery",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 85.0,
+     "name": "Psychological",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 75.0,
+     "name": "Supernatural",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 85.0,
+     "name": "Thriller",
+     "scored": 1
+    }
+   ],
+   "makers": [],
+   "meanScore": 78.0,
+   "media": "manga",
+   "pending": 0,
+   "progress": 521,
+   "repeats": 3,
+   "scored": 5,
+   "scores": [
+    [
+     60,
+     1
+    ],
+    [
+     75,
+     2
+    ],
+    [
+     85,
+     1
+    ],
+    [
+     95,
+     1
+    ]
+   ],
+   "seconds": 0,
+   "volumes": 0,
+   "years": [
+    {
+     "count": 1,
+     "year": 1994
+    },
+    {
+     "count": 1,
+     "year": 1997
+    },
+    {
+     "count": 1,
+     "year": 1998
+    },
+    {
+     "count": 1,
+     "year": 1999
+    },
+    {
+     "count": 1,
+     "year": 2005
+    },
+    {
+     "count": 1,
+     "year": 2016
+    },
+    {
+     "count": 3,
+     "year": 2018
+    },
+    {
+     "count": 1,
+     "year": 2020
+    },
+    {
+     "count": 1,
+     "year": 2023
+    }
+   ]
+  },
+  {
+   "added": [
+    {
+     "at": "2026-04",
+     "count": 1
+    },
+    {
+     "at": "2026-06",
+     "count": 1
+    },
+    {
+     "at": "2026-09",
+     "count": 2
+    },
+    {
+     "at": "2026-10",
+     "count": 1
+    }
+   ],
+   "again": 0,
+   "againSeconds": 0,
+   "counts": {
+    "completed": 0,
+    "current": 1,
+    "dropped": 0,
+    "hold": 1,
+    "planned": 3
+   },
+   "entries": 5,
+   "favourites": 0,
+   "finished": [],
+   "formats": [
+    {
+     "count": 2,
+     "mean": 85.0,
+     "name": "TV",
+     "scored": 2
+    }
+   ],
+   "genres": [
+    {
+     "count": 2,
+     "mean": 85.0,
+     "name": "Drama",
+     "scored": 2
+    },
+    {
+     "count": 1,
+     "mean": 75.0,
+     "name": "Comedy",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 95.0,
+     "name": "Crime",
+     "scored": 1
+    }
+   ],
+   "makers": [],
+   "meanScore": 85.0,
+   "media": "tv",
+   "pending": 0,
+   "progress": 44,
+   "repeats": 0,
+   "scored": 2,
+   "scores": [
+    [
+     75,
+     1
+    ],
+    [
+     95,
+     1
+    ]
+   ],
+   "seconds": 118800,
+   "volumes": 0,
+   "years": [
+    {
+     "count": 1,
+     "year": 2008
+    },
+    {
+     "count": 2,
+     "year": 2022
+    },
+    {
+     "count": 1,
+     "year": 2023
+    },
+    {
+     "count": 1,
+     "year": 2024
+    }
+   ]
+  },
+  {
+   "added": [
+    {
+     "at": "2026-05",
+     "count": 1
+    },
+    {
+     "at": "2026-09",
+     "count": 2
+    },
+    {
+     "at": "2026-10",
+     "count": 2
+    }
+   ],
+   "again": 0,
+   "againSeconds": 0,
+   "counts": {
+    "completed": 3,
+    "current": 0,
+    "dropped": 0,
+    "hold": 2,
+    "planned": 0
+   },
+   "entries": 5,
+   "favourites": 0,
+   "finished": [
+    {
+     "at": "2026-05",
+     "count": 1
+    },
+    {
+     "at": "2026-09",
+     "count": 1
+    },
+    {
+     "at": "2026-10",
+     "count": 1
+    }
+   ],
+   "formats": [
+    {
+     "count": 5,
+     "mean": 85.0,
+     "name": "Movie",
+     "scored": 1
+    }
+   ],
+   "genres": [
+    {
+     "count": 3,
+     "mean": 0,
+     "name": "Drama",
+     "scored": 0
+    },
+    {
+     "count": 2,
+     "mean": 85.0,
+     "name": "Horror",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 0,
+     "name": "Action",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "mean": 0,
+     "name": "Adventure",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "mean": 0,
+     "name": "History",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "mean": 85.0,
+     "name": "Mystery",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 0,
+     "name": "Romance",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "mean": 0,
+     "name": "Science Fiction",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "mean": 0,
+     "name": "Thriller",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "mean": 0,
+     "name": "War",
+     "scored": 0
+    }
+   ],
+   "makers": [],
+   "meanScore": 85.0,
+   "media": "movies",
+   "pending": 0,
+   "progress": 5,
+   "repeats": 0,
+   "scored": 1,
+   "scores": [
+    [
+     85,
+     1
+    ]
+   ],
+   "seconds": 43320,
+   "volumes": 0,
+   "years": [
+    {
+     "count": 1,
+     "year": 2014
+    },
+    {
+     "count": 2,
+     "year": 2023
+    },
+    {
+     "count": 2,
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "added": [
+    {
+     "at": "2026-04",
+     "count": 1
+    },
+    {
+     "at": "2026-06",
+     "count": 2
+    },
+    {
+     "at": "2026-08",
+     "count": 1
+    },
+    {
+     "at": "2026-09",
+     "count": 1
+    }
+   ],
+   "again": 460,
+   "againSeconds": 0,
+   "counts": {
+    "completed": 2,
+    "current": 1,
+    "dropped": 0,
+    "hold": 1,
+    "planned": 1
+   },
+   "entries": 5,
+   "favourites": 0,
+   "finished": [
+    {
+     "at": "2026-04",
+     "count": 1
+    },
+    {
+     "at": "2026-08",
+     "count": 1
+    }
+   ],
+   "formats": [
+    {
+     "count": 4,
+     "mean": 86.67,
+     "name": "Book",
+     "scored": 3
+    }
+   ],
+   "genres": [
+    {
+     "count": 2,
+     "mean": 87.5,
+     "name": "Fiction",
+     "scored": 2
+    },
+    {
+     "count": 1,
+     "mean": 90.0,
+     "name": "American literature",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 0,
+     "name": "British and irish fiction (fictional works by one author)",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "mean": 85.0,
+     "name": "Chinese",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 0,
+     "name": "Fiction, dystopian",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "mean": 0,
+     "name": "Fiction, science fiction, general",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "mean": 85.0,
+     "name": "Imperialism",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 90.0,
+     "name": "Modern fiction",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 85.0,
+     "name": "Translators",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 85.0,
+     "name": "hard sci-fi",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 85.0,
+     "name": "hard science-fiction",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 85.0,
+     "name": "sci-fi",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 85.0,
+     "name": "science-fiction",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 0,
+     "name": "speculative fiction",
+     "scored": 0
+    }
+   ],
+   "makers": [],
+   "meanScore": 86.67,
+   "media": "books",
+   "pending": 0,
+   "progress": 1705,
+   "repeats": 1,
+   "scored": 3,
+   "scores": [
+    [
+     85,
+     2
+    ],
+    [
+     90,
+     1
+    ]
+   ],
+   "seconds": 0,
+   "volumes": 0,
+   "years": [
+    {
+     "count": 1,
+     "year": 2005
+    },
+    {
+     "count": 1,
+     "year": 2019
+    },
+    {
+     "count": 1,
+     "year": 2021
+    },
+    {
+     "count": 2,
+     "year": 2022
+    }
+   ]
+  }
+ ],
+ "person": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b723-vp5hPptgnNEC.png",
+  "lists": [
+   "anime",
+   "manga",
+   "tv",
+   "movies",
+   "books"
+  ],
+  "name": "Nami",
+  "open": true,
+  "relation": "incoming",
+  "since": 1793716140000,
+  "username": "nami.watches"
+ }
+}

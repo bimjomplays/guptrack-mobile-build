@@ -1,0 +1,72 @@
+{
+ "title": {
+  "alt": [
+   "BLEACH"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30012-RpbdVc2yNxhw.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 706,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30012-1epmVfTSv2rr.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Chapters",
+    "value": "706"
+   },
+   {
+    "label": "Volumes",
+    "value": "74"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Published",
+    "value": "Aug 7, 2001"
+   },
+   {
+    "label": "Members",
+    "value": "123,097"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Supernatural"
+  ],
+  "headline": [
+   "Manga",
+   "2001",
+   "706 chapters"
+  ],
+  "idMal": 12,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "30012",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 80,
+  "scoreNote": "123,097 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Bleach",
+  "trailer": null,
+  "volumes": 74,
+  "year": 2001
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "activity": [
+  {
+   "after": 46,
+   "at": 1793713020000,
+   "before": 40,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30656-9mW113O7rDnA.png",
+   "entry": "30656",
+   "id": 117,
+   "media": "manga",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Kenji",
+      "open": true,
+      "relation": "friend",
+      "since": 1791471600000,
+      "username": "kenji"
+     }
+    ],
+    "likes": 1,
+    "replies": 0,
+    "target": {
+     "id": 117,
+     "on": "activity"
+    }
+   },
+   "title": "Vagabond",
+   "type": "progress"
+  },
+  {
+   "after": "hold",
+   "at": 1793436060000,
+   "before": "current",
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-euxXZEIfDY2u.png",
+   "entry": "105778",
+   "id": 109,
+   "media": "manga",
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [],
+    "likes": 0,
+    "replies": 0,
+    "target": {
+     "id": 109,
+     "on": "activity"
+    }
+   },
+   "title": "Chainsaw Man",
+   "type": "status"
+  }
+ ]
+}

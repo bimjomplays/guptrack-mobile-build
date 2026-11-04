@@ -1,0 +1,54 @@
+{
+ "character": {
+  "alt": [],
+  "altSpoiler": [],
+  "appearances": [
+   {
+    "role": "Main",
+    "title": {
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21-ELSYx3yMPcKM.jpg",
+     "format": "TV",
+     "ref": {
+      "id": "21",
+      "kind": "anime"
+     },
+     "score": 87,
+     "title": "ONE PIECE",
+     "year": 1999
+    }
+   }
+  ],
+  "description": [],
+  "facts": [],
+  "favourites": 0,
+  "id": "18938",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b18938-yZANEfjsVhW4.png",
+  "name": "Jinbe",
+  "native": "ジンベエ",
+  "voices": [
+   {
+    "language": "Japanese",
+    "people": [
+     {
+      "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95744-Iu1p0eNvShfN.jpg",
+      "name": "Daisuke Gouri",
+      "ref": {
+       "id": "95744",
+       "source": "anilist",
+       "to": "person"
+      }
+     },
+     {
+      "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n100317-8qR7ph0AKfXu.png",
+      "name": "Katsuhisa Houki",
+      "ref": {
+       "id": "100317",
+       "source": "anilist",
+       "to": "person"
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

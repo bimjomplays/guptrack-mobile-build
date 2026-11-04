@@ -1,0 +1,53 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx98659-WNyPLIZDpGGY.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "98659",
+       "kind": "anime"
+      },
+      "score": 76,
+      "title": "Classroom of the Elite",
+      "year": 2017
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21170-kbcfTTZGSaFt.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "21170",
+       "kind": "anime"
+      },
+      "score": 83,
+      "title": "Assassination Classroom Second Season",
+      "year": 2016
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20755-dWrhs569YGUO.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "20755",
+       "kind": "anime"
+      },
+      "score": 79,
+      "title": "Assassination Classroom",
+      "year": 2015
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Lerche",
+  "ref": {
+   "id": "456",
+   "to": "studio"
+  }
+ }
+}

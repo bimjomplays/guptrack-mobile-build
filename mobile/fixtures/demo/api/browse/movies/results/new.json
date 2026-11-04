@@ -1,0 +1,273 @@
+{
+ "more": false,
+ "next": null,
+ "titles": [
+  {
+   "by": "Jared Bush, Byron Howard",
+   "count": 108,
+   "cover": "https://image.tmdb.org/t/p/w342/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+   "format": "Film",
+   "genres": [
+    "Animation",
+    "Adventure",
+    "Comedy",
+    "Mystery",
+    "Family"
+   ],
+   "id": "tmdb:movie:1084242",
+   "popularity": 11208,
+   "score": 77,
+   "source": "tmdb",
+   "sourceId": "movie/1084242",
+   "start": "2025-11-26",
+   "status": "finished",
+   "tags": [],
+   "title": "Zootopia 2",
+   "trending": 2802,
+   "year": 2025
+  },
+  {
+   "by": "Paul Thomas Anderson",
+   "count": 162,
+   "cover": "https://image.tmdb.org/t/p/w342/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+   "format": "Film",
+   "genres": [
+    "Thriller",
+    "Crime",
+    "Comedy"
+   ],
+   "id": "tmdb:movie:1054867",
+   "popularity": 16362,
+   "score": 73,
+   "source": "tmdb",
+   "sourceId": "movie/1054867",
+   "start": "2025-09-23",
+   "status": "finished",
+   "tags": [],
+   "title": "One Battle After Another",
+   "trending": 4090,
+   "year": 2025
+  },
+  {
+   "by": "Zach Cregger",
+   "count": 128,
+   "cover": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+   "format": "Film",
+   "genres": [
+    "Horror",
+    "Mystery"
+   ],
+   "id": "tmdb:movie:1078605",
+   "popularity": 18405,
+   "score": 73,
+   "source": "tmdb",
+   "sourceId": "movie/1078605",
+   "start": "2025-08-04",
+   "status": "finished",
+   "tags": [],
+   "title": "Weapons",
+   "trending": 4601,
+   "year": 2025
+  },
+  {
+   "by": "Ryan Coogler",
+   "count": 138,
+   "cover": "https://image.tmdb.org/t/p/w342/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+   "format": "Film",
+   "genres": [
+    "Horror",
+    "Action",
+    "Thriller"
+   ],
+   "id": "tmdb:movie:1233413",
+   "popularity": 23469,
+   "score": 75,
+   "source": "tmdb",
+   "sourceId": "movie/1233413",
+   "start": "2025-04-16",
+   "status": "finished",
+   "tags": [],
+   "title": "Sinners",
+   "trending": 5867,
+   "year": 2025
+  },
+  {
+   "by": "Denis Villeneuve",
+   "count": 167,
+   "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+   "format": "Film",
+   "genres": [
+    "Sci-Fi",
+    "Adventure"
+   ],
+   "id": "tmdb:movie:693134",
+   "popularity": 26354,
+   "score": 81,
+   "source": "tmdb",
+   "sourceId": "movie/693134",
+   "start": "2024-02-27",
+   "status": "finished",
+   "tags": [],
+   "title": "Dune: Part Two",
+   "trending": 6588,
+   "year": 2024
+  },
+  {
+   "by": "Christopher Nolan",
+   "count": 181,
+   "cover": "https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+   "format": "Film",
+   "genres": [
+    "Drama",
+    "History",
+    "War"
+   ],
+   "id": "tmdb:movie:872585",
+   "popularity": 24619,
+   "score": 80,
+   "source": "tmdb",
+   "sourceId": "movie/872585",
+   "start": "2023-07-19",
+   "status": "finished",
+   "tags": [],
+   "title": "Oppenheimer",
+   "trending": 6155,
+   "year": 2023
+  },
+  {
+   "by": "Celine Song",
+   "count": 106,
+   "cover": "https://image.tmdb.org/t/p/w342/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+   "format": "Film",
+   "genres": [
+    "Drama",
+    "Romance"
+   ],
+   "id": "tmdb:movie:666277",
+   "popularity": 22346,
+   "score": 77,
+   "source": "tmdb",
+   "sourceId": "movie/666277",
+   "start": "2023-06-02",
+   "status": "finished",
+   "tags": [],
+   "title": "Past Lives",
+   "trending": 5586,
+   "year": 2023
+  },
+  {
+   "by": "Daniel Kwan, Daniel Scheinert",
+   "count": 140,
+   "cover": "https://image.tmdb.org/t/p/w342/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+   "format": "Film",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+   ],
+   "id": "tmdb:movie:545611",
+   "popularity": 20672,
+   "score": 77,
+   "source": "tmdb",
+   "sourceId": "movie/545611",
+   "start": "2022-03-24",
+   "status": "finished",
+   "tags": [],
+   "title": "Everything Everywhere All at Once",
+   "trending": 5168,
+   "year": 2022
+  },
+  {
+   "by": "Matt Reeves",
+   "count": 177,
+   "cover": "https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+   "format": "Film",
+   "genres": [
+    "Crime",
+    "Mystery",
+    "Thriller"
+   ],
+   "id": "tmdb:movie:414906",
+   "popularity": 19224,
+   "score": 77,
+   "source": "tmdb",
+   "sourceId": "movie/414906",
+   "start": "2022-03-01",
+   "status": "finished",
+   "tags": [],
+   "title": "The Batman",
+   "trending": 4806,
+   "year": 2022
+  },
+  {
+   "alt": [
+    "기생충"
+   ],
+   "by": "Bong Joon Ho",
+   "count": 133,
+   "cover": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+   "format": "Film",
+   "genres": [
+    "Comedy",
+    "Thriller",
+    "Drama"
+   ],
+   "id": "tmdb:movie:496243",
+   "popularity": 13519,
+   "score": 85,
+   "source": "tmdb",
+   "sourceId": "movie/496243",
+   "start": "2019-05-30",
+   "status": "finished",
+   "tags": [],
+   "title": "Parasite",
+   "trending": 3380,
+   "year": 2019
+  },
+  {
+   "by": "Damien Chazelle",
+   "count": 129,
+   "cover": "https://image.tmdb.org/t/p/w342/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+   "format": "Film",
+   "genres": [
+    "Comedy",
+    "Drama",
+    "Romance"
+   ],
+   "id": "tmdb:movie:313369",
+   "popularity": 12477,
+   "score": 79,
+   "source": "tmdb",
+   "sourceId": "movie/313369",
+   "start": "2016-11-29",
+   "status": "finished",
+   "tags": [],
+   "title": "La La Land",
+   "trending": 3119,
+   "year": 2016
+  },
+  {
+   "by": "Christopher Nolan",
+   "count": 169,
+   "cover": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+   "format": "Film",
+   "genres": [
+    "Adventure",
+    "Drama",
+    "Sci-Fi"
+   ],
+   "id": "tmdb:movie:157336",
+   "popularity": 15056,
+   "score": 85,
+   "source": "tmdb",
+   "sourceId": "movie/157336",
+   "start": "2014-11-05",
+   "status": "finished",
+   "tags": [],
+   "title": "Interstellar",
+   "trending": 3764,
+   "year": 2014
+  }
+ ],
+ "total": 12
+}

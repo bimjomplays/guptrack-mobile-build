@@ -1,0 +1,40 @@
+{
+ "box": "inbox",
+ "canSend": true,
+ "messages": [
+  {
+   "at": 1793532960000,
+   "body": "Severance is back and so good",
+   "card": null,
+   "deleted": false,
+   "edited": null,
+   "id": 1013,
+   "mine": true,
+   "photos": [],
+   "reactions": [
+    {
+     "emoji": "❤️",
+     "mine": false
+    }
+   ]
+  }
+ ],
+ "more": false,
+ "muted": false,
+ "person": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+  "lists": [
+   "anime",
+   "manga",
+   "tv",
+   "movies",
+   "books"
+  ],
+  "name": "Lena",
+  "open": true,
+  "relation": "friend",
+  "since": 1771081200000,
+  "username": "lena"
+ },
+ "seen": 1013
+}

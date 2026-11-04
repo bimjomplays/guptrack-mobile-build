@@ -1,0 +1,50 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Occupation",
+    "value": "Voice Actor"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "character": {
+       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n23652-fJf6jduDv3iY.png",
+       "name": "Steven Steel",
+       "ref": {
+        "id": "23652",
+        "to": "character"
+       }
+      },
+      "role": "Supporting",
+      "title": {
+       "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210482-P1VNKbqdJ6Zj.jpg",
+       "format": "ONA",
+       "ref": {
+        "id": "210482",
+        "kind": "anime"
+       },
+       "score": 86,
+       "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+       "year": 2026
+      }
+     }
+    ],
+    "title": "Voice roles"
+   }
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95720-enxx6kZKuwGi.jpg",
+  "known": "Voice Actor",
+  "name": "Kenta Miyake",
+  "native": null,
+  "ref": {
+   "id": "95720",
+   "source": "anilist",
+   "to": "person"
+  }
+ }
+}

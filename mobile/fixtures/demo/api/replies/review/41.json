@@ -1,0 +1,133 @@
+{
+ "reactions": {
+  "canLike": true,
+  "liked": false,
+  "likers": [
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Kenji",
+    "open": true,
+    "relation": "friend",
+    "since": 1791471600000,
+    "username": "kenji"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Lena",
+    "open": true,
+    "relation": "friend",
+    "since": 1771081200000,
+    "username": "lena"
+   },
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Hal",
+    "open": true,
+    "relation": "friend",
+    "since": 1780326000000,
+    "username": "hal"
+   }
+  ],
+  "likes": 3,
+  "replies": 3,
+  "target": {
+   "id": 41,
+   "on": "review"
+  }
+ },
+ "replies": [
+  {
+   "at": 1793707860000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Kenji",
+    "open": true,
+    "relation": "friend",
+    "since": 1791471600000,
+    "username": "kenji"
+   },
+   "body": "Saw it in IMAX twice. The black and white arena scene still lives in my head.",
+   "canDelete": false,
+   "canEdit": false,
+   "edited": null,
+   "id": 709,
+   "parent": null
+  },
+  {
+   "at": 1793708460000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Lena",
+    "open": true,
+    "relation": "friend",
+    "since": 1771081200000,
+    "username": "lena"
+   },
+   "body": "Feyd was terrifying, agreed.",
+   "canDelete": false,
+   "canEdit": false,
+   "edited": null,
+   "id": 710,
+   "parent": null
+  },
+  {
+   "at": 1793709660000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Hal",
+    "open": true,
+    "relation": "friend",
+    "since": 1780326000000,
+    "username": "hal"
+   },
+   "body": "Liked it more than the first. Less setup, more desert.",
+   "canDelete": false,
+   "canEdit": false,
+   "edited": null,
+   "id": 711,
+   "parent": null
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "title": {
+  "alt": [
+   "Hajime no Ippo: Rising",
+   "はじめの一歩 Rising"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/19647-yJfiQb4GchCg.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 25,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19647-cIy7ShTL6e9h.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "25"
+   },
+   {
+    "label": "Episode length",
+    "value": "23 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 5, 2013"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2013"
+   },
+   {
+    "label": "Studios",
+    "links": [
+     {
+      "ref": {
+       "id": "11",
+       "to": "studio"
+      },
+      "text": "MADHOUSE"
+     },
+     {
+      "ref": {
+       "id": "569",
+       "to": "studio"
+      },
+      "text": "MAPPA"
+     }
+    ],
+    "value": "MADHOUSE, MAPPA"
+   },
+   {
+    "label": "Members",
+    "value": "61,309"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Sports"
+  ],
+  "headline": [
+   "TV",
+   "Fall 2013",
+   "25 episodes"
+  ],
+  "idMal": 19647,
+  "makers": [
+   {
+    "ref": {
+     "id": "11",
+     "to": "studio"
+    },
+    "text": "MADHOUSE"
+   },
+   {
+    "ref": {
+     "id": "569",
+     "to": "studio"
+    },
+    "text": "MAPPA"
+   }
+  ],
+  "media": "anime",
+  "minutes": 23,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "19647",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 85,
+  "scoreNote": "61,309 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Hajime No Ippo: The Fighting! - Rising -",
+  "trailer": null,
+  "volumes": null,
+  "year": 2013
+ }
+}

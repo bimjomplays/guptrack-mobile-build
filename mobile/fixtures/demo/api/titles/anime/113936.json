@@ -1,0 +1,98 @@
+{
+ "title": {
+  "alt": [
+   "Dr.STONE STONE WARS"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/113936-PpMtCY9kCwwV.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 11,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113936-D4eYd4XwslVI.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "11"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Jan 14, 2021"
+   },
+   {
+    "label": "Season",
+    "value": "Winter 2021"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "73",
+       "to": "studio"
+      },
+      "text": "TMS Entertainment"
+     }
+    ],
+    "value": "TMS Entertainment"
+   },
+   {
+    "label": "Members",
+    "value": "340,662"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Sci-Fi"
+  ],
+  "headline": [
+   "TV",
+   "Winter 2021",
+   "11 episodes"
+  ],
+  "idMal": 40852,
+  "makers": [
+   {
+    "ref": {
+     "id": "73",
+     "to": "studio"
+    },
+    "text": "TMS Entertainment"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "113936",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 81,
+  "scoreNote": "340,662 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Dr. STONE: STONE WARS",
+  "trailer": null,
+  "volumes": null,
+  "year": 2021
+ }
+}

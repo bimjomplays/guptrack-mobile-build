@@ -1,0 +1,64 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx212888-NhyvqPt5aIuJ.jpg",
+      "format": "ONA",
+      "ref": {
+       "id": "212888",
+       "kind": "anime"
+      },
+      "score": 76,
+      "title": "Overgeared",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx186742-v7yfbefc8fuO.png",
+      "format": "TV",
+      "ref": {
+       "id": "186742",
+       "kind": "anime"
+      },
+      "score": 67,
+      "title": "A Certain Dark Item",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21804-As6tDLAvEvNY.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "21804",
+       "kind": "anime"
+      },
+      "score": 83,
+      "title": "The Disastrous Life of Saiki K.",
+      "year": 2016
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx66-ZqYQWl6LsfeI.png",
+      "format": "TV",
+      "ref": {
+       "id": "66",
+       "kind": "anime"
+      },
+      "score": 79,
+      "title": "Azumanga Daioh",
+      "year": 2002
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "J.C.STAFF",
+  "ref": {
+   "id": "7",
+   "to": "studio"
+  }
+ }
+}

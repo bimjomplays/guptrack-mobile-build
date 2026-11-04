@@ -1,0 +1,72 @@
+{
+ "title": {
+  "alt": [
+   "ヴィンランド・サガ"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30642-MeizzL2WDv6C.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 224,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30642-0mjRDkf4THpo.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Chapters",
+    "value": "224"
+   },
+   {
+    "label": "Volumes",
+    "value": "29"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Published",
+    "value": "Apr 27, 2005"
+   },
+   {
+    "label": "Members",
+    "value": "140,377"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama"
+  ],
+  "headline": [
+   "Manga",
+   "2005",
+   "224 chapters"
+  ],
+  "idMal": 642,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "30642",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 90,
+  "scoreNote": "140,377 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Vinland Saga",
+  "trailer": null,
+  "volumes": 29,
+  "year": 2005
+ }
+}

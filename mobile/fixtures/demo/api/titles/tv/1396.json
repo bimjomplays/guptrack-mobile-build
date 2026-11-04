@@ -1,0 +1,336 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://image.tmdb.org/t/p/w1280/tsRy63Mu5cu8etL1X7ZLyf7UP1M.jpg",
+  "cast": [
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/7Jahy5LZX2Fo8fGJltMreAI49hC.jpg",
+     "name": "Bryan Cranston",
+     "ref": {
+      "id": "94542719",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Walter White"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/8Ac9uuoYwZoYVAIJfRLzzLsGGJn.jpg",
+     "name": "Aaron Paul",
+     "ref": {
+      "id": "98659957",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Jesse Pinkman"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/adppyeu1a4REN3khtgmXusrapFi.jpg",
+     "name": "Anna Gunn",
+     "ref": {
+      "id": "93482601",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Skyler White"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/sNPA92ZrssYhlaB1UA2pWcLD9db.jpg",
+     "name": "RJ Mitte",
+     "ref": {
+      "id": "96999243",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Walter White Jr."
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/mKRrEbsxAX3ro700HsViFArRM7l.jpg",
+     "name": "Dean Norris",
+     "ref": {
+      "id": "97742726",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Hank Schrader"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/xAnuzyjdMbQq9L1c4JNwXL52Wm4.jpg",
+     "name": "Betsy Brandt",
+     "ref": {
+      "id": "90655789",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Marie Schrader"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/rF0Lb6SBhGSTvjRffmlKRSeI3jE.jpg",
+     "name": "Bob Odenkirk",
+     "ref": {
+      "id": "91909291",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Saul Goodman"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/bswk26L13PvY4iMTwUTAsepXCLv.jpg",
+     "name": "Jonathan Banks",
+     "ref": {
+      "id": "93962258",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Mike Ehrmantraut"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/pVYrDkwI6GWvCNL2kJhpDJfBFyd.jpg",
+     "name": "Steven Michael Quezada",
+     "ref": {
+      "id": "91684471",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Steven Gomez"
+   }
+  ],
+  "characters": [],
+  "count": null,
+  "cover": "https://image.tmdb.org/t/p/w500/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Series"
+   },
+   {
+    "label": "Status",
+    "value": "Ended"
+   },
+   {
+    "label": "Aired",
+    "value": "Jan 20, 2008 – Sep 29, 2013"
+   },
+   {
+    "label": "Creator",
+    "links": [
+     {
+      "ref": {
+       "id": "93458968",
+       "source": "tmdb",
+       "to": "person"
+      },
+      "text": "Vince Gilligan"
+     }
+    ],
+    "value": "Vince Gilligan"
+   },
+   {
+    "label": "Rated",
+    "value": "TV-MA"
+   },
+   {
+    "label": "Language",
+    "value": "English"
+   }
+  ],
+  "format": "Series",
+  "genres": [
+   "Drama",
+   "Crime"
+  ],
+  "headline": [
+   "Series",
+   "2008–2013",
+   "TV-MA"
+  ],
+  "makers": [
+   {
+    "ref": {
+     "id": "93458968",
+     "source": "tmdb",
+     "to": "person"
+    },
+    "text": "Vince Gilligan"
+   }
+  ],
+  "media": "tv",
+  "minutes": 45,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "95396",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "Severance",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "136315",
+     "kind": "tv"
+    },
+    "score": 82,
+    "title": "The Bear",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "126308",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "Shōgun",
+    "year": 2024
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "100088",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "The Last of Us",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "83867",
+     "kind": "tv"
+    },
+    "score": 83,
+    "title": "Andor",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "95480",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Slow Horses",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "225171",
+     "kind": "tv"
+    },
+    "score": 79,
+    "title": "Pluribus",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "76479",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "The Boys",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "87108",
+     "kind": "tv"
+    },
+    "score": 87,
+    "title": "Chernobyl",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "108978",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Reacher",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "110316",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Alice in Borderland",
+    "year": 2020
+   }
+  ],
+  "ref": {
+   "id": "1396",
+   "kind": "tv"
+  },
+  "relations": [],
+  "score": 90,
+  "scoreNote": "19,841 votes",
+  "seasons": [],
+  "staff": [
+   {
+    "person": {
+     "image": null,
+     "name": "Vince Gilligan",
+     "ref": {
+      "id": "93458968",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Creator"
+   }
+  ],
+  "status": "finished",
+  "statusText": "Ended",
+  "synopsis": [
+   [
+    {
+     "text": "Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime."
+    }
+   ]
+  ],
+  "tags": [],
+  "title": "Breaking Bad",
+  "trailer": null,
+  "year": 2008
+ }
+}

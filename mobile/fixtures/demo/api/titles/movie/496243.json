@@ -1,0 +1,344 @@
+{
+ "title": {
+  "alt": [
+   "기생충"
+  ],
+  "banner": "https://image.tmdb.org/t/p/w1280/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg",
+  "cast": [
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/kBM9UTPYXUA2RNk210DXhztLFns.jpg",
+     "name": "Song Kang-ho",
+     "ref": {
+      "id": "92355114",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Kim Ki-taek"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/nHFBbSFohzOUOvMxPVwe3Es2nJw.jpg",
+     "name": "Lee Sun-kyun",
+     "ref": {
+      "id": "90336628",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Park Dong-ik"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/5MgWM8pkUiYkj9MEaEpO0Ir1FD9.jpg",
+     "name": "Cho Yeo-jeong",
+     "ref": {
+      "id": "90509371",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Yeon-kyo"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/9mZ9DNopxpCLUjXd0rLd42TLamw.jpg",
+     "name": "Choi Woo-shik",
+     "ref": {
+      "id": "97800139",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Ki-woo"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/fGVOikpvivopeATDy6ZzLdKYXDu.jpg",
+     "name": "Park So-dam",
+     "ref": {
+      "id": "92853693",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Ki-jung"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/4r3K47UpSmzZ5t9cyTRRqRl9rdz.jpg",
+     "name": "Lee Jung-eun",
+     "ref": {
+      "id": "91791273",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Moon-gwang"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/pZiQXSWwo9F4gncHfa1yw0CQjxk.jpg",
+     "name": "Jang Hye-jin",
+     "ref": {
+      "id": "90423856",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Chung-sook"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/5SucrxkigHss7UuJKrkfAZX5MXz.jpg",
+     "name": "Park Myung-hoon",
+     "ref": {
+      "id": "92347479",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Geun-se"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/jsUPFmY1HlML92ubVtSE8L8ovz6.jpg",
+     "name": "Jung Zi-so",
+     "ref": {
+      "id": "92862205",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Da-hye"
+   }
+  ],
+  "characters": [],
+  "count": 1,
+  "cover": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "2h 13m"
+   },
+   {
+    "label": "Status",
+    "value": "Released"
+   },
+   {
+    "label": "Released",
+    "value": "May 30, 2019"
+   },
+   {
+    "label": "Director",
+    "links": [
+     {
+      "ref": {
+       "id": "96342646",
+       "source": "tmdb",
+       "to": "person"
+      },
+      "text": "Bong Joon Ho"
+     }
+    ],
+    "value": "Bong Joon Ho"
+   },
+   {
+    "label": "Rated",
+    "value": "R"
+   },
+   {
+    "label": "Language",
+    "value": "Korean"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Comedy",
+   "Thriller",
+   "Drama"
+  ],
+  "headline": [
+   "Film",
+   "2019",
+   "2h 13m",
+   "R"
+  ],
+  "makers": [
+   {
+    "ref": {
+     "id": "96342646",
+     "source": "tmdb",
+     "to": "person"
+    },
+    "text": "Bong Joon Ho"
+   }
+  ],
+  "media": "movies",
+  "minutes": 133,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "693134",
+     "kind": "movie"
+    },
+    "score": 81,
+    "title": "Dune: Part Two",
+    "year": 2024
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "872585",
+     "kind": "movie"
+    },
+    "score": 80,
+    "title": "Oppenheimer",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1233413",
+     "kind": "movie"
+    },
+    "score": 75,
+    "title": "Sinners",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "666277",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Past Lives",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "545611",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Everything Everywhere All at Once",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "414906",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "The Batman",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1078605",
+     "kind": "movie"
+    },
+    "score": 73,
+    "title": "Weapons",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1054867",
+     "kind": "movie"
+    },
+    "score": 73,
+    "title": "One Battle After Another",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "157336",
+     "kind": "movie"
+    },
+    "score": 85,
+    "title": "Interstellar",
+    "year": 2014
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "313369",
+     "kind": "movie"
+    },
+    "score": 79,
+    "title": "La La Land",
+    "year": 2016
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1084242",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Zootopia 2",
+    "year": 2025
+   }
+  ],
+  "ref": {
+   "id": "496243",
+   "kind": "movie"
+  },
+  "relations": [],
+  "score": 85,
+  "scoreNote": "13,519 votes",
+  "seasons": [],
+  "staff": [
+   {
+    "person": {
+     "image": null,
+     "name": "Bong Joon Ho",
+     "ref": {
+      "id": "96342646",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Director"
+   }
+  ],
+  "status": "finished",
+  "statusText": "Released",
+  "synopsis": [
+   [
+    {
+     "text": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident."
+    }
+   ]
+  ],
+  "tags": [],
+  "title": "Parasite",
+  "trailer": null,
+  "year": 2019
+ }
+}

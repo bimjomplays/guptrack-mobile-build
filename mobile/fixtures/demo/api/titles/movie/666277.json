@@ -1,0 +1,354 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://image.tmdb.org/t/p/w1280/7HR38hMBl23lf38MAN63y4pKsHz.jpg",
+  "cast": [
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/6SydTis4XUcovlwIGskT59JowLX.jpg",
+     "name": "Greta Lee",
+     "ref": {
+      "id": "97706506",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Nora"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/vuzKCKo2kIskjbDEcl2EMLv6uhO.jpg",
+     "name": "Teo Yoo",
+     "ref": {
+      "id": "97567055",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Hae Sung"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/ah4Jm4Lmrgab9xdHwRId80S4REd.jpg",
+     "name": "John Magaro",
+     "ref": {
+      "id": "90565772",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Arthur"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/pMWmxsuKpOH7npeZNYCxJmZt993.jpg",
+     "name": "Moon Seung-ah",
+     "ref": {
+      "id": "97685068",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Young Nora"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/3UtRGgLaH5BQTAlXRHw3n0hl5zl.jpg",
+     "name": "Leem Seung-min",
+     "ref": {
+      "id": "98172183",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Young Hae Sung"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/7zePMNGe149OzzsyVCdL0Mx1dT2.jpg",
+     "name": "Yoon Ji-hye",
+     "ref": {
+      "id": "94193845",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Nora's Mom"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/fd6mthn1EonRrsk2WTtfQhzHCgn.jpg",
+     "name": "Choi Won-young",
+     "ref": {
+      "id": "96600496",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Nora's Dad"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/mLweJKWvz4CGP5l2GSYI3MHKbmv.jpg",
+     "name": "An Min-young",
+     "ref": {
+      "id": "97431244",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Hae Sung's Mom"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/jnlg98onJjiVuafN3vpjPDgutOY.jpg",
+     "name": "Seo Yeon-woo",
+     "ref": {
+      "id": "92328876",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Young Si Young"
+   }
+  ],
+  "characters": [],
+  "count": 1,
+  "cover": "https://image.tmdb.org/t/p/w500/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "1h 46m"
+   },
+   {
+    "label": "Status",
+    "value": "Released"
+   },
+   {
+    "label": "Released",
+    "value": "Jun 2, 2023"
+   },
+   {
+    "label": "Director",
+    "links": [
+     {
+      "ref": {
+       "id": "94019840",
+       "source": "tmdb",
+       "to": "person"
+      },
+      "text": "Celine Song"
+     }
+    ],
+    "value": "Celine Song"
+   },
+   {
+    "label": "Production",
+    "links": [
+     {
+      "ref": {
+       "id": "41077",
+       "to": "company"
+      },
+      "text": "A24"
+     }
+    ],
+    "value": "A24"
+   },
+   {
+    "label": "Rated",
+    "value": "PG-13"
+   },
+   {
+    "label": "Language",
+    "value": "English"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "headline": [
+   "Film",
+   "2023",
+   "1h 46m",
+   "PG-13"
+  ],
+  "makers": [
+   {
+    "ref": {
+     "id": "94019840",
+     "source": "tmdb",
+     "to": "person"
+    },
+    "text": "Celine Song"
+   }
+  ],
+  "media": "movies",
+  "minutes": 106,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "693134",
+     "kind": "movie"
+    },
+    "score": 81,
+    "title": "Dune: Part Two",
+    "year": 2024
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "872585",
+     "kind": "movie"
+    },
+    "score": 80,
+    "title": "Oppenheimer",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1233413",
+     "kind": "movie"
+    },
+    "score": 75,
+    "title": "Sinners",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "545611",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Everything Everywhere All at Once",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "414906",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "The Batman",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1078605",
+     "kind": "movie"
+    },
+    "score": 73,
+    "title": "Weapons",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1054867",
+     "kind": "movie"
+    },
+    "score": 73,
+    "title": "One Battle After Another",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "157336",
+     "kind": "movie"
+    },
+    "score": 85,
+    "title": "Interstellar",
+    "year": 2014
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "496243",
+     "kind": "movie"
+    },
+    "score": 85,
+    "title": "Parasite",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "313369",
+     "kind": "movie"
+    },
+    "score": 79,
+    "title": "La La Land",
+    "year": 2016
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1084242",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Zootopia 2",
+    "year": 2025
+   }
+  ],
+  "ref": {
+   "id": "666277",
+   "kind": "movie"
+  },
+  "relations": [],
+  "score": 77,
+  "scoreNote": "22,346 votes",
+  "seasons": [],
+  "staff": [
+   {
+    "person": {
+     "image": null,
+     "name": "Celine Song",
+     "ref": {
+      "id": "94019840",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Director"
+   }
+  ],
+  "status": "finished",
+  "statusText": "Released",
+  "synopsis": [
+   [
+    {
+     "text": "After decades apart, childhood friends Nora and Hae Sung are reunited in New York for one fateful weekend as they confront notions of destiny, love, and the choices that make a life."
+    }
+   ]
+  ],
+  "tags": [],
+  "title": "Past Lives",
+  "trailer": null,
+  "year": 2023
+ }
+}

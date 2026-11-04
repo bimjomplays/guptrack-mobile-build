@@ -1,0 +1,60 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Works",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Novel · 1965",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/11481354-M.jpg",
+       "format": "Novel",
+       "ref": {
+        "id": "OL893414W",
+        "kind": "book"
+       },
+       "score": 86,
+       "title": "Dune",
+       "year": 1965
+      }
+     }
+    ],
+    "title": "Most read"
+   },
+   {
+    "items": [
+     {
+      "role": "Novel · 1965",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/11481354-M.jpg",
+       "format": "Novel",
+       "ref": {
+        "id": "OL893414W",
+        "kind": "book"
+       },
+       "score": 86,
+       "title": "Dune",
+       "year": 1965
+      }
+     }
+    ],
+    "title": "Books"
+   }
+  ],
+  "image": null,
+  "known": "Author",
+  "name": "Frank Herbert",
+  "native": null,
+  "ref": {
+   "id": "OL79034A",
+   "to": "author"
+  }
+ }
+}

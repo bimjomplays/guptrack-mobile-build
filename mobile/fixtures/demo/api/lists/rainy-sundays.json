@@ -1,0 +1,155 @@
+{
+ "count": 12,
+ "covers": [
+  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1575-hsmWM2ydNm1m.jpg",
+  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9253-tIUXF2gfU8Sg.jpg",
+  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101921-ufrjLzhSz7L1.jpg",
+  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg"
+ ],
+ "description": "For when the week was long.",
+ "id": 1,
+ "items": [
+  {
+   "added": 1793623260000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1575-hsmWM2ydNm1m.jpg",
+   "format": "TV",
+   "id": "1575",
+   "media": "anime",
+   "mine": null,
+   "note": "The ending still gets me every time.",
+   "title": "Code Geass: Lelouch of the Rebellion",
+   "year": 2006
+  },
+  {
+   "added": 1793619660000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9253-tIUXF2gfU8Sg.jpg",
+   "format": "TV",
+   "id": "9253",
+   "media": "anime",
+   "mine": null,
+   "note": "Slow first half, then it never lets go.",
+   "title": "Steins;Gate",
+   "year": 2011
+  },
+  {
+   "added": 1793616060000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101921-ufrjLzhSz7L1.jpg",
+   "format": "TV",
+   "id": "101921",
+   "media": "anime",
+   "mine": null,
+   "note": "Perfect twenty-minute episodes.",
+   "title": "Kaguya-sama: Love is War",
+   "year": 2019
+  },
+  {
+   "added": 1793612460000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+   "format": "ONA",
+   "id": "210482",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+   "year": 2026
+  },
+  {
+   "added": 1793608860000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+   "format": "TV",
+   "id": "154587",
+   "media": "anime",
+   "mine": null,
+   "note": "Best watched with tea on a quiet evening.",
+   "title": "Frieren: Beyond Journey’s End",
+   "year": 2023
+  },
+  {
+   "added": 1793605260000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11061-y5gsT1hoHuHw.png",
+   "format": "TV",
+   "id": "11061",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Hunter x Hunter (2011)",
+   "year": 2011
+  },
+  {
+   "added": 1793601660000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2904-Fet9Q33suC7G.jpg",
+   "format": "TV",
+   "id": "2904",
+   "media": "anime",
+   "mine": null,
+   "note": "Worth it for the final stretch alone.",
+   "title": "Code Geass: Lelouch of the Rebellion R2",
+   "year": 2008
+  },
+  {
+   "added": 1793598060000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112641-zoGC8d6FaPXU.jpg",
+   "format": "TV",
+   "id": "112641",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Kaguya-sama: Love is War?",
+   "year": 2020
+  },
+  {
+   "added": 1793594460000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21127-7ARWZkDXKiiD.jpg",
+   "format": "TV",
+   "id": "21127",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Steins;Gate 0",
+   "year": 2018
+  },
+  {
+   "added": 1793590860000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125367-1yuq9NFcQuLI.png",
+   "format": "TV",
+   "id": "125367",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Kaguya-sama: Love is War -Ultra Romantic-",
+   "year": 2022
+  },
+  {
+   "added": 1793587260000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-buvcRTBx4NSm.jpg",
+   "format": "TV",
+   "id": "16498",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Attack on Titan",
+   "year": 2013
+  },
+  {
+   "added": 1793583660000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19-gtMC64182sm4.jpg",
+   "format": "TV",
+   "id": "19",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Monster",
+   "year": 2004
+  }
+ ],
+ "level": {
+  "list": "public",
+  "profile": "public"
+ },
+ "media": [
+  "anime"
+ ],
+ "name": "Rainy Sundays",
+ "slug": "rainy-sundays",
+ "updated": 1793623260000
+}

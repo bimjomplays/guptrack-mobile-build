@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21711-EQN4sCIXRhKf.png",
+      "format": "TV",
+      "ref": {
+       "id": "21711",
+       "kind": "anime"
+      },
+      "score": 76,
+      "title": "91 Days",
+      "year": 2016
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Shuka",
+  "ref": {
+   "id": "6071",
+   "to": "studio"
+  }
+ }
+}

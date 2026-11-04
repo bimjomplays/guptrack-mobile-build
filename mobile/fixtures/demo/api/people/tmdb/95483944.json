@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Ishido Kazunari",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "126308",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "Shōgun",
+       "year": 2024
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Ishido Kazunari",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "126308",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "Shōgun",
+       "year": 2024
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/f8UK7xqwkfpIZiECcDgc0AErkj6.jpg",
+  "known": "Acting",
+  "name": "Takehiro Hira",
+  "native": null,
+  "ref": {
+   "id": "95483944",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

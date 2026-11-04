@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx2251-tTQoWxVy4472.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "2251",
+       "kind": "anime"
+      },
+      "score": 81,
+      "title": "Baccano!",
+      "year": 2007
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Brain's Base",
+  "ref": {
+   "id": "112",
+   "to": "studio"
+  }
+ }
+}

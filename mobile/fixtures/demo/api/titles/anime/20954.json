@@ -1,0 +1,94 @@
+{
+ "title": {
+  "alt": [
+   "Koe no Katachi",
+   "聲の形"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20954-f30bHMXa5Qoe.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20954-sYRfE5jQRtSB.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "2h 10m"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Released",
+    "value": "Sep 17, 2016"
+   },
+   {
+    "label": "Season",
+    "value": "Summer 2016"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "2",
+       "to": "studio"
+      },
+      "text": "Kyoto Animation"
+     }
+    ],
+    "value": "Kyoto Animation"
+   },
+   {
+    "label": "Members",
+    "value": "730,282"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Drama",
+   "Romance",
+   "Slice of Life"
+  ],
+  "headline": [
+   "Film",
+   "Summer 2016",
+   "2h 10m"
+  ],
+  "idMal": 28851,
+  "makers": [
+   {
+    "ref": {
+     "id": "2",
+     "to": "studio"
+    },
+    "text": "Kyoto Animation"
+   }
+  ],
+  "media": "anime",
+  "minutes": 130,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "20954",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 88,
+  "scoreNote": "730,282 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "A Silent Voice",
+  "trailer": null,
+  "volumes": null,
+  "year": 2016
+ }
+}

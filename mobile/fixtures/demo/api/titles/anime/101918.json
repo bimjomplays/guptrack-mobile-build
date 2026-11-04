@@ -1,0 +1,50 @@
+{
+ "title": {
+  "alt": [
+   "ONE PIECE: Episode of Sorajima"
+  ],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101918-3uyCYHw1syki.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Special"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   }
+  ],
+  "format": "Special",
+  "genres": [],
+  "headline": [
+   "Special",
+   "2018"
+  ],
+  "idMal": null,
+  "makers": [],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "101918",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": null,
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "One Piece: Episode of Skypiea",
+  "trailer": null,
+  "volumes": null,
+  "year": 2018
+ }
+}

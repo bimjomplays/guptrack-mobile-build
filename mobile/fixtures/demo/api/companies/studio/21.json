@@ -1,0 +1,53 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx431-o8Lj3XkjHm2k.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "431",
+       "kind": "anime"
+      },
+      "score": 85,
+      "title": "Howl‘s Moving Castle",
+      "year": 2004
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199-sWefXJvXkDOb.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "199",
+       "kind": "anime"
+      },
+      "score": 86,
+      "title": "Spirited Away",
+      "year": 2001
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx578-vU6XcOlb1XFU.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "578",
+       "kind": "anime"
+      },
+      "score": 83,
+      "title": "Grave of the Fireflies",
+      "year": 1988
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Studio Ghibli",
+  "ref": {
+   "id": "21",
+   "to": "studio"
+  }
+ }
+}

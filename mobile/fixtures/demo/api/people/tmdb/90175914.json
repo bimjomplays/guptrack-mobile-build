@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Becky Sregor",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "545611",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "Everything Everywhere All at Once",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Becky Sregor",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "545611",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "Everything Everywhere All at Once",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/uPpO4A56hRcJZRZYXrUxNdBZxUc.jpg",
+  "known": "Acting",
+  "name": "Tallie Medel",
+  "native": null,
+  "ref": {
+   "id": "90175914",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

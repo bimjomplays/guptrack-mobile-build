@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Bruce Wayne / The Batman",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "414906",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "The Batman",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Bruce Wayne / The Batman",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "414906",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "The Batman",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/3qZ09UE7lN6AtorfXFRYpEtSY93.jpg",
+  "known": "Acting",
+  "name": "Robert Pattinson",
+  "native": null,
+  "ref": {
+   "id": "97790881",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

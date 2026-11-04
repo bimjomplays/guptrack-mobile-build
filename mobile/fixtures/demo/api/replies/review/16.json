@@ -1,0 +1,44 @@
+{
+ "reactions": {
+  "canLike": true,
+  "liked": false,
+  "likers": [
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b61-ywXUyyocEEqt.png",
+    "lists": [],
+    "name": "Yuki",
+    "open": false,
+    "relation": "none",
+    "username": "yuki.tv"
+   }
+  ],
+  "likes": 1,
+  "replies": 1,
+  "target": {
+   "id": 16,
+   "on": "review"
+  }
+ },
+ "replies": [
+  {
+   "at": 1792516860000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137080-UHcynYNjb5ZU.png",
+    "lists": [
+     "anime",
+     "manga"
+    ],
+    "name": "Makima Fan",
+    "open": true,
+    "relation": "none",
+    "username": "makima.fan"
+   },
+   "body": "Give it until the exam, it opens up.",
+   "canDelete": false,
+   "canEdit": false,
+   "edited": null,
+   "id": 707,
+   "parent": null
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Directing"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "313369",
+        "kind": "movie"
+       },
+       "score": 79,
+       "title": "La La Land",
+       "year": 2016
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Director",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "313369",
+        "kind": "movie"
+       },
+       "score": 79,
+       "title": "La La Land",
+       "year": 2016
+      }
+     }
+    ],
+    "title": "Directing"
+   }
+  ],
+  "image": null,
+  "known": "Directing",
+  "name": "Damien Chazelle",
+  "native": null,
+  "ref": {
+   "id": "94542033",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

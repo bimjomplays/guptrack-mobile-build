@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21519-SUo3ZQuCbYhJ.png",
+      "format": "Film",
+      "ref": {
+       "id": "21519",
+       "kind": "anime"
+      },
+      "score": 85,
+      "title": "Your Name.",
+      "year": 2016
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "CoMix Wave",
+  "ref": {
+   "id": "291",
+   "to": "studio"
+  }
+ }
+}

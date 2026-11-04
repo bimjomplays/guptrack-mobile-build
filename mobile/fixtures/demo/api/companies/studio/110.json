@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx339-xF2wp1NQuQ4r.png",
+      "format": "TV",
+      "ref": {
+       "id": "339",
+       "kind": "anime"
+      },
+      "score": 80,
+      "title": "Serial Experiments Lain",
+      "year": 1998
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Triangle Staff",
+  "ref": {
+   "id": "110",
+   "to": "studio"
+  }
+ }
+}

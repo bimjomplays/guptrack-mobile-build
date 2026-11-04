@@ -1,0 +1,78 @@
+{
+ "person": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+  "lists": [
+   "anime",
+   "manga",
+   "tv",
+   "movies",
+   "books"
+  ],
+  "name": "Lena",
+  "open": true,
+  "relation": "friend",
+  "since": 1771081200000,
+  "username": "lena"
+ },
+ "reviews": [
+  {
+   "at": 1792680060000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Lena",
+    "open": true,
+    "relation": "friend",
+    "since": 1771081200000,
+    "username": "lena"
+   },
+   "body": "Still the best office on TV. Every episode ends with a reason to start the next one.",
+   "cut": false,
+   "edited": null,
+   "id": 51,
+   "score": 85,
+   "social": {
+    "canLike": true,
+    "liked": false,
+    "likers": [
+     {
+      "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+      "lists": [
+       "anime",
+       "manga",
+       "tv",
+       "movies",
+       "books"
+      ],
+      "name": "Sora",
+      "open": true,
+      "relation": "friend",
+      "since": 1775142000000,
+      "username": "sorawatches"
+     }
+    ],
+    "likes": 1,
+    "replies": 0,
+    "target": {
+     "id": 51,
+     "on": "review"
+    }
+   },
+   "spoiler": false,
+   "title": {
+    "cover": "https://image.tmdb.org/t/p/w500/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+    "format": "TV",
+    "id": "95396",
+    "media": "tv",
+    "title": "Severance"
+   }
+  }
+ ],
+ "total": 1
+}

@@ -1,0 +1,39 @@
+{
+ "item": {
+  "after": "hold",
+  "at": 1793436060000,
+  "before": "current",
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-euxXZEIfDY2u.png",
+  "entry": "105778",
+  "id": 109,
+  "media": "manga",
+  "social": {
+   "canLike": true,
+   "liked": false,
+   "likers": [],
+   "likes": 0,
+   "replies": 0,
+   "target": {
+    "id": 109,
+    "on": "activity"
+   }
+  },
+  "title": "Chainsaw Man",
+  "type": "status",
+  "user": {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+   "lists": [
+    "anime",
+    "manga",
+    "tv",
+    "movies",
+    "books"
+   ],
+   "name": "Noor",
+   "open": true,
+   "relation": "friend",
+   "since": 1768921200000,
+   "username": "noor.reads"
+  }
+ }
+}

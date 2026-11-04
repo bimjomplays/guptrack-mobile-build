@@ -1,0 +1,148 @@
+{
+ "blocked": [
+  "spoilerbot"
+ ],
+ "friends": [
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+   "lists": [
+    "anime",
+    "manga",
+    "tv",
+    "movies",
+    "books"
+   ],
+   "name": "Kenji",
+   "open": true,
+   "relation": "friend",
+   "since": 1791471600000,
+   "username": "kenji"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+   "lists": [
+    "anime",
+    "manga",
+    "tv",
+    "movies",
+    "books"
+   ],
+   "name": "Noor",
+   "open": true,
+   "relation": "friend",
+   "since": 1768921200000,
+   "username": "noor.reads"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+   "lists": [
+    "anime",
+    "manga",
+    "tv",
+    "movies",
+    "books"
+   ],
+   "name": "Tobi",
+   "open": true,
+   "relation": "friend",
+   "since": 1756738800000,
+   "username": "tobiwan"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+   "lists": [
+    "anime",
+    "manga",
+    "tv",
+    "movies",
+    "books"
+   ],
+   "name": "Lena",
+   "open": true,
+   "relation": "friend",
+   "since": 1771081200000,
+   "username": "lena"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+   "lists": [
+    "anime",
+    "manga",
+    "tv",
+    "movies",
+    "books"
+   ],
+   "name": "Sora",
+   "open": true,
+   "relation": "friend",
+   "since": 1775142000000,
+   "username": "sorawatches"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+   "lists": [
+    "anime",
+    "manga",
+    "tv",
+    "movies",
+    "books"
+   ],
+   "name": "Hal",
+   "open": true,
+   "relation": "friend",
+   "since": 1780326000000,
+   "username": "hal"
+  }
+ ],
+ "incoming": [
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b723-vp5hPptgnNEC.png",
+   "lists": [
+    "anime",
+    "manga",
+    "tv",
+    "movies",
+    "books"
+   ],
+   "name": "Nami",
+   "open": true,
+   "relation": "incoming",
+   "since": 1793716140000,
+   "username": "nami.watches"
+  },
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b62-S7oAeA9WInjV.png",
+   "lists": [
+    "anime",
+    "manga"
+   ],
+   "name": "Jun",
+   "open": true,
+   "relation": "incoming",
+   "since": 1793367660000,
+   "username": "jun.k"
+  }
+ ],
+ "lists": {
+  "anime": "public",
+  "books": "public",
+  "manga": "public",
+  "movies": "public",
+  "tv": "public"
+ },
+ "outgoing": [
+  {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b28968-fUKdmdflOwcv.png",
+   "lists": [
+    "manga",
+    "books"
+   ],
+   "name": "Ren",
+   "open": true,
+   "relation": "outgoing",
+   "since": 1793544060000,
+   "username": "ren_reads"
+  }
+ ],
+ "visibility": "public"
+}

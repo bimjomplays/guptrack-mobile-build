@@ -1,0 +1,300 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://image.tmdb.org/t/p/w1280/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
+  "cast": [
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/92YNEEpCyugkTzPprJwZpvVtvuK.jpg",
+     "name": "Alan Ritchson",
+     "ref": {
+      "id": "90316072",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Jack Reacher"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/7QlPWbZRH2ORMmAHKAj0rq54t4A.jpg",
+     "name": "Maria Sten",
+     "ref": {
+      "id": "90399004",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Frances Neagley"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/h2AVP07OdXOsX3ERNwpsQuvrUEB.jpg",
+     "name": "Malcolm Goodwin",
+     "ref": {
+      "id": "92558181",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Oscar Finlay"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/hXvCqRAtmrfjozHtVNrBgXFzzao.jpg",
+     "name": "Willa Fitzgerald",
+     "ref": {
+      "id": "96299515",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Roscoe Conklin"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/mA4qtNZnn0A2oT1s4IIHseO8oiu.jpg",
+     "name": "Serinda Swan",
+     "ref": {
+      "id": "92374807",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Karla Dixon"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/yo97GZJnU75mMdTLNQ85SCWOTka.jpg",
+     "name": "Chris Webster",
+     "ref": {
+      "id": "92125294",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "KJ"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/jc3Zy3lhMGIfk43BkBNrfRrfun.jpg",
+     "name": "Shaun Sipos",
+     "ref": {
+      "id": "96657724",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "David O&#39;Donnell"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/j4mn0fPdhhXfRqQwheAwCU8Hwrm.jpg",
+     "name": "Bruce McGill",
+     "ref": {
+      "id": "95589136",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Mayor Teale"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/arGWhGhfBl8CvNuUoKkUmfrDG0b.jpg",
+     "name": "Ferdinand Kingsley",
+     "ref": {
+      "id": "95119249",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "A.M."
+   }
+  ],
+  "characters": [],
+  "count": null,
+  "cover": "https://image.tmdb.org/t/p/w500/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Series"
+   },
+   {
+    "label": "Status",
+    "value": "Returning series"
+   },
+   {
+    "label": "Aired",
+    "value": "Feb 4, 2022"
+   },
+   {
+    "label": "Rated",
+    "value": "TV-MA"
+   },
+   {
+    "label": "Language",
+    "value": "English"
+   }
+  ],
+  "format": "Series",
+  "genres": [
+   "Action & Adventure",
+   "Crime"
+  ],
+  "headline": [
+   "Series",
+   "2022–",
+   "TV-MA"
+  ],
+  "makers": [],
+  "media": "tv",
+  "minutes": 45,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "95396",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "Severance",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "136315",
+     "kind": "tv"
+    },
+    "score": 82,
+    "title": "The Bear",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "126308",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "Shōgun",
+    "year": 2024
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "100088",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "The Last of Us",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "83867",
+     "kind": "tv"
+    },
+    "score": 83,
+    "title": "Andor",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "1396",
+     "kind": "tv"
+    },
+    "score": 90,
+    "title": "Breaking Bad",
+    "year": 2008
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "95480",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Slow Horses",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "225171",
+     "kind": "tv"
+    },
+    "score": 79,
+    "title": "Pluribus",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "76479",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "The Boys",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "87108",
+     "kind": "tv"
+    },
+    "score": 87,
+    "title": "Chernobyl",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "110316",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Alice in Borderland",
+    "year": 2020
+   }
+  ],
+  "ref": {
+   "id": "108978",
+   "kind": "tv"
+  },
+  "relations": [],
+  "score": 81,
+  "scoreNote": "12,575 votes",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Returning series",
+  "synopsis": [
+   [
+    {
+     "text": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served."
+    }
+   ]
+  ],
+  "tags": [],
+  "title": "Reacher",
+  "trailer": null,
+  "year": 2022
+ }
+}

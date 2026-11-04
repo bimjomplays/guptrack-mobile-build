@@ -1,0 +1,98 @@
+{
+ "title": {
+  "alt": [
+   "Watashi no Shiawase na Kekkon Tokubetsu-hen",
+   "わたしの幸せな結婚 特別篇"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/190054-C8vrENMGNdnu.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 3,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190054-8h0AuqQjwcCL.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Special"
+   },
+   {
+    "label": "Episodes",
+    "value": "3"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 25, 2026"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2026"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "290",
+       "to": "studio"
+      },
+      "text": "Kinema Citrus"
+     }
+    ],
+    "value": "Kinema Citrus"
+   },
+   {
+    "label": "Members",
+    "value": "12,064"
+   }
+  ],
+  "format": "Special",
+  "genres": [
+   "Drama",
+   "Romance",
+   "Supernatural"
+  ],
+  "headline": [
+   "Special",
+   "Fall 2026",
+   "3 episodes"
+  ],
+  "idMal": 61440,
+  "makers": [
+   {
+    "ref": {
+     "id": "290",
+     "to": "studio"
+    },
+    "text": "Kinema Citrus"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "190054",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 76,
+  "scoreNote": "12,064 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "My Happy Marriage Special Episodes",
+  "trailer": null,
+  "volumes": null,
+  "year": 2026
+ }
+}

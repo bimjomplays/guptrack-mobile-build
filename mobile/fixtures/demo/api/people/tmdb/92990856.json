@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Alex",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1078605",
+        "kind": "movie"
+       },
+       "score": 73,
+       "title": "Weapons",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Alex",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1078605",
+        "kind": "movie"
+       },
+       "score": 73,
+       "title": "Weapons",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/3ATVXSp6iPM9SaKUvQhI9tfGA5M.jpg",
+  "known": "Acting",
+  "name": "Cary Christopher",
+  "native": null,
+  "ref": {
+   "id": "92990856",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

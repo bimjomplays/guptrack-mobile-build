@@ -1,0 +1,98 @@
+{
+ "title": {
+  "alt": [
+   "サイバーパンク エッジランナーズ"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/120377-c15oLS8CA31s.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 10,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx120377-ayZPoxiWt4Li.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "ONA"
+   },
+   {
+    "label": "Episodes",
+    "value": "10"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Sep 13, 2022"
+   },
+   {
+    "label": "Season",
+    "value": "Summer 2022"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "803",
+       "to": "studio"
+      },
+      "text": "TRIGGER"
+     }
+    ],
+    "value": "TRIGGER"
+   },
+   {
+    "label": "Members",
+    "value": "406,959"
+   }
+  ],
+  "format": "ONA",
+  "genres": [
+   "Action",
+   "Drama",
+   "Psychological",
+   "Sci-Fi"
+  ],
+  "headline": [
+   "ONA",
+   "Summer 2022",
+   "10 episodes"
+  ],
+  "idMal": 42310,
+  "makers": [
+   {
+    "ref": {
+     "id": "803",
+     "to": "studio"
+    },
+    "text": "TRIGGER"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "120377",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 85,
+  "scoreNote": "406,959 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Cyberpunk: Edgerunners",
+  "trailer": null,
+  "volumes": null,
+  "year": 2022
+ }
+}

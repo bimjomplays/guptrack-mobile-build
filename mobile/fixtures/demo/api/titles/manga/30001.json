@@ -1,0 +1,73 @@
+{
+ "title": {
+  "alt": [
+   "MONSTER"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/1-x9ksIvb9cKK2.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 162,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30001-Knby7l1jevE7.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Chapters",
+    "value": "162"
+   },
+   {
+    "label": "Volumes",
+    "value": "18"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Published",
+    "value": "Dec 5, 1994"
+   },
+   {
+    "label": "Members",
+    "value": "108,918"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Psychological",
+   "Thriller"
+  ],
+  "headline": [
+   "Manga",
+   "1994",
+   "162 chapters"
+  ],
+  "idMal": 1,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "30001",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 90,
+  "scoreNote": "108,918 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Monster",
+  "trailer": null,
+  "volumes": 18,
+  "year": 1994
+ }
+}

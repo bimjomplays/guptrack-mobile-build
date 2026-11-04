@@ -1,0 +1,93 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "2"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Waymond Wang",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "545611",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "Everything Everywhere All at Once",
+       "year": 2022
+      }
+     },
+     {
+      "role": "Gary De'Snake (voice)",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1084242",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "Zootopia 2",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Gary De'Snake (voice)",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1084242",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "Zootopia 2",
+       "year": 2025
+      }
+     },
+     {
+      "role": "Waymond Wang",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "545611",
+        "kind": "movie"
+       },
+       "score": 77,
+       "title": "Everything Everywhere All at Once",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/iestHyn7PLuVowj5Jaa1SGPboQ4.jpg",
+  "known": "Acting",
+  "name": "Ke Huy Quan",
+  "native": null,
+  "ref": {
+   "id": "98463692",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

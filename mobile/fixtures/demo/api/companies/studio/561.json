@@ -1,0 +1,163 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177704-y10Nw7MUXCHD.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "177704",
+       "kind": "anime"
+      },
+      "score": null,
+      "title": "MASHLE: MAGIC AND MUSCLES The Tri-Magicathlon Divine Visionary Final Exam Arc",
+      "year": 2027
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx176496-9BDMjAZGEbq4.png",
+      "format": "TV",
+      "ref": {
+       "id": "176496",
+       "kind": "anime"
+      },
+      "score": 84,
+      "title": "Solo Leveling Season 2 -Arise from the Shadow-",
+      "year": 2025
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx194884-rHgGAzKSCEWz.jpg",
+      "format": "Special",
+      "ref": {
+       "id": "194884",
+       "kind": "anime"
+      },
+      "score": 84,
+      "title": "Kaguya-sama: Love Is War -Stairway to Adulthood-",
+      "year": 2025
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx151807-it355ZgzquUd.png",
+      "format": "TV",
+      "ref": {
+       "id": "151807",
+       "kind": "anime"
+      },
+      "score": 80,
+      "title": "Solo Leveling",
+      "year": 2024
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx151384-gv0q8wOE6D58.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "151384",
+       "kind": "anime"
+      },
+      "score": 87,
+      "title": "Kaguya-sama: Love is War -The First Kiss That Never Ends-",
+      "year": 2023
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx125367-1yuq9NFcQuLI.png",
+      "format": "TV",
+      "ref": {
+       "id": "125367",
+       "kind": "anime"
+      },
+      "score": 89,
+      "title": "Kaguya-sama: Love is War -Ultra Romantic-",
+      "year": 2022
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx116589-KawXHB6sApFt.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "116589",
+       "kind": "anime"
+      },
+      "score": 83,
+      "title": "86 EIGHTY-SIX",
+      "year": 2021
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx131586-JhC0wcBi09EZ.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "131586",
+       "kind": "anime"
+      },
+      "score": 87,
+      "title": "86 EIGHTY-SIX Part 2",
+      "year": 2021
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx112641-zoGC8d6FaPXU.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "112641",
+       "kind": "anime"
+      },
+      "score": 85,
+      "title": "Kaguya-sama: Love is War?",
+      "year": 2020
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101921-ufrjLzhSz7L1.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "101921",
+       "kind": "anime"
+      },
+      "score": 83,
+      "title": "Kaguya-sama: Love is War",
+      "year": 2019
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21234-XmqW39aQ9o7O.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "21234",
+       "kind": "anime"
+      },
+      "score": 81,
+      "title": "ERASED",
+      "year": 2016
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx11757-SxYDUzdr9rh2.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "11757",
+       "kind": "anime"
+      },
+      "score": 70,
+      "title": "Sword Art Online",
+      "year": 2012
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b6702-KI4qgSMyI8Pm.png",
+      "format": "TV",
+      "ref": {
+       "id": "6702",
+       "kind": "anime"
+      },
+      "score": 72,
+      "title": "Fairy Tail",
+      "year": 2009
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "A-1 Pictures",
+  "ref": {
+   "id": "561",
+   "to": "studio"
+  }
+ }
+}

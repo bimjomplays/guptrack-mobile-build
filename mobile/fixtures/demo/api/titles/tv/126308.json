@@ -1,0 +1,300 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://image.tmdb.org/t/p/w1280/bwSmgmd90hCWwqOKQYTEraeOZhJ.jpg",
+  "cast": [
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/SOwDxhGnRccP2lAtssQ7TxCzOe.jpg",
+     "name": "Hiroyuki Sanada",
+     "ref": {
+      "id": "91106931",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Yoshii Toranaga"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/1kgghZ558CxZCJip5ufO6BAqUGp.jpg",
+     "name": "Cosmo Jarvis",
+     "ref": {
+      "id": "93437848",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "John Blackthorne"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/6uFaCOupDTPRnTiedveTUvjOikC.jpg",
+     "name": "Anna Sawai",
+     "ref": {
+      "id": "97551234",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Toda Mariko"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/3CBpfGRcPq1jEeYr51TiOiNbZzT.jpg",
+     "name": "Tadanobu Asano",
+     "ref": {
+      "id": "96031971",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Kashigi Yabushige"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/f8UK7xqwkfpIZiECcDgc0AErkj6.jpg",
+     "name": "Takehiro Hira",
+     "ref": {
+      "id": "95483944",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Ishido Kazunari"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/dIQcrDm9dZqc98Ca6Em67x5ivba.jpg",
+     "name": "Tommy Bastow",
+     "ref": {
+      "id": "93431973",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Father Martin Alvito"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/tqxgrZdOpx2FuTJYlhago4fttI3.jpg",
+     "name": "Fumi Nikaido",
+     "ref": {
+      "id": "92923054",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Ochiba No Kata / Ruri"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/ireujt2ysSmgFxaSHfKaTdUE9xh.jpg",
+     "name": "Yuki Kedoin",
+     "ref": {
+      "id": "92834958",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Takemaru"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/fvCXXrLSMggck0cy5b7hY5zCoYx.jpg",
+     "name": "Akiko Kobayashi",
+     "ref": {
+      "id": "92183124",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Setsu, Setsu / Noh Performer &#39;Ochiba&#39;"
+   }
+  ],
+  "characters": [],
+  "count": null,
+  "cover": "https://image.tmdb.org/t/p/w500/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Series"
+   },
+   {
+    "label": "Status",
+    "value": "Returning series"
+   },
+   {
+    "label": "Aired",
+    "value": "Feb 27, 2024"
+   },
+   {
+    "label": "Rated",
+    "value": "TV-MA"
+   },
+   {
+    "label": "Language",
+    "value": "English"
+   }
+  ],
+  "format": "Series",
+  "genres": [
+   "Drama",
+   "War & Politics"
+  ],
+  "headline": [
+   "Series",
+   "2024–",
+   "TV-MA"
+  ],
+  "makers": [],
+  "media": "tv",
+  "minutes": 45,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "95396",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "Severance",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "136315",
+     "kind": "tv"
+    },
+    "score": 82,
+    "title": "The Bear",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "100088",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "The Last of Us",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "83867",
+     "kind": "tv"
+    },
+    "score": 83,
+    "title": "Andor",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "1396",
+     "kind": "tv"
+    },
+    "score": 90,
+    "title": "Breaking Bad",
+    "year": 2008
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "95480",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Slow Horses",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "225171",
+     "kind": "tv"
+    },
+    "score": 79,
+    "title": "Pluribus",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "76479",
+     "kind": "tv"
+    },
+    "score": 84,
+    "title": "The Boys",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "87108",
+     "kind": "tv"
+    },
+    "score": 87,
+    "title": "Chernobyl",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "108978",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Reacher",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
+    "format": "Series",
+    "ref": {
+     "id": "110316",
+     "kind": "tv"
+    },
+    "score": 81,
+    "title": "Alice in Borderland",
+    "year": 2020
+   }
+  ],
+  "ref": {
+   "id": "126308",
+   "kind": "tv"
+  },
+  "relations": [],
+  "score": 84,
+  "scoreNote": "23,404 votes",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Returning series",
+  "synopsis": [
+   [
+    {
+     "text": "In Japan in the year 1600, at the dawn of a century-defining civil war, Lord Yoshii Toranaga is fighting for his life as his enemies on the Council of Regents unite against him, when a mysterious European ship is found marooned in a nearby fishing village."
+    }
+   ]
+  ],
+  "tags": [],
+  "title": "Shōgun",
+  "trailer": null,
+  "year": 2024
+ }
+}

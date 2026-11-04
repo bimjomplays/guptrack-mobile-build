@@ -1,0 +1,64 @@
+{
+ "title": {
+  "alt": [
+   "HUNTER×HUNTER"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30026-JXfraiazLTQe.jpg",
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30026-uCvXMudMzmwI.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Status",
+    "value": "Releasing"
+   },
+   {
+    "label": "Published",
+    "value": "Mar 3, 1998"
+   },
+   {
+    "label": "Members",
+    "value": "110,994"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Fantasy"
+  ],
+  "headline": [
+   "Manga",
+   "1998"
+  ],
+  "idMal": 26,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "30026",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 88,
+  "scoreNote": "110,994 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Releasing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Hunter x Hunter",
+  "trailer": null,
+  "volumes": null,
+  "year": 1998
+ }
+}

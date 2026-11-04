@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Neil Fak",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "136315",
+        "kind": "tv"
+       },
+       "score": 82,
+       "title": "The Bear",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Neil Fak",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "136315",
+        "kind": "tv"
+       },
+       "score": 82,
+       "title": "The Bear",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/p1H19bBP5ePOxNpfOXIYpMgRfS7.jpg",
+  "known": "Acting",
+  "name": "Matty Matheson",
+  "native": null,
+  "ref": {
+   "id": "92132100",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

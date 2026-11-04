@@ -1,0 +1,94 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/177709-yeZ7ciQULJRx.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 11,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177709-e5Qx6RlsBgD5.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "ONA"
+   },
+   {
+    "label": "Episodes",
+    "value": "11"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Jan 11, 2025"
+   },
+   {
+    "label": "Season",
+    "value": "Winter 2025"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "73",
+       "to": "studio"
+      },
+      "text": "TMS Entertainment"
+     }
+    ],
+    "value": "TMS Entertainment"
+   },
+   {
+    "label": "Members",
+    "value": "227,651"
+   }
+  ],
+  "format": "ONA",
+  "genres": [
+   "Action",
+   "Comedy"
+  ],
+  "headline": [
+   "ONA",
+   "Winter 2025",
+   "11 episodes"
+  ],
+  "idMal": 58939,
+  "makers": [
+   {
+    "ref": {
+     "id": "73",
+     "to": "studio"
+    },
+    "text": "TMS Entertainment"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "177709",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 76,
+  "scoreNote": "227,651 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "SAKAMOTO DAYS",
+  "trailer": null,
+  "volumes": null,
+  "year": 2025
+ }
+}

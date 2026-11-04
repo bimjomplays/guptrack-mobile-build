@@ -1,0 +1,66 @@
+{
+ "title": {
+  "alt": [
+   "ダンダダン"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/132029-V1x9JAh3G8QK.jpg",
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx132029-prGF4gePdSKv.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Status",
+    "value": "Releasing"
+   },
+   {
+    "label": "Published",
+    "value": "Apr 6, 2021"
+   },
+   {
+    "label": "Members",
+    "value": "118,308"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Drama",
+   "Romance",
+   "Sci-Fi",
+   "Supernatural"
+  ],
+  "headline": [
+   "Manga",
+   "2021"
+  ],
+  "idMal": 135496,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "132029",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 82,
+  "scoreNote": "118,308 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Releasing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Dandadan",
+  "trailer": null,
+  "volumes": null,
+  "year": 2021
+ }
+}

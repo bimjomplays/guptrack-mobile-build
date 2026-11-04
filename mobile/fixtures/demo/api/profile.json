@@ -1,0 +1,491 @@
+{
+ "at": 1793716860000,
+ "characters": [
+  {
+   "id": "11772",
+   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+   "name": "Gyro Zeppeli",
+   "sub": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE"
+  },
+  {
+   "id": "19492",
+   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+   "name": "Johnny Joestar",
+   "sub": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE"
+  },
+  {
+   "id": "137079",
+   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+   "name": "Power",
+   "sub": "Chainsaw Man"
+  }
+ ],
+ "comments": {
+  "canPost": true,
+  "comments": [
+   {
+    "at": 1793713260000,
+    "author": {
+     "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+     "lists": [
+      "anime",
+      "manga",
+      "tv",
+      "movies",
+      "books"
+     ],
+     "name": "Noor",
+     "open": true,
+     "relation": "friend",
+     "since": 1768921200000,
+     "username": "noor.reads"
+    },
+    "body": "One book a month?? We need to talk",
+    "canDelete": true,
+    "canEdit": false,
+    "edited": null,
+    "id": 901
+   },
+   {
+    "at": 1793533260000,
+    "author": {
+     "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+     "lists": [
+      "anime",
+      "manga",
+      "tv",
+      "movies",
+      "books"
+     ],
+     "name": "Tobi",
+     "open": true,
+     "relation": "friend",
+     "since": 1756738800000,
+     "username": "tobiwan"
+    },
+    "body": "Your Frieren score is the right one",
+    "canDelete": true,
+    "canEdit": false,
+    "edited": null,
+    "id": 900
+   }
+  ],
+  "setting": "friends"
+ },
+ "friends": {
+  "count": 6,
+  "incoming": 2
+ },
+ "lists": {
+  "lists": [
+   {
+    "count": 12,
+    "covers": [
+     "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1575-hsmWM2ydNm1m.jpg",
+     "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9253-tIUXF2gfU8Sg.jpg",
+     "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101921-ufrjLzhSz7L1.jpg",
+     "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg"
+    ],
+    "description": "For when the week was long.",
+    "id": 1,
+    "level": {
+     "list": "public",
+     "profile": "public"
+    },
+    "media": [
+     "anime"
+    ],
+    "name": "Rainy Sundays",
+    "slug": "rainy-sundays",
+    "updated": 1793623260000
+   },
+   {
+    "count": 9,
+    "covers": [
+     "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163134-yieRFbvUOH9a.jpg",
+     "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172463-LnXqHzt74SJL.jpg",
+     "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182896-mvxTVHGdDB4q.jpg",
+     "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194884-rHgGAzKSCEWz.jpg"
+    ],
+    "description": "The year's standouts, in the order I'd recommend them.",
+    "id": 2,
+    "level": {
+     "list": "public",
+     "profile": "public"
+    },
+    "media": [
+     "anime"
+    ],
+    "name": "This year's highlights",
+    "slug": "this-years-highlights",
+    "updated": 1793198460000
+   },
+   {
+    "count": 6,
+    "covers": [
+     "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
+     "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127230-DdP4vAdssLoz.png",
+     "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg",
+     "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166240-PBV7zukIHW7V.png"
+    ],
+    "description": "",
+    "id": 3,
+    "level": {
+     "list": "friends",
+     "profile": "public"
+    },
+    "media": [
+     "anime"
+    ],
+    "name": "Shonen marathon",
+    "slug": "shonen-marathon",
+    "updated": 1792507260000
+   },
+   {
+    "count": 4,
+    "covers": [
+     "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11061-y5gsT1hoHuHw.png",
+     "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1535-kUgkcrfOrkUM.jpg",
+     "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-buvcRTBx4NSm.jpg",
+     "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1575-hsmWM2ydNm1m.jpg"
+    ],
+    "description": "What I show people who don't watch anime.",
+    "id": 4,
+    "level": {
+     "list": "public",
+     "profile": "public"
+    },
+    "media": [
+     "anime"
+    ],
+    "name": "Start here",
+    "slug": "start-here",
+    "updated": 1790260860000
+   }
+  ],
+  "profile": "public"
+ },
+ "names": [
+  {
+   "id": "11",
+   "image": "",
+   "kind": "studio",
+   "name": "MADHOUSE",
+   "sub": "Animation studio"
+  },
+  {
+   "id": "287",
+   "image": "",
+   "kind": "studio",
+   "name": "David Production",
+   "sub": "Animation studio"
+  }
+ ],
+ "profile": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+  "bio": {
+   "banner": {
+    "aspect": 3,
+    "fade": {
+     "color": "dark",
+     "on": true,
+     "strength": 70,
+     "text": "auto"
+    },
+    "posX": 50,
+    "posY": 40,
+    "src": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/154587-ivXNJ23SM1xB.jpg",
+    "zoom": 1
+   },
+   "doc": {
+    "content": [
+     {
+      "content": [
+       {
+        "text": "Seasonal anime, slow manga, one book a month.",
+        "type": "text"
+       }
+      ],
+      "type": "paragraph"
+     }
+    ],
+    "type": "doc"
+   },
+   "style": {
+    "accent": "brand",
+    "align": "left",
+    "bodyFont": "site",
+    "collapse": "none",
+    "frame": "none",
+    "headingFont": "site",
+    "headings": "plain",
+    "measure": "reading",
+    "size": "m",
+    "spacing": "normal"
+   }
+  },
+  "joined": 1757428860000,
+  "name": "Mika"
+ },
+ "reviews": {
+  "person": {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+   "lists": [
+    "anime",
+    "manga",
+    "tv",
+    "movies",
+    "books"
+   ],
+   "name": "Mika",
+   "open": true,
+   "relation": "self",
+   "username": "mika"
+  },
+  "reviews": [
+   {
+    "at": 1793353260000,
+    "author": {
+     "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+     "lists": [
+      "anime",
+      "manga",
+      "tv",
+      "movies",
+      "books"
+     ],
+     "name": "Mika",
+     "open": true,
+     "relation": "self",
+     "username": "mika"
+    },
+    "body": "It takes its time with every goodbye, and by the end the small moments are the ones that stay. The best thing I watched this year.",
+    "cut": false,
+    "edited": null,
+    "id": 11,
+    "score": 90,
+    "social": {
+     "canLike": false,
+     "liked": false,
+     "likers": [
+      {
+       "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+       "lists": [
+        "anime",
+        "manga",
+        "tv",
+        "movies",
+        "books"
+       ],
+       "name": "Tobi",
+       "open": true,
+       "relation": "friend",
+       "since": 1756738800000,
+       "username": "tobiwan"
+      },
+      {
+       "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+       "lists": [
+        "anime",
+        "manga",
+        "tv",
+        "movies",
+        "books"
+       ],
+       "name": "Noor",
+       "open": true,
+       "relation": "friend",
+       "since": 1768921200000,
+       "username": "noor.reads"
+      },
+      {
+       "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+       "lists": [
+        "anime",
+        "manga",
+        "tv",
+        "movies",
+        "books"
+       ],
+       "name": "Kenji",
+       "open": true,
+       "relation": "friend",
+       "since": 1791471600000,
+       "username": "kenji"
+      }
+     ],
+     "likes": 3,
+     "replies": 1,
+     "target": {
+      "id": 11,
+      "on": "review"
+     }
+    },
+    "spoiler": false,
+    "title": {
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+     "format": "TV",
+     "id": "154587",
+     "media": "anime",
+     "title": "Frieren: Beyond Journey’s End"
+    }
+   },
+   {
+    "at": 1790260860000,
+    "author": {
+     "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+     "lists": [
+      "anime",
+      "manga",
+      "tv",
+      "movies",
+      "books"
+     ],
+     "name": "Mika",
+     "open": true,
+     "relation": "self",
+     "username": "mika"
+    },
+    "body": "The first part never lets up. The Katana Man stretch is where it turns from gore into grief.",
+    "cut": false,
+    "edited": null,
+    "id": 31,
+    "score": 80,
+    "social": {
+     "canLike": false,
+     "liked": false,
+     "likers": [
+      {
+       "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+       "lists": [
+        "anime",
+        "manga",
+        "tv",
+        "movies",
+        "books"
+       ],
+       "name": "Kenji",
+       "open": true,
+       "relation": "friend",
+       "since": 1791471600000,
+       "username": "kenji"
+      },
+      {
+       "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
+       "lists": [
+        "anime",
+        "manga"
+       ],
+       "name": "Aki",
+       "open": true,
+       "relation": "none",
+       "username": "aki.h"
+      }
+     ],
+     "likes": 2,
+     "replies": 0,
+     "target": {
+      "id": 31,
+      "on": "review"
+     }
+    },
+    "spoiler": false,
+    "title": {
+     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-euxXZEIfDY2u.png",
+     "format": "Manga",
+     "id": "105778",
+     "media": "manga",
+     "title": "Chainsaw Man"
+    }
+   }
+  ],
+  "total": 2
+ },
+ "stats": [
+  {
+   "amount": 36.6,
+   "counts": {
+    "completed": 30,
+    "current": 7,
+    "dropped": 3,
+    "hold": 2,
+    "planned": 15
+   },
+   "entries": 57,
+   "favourites": 3,
+   "meanScore": 81.18,
+   "media": "anime",
+   "progress": 2194,
+   "repeats": 0,
+   "scored": 38
+  },
+  {
+   "amount": 1958,
+   "counts": {
+    "completed": 11,
+    "current": 1,
+    "dropped": 1,
+    "hold": 1,
+    "planned": 5
+   },
+   "entries": 19,
+   "favourites": 0,
+   "meanScore": 84.09,
+   "media": "manga",
+   "progress": 1958,
+   "repeats": 0,
+   "scored": 11
+  },
+  {
+   "amount": 6.9,
+   "counts": {
+    "completed": 7,
+    "current": 1,
+    "dropped": 1,
+    "hold": 1,
+    "planned": 2
+   },
+   "entries": 12,
+   "favourites": 0,
+   "meanScore": 86.0,
+   "media": "tv",
+   "progress": 222,
+   "repeats": 0,
+   "scored": 10
+  },
+  {
+   "amount": 0.9,
+   "counts": {
+    "completed": 9,
+    "current": 0,
+    "dropped": 0,
+    "hold": 0,
+    "planned": 3
+   },
+   "entries": 12,
+   "favourites": 1,
+   "meanScore": 89.44,
+   "media": "movies",
+   "progress": 9,
+   "repeats": 0,
+   "scored": 9
+  },
+  {
+   "amount": 2462,
+   "counts": {
+    "completed": 6,
+    "current": 1,
+    "dropped": 0,
+    "hold": 0,
+    "planned": 2
+   },
+   "entries": 9,
+   "favourites": 0,
+   "meanScore": 87.5,
+   "media": "books",
+   "progress": 2462,
+   "repeats": 0,
+   "scored": 6
+  }
+ ]
+}

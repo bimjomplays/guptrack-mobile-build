@@ -1,0 +1,101 @@
+{
+ "title": {
+  "alt": [
+   "Doumo, Suki na Hito ni Horegusuri wo Irai Sareta Majo desu.",
+   "どうも、好きな人に惚れ薬を依頼された魔女です。"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207191-xYgpkCDnXc5m.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 12,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207191-VgkIzfH92WoZ.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "12"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Airing"
+   },
+   {
+    "label": "Next episode",
+    "value": "Ep 6, Nov 9, 2026"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 5, 2026"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2026"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "51",
+       "to": "studio"
+      },
+      "text": "diomedéa"
+     }
+    ],
+    "value": "diomedéa"
+   },
+   {
+    "label": "Members",
+    "value": "29,342"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Fantasy",
+   "Romance"
+  ],
+  "headline": [
+   "TV",
+   "Fall 2026",
+   "12 episodes"
+  ],
+  "idMal": 63409,
+  "makers": [
+   {
+    "ref": {
+     "id": "51",
+     "to": "studio"
+    },
+    "text": "diomedéa"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "207191",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 72,
+  "scoreNote": "29,342 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Airing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
+  "trailer": null,
+  "volumes": null,
+  "year": 2026
+ }
+}

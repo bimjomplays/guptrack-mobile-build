@@ -1,0 +1,265 @@
+{
+ "more": false,
+ "next": null,
+ "titles": [
+  {
+   "by": "Vince Gilligan",
+   "count": null,
+   "cover": "https://image.tmdb.org/t/p/w342/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+   "format": "Series",
+   "genres": [
+    "Drama",
+    "Crime"
+   ],
+   "id": "tmdb:tv:1396",
+   "popularity": 19841,
+   "score": 90,
+   "source": "tmdb",
+   "sourceId": "tv/1396",
+   "start": "2008-01-20",
+   "status": "finished",
+   "tags": [],
+   "title": "Breaking Bad",
+   "trending": 4960,
+   "year": 2008
+  },
+  {
+   "by": "Craig Mazin",
+   "count": null,
+   "cover": "https://image.tmdb.org/t/p/w342/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+   "format": "Miniseries",
+   "genres": [
+    "Drama"
+   ],
+   "id": "tmdb:tv:87108",
+   "popularity": 14238,
+   "score": 87,
+   "source": "tmdb",
+   "sourceId": "tv/87108",
+   "start": "2019-05-06",
+   "status": "finished",
+   "tags": [],
+   "title": "Chernobyl",
+   "trending": 3560,
+   "year": 2019
+  },
+  {
+   "by": "Dan Erickson",
+   "count": 19,
+   "cover": "https://image.tmdb.org/t/p/w342/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+   "format": "Series",
+   "genres": [
+    "Drama",
+    "Mystery",
+    "Sci-Fi & Fantasy"
+   ],
+   "id": "tmdb:tv:95396",
+   "popularity": 26033,
+   "score": 84,
+   "source": "tmdb",
+   "sourceId": "tv/95396",
+   "start": "2022-02-18",
+   "status": "releasing",
+   "tags": [],
+   "title": "Severance",
+   "trending": 6508,
+   "year": 2022
+  },
+  {
+   "by": "",
+   "count": null,
+   "cover": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+   "format": "Series",
+   "genres": [
+    "Drama",
+    "War & Politics"
+   ],
+   "id": "tmdb:tv:126308",
+   "popularity": 23404,
+   "score": 84,
+   "source": "tmdb",
+   "sourceId": "tv/126308",
+   "start": "2024-02-27",
+   "status": "releasing",
+   "tags": [],
+   "title": "Shōgun",
+   "trending": 5851,
+   "year": 2024
+  },
+  {
+   "by": "Craig Mazin, Neil Druckmann",
+   "count": null,
+   "cover": "https://image.tmdb.org/t/p/w342/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
+   "format": "Series",
+   "genres": [
+    "Drama"
+   ],
+   "id": "tmdb:tv:100088",
+   "popularity": 22382,
+   "score": 84,
+   "source": "tmdb",
+   "sourceId": "tv/100088",
+   "start": "2023-01-15",
+   "status": "releasing",
+   "tags": [],
+   "title": "The Last of Us",
+   "trending": 5596,
+   "year": 2023
+  },
+  {
+   "by": "",
+   "count": null,
+   "cover": "https://image.tmdb.org/t/p/w342/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+   "format": "Series",
+   "genres": [
+    "Sci-Fi & Fantasy",
+    "Action & Adventure"
+   ],
+   "id": "tmdb:tv:76479",
+   "popularity": 15331,
+   "score": 84,
+   "source": "tmdb",
+   "sourceId": "tv/76479",
+   "start": "2019-07-25",
+   "status": "releasing",
+   "tags": [],
+   "title": "The Boys",
+   "trending": 3833,
+   "year": 2019
+  },
+  {
+   "by": "Tony Gilroy",
+   "count": null,
+   "cover": "https://image.tmdb.org/t/p/w342/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+   "format": "Series",
+   "genres": [
+    "Sci-Fi & Fantasy",
+    "Action & Adventure",
+    "Drama",
+    "War & Politics"
+   ],
+   "id": "tmdb:tv:83867",
+   "popularity": 21057,
+   "score": 83,
+   "source": "tmdb",
+   "sourceId": "tv/83867",
+   "start": "2022-09-21",
+   "status": "finished",
+   "tags": [],
+   "title": "Andor",
+   "trending": 5264,
+   "year": 2022
+  },
+  {
+   "by": "Christopher Storer",
+   "count": null,
+   "cover": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+   "format": "Series",
+   "genres": [
+    "Drama",
+    "Comedy"
+   ],
+   "id": "tmdb:tv:136315",
+   "popularity": 25183,
+   "score": 82,
+   "source": "tmdb",
+   "sourceId": "tv/136315",
+   "start": "2022-06-23",
+   "status": "releasing",
+   "tags": [],
+   "title": "The Bear",
+   "trending": 6296,
+   "year": 2022
+  },
+  {
+   "by": "",
+   "count": null,
+   "cover": "https://image.tmdb.org/t/p/w342/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+   "format": "Series",
+   "genres": [
+    "Crime",
+    "Drama",
+    "Mystery"
+   ],
+   "id": "tmdb:tv:95480",
+   "popularity": 18357,
+   "score": 81,
+   "source": "tmdb",
+   "sourceId": "tv/95480",
+   "start": "2022-04-01",
+   "status": "releasing",
+   "tags": [],
+   "title": "Slow Horses",
+   "trending": 4589,
+   "year": 2022
+  },
+  {
+   "by": "",
+   "count": null,
+   "cover": "https://image.tmdb.org/t/p/w342/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+   "format": "Series",
+   "genres": [
+    "Action & Adventure",
+    "Crime"
+   ],
+   "id": "tmdb:tv:108978",
+   "popularity": 12575,
+   "score": 81,
+   "source": "tmdb",
+   "sourceId": "tv/108978",
+   "start": "2022-02-04",
+   "status": "releasing",
+   "tags": [],
+   "title": "Reacher",
+   "trending": 3144,
+   "year": 2022
+  },
+  {
+   "alt": [
+    "今際の国のアリス"
+   ],
+   "by": "",
+   "count": null,
+   "cover": "https://image.tmdb.org/t/p/w342/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
+   "format": "Series",
+   "genres": [
+    "Mystery",
+    "Drama",
+    "Action & Adventure"
+   ],
+   "id": "tmdb:tv:110316",
+   "popularity": 10910,
+   "score": 81,
+   "source": "tmdb",
+   "sourceId": "tv/110316",
+   "start": "2020-12-10",
+   "status": "releasing",
+   "tags": [],
+   "title": "Alice in Borderland",
+   "trending": 2728,
+   "year": 2020
+  },
+  {
+   "by": "Vince Gilligan",
+   "count": null,
+   "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+   "format": "Series",
+   "genres": [
+    "Drama",
+    "Sci-Fi & Fantasy"
+   ],
+   "id": "tmdb:tv:225171",
+   "popularity": 16245,
+   "score": 79,
+   "source": "tmdb",
+   "sourceId": "tv/225171",
+   "start": "2025-11-07",
+   "status": "releasing",
+   "tags": [],
+   "title": "Pluribus",
+   "trending": 4061,
+   "year": 2025
+  }
+ ],
+ "total": 12
+}

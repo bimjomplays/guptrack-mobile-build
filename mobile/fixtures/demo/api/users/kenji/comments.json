@@ -1,0 +1,51 @@
+{
+ "canPost": true,
+ "comments": [
+  {
+   "at": 1793698860000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Mika",
+    "open": true,
+    "relation": "self",
+    "username": "mika"
+   },
+   "body": "Finally! What did you think of the ending?",
+   "canDelete": true,
+   "canEdit": true,
+   "edited": null,
+   "id": 952
+  },
+  {
+   "at": 1793457660000,
+   "author": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Lena",
+    "open": true,
+    "relation": "friend",
+    "since": 1771081200000,
+    "username": "lena"
+   },
+   "body": "Welcome back to the list",
+   "canDelete": false,
+   "canEdit": false,
+   "edited": null,
+   "id": 951
+  }
+ ],
+ "setting": "friends"
+}

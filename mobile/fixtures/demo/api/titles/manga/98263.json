@@ -1,0 +1,64 @@
+{
+ "title": {
+  "alt": [
+   "Tongari Boushi no Atelier",
+   "とんがり帽子のアトリエ"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/98263-inZk3YmhgbQh.jpg",
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx98263-kIeaTXrAbGkj.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Status",
+    "value": "Releasing"
+   },
+   {
+    "label": "Published",
+    "value": "Jul 22, 2016"
+   },
+   {
+    "label": "Members",
+    "value": "84,861"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Adventure",
+   "Drama",
+   "Fantasy"
+  ],
+  "headline": [
+   "Manga",
+   "2016"
+  ],
+  "idMal": 100035,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "98263",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 87,
+  "scoreNote": "84,861 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Releasing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Witch Hat Atelier",
+  "trailer": null,
+  "volumes": null,
+  "year": 2016
+ }
+}

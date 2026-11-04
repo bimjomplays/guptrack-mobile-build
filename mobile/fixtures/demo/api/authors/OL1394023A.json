@@ -1,0 +1,60 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Works",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Novel · 2022",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/12859975-M.jpg",
+       "format": "Novel",
+       "ref": {
+        "id": "OL26004554W",
+        "kind": "book"
+       },
+       "score": 85,
+       "title": "Tomorrow, and Tomorrow, and Tomorrow",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Most read"
+   },
+   {
+    "items": [
+     {
+      "role": "Novel · 2022",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/12859975-M.jpg",
+       "format": "Novel",
+       "ref": {
+        "id": "OL26004554W",
+        "kind": "book"
+       },
+       "score": 85,
+       "title": "Tomorrow, and Tomorrow, and Tomorrow",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Books"
+   }
+  ],
+  "image": null,
+  "known": "Author",
+  "name": "Gabrielle Zevin",
+  "native": null,
+  "ref": {
+   "id": "OL1394023A",
+   "to": "author"
+  }
+ }
+}

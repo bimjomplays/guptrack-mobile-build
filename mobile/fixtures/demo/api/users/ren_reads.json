@@ -1,0 +1,481 @@
+{
+ "activity": [],
+ "lists": {
+  "books": [
+   {
+    "added": 1792679520000,
+    "alt": [],
+    "cover": "https://covers.openlibrary.org/b/id/10648686-L.jpg",
+    "favourite": true,
+    "finished": "2026-10-25",
+    "format": "Book",
+    "id": "OL20883297W",
+    "idMal": null,
+    "minutes": 0,
+    "notes": "",
+    "position": 0,
+    "progress": 334,
+    "readVolumes": 0,
+    "repeats": 0,
+    "rewatch": null,
+    "score": null,
+    "started": null,
+    "status": "completed",
+    "title": "Klara and the Sun",
+    "total": 334,
+    "updated": 9.006,
+    "volumes": null
+   },
+   {
+    "added": 1790537580000,
+    "alt": [],
+    "cover": "https://covers.openlibrary.org/b/id/12859975-L.jpg",
+    "favourite": false,
+    "finished": null,
+    "format": "Book",
+    "id": "OL26004554W",
+    "idMal": null,
+    "minutes": 0,
+    "notes": "",
+    "position": 0,
+    "progress": 169,
+    "readVolumes": 0,
+    "repeats": 0,
+    "rewatch": null,
+    "score": 60,
+    "started": null,
+    "status": "hold",
+    "title": "Tomorrow, and Tomorrow, and Tomorrow",
+    "total": 460,
+    "updated": 33.797,
+    "volumes": null
+   },
+   {
+    "added": 1782865740000,
+    "alt": [],
+    "cover": "https://covers.openlibrary.org/b/id/11481354-L.jpg",
+    "favourite": false,
+    "finished": "2026-07-04",
+    "format": "Book",
+    "id": "OL893414W",
+    "idMal": null,
+    "minutes": 0,
+    "notes": "",
+    "position": 0,
+    "progress": 608,
+    "readVolumes": 0,
+    "repeats": 0,
+    "rewatch": null,
+    "score": 95,
+    "started": null,
+    "status": "completed",
+    "title": "Dune",
+    "total": 608,
+    "updated": 122.592,
+    "volumes": null
+   },
+   {
+    "added": 1781532660000,
+    "alt": [],
+    "cover": "https://covers.openlibrary.org/b/id/10226290-L.jpg",
+    "favourite": false,
+    "finished": "2026-06-18",
+    "format": "Book",
+    "id": "OL20893680W",
+    "idMal": null,
+    "minutes": 0,
+    "notes": "",
+    "position": 0,
+    "progress": 272,
+    "readVolumes": 0,
+    "repeats": 0,
+    "rewatch": null,
+    "score": 100,
+    "started": null,
+    "status": "completed",
+    "title": "Piranesi",
+    "total": 272,
+    "updated": 138.021,
+    "volumes": null
+   },
+   {
+    "added": 1774158180000,
+    "alt": [],
+    "cover": "https://covers.openlibrary.org/b/id/14627509-L.jpg",
+    "favourite": false,
+    "finished": null,
+    "format": "Book",
+    "id": "OL27482W",
+    "idMal": null,
+    "minutes": 0,
+    "notes": "",
+    "position": 0,
+    "progress": 256,
+    "readVolumes": 0,
+    "repeats": 1,
+    "rewatch": null,
+    "score": 60,
+    "started": null,
+    "status": "hold",
+    "title": "The Hobbit",
+    "total": 310,
+    "updated": 223.374,
+    "volumes": null
+   }
+  ],
+  "manga": [
+   {
+    "added": 1789888020000,
+    "alt": [
+     "ONE PIECE",
+     "ONE PIECE"
+    ],
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30013-BeslEMqiPhlk.jpg",
+    "favourite": false,
+    "finished": null,
+    "format": "Manga",
+    "id": "30013",
+    "idMal": null,
+    "minutes": 0,
+    "notes": "",
+    "position": 0,
+    "progress": 32,
+    "readVolumes": 0,
+    "repeats": 0,
+    "rewatch": null,
+    "score": 95,
+    "started": null,
+    "status": "current",
+    "title": "One Piece",
+    "total": null,
+    "updated": 41.315,
+    "volumes": null
+   },
+   {
+    "added": 1786789500000,
+    "alt": [
+     "チェンソーマン"
+    ],
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-euxXZEIfDY2u.png",
+    "favourite": false,
+    "finished": "2026-08-18",
+    "format": "Manga",
+    "id": "105778",
+    "idMal": null,
+    "minutes": 0,
+    "notes": "",
+    "position": 0,
+    "progress": 232,
+    "readVolumes": 0,
+    "repeats": 0,
+    "rewatch": null,
+    "score": 95,
+    "started": null,
+    "status": "completed",
+    "title": "Chainsaw Man",
+    "total": 232,
+    "updated": 77.178,
+    "volumes": 24
+   },
+   {
+    "added": 1785935040000,
+    "alt": [
+     "ブルーロック"
+    ],
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx106130-yPNeuSu75ey1.jpg",
+    "favourite": false,
+    "finished": null,
+    "format": "Manga",
+    "id": "106130",
+    "idMal": null,
+    "minutes": 0,
+    "notes": "",
+    "position": 0,
+    "progress": 0,
+    "readVolumes": 0,
+    "repeats": 0,
+    "rewatch": null,
+    "score": null,
+    "started": null,
+    "status": "planned",
+    "title": "Blue Lock",
+    "total": null,
+    "updated": 87.067,
+    "volumes": null
+   },
+   {
+    "added": 1785057360000,
+    "alt": [
+     "東京喰種 トーキョーグール"
+    ],
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx63327-glC9cDxYBja9.png",
+    "favourite": true,
+    "finished": null,
+    "format": "Manga",
+    "id": "63327",
+    "idMal": null,
+    "minutes": 0,
+    "notes": "",
+    "position": 0,
+    "progress": 26,
+    "readVolumes": 0,
+    "repeats": 1,
+    "rewatch": null,
+    "score": 95,
+    "started": null,
+    "status": "current",
+    "title": "Tokyo Ghoul",
+    "total": 144,
+    "updated": 97.226,
+    "volumes": 14
+   },
+   {
+    "added": 1781866260000,
+    "alt": [
+     "バガボンド"
+    ],
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30656-9mW113O7rDnA.png",
+    "favourite": false,
+    "finished": null,
+    "format": "Manga",
+    "id": "30656",
+    "idMal": null,
+    "minutes": 0,
+    "notes": "",
+    "position": 0,
+    "progress": 0,
+    "readVolumes": 0,
+    "repeats": 0,
+    "rewatch": null,
+    "score": null,
+    "started": null,
+    "status": "planned",
+    "title": "Vagabond",
+    "total": null,
+    "updated": 134.16,
+    "volumes": null
+   },
+   {
+    "added": 1780267680000,
+    "alt": [
+     "呪術廻戦"
+    ],
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx101517-H3TdM3g5ZUe9.jpg",
+    "favourite": false,
+    "finished": "2026-06-03",
+    "format": "Manga",
+    "id": "101517",
+    "idMal": null,
+    "minutes": 0,
+    "notes": "",
+    "position": 0,
+    "progress": 272,
+    "readVolumes": 0,
+    "repeats": 0,
+    "rewatch": null,
+    "score": 95,
+    "started": null,
+    "status": "completed",
+    "title": "Jujutsu Kaisen",
+    "total": 272,
+    "updated": 152.662,
+    "volumes": 30
+   },
+   {
+    "added": 1779850500000,
+    "alt": [
+     "Shingeki no Kyojin",
+     "進撃の巨人"
+    ],
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx53390-1RsuABC34P9D.jpg",
+    "favourite": false,
+    "finished": "2026-05-30",
+    "format": "Manga",
+    "id": "53390",
+    "idMal": null,
+    "minutes": 0,
+    "notes": "",
+    "position": 0,
+    "progress": 141,
+    "readVolumes": 0,
+    "repeats": 0,
+    "rewatch": null,
+    "score": 100,
+    "started": null,
+    "status": "completed",
+    "title": "Attack on Titan",
+    "total": 141,
+    "updated": 157.49,
+    "volumes": 34
+   },
+   {
+    "added": 1776518640000,
+    "alt": [
+     "Tongari Boushi no Atelier",
+     "とんがり帽子のアトリエ"
+    ],
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx98263-kIeaTXrAbGkj.jpg",
+    "favourite": false,
+    "finished": "2026-04-21",
+    "format": "Manga",
+    "id": "98263",
+    "idMal": null,
+    "minutes": 0,
+    "notes": "",
+    "position": 0,
+    "progress": 42,
+    "readVolumes": 0,
+    "repeats": 0,
+    "rewatch": null,
+    "score": 80,
+    "started": null,
+    "status": "completed",
+    "title": "Witch Hat Atelier",
+    "total": null,
+    "updated": 196.053,
+    "volumes": null
+   },
+   {
+    "added": 1772856780000,
+    "alt": [
+     "SAKAMOTO DAYS",
+     "SAKAMOTO DAYS"
+    ],
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx125828-p78Z8SflkfmO.jpg",
+    "favourite": false,
+    "finished": "2026-03-10",
+    "format": "Manga",
+    "id": "125828",
+    "idMal": null,
+    "minutes": 0,
+    "notes": "",
+    "position": 0,
+    "progress": 55,
+    "readVolumes": 0,
+    "repeats": 0,
+    "rewatch": null,
+    "score": 75,
+    "started": null,
+    "status": "completed",
+    "title": "Sakamoto Days",
+    "total": null,
+    "updated": 238.436,
+    "volumes": null
+   }
+  ]
+ },
+ "mutual": [],
+ "person": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b28968-fUKdmdflOwcv.png",
+  "lists": [
+   "manga",
+   "books"
+  ],
+  "name": "Ren",
+  "open": true,
+  "relation": "outgoing",
+  "since": 1793544060000,
+  "username": "ren_reads"
+ },
+ "profile": {
+  "bio": {
+   "banner": {
+    "aspect": 3,
+    "fade": {
+     "color": "dark",
+     "on": true,
+     "strength": 70,
+     "text": "auto"
+    },
+    "posX": 50,
+    "posY": 40,
+    "src": null,
+    "zoom": 1
+   },
+   "doc": {
+    "content": [
+     {
+      "content": [
+       {
+        "text": "Books and manga, slowly.",
+        "type": "text"
+       }
+      ],
+      "type": "paragraph"
+     }
+    ],
+    "type": "doc"
+   },
+   "style": {
+    "accent": "brand",
+    "align": "left",
+    "bodyFont": "site",
+    "collapse": "none",
+    "frame": "none",
+    "headingFont": "site",
+    "headings": "plain",
+    "measure": "reading",
+    "size": "m",
+    "spacing": "normal"
+   }
+  },
+  "characters": [
+   {
+    "id": "20148",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+    "name": "Diego Brando",
+    "sub": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE"
+   },
+   {
+    "id": "11772",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "name": "Gyro Zeppeli",
+    "sub": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE"
+   },
+   {
+    "id": "19492",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+    "name": "Johnny Joestar",
+    "sub": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE"
+   }
+  ],
+  "joined": 1760108400000,
+  "names": []
+ },
+ "stats": [
+  {
+   "amount": 800,
+   "counts": {
+    "completed": 5,
+    "current": 2,
+    "dropped": 0,
+    "hold": 0,
+    "planned": 2
+   },
+   "entries": 9,
+   "favourites": 1,
+   "meanScore": 90.71,
+   "media": "manga",
+   "progress": 800,
+   "repeats": 1,
+   "scored": 7
+  },
+  {
+   "amount": 1639,
+   "counts": {
+    "completed": 3,
+    "current": 0,
+    "dropped": 0,
+    "hold": 2,
+    "planned": 0
+   },
+   "entries": 5,
+   "favourites": 1,
+   "meanScore": 78.75,
+   "media": "books",
+   "progress": 1639,
+   "repeats": 1,
+   "scored": 4
+  }
+ ]
+}

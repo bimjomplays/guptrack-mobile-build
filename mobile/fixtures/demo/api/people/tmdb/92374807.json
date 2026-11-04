@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Karla Dixon",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "108978",
+        "kind": "tv"
+       },
+       "score": 81,
+       "title": "Reacher",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Karla Dixon",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "108978",
+        "kind": "tv"
+       },
+       "score": 81,
+       "title": "Reacher",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/mA4qtNZnn0A2oT1s4IIHseO8oiu.jpg",
+  "known": "Acting",
+  "name": "Serinda Swan",
+  "native": null,
+  "ref": {
+   "id": "92374807",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Professor Brand",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "157336",
+        "kind": "movie"
+       },
+       "score": 85,
+       "title": "Interstellar",
+       "year": 2014
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Professor Brand",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "157336",
+        "kind": "movie"
+       },
+       "score": 85,
+       "title": "Interstellar",
+       "year": 2014
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/bVZRMlpjTAO2pJK6v90buFgVbSW.jpg",
+  "known": "Acting",
+  "name": "Michael Caine",
+  "native": null,
+  "ref": {
+   "id": "96367234",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

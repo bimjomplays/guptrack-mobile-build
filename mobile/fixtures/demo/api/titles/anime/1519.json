@@ -1,0 +1,99 @@
+{
+ "title": {
+  "alt": [
+   "BLACK LAGOON: The Second Barrage",
+   "BLACK LAGOON The Second Barrage"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1519-3gSdIkwibEND.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 12,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1519-cScqJxQW3LNL.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "12"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 3, 2006"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2006"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "11",
+       "to": "studio"
+      },
+      "text": "MADHOUSE"
+     }
+    ],
+    "value": "MADHOUSE"
+   },
+   {
+    "label": "Members",
+    "value": "107,821"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Thriller"
+  ],
+  "headline": [
+   "TV",
+   "Fall 2006",
+   "12 episodes"
+  ],
+  "idMal": 1519,
+  "makers": [
+   {
+    "ref": {
+     "id": "11",
+     "to": "studio"
+    },
+    "text": "MADHOUSE"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "1519",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 80,
+  "scoreNote": "107,821 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Black Lagoon: The Second Barrage",
+  "trailer": null,
+  "volumes": null,
+  "year": 2006
+ }
+}

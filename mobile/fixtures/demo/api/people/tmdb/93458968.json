@@ -1,0 +1,93 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Writing"
+   },
+   {
+    "label": "Credits",
+    "value": "2"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Creator",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "1396",
+        "kind": "tv"
+       },
+       "score": 90,
+       "title": "Breaking Bad",
+       "year": 2008
+      }
+     },
+     {
+      "role": "Creator",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "225171",
+        "kind": "tv"
+       },
+       "score": 79,
+       "title": "Pluribus",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Creator",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "225171",
+        "kind": "tv"
+       },
+       "score": 79,
+       "title": "Pluribus",
+       "year": 2025
+      }
+     },
+     {
+      "role": "Creator",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "1396",
+        "kind": "tv"
+       },
+       "score": 90,
+       "title": "Breaking Bad",
+       "year": 2008
+      }
+     }
+    ],
+    "title": "Writing"
+   }
+  ],
+  "image": null,
+  "known": "Writing",
+  "name": "Vince Gilligan",
+  "native": null,
+  "ref": {
+   "id": "93458968",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

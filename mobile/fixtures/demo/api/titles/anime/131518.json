@@ -1,0 +1,99 @@
+{
+ "title": {
+  "alt": [
+   "Dr. STONE: NEW WORLD",
+   "Dr.STONE NEW WORLD"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/131518-uENBDjWnMHmN.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 11,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131518-RU7RoUmGb2sP.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "11"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Apr 6, 2023"
+   },
+   {
+    "label": "Season",
+    "value": "Spring 2023"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "73",
+       "to": "studio"
+      },
+      "text": "TMS Entertainment"
+     }
+    ],
+    "value": "TMS Entertainment"
+   },
+   {
+    "label": "Members",
+    "value": "206,263"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Comedy",
+   "Sci-Fi"
+  ],
+  "headline": [
+   "TV",
+   "Spring 2023",
+   "11 episodes"
+  ],
+  "idMal": 48549,
+  "makers": [
+   {
+    "ref": {
+     "id": "73",
+     "to": "studio"
+    },
+    "text": "TMS Entertainment"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "131518",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 81,
+  "scoreNote": "206,263 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Dr. STONE New World",
+  "trailer": null,
+  "volumes": null,
+  "year": 2023
+ }
+}

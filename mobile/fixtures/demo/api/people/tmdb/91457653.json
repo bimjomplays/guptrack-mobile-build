@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Cassian Andor",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "83867",
+        "kind": "tv"
+       },
+       "score": 83,
+       "title": "Andor",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Cassian Andor",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "83867",
+        "kind": "tv"
+       },
+       "score": 83,
+       "title": "Andor",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/qwbjcyDN37OHiln4a6P4LP31o7F.jpg",
+  "known": "Acting",
+  "name": "Diego Luna",
+  "native": null,
+  "ref": {
+   "id": "91457653",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

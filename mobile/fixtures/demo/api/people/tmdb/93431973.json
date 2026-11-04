@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Father Martin Alvito",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "126308",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "Shōgun",
+       "year": 2024
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Father Martin Alvito",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "126308",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "Shōgun",
+       "year": 2024
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/dIQcrDm9dZqc98Ca6Em67x5ivba.jpg",
+  "known": "Acting",
+  "name": "Tommy Bastow",
+  "native": null,
+  "ref": {
+   "id": "93431973",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

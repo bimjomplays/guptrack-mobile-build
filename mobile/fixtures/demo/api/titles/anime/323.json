@@ -1,0 +1,100 @@
+{
+ "title": {
+  "alt": [
+   "Mousou Dairinin",
+   "妄想代理人"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/323-tQCOVrhiRgeU.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 13,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx323-ZGkUcJOn4ngy.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "13"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Feb 3, 2004"
+   },
+   {
+    "label": "Season",
+    "value": "Winter 2004"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "11",
+       "to": "studio"
+      },
+      "text": "MADHOUSE"
+     }
+    ],
+    "value": "MADHOUSE"
+   },
+   {
+    "label": "Members",
+    "value": "133,818"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Psychological",
+   "Supernatural",
+   "Thriller"
+  ],
+  "headline": [
+   "TV",
+   "Winter 2004",
+   "13 episodes"
+  ],
+  "idMal": 323,
+  "makers": [
+   {
+    "ref": {
+     "id": "11",
+     "to": "studio"
+    },
+    "text": "MADHOUSE"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "323",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 76,
+  "scoreNote": "133,818 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Paranoia Agent",
+  "trailer": null,
+  "volumes": null,
+  "year": 2004
+ }
+}

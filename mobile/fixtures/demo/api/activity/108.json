@@ -1,0 +1,55 @@
+{
+ "item": {
+  "after": 6,
+  "at": 1793364060000,
+  "before": 5,
+  "cover": "https://image.tmdb.org/t/p/w500/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+  "entry": "83867",
+  "id": 108,
+  "media": "tv",
+  "social": {
+   "canLike": true,
+   "liked": false,
+   "likers": [
+    {
+     "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b20148-mVGqsVJ2t27v.png",
+     "lists": [
+      "anime",
+      "manga",
+      "tv",
+      "movies",
+      "books"
+     ],
+     "name": "Lena",
+     "open": true,
+     "relation": "friend",
+     "since": 1771081200000,
+     "username": "lena"
+    }
+   ],
+   "likes": 1,
+   "replies": 0,
+   "target": {
+    "id": 108,
+    "on": "activity"
+   }
+  },
+  "title": "Andor",
+  "type": "progress",
+  "user": {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+   "lists": [
+    "anime",
+    "manga",
+    "tv",
+    "movies",
+    "books"
+   ],
+   "name": "Tobi",
+   "open": true,
+   "relation": "friend",
+   "since": 1756738800000,
+   "username": "tobiwan"
+  }
+ }
+}

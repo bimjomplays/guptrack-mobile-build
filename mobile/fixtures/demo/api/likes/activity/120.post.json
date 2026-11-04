@@ -1,0 +1,28 @@
+{
+ "reactions": {
+  "canLike": true,
+  "liked": true,
+  "likers": [
+   {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Mika",
+    "open": true,
+    "relation": "self",
+    "username": "mika"
+   }
+  ],
+  "likes": 1,
+  "replies": 0,
+  "target": {
+   "id": 120,
+   "on": "activity"
+  }
+ }
+}

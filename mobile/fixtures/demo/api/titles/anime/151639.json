@@ -1,0 +1,96 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/151639-6tcLh08KSsmJ.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 13,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151639-7KqJ7BgaM9Mx.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "13"
+   },
+   {
+    "label": "Episode length",
+    "value": "23 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Feb 11, 2024"
+   },
+   {
+    "label": "Season",
+    "value": "Winter 2024"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "7229",
+       "to": "studio"
+      },
+      "text": "E&H Production"
+     }
+    ],
+    "value": "E&H Production"
+   },
+   {
+    "label": "Members",
+    "value": "78,366"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Sci-Fi"
+  ],
+  "headline": [
+   "TV",
+   "Winter 2024",
+   "13 episodes"
+  ],
+  "idMal": 56285,
+  "makers": [
+   {
+    "ref": {
+     "id": "7229",
+     "to": "studio"
+    },
+    "text": "E&H Production"
+   }
+  ],
+  "media": "anime",
+  "minutes": 23,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "151639",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 64,
+  "scoreNote": "78,366 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Ninja Kamui",
+  "trailer": null,
+  "volumes": null,
+  "year": 2024
+ }
+}

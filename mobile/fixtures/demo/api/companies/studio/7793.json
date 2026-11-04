@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180894-o3pz4DWFm3je.png",
+      "format": "ONA",
+      "ref": {
+       "id": "180894",
+       "kind": "anime"
+      },
+      "score": 72,
+      "title": "Romelia War Chronicle",
+      "year": 2026
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Atra",
+  "ref": {
+   "id": "7793",
+   "to": "studio"
+  }
+ }
+}

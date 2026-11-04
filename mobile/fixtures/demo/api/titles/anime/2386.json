@@ -1,0 +1,48 @@
+{
+ "title": {
+  "alt": [],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/2386-NQQkq1taHJ08.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Special"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   }
+  ],
+  "format": "Special",
+  "genres": [],
+  "headline": [
+   "Special",
+   "2002"
+  ],
+  "idMal": null,
+  "makers": [],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "2386",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": null,
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "ONE PIECE: Yume no Soccer Ou!",
+  "trailer": null,
+  "volumes": null,
+  "year": 2002
+ }
+}

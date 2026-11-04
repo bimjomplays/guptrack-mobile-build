@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "A.M.",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "108978",
+        "kind": "tv"
+       },
+       "score": 81,
+       "title": "Reacher",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "A.M.",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "108978",
+        "kind": "tv"
+       },
+       "score": 81,
+       "title": "Reacher",
+       "year": 2022
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/arGWhGhfBl8CvNuUoKkUmfrDG0b.jpg",
+  "known": "Acting",
+  "name": "Ferdinand Kingsley",
+  "native": null,
+  "ref": {
+   "id": "95119249",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

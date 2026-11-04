@@ -1,0 +1,102 @@
+{
+ "title": {
+  "alt": [
+   "Ao no Hako Season 2",
+   "アオのハコ Season２"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189123-aGJ7pIDUo2Xs.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 12,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189123-0secXELIhkIW.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "12"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Airing"
+   },
+   {
+    "label": "Next episode",
+    "value": "Ep 5, Nov 8, 2026"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 4, 2026"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2026"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "7799",
+       "to": "studio"
+      },
+      "text": "Electric Circus"
+     }
+    ],
+    "value": "Electric Circus"
+   },
+   {
+    "label": "Members",
+    "value": "51,677"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Romance",
+   "Slice of Life",
+   "Sports"
+  ],
+  "headline": [
+   "TV",
+   "Fall 2026",
+   "12 episodes"
+  ],
+  "idMal": 61323,
+  "makers": [
+   {
+    "ref": {
+     "id": "7799",
+     "to": "studio"
+    },
+    "text": "Electric Circus"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "189123",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 81,
+  "scoreNote": "51,677 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Airing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Blue Box Season 2",
+  "trailer": null,
+  "volumes": null,
+  "year": 2026
+ }
+}

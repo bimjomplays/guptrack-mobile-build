@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "John Blackthorne",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "126308",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "Shōgun",
+       "year": 2024
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "John Blackthorne",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "126308",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "Shōgun",
+       "year": 2024
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/1kgghZ558CxZCJip5ufO6BAqUGp.jpg",
+  "known": "Acting",
+  "name": "Cosmo Jarvis",
+  "native": null,
+  "ref": {
+   "id": "93437848",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

@@ -1,0 +1,402 @@
+{
+ "kinds": [
+  {
+   "added": [
+    {
+     "at": "2026-03",
+     "count": 1
+    },
+    {
+     "at": "2026-04",
+     "count": 1
+    },
+    {
+     "at": "2026-05",
+     "count": 1
+    },
+    {
+     "at": "2026-06",
+     "count": 2
+    },
+    {
+     "at": "2026-07",
+     "count": 1
+    },
+    {
+     "at": "2026-08",
+     "count": 2
+    },
+    {
+     "at": "2026-09",
+     "count": 1
+    }
+   ],
+   "again": 144,
+   "againSeconds": 0,
+   "counts": {
+    "completed": 5,
+    "current": 2,
+    "dropped": 0,
+    "hold": 0,
+    "planned": 2
+   },
+   "entries": 9,
+   "favourites": 1,
+   "finished": [
+    {
+     "at": "2026-03",
+     "count": 1
+    },
+    {
+     "at": "2026-04",
+     "count": 1
+    },
+    {
+     "at": "2026-05",
+     "count": 1
+    },
+    {
+     "at": "2026-06",
+     "count": 1
+    },
+    {
+     "at": "2026-08",
+     "count": 1
+    }
+   ],
+   "formats": [
+    {
+     "count": 7,
+     "mean": 90.71,
+     "name": "Manga",
+     "scored": 7
+    }
+   ],
+   "genres": [
+    {
+     "count": 6,
+     "mean": 92.5,
+     "name": "Action",
+     "scored": 6
+    },
+    {
+     "count": 4,
+     "mean": 92.5,
+     "name": "Drama",
+     "scored": 4
+    },
+    {
+     "count": 3,
+     "mean": 88.33,
+     "name": "Comedy",
+     "scored": 3
+    },
+    {
+     "count": 3,
+     "mean": 91.67,
+     "name": "Fantasy",
+     "scored": 3
+    },
+    {
+     "count": 3,
+     "mean": 95.0,
+     "name": "Supernatural",
+     "scored": 3
+    },
+    {
+     "count": 2,
+     "mean": 87.5,
+     "name": "Adventure",
+     "scored": 2
+    },
+    {
+     "count": 2,
+     "mean": 95.0,
+     "name": "Horror",
+     "scored": 2
+    },
+    {
+     "count": 2,
+     "mean": 97.5,
+     "name": "Mystery",
+     "scored": 2
+    },
+    {
+     "count": 1,
+     "mean": 95.0,
+     "name": "Psychological",
+     "scored": 1
+    }
+   ],
+   "makers": [],
+   "meanScore": 90.71,
+   "media": "manga",
+   "pending": 0,
+   "progress": 800,
+   "repeats": 1,
+   "scored": 7,
+   "scores": [
+    [
+     75,
+     1
+    ],
+    [
+     80,
+     1
+    ],
+    [
+     95,
+     4
+    ],
+    [
+     100,
+     1
+    ]
+   ],
+   "seconds": 0,
+   "volumes": 0,
+   "years": [
+    {
+     "count": 1,
+     "year": 1997
+    },
+    {
+     "count": 1,
+     "year": 1998
+    },
+    {
+     "count": 1,
+     "year": 2009
+    },
+    {
+     "count": 1,
+     "year": 2011
+    },
+    {
+     "count": 1,
+     "year": 2016
+    },
+    {
+     "count": 3,
+     "year": 2018
+    },
+    {
+     "count": 1,
+     "year": 2020
+    }
+   ]
+  },
+  {
+   "added": [
+    {
+     "at": "2026-03",
+     "count": 1
+    },
+    {
+     "at": "2026-06",
+     "count": 1
+    },
+    {
+     "at": "2026-07",
+     "count": 1
+    },
+    {
+     "at": "2026-09",
+     "count": 1
+    },
+    {
+     "at": "2026-10",
+     "count": 1
+    }
+   ],
+   "again": 310,
+   "againSeconds": 0,
+   "counts": {
+    "completed": 3,
+    "current": 0,
+    "dropped": 0,
+    "hold": 2,
+    "planned": 0
+   },
+   "entries": 5,
+   "favourites": 1,
+   "finished": [
+    {
+     "at": "2026-06",
+     "count": 1
+    },
+    {
+     "at": "2026-07",
+     "count": 1
+    },
+    {
+     "at": "2026-10",
+     "count": 1
+    }
+   ],
+   "formats": [
+    {
+     "count": 5,
+     "mean": 78.75,
+     "name": "Book",
+     "scored": 4
+    }
+   ],
+   "genres": [
+    {
+     "count": 3,
+     "mean": 85.0,
+     "name": "Fiction",
+     "scored": 3
+    },
+    {
+     "count": 2,
+     "mean": 95.0,
+     "name": "Fiction, science fiction, general",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 60.0,
+     "name": "American literature",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 60.0,
+     "name": "Arkenstone",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 60.0,
+     "name": "Battle of Five Armies",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 0,
+     "name": "British and irish fiction (fictional works by one author)",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "mean": 100.0,
+     "name": "Curiosities and wonders",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 95.0,
+     "name": "Dune (Imaginary place)",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 95.0,
+     "name": "Dune (imaginary place), fiction",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 100.0,
+     "name": "English literature",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 60.0,
+     "name": "Fantasy",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 0,
+     "name": "Fiction, dystopian",
+     "scored": 0
+    },
+    {
+     "count": 1,
+     "mean": 100.0,
+     "name": "Labyrinths",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 60.0,
+     "name": "Modern fiction",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 60.0,
+     "name": "invisibility",
+     "scored": 1
+    },
+    {
+     "count": 1,
+     "mean": 0,
+     "name": "speculative fiction",
+     "scored": 0
+    }
+   ],
+   "makers": [],
+   "meanScore": 78.75,
+   "media": "books",
+   "pending": 0,
+   "progress": 1639,
+   "repeats": 1,
+   "scored": 4,
+   "scores": [
+    [
+     60,
+     2
+    ],
+    [
+     95,
+     1
+    ],
+    [
+     100,
+     1
+    ]
+   ],
+   "seconds": 0,
+   "volumes": 0,
+   "years": [
+    {
+     "count": 1,
+     "year": 1937
+    },
+    {
+     "count": 1,
+     "year": 1965
+    },
+    {
+     "count": 1,
+     "year": 2019
+    },
+    {
+     "count": 1,
+     "year": 2020
+    },
+    {
+     "count": 1,
+     "year": 2022
+    }
+   ]
+  }
+ ],
+ "person": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b28968-fUKdmdflOwcv.png",
+  "lists": [
+   "manga",
+   "books"
+  ],
+  "name": "Ren",
+  "open": true,
+  "relation": "outgoing",
+  "since": 1793544060000,
+  "username": "ren_reads"
+ }
+}

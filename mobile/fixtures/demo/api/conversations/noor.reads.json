@@ -1,0 +1,66 @@
+{
+ "box": "inbox",
+ "canSend": true,
+ "messages": [
+  {
+   "at": 1793669400000,
+   "body": "where are you in Vagabond?",
+   "card": null,
+   "deleted": false,
+   "edited": null,
+   "id": 1010,
+   "mine": true,
+   "photos": [],
+   "reactions": []
+  },
+  {
+   "at": 1793672040000,
+   "body": "",
+   "card": {
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30656-9mW113O7rDnA.png",
+    "format": "Manga",
+    "id": "30656",
+    "kind": "manga",
+    "score": null,
+    "status": "current",
+    "title": "Vagabond",
+    "year": 1998
+   },
+   "deleted": false,
+   "edited": null,
+   "id": 1011,
+   "mine": false,
+   "photos": [],
+   "reactions": []
+  },
+  {
+   "at": 1793672100000,
+   "body": "Vagabond ch 46 wrecked me",
+   "card": null,
+   "deleted": false,
+   "edited": null,
+   "id": 1012,
+   "mine": false,
+   "photos": [],
+   "reactions": []
+  }
+ ],
+ "more": false,
+ "muted": false,
+ "person": {
+  "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+  "lists": [
+   "anime",
+   "manga",
+   "tv",
+   "movies",
+   "books"
+  ],
+  "name": "Noor",
+  "open": true,
+  "relation": "friend",
+  "since": 1768921200000,
+  "username": "noor.reads"
+ },
+ "seen": 1010
+}

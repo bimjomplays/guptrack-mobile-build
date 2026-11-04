@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Kashigi Yabushige",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "126308",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "Shōgun",
+       "year": 2024
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Kashigi Yabushige",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+       "format": "Series",
+       "ref": {
+        "id": "126308",
+        "kind": "tv"
+       },
+       "score": 84,
+       "title": "Shōgun",
+       "year": 2024
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/3CBpfGRcPq1jEeYr51TiOiNbZzT.jpg",
+  "known": "Acting",
+  "name": "Tadanobu Asano",
+  "native": null,
+  "ref": {
+   "id": "96031971",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

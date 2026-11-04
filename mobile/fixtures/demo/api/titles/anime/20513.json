@@ -1,0 +1,98 @@
+{
+ "title": {
+  "alt": [
+   "PSYCHO-PASS サイコパス2"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20513-dpjLwKrlNnJf.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 11,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20513-pVQqYhMwBGoh.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "11"
+   },
+   {
+    "label": "Episode length",
+    "value": "23 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 10, 2014"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2014"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "103",
+       "to": "studio"
+      },
+      "text": "Tatsunoko Production"
+     }
+    ],
+    "value": "Tatsunoko Production"
+   },
+   {
+    "label": "Members",
+    "value": "140,466"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Action",
+   "Psychological",
+   "Sci-Fi",
+   "Thriller"
+  ],
+  "headline": [
+   "TV",
+   "Fall 2014",
+   "11 episodes"
+  ],
+  "idMal": 23281,
+  "makers": [
+   {
+    "ref": {
+     "id": "103",
+     "to": "studio"
+    },
+    "text": "Tatsunoko Production"
+   }
+  ],
+  "media": "anime",
+  "minutes": 23,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "20513",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 71,
+  "scoreNote": "140,466 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "PSYCHO-PASS 2",
+  "trailer": null,
+  "volumes": null,
+  "year": 2014
+ }
+}

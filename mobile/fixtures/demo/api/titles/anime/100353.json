@@ -1,0 +1,98 @@
+{
+ "title": {
+  "alt": [
+   "Mob Psycho 100 REIGEN: Shirarezaru Kiseki Reinouryokusha",
+   "モブサイコ100 REIGEN ～知られざる奇跡の霊能力者～"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/100353-4rbNdk54kkHu.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100353-6dM62JCho2Yg.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "OVA"
+   },
+   {
+    "label": "Episodes",
+    "value": "1"
+   },
+   {
+    "label": "Episode length",
+    "value": "60 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Mar 18, 2018"
+   },
+   {
+    "label": "Season",
+    "value": "Winter 2018"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "4",
+       "to": "studio"
+      },
+      "text": "bones"
+     }
+    ],
+    "value": "bones"
+   },
+   {
+    "label": "Members",
+    "value": "37,791"
+   }
+  ],
+  "format": "OVA",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Supernatural"
+  ],
+  "headline": [
+   "OVA",
+   "Winter 2018",
+   "1 episode"
+  ],
+  "idMal": 36616,
+  "makers": [
+   {
+    "ref": {
+     "id": "4",
+     "to": "studio"
+    },
+    "text": "bones"
+   }
+  ],
+  "media": "anime",
+  "minutes": 60,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "100353",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 73,
+  "scoreNote": "37,791 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Mob Psycho 100 REIGEN The Miraculous Unknown Psychic",
+  "trailer": null,
+  "volumes": null,
+  "year": 2018
+ }
+}

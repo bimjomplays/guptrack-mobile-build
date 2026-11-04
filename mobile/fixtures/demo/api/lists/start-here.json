@@ -1,0 +1,67 @@
+{
+ "count": 4,
+ "covers": [
+  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11061-y5gsT1hoHuHw.png",
+  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1535-kUgkcrfOrkUM.jpg",
+  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-buvcRTBx4NSm.jpg",
+  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1575-hsmWM2ydNm1m.jpg"
+ ],
+ "description": "What I show people who don't watch anime.",
+ "id": 4,
+ "items": [
+  {
+   "added": 1790260860000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11061-y5gsT1hoHuHw.png",
+   "format": "TV",
+   "id": "11061",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Hunter x Hunter (2011)",
+   "year": 2011
+  },
+  {
+   "added": 1790257260000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1535-kUgkcrfOrkUM.jpg",
+   "format": "TV",
+   "id": "1535",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Death Note",
+   "year": 2006
+  },
+  {
+   "added": 1790253660000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-buvcRTBx4NSm.jpg",
+   "format": "TV",
+   "id": "16498",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Attack on Titan",
+   "year": 2013
+  },
+  {
+   "added": 1790250060000,
+   "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1575-hsmWM2ydNm1m.jpg",
+   "format": "TV",
+   "id": "1575",
+   "media": "anime",
+   "mine": null,
+   "note": "",
+   "title": "Code Geass: Lelouch of the Rebellion",
+   "year": 2006
+  }
+ ],
+ "level": {
+  "list": "public",
+  "profile": "public"
+ },
+ "media": [
+  "anime"
+ ],
+ "name": "Start here",
+ "slug": "start-here",
+ "updated": 1790260860000
+}

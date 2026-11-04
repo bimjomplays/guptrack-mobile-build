@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx187402-ReKkLwFmMV3q.jpg",
+      "format": "ONA",
+      "ref": {
+       "id": "187402",
+       "kind": "anime"
+      },
+      "score": 69,
+      "title": "A Tale of the Secret Saint",
+      "year": 2026
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Felix Film",
+  "ref": {
+   "id": "6126",
+   "to": "studio"
+  }
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "devices": [
+  {
+   "app": "GupTrack",
+   "createdAt": 1791902460000,
+   "id": 1,
+   "lastUsedAt": 1793716740000,
+   "name": "iPhone",
+   "platform": "iOS 26.1",
+   "scope": "app"
+  },
+  {
+   "app": "Harbor",
+   "createdAt": 1792680060000,
+   "id": 7,
+   "lastUsedAt": 1793706060000,
+   "name": "Harbor on the living-room PC",
+   "platform": "Windows 11",
+   "scope": "sync"
+  },
+  {
+   "app": "GupTrack",
+   "createdAt": 1788532860000,
+   "id": 9,
+   "lastUsedAt": 1793544060000,
+   "name": "iPad",
+   "platform": "iPadOS 26.1",
+   "scope": "app"
+  }
+ ],
+ "passkeys": [
+  {
+   "backedUp": true,
+   "createdAt": 1776436860000,
+   "deviceType": "multiDevice",
+   "id": "demo-passkey-1",
+   "name": "Desktop PC"
+  }
+ ],
+ "recovery": {
+  "createdAt": 1757428860000,
+  "lastUsed": 1785508860000,
+  "left": 8,
+  "total": 10
+ },
+ "role": "owner",
+ "serverTime": 1793716860000,
+ "sessions": [
+  {
+   "createdAt": 1793457660000,
+   "current": false,
+   "expiresAt": 1796049660000,
+   "id": "demo-session-1",
+   "lastSeen": 1793716140000,
+   "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0"
+  },
+  {
+   "createdAt": 1792939260000,
+   "current": false,
+   "expiresAt": 1795531260000,
+   "id": "demo-session-2",
+   "lastSeen": 1793616060000,
+   "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15"
+  }
+ ],
+ "username": "mika"
+}

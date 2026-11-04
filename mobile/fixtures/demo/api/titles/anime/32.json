@@ -1,0 +1,110 @@
+{
+ "title": {
+  "alt": [
+   "Shin Seiki Evangelion Movie: Air / Magokoro wo, Kimi ni",
+   "新世紀エヴァンゲリオン劇場版 Air/まごころを、君に"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n32-BH9yHJBQqeOa.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx32-5JYsv0wc122I.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "1h 27m"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Released",
+    "value": "Jul 19, 1997"
+   },
+   {
+    "label": "Season",
+    "value": "Summer 1997"
+   },
+   {
+    "label": "Studios",
+    "links": [
+     {
+      "ref": {
+       "id": "6",
+       "to": "studio"
+      },
+      "text": "GAINAX"
+     },
+     {
+      "ref": {
+       "id": "10",
+       "to": "studio"
+      },
+      "text": "Production I.G"
+     }
+    ],
+    "value": "GAINAX, Production I.G"
+   },
+   {
+    "label": "Members",
+    "value": "258,034"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Action",
+   "Drama",
+   "Mecha",
+   "Psychological",
+   "Sci-Fi"
+  ],
+  "headline": [
+   "Film",
+   "Summer 1997",
+   "1h 27m"
+  ],
+  "idMal": 32,
+  "makers": [
+   {
+    "ref": {
+     "id": "6",
+     "to": "studio"
+    },
+    "text": "GAINAX"
+   },
+   {
+    "ref": {
+     "id": "10",
+     "to": "studio"
+    },
+    "text": "Production I.G"
+   }
+  ],
+  "media": "anime",
+  "minutes": 87,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "32",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 86,
+  "scoreNote": "258,034 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Neon Genesis Evangelion: The End of Evangelion",
+  "trailer": null,
+  "volumes": null,
+  "year": 1997
+ }
+}

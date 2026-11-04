@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx115230-QHOdSN7yt8ab.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "115230",
+       "kind": "anime"
+      },
+      "score": 74,
+      "title": "Tower of God",
+      "year": 2020
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Telecom Animation Film",
+  "ref": {
+   "id": "94",
+   "to": "studio"
+  }
+ }
+}

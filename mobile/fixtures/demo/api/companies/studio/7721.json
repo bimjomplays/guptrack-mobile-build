@@ -1,0 +1,31 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx208025-JKvqWNr8rz8l.jpg",
+      "format": "TV",
+      "ref": {
+       "id": "208025",
+       "kind": "anime"
+      },
+      "score": 67,
+      "title": "I'm Dating a Dark Summoner",
+      "year": 2026
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "Nyan Pollution-ω-",
+  "ref": {
+   "id": "7721",
+   "to": "studio"
+  }
+ }
+}

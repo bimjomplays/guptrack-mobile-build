@@ -1,0 +1,97 @@
+{
+ "title": {
+  "alt": [
+   "Tensei shita Dai Seijo wa, Seijo de Aru Koto wo Hita Kakusu",
+   "転生した大聖女は、聖女であることをひた隠す"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/187402-bRt4OO90jcmt.jpg",
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187402-ReKkLwFmMV3q.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "ONA"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Airing"
+   },
+   {
+    "label": "Next episode",
+    "value": "Ep 7, Nov 7, 2026"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 3, 2026"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2026"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "6126",
+       "to": "studio"
+      },
+      "text": "Felix Film"
+     }
+    ],
+    "value": "Felix Film"
+   },
+   {
+    "label": "Members",
+    "value": "19,200"
+   }
+  ],
+  "format": "ONA",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "headline": [
+   "ONA",
+   "Fall 2026"
+  ],
+  "idMal": 61153,
+  "makers": [
+   {
+    "ref": {
+     "id": "6126",
+     "to": "studio"
+    },
+    "text": "Felix Film"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "187402",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 69,
+  "scoreNote": "19,200 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Airing",
+  "synopsis": [],
+  "tags": [],
+  "title": "A Tale of the Secret Saint",
+  "trailer": null,
+  "volumes": null,
+  "year": 2026
+ }
+}

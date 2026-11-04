@@ -1,0 +1,95 @@
+{
+ "title": {
+  "alt": [
+   "Steins;Gate: Fuka Ryouiki no Déjà vu",
+   "劇場版 シュタインズゲート 負荷領域のデジャヴ"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11577.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11577-rhqsxLOAge4f.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "1h 30m"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Released",
+    "value": "Apr 20, 2013"
+   },
+   {
+    "label": "Season",
+    "value": "Spring 2013"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "314",
+       "to": "studio"
+      },
+      "text": "WHITE FOX"
+     }
+    ],
+    "value": "WHITE FOX"
+   },
+   {
+    "label": "Members",
+    "value": "142,126"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Drama",
+   "Romance",
+   "Sci-Fi",
+   "Thriller"
+  ],
+  "headline": [
+   "Film",
+   "Spring 2013",
+   "1h 30m"
+  ],
+  "idMal": 11577,
+  "makers": [
+   {
+    "ref": {
+     "id": "314",
+     "to": "studio"
+    },
+    "text": "WHITE FOX"
+   }
+  ],
+  "media": "anime",
+  "minutes": 90,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "11577",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 82,
+  "scoreNote": "142,126 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Steins;Gate The Movie – Load Region of Déjà Vu",
+  "trailer": null,
+  "volumes": null,
+  "year": 2013
+ }
+}

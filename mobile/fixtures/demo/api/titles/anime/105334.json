@@ -1,0 +1,100 @@
+{
+ "title": {
+  "alt": [
+   "Fruits Basket: 1st Season",
+   "フルーツバスケット 1st Season"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/105334-dPfrCyZ8GkOI.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 25,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx105334-AZwEdMu4KFtV.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "TV"
+   },
+   {
+    "label": "Episodes",
+    "value": "25"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Apr 6, 2019"
+   },
+   {
+    "label": "Season",
+    "value": "Spring 2019"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "73",
+       "to": "studio"
+      },
+      "text": "TMS Entertainment"
+     }
+    ],
+    "value": "TMS Entertainment"
+   },
+   {
+    "label": "Members",
+    "value": "316,123"
+   }
+  ],
+  "format": "TV",
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Romance",
+   "Slice of Life",
+   "Supernatural"
+  ],
+  "headline": [
+   "TV",
+   "Spring 2019",
+   "25 episodes"
+  ],
+  "idMal": 38680,
+  "makers": [
+   {
+    "ref": {
+     "id": "73",
+     "to": "studio"
+    },
+    "text": "TMS Entertainment"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "105334",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 82,
+  "scoreNote": "316,123 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Fruits Basket (2019)",
+  "trailer": null,
+  "volumes": null,
+  "year": 2019
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "friends": [
+  {
+   "notes": "",
+   "progress": 28,
+   "repeats": 0,
+   "rewatching": false,
+   "score": 90,
+   "status": "completed",
+   "total": 28,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Kenji",
+    "open": true,
+    "relation": "friend",
+    "since": 1791471600000,
+    "username": "kenji"
+   }
+  },
+  {
+   "notes": "",
+   "progress": 28,
+   "repeats": 1,
+   "rewatching": true,
+   "score": 95,
+   "status": "completed",
+   "total": 28,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Noor",
+    "open": true,
+    "relation": "friend",
+    "since": 1768921200000,
+    "username": "noor.reads"
+   }
+  },
+  {
+   "notes": "",
+   "progress": 28,
+   "repeats": 0,
+   "rewatching": false,
+   "score": 80,
+   "status": "completed",
+   "total": 28,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/n23651-fWU7JnUMHH8U.png",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Hal",
+    "open": true,
+    "relation": "friend",
+    "since": 1780326000000,
+    "username": "hal"
+   }
+  },
+  {
+   "notes": "",
+   "progress": 9,
+   "repeats": 0,
+   "rewatching": false,
+   "score": null,
+   "status": "current",
+   "total": 28,
+   "user": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+    "lists": [
+     "anime",
+     "manga",
+     "tv",
+     "movies",
+     "books"
+    ],
+    "name": "Sora",
+    "open": true,
+    "relation": "friend",
+    "since": 1775142000000,
+    "username": "sorawatches"
+   }
+  }
+ ]
+}

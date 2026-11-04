@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Tracy",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "313369",
+        "kind": "movie"
+       },
+       "score": 79,
+       "title": "La La Land",
+       "year": 2016
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Tracy",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "313369",
+        "kind": "movie"
+       },
+       "score": 79,
+       "title": "La La Land",
+       "year": 2016
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/doMXlhTAYCy8gH43yYA6m9ymxhd.jpg",
+  "known": "Acting",
+  "name": "Callie Hernandez",
+  "native": null,
+  "ref": {
+   "id": "96988893",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

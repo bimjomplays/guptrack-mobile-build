@@ -1,0 +1,73 @@
+{
+ "title": {
+  "alt": [
+   "Na Honjaman Level Up",
+   "나 혼자만 레벨업"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/105398-4UrEhdqZukrg.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 201,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105398-b673Vt5ZSuz3.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Chapters",
+    "value": "201"
+   },
+   {
+    "label": "Volumes",
+    "value": "15"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Published",
+    "value": "Mar 4, 2018"
+   },
+   {
+    "label": "Members",
+    "value": "288,493"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "headline": [
+   "Manga",
+   "2018",
+   "201 chapters"
+  ],
+  "idMal": 121496,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "105398",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 84,
+  "scoreNote": "288,493 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Solo Leveling",
+  "trailer": null,
+  "volumes": 15,
+  "year": 2018
+ }
+}

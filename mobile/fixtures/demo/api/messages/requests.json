@@ -1,0 +1,25 @@
+{
+ "lines": [
+  {
+   "last": {
+    "at": 1793710980000,
+    "mine": false,
+    "text": "going to see the Reze movie this weekend?"
+   },
+   "muted": false,
+   "person": {
+    "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
+    "lists": [
+     "anime",
+     "manga"
+    ],
+    "name": "Aki",
+    "open": true,
+    "relation": "none",
+    "username": "aki.h"
+   },
+   "unread": 2
+  }
+ ],
+ "requests": 1
+}

@@ -1,0 +1,39 @@
+{
+ "item": {
+  "after": "current",
+  "at": 1793612460000,
+  "before": "planned",
+  "cover": "https://image.tmdb.org/t/p/w500/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+  "entry": "95396",
+  "id": 111,
+  "media": "tv",
+  "social": {
+   "canLike": true,
+   "liked": false,
+   "likers": [],
+   "likes": 0,
+   "replies": 0,
+   "target": {
+    "id": 111,
+    "on": "activity"
+   }
+  },
+  "title": "Severance",
+  "type": "status",
+  "user": {
+   "avatar": "https://s4.anilist.co/file/anilistcdn/character/large/b23650-awMG2DtHsm8N.jpg",
+   "lists": [
+    "anime",
+    "manga",
+    "tv",
+    "movies",
+    "books"
+   ],
+   "name": "Sora",
+   "open": true,
+   "relation": "friend",
+   "since": 1775142000000,
+   "username": "sorawatches"
+  }
+ }
+}

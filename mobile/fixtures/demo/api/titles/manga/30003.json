@@ -1,0 +1,75 @@
+{
+ "title": {
+  "alt": [
+   "20 Seiki Shounen",
+   "20世紀少年"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/30003-MBm3u1K1uHsi.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 249,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30003-E84fwIh22LAQ.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Chapters",
+    "value": "249"
+   },
+   {
+    "label": "Volumes",
+    "value": "22"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Published",
+    "value": "Sep 27, 1999"
+   },
+   {
+    "label": "Members",
+    "value": "109,268"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Psychological",
+   "Sci-Fi",
+   "Thriller"
+  ],
+  "headline": [
+   "Manga",
+   "1999",
+   "249 chapters"
+  ],
+  "idMal": 3,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "30003",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 88,
+  "scoreNote": "109,268 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "20th Century Boys",
+  "trailer": null,
+  "volumes": 22,
+  "year": 1999
+ }
+}

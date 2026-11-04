@@ -1,0 +1,98 @@
+{
+ "title": {
+  "alt": [
+   "MONSTERS: Ippaku Sanjou Hiryuu Jigoku",
+   "MONSTERS 一百三情飛龍侍極"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/167404-Hhvbg3APdan0.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx167404-QMZJVARntkbv.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "ONA"
+   },
+   {
+    "label": "Episodes",
+    "value": "1"
+   },
+   {
+    "label": "Episode length",
+    "value": "25 min"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Aired",
+    "value": "Jan 21, 2024"
+   },
+   {
+    "label": "Season",
+    "value": "Winter 2024"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "7229",
+       "to": "studio"
+      },
+      "text": "E&H Production"
+     }
+    ],
+    "value": "E&H Production"
+   },
+   {
+    "label": "Members",
+    "value": "26,561"
+   }
+  ],
+  "format": "ONA",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Drama"
+  ],
+  "headline": [
+   "ONA",
+   "Winter 2024",
+   "1 episode"
+  ],
+  "idMal": 56055,
+  "makers": [
+   {
+    "ref": {
+     "id": "7229",
+     "to": "studio"
+    },
+    "text": "E&H Production"
+   }
+  ],
+  "media": "anime",
+  "minutes": 25,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "167404",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 76,
+  "scoreNote": "26,561 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "MONSTERS: 103 Mercies Dragon Damnation",
+  "trailer": null,
+  "volumes": null,
+  "year": 2024
+ }
+}

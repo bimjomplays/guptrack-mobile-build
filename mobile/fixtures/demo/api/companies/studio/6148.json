@@ -1,0 +1,42 @@
+{
+ "company": {
+  "description": [],
+  "facts": [],
+  "groups": [
+   {
+    "title": "Animation",
+    "titles": [
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx135865-T7XIPMAbqcxN.png",
+      "format": "TV",
+      "ref": {
+       "id": "135865",
+       "kind": "anime"
+      },
+      "score": 80,
+      "title": "Saga of Tanya the Evil Season 2",
+      "year": 2026
+     },
+     {
+      "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx100878-npKVJvggmK6a.jpg",
+      "format": "Film",
+      "ref": {
+       "id": "100878",
+       "kind": "anime"
+      },
+      "score": 81,
+      "title": "Saga of Tanya the Evil - the Movie -",
+      "year": 2019
+     }
+    ]
+   }
+  ],
+  "image": null,
+  "kind": "Animation studio",
+  "name": "NUT",
+  "ref": {
+   "id": "6148",
+   "to": "studio"
+  }
+ }
+}

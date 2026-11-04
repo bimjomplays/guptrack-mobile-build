@@ -1,0 +1,93 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "2"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Gurney Halleck",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "693134",
+        "kind": "movie"
+       },
+       "score": 81,
+       "title": "Dune: Part Two",
+       "year": 2024
+      }
+     },
+     {
+      "role": "Archer",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1078605",
+        "kind": "movie"
+       },
+       "score": 73,
+       "title": "Weapons",
+       "year": 2025
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Archer",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "1078605",
+        "kind": "movie"
+       },
+       "score": 73,
+       "title": "Weapons",
+       "year": 2025
+      }
+     },
+     {
+      "role": "Gurney Halleck",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "693134",
+        "kind": "movie"
+       },
+       "score": 81,
+       "title": "Dune: Part Two",
+       "year": 2024
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/7QpneI3HoZCCDVPyWx3p3t7yeo7.jpg",
+  "known": "Acting",
+  "name": "Josh Brolin",
+  "native": null,
+  "ref": {
+   "id": "98972496",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

@@ -1,0 +1,73 @@
+{
+ "title": {
+  "alt": [
+   "ブラッククローバー"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/86123-vPWHXqCLYv86.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 392,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86123-Ill8uBdtvWrR.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Chapters",
+    "value": "392"
+   },
+   {
+    "label": "Volumes",
+    "value": "38"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Published",
+    "value": "Feb 16, 2015"
+   },
+   {
+    "label": "Members",
+    "value": "109,162"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Comedy",
+   "Drama",
+   "Fantasy"
+  ],
+  "headline": [
+   "Manga",
+   "2015",
+   "392 chapters"
+  ],
+  "idMal": 86337,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "86123",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 77,
+  "scoreNote": "109,162 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Black Clover",
+  "trailer": null,
+  "volumes": 38,
+  "year": 2015
+ }
+}

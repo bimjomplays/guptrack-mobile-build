@@ -1,0 +1,65 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Known for",
+    "value": "Acting"
+   },
+   {
+    "label": "Credits",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Ernest Lawrence",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "872585",
+        "kind": "movie"
+       },
+       "score": 80,
+       "title": "Oppenheimer",
+       "year": 2023
+      }
+     }
+    ],
+    "title": "Known for"
+   },
+   {
+    "items": [
+     {
+      "role": "Ernest Lawrence",
+      "title": {
+       "cover": "https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+       "format": "Film",
+       "ref": {
+        "id": "872585",
+        "kind": "movie"
+       },
+       "score": 80,
+       "title": "Oppenheimer",
+       "year": 2023
+      }
+     }
+    ],
+    "title": "Acting"
+   }
+  ],
+  "image": "https://image.tmdb.org/t/p/w185/5eMo8D7h1XrSu6ZN4UXhPcS6YNG.jpg",
+  "known": "Acting",
+  "name": "Josh Hartnett",
+  "native": null,
+  "ref": {
+   "id": "97342915",
+   "source": "tmdb",
+   "to": "person"
+  }
+ }
+}

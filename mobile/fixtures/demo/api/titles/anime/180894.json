@@ -1,0 +1,102 @@
+{
+ "title": {
+  "alt": [
+   "Romelia Senki: Maou wo Taoshita nochi mo Jinrui Yabasou dakara Guntai Soshiki Shita",
+   "ロメリア戦記 〜魔王を倒した後も人類やばそうだから軍隊組織した〜"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/180894-msSUHJ5Qejvf.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 12,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180894-o3pz4DWFm3je.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "ONA"
+   },
+   {
+    "label": "Episodes",
+    "value": "12"
+   },
+   {
+    "label": "Episode length",
+    "value": "24 min"
+   },
+   {
+    "label": "Status",
+    "value": "Airing"
+   },
+   {
+    "label": "Next episode",
+    "value": "Ep 6, Nov 7, 2026"
+   },
+   {
+    "label": "Aired",
+    "value": "Oct 3, 2026"
+   },
+   {
+    "label": "Season",
+    "value": "Fall 2026"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "7793",
+       "to": "studio"
+      },
+      "text": "Atra"
+     }
+    ],
+    "value": "Atra"
+   },
+   {
+    "label": "Members",
+    "value": "17,609"
+   }
+  ],
+  "format": "ONA",
+  "genres": [
+   "Adventure",
+   "Drama",
+   "Fantasy"
+  ],
+  "headline": [
+   "ONA",
+   "Fall 2026",
+   "12 episodes"
+  ],
+  "idMal": 59787,
+  "makers": [
+   {
+    "ref": {
+     "id": "7793",
+     "to": "studio"
+    },
+    "text": "Atra"
+   }
+  ],
+  "media": "anime",
+  "minutes": 24,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "180894",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 72,
+  "scoreNote": "17,609 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Airing",
+  "synopsis": [],
+  "tags": [],
+  "title": "Romelia War Chronicle",
+  "trailer": null,
+  "volumes": null,
+  "year": 2026
+ }
+}

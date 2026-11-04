@@ -1,0 +1,71 @@
+{
+ "title": {
+  "alt": [
+   "Zombie Land Saga: Yume Ginga Paradise"
+  ],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": 1,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx140337-8EtbiPurofcC.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Studio",
+    "links": [
+     {
+      "ref": {
+       "id": "569",
+       "to": "studio"
+      },
+      "text": "MAPPA"
+     }
+    ],
+    "value": "MAPPA"
+   }
+  ],
+  "format": "Film",
+  "genres": [],
+  "headline": [
+   "Film",
+   "2025"
+  ],
+  "idMal": null,
+  "makers": [
+   {
+    "ref": {
+     "id": "569",
+     "to": "studio"
+    },
+    "text": "MAPPA"
+   }
+  ],
+  "media": "anime",
+  "minutes": 100,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "140337",
+   "kind": "anime"
+  },
+  "relations": [],
+  "score": 82,
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Zombie Land Saga: Yumeginga Paradise",
+  "trailer": null,
+  "volumes": null,
+  "year": 2025
+ }
+}

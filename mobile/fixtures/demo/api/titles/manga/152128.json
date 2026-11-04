@@ -1,0 +1,65 @@
+{
+ "title": {
+  "alt": [
+   "Soseol Sok Extra",
+   "소설 속 엑스트라"
+  ],
+  "banner": null,
+  "cast": [],
+  "characters": [],
+  "count": null,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx152128-hk1Dq8zlEPVn.png",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Status",
+    "value": "Releasing"
+   },
+   {
+    "label": "Published",
+    "value": "Jun 30, 2022"
+   },
+   {
+    "label": "Members",
+    "value": "30,947"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Fantasy"
+  ],
+  "headline": [
+   "Manga",
+   "2022"
+  ],
+  "idMal": 148985,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "152128",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 77,
+  "scoreNote": "30,947 members",
+  "seasons": [],
+  "staff": [],
+  "status": "releasing",
+  "statusText": "Releasing",
+  "synopsis": [],
+  "tags": [],
+  "title": "The Novel's Extra",
+  "trailer": null,
+  "volumes": null,
+  "year": 2022
+ }
+}

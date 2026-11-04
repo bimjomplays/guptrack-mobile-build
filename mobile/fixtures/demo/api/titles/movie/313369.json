@@ -1,0 +1,342 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://image.tmdb.org/t/p/w1280/nlPCdZlHtRNcF6C9hzUH4ebmV1w.jpg",
+  "cast": [
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/lyUyVARQKhGxaxy0FbPJCQRpiaW.jpg",
+     "name": "Ryan Gosling",
+     "ref": {
+      "id": "98017477",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Sebastian"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/ak2Y9wOI3wi2pNQU6OWSvVvWPj5.jpg",
+     "name": "Emma Stone",
+     "ref": {
+      "id": "98463967",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Mia"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/cCv0YBy2YFFWp9h3kvNPmwWwrCD.jpg",
+     "name": "John Legend",
+     "ref": {
+      "id": "90318240",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Keith"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/44sxIdGtYN24R14OmnZbCpcd8J8.jpg",
+     "name": "Rosemarie DeWitt",
+     "ref": {
+      "id": "95277788",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Laura"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/gwGMGTmli0uBF7eAhhXePWhYNFJ.jpg",
+     "name": "Finn Wittrock",
+     "ref": {
+      "id": "95509948",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Greg"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/doMXlhTAYCy8gH43yYA6m9ymxhd.jpg",
+     "name": "Callie Hernandez",
+     "ref": {
+      "id": "96988893",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Tracy"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/WVROOHuk6G6QgVe0pU8R2i1fsE.jpg",
+     "name": "Sonoya Mizuno",
+     "ref": {
+      "id": "91274845",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Caitlin"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/oItPXy56W0Y5taqIMZilRtnPDMn.jpg",
+     "name": "Jessica Rothe",
+     "ref": {
+      "id": "93693748",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Alexis"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/nVDihOvsSm7kmeyHLtAcEzrrSYC.jpg",
+     "name": "Tom Everett Scott",
+     "ref": {
+      "id": "97521393",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "David"
+   }
+  ],
+  "characters": [],
+  "count": 1,
+  "cover": "https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "2h 9m"
+   },
+   {
+    "label": "Status",
+    "value": "Released"
+   },
+   {
+    "label": "Released",
+    "value": "Nov 29, 2016"
+   },
+   {
+    "label": "Director",
+    "links": [
+     {
+      "ref": {
+       "id": "94542033",
+       "source": "tmdb",
+       "to": "person"
+      },
+      "text": "Damien Chazelle"
+     }
+    ],
+    "value": "Damien Chazelle"
+   },
+   {
+    "label": "Rated",
+    "value": "PG-13"
+   },
+   {
+    "label": "Language",
+    "value": "English"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "headline": [
+   "Film",
+   "2016",
+   "2h 9m",
+   "PG-13"
+  ],
+  "makers": [
+   {
+    "ref": {
+     "id": "94542033",
+     "source": "tmdb",
+     "to": "person"
+    },
+    "text": "Damien Chazelle"
+   }
+  ],
+  "media": "movies",
+  "minutes": 129,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "693134",
+     "kind": "movie"
+    },
+    "score": 81,
+    "title": "Dune: Part Two",
+    "year": 2024
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "872585",
+     "kind": "movie"
+    },
+    "score": 80,
+    "title": "Oppenheimer",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1233413",
+     "kind": "movie"
+    },
+    "score": 75,
+    "title": "Sinners",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "666277",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Past Lives",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "545611",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Everything Everywhere All at Once",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "414906",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "The Batman",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1078605",
+     "kind": "movie"
+    },
+    "score": 73,
+    "title": "Weapons",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1054867",
+     "kind": "movie"
+    },
+    "score": 73,
+    "title": "One Battle After Another",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "157336",
+     "kind": "movie"
+    },
+    "score": 85,
+    "title": "Interstellar",
+    "year": 2014
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "496243",
+     "kind": "movie"
+    },
+    "score": 85,
+    "title": "Parasite",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1084242",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Zootopia 2",
+    "year": 2025
+   }
+  ],
+  "ref": {
+   "id": "313369",
+   "kind": "movie"
+  },
+  "relations": [],
+  "score": 79,
+  "scoreNote": "12,477 votes",
+  "seasons": [],
+  "staff": [
+   {
+    "person": {
+     "image": null,
+     "name": "Damien Chazelle",
+     "ref": {
+      "id": "94542033",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Director"
+   }
+  ],
+  "status": "finished",
+  "statusText": "Released",
+  "synopsis": [
+   [
+    {
+     "text": "Mia, an aspiring actress, serves lattes to movie stars in between auditions and Sebastian, a jazz musician, scrapes by playing cocktail party gigs in dingy bars, but as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart."
+    }
+   ]
+  ],
+  "tags": [],
+  "title": "La La Land",
+  "trailer": null,
+  "year": 2016
+ }
+}

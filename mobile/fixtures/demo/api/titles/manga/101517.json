@@ -1,0 +1,72 @@
+{
+ "title": {
+  "alt": [
+   "呪術廻戦"
+  ],
+  "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/101517-FrJtb3Th3HtF.jpg",
+  "cast": [],
+  "characters": [],
+  "count": 272,
+  "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx101517-H3TdM3g5ZUe9.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Manga"
+   },
+   {
+    "label": "Chapters",
+    "value": "272"
+   },
+   {
+    "label": "Volumes",
+    "value": "30"
+   },
+   {
+    "label": "Status",
+    "value": "Finished"
+   },
+   {
+    "label": "Published",
+    "value": "Mar 5, 2018"
+   },
+   {
+    "label": "Members",
+    "value": "256,365"
+   }
+  ],
+  "format": "Manga",
+  "genres": [
+   "Action",
+   "Drama",
+   "Supernatural"
+  ],
+  "headline": [
+   "Manga",
+   "2018",
+   "272 chapters"
+  ],
+  "idMal": 113138,
+  "makers": [],
+  "media": "manga",
+  "minutes": 0,
+  "more": [],
+  "recommendations": [],
+  "ref": {
+   "id": "101517",
+   "kind": "manga"
+  },
+  "relations": [],
+  "score": 80,
+  "scoreNote": "256,365 members",
+  "seasons": [],
+  "staff": [],
+  "status": "finished",
+  "statusText": "Finished",
+  "synopsis": [],
+  "tags": [],
+  "title": "Jujutsu Kaisen",
+  "trailer": null,
+  "volumes": 30,
+  "year": 2018
+ }
+}

@@ -1,0 +1,60 @@
+{
+ "person": {
+  "alt": [],
+  "bio": [],
+  "facts": [
+   {
+    "label": "Works",
+    "value": "1"
+   }
+  ],
+  "groups": [
+   {
+    "items": [
+     {
+      "role": "Novel · 2007",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/11480483-M.jpg",
+       "format": "Novel",
+       "ref": {
+        "id": "OL8479867W",
+        "kind": "book"
+       },
+       "score": 87,
+       "title": "The Name of the Wind",
+       "year": 2007
+      }
+     }
+    ],
+    "title": "Most read"
+   },
+   {
+    "items": [
+     {
+      "role": "Novel · 2007",
+      "title": {
+       "cover": "https://covers.openlibrary.org/b/id/11480483-M.jpg",
+       "format": "Novel",
+       "ref": {
+        "id": "OL8479867W",
+        "kind": "book"
+       },
+       "score": 87,
+       "title": "The Name of the Wind",
+       "year": 2007
+      }
+     }
+    ],
+    "title": "Books"
+   }
+  ],
+  "image": null,
+  "known": "Author",
+  "name": "Patrick Rothfuss",
+  "native": null,
+  "ref": {
+   "id": "OL2830895A",
+   "to": "author"
+  }
+ }
+}

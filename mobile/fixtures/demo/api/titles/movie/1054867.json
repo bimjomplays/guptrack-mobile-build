@@ -1,0 +1,342 @@
+{
+ "title": {
+  "alt": [],
+  "banner": "https://image.tmdb.org/t/p/w1280/hiazLNa1UXuX35OTnMQRKOx3eTk.jpg",
+  "cast": [
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
+     "name": "Leonardo DiCaprio",
+     "ref": {
+      "id": "98620945",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Bob"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/9glqNTVpFpdN1nFklKaHPUyCwR6.jpg",
+     "name": "Sean Penn",
+     "ref": {
+      "id": "98604770",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Col. Steven J. Lockjaw"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/2goENGgg9OCz7qjMmm0HNxV9Kjj.jpg",
+     "name": "Chase Infiniti",
+     "ref": {
+      "id": "96327304",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Willa"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/aYomJWx0B2B8ra6Rmgt8lr0XCrw.jpg",
+     "name": "Benicio del Toro",
+     "ref": {
+      "id": "96118419",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Sensei Sergio St. Carlos"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/jiFZ4xNrvUUZLBHnJu71CvdN4kj.jpg",
+     "name": "Regina Hall",
+     "ref": {
+      "id": "90823390",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Deandra"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/5b2dAuTsBejBsdm9SkWX4F7jG9w.jpg",
+     "name": "Teyana Taylor",
+     "ref": {
+      "id": "96237180",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Perfidia"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/v3puIl2KncqUd6amDyD1Y0crzkF.jpg",
+     "name": "Wood Harris",
+     "ref": {
+      "id": "93304611",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Laredo"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/A3hXimbzDtFxQ1PXNo8gG7RZeN4.jpg",
+     "name": "Tony Goldwyn",
+     "ref": {
+      "id": "98173292",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Virgil Throckmorton"
+   },
+   {
+    "person": {
+     "image": "https://image.tmdb.org/t/p/w185/7lcIxTqarAgkdLiNlc7Ad57vcP1.jpg",
+     "name": "D.W. Moffett",
+     "ref": {
+      "id": "93738239",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Bill Desmond"
+   }
+  ],
+  "characters": [],
+  "count": 1,
+  "cover": "https://image.tmdb.org/t/p/w500/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+  "facts": [
+   {
+    "label": "Format",
+    "value": "Film"
+   },
+   {
+    "label": "Runtime",
+    "value": "2h 42m"
+   },
+   {
+    "label": "Status",
+    "value": "Released"
+   },
+   {
+    "label": "Released",
+    "value": "Sep 23, 2025"
+   },
+   {
+    "label": "Director",
+    "links": [
+     {
+      "ref": {
+       "id": "94405767",
+       "source": "tmdb",
+       "to": "person"
+      },
+      "text": "Paul Thomas Anderson"
+     }
+    ],
+    "value": "Paul Thomas Anderson"
+   },
+   {
+    "label": "Rated",
+    "value": "R"
+   },
+   {
+    "label": "Language",
+    "value": "English"
+   }
+  ],
+  "format": "Film",
+  "genres": [
+   "Thriller",
+   "Crime",
+   "Comedy"
+  ],
+  "headline": [
+   "Film",
+   "2025",
+   "2h 42m",
+   "R"
+  ],
+  "makers": [
+   {
+    "ref": {
+     "id": "94405767",
+     "source": "tmdb",
+     "to": "person"
+    },
+    "text": "Paul Thomas Anderson"
+   }
+  ],
+  "media": "movies",
+  "minutes": 162,
+  "more": [],
+  "recommendations": [
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "693134",
+     "kind": "movie"
+    },
+    "score": 81,
+    "title": "Dune: Part Two",
+    "year": 2024
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "872585",
+     "kind": "movie"
+    },
+    "score": 80,
+    "title": "Oppenheimer",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1233413",
+     "kind": "movie"
+    },
+    "score": 75,
+    "title": "Sinners",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "666277",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Past Lives",
+    "year": 2023
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "545611",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Everything Everywhere All at Once",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "414906",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "The Batman",
+    "year": 2022
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1078605",
+     "kind": "movie"
+    },
+    "score": 73,
+    "title": "Weapons",
+    "year": 2025
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "157336",
+     "kind": "movie"
+    },
+    "score": 85,
+    "title": "Interstellar",
+    "year": 2014
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "496243",
+     "kind": "movie"
+    },
+    "score": 85,
+    "title": "Parasite",
+    "year": 2019
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "313369",
+     "kind": "movie"
+    },
+    "score": 79,
+    "title": "La La Land",
+    "year": 2016
+   },
+   {
+    "cover": "https://image.tmdb.org/t/p/w342/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+    "format": "Film",
+    "ref": {
+     "id": "1084242",
+     "kind": "movie"
+    },
+    "score": 77,
+    "title": "Zootopia 2",
+    "year": 2025
+   }
+  ],
+  "ref": {
+   "id": "1054867",
+   "kind": "movie"
+  },
+  "relations": [],
+  "score": 73,
+  "scoreNote": "16,362 votes",
+  "seasons": [],
+  "staff": [
+   {
+    "person": {
+     "image": null,
+     "name": "Paul Thomas Anderson",
+     "ref": {
+      "id": "94405767",
+      "source": "tmdb",
+      "to": "person"
+     }
+    },
+    "role": "Director"
+   }
+  ],
+  "status": "finished",
+  "statusText": "Released",
+  "synopsis": [
+   [
+    {
+     "text": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past."
+    }
+   ]
+  ],
+  "tags": [],
+  "title": "One Battle After Another",
+  "trailer": null,
+  "year": 2025
+ }
+}
