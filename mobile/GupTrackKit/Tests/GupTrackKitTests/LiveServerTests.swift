@@ -85,7 +85,7 @@ final class LiveServerTests: XCTestCase {
         var current: Plug? { lock.withLock { made } }
     }
 
-    func until(_ seconds: Double = 10, _ what: @MainActor () -> Bool) async -> Bool {
+    func until(_ seconds: Double = 10, _ what: @escaping @MainActor () -> Bool) async -> Bool {
         let end = Date().addingTimeInterval(seconds)
         while Date() < end {
             if what() { return true }
@@ -94,7 +94,7 @@ final class LiveServerTests: XCTestCase {
         return what()
     }
 
-    func expect(_ what: String, _ seconds: Double = 10, _ check: @MainActor () -> Bool) async {
+    func expect(_ what: String, _ seconds: Double = 10, _ check: @escaping @MainActor () -> Bool) async {
         let ok = await until(seconds, check)
         XCTAssertTrue(ok, what)
     }
