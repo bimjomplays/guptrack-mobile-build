@@ -28,6 +28,11 @@ struct RootView: View {
             guard phase == .active, model.isSignedIn else { return }
             await model.refresh()
         }
+        // in front and signed in: the live message stream and the library's change feed every minute
+        .task(id: phase == .active && model.isSignedIn) {
+            guard phase == .active, model.isSignedIn else { return }
+            await model.stayLive()
+        }
     }
 
     private var tabs: some View {

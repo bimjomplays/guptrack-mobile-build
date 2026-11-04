@@ -651,6 +651,11 @@ struct Message: Codable, Hashable, Identifiable, Sendable {
 
     var date: Date { Millis.date(at) }
 
+    /// the same words, photos and shared title (a message shown while sending and the server's copy of it)
+    func sameContent(_ o: Message) -> Bool {
+        body == o.body && photos.map(\.name) == o.photos.map(\.name) && card?.id == o.card?.id
+    }
+
     /// your reaction: one each, a new one replaces yours, the same one takes it back
     func reacting(_ emoji: String?) -> Message {
         var m = self
@@ -792,6 +797,23 @@ struct Conversation: Codable, Hashable, Sendable {
         var c = self
         if let i = c.messages.firstIndex(where: { $0.id == id }) { c.messages[i] = c.messages[i].reacting(emoji) }
         return c
+    }
+
+    /// The server's copy after live news, keeping yours that are still on their way (shown, not yet in the
+    /// server's answer): a sent one stays until a message of yours with the same words, photos and title shows up.
+    func refreshed(_ server: Conversation) -> Conversation {
+        var out = server
+        let known = Set(server.messages.map(\.id))
+        let newest = server.messages.map(\.id).max() ?? 0
+        var confirmed = server.messages.filter(\.mine)
+        for m in messages where m.mine && !known.contains(m.id) && m.id > newest {
+            if let i = confirmed.firstIndex(where: { $0.sameContent(m) && $0.at >= m.at - 120_000 }) {
+                confirmed.remove(at: i)
+            } else {
+                out.messages.append(m)
+            }
+        }
+        return out
     }
 
     static let reactions = ["❤️", "😂", "😮", "😢", "🔥", "👍"]

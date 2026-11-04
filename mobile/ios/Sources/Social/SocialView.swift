@@ -27,6 +27,8 @@ struct SocialView: View {
         .navigationBarTitleDisplayMode(.large)
         .toolbar { toolbar }
         .task { await loadMessages() }
+        // live news about any conversation: the list again
+        .onChange(of: model.live.anyNews) { Task { await loadMessages() } }
         .task(id: segment) { await loadIfNeeded() }
         .refreshable { await reload(segment) }
         // back from a chat or a request: what was read or answered there stays so

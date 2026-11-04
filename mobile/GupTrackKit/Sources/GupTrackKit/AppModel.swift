@@ -58,6 +58,8 @@ final class AppModel {
     var unreadMessages = 0
     /// the red dot on Home's bell: from the home feed, cleared by Notifications
     var unreadNotifications = 0
+    /// the live message stream's news (Live.swift)
+    let live = LiveMessages()
 
     /// page loads under way (the screen tests wait for 0)
     private(set) var loading = 0
@@ -278,9 +280,7 @@ final class AppModel {
     private func handle(_ e: APIError) {
         switch e {
         case .signedOut:
-            sync = .idle
-            forget()
-            notice = e.message
+            signedOutByServer(e)
         case .unreachable(let why):
             sync = .offline(why)
         case .server(let s) where s.status == 429:
@@ -288,6 +288,13 @@ final class AppModel {
         default:
             sync = .failed(e.message)
         }
+    }
+
+    /// a 401: the server removed this phone's token (Disconnect, a new password, Sign out everywhere)
+    func signedOutByServer(_ e: APIError) {
+        sync = .idle
+        forget()
+        notice = e.message
     }
 
     // MARK: signing in and out
@@ -331,6 +338,8 @@ final class AppModel {
         tab = .home
         accountScreen = "welcome"
         SocialSession.reset()
+        live.reset()
+        NotificationCenter.default.post(name: .gupTrackSignedOut, object: nil)
         reload()
     }
 }

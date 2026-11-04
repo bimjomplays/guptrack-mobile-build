@@ -8,6 +8,15 @@ import FoundationNetworking
 /// tests go through the same decoding as the real app.
 protocol Transport: AnyObject, Sendable {
     func send(_ request: APIRequest) async throws -> APIResponse
+    /// a long answer read line by line as it comes (GET messages/events, server-sent events)
+    func lines(_ request: APIRequest) -> AsyncThrowingStream<String, Error>
+}
+
+extension Transport {
+    /// no live stream (the demo): the app asks messages/pulse instead
+    func lines(_ request: APIRequest) -> AsyncThrowingStream<String, Error> {
+        AsyncThrowingStream { $0.finish(throwing: APIError.server(404, "unknown_endpoint", "No live updates here.")) }
+    }
 }
 
 /// What came back: the body, the HTTP status and the headers the client reads (Retry-After, x-request-replayed).
@@ -194,6 +203,91 @@ final class LiveTransport: Transport, @unchecked Sendable {
         case .cancelled: return "Stopped before the server answered."
         default: return "Can't reach your GupTrack server (error \(e.code.rawValue))."
         }
+    }
+}
+
+extension LiveTransport {
+    /// The answer line by line as it arrives, on a session of its own: no time limit overall, but 30 s without a byte
+    /// counts as gone (the server sends a beat every 10 s). An error status ends it with that error (401 signed out,
+    /// 429 too many streams); stopping the stream (its task cancelled) closes the connection.
+    func lines(_ r: APIRequest) -> AsyncThrowingStream<String, Error> {
+        AsyncThrowingStream { cont in
+            guard var req = try? Self.makeRequest(r, base: base) else {
+                cont.finish(throwing: APIError.unreachable("That server address isn't valid."))
+                return
+            }
+            req.setValue("text/event-stream", forHTTPHeaderField: "Accept")
+            req.timeoutInterval = 30
+            let c = URLSessionConfiguration.ephemeral
+            c.timeoutIntervalForRequest = 30
+            c.timeoutIntervalForResource = 7 * 24 * 3600
+            c.httpCookieStorage = nil
+            c.httpCookieAcceptPolicy = .never
+            c.urlCache = nil
+            c.urlCredentialStorage = nil
+            let reader = LineReader(cont, signedIn: r.token != nil)
+            let session = URLSession(configuration: c, delegate: reader, delegateQueue: nil)
+            let task = session.dataTask(with: req)
+            cont.onTermination = { _ in task.cancel() }
+            task.resume()
+        }
+    }
+}
+
+/// Splits a streamed answer into lines for `LiveTransport.lines`.
+private final class LineReader: NSObject, URLSessionDataDelegate, @unchecked Sendable {
+    private let cont: AsyncThrowingStream<String, Error>.Continuation
+    private let signedIn: Bool
+    private let lock = NSLock()
+    private var status = 0
+    private var buffer: [UInt8] = []
+    private var errorBody = Data()
+
+    init(_ cont: AsyncThrowingStream<String, Error>.Continuation, signedIn: Bool) {
+        self.cont = cont
+        self.signedIn = signedIn
+    }
+
+    func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive response: URLResponse,
+                    completionHandler: @escaping (URLSession.ResponseDisposition) -> Void) {
+        lock.withLock { status = (response as? HTTPURLResponse)?.statusCode ?? 0 }
+        completionHandler(.allow)
+    }
+
+    func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
+        let lines: [String] = lock.withLock {
+            guard status == 200 else { errorBody.append(data); return [] }
+            buffer.append(contentsOf: data)
+            var out: [String] = []
+            while let i = buffer.firstIndex(of: 0x0A) {
+                out.append(String(decoding: buffer[..<i], as: UTF8.self))
+                buffer.removeSubrange(...i)
+            }
+            return out
+        }
+        for l in lines { cont.yield(l) }
+    }
+
+    func urlSession(_ session: URLSession, task: URLSessionTask, willPerformHTTPRedirection response: HTTPURLResponse,
+                    newRequest request: URLRequest, completionHandler: @escaping (URLRequest?) -> Void) {
+        completionHandler(nil)
+    }
+
+    func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
+        let (status, body) = lock.withLock { (self.status, errorBody) }
+        if status != 0 && status != 200 {
+            do {
+                try APIClient.check(APIResponse(body, status), signedIn: signedIn)
+                cont.finish(throwing: APIError.unreadable)
+            } catch {
+                cont.finish(throwing: error)
+            }
+        } else if let error {
+            cont.finish(throwing: APIError.unreachable(LiveTransport.why(error)))
+        } else {
+            cont.finish()
+        }
+        session.finishTasksAndInvalidate()
     }
 }
 

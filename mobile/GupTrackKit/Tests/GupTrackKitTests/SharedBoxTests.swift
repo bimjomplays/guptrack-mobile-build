@@ -1,6 +1,10 @@
 import Foundation
 import XCTest
+#if canImport(GupTrackKit)
 @testable import GupTrackKit
+#else
+@testable import GupTrack
+#endif
 
 /// The App Group's files the app shares with its widgets and share extension (SharedBox), in a test folder.
 @MainActor

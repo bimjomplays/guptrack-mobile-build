@@ -3,16 +3,24 @@ import UIKit
 import SwiftUI
 
 /// A chat (52, GET conversations/:username): their bubbles grey on the left, yours brand blue on the right, a time
-/// between runs, shared titles as cards that open the title, photos, reactions (long press a bubble), "typing" (from
-/// GET messages/pulse while the chat is open), and the bar with + (photos, share a title). The id is their username.
-/// Opening it marks it read.
+/// between runs, shared titles as cards that open the title, photos, reactions (long press a bubble), "typing", and
+/// the bar with + (photos, share a title). The id is their username. Opening it marks it read. News from the live
+/// stream (model.live) reloads it and shows "typing"; while the stream is closed, GET messages/pulse every few seconds
+/// gives "typing" instead.
 struct ConversationView: View {
     let id: String
 
     @Environment(AppModel.self) private var model
     @State private var chat: Load<Conversation> = .loading
-    @State private var typing = false
+    /// from the pulse, while the live stream is closed
+    @State private var pulseTyping = false
+    /// from the live stream
+    @State private var liveTyping = false
+    /// the newest of theirs this chat marked read
+    @State private var markedRead = 0
     @State private var blocking = false
+
+    private var typing: Bool { liveTyping || pulseTyping }
 
     var body: some View {
         Group {
@@ -36,6 +44,14 @@ struct ConversationView: View {
         }
         .task(id: id) { if chat.value == nil { await load() } }
         .task(id: id) { await watchTyping() }
+        // "typing" from the stream: until its time runs out (a message from them ends it sooner)
+        .task(id: model.live.typingUntil[id]) {
+            guard let until = model.live.typingUntil[id] else { liveTyping = false; return }
+            liveTyping = until > Date()
+            try? await Task.sleep(for: .seconds(max(0, until.timeIntervalSinceNow)))
+            if !Task.isCancelled { liveTyping = false }
+        }
+        .onChange(of: model.live.version(id)) { Task { await refresh() } }
     }
 
     private var header: some View {
@@ -77,16 +93,35 @@ struct ConversationView: View {
         guard chat.value != nil, !SocialSession.read.contains(id) else { return }
         SocialSession.read.insert(id)
         let name = id
+        markedRead = theirNewest
         _ = await model.fetch { try await $0.markRead(name) }
         if let l = await model.fetch({ try await $0.messageList() }).value {
             model.unreadMessages = SocialSession.applied(l).unread
         }
     }
 
-    /// "typing" comes from the pulse (the live stream isn't held open by the app yet); asked every few seconds
+    private var theirNewest: Int { chat.value?.messages.last(where: { !$0.mine })?.id ?? 0 }
+
+    /// live news about this chat: the server's copy (yours still sending stay), and theirs marked read while it's open
+    private func refresh() async {
+        guard let old = chat.value else { return }
+        let name = id
+        guard let now = await model.fetch({ try await $0.conversation(name) }).value else { return }
+        chat = .loaded((chat.value ?? old).refreshed(now))
+        guard theirNewest > markedRead else { return }
+        markedRead = theirNewest
+        _ = await model.fetch { try await $0.markRead(name) }
+        await model.updateUnread()
+    }
+
+    /// while the live stream is closed (offline, too many open), "typing" from the pulse every few seconds
     private func watchTyping() async {
         while !Task.isCancelled {
-            if let p = try? await model.api.pulse() { typing = p.typing.contains(id) }
+            if model.live.connected {
+                pulseTyping = false
+            } else if let p = try? await model.api.pulse() {
+                pulseTyping = p.typing.contains(id)
+            }
             try? await Task.sleep(for: .seconds(4))
         }
     }

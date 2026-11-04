@@ -2,7 +2,9 @@ import SwiftUI
 import UIKit
 
 /// Posters, banners and avatars from the catalogue CDNs (AniList, TMDB, Open Library) and GupTrack's own pictures
-/// (avatars, banners, message photos: with the token), loaded at runtime and kept in memory and in Caches. Nothing is bundled. Offline (or without a URL) a neutral placeholder shows instead.
+/// (avatars, banners, message photos: with the token), loaded at runtime and kept in memory and in Caches. Nothing is
+/// bundled. Offline (or without a URL) a neutral placeholder shows instead. GupTrack's own are kept apart, asked again
+/// once a launch (PictureFetch: a 404 drops the copy) and forgotten when this phone is signed out.
 @MainActor
 final class ImageLoader {
     static let shared = ImageLoader()
@@ -12,18 +14,35 @@ final class ImageLoader {
 
     private let memory = NSCache<NSURL, UIImage>()
     private var tasks: [URL: Task<UIImage?, Never>] = [:]
+    /// own pictures asked again this launch
+    private var checked: Set<URL> = []
     private let session: URLSession
     private let dir: URL
+    private let own: URL
+    private var signedOut: NSObjectProtocol?
 
     init() {
         let c = URLSessionConfiguration.default
         c.timeoutIntervalForRequest = 20
         c.requestCachePolicy = .returnCacheDataElseLoad
         session = URLSession(configuration: c)
-        dir = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0]
-            .appendingPathComponent("artwork", isDirectory: true)
+        let caches = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0]
+        dir = caches.appendingPathComponent("artwork", isDirectory: true)
+        own = caches.appendingPathComponent("artwork-own", isDirectory: true)
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
+        try? FileManager.default.createDirectory(at: own, withIntermediateDirectories: true)
         memory.countLimit = 400
+        signedOut = NotificationCenter.default.addObserver(forName: .gupTrackSignedOut, object: nil, queue: .main) { _ in
+            MainActor.assumeIsolated { ImageLoader.shared.forgetOwn() }
+        }
+    }
+
+    /// signed out: nothing of that account's pictures stays on the phone
+    func forgetOwn() {
+        memory.removeAllObjects()
+        checked = []
+        try? FileManager.default.removeItem(at: own)
+        try? FileManager.default.createDirectory(at: own, withIntermediateDirectories: true)
     }
 
     /// already here (memory only), for a first frame without a flash
@@ -32,15 +51,19 @@ final class ImageLoader {
     func image(_ given: URL) async -> UIImage? {
         // GupTrack's own pictures ("/media/…") come from the signed-in server, with the token (docs/app-api.md §5)
         guard let url = Pictures.resolve(given) else { return nil }
-        if let hit = memory.object(forKey: url as NSURL) { return hit }
+        let auth = Pictures.authorization(for: url)
+        let mine = PictureFetch.revalidates(authorization: auth)
+        if let hit = memory.object(forKey: url as NSURL) {
+            if mine { recheck(url, auth: auth) }
+            return hit
+        }
         if let running = tasks[url] { return await running.value }
-        let file = dir.appendingPathComponent(Self.key(url))
+        let file = (mine ? own : dir).appendingPathComponent(Self.key(url))
         inFlight += 1
         let session = session
         let task = Task<UIImage?, Never>.detached(priority: .userInitiated) {
             if let d = try? Data(contentsOf: file), let img = UIImage(data: d) { return img }
-            var request = URLRequest(url: url)
-            if let auth = Pictures.authorization(for: url) { request.setValue(auth, forHTTPHeaderField: "Authorization") }
+            let request = mine ? PictureFetch.request(url, authorization: auth, cached: false) : Self.plain(url)
             guard let (data, response) = try? await session.data(for: request),
                   (response as? HTTPURLResponse)?.statusCode ?? 200 < 400,
                   let img = UIImage(data: data) else { return nil }
@@ -52,7 +75,40 @@ final class ImageLoader {
         tasks[url] = nil
         inFlight -= 1
         if let img { memory.setObject(img, forKey: url as NSURL) }
+        if mine { recheck(url, auth: auth) }
         return img
+    }
+
+    private nonisolated static func plain(_ url: URL) -> URLRequest { URLRequest(url: url) }
+
+    /// an own picture shown from the phone's copy: asked again once a launch, in the background
+    private func recheck(_ url: URL, auth: String?) {
+        guard !Demo.isOn, !checked.contains(url) else { return }
+        checked.insert(url)
+        let file = own.appendingPathComponent(Self.key(url))
+        let cached = FileManager.default.fileExists(atPath: file.path)
+        let request = PictureFetch.request(url, authorization: auth, cached: cached)
+        let session = session
+        Task.detached(priority: .utility) {
+            let answer = try? await session.data(for: request)
+            let status = (answer?.1 as? HTTPURLResponse)?.statusCode
+            let outcome = PictureFetch.outcome(status: status, data: answer?.0, cached: cached)
+            await MainActor.run { ImageLoader.shared.settle(url, file: file, outcome) }
+        }
+    }
+
+    private func settle(_ url: URL, file: URL, _ outcome: PictureFetch.Outcome) {
+        switch outcome {
+        case .keep:
+            break
+        case .fresh(let data):
+            guard let img = UIImage(data: data) else { return }
+            try? data.write(to: file, options: .atomic)
+            memory.setObject(img, forKey: url as NSURL)
+        case .drop:
+            try? FileManager.default.removeItem(at: file)
+            memory.removeObject(forKey: url as NSURL)
+        }
     }
 
     /// a file name for a URL (its host and path, made safe)
